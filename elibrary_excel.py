@@ -161,7 +161,6 @@ for idx in range(number_of_files):
     authors_str = ' ; '.join(authors)
 
     # Заголовок статьи
-    keys_from_title = []
     for string in strings:
         if title_pattern in string:
             first_word = string.find(title_pattern)
@@ -178,6 +177,8 @@ for idx in range(number_of_files):
             title = delete_tag(title)
             title = change_hyphen(title)
             title = change_quotation(title)
+
+    print(f'Ключи из заглавия: {keys_from_title}')
 
     # Название журнала
     for string in strings:
@@ -260,7 +261,6 @@ for idx in range(number_of_files):
     # Аннотация
     abstract = ''
     optimized_abstract = ''
-    keys_from_abstract = []
     for string in strings:
         if abstract_pattern in string:
             first_word = string.find(abstract_pattern)
@@ -273,6 +273,7 @@ for idx in range(number_of_files):
                 keys_from_abstract = keys_from_text(abstract)
                 if abstract:
                     optimized_abstract = abstract_optimization_with_gpt(abstract) or ''
+    print(f'Ключи из аннотации: {keys_from_abstract}')
 
     # URL
     URL = ''
@@ -293,7 +294,6 @@ for idx in range(number_of_files):
                 DOI = string[first_word + DOI_start_shift:second_word]
 
     # Авторские ключевые слова
-    keys_from_a_keys = []
     for string in strings:
         if keyword_pattern in string:
             first_word = string.find(keyword_pattern)
@@ -305,9 +305,11 @@ for idx in range(number_of_files):
                 a_keyword = a_keyword.lower()
                 a_keywords.append(a_keyword)
     a_keywords_as_string = ", ".join(a_keywords)
+    a_keywords = []
 
     # Нормализация ключевых слов
     keys_from_a_keys = keys_from_text(a_keywords_as_string)
+    print(f'Ключи из авторский ключей: {keys_from_a_keys}')
 
     # Объединяем ключевые слова, сохраняем порядок и убираем дубликаты
     final_keywords = list(dict.fromkeys(keys_from_title + keys_from_a_keys + keys_from_abstract))
