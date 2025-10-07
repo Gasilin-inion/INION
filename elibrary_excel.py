@@ -120,8 +120,8 @@ volume = ''
 abstract = ''
 optimized_abstract = ''
 a_keywords_as_string = ''
-path_to_the_source_file = 'files_to_proceed/Sociological_review/2020/2'
-path_to_the_target_file = 'files_for_editing/Sociological_review/Sociological_review_2020_2.xlsx'
+path_to_the_source_file = 'files_to_proceed/Sociological_review/2020/3'
+path_to_the_target_file = 'files_for_editing/Sociological_review/Sociological_review_2020_3.xlsx'
 
 # Импортируем данные из таблицы журналов
 
