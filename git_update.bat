@@ -8,7 +8,7 @@ REM Добавляем все изменения
 git add .
 
 REM Создаем коммит
-git commit -m "Автоматическое обновление %date% %time%"
+git commit -m "Authomatic update %date% %time%"
 
 REM Загружаем изменения
 git push origin main
