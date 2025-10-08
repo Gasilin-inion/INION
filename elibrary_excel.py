@@ -9,12 +9,13 @@ Last updated: 23.09.2025
 """
 # Импорт внешних модулей
 
+import os
 import time
 import pandas as pd
 import xlsxwriter
 from ya_trans import abstracts_translator
 from ya_GPT import abstract_optimization_with_gpt
-from add_keywords_new import keys_from_text
+from add_keywords import keys_from_text
 from multifile_import import get_files_in_folder
 from correction_functions import (
     persons_correction,
@@ -120,14 +121,19 @@ volume = ''
 abstract = ''
 optimized_abstract = ''
 a_keywords_as_string = ''
-path_to_the_source_file = 'files_to_proceed/Sociological_review/2020/3'
-path_to_the_target_file = 'files_for_editing/Sociological_review/Sociological_review_2020_3.xlsx'
 
-# Импортируем данные из таблицы журналов
+# Импортируем выходные данные журналов
 
-journal_list_df = pd.read_excel('journal_list_25.07.xlsx')
+journal_list_df = pd.read_json('journal_list.json')
 
 # Импортируем файлы из исходной папки
+
+# Получение текущей директории
+current_dir = os.getcwd()
+
+# Создание полного пути
+path_to_the_source_file = os.path.join(current_dir, 'files_to_proceed', 'test_files')
+path_to_the_target_file = os.path.join(current_dir, 'files_for_editing', 'test_tab.xlsx')
 
 files = get_files_in_folder(path_to_the_source_file)
 number_of_files = len(files)
@@ -177,8 +183,6 @@ for idx in range(number_of_files):
             title = delete_tag(title)
             title = change_hyphen(title)
             title = change_quotation(title)
-
-    print(f'Ключи из заглавия: {keys_from_title}')
 
     # Название журнала
     for string in strings:
@@ -273,7 +277,6 @@ for idx in range(number_of_files):
                 keys_from_abstract = keys_from_text(abstract)
                 if abstract:
                     optimized_abstract = abstract_optimization_with_gpt(abstract) or ''
-    print(f'Ключи из аннотации: {keys_from_abstract}')
 
     # URL
     URL = ''
@@ -309,7 +312,6 @@ for idx in range(number_of_files):
 
     # Нормализация ключевых слов
     keys_from_a_keys = keys_from_text(a_keywords_as_string)
-    print(f'Ключи из авторский ключей: {keys_from_a_keys}')
 
     # Объединяем ключевые слова, сохраняем порядок и убираем дубликаты
     final_keywords = list(dict.fromkeys(keys_from_title + keys_from_a_keys + keys_from_abstract))
