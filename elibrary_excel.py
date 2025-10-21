@@ -132,8 +132,8 @@ journal_list_df = pd.read_json('journal_list.json')
 current_dir = os.getcwd()
 
 # Создание полного пути
-path_to_the_source_file = os.path.join(current_dir, 'files_to_proceed', 'test_files')
-path_to_the_target_file = os.path.join(current_dir, 'files_for_editing', 'test_tab.xlsx')
+path_to_the_source_file = os.path.join(current_dir, 'files_to_proceed', 'JOURNAL_OF_APPLIED_ECONOMIC_RESEARCH', '2024', '4')
+path_to_the_target_file = os.path.join(current_dir, 'files_for_editing', 'JOURNAL_OF_APPLIED_ECONOMIC_RESEARCH', '2024', 'JOAER_2024_4.xlsx')
 
 files = get_files_in_folder(path_to_the_source_file)
 number_of_files = len(files)
@@ -265,18 +265,21 @@ for idx in range(number_of_files):
     # Аннотация
     abstract = ''
     optimized_abstract = ''
-    for string in strings:
-        if abstract_pattern in string:
-            first_word = string.find(abstract_pattern)
-            second_word = string.find(abstract_end_pattern)
-            if first_word != -1 and second_word != -1:
-                start = first_word + abstract_start_shift
-                abstract = string[start:second_word]
-                if lang in ['английский', 'французский', 'немецкий']:
-                    abstract = abstracts_translator(abstract)
-                keys_from_abstract = keys_from_text(abstract)
-                if abstract:
-                    optimized_abstract = abstract_optimization_with_gpt(abstract) or ''
+    if journal_category == 'A02':
+        for string in strings:
+            if abstract_pattern in string:
+                first_word = string.find(abstract_pattern)
+                second_word = string.find(abstract_end_pattern)
+                if first_word != -1 and second_word != -1:
+                    start = first_word + abstract_start_shift
+                    abstract = string[start:second_word]
+                    if lang in ['английский', 'французский', 'немецкий']:
+                        abstract = abstracts_translator(abstract)
+                    keys_from_abstract = keys_from_text(abstract)
+                    if abstract:
+                        optimized_abstract = abstract_optimization_with_gpt(abstract) or ''
+    else:
+        optimized_abstract = ''
 
     # URL
     URL = ''
@@ -297,24 +300,29 @@ for idx in range(number_of_files):
                 DOI = string[first_word + DOI_start_shift:second_word]
 
     # Авторские ключевые слова
-    for string in strings:
-        if keyword_pattern in string:
-            first_word = string.find(keyword_pattern)
-            second_word = string.find(keyword_end_pattern)
-            if first_word != -1 and second_word != -1:
-                a_keyword = string[first_word + keyword_start_shift:second_word]
-                a_keyword = a_keyword.replace('>', '')
-                a_keyword = a_keyword.replace('"', '')
-                a_keyword = a_keyword.lower()
-                a_keywords.append(a_keyword)
-    a_keywords_as_string = ", ".join(a_keywords)
-    a_keywords = []
+    final_keywords = []
+    if journal_category == 'A02':
+        for string in strings:
+            if keyword_pattern in string:
+                first_word = string.find(keyword_pattern)
+                second_word = string.find(keyword_end_pattern)
+                if first_word != -1 and second_word != -1:
+                    a_keyword = string[first_word + keyword_start_shift:second_word]
+                    a_keyword = a_keyword.replace('>', '')
+                    a_keyword = a_keyword.replace('"', '')
+                    a_keyword = a_keyword.lower()
+                    a_keywords.append(a_keyword)
+        a_keywords_as_string = ", ".join(a_keywords)
+        a_keywords = []
 
-    # Нормализация ключевых слов
-    keys_from_a_keys = keys_from_text(a_keywords_as_string)
+        # Извлечение ключеевых слов из заглавия и аннотации
+        keys_from_a_keys = keys_from_text(a_keywords_as_string)
 
-    # Объединяем ключевые слова, сохраняем порядок и убираем дубликаты
-    final_keywords = list(dict.fromkeys(keys_from_title + keys_from_a_keys + keys_from_abstract))
+        # Объединяем ключевые слова, сохраняем порядок и убираем дубликаты
+        final_keywords = list(dict.fromkeys(keys_from_title + keys_from_a_keys + keys_from_abstract))
+
+    else:
+        final_keywords.append(journal_keyword)
 
     # Рубрика
     if journal_category == 'A02':

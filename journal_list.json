@@ -39,6 +39,19 @@
         "type": "offline"
     },
     {
+        "ISSN": "2712-7435",
+        "city": "Екатеринбург",
+        "e-library_name": "JOURNAL OF APPLIED ECONOMIC RESEARCH",
+        "founder": "Уральский федеральный университет им. первого Президента России Б.Н. Ельцина",
+        "journal": "Journal of applied economic research",
+        "journal_category": "A06",
+        "journal_eng": "Journal of applied economic research",
+        "journal_keyword": "Экономика",
+        "serial_number": "2712-7435-e",
+        "short_name": "JOAER",
+        "type": "online"
+    },
+    {
         "ISSN": "1995-4328",
         "city": "Новосибирск",
         "e-library_name": "SCHOLE. ФИЛОСОФСКОЕ АНТИКОВЕДЕНИЕ И КЛАССИЧЕСКАЯ ТРАДИЦИЯ/SCHOLE. ANCIENT PHILOSOPHY AND THE CLASSICAL TRADITION",
