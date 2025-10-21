@@ -1,0 +1,220 @@
+#19: ^X0^A6 DOI^B10.15826/vestnik.2024.23.1.001
+#101: eng
+#102: RU
+#181: ^Ai
+#182: ^An
+#200: ^AA cross-country examination of mineral import demand and wind energy generation: empirical insights from leading mineral importers^FMd. M.Islam
+#203: ^AТекст^Cэлектронный
+#463: ^CJournal of applied economic research^J2024^VТ. 23^H№ 1^S6-32^X^W2712-7435-e/2024/23/1
+#610: online_journals_archive
+#690: ^LA06
+#700: ^AIslam^BMd. M.
+#900: ^Tl2
+#905: ^22^B1^D3^M1^S1
+#919: ^rus^N02^KPSBO
+#920: ASP
+#951: ^Ihttps://elibrary.ru/znmrhu^H05
+#963: ^FУральский федеральный университет им. первого Президента России Б.Н. Ельцина^I2712-7435
+#964: 06
+#965: Экономика
+#999: 0000000
+*****
+#19: ^X0^A6 DOI^B10.15826/vestnik.2024.23.1.002
+#101: eng
+#102: RU
+#181: ^Ai
+#182: ^An
+#200: ^AEmpirical testing of grossman’s the demand for health model: the case of russia^FO. N.Volkova, A. N.Volkova
+#203: ^AТекст^Cэлектронный
+#463: ^CJournal of applied economic research^J2024^VТ. 23^H№ 1^S33-58^X^W2712-7435-e/2024/23/1
+#610: online_journals_archive
+#690: ^LA06
+#700: ^AVolkova^BO. N.
+#701: ^AVolkova^BA. N.
+#900: ^Tl2
+#905: ^22^B1^D3^M1^S1
+#919: ^rus^N02^KPSBO
+#920: ASP
+#951: ^Ihttps://elibrary.ru/vwkush^H05
+#963: ^FУральский федеральный университет им. первого Президента России Б.Н. Ельцина^I2712-7435
+#964: 06
+#965: Экономика
+#999: 0000000
+*****
+#19: ^X0^A6 DOI^B10.15826/vestnik.2024.23.1.003
+#101: eng
+#102: RU
+#181: ^Ai
+#182: ^An
+#200: ^AResolving conflicts and strengthening international relations with investment: game theory approach^FS.Salimian, A.Ashrafi
+#203: ^AТекст^Cэлектронный
+#463: ^CJournal of applied economic research^J2024^VТ. 23^H№ 1^S59-81^X^W2712-7435-e/2024/23/1
+#610: online_journals_archive
+#690: ^LA06
+#700: ^ASalimian^BS.
+#701: ^AAshrafi^BA.
+#900: ^Tl2
+#905: ^22^B1^D3^M1^S1
+#919: ^rus^N02^KPSBO
+#920: ASP
+#951: ^Ihttps://elibrary.ru/ztxjwg^H05
+#963: ^FУральский федеральный университет им. первого Президента России Б.Н. Ельцина^I2712-7435
+#964: 06
+#965: Экономика
+#999: 0000000
+*****
+#19: ^X0^A6 DOI^B10.15826/vestnik.2024.23.1.004
+#101: rus
+#102: RU
+#181: ^Ai
+#182: ^An
+#200: ^AИзмерение качества жизни населения при стохастическом выборе весов взвешенной главной компоненты^FА. А.Мироненков, А. Н.Курбацкий, М. В.Мироненкова
+#203: ^AТекст^Cэлектронный
+#463: ^CJournal of applied economic research^J2024^VТ. 23^H№ 1^S82-109^X^W2712-7435-e/2024/23/1
+#610: online_journals_archive
+#690: ^LA06
+#700: ^AМироненков^BА. А.
+#701: ^AКурбацкий^BА. Н.
+#701: ^AМироненкова^BМ. В.
+#900: ^Tl2
+#905: ^22^B1^D3^M1^S1
+#919: ^rus^N02^KPSBO
+#920: ASP
+#951: ^Ihttps://elibrary.ru/bezykr^H05
+#963: ^FУральский федеральный университет им. первого Президента России Б.Н. Ельцина^I2712-7435
+#964: 06
+#965: Экономика
+#999: 0000000
+*****
+#19: ^X0^A6 DOI^B10.15826/vestnik.2024.23.1.005
+#101: eng
+#102: RU
+#181: ^Ai
+#182: ^An
+#200: ^ADynamic connectedness between crypto and conventional financial assets: novel findings from russian financial market^FM.Ullah
+#203: ^AТекст^Cэлектронный
+#463: ^CJournal of applied economic research^J2024^VТ. 23^H№ 1^S110-135^X^W2712-7435-e/2024/23/1
+#610: online_journals_archive
+#690: ^LA06
+#700: ^AUllah^BM.
+#900: ^Tl2
+#905: ^22^B1^D3^M1^S1
+#919: ^rus^N02^KPSBO
+#920: ASP
+#951: ^Ihttps://elibrary.ru/mzbeht^H05
+#963: ^FУральский федеральный университет им. первого Президента России Б.Н. Ельцина^I2712-7435
+#964: 06
+#965: Экономика
+#999: 0000000
+*****
+#19: ^X0^A6 DOI^B10.15826/vestnik.2024.23.1.006
+#101: rus
+#102: RU
+#181: ^Ai
+#182: ^An
+#200: ^AАнализ долгосрочных и краткосрочных взаимосвязей между электропотреблением и экономическим ростом в промышленно-развитых регионах России^FМ. Б.Петров, Л. А.Серков
+#203: ^AТекст^Cэлектронный
+#463: ^CJournal of applied economic research^J2024^VТ. 23^H№ 1^S136-158^X^W2712-7435-e/2024/23/1
+#610: online_journals_archive
+#690: ^LA06
+#700: ^AПетров^BМ. Б.
+#701: ^AСерков^BЛ. А.
+#900: ^Tl2
+#905: ^22^B1^D3^M1^S1
+#919: ^rus^N02^KPSBO
+#920: ASP
+#951: ^Ihttps://elibrary.ru/mjqgzo^H05
+#963: ^FУральский федеральный университет им. первого Президента России Б.Н. Ельцина^I2712-7435
+#964: 06
+#965: Экономика
+#999: 0000000
+*****
+#19: ^X0^A6 DOI^B10.15826/vestnik.2024.23.1.007
+#101: rus
+#102: RU
+#181: ^Ai
+#182: ^An
+#200: ^AОценка турбулентности отраслевой среды машиностроительного комплекса России^FЕ. Д.Вайсман, Т. Ю.Железнова
+#203: ^AТекст^Cэлектронный
+#463: ^CJournal of applied economic research^J2024^VТ. 23^H№ 1^S159-179^X^W2712-7435-e/2024/23/1
+#610: online_journals_archive
+#690: ^LA06
+#700: ^AВайсман^BЕ. Д.
+#701: ^AЖелезнова^BТ. Ю.
+#900: ^Tl2
+#905: ^22^B1^D3^M1^S1
+#919: ^rus^N02^KPSBO
+#920: ASP
+#951: ^Ihttps://elibrary.ru/wpyqje^H05
+#963: ^FУральский федеральный университет им. первого Президента России Б.Н. Ельцина^I2712-7435
+#964: 06
+#965: Экономика
+#999: 0000000
+*****
+#19: ^X0^A6 DOI^B10.15826/vestnik.2024.23.1.008
+#101: rus
+#102: RU
+#181: ^Ai
+#182: ^An
+#200: ^AАнализ чувствительности показателей рыночной активности корпорации при нейтральном подходе к дивидендной политике^FС. И.Крылов
+#203: ^AТекст^Cэлектронный
+#463: ^CJournal of applied economic research^J2024^VТ. 23^H№ 1^S180-205^X^W2712-7435-e/2024/23/1
+#610: online_journals_archive
+#690: ^LA06
+#700: ^AКрылов^BС. И.
+#900: ^Tl2
+#905: ^22^B1^D3^M1^S1
+#919: ^rus^N02^KPSBO
+#920: ASP
+#951: ^Ihttps://elibrary.ru/gkfvcj^H05
+#963: ^FУральский федеральный университет им. первого Президента России Б.Н. Ельцина^I2712-7435
+#964: 06
+#965: Экономика
+#999: 0000000
+*****
+#19: ^X0^A6 DOI^B10.15826/vestnik.2024.23.1.009
+#101: eng
+#102: RU
+#181: ^Ai
+#182: ^An
+#200: ^ADefault prediction for russian food service firms: contribution of non-financial factors and machine learning^FE. O.Bukharin, S. I.Mangileva, V. V.Afanasev
+#203: ^AТекст^Cэлектронный
+#463: ^CJournal of applied economic research^J2024^VТ. 23^H№ 1^S206-226^X^W2712-7435-e/2024/23/1
+#610: online_journals_archive
+#690: ^LA06
+#700: ^ABukharin^BE. O.
+#701: ^AMangileva^BS. I.
+#701: ^AAfanasev^BV. V.
+#900: ^Tl2
+#905: ^22^B1^D3^M1^S1
+#919: ^rus^N02^KPSBO
+#920: ASP
+#951: ^Ihttps://elibrary.ru/bdhfar^H05
+#963: ^FУральский федеральный университет им. первого Президента России Б.Н. Ельцина^I2712-7435
+#964: 06
+#965: Экономика
+#999: 0000000
+*****
+#19: ^X0^A6 DOI^B10.15826/vestnik.2024.23.1.010
+#101: rus
+#102: RU
+#181: ^Ai
+#182: ^An
+#200: ^AМоделирование влияния компетенций сотрудника на его результативность с учетом выгорания^FЛ. С.Мазелис, Г. В.Гренкин, К. И.Лавренюк
+#203: ^AТекст^Cэлектронный
+#463: ^CJournal of applied economic research^J2024^VТ. 23^H№ 1^S227-250^X^W2712-7435-e/2024/23/1
+#610: online_journals_archive
+#690: ^LA06
+#700: ^AМазелис^BЛ. С.
+#701: ^AГренкин^BГ. В.
+#701: ^AЛавренюк^BК. И.
+#900: ^Tl2
+#905: ^22^B1^D3^M1^S1
+#919: ^rus^N02^KPSBO
+#920: ASP
+#951: ^Ihttps://elibrary.ru/ssltmu^H05
+#963: ^FУральский федеральный университет им. первого Президента России Б.Н. Ельцина^I2712-7435
+#964: 06
+#965: Экономика
+#999: 0000000
+*****

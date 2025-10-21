@@ -1,15 +1,10 @@
 # -*- coding: utf-8 -*-
 """
-Исправленная и более устойчивая версия скрипта excel_irbis.py
-- Корректная обработка NaN из pandas (pd.notna)
-- Надёжный цикл по строкам DataFrame
-- Универсальная и чистая обработка авторов
-- Убраны интерактивные input() и заменены логированием/пропуском
-- Эффективная сборка результата и запись в файл
-- Минимальные изменения логики (сохранена форматировка полей)
+Мультиплатформный конвертер библиографических данных из формата Excel в формат ИРБИС 64
+Ориентирован на работу с различными специальностями
 
-Автор улучшений: ChatGPT
-Дата: 2025-10-21
+Автор: Gasilin Andrey
+Дата последнего обновления: 2025-10-21
 """
 
 import os
@@ -43,8 +38,8 @@ SEPARATOR = '*****\n'
 
 # Пути исходного и результирующего файлов (по умолчанию в рабочей директории)
 current_dir = os.getcwd()
-path_to_the_source_file = os.path.join(current_dir, 'files_for_editing', 'JOURNAL_OF_APPLIED_ECONOMIC_RESEARCH', '2020', 'JOAER_2020_1.xlsx')
-path_to_the_target_file = os.path.join(current_dir, 'files_for_import_in_IRBIS', 'JOURNAL_OF_APPLIED_ECONOMIC_RESEARCH', '2020', 'JOAER_2020_1.txt')
+path_to_the_source_file = os.path.join(current_dir, 'files_for_editing', 'JOURNAL_OF_APPLIED_ECONOMIC_RESEARCH', '2024', 'JOAER_2024_4.xlsx')
+path_to_the_target_file = os.path.join(current_dir, 'files_for_import_in_IRBIS', 'JOURNAL_OF_APPLIED_ECONOMIC_RESEARCH', '2024', 'JOAER_2024_4.txt')
 
 # -------------------- Вспомогательные функции --------------------
 
@@ -161,7 +156,7 @@ def main(src: str = path_to_the_source_file, tgt: str = path_to_the_target_file)
         return
 
     n = len(df)
-    logger.info('Обработаем %d строк(и).', n)
+    logger.info('Обработано %d строк(и).', n)
 
     documents: List[str] = []
 
@@ -308,7 +303,6 @@ def main(src: str = path_to_the_source_file, tgt: str = path_to_the_target_file)
         else:
             argument_964 = category[1:3] if category and len(category) >= 3 else ''
             field_964 += argument_964 + '\n' if argument_964 else '\n'
-            print(f'рубрика: {category}, сокращённая: {argument_964}')
 
         # Ключевые слова -> 965
         keywords_str = safe_get(df, idx, 'keywords')

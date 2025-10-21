@@ -1,0 +1,269 @@
+#19: ^X0^A6 DOI^B10.15826/vestnik.2024.23.3.023
+#101: eng
+#102: RU
+#181: ^Ai
+#182: ^An
+#200: ^AFactors influencing life expectancy in low-income countries: a panel data analysis^FE. T.Gazilas
+#203: ^AТекст^Cэлектронный
+#463: ^CJournal of applied economic research^J2024^VТ. 23^H№ 3^S580-601^X^W2712-7435-e/2024/23/3
+#610: online_journals_archive
+#690: ^LA06
+#700: ^AGazilas^BE. T.
+#900: ^Tl2
+#905: ^22^B1^D3^M1^S1
+#919: ^rus^N02^KPSBO
+#920: ASP
+#951: ^Ihttps://elibrary.ru/asxufy^H05
+#963: ^FУральский федеральный университет им. первого Президента России Б.Н. Ельцина^I2712-7435
+#964: 06
+#965: Экономика
+#999: 0000000
+*****
+#19: ^X0^A6 DOI^B10.15826/vestnik.2024.23.3.024
+#101: eng
+#102: RU
+#181: ^Ai
+#182: ^An
+#200: ^AEconomic globalization, renewable energy, and co2 emissions in selected emerging countries^FX.Shodrokova, A.Yulianita, A.Bashir
+#203: ^AТекст^Cэлектронный
+#463: ^CJournal of applied economic research^J2024^VТ. 23^H№ 3^S602-622^X^W2712-7435-e/2024/23/3
+#610: online_journals_archive
+#690: ^LA06
+#700: ^AShodrokova^BX.
+#701: ^AYulianita^BA.
+#701: ^ABashir^BA.
+#900: ^Tl2
+#905: ^22^B1^D3^M1^S1
+#919: ^rus^N02^KPSBO
+#920: ASP
+#951: ^Ihttps://elibrary.ru/qwfcip^H05
+#963: ^FУральский федеральный университет им. первого Президента России Б.Н. Ельцина^I2712-7435
+#964: 06
+#965: Экономика
+#999: 0000000
+*****
+#19: ^X0^A6 DOI^B10.15826/vestnik.2024.23.3.025
+#101: eng
+#102: RU
+#181: ^Ai
+#182: ^An
+#200: ^AAssessing the impact of infrastructure on tax structure and improving economic performance: the case of nigeria^FO. A.Olaniyi, A. M.Adekanmbi, S. A.Opadeji, A. D.Shallie
+#203: ^AТекст^Cэлектронный
+#463: ^CJournal of applied economic research^J2024^VТ. 23^H№ 3^S623-641^X^W2712-7435-e/2024/23/3
+#610: online_journals_archive
+#690: ^LA06
+#700: ^AOlaniyi^BO. A.
+#701: ^AAdekanmbi^BA. M.
+#701: ^AOpadeji^BS. A.
+#701: ^AShallie^BA. D.
+#900: ^Tl2
+#905: ^22^B1^D3^M1^S1
+#919: ^rus^N02^KPSBO
+#920: ASP
+#951: ^Ihttps://elibrary.ru/bisrky^H05
+#963: ^FУральский федеральный университет им. первого Президента России Б.Н. Ельцина^I2712-7435
+#964: 06
+#965: Экономика
+#999: 0000000
+*****
+#19: ^X0^A6 DOI^B10.15826/vestnik.2024.23.3.026
+#101: rus
+#102: RU
+#181: ^Ai
+#182: ^An
+#200: ^AФакторы энергоперехода компаний обрабатывающей промышленности с учетом их включенности в глобальные цепочки создания стоимости^FМ. Г.Кузык, Л. С.Ружанская
+#203: ^AТекст^Cэлектронный
+#463: ^CJournal of applied economic research^J2024^VТ. 23^H№ 3^S642-673^X^W2712-7435-e/2024/23/3
+#610: online_journals_archive
+#690: ^LA06
+#700: ^AКузык^BМ. Г.
+#701: ^AРужанская^BЛ. С.
+#900: ^Tl2
+#905: ^22^B1^D3^M1^S1
+#919: ^rus^N02^KPSBO
+#920: ASP
+#951: ^Ihttps://elibrary.ru/geuwze^H05
+#963: ^FУральский федеральный университет им. первого Президента России Б.Н. Ельцина^I2712-7435
+#964: 06
+#965: Экономика
+#999: 0000000
+*****
+#19: ^X0^A6 DOI^B10.15826/vestnik.2024.23.3.027
+#101: eng
+#102: RU
+#181: ^Ai
+#182: ^An
+#200: ^AForecasting the economic growth of sverdlovsk region: a comparative analysis of machine learning, linear regression and autoregressive models^FD. M.Balungu, A.Kumar
+#203: ^AТекст^Cэлектронный
+#463: ^CJournal of applied economic research^J2024^VТ. 23^H№ 3^S674-695^X^W2712-7435-e/2024/23/3
+#610: online_journals_archive
+#690: ^LA06
+#700: ^ABalungu^BD. M.
+#701: ^AKumar^BA.
+#900: ^Tl2
+#905: ^22^B1^D3^M1^S1
+#919: ^rus^N02^KPSBO
+#920: ASP
+#951: ^Ihttps://elibrary.ru/iemkkg^H05
+#963: ^FУральский федеральный университет им. первого Президента России Б.Н. Ельцина^I2712-7435
+#964: 06
+#965: Экономика
+#999: 0000000
+*****
+#19: ^X0^A6 DOI^B10.15826/vestnik.2024.23.3.028
+#101: rus
+#102: RU
+#181: ^Ai
+#182: ^An
+#200: ^AКомплексная эколого-экономическая оценка низкоуглеродных источников энергии^FД. Ю.Двинин, А. Ю.Даванков
+#203: ^AТекст^Cэлектронный
+#463: ^CJournal of applied economic research^J2024^VТ. 23^H№ 3^S696-720^X^W2712-7435-e/2024/23/3
+#610: online_journals_archive
+#690: ^LA06
+#700: ^AДвинин^BД. Ю.
+#701: ^AДаванков^BА. Ю.
+#900: ^Tl2
+#905: ^22^B1^D3^M1^S1
+#919: ^rus^N02^KPSBO
+#920: ASP
+#951: ^Ihttps://elibrary.ru/pcdzfl^H05
+#963: ^FУральский федеральный университет им. первого Президента России Б.Н. Ельцина^I2712-7435
+#964: 06
+#965: Экономика
+#999: 0000000
+*****
+#19: ^X0^A6 DOI^B10.15826/vestnik.2024.23.3.029
+#101: rus
+#102: RU
+#181: ^Ai
+#182: ^An
+#200: ^AМоделирование функциональных связей региональных экономических систем по малым выборкам на основе байесовских интеллектуальных измерений^FР. А.Жуков, С. В.Прокопчина, М. А.Плинская, М. А.Желуницина
+#203: ^AТекст^Cэлектронный
+#463: ^CJournal of applied economic research^J2024^VТ. 23^H№ 3^S721-750^X^W2712-7435-e/2024/23/3
+#610: online_journals_archive
+#690: ^LA06
+#700: ^AЖуков^BР. А.
+#701: ^AПрокопчина^BС. В.
+#701: ^AПлинская^BМ. А.
+#701: ^AЖелуницина^BМ. А.
+#900: ^Tl2
+#905: ^22^B1^D3^M1^S1
+#919: ^rus^N02^KPSBO
+#920: ASP
+#951: ^Ihttps://elibrary.ru/tskurg^H05
+#963: ^FУральский федеральный университет им. первого Президента России Б.Н. Ельцина^I2712-7435
+#964: 06
+#965: Экономика
+#999: 0000000
+*****
+#19: ^X0^A6 DOI^B10.15826/vestnik.2024.23.3.030
+#101: rus
+#102: RU
+#181: ^Ai
+#182: ^An
+#200: ^AВлияние межрегиональных пространственных эффектов на экономическое развитие регионов России^FП. А.Попова, Т. В.Букина, Д. В.Кашин
+#203: ^AТекст^Cэлектронный
+#463: ^CJournal of applied economic research^J2024^VТ. 23^H№ 3^S751-775^X^W2712-7435-e/2024/23/3
+#610: online_journals_archive
+#690: ^LA06
+#700: ^AПопова^BП. А.
+#701: ^AБукина^BТ. В.
+#701: ^AКашин^BД. В.
+#900: ^Tl2
+#905: ^22^B1^D3^M1^S1
+#919: ^rus^N02^KPSBO
+#920: ASP
+#951: ^Ihttps://elibrary.ru/yvitxq^H05
+#963: ^FУральский федеральный университет им. первого Президента России Б.Н. Ельцина^I2712-7435
+#964: 06
+#965: Экономика
+#999: 0000000
+*****
+#19: ^X0^A6 DOI^B10.15826/vestnik.2024.23.3.031
+#101: eng
+#102: RU
+#181: ^Ai
+#182: ^An
+#200: ^AAssessing the bankruptcy risks of china's emerging port industries: modeling and early warning^FW.Ying, I. A.Mayburov, Yu. V.Leontyeva
+#203: ^AТекст^Cэлектронный
+#463: ^CJournal of applied economic research^J2024^VТ. 23^H№ 3^S776-800^X^W2712-7435-e/2024/23/3
+#610: online_journals_archive
+#690: ^LA06
+#700: ^AYing^BW.
+#701: ^AMayburov^BI. A.
+#701: ^ALeontyeva^BYu. V.
+#900: ^Tl2
+#905: ^22^B1^D3^M1^S1
+#919: ^rus^N02^KPSBO
+#920: ASP
+#951: ^Ihttps://elibrary.ru/bkygmf^H05
+#963: ^FУральский федеральный университет им. первого Президента России Б.Н. Ельцина^I2712-7435
+#964: 06
+#965: Экономика
+#999: 0000000
+*****
+#19: ^X0^A6 DOI^B10.15826/vestnik.2024.23.3.032
+#101: rus
+#102: RU
+#181: ^Ai
+#182: ^An
+#200: ^AКомпании с акциями разных типов: мировой опыт и российская практика^FА. А.Муравьев, Н. С.Телятников
+#203: ^AТекст^Cэлектронный
+#463: ^CJournal of applied economic research^J2024^VТ. 23^H№ 3^S801-832^X^W2712-7435-e/2024/23/3
+#610: online_journals_archive
+#690: ^LA06
+#700: ^AМуравьев^BА. А.
+#701: ^AТелятников^BН. С.
+#900: ^Tl2
+#905: ^22^B1^D3^M1^S1
+#919: ^rus^N02^KPSBO
+#920: ASP
+#951: ^Ihttps://elibrary.ru/ewgyky^H05
+#963: ^FУральский федеральный университет им. первого Президента России Б.Н. Ельцина^I2712-7435
+#964: 06
+#965: Экономика
+#999: 0000000
+*****
+#19: ^X0^A6 DOI^B10.15826/vestnik.2024.23.3.033
+#101: eng
+#102: RU
+#181: ^Ai
+#182: ^An
+#200: ^AIntangible assets and us stock returns: an analysis using the index method, panel regression, and machine learning^FA.Haniev
+#203: ^AТекст^Cэлектронный
+#463: ^CJournal of applied economic research^J2024^VТ. 23^H№ 3^S833-854^X^W2712-7435-e/2024/23/3
+#610: online_journals_archive
+#690: ^LA06
+#700: ^AHaniev^BA.
+#900: ^Tl2
+#905: ^22^B1^D3^M1^S1
+#919: ^rus^N02^KPSBO
+#920: ASP
+#951: ^Ihttps://elibrary.ru/auklfw^H05
+#963: ^FУральский федеральный университет им. первого Президента России Б.Н. Ельцина^I2712-7435
+#964: 06
+#965: Экономика
+#999: 0000000
+*****
+#19: ^X0^A6 DOI^B10.15826/vestnik.2024.23.3.034
+#101: eng
+#102: RU
+#181: ^Ai
+#182: ^An
+#200: ^AInfluence of top management characteristics on the innovative development of the world’s top companies in the pharmaceutical industry^FN. A.Tolstov, A. A.Knyazev
+#203: ^AТекст^Cэлектронный
+#463: ^CJournal of applied economic research^J2024^VТ. 23^H№ 3^S855-875^X^W2712-7435-e/2024/23/3
+#610: online_journals_archive
+#690: ^LA06
+#700: ^ATolstov^BN. A.
+#701: ^AKnyazev^BA. A.
+#900: ^Tl2
+#905: ^22^B1^D3^M1^S1
+#919: ^rus^N02^KPSBO
+#920: ASP
+#951: ^Ihttps://elibrary.ru/oalziw^H05
+#963: ^FУральский федеральный университет им. первого Президента России Б.Н. Ельцина^I2712-7435
+#964: 06
+#965: Экономика
+#999: 0000000
+*****
