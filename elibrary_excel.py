@@ -1,5 +1,5 @@
 """
-Декодер библиографических записей из html страниц e-Library в таблицу Excel
+Конвертер библиографических записей из html страниц e-Library в таблицу Excel
 
 @author: Andrey Gasilin
 
@@ -132,8 +132,8 @@ journal_list_df = pd.read_json('journal_list.json')
 current_dir = os.getcwd()
 
 # Создание полного пути
-path_to_the_source_file = os.path.join(current_dir, 'files_to_proceed', 'JOURNAL_OF_APPLIED_ECONOMIC_RESEARCH', '2024', '4')
-path_to_the_target_file = os.path.join(current_dir, 'files_for_editing', 'JOURNAL_OF_APPLIED_ECONOMIC_RESEARCH', '2024', 'JOAER_2024_4.xlsx')
+path_to_the_source_file = os.path.join(current_dir, 'files_to_proceed', 'Sociological_review', '2020', '4')
+path_to_the_target_file = os.path.join(current_dir, 'files_for_editing', 'Sociological_review', 'Sociological_review_2020_4.xlsx')
 
 files = get_files_in_folder(path_to_the_source_file)
 number_of_files = len(files)
@@ -206,7 +206,8 @@ for idx in range(number_of_files):
         if ((journal == rus_elibrary_name) or
             (journal == eng_elibrary_name) or
             (journal == journal_list_df.at[row, 'journal']) or
-            (journal == journal_list_df.at[row, 'journal_eng'])):
+            (journal == journal_list_df.at[row, 'journal_eng']) or
+            (journal == journal_list_df.at[row, 'journal_eng_2'])):
             journal = journal_list_df.at[row, 'journal']
             journal_eng = journal_list_df.at[row, 'journal_eng']
             founder = journal_list_df.at[row, 'founder']
