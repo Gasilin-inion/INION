@@ -12,18 +12,12 @@ import datetime
 import logging
 import pandas as pd
 from typing import List, Dict
+from check_functions import cat_check
 
 # Настройка логирования
 logging.basicConfig(level=logging.INFO, format='%(levelname)s: %(message)s')
 logger = logging.getLogger(__name__)
 
-# Попытка импортировать проверку рубрики, если есть
-try:
-    from check_functions import cat_check
-except Exception:
-    def cat_check(x):
-        # заглушка: возвращаем 1 (OK) — поменяйте поведение, если у вас есть реальная функция
-        return 1
 
 
 # -------------------- Параметры и шаблоны --------------------
@@ -35,11 +29,13 @@ FIELD_919 = '#919: ^rus^N02^KPSBO\n'
 FIELD_920 = '#920: ASP\n'
 FIELD_999 = '#999: 0000000\n'
 SEPARATOR = '*****\n'
+wrong_categories = []
 
 # Пути исходного и результирующего файлов (по умолчанию в рабочей директории)
 current_dir = os.getcwd()
-path_to_the_source_file = os.path.join(current_dir, 'files_for_editing', 'JOURNAL_OF_APPLIED_ECONOMIC_RESEARCH', '2024', 'JOAER_2024_4.xlsx')
-path_to_the_target_file = os.path.join(current_dir, 'files_for_import_in_IRBIS', 'JOURNAL_OF_APPLIED_ECONOMIC_RESEARCH', '2024', 'JOAER_2024_4.txt')
+path_to_the_source_file = os.path.join(current_dir, 'files_for_editing', 'сurrent_upload', 'file_to_edit.xlsx')
+path_to_the_target_file = os.path.join(current_dir, 'files_for_import_in_IRBIS', 'current_upload', 'file_to_import_to_IRBIS.txt')
+path_to_wrong_categories = os.path.join(current_dir, 'files_for_import_in_IRBIS', 'current_upload', 'wrong_categories.txt')
 
 # -------------------- Вспомогательные функции --------------------
 
@@ -169,14 +165,12 @@ def main(src: str = path_to_the_source_file, tgt: str = path_to_the_target_file)
         field_331 = '#331: '
         field_463 = '#463: '
         field_470 = '#470: ^0Рец. на кн.'
-        field_610 = '#610: '
-        field_690 = '#690: ^L'
+        field_690 = ''
         field_700 = '#700: '
         field_701 = ''
         field_900 = '#900: '
         field_951 = '#951: '
         field_963 = '#963: '
-        field_964 = '#964: '
         field_965 = ''
 
         # Текущая дата для формирования шифров
@@ -213,22 +207,27 @@ def main(src: str = path_to_the_source_file, tgt: str = path_to_the_target_file)
             field_331 = '\n'
 
         # Рубрика
+        categories = []
         category = safe_get(df, idx, 'category') or ''
-        write_cat = cat_check(category)
-        if write_cat != 1:
-            logger.warning('Некорректная рубрика в строке %d: %s — будет пропущена', idx, category)
-            category = ''
-        field_690 += category + '\n' if category else '\n'
-
-        # BU / 610
-        if 'A02' in category:
-            # Примерная логика, оставим как в оригинале, но корректно обработаем
-            # Здесь можно вынести правила в отдельную функцию при необходимости
-            BU_number = 'online_journals_archive'
-            # (Можно реализовать детальные правила по датам при необходимости)
+        if category and category.strip():
+            if ';' in category:
+                categories = category.split(' ; ')
+                for cat in categories:
+                    checker = cat_check(cat)
+                    if checker == 1:
+                        field_690 += '#690: ^L' + cat + '\n'
+                    else:
+                        field_690 += '\n'
+                        wrong_categories.append(authors_raw + '\n')
+            else:
+                checker = cat_check(category)
+                if checker == 1:
+                    field_690 += '#690: ^L' + category + '\n'
+                else:
+                    field_690 += '\n'
+                    wrong_categories.append(authors_raw + '\n')
         else:
-            BU_number = 'online_journals_archive'
-        field_610 = '#610: ' + BU_number + '\n'
+            category = ''
 
         # Поля 700/701
         field_700_built, field_701_built = build_700_701_fields(authors)
@@ -296,14 +295,6 @@ def main(src: str = path_to_the_source_file, tgt: str = path_to_the_target_file)
         field_203 += argument_203
         field_900 += argument_900
 
-        # 964 из категории (защищаем длину)
-        if 'A02' in category:
-            argument_964 = category[1:6] if category and len(category) >= 6 else ''
-            field_964 += argument_964 + '\n' if argument_964 else '\n'
-        else:
-            argument_964 = category[1:3] if category and len(category) >= 3 else ''
-            field_964 += argument_964 + '\n' if argument_964 else '\n'
-
         # Ключевые слова -> 965
         keywords_str = safe_get(df, idx, 'keywords')
         if keywords_str and keywords_str.strip():
@@ -316,21 +307,21 @@ def main(src: str = path_to_the_source_file, tgt: str = path_to_the_target_file)
         # Сборка документа по вариантам (как в оригинале)
         if (review_marker == 0) and (document_type == 'online'):
             document = (field_19 + field_101 + FIELD_102 + FIELD_181 + FIELD_182
-                        + field_200 + field_203 + field_331 + field_463 + field_610 + field_690
+                        + field_200 + field_203 + field_331 + field_463 + field_690
                         + field_700 + field_701 + field_900 + FIELD_905
-                        + FIELD_919 + FIELD_920 + field_951 + field_963 + field_964 + field_965
+                        + FIELD_919 + FIELD_920 + field_951 + field_963 + field_965
                         + FIELD_999 + SEPARATOR)
         elif (review_marker == 1) and (document_type == 'online'):
             document = (field_19 + field_101 + FIELD_102 + FIELD_181 + FIELD_182
-                        + field_200 + field_203 + field_331 + field_463 + field_470 + field_610
+                        + field_200 + field_203 + field_331 + field_463 + field_470
                         + field_690 + field_700 + field_701 + field_900 + FIELD_905
-                        + FIELD_919 + FIELD_920 + field_951 + field_963 + field_964 + field_965
+                        + FIELD_919 + FIELD_920 + field_951 + field_963 + field_965
                         + FIELD_999 + SEPARATOR)
         else:
             document = (field_19 + field_101 + FIELD_102 + FIELD_181 + FIELD_182
-                        + field_200 + field_203 + field_331 + field_463 + field_610 + field_690
+                        + field_200 + field_203 + field_331 + field_463 + field_690
                         + field_700 + field_701 + field_900 + FIELD_905
-                        + FIELD_919 + FIELD_920 + field_963 + field_964 + field_965
+                        + FIELD_919 + FIELD_920 + field_963 + field_965
                         + FIELD_999 + SEPARATOR)
 
         # Убираем двойные пустые строки
@@ -344,6 +335,12 @@ def main(src: str = path_to_the_source_file, tgt: str = path_to_the_target_file)
         logger.info('Файл успешно создан: %s', tgt)
     except Exception as e:
         logger.exception('Ошибка при записи файла: %s', e)
+
+    # Формирование файла ошибок в рубриках:
+    if wrong_categories != []:
+        with open(path_to_wrong_categories, 'w', encoding='utf-8') as wc:
+            wc.writelines(f'Ошибки в рубриках допущены в статьях следующих авторов:\n\n')
+            wc.writelines(wrong_categories)
 
 
 if __name__ == '__main__':

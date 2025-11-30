@@ -4,7 +4,7 @@
 @author: Andrey Gasilin
 
 Created: 03.01.2025
-Last updated: 23.09.2025
+Last updated: 29.11.2025
 
 """
 # Импорт внешних модулей
@@ -119,8 +119,10 @@ serial_number = ''
 journal_category = ''
 volume = ''
 abstract = ''
+full_abstract = ''
 optimized_abstract = ''
 a_keywords_as_string = ''
+file_name = ''
 
 # Импортируем выходные данные журналов
 
@@ -131,9 +133,9 @@ journal_list_df = pd.read_json('journal_list.json')
 # Получение текущей директории
 current_dir = os.getcwd()
 
-# Создание полного пути
-path_to_the_source_file = os.path.join(current_dir, 'files_to_proceed', 'Sociological_review', '2020', '4')
-path_to_the_target_file = os.path.join(current_dir, 'files_for_editing', 'Sociological_review', 'Sociological_review_2020_4.xlsx')
+# Генерация пути к папке с материалом
+path_to_the_source_file = os.path.join(current_dir, 'files_to_proceed', 'сurrent_upload')
+path_to_the_target_file = os.path.join(current_dir, 'files_for_editing', 'сurrent_upload', 'file_to_edit.xlsx')
 
 files = get_files_in_folder(path_to_the_source_file)
 number_of_files = len(files)
@@ -247,6 +249,12 @@ for idx in range(number_of_files):
             issue = string[first_word + issue_start_shift:second_word]
             issue = issue.replace('&nbsp;', ' ')
 
+    # Название выходного файла
+    if (volume != ''):
+        file_name = (short_name + '_' + year + '_' + volume + '_' + issue + '.xlsx')
+    else:
+        file_name = (short_name + '_' + year + '_' + issue + '.xlsx')
+
     # Страницы
     pages = ''
     for string in strings:
@@ -274,11 +282,21 @@ for idx in range(number_of_files):
                 if first_word != -1 and second_word != -1:
                     start = first_word + abstract_start_shift
                     abstract = string[start:second_word]
+                    full_abstract = abstract
                     if lang in ['английский', 'французский', 'немецкий']:
                         abstract = abstracts_translator(abstract)
                     keys_from_abstract = keys_from_text(abstract)
                     if abstract:
                         optimized_abstract = abstract_optimization_with_gpt(abstract) or ''
+    elif (journal_category == 'A04') or (journal_category == 'A13'):
+        for string in strings:
+            if abstract_pattern in string:
+                first_word = string.find(abstract_pattern)
+                second_word = string.find(abstract_end_pattern)
+                if first_word != -1 and second_word != -1:
+                    start = first_word + abstract_start_shift
+                    abstract = string[start:second_word]
+                    optimized_abstract = abstract[:500]
     else:
         optimized_abstract = ''
 
@@ -356,7 +374,7 @@ for idx in range(number_of_files):
     journal_type_list.append(journal_type)
     serial_number_list.append(serial_number)
 
-# Название выходного файла
+# Формирование выходного файла
 workbook = xlsxwriter.Workbook(path_to_the_target_file)
 
 # Формат переноса текста
