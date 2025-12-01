@@ -134,8 +134,8 @@ journal_list_df = pd.read_json('journal_list.json')
 current_dir = os.getcwd()
 
 # Генерация пути к папке с материалом
-path_to_the_source_file = os.path.join(current_dir, 'files_to_proceed', 'сurrent_upload')
-path_to_the_target_file = os.path.join(current_dir, 'files_for_editing', 'сurrent_upload', 'file_to_edit.xlsx')
+path_to_the_source_file = os.path.join(current_dir, 'files_to_process')
+path_to_the_target_file = os.path.join(current_dir, 'files_to_edit', 'table_of_articles.xlsx')
 
 files = get_files_in_folder(path_to_the_source_file)
 number_of_files = len(files)

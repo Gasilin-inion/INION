@@ -25,22 +25,23 @@ FIELD_102 = '#102: RU\n'
 FIELD_181 = '#181: ^Ai\n'
 FIELD_182 = '#182: ^An\n'
 FIELD_905 = '#905: ^22^B1^D3^M1^S1\n'
+FIELD_905_J = '#905: ^B1^D3^M1^S1\n'
 FIELD_919 = '#919: ^rus^N02^KPSBO\n'
 FIELD_920 = '#920: ASP\n'
+FIELD_920_J =  '#920: NJ\n'
 FIELD_999 = '#999: 0000000\n'
 SEPARATOR = '*****\n'
 wrong_categories = []
 
 # Пути исходного и результирующего файлов (по умолчанию в рабочей директории)
 current_dir = os.getcwd()
-path_to_the_source_file = os.path.join(current_dir, 'files_for_editing', 'сurrent_upload', 'file_to_edit.xlsx')
-path_to_the_target_file = os.path.join(current_dir, 'files_for_import_in_IRBIS', 'current_upload', 'file_to_import_to_IRBIS.txt')
-path_to_wrong_categories = os.path.join(current_dir, 'files_for_import_in_IRBIS', 'current_upload', 'wrong_categories.txt')
+path_to_the_source_file = os.path.join(current_dir, 'files_to_edit', 'table_of_articles.xlsx')
+path_to_the_target_file = os.path.join(current_dir, 'files_to_import_to_IRBIS', 'list_of_documents.txt')
+path_to_wrong_categories = os.path.join(current_dir, 'files_for_import_in_IRBIS', 'wrong_categories.txt')
 
-# -------------------- Вспомогательные функции --------------------
+# Безопасно получить значение из DataFrame и вернуть либо строку, либо None
 
 def safe_get(df: pd.DataFrame, idx: int, col: str):
-    """Безопасно получить значение из DataFrame и вернуть либо строку, либо None."""
     try:
         val = df.at[idx, col]
     except Exception:
@@ -50,93 +51,7 @@ def safe_get(df: pd.DataFrame, idx: int, col: str):
     return str(val)
 
 
-def normalize_authors(authors_raw: str) -> List[Dict[str, str]]:
-    """Разбирает строку авторов в список словарей вида [{'family':..., 'initials':...}, ...]
-    Поддерживает разделители ';' и ','; ожидает формат "Фамилия, И.О." для каждого автора.
-    Если не удается распарсить инициалы — поле 'initials' будет пустой строкой.
-    """
-    if not authors_raw:
-        return []
-    authors_raw = authors_raw.strip()
-    # Разделяем по ';' если он присутствует, иначе по ' and ' или просто по ',' (с осторожностью)
-    if ';' in authors_raw:
-        parts = [a.strip() for a in authors_raw.split(';') if a.strip()]
-    else:
-        # Проверим есть ли несколько авторов через ' and ' / '&' / ','
-        if ' and ' in authors_raw.lower() or '&' in authors_raw:
-            temp = authors_raw.replace('&', ' and ')
-            parts = [a.strip() for a in temp.split(' and ') if a.strip()]
-        else:
-            # Попытка разделить по ', ' но это может разбить фамилию и инициалы
-            # Если есть ровно одна запятая — это "Фамилия, И.О." одного автора
-            comma_count = authors_raw.count(',')
-            if comma_count <= 1 and ',' in authors_raw:
-                parts = [authors_raw]
-            elif ',' in authors_raw and comma_count > 1:
-                # Считаем, что авторы разделены через ';' обычно. На случай 'Фамилия1, И.О., Фамилия2, И.О.'
-                # разбиваем по шаблону: каждые 2 фрагмента образуют автора
-                fragments = [f.strip() for f in authors_raw.split(',') if f.strip()]
-                parts = []
-                for i in range(0, len(fragments), 2):
-                    fam = fragments[i]
-                    init = fragments[i+1] if i+1 < len(fragments) else ''
-                    parts.append(f"{fam}, {init}" if init else fam)
-            else:
-                parts = [authors_raw]
-
-    authors = []
-    for p in parts:
-        if ',' in p:
-            fam, init = [x.strip() for x in p.split(',', 1)]
-            # Нормализация точек и пробелов в инициалах
-            init = init.replace('.', '. ').replace('  ', ' ').strip()
-            authors.append({'family': fam, 'initials': init})
-        else:
-            # если нет запятой — полное имя в поле family
-            authors.append({'family': p, 'initials': ''})
-    return authors
-
-
-def build_200_field(title: str, authors: List[Dict[str, str]]) -> str:
-    """Формирует содержимое поля 200 из заголовка и списка авторов."""
-    title = title or ''
-    if not authors:
-        return f'^A{title}^F\n'
-    # Для каждого автора берем инициалы + фамилию (если есть инициалы — ставим перед фамилией)
-    authors_strs = []
-    for a in authors:
-        if a['initials']:
-            authors_strs.append(f"{a['initials']}{a['family']}")
-        else:
-            authors_strs.append(a['family'])
-    authors_joined = ', '.join(authors_strs)
-    return f'^A{title}^F{authors_joined}\n'
-
-
-def build_700_701_fields(authors: List[Dict[str, str]]) -> (str, str):
-    """Возвращает строки для поля 700 (основной автор) и 701 (повторяющиеся поля для соавторов)."""
-    if not authors:
-        return '\n', '\n'
-    main = authors[0]
-    if main['initials']:
-        field_700 = f"#700: ^A{main['family']}^B{main['initials']}\n"
-    else:
-        field_700 = f"#700: ^A{main['family']}\n"
-
-    field_701 = ''
-    for co in authors[1:]:
-        if co['initials']:
-            field_701 += f"#701: ^A{co['family']}^B{co['initials']}\n"
-        else:
-            field_701 += f"#701: ^A{co['family']}\n"
-
-    if not field_701:
-        field_701 = '\n'
-
-    return field_700, field_701
-
-
-# -------------------- Основная логика --------------------
+# Основная логика
 
 def main(src: str = path_to_the_source_file, tgt: str = path_to_the_target_file):
     # Проверки путей
@@ -169,21 +84,29 @@ def main(src: str = path_to_the_source_file, tgt: str = path_to_the_target_file)
         field_700 = '#700: '
         field_701 = ''
         field_900 = '#900: '
+        field_903 = '#903: '
+        field_910 = '#910: ^AE^C'
+        field_933 = '#933: '
+        field_934 = '#934: '
+        field_935 = '#935: '
+        field_936 = '#936: '
         field_951 = '#951: '
         field_963 = '#963: '
         field_965 = ''
 
         # Текущая дата для формирования шифров
         today = datetime.date.today()
+        actual_data = str(today)
+        actual_data = actual_data.replace('-', '')
 
-        # DOI
+        # DOI (19)
         doi = safe_get(df, idx, 'DOI')
         if doi:
             field_19 += doi + '\n'
         else:
             field_19 = '\n'
 
-        # Язык
+        # Язык (101)
         lang = safe_get(df, idx, 'lang')
         if lang and 'англий' in lang.lower():
             argument_101 = 'eng'
@@ -192,21 +115,119 @@ def main(src: str = path_to_the_source_file, tgt: str = path_to_the_target_file)
         field_101 += argument_101 + '\n'
 
         # Авторы
-        authors_raw = safe_get(df, idx, 'author') or ''
-        authors = normalize_authors(authors_raw)
+        authors_str = safe_get(df, idx, 'author')
+        if ';' in authors_str:
+            authors_list = authors_str.split(' ; ')
+            number_of_authors = len(authors_list)
+            if number_of_authors == 2:
+                author_1 = authors_list[0]
+                author_2 = authors_list[1]
+                author_1_xx = author_1.split(', ')
+                author_2_xx = author_2.split(', ')
+                author_1_abb = str(author_1_xx[1])
+                author_1_abb = author_1_abb.replace('.', '. ')
+                author_2_abb = str(author_2_xx[1])
+                author_2_abb = author_2_abb.replace('.', '. ')
+            elif number_of_authors == 3:
+                author_1 = authors_list[0]
+                author_2 = authors_list[1]
+                author_3 = authors_list[2]
+                author_1_xx = author_1.split(', ')
+                author_2_xx = author_2.split(', ')
+                author_3_xx = author_3.split(', ')
+                author_1_abb = str(author_1_xx[1])
+                author_1_abb = author_1_abb.replace('.', '. ')
+                author_2_abb = str(author_2_xx[1])
+                author_2_abb = author_2_abb.replace('.', '. ')
+                author_3_abb = str(author_3_xx[1])
+                author_3_abb = author_3_abb.replace('.', '. ')
+            elif number_of_authors == 4:
+                author_1 = authors_list[0]
+                author_2 = authors_list[1]
+                author_3 = authors_list[2]
+                author_4 = authors_list[3]
+                author_1_xx = author_1.split(', ')
+                author_2_xx = author_2.split(', ')
+                author_3_xx = author_3.split(', ')
+                author_4_xx = author_4.split(', ')
+                author_1_abb = str(author_1_xx[1])
+                author_1_abb = author_1_abb.replace('.', '. ')
+                author_2_abb = str(author_2_xx[1])
+                author_2_abb = author_2_abb.replace('.', '. ')
+                author_3_abb = str(author_3_xx[1])
+                author_3_abb = author_3_abb.replace('.', '. ')
+                author_4_abb = str(author_4_xx[1])
+                author_4_abb = author_4_abb.replace('.', '. ')
+            elif number_of_authors == 5:
+                author_1 = authors_list[0]
+                author_2 = authors_list[1]
+                author_3 = authors_list[2]
+                author_4 = authors_list[3]
+                author_5 = authors_list[4]
+                author_1_xx = author_1.split(', ')
+                author_2_xx = author_2.split(', ')
+                author_3_xx = author_3.split(', ')
+                author_4_xx = author_4.split(', ')
+                author_5_xx = author_5.split(', ')
+                author_1_abb = str(author_1_xx[1])
+                author_1_abb = author_1_abb.replace('.', '. ')
+                author_2_abb = str(author_2_xx[1])
+                author_2_abb = author_2_abb.replace('.', '. ')
+                author_3_abb = str(author_3_xx[1])
+                author_3_abb = author_3_abb.replace('.', '. ')
+                author_4_abb = str(author_4_xx[1])
+                author_4_abb = author_4_abb.replace('.', '. ')
+                author_5_abb = str(author_5_xx[1])
+                author_5_abb = author_5_abb.replace('.', '. ')
+        elif (',' in authors_str):
+            author_1_xx = authors_str.split(', ')
+            author_1_abb = str(author_1_xx[1])
+            author_1_abb = author_1_abb.replace('.', '. ')
+        else:
+            author_1_xx = authors_str
+            author_1_abb = ''
 
-        # Заголовок
-        title = safe_get(df, idx, 'title') or ''
-        field_200 += build_200_field(title, authors)
+        # Заголовок (200)
+        title = safe_get(df, idx, 'title')
+        if ';' in authors_str:
+            if number_of_authors == 2:
+                argument_200 = ('^A' + title + '^F' + author_1_abb
+                                + author_1_xx[0] + ', '
+                                + author_2_abb + author_2_xx[0])
+            elif number_of_authors == 3:
+                argument_200 = ('^A' + title + '^F' + author_1_abb
+                                + author_1_xx[0] + ', '
+                                + author_2_abb + author_2_xx[0]
+                                + ', ' + author_3_abb + author_3_xx[0])
+            elif number_of_authors == 4:
+                argument_200 = ('^A' + title + '^F' + author_1_abb
+                                + author_1_xx[0] + ', '
+                                + author_2_abb + author_2_xx[0]
+                                + ', ' + author_3_abb + author_3_xx[0]
+                                + ', ' + author_4_abb + author_4_xx[0])
+            elif number_of_authors == 5:
+                argument_200 = ('^A' + title + '^F' + author_1_abb
+                                + author_1_xx[0] + ', '
+                                + author_2_abb + author_2_xx[0]
+                                + ', ' + author_3_abb + author_3_xx[0]
+                                + ', ' + author_4_abb + author_4_xx[0]
+                                + ', ' + author_5_abb + author_5_xx[0])
+        # Варианты для единственного автора
+        elif (not ';' in authors_str) and (',' in authors_str): # При наличии аббревиатуры
+            argument_200 = ('^A' + title + '^F' + author_1_abb
+                            + author_1_xx[0])
+        else:                                                   # При отсутствии аббревиатуры
+            argument_200 = ('^A' + title + '^F' + authors_str)
+        field_200 = field_200 + argument_200 + '\n'
 
-        # Аннотация
+        # Аннотация (331)
         abstract = safe_get(df, idx, 'abstract')
         if abstract:
             field_331 += abstract + '\n'
         else:
             field_331 = '\n'
 
-        # Рубрика
+        # Рубрики (690)
         categories = []
         category = safe_get(df, idx, 'category') or ''
         if category and category.strip():
@@ -218,30 +239,66 @@ def main(src: str = path_to_the_source_file, tgt: str = path_to_the_target_file)
                         field_690 += '#690: ^L' + cat + '\n'
                     else:
                         field_690 += '\n'
-                        wrong_categories.append(authors_raw + '\n')
+                        wrong_categories.append(author_1 + '\n')
             else:
                 checker = cat_check(category)
                 if checker == 1:
                     field_690 += '#690: ^L' + category + '\n'
                 else:
                     field_690 += '\n'
-                    wrong_categories.append(authors_raw + '\n')
+                    wrong_categories.append(author_1 + '\n')
         else:
             category = ''
 
-        # Поля 700/701
-        field_700_built, field_701_built = build_700_701_fields(authors)
-        field_700 = field_700_built
-        field_701 = field_701_built
+        # Основной автор (700)
+        argument_700 = ''
+        if (not ';' in authors_str) and (',' in authors_str):                          # Если нет соавторов, но есть аббревиатура
+            argument_700 = '^A' + author_1_xx[0] + '^B' + author_1_xx[1] + '\n'
+        elif (not ';' in authors_str) and (not ',' in authors_str):                     # Если нет соавторов и аббревиатуры
+            argument_700 = '^A' + authors_str + '\n'
+        field_700 = field_700 + argument_700
 
-        # URL -> 951
+        # Соавтор (701)
+        if ';' in authors_str:
+            if number_of_authors == 2:
+                argument_701 = ('^A' + author_2_xx[0] + '^B'
+                                + author_2_xx[1] + '\n')
+                field_701 = (field_701 + argument_701 + '\n')
+            elif number_of_authors == 3:
+                argument_701 = ('^A' + author_2_xx[0] + '^B'
+                                + author_2_xx[1] + '\n'
+                                + '#701: ^A' + author_3_xx[0] + '^B'
+                                + author_3_xx[1] + '\n' )
+                field_701 = (field_701 + argument_701 + '\n')
+            elif number_of_authors == 4:
+                argument_701 = ('^A' + author_2_xx[0] + '^B'
+                                + author_2_xx[1] + '\n'
+                                + '#701: ^A' + author_3_xx[0] + '^B'
+                                + author_3_xx[1] + '\n'
+                                + '#701: ^A' + author_4_xx[0] + '^B'
+                                + author_4_xx[1] + '\n')
+                field_701 = (field_701 + argument_701 + '\n')
+            elif number_of_authors == 5:
+                argument_701 = ('^A' + author_2_xx[0] + '^B'
+                                + author_2_xx[1] + '\n'
+                                + '#701: ^A' + author_3_xx[0] + '^B'
+                                + author_3_xx[1] + '\n'
+                                + '#701: ^A' + author_4_xx[0] + '^B'
+                                + author_4_xx[1] + '\n'
+                                + '#701: ^A' + author_5_xx[0] + '^B'
+                                + author_5_xx[1] + '\n')
+                field_701 = (field_701 + argument_701 + '\n')
+        else:
+            field_701 = '\n'
+
+        # URL (951)
         url = safe_get(df, idx, 'URL')
         if url:
             field_951 += '^I' + url + '^H05\n'
         else:
             field_951 = '\n'
 
-        # ISSN и учредитель -> 963
+        # ISSN и учредитель (963)
         issn = safe_get(df, idx, 'ISSN') or ''
         founder = safe_get(df, idx, 'founder') or ''
         if issn or founder:
@@ -328,9 +385,19 @@ def main(src: str = path_to_the_source_file, tgt: str = path_to_the_target_file)
         document = document.replace('\n\n', '\n')
         documents.append(document)
 
+    # Формирование данных о номере журнала
+    field_903 += cipher + '\n'
+    field_910 += actual_data + '\n'
+    field_933 += serial + '\n'
+    field_934 += year + '\n'
+    field_935 += str(volume) + '\n'
+    field_936 += issue + '\n'
+    journal_issue = (FIELD_181 + FIELD_182 + field_203 + field_903 + FIELD_905_J + field_910 + FIELD_920_J + field_933 + field_934 + field_935 + field_936 + FIELD_999 + SEPARATOR)
+
     # Запись в файл
     try:
         with open(tgt, 'w', encoding='utf-8') as fout:
+            fout.writelines(journal_issue)
             fout.writelines(documents)
         logger.info('Файл успешно создан: %s', tgt)
     except Exception as e:
