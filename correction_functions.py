@@ -121,14 +121,41 @@ def delete_tag(title):
 # Замена дефиса на большое тире
 
 def change_hyphen(title):
-    title = title.replace(u"\u0020\u002D\u0020", u"\u0020\u2014\u0020")
+    title = title.replace("\u0020\u002D\u0020", "\u0020\u2014\u0020")
     return title
-
-# Замена кавычек "лапок" на кавычки "ёлочки"
 
 def change_quotation(title):
-    title = title.replace(u"\u0020\u0022", u"\u0020\u00AB")
-    title = title.replace(u"\u0022\u0020", u"\u00BB\u0020")
-    title = title.replace(u"\u201C", u"\u00AB")
-    title = title.replace(u"\u201D", u"\u00BB")
+    if not title:  # Защита от пустой строки
+        return title
+
+    # 1. Заменяем «умные» кавычки (если есть)
+    title = title.replace("\u201C", "\u00AB")  # “ → «
+    title = title.replace("\u201D", "\u00BB")  # ” → »
+
+    # 2. Заменяем сочетания с пробелом
+    while "\u0022\u0020" in title:
+        title = title.replace("\u0022\u0020", "\u00BB\u0020")  # " + пробел → » + пробел
+    while "\u0020\u0022" in title:
+        title = title.replace("\u0020\u0022", "\u0020\u00AB")  # пробел + " → пробел + «
+
+    # 3. Заменяем специальные сочетания: ", → »,,  и ": → »:
+    title = title.replace("\u0022,", "\u00BB,")  # ", → »,
+    title = title.replace("\u0022:", "\u00BB:")  # ": → »:
+
+    # 4. Обрабатываем одиночные кавычки в начале/конце строки
+    if title.startswith("\u0022"):
+        title = "\u00AB" + title[1:]  # "текст → «текст
+    if title.endswith("\u0022"):
+        title = title[:-1] + "\u00BB"  # текст" → текст»
+
+    # 5. Дополнительная проверка внутренних " перед пробелом (через разбиение)
+    parts = title.split("\u0020")
+    for i in range(1, len(parts)):  # Пропускаем первый элемент
+        if parts[i].startswith("\u0022"):
+            parts[i] = "\u00BB" + parts[i][1:]
+    title = "\u0020".join(parts)
+
     return title
+
+
+

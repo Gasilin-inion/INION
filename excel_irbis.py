@@ -37,7 +37,7 @@ wrong_categories = []
 current_dir = os.getcwd()
 path_to_the_source_file = os.path.join(current_dir, 'files_to_edit', 'table_of_articles.xlsx')
 path_to_the_target_file = os.path.join(current_dir, 'files_to_import_to_IRBIS', 'list_of_documents.txt')
-path_to_wrong_categories = os.path.join(current_dir, 'files_for_import_in_IRBIS', 'wrong_categories.txt')
+
 
 # Безопасно получить значение из DataFrame и вернуть либо строку, либо None
 
@@ -246,7 +246,7 @@ def main(src: str = path_to_the_source_file, tgt: str = path_to_the_target_file)
                     field_690 += '#690: ^L' + category + '\n'
                 else:
                     field_690 += '\n'
-                    wrong_categories.append(author_1 + '\n')
+                    wrong_categories.append(title + '\n')
         else:
             category = ''
 
@@ -404,10 +404,36 @@ def main(src: str = path_to_the_source_file, tgt: str = path_to_the_target_file)
         logger.exception('Ошибка при записи файла: %s', e)
 
     # Формирование файла ошибок в рубриках:
-    if wrong_categories != []:
-        with open(path_to_wrong_categories, 'w', encoding='utf-8') as wc:
-            wc.writelines(f'Ошибки в рубриках допущены в статьях следующих авторов:\n\n')
-            wc.writelines(wrong_categories)
+    from pathlib import Path
+
+    # Константа для шаблонного сообщения
+    HEADER = 'Ошибки в рубриках допущены в статьях следующих авторов:\n\n'
+
+    def write_wrong_categories(current_dir, wrong_categories):
+        if not wrong_categories:  # Идиоматичная проверка
+            return
+
+        # Формируем путь через pathlib (более читаемо и кросс‑платформенно)
+        path_to_wrong_categories = (
+            Path(current_dir) /
+            'files_for_import_in_IRBIS' /
+            'wrong_categories.txt'
+        )
+
+        try:
+            with open(path_to_wrong_categories, 'w', encoding='utf-8') as wc:
+                wc.write(HEADER)  # write() вместо writelines() для строки
+                # Преобразуем все элементы в строки и добавляем перевод строки
+                wc.writelines(f'{item}\n' for item in wrong_categories)
+        except FileNotFoundError:
+            print(f"Ошибка: каталог не найден: {path_to_wrong_categories.parent}")
+        except PermissionError:
+            print(f"Ошибка: нет прав на запись в {path_to_wrong_categories}")
+        except UnicodeEncodeError as e:
+            print(f"Ошибка кодировки: {e}")
+        except Exception as e:
+            print(f"Неожиданная ошибка: {e}")
+
 
 
 if __name__ == '__main__':

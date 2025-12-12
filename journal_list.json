@@ -84,6 +84,20 @@
         "type": "online"
     },
     {
+        "ISSN": "2221-1616",
+        "city": "Москва",
+        "e-library_name": "ВЕСТНИК ИНСТИТУТА СОЦИОЛОГИИ",
+        "founder": "Федеральный научно-исследовательский социологический центр РАН",
+        "journal": "Вестник Института социологии",
+        "journal_category": "A04",
+        "journal_eng": "Vestnik Instituta sociologii",
+        "journal_eng_2": "Bulletin of the Institute of Sociology",
+        "journal_keyword": "Социология",
+        "serial_number": "2221-1616-e",
+        "short_name": "ВИС",
+        "type": "online"
+    },
+    {
         "ISSN": "0201-7385",
         "city": "Москва",
         "e-library_name": "ВЕСТНИК МОСКОВСКОГО УНИВЕРСИТЕТА. СЕРИЯ 7: ФИЛОСОФИЯ",
@@ -207,6 +221,20 @@
         "journal_keyword": "Философия культуры",
         "serial_number": "2079-1100-e",
         "short_name": "МЖИК",
+        "type": "online"
+    },
+    {
+        "ISSN": "2219-5467",
+        "city": "Москва",
+        "e-library_name": "МОНИТОРИНГ ОБЩЕСТВЕННОГО МНЕНИЯ: ЭКОНОМИЧЕСКИЕ И СОЦИАЛЬНЫЕ ПЕРЕМЕНЫ",
+        "founder": "Всероссийский центр изучения общественного мнения",
+        "journal": "Мониторинг общественного мнения: экономические и социальные перемены",
+        "journal_category": "A04",
+        "journal_eng": "Monitoring of Public Opinion: Economic and Social Changes",
+        "journal_eng_2": "Monitoring of Public Opinion: Economic and Social Changes",
+        "journal_keyword": "Социология",
+        "serial_number": "2219-5467-e",
+        "short_name": "МОМ",
         "type": "online"
     },
     {
