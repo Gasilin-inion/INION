@@ -1,26 +1,22 @@
 # -*- coding: utf-8 -*-
 """
 Мультиплатформный конвертер библиографических данных из формата Excel в формат ИРБИС 64
-Ориентирован на работу с различными специальностями
 
 Автор: Gasilin Andrey
-Дата последнего обновления: 2025-10-21
+Дата последнего обновления: 13.12.25
 """
 
 import os
 import datetime
 import logging
 import pandas as pd
-from typing import List, Dict
-from check_functions import cat_check
+from typing import List
 
 # Настройка логирования
 logging.basicConfig(level=logging.INFO, format='%(levelname)s: %(message)s')
 logger = logging.getLogger(__name__)
 
-
-
-# -------------------- Параметры и шаблоны --------------------
+# Параметры и шаблоны
 FIELD_102 = '#102: RU\n'
 FIELD_181 = '#181: ^Ai\n'
 FIELD_182 = '#182: ^An\n'
@@ -37,9 +33,10 @@ wrong_categories = []
 current_dir = os.getcwd()
 path_to_the_source_file = os.path.join(current_dir, 'files_to_edit', 'table_of_articles.xlsx')
 path_to_the_target_file = os.path.join(current_dir, 'files_to_import_to_IRBIS', 'list_of_documents.txt')
+path_to_the_wrong_cat = os.path.join(current_dir, 'files_to_import_to_IRBIS', 'wrong_categories.txt')
 
 
-# Безопасно получить значение из DataFrame и вернуть либо строку, либо None
+# Получение данных из DataFrame
 
 def safe_get(df: pd.DataFrame, idx: int, col: str):
     try:
@@ -49,6 +46,13 @@ def safe_get(df: pd.DataFrame, idx: int, col: str):
     if pd.isna(val):
         return None
     return str(val)
+
+# Импорт рубрикатора, проверка корректности рубрик
+
+rubricator = pd.read_json('velvet_cat.json')
+
+def cat_check(category):
+    return rubricator['category'].str.contains(category, na=False).any()
 
 
 # Основная логика
@@ -82,7 +86,7 @@ def main(src: str = path_to_the_source_file, tgt: str = path_to_the_target_file)
         field_470 = '#470: ^0Рец. на кн.'
         field_690 = ''
         field_700 = '#700: '
-        field_701 = ''
+        field_701 = '#701: '
         field_900 = '#900: '
         field_903 = '#903: '
         field_910 = '#910: ^AE^C'
@@ -93,20 +97,21 @@ def main(src: str = path_to_the_source_file, tgt: str = path_to_the_target_file)
         field_951 = '#951: '
         field_963 = '#963: '
         field_965 = ''
+        number_of_authors = 1
 
         # Текущая дата для формирования шифров
         today = datetime.date.today()
         actual_data = str(today)
         actual_data = actual_data.replace('-', '')
 
-        # DOI (19)
+        # DOI (поле 19)
         doi = safe_get(df, idx, 'DOI')
         if doi:
             field_19 += doi + '\n'
         else:
             field_19 = '\n'
 
-        # Язык (101)
+        # Язык (поле 101)
         lang = safe_get(df, idx, 'lang')
         if lang and 'англий' in lang.lower():
             argument_101 = 'eng'
@@ -187,7 +192,7 @@ def main(src: str = path_to_the_source_file, tgt: str = path_to_the_target_file)
             author_1_xx = authors_str
             author_1_abb = ''
 
-        # Заголовок (200)
+        # Заголовок (поле 200)
         title = safe_get(df, idx, 'title')
         if ';' in authors_str:
             if number_of_authors == 2:
@@ -220,14 +225,14 @@ def main(src: str = path_to_the_source_file, tgt: str = path_to_the_target_file)
             argument_200 = ('^A' + title + '^F' + authors_str)
         field_200 = field_200 + argument_200 + '\n'
 
-        # Аннотация (331)
+        # Аннотация (поле 331)
         abstract = safe_get(df, idx, 'abstract')
         if abstract:
             field_331 += abstract + '\n'
         else:
             field_331 = '\n'
 
-        # Рубрики (690)
+        # Рубрики АИСОН (поле 690)
         categories = []
         category = safe_get(df, idx, 'category') or ''
         if category and category.strip():
@@ -235,30 +240,30 @@ def main(src: str = path_to_the_source_file, tgt: str = path_to_the_target_file)
                 categories = category.split(' ; ')
                 for cat in categories:
                     checker = cat_check(cat)
-                    if checker == 1:
+                    if checker == True:
                         field_690 += '#690: ^L' + cat + '\n'
                     else:
                         field_690 += '\n'
-                        wrong_categories.append(author_1 + '\n')
+                        wrong_categories.append(title + '\n\n')
             else:
                 checker = cat_check(category)
-                if checker == 1:
+                if checker == True:
                     field_690 += '#690: ^L' + category + '\n'
                 else:
                     field_690 += '\n'
-                    wrong_categories.append(title + '\n')
+                    wrong_categories.append(title + '\n\n')
         else:
             category = ''
-
-        # Основной автор (700)
-        argument_700 = ''
-        if (not ';' in authors_str) and (',' in authors_str):                          # Если нет соавторов, но есть аббревиатура
-            argument_700 = '^A' + author_1_xx[0] + '^B' + author_1_xx[1] + '\n'
-        elif (not ';' in authors_str) and (not ',' in authors_str):                     # Если нет соавторов и аббревиатуры
-            argument_700 = '^A' + authors_str + '\n'
+        
+        # Основной автор (поле 700)
+        if (number_of_authors >= 1) and (number_of_authors <= 3):
+            if author_1_xx[1]:                                                                  # Есть аббревиатура
+                argument_700 = '^A' + author_1_xx[0] + '^B' + author_1_xx[1] + '\n'
+            else:                                                                               # Нет аббревиатуры
+                argument_700 = '^A' + author_1 + '\n'
         field_700 = field_700 + argument_700
 
-        # Соавтор (701)
+        # Соавторы (поле 701)
         if ';' in authors_str:
             if number_of_authors == 2:
                 argument_701 = ('^A' + author_2_xx[0] + '^B'
@@ -291,14 +296,14 @@ def main(src: str = path_to_the_source_file, tgt: str = path_to_the_target_file)
         else:
             field_701 = '\n'
 
-        # URL (951)
+        # URL (поле 951)
         url = safe_get(df, idx, 'URL')
         if url:
             field_951 += '^I' + url + '^H05\n'
         else:
             field_951 = '\n'
 
-        # ISSN и учредитель (963)
+        # ISSN и учредитель (поле 963)
         issn = safe_get(df, idx, 'ISSN') or ''
         founder = safe_get(df, idx, 'founder') or ''
         if issn or founder:
@@ -311,14 +316,14 @@ def main(src: str = path_to_the_source_file, tgt: str = path_to_the_target_file)
         journal = safe_get(df, idx, 'journal') or ''
         journal_eng = safe_get(df, idx, 'journal_eng') or ''
 
-        # year, volume, issue, pages, serial
+        # Год, том, номер, диапазон страниц, шифр
         year = safe_get(df, idx, 'year') or ''
-        volume = safe_get(df, idx, 'volume')
+        volume = safe_get(df, idx, 'volume') or ''
         issue = safe_get(df, idx, 'issue') or ''
         pages = safe_get(df, idx, 'pages') or ''
         serial = safe_get(df, idx, 'serial') or ''
 
-        # Составляем 463 и шифр
+        # Основные выходные данные (поле 463)
         if volume:
             cipher = f"{serial}/{year}/{volume}/{issue}"
             argument_463 = (f"^C{journal}^J{year}^VТ. {volume}^H№ {issue}^S{pages}^X{journal_eng}^W{cipher}\n")
@@ -327,7 +332,7 @@ def main(src: str = path_to_the_source_file, tgt: str = path_to_the_target_file)
             argument_463 = (f"^C{journal}^J{year}^H{issue}^S{pages}^X{journal_eng}^W{cipher}\n")
         field_463 += argument_463
 
-        # Рецензия
+        # Рецензия (при наличии)
         review_author = safe_get(df, idx, 'review_author')
         review_marker = 1 if review_author else 0
         if review_marker:
@@ -338,7 +343,7 @@ def main(src: str = path_to_the_source_file, tgt: str = path_to_the_target_file)
         else:
             field_470 = '\n'
 
-        # Тип документа
+        # Тип документа (непосредственный/электронный)
         document_type = safe_get(df, idx, 'type') or ''
         if document_type == 'online' and not review_marker:
             argument_203 = '^AТекст^Cэлектронный\n'
@@ -352,7 +357,7 @@ def main(src: str = path_to_the_source_file, tgt: str = path_to_the_target_file)
         field_203 += argument_203
         field_900 += argument_900
 
-        # Ключевые слова -> 965
+        # Ключевые слова (поле 965)
         keywords_str = safe_get(df, idx, 'keywords')
         if keywords_str and keywords_str.strip():
             keywords = [k.strip() for k in keywords_str.split(',') if k.strip()]
@@ -361,7 +366,7 @@ def main(src: str = path_to_the_source_file, tgt: str = path_to_the_target_file)
         else:
             field_965 = '\n'
 
-        # Сборка документа по вариантам (как в оригинале)
+        # Сборка документа по вариантам
         if (review_marker == 0) and (document_type == 'online'):
             document = (field_19 + field_101 + FIELD_102 + FIELD_181 + FIELD_182
                         + field_200 + field_203 + field_331 + field_463 + field_690
@@ -371,9 +376,9 @@ def main(src: str = path_to_the_source_file, tgt: str = path_to_the_target_file)
         elif (review_marker == 1) and (document_type == 'online'):
             document = (field_19 + field_101 + FIELD_102 + FIELD_181 + FIELD_182
                         + field_200 + field_203 + field_331 + field_463 + field_470
-                        + field_690 + field_700 + field_701 + field_900 + FIELD_905
-                        + FIELD_919 + FIELD_920 + field_951 + field_963 + field_965
-                        + FIELD_999 + SEPARATOR)
+                        + field_690 + field_700 + field_701 + field_900 + FIELD_905 
+                        + FIELD_919 + FIELD_920 + field_951 + field_963
+                        + field_965 + FIELD_999 + SEPARATOR)
         else:
             document = (field_19 + field_101 + FIELD_102 + FIELD_181 + FIELD_182
                         + field_200 + field_203 + field_331 + field_463 + field_690
@@ -390,9 +395,16 @@ def main(src: str = path_to_the_source_file, tgt: str = path_to_the_target_file)
     field_910 += actual_data + '\n'
     field_933 += serial + '\n'
     field_934 += year + '\n'
-    field_935 += str(volume) + '\n'
     field_936 += issue + '\n'
-    journal_issue = (FIELD_181 + FIELD_182 + field_203 + field_903 + FIELD_905_J + field_910 + FIELD_920_J + field_933 + field_934 + field_935 + field_936 + FIELD_999 + SEPARATOR)
+    if volume:
+        field_935 += str(volume) + '\n'
+        journal_issue = (FIELD_181 + FIELD_182 + field_203 + field_903 + FIELD_905_J
+                    + field_910 + FIELD_920_J + field_933 + field_934 + field_935
+                    + field_936 + FIELD_999 + SEPARATOR)
+    else:
+        journal_issue = (FIELD_181 + FIELD_182 + field_203 + field_903 + FIELD_905_J
+                    + field_910 + FIELD_920_J + field_933 + field_934
+                    + field_936 + FIELD_999 + SEPARATOR)
 
     # Запись в файл
     try:
@@ -403,38 +415,15 @@ def main(src: str = path_to_the_source_file, tgt: str = path_to_the_target_file)
     except Exception as e:
         logger.exception('Ошибка при записи файла: %s', e)
 
-    # Формирование файла ошибок в рубриках:
-    from pathlib import Path
-
-    # Константа для шаблонного сообщения
-    HEADER = 'Ошибки в рубриках допущены в статьях следующих авторов:\n\n'
-
-    def write_wrong_categories(current_dir, wrong_categories):
-        if not wrong_categories:  # Идиоматичная проверка
-            return
-
-        # Формируем путь через pathlib (более читаемо и кросс‑платформенно)
-        path_to_wrong_categories = (
-            Path(current_dir) /
-            'files_for_import_in_IRBIS' /
-            'wrong_categories.txt'
-        )
-
+    # Файл ошибок в рубриках (при наличии)
+    if (wrong_categories != []):
         try:
-            with open(path_to_wrong_categories, 'w', encoding='utf-8') as wc:
-                wc.write(HEADER)  # write() вместо writelines() для строки
-                # Преобразуем все элементы в строки и добавляем перевод строки
-                wc.writelines(f'{item}\n' for item in wrong_categories)
-        except FileNotFoundError:
-            print(f"Ошибка: каталог не найден: {path_to_wrong_categories.parent}")
-        except PermissionError:
-            print(f"Ошибка: нет прав на запись в {path_to_wrong_categories}")
-        except UnicodeEncodeError as e:
-            print(f"Ошибка кодировки: {e}")
+            with open(path_to_the_wrong_cat, 'w', encoding='utf-8') as wrong:
+                wrong.writelines(f'Внимание! В статьях со следующеми заголовками допущены ошибки в рубриках:\n\n')
+                wrong.writelines(wrong_categories)
+                wrong.writelines(f'Исправьте ошибки в исходном файле и запустите конвертер заново\n')
+            logger.info('Файл успешно создан: %s', path_to_the_wrong_cat)
         except Exception as e:
-            print(f"Неожиданная ошибка: {e}")
-
-
-
+            logger.exception('Ошибка при записи файла: %s', e)
 if __name__ == '__main__':
     main()

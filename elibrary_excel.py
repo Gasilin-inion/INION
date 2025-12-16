@@ -4,7 +4,7 @@
 @author: Andrey Gasilin
 
 Created: 03.01.2025
-Last updated: 29.11.2025
+Last updated: 12.12.2025
 
 """
 # Импорт внешних модулей
@@ -105,6 +105,7 @@ DOI_end_pattern = '">'
 
 title = ''
 journal = ''
+journal_ru = ''
 journal_eng = ''
 ISSN = ''
 founder = ''
@@ -197,21 +198,12 @@ for idx in range(number_of_files):
     # Данные журнала
     rows_count = len(journal_list_df)
     for row in range(rows_count):
-        elibrary_name = journal_list_df.at[row, 'e-library_name']
-        if '/' in elibrary_name:
-            splitter_position = elibrary_name.find('/')
-            rus_elibrary_name = elibrary_name[:splitter_position]
-            eng_elibrary_name = elibrary_name[(splitter_position + 1):]
-        else:
-            rus_elibrary_name = elibrary_name
-            eng_elibrary_name = elibrary_name
-        if ((journal == rus_elibrary_name) or
-            (journal == eng_elibrary_name) or
+        if ((journal == journal_list_df.at[row, 'e-library_name']) or
             (journal == journal_list_df.at[row, 'journal']) or
             (journal == journal_list_df.at[row, 'journal_eng']) or
             (journal == journal_list_df.at[row, 'journal_eng_2'])):
-            journal = journal_list_df.at[row, 'journal']
-            journal_eng = journal_list_df.at[row, 'journal_eng']
+            journal_ru = journal_list_df.at[row, 'journal']
+            journal_eng = journal_list_df.at[row, 'journal_eng']            
             founder = journal_list_df.at[row, 'founder']
             ISSN = journal_list_df.at[row, 'ISSN']
             journal_keyword = journal_list_df.at[row, 'journal_keyword']
@@ -221,8 +213,8 @@ for idx in range(number_of_files):
             serial_number = journal_list_df.at[row, 'serial_number']
             journal_category = journal_list_df.at[row, 'journal_category']
             break
-    if journal == journal_eng:
-        journal_eng = ''
+        if journal_ru == journal_eng:
+            journal_eng = ''
 
     # Год
     year = ''
@@ -288,6 +280,8 @@ for idx in range(number_of_files):
                     keys_from_abstract = keys_from_text(abstract)
                     if abstract:
                         optimized_abstract = abstract_optimization_with_gpt(abstract) or ''
+                        if 'Я не могу обсуждать эту тему' in optimized_abstract:
+                            optimized_abstract = ''
     elif (journal_category == 'A04') or (journal_category == 'A13'):
         for string in strings:
             if abstract_pattern in string:
@@ -357,7 +351,7 @@ for idx in range(number_of_files):
     author_list.append(authors_str)
     category_list.append(journal_category)
     title_list.append(title)
-    journal_list.append(journal)
+    journal_list.append(journal_ru)
     journal_eng_list.append(journal_eng)
     year_list.append(year)
     volume_list.append(volume)

@@ -4,15 +4,19 @@
 import requests
 import json
 
-# Читаем IAM-токен
+# Чтение IAM-токена
 try:
-    with open('iam.txt', 'r', encoding='UTF-8') as f:
-        IAM_TOKEN = f.readline().strip()
+    with open('purple.json', 'r', encoding='UTF-8') as file:
+        data = json.load(file)
+        IAM_TOKEN = data.get("key")
+        if not IAM_TOKEN:
+            raise ValueError("В файле purple.json отсутствует ключ 'key'.")
 except FileNotFoundError:
-    raise Exception("Файл iam.txt не найден. Положите его рядом с ya_GPT.py")
+    raise Exception("Файл purple.json не найден. Положите его в каталог с программой.")
+except json.JSONDecodeError:
+    raise Exception("Файл purple.json содержит некорректный JSON.")
 
 FOLDER_ID = "b1g33b2g1d47guea42co"
-
 
 def abstract_optimization_with_gpt(input_text: str) -> str:
     """
@@ -38,9 +42,9 @@ def abstract_optimization_with_gpt(input_text: str) -> str:
                 "role": "system",
                 "text": (
                     "Преобразуй текст в аннотацию для научной статьи. "
-                    "Одно-два предложения, максимум 100 слов, на русском. "
-                    "Используй безличные конструкции. "
-                    "Не пиши 'статья рассматривает', а 'в работе рассматриваются'."
+                    "Объем текста - не больше 200 знаков с пробелами. "
+                    "Отдавай предпочтение безличным вводным конструкциям, вроде 'Анализ', 'Сравнительный анализ', 'Обзор', 'Авторская концепция', 'Исследование посвящено' ."
+                    "Если в исходном тексте речь идёт об авторе, то начинай аннотацию с 'Автор рассматривает', 'Автор анализирует', 'Автор сравнивает', 'Автор исследует'."
                 )
             },
             {

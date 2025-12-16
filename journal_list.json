@@ -3,7 +3,7 @@
         "ISSN": "2587-7534",
         "city": "Орел",
         "e-library_name": "ABYSS (ВОПРОСЫ ФИЛОСОФИИ, ПОЛИТОЛОГИИ И СОЦИАЛЬНОЙ АНТРОПОЛОГИИ)",
-        "founder": "ФГБОУ ВО «Орловский государственный университет имени И.С. Тургенева»",
+        "founder": "ФГБОУ ВО \"Орловский государственный университет имени И.С. Тургенева\"",
         "journal": "Abyss (Вопросы философии, политологии и социальной  антропологии)",
         "journal_category": "A02",
         "journal_eng": "Abyss (Studies in Philosophy, Political science and Social anthropology)",
@@ -157,7 +157,7 @@
         "ISSN": "2500-0225",
         "city": "Астрахань",
         "e-library_name": "ЖУРНАЛ ФРОНТИРНЫХ ИССЛЕДОВАНИЙ",
-        "founder": "ООО НПО \"Генезис.Фронтир.Наука",
+        "founder": "ООО НПО \"Генезис.Фронтир.Наука\"",
         "journal": "Журнал фронтирных исследований",
         "journal_category": "A02",
         "journal_eng": "Journal of Frontier Studies",
@@ -166,6 +166,20 @@
         "serial_number": "2500-0225-e",
         "short_name": "ЖФИ",
         "type": "online"
+    },
+    {
+        "ISSN": "2073-3313",
+        "city": "Москва",
+        "e-library_name": "ЗАКОН И ПРАВО",
+        "founder": "ЮНИТИ-ДАНА",
+        "journal": "Закон и право",
+        "journal_category": "A10",
+        "journal_eng": "Law and legislation",
+        "journal_eng_2": "Law and legislation",
+        "journal_keyword": "Право",
+        "serial_number": "0726 76 34",
+        "short_name": "Закон_и_право",
+        "type": "offline"
     },
     {
         "ISSN": "0207-6918",
@@ -269,7 +283,7 @@
         "ISSN": "1681-4339",
         "city": "Волгоград",
         "e-library_name": "ФИЛОСОФИЯ И ОБЩЕСТВО",
-        "founder": "ООО \"Издательство \"Учитель\"",
+        "founder": "ООО Издательство \"Учитель\"",
         "journal": "Философия и общество",
         "journal_category": "A02",
         "journal_eng": "Philosophy and Society",
@@ -336,6 +350,20 @@
         "type": "offline"
     },
     {
+        "ISSN": "2409-8744",
+        "city": "Москва",
+        "e-library_name": "ЧЕЛОВЕК И КУЛЬТУРА",
+        "founder": "ООО \"НБ-Медиа\"",
+        "journal": "Человек и культура",
+        "journal_category": "A13",
+        "journal_eng": "Man and culture",
+        "journal_eng_2": "MAN AND CULTURE",
+        "journal_keyword": "Культурология",
+        "serial_number": "2409-8744-e",
+        "short_name": "M&C",
+        "type": "online"
+    },
+    {
         "ISSN": "2410-0935",
         "city": "Новосибирск",
         "e-library_name": "ЧЕЛОВЕК.RU",
@@ -375,20 +403,6 @@
         "journal_keyword": "Этика",
         "serial_number": "1596 76 33",
         "short_name": "Этическая_мысль",
-        "type": "offline"
-    },
-    {
-        "ISSN": "2073-3313",
-        "city": "Москва",
-        "e-library_name": "ЗАКОН И ПРАВО",
-        "founder": "ЮНИТИ-ДАНА",
-        "journal": "Закон и право",
-        "journal_category": "A10",
-        "journal_eng": "Law and legislation",
-        "journal_eng_2": "Law and legislation",
-        "journal_keyword": "Право",
-        "serial_number": "0726 76 34",
-        "short_name": "Закон_и_право",
         "type": "offline"
     }
 ]

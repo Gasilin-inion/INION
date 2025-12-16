@@ -6,24 +6,24 @@
 
 <meta name="robots" content="noarchive, nofollow">
 
-<meta name="description" content='Мухина С.Х.
-Galactica Media: Journal of Media Studies, 2025'>
-<title>Интерфейс как практика себя, или Каково это - быть живым в эпоху киборгов?</title>
+<meta name="description" content='Захарова Е.Е.
+Человек и культура, 2020'>
+<title>Культурная среда города как часть общественного пространства</title>
 
 <meta property="og:image" content="https://elibrary.ru/images/orgs_access.png" />
-<meta property="og:title" content='Интерфейс как практика себя, или Каково это - быть живым в эпоху киборгов?' />
+<meta property="og:title" content='Культурная среда города как часть общественного пространства' />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://elibrary.ru/beaewe" />
+<meta property="og:url" content="https://elibrary.ru/ykqrxq" />
 <meta property="og:site_name" content="eLIBRARY.RU"/>
-<meta property="og:description" content='Мухина С.Х.
-Galactica Media: Journal of Media Studies, 2025' />
+<meta property="og:description" content='Захарова Е.Е.
+Человек и культура, 2020' />
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
 
-<link rel="canonical" href="https://elibrary.ru/item.asp?id=82333838"/>
+<link rel="canonical" href="https://elibrary.ru/item.asp?id=42578119"/>
 
 
-<meta name="doi" content="10.46539/gmd.v7i2.648">
+<meta name="doi" content="10.25136/2409-8744.2020.1.32171">
 
 
 <script type="text/javascript" src="/jquery.min.js"></script>
@@ -97,7 +97,7 @@ function email_article(){
 		alerts("Не указан адрес электронной почты!");}
 	else{
 		$.fancybox({
-			href : '/email_article.asp?id=82333838&email='+document.forms["results"].email.value+'&rand=' + Math.random(),
+			href : '/email_article.asp?id=42578119&email='+document.forms["results"].email.value+'&rand=' + Math.random(),
 			title : '',
 			padding : 20,     
 			width : 400,
@@ -121,7 +121,7 @@ function show_itemrefs(){
 function edit_notes(){
 
   $.fancybox({
-    href : '/item_notes_add.asp?itemid=82333838&rand=' + Math.random(),
+    href : '/item_notes_add.asp?itemid=42578119&rand=' + Math.random(),
     title : '',
 	  padding : 20,     
 	  width : 520,
@@ -139,7 +139,7 @@ function edit_notes(){
 function add_link(link){
 
   $.fancybox({
-      href : '/itemlink_add.asp?itemid=82333838&linkid='+link+'&rand=' + Math.random(),
+      href : '/itemlink_add.asp?itemid=42578119&linkid='+link+'&rand=' + Math.random(),
       title : '',
 	  padding : 20,     
 	  width : 520,
@@ -155,32 +155,59 @@ function add_link(link){
 }
 function reply_comments(commentid){
 
-  alerts("Для того, чтобы участвовать в обсуждении публикаций, необходимо зарегистрироваться в системе Science Index в качестве автора научных публикаций!");
-  document.getElementById("win_login").className = "expanded";
-  document.getElementById("img_login").src = w_up.src;
-  document.forms["login"].login.focus();
+  $.fancybox({
+      href : '/itemcomments_add.asp?itemid=42578119&reply=1&commentid=' + commentid + '&rand=' + Math.random(),
+      title : '',
+	  padding : 20,     
+	  width : 520,
+	  height : 300,
+	  overlayOpacity : 0.3,	
+	  overlayColor : '#000',
+	  speedIn : 500,
+	  hideOnOverlayClick : false,
+	  enableEscapeButton : true,
+	  type : 'iframe'
+    });
 
 }
 function edit_comments(commentid){
 
-  alerts("Для того, чтобы участвовать в обсуждении публикаций, необходимо зарегистрироваться в системе Science Index в качестве автора научных публикаций!");
-  document.getElementById("win_login").className = "expanded";
-  document.getElementById("img_login").src = w_up.src;
-  document.forms["login"].login.focus();
+  $.fancybox({
+      href : '/itemcomments_add.asp?itemid=42578119&reply=0&commentid=' + commentid + '&rand=' + Math.random(),
+      title : '',
+	  padding : 20,     
+	  width : 520,
+	  height : 300,
+	  overlayOpacity : 0.3,	
+	  overlayColor : '#000',
+	  speedIn : 500,
+	  hideOnOverlayClick : false,
+	  enableEscapeButton : true,
+	  type : 'iframe'
+    });
 
 }
 function new_comments(){
 
-  alerts("Для того, чтобы участвовать в обсуждении публикаций, необходимо зарегистрироваться в системе Science Index в качестве автора научных публикаций!");
-  document.getElementById("win_login").className = "expanded";
-  document.getElementById("img_login").src = w_up.src;
-  document.forms["login"].login.focus();
+  $.fancybox({
+      href : '/itemcomments_add.asp?itemid=42578119&reply=0&commentid=&rand=' + Math.random(),
+      title : '',
+	  padding : 20,     
+	  width : 520,
+	  height : 300,
+	  overlayOpacity : 0.3,	
+	  overlayColor : '#000',
+	  speedIn : 500,
+	  hideOnOverlayClick : false,
+	  enableEscapeButton : true,
+	  type : 'iframe'
+    });
 
 }
 
 function translate_abstract(){
   $.fancybox({
-      href : '/translate_abstract.asp?id=82333838&rand=' + Math.random(),
+      href : '/translate_abstract.asp?id=42578119&rand=' + Math.random(),
       title : '',
 	  padding : 20,     
 	  width : 640,
@@ -313,7 +340,7 @@ function itembox_adds(){
 }
 function for_reference(){
     $.fancybox({
-      href : 'for_reference.asp?id=82333838&rand=' + Math.random(),
+      href : 'for_reference.asp?id=42578119&rand=' + Math.random(),
       title : '',
 			padding : 20,     
 			width : 480,
@@ -361,7 +388,7 @@ function qr_code(dd){
 <tr><td><div style="height:10px;"></div></td></tr>
 <tr><td width=150 align=center valign=top>
 
-<a href="title_about_new.asp?id=70829"><img src="/itemfiles/0/8/2/3/3/3/8/3/1//2.jpg" border=0 width=120 title='О журнале "Galactica Media: Journal of Media Studies"' style="behavior: url(/pie/PIE.htc); box-shadow: 1px 2px 3px #888;" hspace=0></a>
+<a href="title_about_new.asp?id=52971"><img src="/titles/52971/ca.png" border=0 width=120 title='О журнале "Человек и культура"' style="behavior: url(/pie/PIE.htc); box-shadow: 1px 2px 3px #888;" hspace=0></a>
 
 </td></tr>
 
@@ -525,6 +552,8 @@ function search_enter(event){
 <tr valign=top><td align=center><img src="/images/bl_kv.gif" border=0 width=7 height=7 hspace=3 class="shadow"></td><td align=left><a href="/rubrics.asp">РУБРИКАТОР</a></td></tr>
 <tr valign=top><td align=center><img src="/images/bl_kv.gif" border=0 width=7 height=7 hspace=3 class="shadow"></td><td align=left><a href="/region_compare.asp">РЕГИОНЫ</a></td></tr>
 
+<tr valign=top><td align=center><img src="/images/bl_kv.gif" border=0 width=7 height=7 hspace=3 class="shadow"></td><td align=left><a href="/refs.asp">ССЫЛКИ</a></td></tr>
+
 <tr valign=top><td align=center><img src="/images/bl_kv.gif" border=0 width=7 height=7 hspace=3 class="shadow"></td><td align=left><a href="/itembox.asp">ПОДБОРКИ</a></td></tr>
 
 
@@ -574,19 +603,25 @@ function end_session(){
 <tr><td width=100% align=left valign=top>
 &nbsp;<font color=#000000>Имя пользователя:</font></td></tr>
 <tr><td width=100% align=center valign=top>
-<font color=#00008f><a href="author_info.asp?isold=1" title="Персональная карточка пользователя">sitnikov69&nbsp;</a></font></td></tr>
+<font color=#00008f><a href="author_info.asp?isold=1" title="Персональная карточка пользователя">Gasilin&nbsp;</a></font></td></tr>
+
+<tr><td width=100% align=left valign=top>
+<div style="height: 2px;"></div>
+&nbsp;<font color=#000000>SPIN-код автора:</font></td></tr>
+<tr><td width=100% align=center valign=top>
+<font color=#00008f><a href="author_info.asp?isold=1" title="Персональная карточка автора">2001-2738</a></font></td></tr>
 
 <tr><td width=100% align=left valign=top>
 <div style="height: 2px;"></div>
 &nbsp;<font color=#000000>IP-адрес компьютера:</font></td></tr>
 <tr><td width=100% align=center valign=top>
-<font color=#00008f>89.175.21.183</font></td></tr>
+<font color=#00008f>95.24.63.120</font></td></tr>
 <tr><td width=100% align=left valign=top>
 <div style="height: 2px;"></div>
 &nbsp;<font color=#000000>Название организации:</font></td></tr>
 <tr><td width=100% align=center valign=top>
 
-<font color=#00008f>не определена</font></td></tr>
+<font color=#00008f><a href="/org_about.asp?orgsid=11">Институт научной информации по общественным наукам РАН</a></font></td></tr>
 
 
 <tr><td width=100% align=left valign=top>
@@ -594,12 +629,12 @@ function end_session(){
 &nbsp;<font color=#000000>Начало работы:</font></td></tr>
 
 <tr><td width=100% align=center valign=top>
-<font color=#00008f>11.12.2025 11:42</font></td></tr>
+<font color=#00008f>13.12.2025 20:49</font></td></tr>
 <tr><td width=100% align=left valign=top>
 <div style="height: 2px;"></div>
 &nbsp;<font color=#000000>Время работы:</font></td></tr>
 <tr><td width=100% align=center valign=top>
-<font color=#00008f>00:02</font></td></tr>
+<font color=#00008f>00:31</font></td></tr>
 </table>
 
 <div style="height: 10px;"></div>
@@ -775,8 +810,8 @@ function end_session(){
 
 <table width=200 cellspacing=0 cellpadding=3 border=0>
 <tr><td width=12% align=right valign=top>
-<a href="https://t.me/elibrary_ru_official/66" target=_blank><img src="/images/telegram.svg" width=24 height=24 border=0></a></td>
-<td width=88% align=left valign=middle><font color=#00008f><a href="https://t.me/elibrary_ru_official/66" target=_blank>Есть ли будущее у научных журналов?</a></font>
+<a href="https://t.me/elibrary_ru_official/9" target=_blank><img src="/images/telegram.svg" width=24 height=24 border=0></a></td>
+<td width=88% align=left valign=middle><font color=#00008f><a href="https://t.me/elibrary_ru_official/9" target=_blank>Официальный Telegram-канал Научной электронной библиотеки eLIBRARY.RU</a></font>
 </td></tr>
 </table>
 </td></tr>
@@ -790,12 +825,12 @@ function end_session(){
 <table width=550 cellspacing=0 cellpadding=3 border=0>
 <tr valign=middle>
 <td width=2%></td>
-<td width=25% align=left>eLIBRARY ID:&nbsp;<font color=#00008f><a href="item.asp?id=82333838" rel="nofollow">82333838</a></font></td>
-<td width=15% align=center>EDN:&nbsp;<font color=#00008f><a href="/beaewe" rel="nofollow">BEAEWE</a></font></td>
+<td width=25% align=left>eLIBRARY ID:&nbsp;<font color=#00008f><a href="item.asp?id=42578119" rel="nofollow">42578119</a></font></td>
+<td width=15% align=center>EDN:&nbsp;<font color=#00008f><a href="/ykqrxq" rel="nofollow">YKQRXQ</a></font></td>
 
-<td align=left width=5%><a href='javascript:qr_code("beaewe")' rel="nofollow"><img src="/images/qr_code2.png" width=16 height=16 class='help' title="Сгенерировать QR код для ссылки на этот документ"></a></td>
+<td align=left width=5%><a href='javascript:qr_code("ykqrxq")' rel="nofollow"><img src="/images/qr_code2.png" width=16 height=16 class='help' title="Сгенерировать QR код для ссылки на этот документ"></a></td>
 
-<td width=53% align=right>DOI:&nbsp;<font color=#00008f><a href=https://doi.org/10.46539/gmd.v7i2.648 target=_blank rel=nofollow>10.46539/gmd.v7i2.648</a></font></td>
+<td width=53% align=right>DOI:&nbsp;<font color=#00008f><a href=https://doi.org/10.25136/2409-8744.2020.1.32171 target=_blank rel=nofollow>10.25136/2409-8744.2020.1.32171</a></font></td>
 </tr>
 
 </table>
@@ -804,20 +839,21 @@ function end_session(){
 <table width=550 cellspacing=0 cellpadding=3 border=0 style="table-layout: fixed;">
 <tr align=center valign=middle>
 <td width=4></td>
-<td width=534><span style="font-size: 9pt; color: #000000; overflow-wrap: break-word;"><b><p class='bigtext' style='color: #F26C4F;'>ИНТЕРФЕЙС КАК ПРАКТИКА СЕБЯ, ИЛИ КАКОВО ЭТО - БЫТЬ ЖИВЫМ В ЭПОХУ КИБОРГОВ?</p></b></span></td></tr>
+<td width=534><span style="font-size: 9pt; color: #000000; overflow-wrap: break-word;"><b><p class='bigtext' style='color: #F26C4F;'>КУЛЬТУРНАЯ СРЕДА ГОРОДА КАК ЧАСТЬ ОБЩЕСТВЕННОГО ПРОСТРАНСТВА</p></b></span></td></tr>
 </table>
 
 <div style="width:580px; margin:0; border:0; padding:0; ">
 
 
 <div style="height:10px;"></div>
+
 <table width=550 border=0 cellspacing=0 cellpadding=3>
 <tr>
 <td width=24></td>
 <td width=514 valign=middle align=center>
-<div style='display: inline-block; white-space: nowrap'><span class='help pointer' title='<b><font color=#F26C4F>Мухина София Хамидовна</font></b><br>Санкт-Петербургский государственный университет<br><a href="author_profile.asp?authorid=1074369" target=_blank>Профиль автора в SCIENCE INDEX</a><br><a href="author_items.asp?authorid=1074369" target=_blank>Список публикаций в РИНЦ</a>'><b><font color=#00008f>МУХИНА&nbsp;С.Х.</font></b></span><img src='/images/about_author.gif' border=0 hspace=2 height=10 width=9 class='help pointer' title='ORCID:&nbsp;<a href="https://orcid.org/0009-0006-7852-739X" target=_blank>0009-0006-7852-739X</a>&nbsp;&nbsp; '><font color=#000000><sup>1</sup></font></div>
+<div style='display: inline-block; white-space: nowrap'><span class='help pointer' title='<b><font color=#F26C4F>Захарова Елена Евгеньевна</font></b><br>Институт информационных технологий в образовании<br><a href="author_profile.asp?authorid=877999" target=_blank>Профиль автора в SCIENCE INDEX</a><br><a href="author_items.asp?authorid=877999" target=_blank>Список публикаций в РИНЦ</a>'><b><font color=#00008f>ЗАХАРОВА&nbsp;Е.Е.</font></b></span><font color=#000000><sup>1</sup></font></div>
 <div style="height:10px;"></div>
-<font color=#000000><sup>1</sup></font>&nbsp;<span class='help1 pointer' title='<b><font color=#F26C4F>Санкт-Петербургский государственный университет</font></b> (Санкт-Петербург)<br><a href="org_profile.asp?id=190" target=_blank>Профиль организации в SCIENCE INDEX</a><br><a href="org_items.asp?orgsid=190" target=_blank>Список публикаций в РИНЦ</a>'><font color=#00008f>Санкт-Петербургский государственный университет</font></span>, Санкт-Петербург, Россия<br>
+<font color=#000000><sup>1</sup></font>&nbsp;<span class='help1 pointer' title='<b><font color=#F26C4F>Российская академия народного хозяйства и государственной службы при Президенте РФ</font></b> (Москва)<br><a href="org_profile.asp?id=7082" target=_blank>Профиль организации в SCIENCE INDEX</a><br><a href="org_items.asp?orgsid=7082" target=_blank>Список публикаций в РИНЦ</a>'><font color=#00008f>Российская академия народного хозяйства и государственной службы при Президенте Российской Федерации</font></span><br>
 </td></tr>
 </table>
 
@@ -837,11 +873,11 @@ function end_session(){
 <tr><td></td></tr>
 
 <tr><td width=574 align=center valign=middle>
-Том:&nbsp;<font color=#00008f>7</font><span style="margin-left:20px;"></span>Номер:&nbsp;<a href="contents.asp?id=82333831&selid=82333838" title="Содержание выпуска">2</a>
-<span style="margin-left:20px;"></span>Год:&nbsp;<font color=#00008f>2025</font>
+<span style="margin-left:20px;"></span>Номер:&nbsp;<a href="contents.asp?id=42578113&selid=42578119" title="Содержание выпуска">1</a>
+<span style="margin-left:20px;"></span>Год:&nbsp;<font color=#00008f>2020</font>
 
-<span style="margin-left:20px;"></span><div style='display: inline-block; white-space: nowrap'>Страницы:&nbsp;<font color=#00008f>146-165</font></div>
-<div style="height:5px;"></div><span style="margin-left:20px;"></span>Поступила&nbsp;в&nbsp;редакцию:&nbsp;<font color=#00008f>13.03.2025</font><span style="margin-left:20px;"></span>Принята&nbsp;к&nbsp;печати:&nbsp;<font color=#00008f>28.03.2025</font>
+<span style="margin-left:20px;"></span><div style='display: inline-block; white-space: nowrap'>Страницы:&nbsp;<font color=#00008f>73-80</font></div>
+
 
 
 </td></tr>
@@ -859,10 +895,10 @@ function end_session(){
 <tr><td width=34>&nbsp;</td><td width=504 align=left valign=middle>
 <div style="height:3px;"></div>
 
-<a href="contents.asp?id=82333831" title="Содержание выпусков этого журнала">GALACTICA MEDIA: JOURNAL OF MEDIA STUDIES</a>
-<br>Учредители:&nbsp;ООО НПО "Генезис.Фронтир.Наука"
+<a href="contents.asp?id=42578113" title="Содержание выпусков этого журнала">ЧЕЛОВЕК И КУЛЬТУРА</a>
+<br>Учредители:&nbsp;Даниленко Василий Иванович
 <br>
-eISSN:&nbsp;<font color=#00008f>2658-7734</font><span style="margin-left:20px;"></span>
+eISSN:&nbsp;<font color=#00008f>2409-8744</font><span style="margin-left:20px;"></span>
 
 </td></tr></table>
 
@@ -874,13 +910,26 @@ eISSN:&nbsp;<font color=#00008f>2658-7734</font><span style="margin-left:20px;">
 <font color=#000000>КЛЮЧЕВЫЕ СЛОВА:</font></td></tr>
 <tr><td width=34>&nbsp;</td><td width=504 align=left valign=middle>
 <div style="height:3px;"></div>
-<a href="keyword_items.asp?id=2485083">ИНТЕРФЕЙС</a>, 
-<a href="keyword_items.asp?id=4935277">ПРАКТИКИ СЕБЯ</a>, 
-<a href="keyword_items.asp?id=5531677">ТЕХНИКИ СЕБЯ</a>, 
-<a href="keyword_items.asp?id=27786047">ТЕХНОЛОГИИ ПОВСЕДНЕВНОСТИ</a>, 
-<a href="keyword_items.asp?id=2939694">ФОРМЫ ЖИЗНИ</a>, 
-<a href="keyword_items.asp?id=17971369">ИНТЕРНЕТ ЖИВОТНЫХ</a>, 
-<a href="keyword_items.asp?id=27786048">ЦИФРОВЫЕ ЭКОЛОГИЧЕСКИЕ ПРОЕКТЫ</a>
+<a href="keyword_items.asp?id=2526411">КУЛЬТУРНАЯ СРЕДА</a>, 
+<a href="keyword_items.asp?id=6139290">ОБЩЕСТВЕННОЕ ПРОСТРАНСТВО</a>, 
+<a href="keyword_items.asp?id=5743838">ГОРОДСКАЯ КУЛЬТУРНАЯ СРЕДА</a>, 
+<a href="keyword_items.asp?id=2473314">ГОРОДСКАЯ КУЛЬТУРА</a>, 
+<a href="keyword_items.asp?id=2502986">КУЛЬТУРНОЕ ПРОСТРАНСТВО</a>, 
+<a href="keyword_items.asp?id=2942315">МЕСТНОЕ СООБЩЕСТВО</a>, 
+<a href="keyword_items.asp?id=4637041">КУЛЬТУРНОЕ СООБЩЕСТВО</a>, 
+<a href="keyword_items.asp?id=2949246">ИДЕАЛЬНЫЙ ГОРОД</a>, 
+<a href="keyword_items.asp?id=5000014">КУЛЬТУРНЫЙ ОБЪЕКТ</a>, 
+<a href="keyword_items.asp?id=2283221">ГОРОДСКАЯ СРЕДА</a>, 
+<a href="keyword_items.asp?id=2559609">CULTURAL COMMUNITY</a>, 
+<a href="keyword_items.asp?id=1104859">LOCAL COMMUNITY</a>, 
+<a href="keyword_items.asp?id=18454756">CULTURAL SPASE</a>, 
+<a href="keyword_items.asp?id=2659400">URBAN CULTURE</a>, 
+<a href="keyword_items.asp?id=9689905">URBAN CULTURAL ENVIRONMENT</a>, 
+<a href="keyword_items.asp?id=308188">PUBLIC SPACE</a>, 
+<a href="keyword_items.asp?id=2908348">CULTURAL ENVIRONMENT</a>, 
+<a href="keyword_items.asp?id=6809148">PERFECT CITY</a>, 
+<a href="keyword_items.asp?id=8936880">CULTURAL OBJECT</a>, 
+<a href="keyword_items.asp?id=211594">URBAN AREA</a>
 </td></tr>
 </table>
 
@@ -890,17 +939,7 @@ eISSN:&nbsp;<font color=#00008f>2658-7734</font><span style="margin-left:20px;">
 <font color=#000000>АННОТАЦИЯ:</font></td></tr>
 <tr><td width=34>&nbsp;</td><td width=504 align=left valign=middle>
 
-<div id="abstract1" style="width:504px; border:0; margin:0; padding:0; text-align:left;"><p align=justify style='margin-top: 0.3em;'>В центре внимания статьи оказываются современные цифровые технологии и связанные с ними жизненные практики, ключевым аспектом которых выступает идея доступности и эффективности как в повседневном опыте человека, так и в качестве определенной экзистенциальной установки, задачи, практики себя. Речь идет об особых, новых формах искусства существования, подчиненных идее прагматики и, как правило, не берущих в расчет чувственный и экзистенциальный опыт жизни отдельного человека. Влияние технологий на жизнь современного человека тотально. В этом контексте вновь возникает и обретает свою актуальность сформулированный ранее, на заре становления техногенной эпохи вопрос: как возможно в мире абсолютного технологического могущества быть собой и оставаться живым? В поисках ответа на этот вопрос автор обращается к проектам, в которых пользовательский интерфейс мыслится как практика, заново открывающая в контексте современных цифровых технологий экзистенциальное измерение жизни человека и расширяющая представление о формах жизни в целом...</div>
-
-<div id="abstract2" style="width:504px; border:0; margin:0; padding:0; text-align:left; display:none;"><p align=justify style='margin-top: 0.3em;'>В центре внимания статьи оказываются современные цифровые технологии и связанные с ними жизненные практики, ключевым аспектом которых выступает идея доступности и эффективности как в повседневном опыте человека, так и в качестве определенной экзистенциальной установки, задачи, практики себя. Речь идет об особых, новых формах искусства существования, подчиненных идее прагматики и, как правило, не берущих в расчет чувственный и экзистенциальный опыт жизни отдельного человека. Влияние технологий на жизнь современного человека тотально. В этом контексте вновь возникает и обретает свою актуальность сформулированный ранее, на заре становления техногенной эпохи вопрос: как возможно в мире абсолютного технологического могущества быть собой и оставаться живым? В поисках ответа на этот вопрос автор обращается к проектам, в которых пользовательский интерфейс мыслится как практика, заново открывающая в контексте современных цифровых технологий экзистенциальное измерение жизни человека и расширяющая представление о формах жизни в целом. Отдельное внимание сосредоточено на проекте современного исследователя Александра Пшера, автора идеи «интернета животных» - виртуального экологического проекта, стремительно развивающегося благодаря мобильным технологиям и, в частности, интерфейсам мобильных устройств. Интерфейс здесь выступает актуальной жизненной практикой, пронизывающей различные сферы жизни, развивающимся пространством осуществления цифровых экологических и художественных проектов и, благодаря этому, техник себя.</div>
-<script type="text/javascript">
-function show_abstract() {
-  $('#abstract1').hide();
-  $('#abstract2').show();
-  $('#abstract_expand').hide();
-}
-</script>
-<div id="abstract_expand" style="margin:10px 0 0 5px; text-align:left;"><span class="win_expandable" style="color:#F26C4F; margin:0 5px 0 0;" onClick="show_abstract()">▼</span><a href="javascript:show_abstract()">Показать полностью</a></div>
+<div id="abstract1" style="width:504px; border:0; margin:0; padding:0; text-align:left;"><p align=justify style='margin-top: 0.3em;'>На современном этапе общественного развития человеческая жизнь все теснее связывается с городами. Города занимают важное место в истории, особенно в истории культуры. Города и культуры являются неотделимыми друг от друга понятиями, и они настолько тесно связаны, что составляют весь объект познания. Именно эти измерения придают городской среде индивидуальность и адаптируемость. Без пространства у людей не будет больше возможности для коммуникации, обмена опытом и проведения социальных акций. То есть условия существования новой культурной среды связаны не только с изменениями в художественных дизайнерских решениях и / или эстетических тенденциях. На основе метода сравнительного анализа автор статьи проводит исследование понятия «культурная среда города» и ее влияния на организацию общественного пространства. Новизна проводимого исследования заключается в том, что от организации городской культурной среды, от того, насколько эффективно решаются вопросы ее устройства, зависят перспективы развития городов в их социальном и экономическом единстве, где центральное место отводится степени удовлетворенности населения качеством жизни. Культурная среда влияет на потребительскую культуру и интересы сообщества и способствует развитию городского пространства.</div>
 
 </td></tr></table>
 
@@ -919,19 +958,19 @@ function show_abstract() {
 <td width=52%><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Учитывается или нет данная публикация в РИНЦ. Некоторые категории публикаций (например, статьи в реферативных, научно-популярных, информационных журналах) могут быть размещены на платформе elibrary.ru, но не учитываются в РИНЦ. Также не учитываются статьи в журналах и сборниках, исключенных из РИНЦ за нарушение научной и издательской этики.</p>'>&nbsp;&nbsp;Входит в РИНЦ:&nbsp;<font color=#00008f>да</font></td>
 
 
-<td width=48%><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Число цитирований данной публикации из публикаций, входящих в РИНЦ. Сама публикация при этом может и не входить в РИНЦ. Для сборников статей и книг, индексируемых в РИНЦ на уровне отдельных глав, указывается суммарное число цитирований всех статей (глав) и сборника (книги) в целом.</p>'>&nbsp;&nbsp;Цитирований в РИНЦ:&nbsp;<a href="cit_items.asp?id=82333838" title="Список публикаций в РИНЦ, цитирующих данную">1</a></td></tr>
+<td width=48%><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Число цитирований данной публикации из публикаций, входящих в РИНЦ. Сама публикация при этом может и не входить в РИНЦ. Для сборников статей и книг, индексируемых в РИНЦ на уровне отдельных глав, указывается суммарное число цитирований всех статей (глав) и сборника (книги) в целом.</p>'>&nbsp;&nbsp;Цитирований в РИНЦ:&nbsp;<a href="cit_items.asp?id=42578119" title="Список публикаций в РИНЦ, цитирующих данную">17</a></td></tr>
 
 <tr align=left valign=bottom>
-<td><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Входит или нет данная публикация в ядро РИНЦ. Ядро РИНЦ включает все статьи, опубликованные в журналах, индексируемых в базах данных Web of Science Core Collection, Scopus или Russian Science Citation Index (RSCI).</p>'>&nbsp;&nbsp;Входит в ядро РИНЦ:&nbsp;<font color=#00008f><span id="InCoreRisc">да</span></font></td>
+<td><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Входит или нет данная публикация в ядро РИНЦ. Ядро РИНЦ включает все статьи, опубликованные в журналах, индексируемых в базах данных Web of Science Core Collection, Scopus или Russian Science Citation Index (RSCI).</p>'>&nbsp;&nbsp;Входит в ядро РИНЦ:&nbsp;<font color=#00008f><span id="InCoreRisc">нет</span></font></td>
 
-<td><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Число цитирований данной публикации из публикаций, входящих в ядро РИНЦ. Сама публикация при этом может не входить в ядро РИНЦ. Для сборников статей и книг, индексируемых в РИНЦ на уровне отдельных глав, указывается суммарное число цитирований всех статей (глав) и сборника (книги) в целом.</p>'>&nbsp;&nbsp;Цитирований из ядра РИНЦ:&nbsp;<font color=#00008f>1</font></td>
+<td><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Число цитирований данной публикации из публикаций, входящих в ядро РИНЦ. Сама публикация при этом может не входить в ядро РИНЦ. Для сборников статей и книг, индексируемых в РИНЦ на уровне отдельных глав, указывается суммарное число цитирований всех статей (глав) и сборника (книги) в целом.</p>'>&nbsp;&nbsp;Цитирований из ядра РИНЦ:&nbsp;<font color=#00008f>2</font></td>
 </tr>
 
 
 <tr align=left valign=bottom>
 <td><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Наличие в РИНЦ информации о рецензировании данной публикации.</p>'>&nbsp;&nbsp;Рецензии:&nbsp;<font color=#00008f>есть</font></td>
 
-<td><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Процентиль журнала в рейтинге Science Index за 2023 год.</p>'>&nbsp;&nbsp;Процентиль журнала в рейтинге SI:&nbsp;<font color=#00008f>32</font></td>
+<td><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Процентиль журнала в рейтинге Science Index за 2023 год.</p>'>&nbsp;&nbsp;Процентиль журнала в рейтинге SI:&nbsp;<font color=#00008f>53</font></td>
 
 </tr>
 
@@ -950,7 +989,7 @@ function show_abstract() {
 <table width=100% border=0 cellspacing=0 cellpadding=3>
 
 <tr align=left valign=top>
-<td width=27%><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Основная рубрика публикации в соответствии с рубрикатором OECD. Авторы, зарегистрированные в системе Science Index, имеют возможность уточнять тематические рубрики своих публикаций.</p>'>&nbsp;&nbsp;Рубрика&nbsp;OECD:&nbsp;</td><td width=73%><font color=#00008f><span id="rubric_oecd">нет</span></font></td>
+<td width=27%><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Основная рубрика публикации в соответствии с рубрикатором OECD. Авторы, зарегистрированные в системе Science Index, имеют возможность уточнять тематические рубрики своих публикаций.</p>'>&nbsp;&nbsp;Рубрика&nbsp;OECD:&nbsp;</td><td width=73%><font color=#00008f><span id="rubric_oecd">Other social sciences</span></font></td>
 </tr>
 </table>
 
@@ -995,16 +1034,16 @@ function show_abstract() {
 <table width=100% border=0 cellspacing=0 cellpadding=3>
 <tr align=left valign=bottom>
 
-<td width=30%><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Число просмотров страницы с описанием и аннотацией публикации посетителями elibrary.ru. Учитываются все просмотры, в том числе сделанные незарегистрированными пользователями. Повторные просмотры одним и тем же пользователем не учитываются. Зависит от года издания и появления публикации на сайте. В скобках указано число зарегистрированных пользователей, просматривавших данную страницу.</p>'>&nbsp;&nbsp;Просмотров:&nbsp;<font color=#00008f>9 (7)</font></td>
+<td width=30%><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Число просмотров страницы с описанием и аннотацией публикации посетителями elibrary.ru. Учитываются все просмотры, в том числе сделанные незарегистрированными пользователями. Повторные просмотры одним и тем же пользователем не учитываются. Зависит от года издания и появления публикации на сайте. В скобках указано число зарегистрированных пользователей, просматривавших данную страницу.</p>'>&nbsp;&nbsp;Просмотров:&nbsp;<font color=#00008f>58 (38)</font></td>
 
-<td width=35%><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Число загрузок полного текста публикации посетителями elibrary.ru. Если полный текст публикации отсутствует на elibrary.ru, показатель не рассчитывается. Повторные загрузки одним и тем же пользователем не учитываются. Зависит от года издания и появления публикации на сайте, а также от режима доступа к полному тексту (открытый или по подписке). В скобках указано число уникальных авторов, загрузивших данную публикацию.</p>'>&nbsp;&nbsp;Загрузок:&nbsp;<font color=#00008f>3 (3)</font></td>
+<td width=35%><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Число загрузок полного текста публикации посетителями elibrary.ru. Если полный текст публикации отсутствует на elibrary.ru, показатель не рассчитывается. Повторные загрузки одним и тем же пользователем не учитываются. Зависит от года издания и появления публикации на сайте, а также от режима доступа к полному тексту (открытый или по подписке). В скобках указано число уникальных авторов, загрузивших данную публикацию.</p>'>&nbsp;&nbsp;Загрузок:&nbsp;<font color=#00008f>25 (8)</font></td>
 
-<td width=35%><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Число персональных подборок пользователей elibrary.ru, которые включают данную публикацию.</p>'>&nbsp;&nbsp;Включено в подборки:&nbsp;<font color=#00008f>28</font></td>
+<td width=35%><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Число персональных подборок пользователей elibrary.ru, которые включают данную публикацию.</p>'>&nbsp;&nbsp;Включено в подборки:&nbsp;<font color=#00008f>96</font></td>
 </tr>
 
 <tr align=left valign=bottom>
 
-<td width=30%><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Число оценок публикации, сделанных учеными, зарегистрированными в системе Science Index. Для просмотра распределения оценок щелкните мышью на этом числе.</p>'>&nbsp;&nbsp;Всего оценок:&nbsp;<font color=#00008f><span id="score_count">5</span></font></td>
+<td width=30%><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Число оценок публикации, сделанных учеными, зарегистрированными в системе Science Index. Для просмотра распределения оценок щелкните мышью на этом числе.</p>'>&nbsp;&nbsp;Всего оценок:&nbsp;<font color=#00008f><span id="score_count">0</span></font></td>
 
 <td width=35%><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Средняя оценка публикации учеными, зарегистрированными в системе Science Index. Значение соответствует следующим уровням оценки публикации:</p><br><table width=100% cellspacing=0 cellpadding=3 border=0>
 <tr><td width=15% align=center valign=top>
@@ -1033,7 +1072,7 @@ function show_abstract() {
 </td>
 <td align=left valign=top><div>не научная, нарушающая научную этику или очень слабая публикация (должна быть исключена из РИНЦ)</div></td></tr>
 
-</table>'>&nbsp;&nbsp;Средняя оценка:&nbsp;<font color=#00008f><span id="avg_score">5</span></font>
+</table>'>&nbsp;&nbsp;Средняя оценка:&nbsp;<font color=#00008f><span id="avg_score"></span></font>
 </td>
 
 <td width=35%><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Число отзывов о публикации, сделанных учеными, зарегистрированными в системе Science Index. Для просмотра всех отзывов щелкните мышью на этом числе.</p>'>&nbsp;&nbsp;Всего отзывов:&nbsp;<font color=#00008f><span id="comment_count">0</span></font></td>
@@ -1041,81 +1080,185 @@ function show_abstract() {
 
 
 
-</td></tr></table>
+<SCRIPT LANGUAGE="JavaScript">
+function item_all_comments(){
+  $.fancybox({
+      href : '/item_all_comments.asp?itemid=42578119&rand=' + Math.random(),
+      title : '',
+	  padding : 20,     
+	  width : 520,
+	  height : 350,
+	  overlayOpacity : 0.3,	
+	  overlayColor : '#000',
+	  speedIn : 500,
+	  hideOnOverlayClick : false,
+	  enableEscapeButton : true,
+	  type : 'iframe'
+    });
+}
+function item_all_scores(){
+  $.fancybox({
+      href : '/item_all_scores.asp?itemid=42578119&rand=' + Math.random(),
+      title : '',
+	  padding : 20,     
+	  width : 400,
+	  height : 270,
+	  overlayOpacity : 0.3,	
+	  overlayColor : '#000',
+	  speedIn : 500,
+	  hideOnOverlayClick : false,
+	  enableEscapeButton : true,
+	  type : 'iframe'
+    });
+}
+</script>
 
 
-<div style="height:10px;"></div>
-<table width=550 border=0 cellspacing=0 cellpadding=3>
-<tr><td colspan=2 align=left>
-<font color=#000000>ИНФОРМАЦИЯ О ФИНАНСОВОЙ ПОДДЕРЖКЕ:</font></td></tr>
-<tr><td width=34>&nbsp;</td><td width=504 align=left valign=middle>
 
-<div style="height:3px;"></div>
-<p>Исследование выполнено при финансовой поддержке Российского научного фонда (РНФ) в рамках научного проекта № 23-78-10046 «Интерфейс как среда жизни: факторы интеграции», реализуемого в СПбГУ.
-<div style="height:5px;"></div>
+<SCRIPT LANGUAGE="JavaScript">
 
-</td></tr></table>
+function item_score_comments(){
+  $.fancybox({
+		href : '/item_score_comments.asp?itemid=42578119&rand=' + Math.random(),
+		title : '',
+		padding : 20,     
+		width : 520,
+		height : 280,
+		overlayOpacity : 0.3,	
+		overlayColor : '#000',
+		speedIn : 500,
+		hideOnOverlayClick : false,
+		enableEscapeButton : true,
+		type : 'iframe'
+	});
+}
+function change_score(score){
+  if ($('#score').val()==score){
+    $.post('update_item_score.asp', 'itemid=42578119&score=0&rand=' + Math.random(), function() {
+      $('#score').val(0); 
+	  $('.sc_0').css({color:"#c0c0c0"});
+      $.post('item_score_count.asp', 'itemid=42578119&rand=' + Math.random(), function(data){
+        var s = data.split('|');
+		if(s[0]>0){
+          $('#score_count').html('<a href="javascript:item_all_scores()" title="Посмотреть распределение оценок">'+s[0]+'</a>');}
+		else{
+          $('#score_count').html('0');}
+        $('#avg_score').html(s[1]);
+      });
+    });
+  }
+  else {
+    $.post('update_item_score.asp', 'itemid=42578119&score=' + score + '&rand=' + Math.random(), function() {
+      $('#score').val(score); 
+	  $('.sc_0').css({color:"#c0c0c0"});
+	  $('.sc_'+score).css({color:"#F26C4F"});
+      $.post('item_score_count.asp', 'itemid=42578119&rand=' + Math.random(), function(data){
+        var s = data.split('|');
+		if(s[0]>0){
+          $('#score_count').html('<a href="javascript:item_all_scores()" title="Посмотреть распределение оценок">'+s[0]+'</a>');}
+		else{
+          $('#score_count').html('0');}
+        $('#avg_score').html(s[1]);
+      });
+    });
+  } 
+}
+</script>
 
+<table width=100% border=0 cellspacing=0 cellpadding=3>
+<tr>
+<td align=left valign=top width=40%><div style="height:8px"></div><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Оцените данную публикацию - Ваша экспертная оценка будет полезна другим читателям библиотеки. Для оценки публикации необходимо щелкнуть мышью на звездочке, соответствующей выбранному уровню:</p><br><table width=100% cellspacing=0 cellpadding=3 border=0>
+<tr><td width=30% align=left valign=top>
+<span style="font-size: 18pt; color: #F26C4F; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+<span style="font-size: 18pt; color: #F26C4F; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+<span style="font-size: 18pt; color: #F26C4F; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+<span style="font-size: 18pt; color: #F26C4F; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+<span style="font-size: 18pt; color: #F26C4F; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+</td>
+<td width=70% align=left valign=top><div>публикация международного уровня (на уровне требований Web of Science Core Collection)</div>
+</td></tr>
 
-<table width=100% border=0 cellspacing=1 cellpadding=2 style="table-layout:fixed; word-wrap:break-word; overflow:hidden">
+<tr><td align=left valign=top>
+<span style="font-size: 18pt; color: #F26C4F; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+<span style="font-size: 18pt; color: #F26C4F; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+<span style="font-size: 18pt; color: #F26C4F; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+<span style="font-size: 18pt; color: #F26C4F; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+<span style="font-size: 18pt; color: #C0C0C0; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+</td>
+<td align=left valign=top><div>публикация высокого уровня (достаточного для учета при защите докторской диссертации, достойна включения в ядро РИНЦ)</div></td></tr>
 
-<tr bgcolor=#f5f5f5><td width=6% align=right valign=top nowrap><font color=#000000>1.&nbsp;</font></td>
-<td width=89% align=justify valign=top><font color=#000000>
-<span style="line-height:1.0;">ИНТЕРФЕЙС КАК СРЕДА ЖИЗНИ: ФАКТОРЫ ИНТЕГРАЦИИ</span><br><i>Очеретяный К.А.</i><br>НИР: грант&nbsp;№&nbsp;23-78-10046. Российский научный фонд. 2023. &nbsp;<font color=#F26C4F>EDN:</font>&nbsp;<a href="https://elibrary.ru/uaydxh" target=_blank rel="nofollow">UAYDXH</a>
-</font></td><td align=center valign=top width=5%><div style="height:5px;"></div><a href="item.asp?id=80593789" title="Перейти на описание гранта" class="help1" target=_blank><img src="/images/go_url.png" height=15 width=15 border=0></a></td>
-</tr>
+<tr><td align=left valign=top>
+<span style="font-size: 18pt; color: #F26C4F; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+<span style="font-size: 18pt; color: #F26C4F; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+<span style="font-size: 18pt; color: #F26C4F; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+<span style="font-size: 18pt; color: #C0C0C0; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+<span style="font-size: 18pt; color: #C0C0C0; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+</td>
+<td align=left valign=top><div>публикация среднего уровня (достаточного для учета при защите кандидатской диссертации)</div></td></tr>
+
+<tr><td align=left valign=top>
+<span style="font-size: 18pt; color: #F26C4F; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+<span style="font-size: 18pt; color: #F26C4F; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+<span style="font-size: 18pt; color: #C0C0C0; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+<span style="font-size: 18pt; color: #C0C0C0; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+<span style="font-size: 18pt; color: #C0C0C0; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+</td>
+<td align=left valign=top><div>публикация начального уровня (как правило, подготовленная студентами, аспирантами, молодыми учеными, при этом уровень достаточен для ее включения в РИНЦ)</div></td></tr>
+
+<tr><td align=left valign=top>
+<span style="font-size: 18pt; color: #F26C4F; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+<span style="font-size: 18pt; color: #C0C0C0; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+<span style="font-size: 18pt; color: #C0C0C0; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+<span style="font-size: 18pt; color: #C0C0C0; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+<span style="font-size: 18pt; color: #C0C0C0; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+</td>
+<td align=left valign=top><div>не научная, нарушающая научную этику или очень слабая публикация (должна быть исключена из РИНЦ)</div></td></tr>
 
 </table>
+<p>Нажатие на другую звездочку будет переключать оценку. Если Вы не хотите оценивать данную публикацию, нужно оставить все звездочки серыми (если перед этим оценка была уже проставлена, нужно еще раз кликнуть на звездочке, соответствующей оценке). Оценивать публикации могут ученые, зарегистрированные в системе Science Index, за исключением авторов оцениваемой публикации.</p><p>Вы можете также добавить свой отзыв о данной публикации с аргументацией проставленной оценки и рекомендациями для других читателей.</p>'>&nbsp;&nbsp;Ваша оценка данной публикации:&nbsp;<font color=#00008f></font></td>
+
+<td nowrap align=left valign=top width=25%>
+<span id="score_1" class="asterbig sc_0 sc_1 sc_2 sc_3 sc_4 sc_5" onClick="change_score('1')">*</span>
+<span id="score_2" class="asterbig sc_0 sc_2 sc_3 sc_4 sc_5" onClick="change_score('2')">*</span>
+<span id="score_3" class="asterbig sc_0 sc_3 sc_4 sc_5" onClick="change_score('3')">*</span>
+<span id="score_4" class="asterbig sc_0 sc_4 sc_5" onClick="change_score('4')">*</span>
+<span id="score_5" class="asterbig sc_0 sc_5" onClick="change_score('5')">*</span>
+</td>
+<td width=18% align=left valign=top><div style="height:8px"></div><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Если Вы прочитали данную публикацию, Вы можете помочь другим посетителям библиотеки, оставив свой отзыв с комментариями и рекомендациями для других читателей. Ваш отзыв будет доступен для всех ученых, зарегистрированных в системе Science Index. Чтобы оставить отзыв о данной публикации, щелкните мышью на иконке. Вы можете в любой момент изменить или удалить свой отзыв.</p>'>&nbsp;&nbsp;Ваш отзыв:&nbsp;</td>
+<td width=17% align=left valign=top><img id="comment_score" src="/images/comments-g.png" width=14 height=14 border=0 style="margin:8px 0 0 0; cursor: pointer;" title="Добавить отзыв о данной публикации" onClick="item_score_comments()"></td>
+</tr>
+</table>
+
+<input type="hidden" name="score" id="score" value="0">
+
+
+
+</td></tr></table>
+
 
 <div style="height:10px;"></div>
-
 <table width=550 border=0 cellspacing=0 cellpadding=3>
 <tr><td colspan=2 align=left>
 <font color=#000000>ОПИСАНИЕ НА АНГЛИЙСКОМ ЯЗЫКЕ:</font></td></tr>
 <tr><td width=34>&nbsp;</td><td width=504 align=center valign=middle>
 <div style="height:5px;"></div>
-<font color=#F26C4F>INTERFACE AS A PRACTICE OF THE SELF, OR WHAT DOES IT MEAN TO BE ALIVE IN THE AGE OF CYBORGS?</font>
+<font color=#F26C4F>CITY’S CULTURAL ENVIRONMENT AS A PART OF PUBLIC SPACE</font>
 
 <div style="height:5px;"></div>
-<div style='display: inline-block; white-space: nowrap'><span class='help pointer' title='<b><font color=#F26C4F>Мухина София Хамидовна</font></b><br>Санкт-Петербургский государственный университет<br><a href="author_profile.asp?authorid=1074369" target=_blank>Профиль автора в SCIENCE INDEX</a><br><a href="author_items.asp?authorid=1074369" target=_blank>Список публикаций в РИНЦ</a>'><font color=#00008f>MUKHINA&nbsp;S.KH.</font></span><img src='/images/about_author.gif' border=0 hspace=2 height=10 width=9 class='help pointer' title='ORCID:&nbsp;<a href="https://orcid.org/0009-0006-7852-739X" target=_blank>0009-0006-7852-739X</a>&nbsp;&nbsp; '><font color=#000000><sup>1</sup></font></div>
+<div style='display: inline-block; white-space: nowrap'><span class='help pointer' title='<b><font color=#F26C4F>Захарова Елена Евгеньевна</font></b><br>Институт информационных технологий в образовании<br><a href="author_profile.asp?authorid=877999" target=_blank>Профиль автора в SCIENCE INDEX</a><br><a href="author_items.asp?authorid=877999" target=_blank>Список публикаций в РИНЦ</a>'><font color=#00008f>Zakharova E.E.</font></span></div>
 <br>
 
-<div style="height:5px;"></div>
-<font color=#000000><sup>1</sup></font>&nbsp;<span class='help1 pointer' title='<b><font color=#F26C4F>Санкт-Петербургский государственный университет</font></b> (Санкт-Петербург)<br><a href="org_profile.asp?id=190" target=_blank>Профиль организации в SCIENCE INDEX</a><br><a href="org_items.asp?orgsid=190" target=_blank>Список публикаций в РИНЦ</a>'><font color=#00008f>Saint Petersburg State University</font></span>, Saint Petersburg, Russia<br>
 </td></tr>
-
 
 
 <tr><td width=34>&nbsp;</td><td width=504 align=left valign=middle>
 
-<div id="eabstract1" style="width:504px; border:0; margin:0; padding:0; text-align:left;"><p align=justify style='margin-top: 0.3em;'>The article focuses on modern digital technologies and life practices associated with them, the key aspect of which is the idea of accessibility and efficiency both in a person’s everyday experience and as a certain existential attitude, task, and practice of oneself. We are talking about special, new forms of the art of existence, subordinated to the idea of pragmatics and, as a rule, not taking into account the sensory and existential experience of the life of an individual. The influence of technology on the life of a modern person is total. In this context, the question formulated earlier, at the dawn of the formation of the technogenic era, arises again and gains its relevance: how is it possible to be yourself and remain alive in a world of absolute technological power? In search of an answer to this question, the author turns to projects in which the user interface is conceived as a practice that rediscovers the existential dimension of human life in the context of modern digital technologies and expands the understanding of life forms in general...</div>
+<div id="eabstract1" style="width:504px; border:0; margin:0; padding:0; text-align:left;"><p align=justify style='margin-top: 0.3em;'>At the current stage of social development, human life becomes increasingly interlinked with the cities. Cities play a significant role in history, especially in the history of culture, Cities and culture are inseparable concepts, having such close relation that comprise an entire object of cognition. Namely these factors bestow individuality and adaptiveness upon urban environment. Space opens more opportunities for communication, exchange of experience and running social campaigns. Therefore, the conditions for existence of a new cultural environment are associated not only with changes in the created design solutions and/or aesthetic trends. Based on the method of comparative analysis, the author examines the concept of “cultural environment of a city” and its impact upon arrangement of public space. The novelty of this study consists in the thesis that the efficiency of organization of the urban cultural environment affects development potential of the cities in their social and economic unity, with focus on the degree of population content with the quality of life. Cultural environment also impacts consumer culture and interests of the community, as well as contribute to the development of urban space.</div>
 
-<div id="eabstract2" style="width:504px; border:0; margin:0; padding:0; text-align:left; display:none;"><p align=justify style='margin-top: 0.3em;'>The article focuses on modern digital technologies and life practices associated with them, the key aspect of which is the idea of accessibility and efficiency both in a person’s everyday experience and as a certain existential attitude, task, and practice of oneself. We are talking about special, new forms of the art of existence, subordinated to the idea of pragmatics and, as a rule, not taking into account the sensory and existential experience of the life of an individual. The influence of technology on the life of a modern person is total. In this context, the question formulated earlier, at the dawn of the formation of the technogenic era, arises again and gains its relevance: how is it possible to be yourself and remain alive in a world of absolute technological power? In search of an answer to this question, the author turns to projects in which the user interface is conceived as a practice that rediscovers the existential dimension of human life in the context of modern digital technologies and expands the understanding of life forms in general. Special attention is focused on the project of contemporary researcher Alexander Psher, the author of the idea of the “Internet of Animals” - a virtual ecological project that is rapidly developing thanks to mobile technologies and, in particular, mobile device interfaces. The interface here acts as a current life practice, permeating various spheres of life, a developing space for the implementation of digital ecological and artistic projects and, thanks to this, techniques of the self.</div>
-<script type="text/javascript">
-function show_eabstract() {
-  $('#eabstract1').hide();
-  $('#eabstract2').show();
-  $('#eabstract_expand').hide();
-}
-</script>
-<div id="eabstract_expand" style="margin:10px 0 0 5px; text-align:left;"><span class="win_expandable" style="color:#F26C4F; margin:0 5px 0 0;" onClick="show_eabstract()">▼</span><a href="javascript:show_eabstract()">Показать полностью</a></div>
-
-</td></tr>
-
-<tr><td width=34>&nbsp;</td><td width=504 align=left valign=middle><p>
-Keywords: <a href="keyword_items.asp?id=1947">INTERFACE</a>, 
-<a href="keyword_items.asp?id=902643">PRACTICES OF THE SELF</a>, 
-<a href="keyword_items.asp?id=27786049">TECHNIQUES YOURSELF</a>, 
-<a href="keyword_items.asp?id=15142918">EVERYDAY TECHNOLOGIES</a>, 
-<a href="keyword_items.asp?id=327380">LIFE FORMS</a>, 
-<a href="keyword_items.asp?id=17971371">INTERNET OF ANIMALS</a>, 
-<a href="keyword_items.asp?id=27786050">DIGITAL ENVIRONMENTAL PROJECTS</a>
 </td></tr>
 
 </table>
-
 <div style="height:10px;"></div>
-
 
 
 <div id="your_notes" class="collapsed">
@@ -1149,20 +1292,31 @@ function show_context(refid) {
 
 <tr bgcolor=#f5f5f5><td width=6% align=right valign=top nowrap><font color=#000000>1.&nbsp;</font></td>
 <td width=89% align=justify valign=top><font color=#000000>
-Loris, G. (2012). The Snorks. Nowness. https://www.nowness.com/story/loris-greaud-the-snorks.</font>
-</td><td align=center valign=top width=5%>&nbsp;</td>
-</tr>
+Антонова Л. Ю. Влияние креативных составляющих на городскую культурную среду: региональный аспект [Текст] / Л. Ю. Антонова // Вестник Московского государственного университета культуры и искусств. - 2018. - №6. - С. 17-27.</font>&nbsp; <font color=#F26C4F>EDN:</font>&nbsp;<a href="https://elibrary.ru/ltpwdq" target=_blank rel="nofollow">LTPWDQ</a>
 
-<tr bgcolor=#f5f5f5><td width=6% align=right valign=top nowrap><font color=#000000>2.&nbsp;</font></td>
-<td width=89% align=justify valign=top><font color=#000000>
-Urban, T. (2017). Neuralink and the Brain's Magical Future. WaitButWhy. https://waitbutwhy.com/2017/04/neuralink.html.</font>
-<span title="Показать ссылку в тексте публикации" class="win_expandable" id="context_expand_1730601226" style="color:#00008f; margin:0 5px 0 0;" onClick="show_context('1730601226')"> &nbsp;<font color=#F26C4F>▼</font>&nbsp;Контекст</span>
-<div id="context_1730601226" style="border:0; margin:0; padding:0; text-align:left; display:none;">
+<span title="Показать ссылку в тексте публикации" class="win_expandable" id="context_expand_707540599" style="color:#00008f; margin:0 5px 0 0;" onClick="show_context('707540599')"> &nbsp;<font color=#F26C4F>▼</font>&nbsp;Контекст</span>
+<div id="context_707540599" style="border:0; margin:0; padding:0; text-align:left; display:none;">
 <div style="height:3px;"></div>
 <table width=100% border=0 cellspacing=1 cellpadding=3>
 <td width=8% align=right valign=top bgcolor=#f5f5f5><font color=#000000>Контекст:</font></td>
 <td width=92% align=left valign=top bgcolor=#f5f5f5>
-<font color=#555555><i>...Дело в том, что мы киборги и продолжим ими быть, поэтому, вероятно, имеет смысл перейти от примитивных киборгов с низкой пропускной способностью к современным киборгам с высокой пропускной способностью (Urban, 2017)...</i></font>
+<font color=#555555><i>...Тем не менее, понять смысл термина можно только изучив материалы, связанные с процессом культурного развития городов, которые помогут понять общие закономерности развития городов и учесть индивидуальные (необычные и личные) их проявления [1;5]...</i></font>
+</td></tr></table>
+</div>
+
+</td><td align=center valign=top width=5%><div style="height:5px;"></div><a href="item.asp?id=37292176" title="Перейти на описание цитируемой публикации" class="help1" target=_blank><img src="/images/go_url.png" height=15 width=15 border=0></a></td>
+</tr>
+
+<tr bgcolor=#f5f5f5><td width=6% align=right valign=top nowrap><font color=#000000>2.&nbsp;</font></td>
+<td width=89% align=justify valign=top><font color=#000000>
+Астафьева О. Н. Диалогичность культурной среды города: культурное наследие как основа ее целостности: [доклад] [Текст] / О. Н. Астафьева // Контуры будущего в контексте мирового культурного развития: XVIII Международные Лихачевские научные чтения, 17-19 мая 2018 г. - СПб.: СПбГУП, 2018. - С. 385-386.</font>
+<span title="Показать ссылку в тексте публикации" class="win_expandable" id="context_expand_707540600" style="color:#00008f; margin:0 5px 0 0;" onClick="show_context('707540600')"> &nbsp;<font color=#F26C4F>▼</font>&nbsp;Контекст</span>
+<div id="context_707540600" style="border:0; margin:0; padding:0; text-align:left; display:none;">
+<div style="height:3px;"></div>
+<table width=100% border=0 cellspacing=1 cellpadding=3>
+<td width=8% align=right valign=top bgcolor=#f5f5f5><font color=#000000>Контекст:</font></td>
+<td width=92% align=left valign=top bgcolor=#f5f5f5>
+<font color=#555555><i>...Не случайно, что от традиционного центра до этих «третьих пространств» движение городского населения распространяется в разные стороны [2]...</i></font>
 </td></tr></table>
 </div>
 
@@ -1171,14 +1325,14 @@ Urban, T. (2017). Neuralink and the Brain's Magical Future. WaitButWhy. https://
 
 <tr bgcolor=#f5f5f5><td width=6% align=right valign=top nowrap><font color=#000000>3.&nbsp;</font></td>
 <td width=89% align=justify valign=top><font color=#000000>
-Žižek, S. (2020). Pandemic: COVID-19 Shakes the World. OR Books.</font>&nbsp; <font color=#F26C4F>DOI:</font>&nbsp;<a href="https://doi.org/10.2307/j.ctv16t6n4q" target=_blank rel="nofollow">10.2307/j.ctv16t6n4q</a>
-<span title="Показать ссылку в тексте публикации" class="win_expandable" id="context_expand_1730601227" style="color:#00008f; margin:0 5px 0 0;" onClick="show_context('1730601227')"> &nbsp;<font color=#F26C4F>▼</font>&nbsp;Контекст</span>
-<div id="context_1730601227" style="border:0; margin:0; padding:0; text-align:left; display:none;">
+Барышников С. В. Культурная среда современного города: семиотический аспект [Текст] / С. В. Барышников, А. Г. Барышникова // Современные проблемы гуманитарных и общественных наук: сборник статей / Министерство образования и науки РФ, ФГБОУ ВО "Воронежский государственный университет инженерных технологий"; [С. Т. Антипов, Г. А. Быковская, Л. И. Первова (отв. редакторы) и др.]. - Воронеж: Научая книга, 2015. - Вып. 1 (5). - С. 9-14.</font>
+<span title="Показать ссылку в тексте публикации" class="win_expandable" id="context_expand_707540601" style="color:#00008f; margin:0 5px 0 0;" onClick="show_context('707540601')"> &nbsp;<font color=#F26C4F>▼</font>&nbsp;Контекст</span>
+<div id="context_707540601" style="border:0; margin:0; padding:0; text-align:left; display:none;">
 <div style="height:3px;"></div>
 <table width=100% border=0 cellspacing=1 cellpadding=3>
 <td width=8% align=right valign=top bgcolor=#f5f5f5><font color=#000000>Контекст:</font></td>
 <td width=92% align=left valign=top bgcolor=#f5f5f5>
-<font color=#555555><i>...играют большую роль, нежели физическое присутствие, а дистанция выступает особым условием доверия: «…отказ от рукопожатий и самоизоляция, когда это необходимо - это и есть сегодняшняя форма солидарности» (Žižek, 2020, p. 77)...</i></font>
+<font color=#555555><i>...Эта проблема не только привлекает внимание людей к городской семиотике, но и дает новое поле для изучения городской практики [3]...</i></font>
 </td></tr></table>
 </div>
 
@@ -1187,31 +1341,30 @@ Urban, T. (2017). Neuralink and the Brain's Magical Future. WaitButWhy. https://
 
 <tr bgcolor=#f5f5f5><td width=6% align=right valign=top nowrap><font color=#000000>4.&nbsp;</font></td>
 <td width=89% align=justify valign=top><font color=#000000>
-Адо, П. (2005). Духовные упражнения и античная философия. Степной ветер.</font>&nbsp; <font color=#F26C4F>EDN:</font>&nbsp;<a href="https://elibrary.ru/qwkwmr" target=_blank rel="nofollow">QWKWMR</a>
-
-<span title="Показать ссылку в тексте публикации" class="win_expandable" id="context_expand_1730601228" style="color:#00008f; margin:0 5px 0 0;" onClick="show_context('1730601228')"> &nbsp;<font color=#F26C4F>▼</font>&nbsp;Контекст</span>
-<div id="context_1730601228" style="border:0; margin:0; padding:0; text-align:left; display:none;">
+Витюк Е. Ю. Современные представления об идеальном городском пространстве [Текст] / Е. Ю. Витюк // Культура городского пространства: власть, бизнес и гражданское общество в сохранении и приумножении культурных традиций России: материалы Всероссийской научно-практической конференции (Омск, 12-13 ноября 2013 года) / отв. ред. Д. А. Алисов. - Омск: Издательский дом "Наука", 2013. - С. 104-108.</font>
+<span title="Показать ссылку в тексте публикации" class="win_expandable" id="context_expand_707540602" style="color:#00008f; margin:0 5px 0 0;" onClick="show_context('707540602')"> &nbsp;<font color=#F26C4F>▼</font>&nbsp;Контекст</span>
+<div id="context_707540602" style="border:0; margin:0; padding:0; text-align:left; display:none;">
 <div style="height:3px;"></div>
 <table width=100% border=0 cellspacing=1 cellpadding=3>
 <td width=8% align=right valign=top bgcolor=#f5f5f5><font color=#000000>Контекст:</font></td>
 <td width=92% align=left valign=top bgcolor=#f5f5f5>
-<font color=#555555><i>...Душа как субъект, и вовсе не душа как субстанция. (Фуко, 2007, c. 73). «Техники себя» как набор повседневных практик, рецептур и духовных упражнений (Адо, 2005) были изначально призваны развивать внутреннюю свободу в том опыте отношений, в которые вовлечен человек, и, благодаря этому, не пребывать в абсолютной зависимости, всякий раз обнаруживая и утверждая...</i></font>
+<font color=#555555><i>...Наконец, эти «решения» оказывают большое влияние на дизайн и планировку города, но в целом идеальные города могут существовать только в форме концепций или моделей [4]...</i></font>
 </td></tr></table>
 </div>
 
-</td><td align=center valign=top width=5%><div style="height:5px;"></div><a href="item.asp?id=20034645" title="Перейти на описание цитируемой публикации" class="help1" target=_blank><img src="/images/go_url.png" height=15 width=15 border=0></a></td>
+</td><td align=center valign=top width=5%>&nbsp;</td>
 </tr>
 
 <tr bgcolor=#f5f5f5><td width=6% align=right valign=top nowrap><font color=#000000>5.&nbsp;</font></td>
 <td width=89% align=justify valign=top><font color=#000000>
-Больц, Н. (2011). Азбука медиа. Европа.</font>
-<span title="Показать ссылку в тексте публикации" class="win_expandable" id="context_expand_1730601229" style="color:#00008f; margin:0 5px 0 0;" onClick="show_context('1730601229')"> &nbsp;<font color=#F26C4F>▼</font>&nbsp;Контекст</span>
-<div id="context_1730601229" style="border:0; margin:0; padding:0; text-align:left; display:none;">
+Демченко В. М. Современное состояние и перспективы развития историко-культурного общественного комплекса "Омская крепость" [Текст] / В. М. Демченко // Омская крепость: историко-культурное наследие: сб. материалов Омской городской научно-практической конф. (Омск, 25 ноября 2010 г.) / отв. ред.: А.П. Сорокин, Н.А. Томилов. - Омск: Издательский дом "Наука", 2011. - С. 7-13.</font>
+<span title="Показать ссылку в тексте публикации" class="win_expandable" id="context_expand_707540603" style="color:#00008f; margin:0 5px 0 0;" onClick="show_context('707540603')"> &nbsp;<font color=#F26C4F>▼</font>&nbsp;Контекст</span>
+<div id="context_707540603" style="border:0; margin:0; padding:0; text-align:left; display:none;">
 <div style="height:3px;"></div>
 <table width=100% border=0 cellspacing=1 cellpadding=3>
 <td width=8% align=right valign=top bgcolor=#f5f5f5><font color=#000000>Контекст:</font></td>
 <td width=92% align=left valign=top bgcolor=#f5f5f5>
-<font color=#555555><i>...Речь идет о практиках, моделирующих для человека новые формы отношения с миром и вместе с тем неизбежно порождающих современную мифологию повседневности. «Мир - плоский, маленький, пустой и не имеет основания» (Больц, 2011, c. 5), - как точно отмечает исследователь медиа Норберт Больц c оглядкой на идею тотального осетевления, метафорой которого служит досократическая по своему звучанию формула “It from bit” (Больц, 2011, c. 6)...<div style='height:3px'></div>...(Больц, 2011, c. 5), - как точно отмечает исследователь медиа Норберт Больц c оглядкой на идею тотального осетевления, метафорой которого служит досократическая по своему звучанию формула “It from bit” (Больц, 2011, c. 6)...</i></font>
+<font color=#555555><i>...Тем не менее, понять смысл термина можно только изучив материалы, связанные с процессом культурного развития городов, которые помогут понять общие закономерности развития городов и учесть индивидуальные (необычные и личные) их проявления [1;5]...</i></font>
 </td></tr></table>
 </div>
 
@@ -1222,8 +1375,8 @@ Urban, T. (2017). Neuralink and the Brain's Magical Future. WaitButWhy. https://
 
 <script type="text/javascript">
 function show_refs() {
-  $('#show_reflist').html("<tr><td colspan=3 align=center>Загружается (всего ссылок: 26) ...</td></tr>");
-  $.get("get_item_refs.asp?id=82333838&rand=" + Math.random(), function(data) {
+  $('#show_reflist').html("<tr><td colspan=3 align=center>Загружается (всего ссылок: 16) ...</td></tr>");
+  $.get("get_item_refs.asp?id=42578119&rand=" + Math.random(), function(data) {
     $('#list_refs').html(data);
     $('#show_reflist').html('');
 		MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
@@ -1233,7 +1386,7 @@ function show_refs() {
 
 <tr><td colspan=3><div style="height:6px;"></div></td></tr>
 <tbody ID="show_reflist">
-<tr><td align=right valign=middle><span class="win_expandable" style="color:#F26C4F; margin:0 5px 0 0;" onClick="show_refs()">▼</span></td><td align=left valign=middle><a href="javascript:show_refs()">Показать весь список литературы (всего ссылок: 26)</a></td><td></td></tr>
+<tr><td align=right valign=middle><span class="win_expandable" style="color:#F26C4F; margin:0 5px 0 0;" onClick="show_refs()">▼</span></td><td align=left valign=middle><a href="javascript:show_refs()">Показать весь список литературы (всего ссылок: 16)</a></td><td></td></tr>
 </tbody>
 
 
@@ -1266,10 +1419,10 @@ function show_refs() {
 <table width=190 cellspacing=0 cellpadding=3 border=0>
 
 <input type="hidden" name="itembox_name" value="">
-<input type="hidden" name="id" value="82333838">
-<input type="hidden" name="did" value="82333838">
-<input type="hidden" name="sid" value="682676094">
-<input type="hidden" name="noteid" value="82333838">
+<input type="hidden" name="id" value="42578119">
+<input type="hidden" name="did" value="42578119">
+<input type="hidden" name="sid" value="683164423">
+<input type="hidden" name="noteid" value="42578119">
 <input type="hidden" name="disspage" value="">
 <input type="hidden" name="counterid" value="">
 <input type="hidden" name="commentid" value="">
@@ -1277,10 +1430,10 @@ function show_refs() {
 <input type="hidden" name="linkid" value="">
 <input type="hidden" name="paysum" value="">
 <input type="hidden" name="payitemid" value="">
-<input type="hidden" name="authorid" value="">
-<input type="hidden" name="tid82333838" value="82333838">
+<input type="hidden" name="authorid" value="900763">
+<input type="hidden" name="tid42578119" value="42578119">
 <input type="hidden" name="filenum" value="1">
-<input type="hidden" name="fileid" value="82333838">
+<input type="hidden" name="fileid" value="42578119">
 <input type="hidden" name="urlnum" value="1">
 <input type="hidden" name="items_all" value="">
 
@@ -1289,12 +1442,12 @@ function show_refs() {
 
 
 <tr><td width=15% align=center valign=top>
-<a href="contents.asp?id=82333831&selid=82333838"><img src="images/but_orange.gif" width=15 height=15 hspace=3 border=0></a>
+<a href="contents.asp?id=42578113&selid=42578119"><img src="images/but_orange.gif" width=15 height=15 hspace=3 border=0></a>
 
 </td>
 
 <td width=85% align=left valign=middle>
-<a href="contents.asp?id=82333831&selid=82333838">Содержание выпуска</a>
+<a href="contents.asp?id=42578113&selid=42578119">Содержание выпуска</a>
 
 </td></tr>
 
@@ -1304,15 +1457,15 @@ function show_refs() {
 	<td width=85% align=left valign=middle>Загрузить:
 	</td></tr>
 	
-	<tr><td width=15% align=center valign=top><a href="javascript:file_article(82333838, 1)" rel="nofollow" title=""><img src="/images/download_green.png" width=16 hspace=2 border=0></a></td>
-	<td width=85% align=left valign=middle><a href="javascript:file_article(82333838, 1)" rel="nofollow" class="help" title="">Полный текст</a> (PDF, русский)
+	<tr><td width=15% align=center valign=top><a href="javascript:file_article(42578119, 1)" rel="nofollow" title=""><img src="/images/download_green.png" width=16 hspace=2 border=0></a></td>
+	<td width=85% align=left valign=middle><a href="javascript:file_article(42578119, 1)" rel="nofollow" class="help" title="">Полный текст</a> (PDF)
 	</td></tr>
 	
 <tr><td width=15% align=center valign=top>
 <a href="javascript:email_article()" rel="nofollow"><img src="images/mailto.png" width=16 hspace=2 border=0></a></td>
 <td width=85% align=left valign=middle><a href="javascript:email_article()" rel="nofollow">Отправить публикацию по электронной почте</a>
 </td></tr>
-<tr><td colspan=2 align=center><div class="formfr"><input type="text" id="email" name="email" value="pasha.sitnikov.69@mail.ru" style="width:172px; text-align: center;" class="inputt"></div></td></tr>
+<tr><td colspan=2 align=center><div class="formfr"><input type="text" id="email" name="email" value="gasilin@inion.ru" style="width:172px; text-align: center;" class="inputt"></div></td></tr>
 
 <tr><td colspan=2><div style="height:10px;"></div></td></tr>
 
@@ -1320,8 +1473,8 @@ function show_refs() {
 <td width=85% align=left valign=middle>Связанные документы:
 </td></tr>
 
-<tr><td width=15% align=center valign=top><a href="javascript:url_article(82333838, 1)" rel="nofollow" title=""><img src="images/go_url.png" width=16 hspace=2 border=0></a></td>
-<td width=85% align=left valign=middle>Полный текст, на сайте <br><span style="word-wrap:break-word; word-break: break-all; overflow:hidden"><a href="javascript:url_article(82333838, 1)" rel="nofollow" class="help">galacticamedia.com</a>
+<tr><td width=15% align=center valign=top><a href="javascript:url_article(42578119, 1)" rel="nofollow" title=""><img src="images/go_url.png" width=16 hspace=2 border=0></a></td>
+<td width=85% align=left valign=middle>Полный текст, на сайте <br><span style="word-wrap:break-word; word-break: break-all; overflow:hidden"><a href="javascript:url_article(42578119, 1)" rel="nofollow" class="help">nbpublish.com</a>
 </span></td></tr>
 
 
@@ -1329,13 +1482,13 @@ function show_refs() {
 
 
 <tr><td width=15% align=center valign=top>
-<a href="cit_items.asp?id=82333838"><img src="images/but_orange.gif" width=15 height=15 hspace=3 border=0></a></td>
-<td width=85% align=left valign=middle><a href="cit_items.asp?id=82333838">Список публикаций, цитирующих данную</a>
+<a href="cit_items.asp?id=42578119"><img src="images/but_orange.gif" width=15 height=15 hspace=3 border=0></a></td>
+<td width=85% align=left valign=middle><a href="cit_items.asp?id=42578119">Список публикаций, цитирующих данную</a>
 </td></tr>
 
 <tr><td width=15% align=center valign=top>
-<a href='https://scholar.google.com/scholar?q="Интерфейс как практика себя, или Каково это - быть живым в эпоху киборгов?"&hl=ru&as_sdt=0%2C5&as_ylo=2025&as_yhi=2025' target=_blank rel="nofollow"><img src="images/but_orange.gif" width=15 height=15 hspace=3 border=0></a></td>
-<td width=85% align=left valign=middle><a href='https://scholar.google.com/scholar?q="Интерфейс как практика себя, или Каково это - быть живым в эпоху киборгов?"&hl=ru&as_sdt=0%2C5&as_ylo=2025&as_yhi=2025' target=_blank rel="nofollow">Список статей в Google Академия, цитирующих данную</a>
+<a href='https://scholar.google.com/scholar?q="Культурная среда города как часть общественного пространства"&hl=ru&as_sdt=0%2C5&as_ylo=2020&as_yhi=2020' target=_blank rel="nofollow"><img src="images/but_orange.gif" width=15 height=15 hspace=3 border=0></a></td>
+<td width=85% align=left valign=middle><a href='https://scholar.google.com/scholar?q="Культурная среда города как часть общественного пространства"&hl=ru&as_sdt=0%2C5&as_ylo=2020&as_yhi=2020' target=_blank rel="nofollow">Список статей в Google Академия, цитирующих данную</a>
 </td></tr>
 
 <tr><td width=15% align=center valign=top>
@@ -1353,7 +1506,21 @@ function show_refs() {
 <tr><td colspan=2 align=center><div class="formfr"><select name="itemboxid" id="itemboxid" style="width:180px" class="input">
 
 <option value="0" >Новая подборка
-<option value="1598740" selected>Международный журнал исследований культуры
+<option value="1445083" selected>Политики доступа
+<option value="1541849" >Оборотничество
+<option value="1557500" >Социальная эпистемология
+<option value="1561037" >Психиатрия
+<option value="1572774" >Сартр
+<option value="1582948" >Искусственный интеллект в научных сетях
+<option value="1586142" >Подорога
+<option value="1594422" >Социологическое обозрение
+<option value="1596160" >Художественная культура
+<option value="1596212" >Международный журнал исследований культуры
+<option value="1600343" >Философия. Журнал Высшей школы экономики
+<option value="1612558" >Эксперимент с нейропоиском
+<option value="1612570" >Нейропоиск
+<option value="1612590" >Нейропоиск. Вторая фаза
+<option value="1640794" >Galactica media
 </select></div>&nbsp;</td></tr>
 
 
@@ -1376,8 +1543,8 @@ function show_refs() {
 </FORM>
 
 <tr><td width=15% align=center valign=top>
-<a href='/similar_items.asp?itemid=82333838'><img src="images/but_orange.gif" width=15 height=15 hspace=3 border=0></a></td>
-<td width=85% align=left valign=middle><a href='/similar_items.asp?itemid=82333838'>Найти близкие по тематике публикации</a>
+<a href='/similar_items.asp?itemid=42578119'><img src="images/but_orange.gif" width=15 height=15 hspace=3 border=0></a></td>
+<td width=85% align=left valign=middle><a href='/similar_items.asp?itemid=42578119'>Найти близкие по тематике публикации</a>
 </td></tr>
 
 
@@ -1385,7 +1552,7 @@ function show_refs() {
 <tr><td colspan=2><div style="height:10px;"></div></td></tr>
 <tr><td width=15% align=center valign=top>
 <img src="images/but_orange.gif" width=15 height=15 hspace=3 border=0></td>
-<td width=85% align=left valign=middle><font color=#00008f>Дата размещения:</font><br><font color=#000000>24.05.2025</font>
+<td width=85% align=left valign=middle><font color=#00008f>Дата размещения:</font><br><font color=#000000>25.03.2020</font>
 </td></tr>
 
 

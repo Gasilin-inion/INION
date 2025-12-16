@@ -6,24 +6,24 @@
 
 <meta name="robots" content="noarchive, nofollow">
 
-<meta name="description" content='Маленко М.Я.
-Galactica Media: Journal of Media Studies, 2025'>
-<title>Герменевтика шаманcких видеоигр на примере “Kisima Inŋitchuŋa”</title>
+<meta name="description" content='Ипполитов С.С.
+Человек и культура, 2020'>
+<title>Российские гуманитарные организации на рынке труда Германии как фактор адаптации российских беженцев в 1919-1920-х гг.</title>
 
 <meta property="og:image" content="https://elibrary.ru/images/orgs_access.png" />
-<meta property="og:title" content='Герменевтика шаманcких видеоигр на примере “Kisima Inŋitchuŋa”' />
+<meta property="og:title" content='Российские гуманитарные организации на рынке труда Германии как фактор адаптации российских беженцев в 1919-1920-х гг.' />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://elibrary.ru/shhdvw" />
+<meta property="og:url" content="https://elibrary.ru/sjrzpo" />
 <meta property="og:site_name" content="eLIBRARY.RU"/>
-<meta property="og:description" content='Маленко М.Я.
-Galactica Media: Journal of Media Studies, 2025' />
+<meta property="og:description" content='Ипполитов С.С.
+Человек и культура, 2020' />
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
 
-<link rel="canonical" href="https://elibrary.ru/item.asp?id=82333840"/>
+<link rel="canonical" href="https://elibrary.ru/item.asp?id=42578124"/>
 
 
-<meta name="doi" content="10.46539/gmd.v7i2.650">
+<meta name="doi" content="10.25136/2409-8744.2020.1.31912">
 
 
 <script type="text/javascript" src="/jquery.min.js"></script>
@@ -97,7 +97,7 @@ function email_article(){
 		alerts("Не указан адрес электронной почты!");}
 	else{
 		$.fancybox({
-			href : '/email_article.asp?id=82333840&email='+document.forms["results"].email.value+'&rand=' + Math.random(),
+			href : '/email_article.asp?id=42578124&email='+document.forms["results"].email.value+'&rand=' + Math.random(),
 			title : '',
 			padding : 20,     
 			width : 400,
@@ -121,7 +121,7 @@ function show_itemrefs(){
 function edit_notes(){
 
   $.fancybox({
-    href : '/item_notes_add.asp?itemid=82333840&rand=' + Math.random(),
+    href : '/item_notes_add.asp?itemid=42578124&rand=' + Math.random(),
     title : '',
 	  padding : 20,     
 	  width : 520,
@@ -139,7 +139,7 @@ function edit_notes(){
 function add_link(link){
 
   $.fancybox({
-      href : '/itemlink_add.asp?itemid=82333840&linkid='+link+'&rand=' + Math.random(),
+      href : '/itemlink_add.asp?itemid=42578124&linkid='+link+'&rand=' + Math.random(),
       title : '',
 	  padding : 20,     
 	  width : 520,
@@ -155,32 +155,59 @@ function add_link(link){
 }
 function reply_comments(commentid){
 
-  alerts("Для того, чтобы участвовать в обсуждении публикаций, необходимо зарегистрироваться в системе Science Index в качестве автора научных публикаций!");
-  document.getElementById("win_login").className = "expanded";
-  document.getElementById("img_login").src = w_up.src;
-  document.forms["login"].login.focus();
+  $.fancybox({
+      href : '/itemcomments_add.asp?itemid=42578124&reply=1&commentid=' + commentid + '&rand=' + Math.random(),
+      title : '',
+	  padding : 20,     
+	  width : 520,
+	  height : 300,
+	  overlayOpacity : 0.3,	
+	  overlayColor : '#000',
+	  speedIn : 500,
+	  hideOnOverlayClick : false,
+	  enableEscapeButton : true,
+	  type : 'iframe'
+    });
 
 }
 function edit_comments(commentid){
 
-  alerts("Для того, чтобы участвовать в обсуждении публикаций, необходимо зарегистрироваться в системе Science Index в качестве автора научных публикаций!");
-  document.getElementById("win_login").className = "expanded";
-  document.getElementById("img_login").src = w_up.src;
-  document.forms["login"].login.focus();
+  $.fancybox({
+      href : '/itemcomments_add.asp?itemid=42578124&reply=0&commentid=' + commentid + '&rand=' + Math.random(),
+      title : '',
+	  padding : 20,     
+	  width : 520,
+	  height : 300,
+	  overlayOpacity : 0.3,	
+	  overlayColor : '#000',
+	  speedIn : 500,
+	  hideOnOverlayClick : false,
+	  enableEscapeButton : true,
+	  type : 'iframe'
+    });
 
 }
 function new_comments(){
 
-  alerts("Для того, чтобы участвовать в обсуждении публикаций, необходимо зарегистрироваться в системе Science Index в качестве автора научных публикаций!");
-  document.getElementById("win_login").className = "expanded";
-  document.getElementById("img_login").src = w_up.src;
-  document.forms["login"].login.focus();
+  $.fancybox({
+      href : '/itemcomments_add.asp?itemid=42578124&reply=0&commentid=&rand=' + Math.random(),
+      title : '',
+	  padding : 20,     
+	  width : 520,
+	  height : 300,
+	  overlayOpacity : 0.3,	
+	  overlayColor : '#000',
+	  speedIn : 500,
+	  hideOnOverlayClick : false,
+	  enableEscapeButton : true,
+	  type : 'iframe'
+    });
 
 }
 
 function translate_abstract(){
   $.fancybox({
-      href : '/translate_abstract.asp?id=82333840&rand=' + Math.random(),
+      href : '/translate_abstract.asp?id=42578124&rand=' + Math.random(),
       title : '',
 	  padding : 20,     
 	  width : 640,
@@ -313,7 +340,7 @@ function itembox_adds(){
 }
 function for_reference(){
     $.fancybox({
-      href : 'for_reference.asp?id=82333840&rand=' + Math.random(),
+      href : 'for_reference.asp?id=42578124&rand=' + Math.random(),
       title : '',
 			padding : 20,     
 			width : 480,
@@ -361,7 +388,7 @@ function qr_code(dd){
 <tr><td><div style="height:10px;"></div></td></tr>
 <tr><td width=150 align=center valign=top>
 
-<a href="title_about_new.asp?id=70829"><img src="/itemfiles/0/8/2/3/3/3/8/3/1//2.jpg" border=0 width=120 title='О журнале "Galactica Media: Journal of Media Studies"' style="behavior: url(/pie/PIE.htc); box-shadow: 1px 2px 3px #888;" hspace=0></a>
+<a href="title_about_new.asp?id=52971"><img src="/titles/52971/ca.png" border=0 width=120 title='О журнале "Человек и культура"' style="behavior: url(/pie/PIE.htc); box-shadow: 1px 2px 3px #888;" hspace=0></a>
 
 </td></tr>
 
@@ -525,6 +552,8 @@ function search_enter(event){
 <tr valign=top><td align=center><img src="/images/bl_kv.gif" border=0 width=7 height=7 hspace=3 class="shadow"></td><td align=left><a href="/rubrics.asp">РУБРИКАТОР</a></td></tr>
 <tr valign=top><td align=center><img src="/images/bl_kv.gif" border=0 width=7 height=7 hspace=3 class="shadow"></td><td align=left><a href="/region_compare.asp">РЕГИОНЫ</a></td></tr>
 
+<tr valign=top><td align=center><img src="/images/bl_kv.gif" border=0 width=7 height=7 hspace=3 class="shadow"></td><td align=left><a href="/refs.asp">ССЫЛКИ</a></td></tr>
+
 <tr valign=top><td align=center><img src="/images/bl_kv.gif" border=0 width=7 height=7 hspace=3 class="shadow"></td><td align=left><a href="/itembox.asp">ПОДБОРКИ</a></td></tr>
 
 
@@ -574,19 +603,25 @@ function end_session(){
 <tr><td width=100% align=left valign=top>
 &nbsp;<font color=#000000>Имя пользователя:</font></td></tr>
 <tr><td width=100% align=center valign=top>
-<font color=#00008f><a href="author_info.asp?isold=1" title="Персональная карточка пользователя">sitnikov69&nbsp;</a></font></td></tr>
+<font color=#00008f><a href="author_info.asp?isold=1" title="Персональная карточка пользователя">Gasilin&nbsp;</a></font></td></tr>
+
+<tr><td width=100% align=left valign=top>
+<div style="height: 2px;"></div>
+&nbsp;<font color=#000000>SPIN-код автора:</font></td></tr>
+<tr><td width=100% align=center valign=top>
+<font color=#00008f><a href="author_info.asp?isold=1" title="Персональная карточка автора">2001-2738</a></font></td></tr>
 
 <tr><td width=100% align=left valign=top>
 <div style="height: 2px;"></div>
 &nbsp;<font color=#000000>IP-адрес компьютера:</font></td></tr>
 <tr><td width=100% align=center valign=top>
-<font color=#00008f>89.175.21.183</font></td></tr>
+<font color=#00008f>95.24.63.120</font></td></tr>
 <tr><td width=100% align=left valign=top>
 <div style="height: 2px;"></div>
 &nbsp;<font color=#000000>Название организации:</font></td></tr>
 <tr><td width=100% align=center valign=top>
 
-<font color=#00008f>не определена</font></td></tr>
+<font color=#00008f><a href="/org_about.asp?orgsid=11">Институт научной информации по общественным наукам РАН</a></font></td></tr>
 
 
 <tr><td width=100% align=left valign=top>
@@ -594,12 +629,12 @@ function end_session(){
 &nbsp;<font color=#000000>Начало работы:</font></td></tr>
 
 <tr><td width=100% align=center valign=top>
-<font color=#00008f>11.12.2025 11:42</font></td></tr>
+<font color=#00008f>13.12.2025 20:49</font></td></tr>
 <tr><td width=100% align=left valign=top>
 <div style="height: 2px;"></div>
 &nbsp;<font color=#000000>Время работы:</font></td></tr>
 <tr><td width=100% align=center valign=top>
-<font color=#00008f>00:02</font></td></tr>
+<font color=#00008f>00:31</font></td></tr>
 </table>
 
 <div style="height: 10px;"></div>
@@ -775,8 +810,8 @@ function end_session(){
 
 <table width=200 cellspacing=0 cellpadding=3 border=0>
 <tr><td width=12% align=right valign=top>
-<a href="https://t.me/elibrary_ru_official/9" target=_blank><img src="/images/telegram.svg" width=24 height=24 border=0></a></td>
-<td width=88% align=left valign=middle><font color=#00008f><a href="https://t.me/elibrary_ru_official/9" target=_blank>Официальный Telegram-канал Научной электронной библиотеки eLIBRARY.RU</a></font>
+<a href="https://t.me/elibrary_ru_official/76" target=_blank><img src="/images/telegram.svg" width=24 height=24 border=0></a></td>
+<td width=88% align=left valign=middle><font color=#00008f><a href="https://t.me/elibrary_ru_official/76" target=_blank>Открыт раздел аналитики по регионам</a></font>
 </td></tr>
 </table>
 </td></tr>
@@ -790,12 +825,12 @@ function end_session(){
 <table width=550 cellspacing=0 cellpadding=3 border=0>
 <tr valign=middle>
 <td width=2%></td>
-<td width=25% align=left>eLIBRARY ID:&nbsp;<font color=#00008f><a href="item.asp?id=82333840" rel="nofollow">82333840</a></font></td>
-<td width=15% align=center>EDN:&nbsp;<font color=#00008f><a href="/shhdvw" rel="nofollow">SHHDVW</a></font></td>
+<td width=25% align=left>eLIBRARY ID:&nbsp;<font color=#00008f><a href="item.asp?id=42578124" rel="nofollow">42578124</a></font></td>
+<td width=15% align=center>EDN:&nbsp;<font color=#00008f><a href="/sjrzpo" rel="nofollow">SJRZPO</a></font></td>
 
-<td align=left width=5%><a href='javascript:qr_code("shhdvw")' rel="nofollow"><img src="/images/qr_code2.png" width=16 height=16 class='help' title="Сгенерировать QR код для ссылки на этот документ"></a></td>
+<td align=left width=5%><a href='javascript:qr_code("sjrzpo")' rel="nofollow"><img src="/images/qr_code2.png" width=16 height=16 class='help' title="Сгенерировать QR код для ссылки на этот документ"></a></td>
 
-<td width=53% align=right>DOI:&nbsp;<font color=#00008f><a href=https://doi.org/10.46539/gmd.v7i2.650 target=_blank rel=nofollow>10.46539/gmd.v7i2.650</a></font></td>
+<td width=53% align=right>DOI:&nbsp;<font color=#00008f><a href=https://doi.org/10.25136/2409-8744.2020.1.31912 target=_blank rel=nofollow>10.25136/2409-8744.2020.1.31912</a></font></td>
 </tr>
 
 </table>
@@ -804,7 +839,7 @@ function end_session(){
 <table width=550 cellspacing=0 cellpadding=3 border=0 style="table-layout: fixed;">
 <tr align=center valign=middle>
 <td width=4></td>
-<td width=534><span style="font-size: 9pt; color: #000000; overflow-wrap: break-word;"><b><p class='bigtext' style='color: #F26C4F;'>ГЕРМЕНЕВТИКА ШАМАНCКИХ ВИДЕОИГР НА ПРИМЕРЕ “KISIMA INŋITCHUŋA”</p></b></span></td></tr>
+<td width=534><span style="font-size: 9pt; color: #000000; overflow-wrap: break-word;"><b><p class='bigtext' style='color: #F26C4F;'>РОССИЙСКИЕ ГУМАНИТАРНЫЕ ОРГАНИЗАЦИИ НА РЫНКЕ ТРУДА ГЕРМАНИИ КАК ФАКТОР АДАПТАЦИИ РОССИЙСКИХ БЕЖЕНЦЕВ В 1919-1920-Х ГГ.</p></b></span></td></tr>
 </table>
 
 <div style="width:580px; margin:0; border:0; padding:0; ">
@@ -815,9 +850,9 @@ function end_session(){
 <tr>
 <td width=24></td>
 <td width=514 valign=middle align=center>
-<div style='display: inline-block; white-space: nowrap'><b><font color=#00008f>МАЛЕНКО&nbsp;М.Я.</font></b><img src='/images/about_author.gif' border=0 hspace=2 height=10 width=9 class='help pointer' title='ORCID:&nbsp;<a href="https://orcid.org/0009-0000-4173-3671" target=_blank>0009-0000-4173-3671</a>&nbsp;&nbsp; '><font color=#000000><sup>1</sup></font></div>
+<div style='display: inline-block; white-space: nowrap'><span class='help pointer' title='<b><font color=#F26C4F>Ипполитов Сергей Сергеевич</font></b><br>Российский научно-исследовательский институт культурного и природного наследия им. Д.С. Лихачева<br><a href="author_profile.asp?authorid=332247" target=_blank>Профиль автора в SCIENCE INDEX</a><br><a href="author_items.asp?authorid=332247" target=_blank>Список публикаций в РИНЦ</a>'><b><font color=#00008f>ИППОЛИТОВ&nbsp;С.С.</font></b></span><font color=#000000><sup>1</sup></font></div>
 <div style="height:10px;"></div>
-<font color=#000000><sup>1</sup></font>&nbsp;<span class='help1 pointer' title='<b><font color=#F26C4F>Национальный исследовательский университет "Высшая школа экономики"</font></b> (Москва)<br><a href="org_profile.asp?id=421" target=_blank>Профиль организации в SCIENCE INDEX</a><br><a href="org_items.asp?orgsid=421" target=_blank>Список публикаций в РИНЦ</a>'><font color=#00008f>Национальный исследовательский университет «Высшая школа экономики»</font></span>, Москва, Россия<br>
+<font color=#000000><sup>1</sup></font>&nbsp;<span class='help1 pointer' title='<b><font color=#F26C4F>Московский государственный институт культуры</font></b> (Химки)<br><a href="org_profile.asp?id=15117" target=_blank>Профиль организации в SCIENCE INDEX</a><br><a href="org_items.asp?orgsid=15117" target=_blank>Список публикаций в РИНЦ</a>'><font color=#00008f>Московский государственный институт культуры</font></span><br>
 </td></tr>
 </table>
 
@@ -837,11 +872,11 @@ function end_session(){
 <tr><td></td></tr>
 
 <tr><td width=574 align=center valign=middle>
-Том:&nbsp;<font color=#00008f>7</font><span style="margin-left:20px;"></span>Номер:&nbsp;<a href="contents.asp?id=82333831&selid=82333840" title="Содержание выпуска">2</a>
-<span style="margin-left:20px;"></span>Год:&nbsp;<font color=#00008f>2025</font>
+<span style="margin-left:20px;"></span>Номер:&nbsp;<a href="contents.asp?id=42578113&selid=42578124" title="Содержание выпуска">1</a>
+<span style="margin-left:20px;"></span>Год:&nbsp;<font color=#00008f>2020</font>
 
-<span style="margin-left:20px;"></span><div style='display: inline-block; white-space: nowrap'>Страницы:&nbsp;<font color=#00008f>187-208</font></div>
-<div style="height:5px;"></div><span style="margin-left:20px;"></span>Поступила&nbsp;в&nbsp;редакцию:&nbsp;<font color=#00008f>15.03.2025</font><span style="margin-left:20px;"></span>Принята&nbsp;к&nbsp;печати:&nbsp;<font color=#00008f>15.04.2025</font>
+<span style="margin-left:20px;"></span><div style='display: inline-block; white-space: nowrap'>Страницы:&nbsp;<font color=#00008f>110-122</font></div>
+
 
 
 </td></tr>
@@ -859,10 +894,10 @@ function end_session(){
 <tr><td width=34>&nbsp;</td><td width=504 align=left valign=middle>
 <div style="height:3px;"></div>
 
-<a href="contents.asp?id=82333831" title="Содержание выпусков этого журнала">GALACTICA MEDIA: JOURNAL OF MEDIA STUDIES</a>
-<br>Учредители:&nbsp;ООО НПО "Генезис.Фронтир.Наука"
+<a href="contents.asp?id=42578113" title="Содержание выпусков этого журнала">ЧЕЛОВЕК И КУЛЬТУРА</a>
+<br>Учредители:&nbsp;Даниленко Василий Иванович
 <br>
-eISSN:&nbsp;<font color=#00008f>2658-7734</font><span style="margin-left:20px;"></span>
+eISSN:&nbsp;<font color=#00008f>2409-8744</font><span style="margin-left:20px;"></span>
 
 </td></tr></table>
 
@@ -874,16 +909,16 @@ eISSN:&nbsp;<font color=#00008f>2658-7734</font><span style="margin-left:20px;">
 <font color=#000000>КЛЮЧЕВЫЕ СЛОВА:</font></td></tr>
 <tr><td width=34>&nbsp;</td><td width=504 align=left valign=middle>
 <div style="height:3px;"></div>
-<a href="keyword_items.asp?id=943391">ШАМАНИЗМ</a>, 
-<a href="keyword_items.asp?id=2526154">ВИДЕОИГРЫ</a>, 
-<a href="keyword_items.asp?id=3072773">ОНТОЛОГИЧЕСКИЙ ПОВОРОТ</a>, 
-<a href="keyword_items.asp?id=944173">СЕМИОТИКА</a>, 
-<a href="keyword_items.asp?id=27786058">ЛЮДОГЕРМЕНЕВТИКА</a>, 
-<a href="keyword_items.asp?id=2866332">GAME STUDIES</a>, 
-<a href="keyword_items.asp?id=27786059">КОСМОПРАКСИС</a>, 
-<a href="keyword_items.asp?id=942042">АНТРОПОЛОГИЯ</a>, 
-<a href="keyword_items.asp?id=2505899">ЭТНОГРАФИЯ</a>, 
-<a href="keyword_items.asp?id=27786060">МИРО-ИГРЫ</a>
+<a href="keyword_items.asp?id=2942248">РОССИЙСКАЯ ЭМИГРАЦИЯ</a>, 
+<a href="keyword_items.asp?id=5047693">АДАПТАЦИЯ ЭМИГРАНТОВ</a>, 
+<a href="keyword_items.asp?id=11605802">ПРАВОВАЯ ДИСКРИМИНАЦИЯ</a>, 
+<a href="keyword_items.asp?id=3022271">ГРАЖДАНСКАЯ ИДЕНТИЧНОСТЬ</a>, 
+<a href="keyword_items.asp?id=18330355">ЭМИГРАЦИЯ В ГЕРМАНИИ</a>, 
+<a href="keyword_items.asp?id=18454758">ТРУДОУСТРОЙСТВО ЭМИГРАНТОВ</a>, 
+<a href="keyword_items.asp?id=18454759">СОЦИАЛЬНАЯ АДАПТАЦИЯ ЭМИГРАНТОВ</a>, 
+<a href="keyword_items.asp?id=4335310">ГУМАНИТАРНЫЕ ОРГАНИЗАЦИИ</a>, 
+<a href="keyword_items.asp?id=2324617">БЕЗРАБОТИЦА</a>, 
+<a href="keyword_items.asp?id=8297491">ТРУДОВЫЕ АРТЕЛИ</a>
 </td></tr>
 </table>
 
@@ -893,17 +928,7 @@ eISSN:&nbsp;<font color=#00008f>2658-7734</font><span style="margin-left:20px;">
 <font color=#000000>АННОТАЦИЯ:</font></td></tr>
 <tr><td width=34>&nbsp;</td><td width=504 align=left valign=middle>
 
-<div id="abstract1" style="width:504px; border:0; margin:0; padding:0; text-align:left;"><p align=justify style='margin-top: 0.3em;'>Статья фокусируется на «этнологических видеоиграх» - играх, разрабатываемых на фундаменте реального этнографического и фольклорного материала - и на том их подвиде, в чьем нарративе или геймплее можно обнаружить репрезентацию или симуляцию традиционного шаманства. Среди них - «Человеколось» (2017) по коми-пермяцким и финно-угорским мифам, платформер Never Alone (2014) по инупиатскому фольклору, ритм-игра Nishan Shaman (2018) по мотивам народного маньчжурского сказания. Отправным вопросом становится: в каких случаях такие видеоигры способны вовлекать игроков в шаманские или анимистские практики или переживания, в сопутствующие им мировосприятие и онтологию? Для первичного подбора ответов комплексно анализируется одна из указанных игр, Never Alone (или Kisima Inŋitchuŋa на инупиатском языке). Анализ производится с привлечением людогерменевтического и структурно-семиотического методов, антропологических источников о шаманстве, через рассмотрение процессов разработки и прямой речи разработчиков...</div>
-
-<div id="abstract2" style="width:504px; border:0; margin:0; padding:0; text-align:left; display:none;"><p align=justify style='margin-top: 0.3em;'>Статья фокусируется на «этнологических видеоиграх» - играх, разрабатываемых на фундаменте реального этнографического и фольклорного материала - и на том их подвиде, в чьем нарративе или геймплее можно обнаружить репрезентацию или симуляцию традиционного шаманства. Среди них - «Человеколось» (2017) по коми-пермяцким и финно-угорским мифам, платформер Never Alone (2014) по инупиатскому фольклору, ритм-игра Nishan Shaman (2018) по мотивам народного маньчжурского сказания. Отправным вопросом становится: в каких случаях такие видеоигры способны вовлекать игроков в шаманские или анимистские практики или переживания, в сопутствующие им мировосприятие и онтологию? Для первичного подбора ответов комплексно анализируется одна из указанных игр, Never Alone (или Kisima Inŋitchuŋa на инупиатском языке). Анализ производится с привлечением людогерменевтического и структурно-семиотического методов, антропологических источников о шаманстве, через рассмотрение процессов разработки и прямой речи разработчиков. Опираясь на понятие «миро-игра», раскрытое Донной Харауэй в ее анализе Never Alone , статья предлагает ряд модусов совместимости между видеоигровыми онтологиями и этнографически выявленными шаманскими (а также анимистскими, коренными, внемодерными) онтологиями. Для этого используется концепция «процедурной телесности» Александра Ленкевича как общего атрибута шаманской практики и видеоигрового опыта. Также рассматривается соответствие между мифологической и игровой реальностями на уровне перформативного вовлечения в семиотику мифа или игрового мира. В утрированной форме вопрос статьи звучит так: как близко прохождение «шаманской видеоигры» может подойти к шаманскому камланию?</div>
-<script type="text/javascript">
-function show_abstract() {
-  $('#abstract1').hide();
-  $('#abstract2').show();
-  $('#abstract_expand').hide();
-}
-</script>
-<div id="abstract_expand" style="margin:10px 0 0 5px; text-align:left;"><span class="win_expandable" style="color:#F26C4F; margin:0 5px 0 0;" onClick="show_abstract()">▼</span><a href="javascript:show_abstract()">Показать полностью</a></div>
+<div id="abstract1" style="width:504px; border:0; margin:0; padding:0; text-align:left;"><p align=justify style='margin-top: 0.3em;'>Предметом настоящего исследования является рынок труда и правовая ситуация в Германии 1920-х гг. в контексте пребывания на ее территории огромной массы русских беженцев и бывших военнопленных Первой мировой войны; деятельность российских общественных и профессиональных организаций по преодолению гуманитарного кризиса, в котором оказались соотечественники в изгнании; процесс воссоздания организационных структур российской гуманитарной деятельности в Европе; правовые и экономические основы их деятельности за границей; роль российских гуманитарных организаций в Германии в процессе трудоустройства русских беженцев. Методологической основой стали принципы историзма и системности. Системность подразумевает изучение поставленной проблемы в неразрывной взаимосвязи с процессами и событиями, происходящими в обществе в конкретный момент истории. Впервые история российской эмиграции первой волны изучалась через призму процессов, происходивших в сфере трудовых взаимоотношений российских беженцев и германского общества; как история людей, оказавшихся в условиях острого гуманитарного кризиса. Социокультурный стресс, полученный миллионами соотечественников, имел следствием маргинализацию, денационализацию огромных масс людей. В статье впервые осмыслена роль гуманитарной деятельности в противодействии этим кризисным процессам в исследуемый период.</div>
 
 </td></tr></table>
 
@@ -922,10 +947,10 @@ function show_abstract() {
 <td width=52%><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Учитывается или нет данная публикация в РИНЦ. Некоторые категории публикаций (например, статьи в реферативных, научно-популярных, информационных журналах) могут быть размещены на платформе elibrary.ru, но не учитываются в РИНЦ. Также не учитываются статьи в журналах и сборниках, исключенных из РИНЦ за нарушение научной и издательской этики.</p>'>&nbsp;&nbsp;Входит в РИНЦ:&nbsp;<font color=#00008f>да</font></td>
 
 
-<td width=48%><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Число цитирований данной публикации из публикаций, входящих в РИНЦ. Сама публикация при этом может и не входить в РИНЦ. Для сборников статей и книг, индексируемых в РИНЦ на уровне отдельных глав, указывается суммарное число цитирований всех статей (глав) и сборника (книги) в целом.</p>'>&nbsp;&nbsp;Цитирований в РИНЦ:&nbsp;<font color=#00008f>0</font></td></tr>
+<td width=48%><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Число цитирований данной публикации из публикаций, входящих в РИНЦ. Сама публикация при этом может и не входить в РИНЦ. Для сборников статей и книг, индексируемых в РИНЦ на уровне отдельных глав, указывается суммарное число цитирований всех статей (глав) и сборника (книги) в целом.</p>'>&nbsp;&nbsp;Цитирований в РИНЦ:&nbsp;<a href="cit_items.asp?id=42578124" title="Список публикаций в РИНЦ, цитирующих данную">3</a></td></tr>
 
 <tr align=left valign=bottom>
-<td><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Входит или нет данная публикация в ядро РИНЦ. Ядро РИНЦ включает все статьи, опубликованные в журналах, индексируемых в базах данных Web of Science Core Collection, Scopus или Russian Science Citation Index (RSCI).</p>'>&nbsp;&nbsp;Входит в ядро РИНЦ:&nbsp;<font color=#00008f><span id="InCoreRisc">да</span></font></td>
+<td><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Входит или нет данная публикация в ядро РИНЦ. Ядро РИНЦ включает все статьи, опубликованные в журналах, индексируемых в базах данных Web of Science Core Collection, Scopus или Russian Science Citation Index (RSCI).</p>'>&nbsp;&nbsp;Входит в ядро РИНЦ:&nbsp;<font color=#00008f><span id="InCoreRisc">нет</span></font></td>
 
 <td><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Число цитирований данной публикации из публикаций, входящих в ядро РИНЦ. Сама публикация при этом может не входить в ядро РИНЦ. Для сборников статей и книг, индексируемых в РИНЦ на уровне отдельных глав, указывается суммарное число цитирований всех статей (глав) и сборника (книги) в целом.</p>'>&nbsp;&nbsp;Цитирований из ядра РИНЦ:&nbsp;<font color=#00008f>0</font></td>
 </tr>
@@ -934,7 +959,7 @@ function show_abstract() {
 <tr align=left valign=bottom>
 <td><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Наличие в РИНЦ информации о рецензировании данной публикации.</p>'>&nbsp;&nbsp;Рецензии:&nbsp;<font color=#00008f>есть</font></td>
 
-<td><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Процентиль журнала в рейтинге Science Index за 2023 год.</p>'>&nbsp;&nbsp;Процентиль журнала в рейтинге SI:&nbsp;<font color=#00008f>32</font></td>
+<td><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Процентиль журнала в рейтинге Science Index за 2023 год.</p>'>&nbsp;&nbsp;Процентиль журнала в рейтинге SI:&nbsp;<font color=#00008f>53</font></td>
 
 </tr>
 
@@ -953,7 +978,7 @@ function show_abstract() {
 <table width=100% border=0 cellspacing=0 cellpadding=3>
 
 <tr align=left valign=top>
-<td width=27%><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Основная рубрика публикации в соответствии с рубрикатором OECD. Авторы, зарегистрированные в системе Science Index, имеют возможность уточнять тематические рубрики своих публикаций.</p>'>&nbsp;&nbsp;Рубрика&nbsp;OECD:&nbsp;</td><td width=73%><font color=#00008f><span id="rubric_oecd">нет</span></font></td>
+<td width=27%><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Основная рубрика публикации в соответствии с рубрикатором OECD. Авторы, зарегистрированные в системе Science Index, имеют возможность уточнять тематические рубрики своих публикаций.</p>'>&nbsp;&nbsp;Рубрика&nbsp;OECD:&nbsp;</td><td width=73%><font color=#00008f><span id="rubric_oecd">History and archaeology</span></font></td>
 </tr>
 </table>
 
@@ -967,7 +992,7 @@ function show_abstract() {
 <table width=100% border=0 cellspacing=0 cellpadding=3>
 
 <tr align=left valign=top>
-<td width=27%><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Основная рубрика публикации в соответствии с рубрикатором ГРНТИ. Авторы, зарегистрированные в системе Science Index, имеют возможность уточнять тематические рубрики своих публикаций.</p>'>&nbsp;&nbsp;Рубрика&nbsp;ГРНТИ:&nbsp;</td><td width=73%><font color=#00008f><span id="rubric_grnti">нет</span></font></td>
+<td width=27%><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Основная рубрика публикации в соответствии с рубрикатором ГРНТИ. Авторы, зарегистрированные в системе Science Index, имеют возможность уточнять тематические рубрики своих публикаций.</p>'>&nbsp;&nbsp;Рубрика&nbsp;ГРНТИ:&nbsp;</td><td width=73%><font color=#00008f><span id="rubric_grnti">История. Исторические науки <span style='color:#F26C4F'>/</span> История России</span></font></td>
 </tr>
 </table>
 
@@ -998,16 +1023,16 @@ function show_abstract() {
 <table width=100% border=0 cellspacing=0 cellpadding=3>
 <tr align=left valign=bottom>
 
-<td width=30%><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Число просмотров страницы с описанием и аннотацией публикации посетителями elibrary.ru. Учитываются все просмотры, в том числе сделанные незарегистрированными пользователями. Повторные просмотры одним и тем же пользователем не учитываются. Зависит от года издания и появления публикации на сайте. В скобках указано число зарегистрированных пользователей, просматривавших данную страницу.</p>'>&nbsp;&nbsp;Просмотров:&nbsp;<font color=#00008f>12 (11)</font></td>
+<td width=30%><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Число просмотров страницы с описанием и аннотацией публикации посетителями elibrary.ru. Учитываются все просмотры, в том числе сделанные незарегистрированными пользователями. Повторные просмотры одним и тем же пользователем не учитываются. Зависит от года издания и появления публикации на сайте. В скобках указано число зарегистрированных пользователей, просматривавших данную страницу.</p>'>&nbsp;&nbsp;Просмотров:&nbsp;<font color=#00008f>23 (18)</font></td>
 
-<td width=35%><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Число загрузок полного текста публикации посетителями elibrary.ru. Если полный текст публикации отсутствует на elibrary.ru, показатель не рассчитывается. Повторные загрузки одним и тем же пользователем не учитываются. Зависит от года издания и появления публикации на сайте, а также от режима доступа к полному тексту (открытый или по подписке). В скобках указано число уникальных авторов, загрузивших данную публикацию.</p>'>&nbsp;&nbsp;Загрузок:&nbsp;<font color=#00008f>6 (5)</font></td>
+<td width=35%><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Число загрузок полного текста публикации посетителями elibrary.ru. Если полный текст публикации отсутствует на elibrary.ru, показатель не рассчитывается. Повторные загрузки одним и тем же пользователем не учитываются. Зависит от года издания и появления публикации на сайте, а также от режима доступа к полному тексту (открытый или по подписке). В скобках указано число уникальных авторов, загрузивших данную публикацию.</p>'>&nbsp;&nbsp;Загрузок:&nbsp;<font color=#00008f>5 (3)</font></td>
 
-<td width=35%><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Число персональных подборок пользователей elibrary.ru, которые включают данную публикацию.</p>'>&nbsp;&nbsp;Включено в подборки:&nbsp;<font color=#00008f>5</font></td>
+<td width=35%><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Число персональных подборок пользователей elibrary.ru, которые включают данную публикацию.</p>'>&nbsp;&nbsp;Включено в подборки:&nbsp;<font color=#00008f>49</font></td>
 </tr>
 
 <tr align=left valign=bottom>
 
-<td width=30%><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Число оценок публикации, сделанных учеными, зарегистрированными в системе Science Index. Для просмотра распределения оценок щелкните мышью на этом числе.</p>'>&nbsp;&nbsp;Всего оценок:&nbsp;<font color=#00008f><span id="score_count">5</span></font></td>
+<td width=30%><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Число оценок публикации, сделанных учеными, зарегистрированными в системе Science Index. Для просмотра распределения оценок щелкните мышью на этом числе.</p>'>&nbsp;&nbsp;Всего оценок:&nbsp;<font color=#00008f><span id="score_count">0</span></font></td>
 
 <td width=35%><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Средняя оценка публикации учеными, зарегистрированными в системе Science Index. Значение соответствует следующим уровням оценки публикации:</p><br><table width=100% cellspacing=0 cellpadding=3 border=0>
 <tr><td width=15% align=center valign=top>
@@ -1036,11 +1061,164 @@ function show_abstract() {
 </td>
 <td align=left valign=top><div>не научная, нарушающая научную этику или очень слабая публикация (должна быть исключена из РИНЦ)</div></td></tr>
 
-</table>'>&nbsp;&nbsp;Средняя оценка:&nbsp;<font color=#00008f><span id="avg_score">5</span></font>
+</table>'>&nbsp;&nbsp;Средняя оценка:&nbsp;<font color=#00008f><span id="avg_score"></span></font>
 </td>
 
 <td width=35%><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Число отзывов о публикации, сделанных учеными, зарегистрированными в системе Science Index. Для просмотра всех отзывов щелкните мышью на этом числе.</p>'>&nbsp;&nbsp;Всего отзывов:&nbsp;<font color=#00008f><span id="comment_count">0</span></font></td>
 </tr></table>
+
+
+
+<SCRIPT LANGUAGE="JavaScript">
+function item_all_comments(){
+  $.fancybox({
+      href : '/item_all_comments.asp?itemid=42578124&rand=' + Math.random(),
+      title : '',
+	  padding : 20,     
+	  width : 520,
+	  height : 350,
+	  overlayOpacity : 0.3,	
+	  overlayColor : '#000',
+	  speedIn : 500,
+	  hideOnOverlayClick : false,
+	  enableEscapeButton : true,
+	  type : 'iframe'
+    });
+}
+function item_all_scores(){
+  $.fancybox({
+      href : '/item_all_scores.asp?itemid=42578124&rand=' + Math.random(),
+      title : '',
+	  padding : 20,     
+	  width : 400,
+	  height : 270,
+	  overlayOpacity : 0.3,	
+	  overlayColor : '#000',
+	  speedIn : 500,
+	  hideOnOverlayClick : false,
+	  enableEscapeButton : true,
+	  type : 'iframe'
+    });
+}
+</script>
+
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function item_score_comments(){
+  $.fancybox({
+		href : '/item_score_comments.asp?itemid=42578124&rand=' + Math.random(),
+		title : '',
+		padding : 20,     
+		width : 520,
+		height : 280,
+		overlayOpacity : 0.3,	
+		overlayColor : '#000',
+		speedIn : 500,
+		hideOnOverlayClick : false,
+		enableEscapeButton : true,
+		type : 'iframe'
+	});
+}
+function change_score(score){
+  if ($('#score').val()==score){
+    $.post('update_item_score.asp', 'itemid=42578124&score=0&rand=' + Math.random(), function() {
+      $('#score').val(0); 
+	  $('.sc_0').css({color:"#c0c0c0"});
+      $.post('item_score_count.asp', 'itemid=42578124&rand=' + Math.random(), function(data){
+        var s = data.split('|');
+		if(s[0]>0){
+          $('#score_count').html('<a href="javascript:item_all_scores()" title="Посмотреть распределение оценок">'+s[0]+'</a>');}
+		else{
+          $('#score_count').html('0');}
+        $('#avg_score').html(s[1]);
+      });
+    });
+  }
+  else {
+    $.post('update_item_score.asp', 'itemid=42578124&score=' + score + '&rand=' + Math.random(), function() {
+      $('#score').val(score); 
+	  $('.sc_0').css({color:"#c0c0c0"});
+	  $('.sc_'+score).css({color:"#F26C4F"});
+      $.post('item_score_count.asp', 'itemid=42578124&rand=' + Math.random(), function(data){
+        var s = data.split('|');
+		if(s[0]>0){
+          $('#score_count').html('<a href="javascript:item_all_scores()" title="Посмотреть распределение оценок">'+s[0]+'</a>');}
+		else{
+          $('#score_count').html('0');}
+        $('#avg_score').html(s[1]);
+      });
+    });
+  } 
+}
+</script>
+
+<table width=100% border=0 cellspacing=0 cellpadding=3>
+<tr>
+<td align=left valign=top width=40%><div style="height:8px"></div><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Оцените данную публикацию - Ваша экспертная оценка будет полезна другим читателям библиотеки. Для оценки публикации необходимо щелкнуть мышью на звездочке, соответствующей выбранному уровню:</p><br><table width=100% cellspacing=0 cellpadding=3 border=0>
+<tr><td width=30% align=left valign=top>
+<span style="font-size: 18pt; color: #F26C4F; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+<span style="font-size: 18pt; color: #F26C4F; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+<span style="font-size: 18pt; color: #F26C4F; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+<span style="font-size: 18pt; color: #F26C4F; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+<span style="font-size: 18pt; color: #F26C4F; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+</td>
+<td width=70% align=left valign=top><div>публикация международного уровня (на уровне требований Web of Science Core Collection)</div>
+</td></tr>
+
+<tr><td align=left valign=top>
+<span style="font-size: 18pt; color: #F26C4F; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+<span style="font-size: 18pt; color: #F26C4F; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+<span style="font-size: 18pt; color: #F26C4F; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+<span style="font-size: 18pt; color: #F26C4F; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+<span style="font-size: 18pt; color: #C0C0C0; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+</td>
+<td align=left valign=top><div>публикация высокого уровня (достаточного для учета при защите докторской диссертации, достойна включения в ядро РИНЦ)</div></td></tr>
+
+<tr><td align=left valign=top>
+<span style="font-size: 18pt; color: #F26C4F; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+<span style="font-size: 18pt; color: #F26C4F; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+<span style="font-size: 18pt; color: #F26C4F; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+<span style="font-size: 18pt; color: #C0C0C0; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+<span style="font-size: 18pt; color: #C0C0C0; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+</td>
+<td align=left valign=top><div>публикация среднего уровня (достаточного для учета при защите кандидатской диссертации)</div></td></tr>
+
+<tr><td align=left valign=top>
+<span style="font-size: 18pt; color: #F26C4F; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+<span style="font-size: 18pt; color: #F26C4F; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+<span style="font-size: 18pt; color: #C0C0C0; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+<span style="font-size: 18pt; color: #C0C0C0; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+<span style="font-size: 18pt; color: #C0C0C0; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+</td>
+<td align=left valign=top><div>публикация начального уровня (как правило, подготовленная студентами, аспирантами, молодыми учеными, при этом уровень достаточен для ее включения в РИНЦ)</div></td></tr>
+
+<tr><td align=left valign=top>
+<span style="font-size: 18pt; color: #F26C4F; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+<span style="font-size: 18pt; color: #C0C0C0; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+<span style="font-size: 18pt; color: #C0C0C0; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+<span style="font-size: 18pt; color: #C0C0C0; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+<span style="font-size: 18pt; color: #C0C0C0; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+</td>
+<td align=left valign=top><div>не научная, нарушающая научную этику или очень слабая публикация (должна быть исключена из РИНЦ)</div></td></tr>
+
+</table>
+<p>Нажатие на другую звездочку будет переключать оценку. Если Вы не хотите оценивать данную публикацию, нужно оставить все звездочки серыми (если перед этим оценка была уже проставлена, нужно еще раз кликнуть на звездочке, соответствующей оценке). Оценивать публикации могут ученые, зарегистрированные в системе Science Index, за исключением авторов оцениваемой публикации.</p><p>Вы можете также добавить свой отзыв о данной публикации с аргументацией проставленной оценки и рекомендациями для других читателей.</p>'>&nbsp;&nbsp;Ваша оценка данной публикации:&nbsp;<font color=#00008f></font></td>
+
+<td nowrap align=left valign=top width=25%>
+<span id="score_1" class="asterbig sc_0 sc_1 sc_2 sc_3 sc_4 sc_5" onClick="change_score('1')">*</span>
+<span id="score_2" class="asterbig sc_0 sc_2 sc_3 sc_4 sc_5" onClick="change_score('2')">*</span>
+<span id="score_3" class="asterbig sc_0 sc_3 sc_4 sc_5" onClick="change_score('3')">*</span>
+<span id="score_4" class="asterbig sc_0 sc_4 sc_5" onClick="change_score('4')">*</span>
+<span id="score_5" class="asterbig sc_0 sc_5" onClick="change_score('5')">*</span>
+</td>
+<td width=18% align=left valign=top><div style="height:8px"></div><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Если Вы прочитали данную публикацию, Вы можете помочь другим посетителям библиотеки, оставив свой отзыв с комментариями и рекомендациями для других читателей. Ваш отзыв будет доступен для всех ученых, зарегистрированных в системе Science Index. Чтобы оставить отзыв о данной публикации, щелкните мышью на иконке. Вы можете в любой момент изменить или удалить свой отзыв.</p>'>&nbsp;&nbsp;Ваш отзыв:&nbsp;</td>
+<td width=17% align=left valign=top><img id="comment_score" src="/images/comments-g.png" width=14 height=14 border=0 style="margin:8px 0 0 0; cursor: pointer;" title="Добавить отзыв о данной публикации" onClick="item_score_comments()"></td>
+</tr>
+</table>
+
+<input type="hidden" name="score" id="score" value="0">
 
 
 
@@ -1052,35 +1230,35 @@ function show_abstract() {
 <font color=#000000>ОПИСАНИЕ НА АНГЛИЙСКОМ ЯЗЫКЕ:</font></td></tr>
 <tr><td width=34>&nbsp;</td><td width=504 align=center valign=middle>
 <div style="height:5px;"></div>
-<font color=#F26C4F>HERMENEUTICS OF SHAMANIC VIDEOGAMES: THE EXAMPLE OF “KISIMA INŋITCHUŋA”</font>
+<font color=#F26C4F>RUSSIAN HUMANITARIAN ORGANIZATION ON THE GERMAN JOB MARKET AS A FACTOR OF ADAPTATION OF RUSSIAN REFUGEES IN THE 1919-1920'S</font>
 
 <div style="height:5px;"></div>
-<div style='display: inline-block; white-space: nowrap'><font color=#00008f>MALENKO&nbsp;M.Y.</font><img src='/images/about_author.gif' border=0 hspace=2 height=10 width=9 class='help pointer' title='ORCID:&nbsp;<a href="https://orcid.org/0009-0000-4173-3671" target=_blank>0009-0000-4173-3671</a>&nbsp;&nbsp; '><font color=#000000><sup>1</sup></font></div>
+<div style='display: inline-block; white-space: nowrap'><span class='help pointer' title='<b><font color=#F26C4F>Ипполитов Сергей Сергеевич</font></b><br>Российский научно-исследовательский институт культурного и природного наследия им. Д.С. Лихачева<br><a href="author_profile.asp?authorid=332247" target=_blank>Профиль автора в SCIENCE INDEX</a><br><a href="author_items.asp?authorid=332247" target=_blank>Список публикаций в РИНЦ</a>'><font color=#00008f>IPPOLITOV&nbsp;S.S.</font></span><font color=#000000><sup>1</sup></font></div>
 <br>
 
 <div style="height:5px;"></div>
-<font color=#000000><sup>1</sup></font>&nbsp;<span class='help1 pointer' title='<b><font color=#F26C4F>Национальный исследовательский университет "Высшая школа экономики"</font></b> (Москва)<br><a href="org_profile.asp?id=421" target=_blank>Профиль организации в SCIENCE INDEX</a><br><a href="org_items.asp?orgsid=421" target=_blank>Список публикаций в РИНЦ</a>'><font color=#00008f>National Research University “Higher School of Economics”</font></span>, Moscow, Russia<br>
+<font color=#000000><sup>1</sup></font>&nbsp;<span class='help1 pointer' title='<b><font color=#F26C4F>Московский государственный институт культуры</font></b> (Химки)<br><a href="org_profile.asp?id=15117" target=_blank>Профиль организации в SCIENCE INDEX</a><br><a href="org_items.asp?orgsid=15117" target=_blank>Список публикаций в РИНЦ</a>'><font color=#00008f>Moscow State Institute of Culture</font></span><br>
 </td></tr>
 
 
 
 <tr><td width=34>&nbsp;</td><td width=504 align=left valign=middle>
 
-<div id="eabstract1" style="width:504px; border:0; margin:0; padding:0; text-align:left;"><p align=justify style='margin-top: 0.3em;'>The article focuses on “ethnological video games”, defined as video games which are developed on the basis of ethnographic and folkloric material. The particular focus is on the kind of ethnological games which contain representation or simulation of shamanistic practices. Among them are Mooseman based on Komi-Permyak and Finno-Ugric mythology, Never Alone based on Iñupiaq folklore, and the rhythm game Nishan Shaman based on a Manchu folktale. The starting point of discussion is: in what cases these kinds of videogames are able to draw players into shamanic or animistic practices, as well as into corresponding ontologies? In order to address this, the article offers a structural-semiotic and ludohermeneutic analysis for one of the above-mentioned games, Never Alone , or Kisima Inŋitchuŋa in Iñupiaq. Using Donna Haraway's concept of “world games”, the article proposes a number of modes of compatibility between video game ontologies and ethnographically identified shamanic ontologies. Correspondence between mythological and video game realities is considered, on the level of performative engagement in the semiotics of a myth or a video game. In its exaggerated form, the question of the article is: how does a playthrough of a “shamanic video game” could be similar to an actual shamanic ritual?</div>
+<div id="eabstract1" style="width:504px; border:0; margin:0; padding:0; text-align:left;"><p align=justify style='margin-top: 0.3em;'>The subject of this research is the job market and legal situation in Germany in the 1920's in the context of arrival of a large number of Russian refugees and former World War I prisoners; activity of the Russian social and professional organizations on overcoming humanitarian crisis faced by the compatriots in exile; process of reproduction of organizational structures of the Russian humanitarian activity in Europe; legal and economic framework of their activity abroad; role of humanitarian organizations in Germany in the process of employment of Russian refugees. Methodology is based on the principles of historicism and systematicity. The latter implies examination of the articulated problem in inseparable connection with the ongoing social processes and events during a specific historical period. For the first time, the history of Russian first-wave émigré is viewed through the prism of processes taking place in the area of labor relations of Russian refugees and German society; as a story of people who faced a severe humanitarian crisis. Sociocultural stress incurred by millions of compatriots caused such phenomena as marginalization and denationalization on a massive scale. The article reflects the role of humanitarian activity in counteracting the aforementioned crisis processes of the examined period.</div>
 
 </td></tr>
 
 <tr><td width=34>&nbsp;</td><td width=504 align=left valign=middle><p>
-Keywords: <a href="keyword_items.asp?id=535833">SHAMANISM</a>, 
-<a href="keyword_items.asp?id=1115469">VIDEO GAMES</a>, 
-<a href="keyword_items.asp?id=3072776">ONTOLOGICAL TURN</a>, 
-<a href="keyword_items.asp?id=150041">SEMIOTICS</a>, 
-<a href="keyword_items.asp?id=27786061">LUDOHERMENEUTICS</a>, 
-<a href="keyword_items.asp?id=2866332">GAME STUDIES</a>, 
-<a href="keyword_items.asp?id=27786062">COSMOPRAXIS</a>, 
-<a href="keyword_items.asp?id=114291">ANTHROPOLOGY</a>, 
-<a href="keyword_items.asp?id=51354">ETHNOGRAPHY</a>, 
-<a href="keyword_items.asp?id=10416428">WORLD GAMES</a>
+Keywords: <a href="keyword_items.asp?id=18454760">SOCIAL ADAPTATION OF EMIGRANTS</a>, 
+<a href="keyword_items.asp?id=15637265">EMPLOYMENT OF IMMIGRANTS</a>, 
+<a href="keyword_items.asp?id=18330356">EMIGRATION IN GERMANY</a>, 
+<a href="keyword_items.asp?id=4347196">CIVIL IDENTITY</a>, 
+<a href="keyword_items.asp?id=16282290">LEGAL DISCRIMINATION</a>, 
+<a href="keyword_items.asp?id=18045749">ADAPTATION OF EMIGRANTS</a>, 
+<a href="keyword_items.asp?id=422242">RUSSIAN EMIGRATION</a>, 
+<a href="keyword_items.asp?id=12752640">HUMANITARIAN ORGANIZATION</a>, 
+<a href="keyword_items.asp?id=174390">UNEMPLOYMENT</a>, 
+<a href="keyword_items.asp?id=15299566">LABOR ARTELS</a>
 </td></tr>
 
 </table>
@@ -1120,80 +1298,43 @@ function show_context(refid) {
 
 <tr bgcolor=#f5f5f5><td width=6% align=right valign=top nowrap><font color=#000000>1.&nbsp;</font></td>
 <td width=89% align=justify valign=top><font color=#000000>
-Aarseth, E., & Möring, S. (2020). The game itself?: Towards a Hermeneutics of Computer Games.International Conference on the Foundations of Digital Games, 1-8.</font>&nbsp; <font color=#F26C4F>DOI:</font>&nbsp;<a href="https://doi.org/10.1145/3402942.3402978" target=_blank rel="nofollow">10.1145/3402942.3402978</a>
-<span title="Показать ссылку в тексте публикации" class="win_expandable" id="context_expand_1730601281" style="color:#00008f; margin:0 5px 0 0;" onClick="show_context('1730601281')"> &nbsp;<font color=#F26C4F>▼</font>&nbsp;Контекст</span>
-<div id="context_1730601281" style="border:0; margin:0; padding:0; text-align:left; display:none;">
-<div style="height:3px;"></div>
-<table width=100% border=0 cellspacing=1 cellpadding=3>
-<td width=8% align=right valign=top bgcolor=#f5f5f5><font color=#000000>Контекст:</font></td>
-<td width=92% align=left valign=top bgcolor=#f5f5f5>
-<font color=#555555><i>...Сравнение будет производиться прежде всего с привлечением двух методов: структурно-семиотического (Нам, 2017, с. 18), обширно используемого в исследованиях шаманизма и сопутствующего ему фольклора, и людогерменевтического (Aarseth, Möring, 2020; Karhulahti, 2015), изучающего процессы интерпретации видеоигр и их онтологические основания...</i></font>
-</td></tr></table>
-</div>
+Ипполитов С.С. Российская эмиграция и Европа: Несостоявшийся альянс. М.: 2004. 368 с.</font>&nbsp; <font color=#F26C4F>EDN:</font>&nbsp;<a href="https://elibrary.ru/qctggp" target=_blank rel="nofollow">QCTGGP</a>
 
-</td><td align=center valign=top width=5%>&nbsp;</td>
+</td><td align=center valign=top width=5%><div style="height:5px;"></div><a href="item.asp?id=19135414" title="Перейти на описание цитируемой публикации" class="help1" target=_blank><img src="/images/go_url.png" height=15 width=15 border=0></a></td>
 </tr>
 
 <tr bgcolor=#f5f5f5><td width=6% align=right valign=top nowrap><font color=#000000>2.&nbsp;</font></td>
 <td width=89% align=justify valign=top><font color=#000000>
-Aupilaarjuk, M. T., Nutaraalik, L., Iqallijuq, R., Ujarak, J., Ijituuq, I., & Kupaaq, M. (2001).Interviewing Inuit Elders.: Vol. 4. Cosmology and Shamanism. Nunavut Arctic College.</font>
-</td><td align=center valign=top width=5%>&nbsp;</td>
+Ганин А.В. Трудоустройство и профессиональная реализация русских генштабистов-эмигрантов в 1920-1930-е гг. // Славянский мир в третьем тысячелетии. 2012. №7. С. 92-96.</font>&nbsp; <font color=#F26C4F>EDN:</font>&nbsp;<a href="https://elibrary.ru/jisbke" target=_blank rel="nofollow">JISBKE</a>
+
+</td><td align=center valign=top width=5%><div style="height:5px;"></div><a href="item.asp?id=44479149" title="Перейти на описание цитируемой публикации" class="help1" target=_blank><img src="/images/go_url.png" height=15 width=15 border=0></a></td>
 </tr>
 
 <tr bgcolor=#f5f5f5><td width=6% align=right valign=top nowrap><font color=#000000>3.&nbsp;</font></td>
 <td width=89% align=justify valign=top><font color=#000000>
-Berlatsky, N. (2019). Ka Baird's Transcendent Experimentalism. Bandcamp. https://daily.bandcamp.com/features/ka-baird-respires-interview.</font>
-<span title="Показать ссылку в тексте публикации" class="win_expandable" id="context_expand_1730601283" style="color:#00008f; margin:0 5px 0 0;" onClick="show_context('1730601283')"> &nbsp;<font color=#F26C4F>▼</font>&nbsp;Контекст</span>
-<div id="context_1730601283" style="border:0; margin:0; padding:0; text-align:left; display:none;">
-<div style="height:3px;"></div>
-<table width=100% border=0 cellspacing=1 cellpadding=3>
-<td width=8% align=right valign=top bgcolor=#f5f5f5><font color=#000000>Контекст:</font></td>
-<td width=92% align=left valign=top bgcolor=#f5f5f5>
-<font color=#555555><i>...Харауэй; музыкальная исполнительница Ка Бэйрд, ссылаясь на Харауэй, метко определяет его как «создающее зоны контакта с незримым или с духами вещей» (“creating contact zones with the unseen or with spirits of things”) (Berlatsky, 2019)...</i></font>
-</td></tr></table>
-</div>
-
+Сергеев В.П. Общественные организации русского национального меньшинства в Эстонской республике в 1920 1940 гг. // Новый исторический вестник. 2005. №12. С. 32-39.</font>
 </td><td align=center valign=top width=5%>&nbsp;</td>
 </tr>
 
 <tr bgcolor=#f5f5f5><td width=6% align=right valign=top nowrap><font color=#000000>4.&nbsp;</font></td>
 <td width=89% align=justify valign=top><font color=#000000>
-Bumochir, D. (2014). Institutionalization of Mongolian shamanism: From primitivism to civilization. Asian Ethnicity, 15(4), 473-491.</font>&nbsp; <font color=#F26C4F>DOI:</font>&nbsp;<a href="https://doi.org/10.1080/14631369.2014.939331" target=_blank rel="nofollow">10.1080/14631369.2014.939331</a>
-<span title="Показать ссылку в тексте публикации" class="win_expandable" id="context_expand_1730601284" style="color:#00008f; margin:0 5px 0 0;" onClick="show_context('1730601284')"> &nbsp;<font color=#F26C4F>▼</font>&nbsp;Контекст</span>
-<div id="context_1730601284" style="border:0; margin:0; padding:0; text-align:left; display:none;">
-<div style="height:3px;"></div>
-<table width=100% border=0 cellspacing=1 cellpadding=3>
-<td width=8% align=right valign=top bgcolor=#f5f5f5><font color=#000000>Контекст:</font></td>
-<td width=92% align=left valign=top bgcolor=#f5f5f5>
-<font color=#555555><i>...В иных ситуациях применение рамки «шаманизма» к тем же явлениям может оказаться нерелевантным - в особенности учитывая критику этой категории как преимущественно западного и / или специфически монгольского конструкта, проецируемого извне на различные коренные сообщества (Bumochir, 2014)...</i></font>
-</td></tr></table>
-</div>
-
+Бочарова З.С. Особенности адаптации русской эмиграции 1920-1930-х годов // Русское зарубежье. 2017. №6. С.28-34.</font>
 </td><td align=center valign=top width=5%>&nbsp;</td>
 </tr>
 
 <tr bgcolor=#f5f5f5><td width=6% align=right valign=top nowrap><font color=#000000>5.&nbsp;</font></td>
 <td width=89% align=justify valign=top><font color=#000000>
-Chapman, A. (2016). Digital Games as History. Routledge.</font>&nbsp; <font color=#F26C4F>DOI:</font>&nbsp;<a href="https://doi.org/10.4324/9781315732060" target=_blank rel="nofollow">10.4324/9781315732060</a>
-<span title="Показать ссылку в тексте публикации" class="win_expandable" id="context_expand_1730601285" style="color:#00008f; margin:0 5px 0 0;" onClick="show_context('1730601285')"> &nbsp;<font color=#F26C4F>▼</font>&nbsp;Контекст</span>
-<div id="context_1730601285" style="border:0; margin:0; padding:0; text-align:left; display:none;">
-<div style="height:3px;"></div>
-<table width=100% border=0 cellspacing=1 cellpadding=3>
-<td width=8% align=right valign=top bgcolor=#f5f5f5><font color=#000000>Контекст:</font></td>
-<td width=92% align=left valign=top bgcolor=#f5f5f5>
-<font color=#555555><i>...Иными словами, он или она не испытает в отношении внутриигровых духов должного «резонанса» по Чапману: «ситуацию узнавания, когда игрок соотносит видимые на экране объекты с чем-либо за пределами игры» (Chapman, 2016, p. 35; по: Мойжес, 2020, с. 37)...</i></font>
-</td></tr></table>
-</div>
+Бочарова З.С. Правовое положение русских беженцев во Франции в 1920-1930-е годы // РСМ. 2017. №2. С. 161-176.</font>&nbsp; <font color=#F26C4F>EDN:</font>&nbsp;<a href="https://elibrary.ru/zafnul" target=_blank rel="nofollow">ZAFNUL</a>
 
-</td><td align=center valign=top width=5%>&nbsp;</td>
+</td><td align=center valign=top width=5%><div style="height:5px;"></div><a href="item.asp?id=29713160" title="Перейти на описание цитируемой публикации" class="help1" target=_blank><img src="/images/go_url.png" height=15 width=15 border=0></a></td>
 </tr>
 
 <tbody ID="list_refs"></tbody>
 
 <script type="text/javascript">
 function show_refs() {
-  $('#show_reflist').html("<tr><td colspan=3 align=center>Загружается (всего ссылок: 46) ...</td></tr>");
-  $.get("get_item_refs.asp?id=82333840&rand=" + Math.random(), function(data) {
+  $('#show_reflist').html("<tr><td colspan=3 align=center>Загружается (всего ссылок: 38) ...</td></tr>");
+  $.get("get_item_refs.asp?id=42578124&rand=" + Math.random(), function(data) {
     $('#list_refs').html(data);
     $('#show_reflist').html('');
 		MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
@@ -1203,7 +1344,7 @@ function show_refs() {
 
 <tr><td colspan=3><div style="height:6px;"></div></td></tr>
 <tbody ID="show_reflist">
-<tr><td align=right valign=middle><span class="win_expandable" style="color:#F26C4F; margin:0 5px 0 0;" onClick="show_refs()">▼</span></td><td align=left valign=middle><a href="javascript:show_refs()">Показать весь список литературы (всего ссылок: 46)</a></td><td></td></tr>
+<tr><td align=right valign=middle><span class="win_expandable" style="color:#F26C4F; margin:0 5px 0 0;" onClick="show_refs()">▼</span></td><td align=left valign=middle><a href="javascript:show_refs()">Показать весь список литературы (всего ссылок: 38)</a></td><td></td></tr>
 </tbody>
 
 
@@ -1236,10 +1377,10 @@ function show_refs() {
 <table width=190 cellspacing=0 cellpadding=3 border=0>
 
 <input type="hidden" name="itembox_name" value="">
-<input type="hidden" name="id" value="82333840">
-<input type="hidden" name="did" value="82333840">
-<input type="hidden" name="sid" value="682676094">
-<input type="hidden" name="noteid" value="82333840">
+<input type="hidden" name="id" value="42578124">
+<input type="hidden" name="did" value="42578124">
+<input type="hidden" name="sid" value="683164423">
+<input type="hidden" name="noteid" value="42578124">
 <input type="hidden" name="disspage" value="">
 <input type="hidden" name="counterid" value="">
 <input type="hidden" name="commentid" value="">
@@ -1247,10 +1388,10 @@ function show_refs() {
 <input type="hidden" name="linkid" value="">
 <input type="hidden" name="paysum" value="">
 <input type="hidden" name="payitemid" value="">
-<input type="hidden" name="authorid" value="">
-<input type="hidden" name="tid82333840" value="82333840">
+<input type="hidden" name="authorid" value="900763">
+<input type="hidden" name="tid42578124" value="42578124">
 <input type="hidden" name="filenum" value="1">
-<input type="hidden" name="fileid" value="82333840">
+<input type="hidden" name="fileid" value="42578124">
 <input type="hidden" name="urlnum" value="1">
 <input type="hidden" name="items_all" value="">
 
@@ -1259,12 +1400,12 @@ function show_refs() {
 
 
 <tr><td width=15% align=center valign=top>
-<a href="contents.asp?id=82333831&selid=82333840"><img src="images/but_orange.gif" width=15 height=15 hspace=3 border=0></a>
+<a href="contents.asp?id=42578113&selid=42578124"><img src="images/but_orange.gif" width=15 height=15 hspace=3 border=0></a>
 
 </td>
 
 <td width=85% align=left valign=middle>
-<a href="contents.asp?id=82333831&selid=82333840">Содержание выпуска</a>
+<a href="contents.asp?id=42578113&selid=42578124">Содержание выпуска</a>
 
 </td></tr>
 
@@ -1274,15 +1415,15 @@ function show_refs() {
 	<td width=85% align=left valign=middle>Загрузить:
 	</td></tr>
 	
-	<tr><td width=15% align=center valign=top><a href="javascript:file_article(82333840, 1)" rel="nofollow" title=""><img src="/images/download_green.png" width=16 hspace=2 border=0></a></td>
-	<td width=85% align=left valign=middle><a href="javascript:file_article(82333840, 1)" rel="nofollow" class="help" title="">Полный текст</a> (PDF, русский)
+	<tr><td width=15% align=center valign=top><a href="javascript:file_article(42578124, 1)" rel="nofollow" title=""><img src="/images/download_green.png" width=16 hspace=2 border=0></a></td>
+	<td width=85% align=left valign=middle><a href="javascript:file_article(42578124, 1)" rel="nofollow" class="help" title="">Полный текст</a> (PDF)
 	</td></tr>
 	
 <tr><td width=15% align=center valign=top>
 <a href="javascript:email_article()" rel="nofollow"><img src="images/mailto.png" width=16 hspace=2 border=0></a></td>
 <td width=85% align=left valign=middle><a href="javascript:email_article()" rel="nofollow">Отправить публикацию по электронной почте</a>
 </td></tr>
-<tr><td colspan=2 align=center><div class="formfr"><input type="text" id="email" name="email" value="pasha.sitnikov.69@mail.ru" style="width:172px; text-align: center;" class="inputt"></div></td></tr>
+<tr><td colspan=2 align=center><div class="formfr"><input type="text" id="email" name="email" value="gasilin@inion.ru" style="width:172px; text-align: center;" class="inputt"></div></td></tr>
 
 <tr><td colspan=2><div style="height:10px;"></div></td></tr>
 
@@ -1290,8 +1431,8 @@ function show_refs() {
 <td width=85% align=left valign=middle>Связанные документы:
 </td></tr>
 
-<tr><td width=15% align=center valign=top><a href="javascript:url_article(82333840, 1)" rel="nofollow" title=""><img src="images/go_url.png" width=16 hspace=2 border=0></a></td>
-<td width=85% align=left valign=middle>Полный текст, на сайте <br><span style="word-wrap:break-word; word-break: break-all; overflow:hidden"><a href="javascript:url_article(82333840, 1)" rel="nofollow" class="help">galacticamedia.com</a>
+<tr><td width=15% align=center valign=top><a href="javascript:url_article(42578124, 1)" rel="nofollow" title=""><img src="images/go_url.png" width=16 hspace=2 border=0></a></td>
+<td width=85% align=left valign=middle>Полный текст, на сайте <br><span style="word-wrap:break-word; word-break: break-all; overflow:hidden"><a href="javascript:url_article(42578124, 1)" rel="nofollow" class="help">nbpublish.com</a>
 </span></td></tr>
 
 
@@ -1299,8 +1440,13 @@ function show_refs() {
 
 
 <tr><td width=15% align=center valign=top>
-<a href='https://scholar.google.com/scholar?q="Герменевтика шаманcких видеоигр на примере “Kisima Inŋitchuŋa”"&hl=ru&as_sdt=0%2C5&as_ylo=2025&as_yhi=2025' target=_blank rel="nofollow"><img src="images/but_orange.gif" width=15 height=15 hspace=3 border=0></a></td>
-<td width=85% align=left valign=middle><a href='https://scholar.google.com/scholar?q="Герменевтика шаманcких видеоигр на примере “Kisima Inŋitchuŋa”"&hl=ru&as_sdt=0%2C5&as_ylo=2025&as_yhi=2025' target=_blank rel="nofollow">Список статей в Google Академия, цитирующих данную</a>
+<a href="cit_items.asp?id=42578124"><img src="images/but_orange.gif" width=15 height=15 hspace=3 border=0></a></td>
+<td width=85% align=left valign=middle><a href="cit_items.asp?id=42578124">Список публикаций, цитирующих данную</a>
+</td></tr>
+
+<tr><td width=15% align=center valign=top>
+<a href='https://scholar.google.com/scholar?q="Российские гуманитарные организации на рынке труда Германии как фактор адаптации российских беженцев в 1919-1920-х гг."&hl=ru&as_sdt=0%2C5&as_ylo=2020&as_yhi=2020' target=_blank rel="nofollow"><img src="images/but_orange.gif" width=15 height=15 hspace=3 border=0></a></td>
+<td width=85% align=left valign=middle><a href='https://scholar.google.com/scholar?q="Российские гуманитарные организации на рынке труда Германии как фактор адаптации российских беженцев в 1919-1920-х гг."&hl=ru&as_sdt=0%2C5&as_ylo=2020&as_yhi=2020' target=_blank rel="nofollow">Список статей в Google Академия, цитирующих данную</a>
 </td></tr>
 
 <tr><td width=15% align=center valign=top>
@@ -1318,7 +1464,21 @@ function show_refs() {
 <tr><td colspan=2 align=center><div class="formfr"><select name="itemboxid" id="itemboxid" style="width:180px" class="input">
 
 <option value="0" >Новая подборка
-<option value="1598740" selected>Международный журнал исследований культуры
+<option value="1445083" selected>Политики доступа
+<option value="1541849" >Оборотничество
+<option value="1557500" >Социальная эпистемология
+<option value="1561037" >Психиатрия
+<option value="1572774" >Сартр
+<option value="1582948" >Искусственный интеллект в научных сетях
+<option value="1586142" >Подорога
+<option value="1594422" >Социологическое обозрение
+<option value="1596160" >Художественная культура
+<option value="1596212" >Международный журнал исследований культуры
+<option value="1600343" >Философия. Журнал Высшей школы экономики
+<option value="1612558" >Эксперимент с нейропоиском
+<option value="1612570" >Нейропоиск
+<option value="1612590" >Нейропоиск. Вторая фаза
+<option value="1640794" >Galactica media
 </select></div>&nbsp;</td></tr>
 
 
@@ -1341,8 +1501,8 @@ function show_refs() {
 </FORM>
 
 <tr><td width=15% align=center valign=top>
-<a href='/similar_items.asp?itemid=82333840'><img src="images/but_orange.gif" width=15 height=15 hspace=3 border=0></a></td>
-<td width=85% align=left valign=middle><a href='/similar_items.asp?itemid=82333840'>Найти близкие по тематике публикации</a>
+<a href='/similar_items.asp?itemid=42578124'><img src="images/but_orange.gif" width=15 height=15 hspace=3 border=0></a></td>
+<td width=85% align=left valign=middle><a href='/similar_items.asp?itemid=42578124'>Найти близкие по тематике публикации</a>
 </td></tr>
 
 
@@ -1350,7 +1510,7 @@ function show_refs() {
 <tr><td colspan=2><div style="height:10px;"></div></td></tr>
 <tr><td width=15% align=center valign=top>
 <img src="images/but_orange.gif" width=15 height=15 hspace=3 border=0></td>
-<td width=85% align=left valign=middle><font color=#00008f>Дата размещения:</font><br><font color=#000000>24.05.2025</font>
+<td width=85% align=left valign=middle><font color=#00008f>Дата размещения:</font><br><font color=#000000>25.03.2020</font>
 </td></tr>
 
 

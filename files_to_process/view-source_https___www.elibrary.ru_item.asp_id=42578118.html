@@ -6,24 +6,24 @@
 
 <meta name="robots" content="noarchive, nofollow">
 
-<meta name="description" content='Aliev R.T.
-Galactica Media: Journal of Media Studies, 2025'>
-<title>Post-Symbolic Coloniality: The Metasimulacrum of Otherness in Digital Culture</title>
+<meta name="description" content='Никифорова С.В., Иванова М.А.
+Человек и культура, 2020'>
+<title>Музей как "третье место" в культурном пространстве села</title>
 
 <meta property="og:image" content="https://elibrary.ru/images/orgs_access.png" />
-<meta property="og:title" content='Post-Symbolic Coloniality: The Metasimulacrum of Otherness in Digital Culture' />
+<meta property="og:title" content='Музей как "третье место" в культурном пространстве села' />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://elibrary.ru/btivei" />
+<meta property="og:url" content="https://elibrary.ru/qviiue" />
 <meta property="og:site_name" content="eLIBRARY.RU"/>
-<meta property="og:description" content='Aliev R.T.
-Galactica Media: Journal of Media Studies, 2025' />
+<meta property="og:description" content='Никифорова С.В., Иванова М.А.
+Человек и культура, 2020' />
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
 
-<link rel="canonical" href="https://elibrary.ru/item.asp?id=82333839"/>
+<link rel="canonical" href="https://elibrary.ru/item.asp?id=42578118"/>
 
 
-<meta name="doi" content="10.46539/gmd.v7i2.649">
+<meta name="doi" content="10.25136/2409-8744.2020.1.32074">
 
 
 <script type="text/javascript" src="/jquery.min.js"></script>
@@ -97,7 +97,7 @@ function email_article(){
 		alerts("Не указан адрес электронной почты!");}
 	else{
 		$.fancybox({
-			href : '/email_article.asp?id=82333839&email='+document.forms["results"].email.value+'&rand=' + Math.random(),
+			href : '/email_article.asp?id=42578118&email='+document.forms["results"].email.value+'&rand=' + Math.random(),
 			title : '',
 			padding : 20,     
 			width : 400,
@@ -121,7 +121,7 @@ function show_itemrefs(){
 function edit_notes(){
 
   $.fancybox({
-    href : '/item_notes_add.asp?itemid=82333839&rand=' + Math.random(),
+    href : '/item_notes_add.asp?itemid=42578118&rand=' + Math.random(),
     title : '',
 	  padding : 20,     
 	  width : 520,
@@ -139,7 +139,7 @@ function edit_notes(){
 function add_link(link){
 
   $.fancybox({
-      href : '/itemlink_add.asp?itemid=82333839&linkid='+link+'&rand=' + Math.random(),
+      href : '/itemlink_add.asp?itemid=42578118&linkid='+link+'&rand=' + Math.random(),
       title : '',
 	  padding : 20,     
 	  width : 520,
@@ -155,32 +155,59 @@ function add_link(link){
 }
 function reply_comments(commentid){
 
-  alerts("Для того, чтобы участвовать в обсуждении публикаций, необходимо зарегистрироваться в системе Science Index в качестве автора научных публикаций!");
-  document.getElementById("win_login").className = "expanded";
-  document.getElementById("img_login").src = w_up.src;
-  document.forms["login"].login.focus();
+  $.fancybox({
+      href : '/itemcomments_add.asp?itemid=42578118&reply=1&commentid=' + commentid + '&rand=' + Math.random(),
+      title : '',
+	  padding : 20,     
+	  width : 520,
+	  height : 300,
+	  overlayOpacity : 0.3,	
+	  overlayColor : '#000',
+	  speedIn : 500,
+	  hideOnOverlayClick : false,
+	  enableEscapeButton : true,
+	  type : 'iframe'
+    });
 
 }
 function edit_comments(commentid){
 
-  alerts("Для того, чтобы участвовать в обсуждении публикаций, необходимо зарегистрироваться в системе Science Index в качестве автора научных публикаций!");
-  document.getElementById("win_login").className = "expanded";
-  document.getElementById("img_login").src = w_up.src;
-  document.forms["login"].login.focus();
+  $.fancybox({
+      href : '/itemcomments_add.asp?itemid=42578118&reply=0&commentid=' + commentid + '&rand=' + Math.random(),
+      title : '',
+	  padding : 20,     
+	  width : 520,
+	  height : 300,
+	  overlayOpacity : 0.3,	
+	  overlayColor : '#000',
+	  speedIn : 500,
+	  hideOnOverlayClick : false,
+	  enableEscapeButton : true,
+	  type : 'iframe'
+    });
 
 }
 function new_comments(){
 
-  alerts("Для того, чтобы участвовать в обсуждении публикаций, необходимо зарегистрироваться в системе Science Index в качестве автора научных публикаций!");
-  document.getElementById("win_login").className = "expanded";
-  document.getElementById("img_login").src = w_up.src;
-  document.forms["login"].login.focus();
+  $.fancybox({
+      href : '/itemcomments_add.asp?itemid=42578118&reply=0&commentid=&rand=' + Math.random(),
+      title : '',
+	  padding : 20,     
+	  width : 520,
+	  height : 300,
+	  overlayOpacity : 0.3,	
+	  overlayColor : '#000',
+	  speedIn : 500,
+	  hideOnOverlayClick : false,
+	  enableEscapeButton : true,
+	  type : 'iframe'
+    });
 
 }
 
 function translate_abstract(){
   $.fancybox({
-      href : '/translate_abstract.asp?id=82333839&rand=' + Math.random(),
+      href : '/translate_abstract.asp?id=42578118&rand=' + Math.random(),
       title : '',
 	  padding : 20,     
 	  width : 640,
@@ -313,7 +340,7 @@ function itembox_adds(){
 }
 function for_reference(){
     $.fancybox({
-      href : 'for_reference.asp?id=82333839&rand=' + Math.random(),
+      href : 'for_reference.asp?id=42578118&rand=' + Math.random(),
       title : '',
 			padding : 20,     
 			width : 480,
@@ -361,7 +388,7 @@ function qr_code(dd){
 <tr><td><div style="height:10px;"></div></td></tr>
 <tr><td width=150 align=center valign=top>
 
-<a href="title_about_new.asp?id=70829"><img src="/itemfiles/0/8/2/3/3/3/8/3/1//2.jpg" border=0 width=120 title='О журнале "Galactica Media: Journal of Media Studies"' style="behavior: url(/pie/PIE.htc); box-shadow: 1px 2px 3px #888;" hspace=0></a>
+<a href="title_about_new.asp?id=52971"><img src="/titles/52971/ca.png" border=0 width=120 title='О журнале "Человек и культура"' style="behavior: url(/pie/PIE.htc); box-shadow: 1px 2px 3px #888;" hspace=0></a>
 
 </td></tr>
 
@@ -525,6 +552,8 @@ function search_enter(event){
 <tr valign=top><td align=center><img src="/images/bl_kv.gif" border=0 width=7 height=7 hspace=3 class="shadow"></td><td align=left><a href="/rubrics.asp">РУБРИКАТОР</a></td></tr>
 <tr valign=top><td align=center><img src="/images/bl_kv.gif" border=0 width=7 height=7 hspace=3 class="shadow"></td><td align=left><a href="/region_compare.asp">РЕГИОНЫ</a></td></tr>
 
+<tr valign=top><td align=center><img src="/images/bl_kv.gif" border=0 width=7 height=7 hspace=3 class="shadow"></td><td align=left><a href="/refs.asp">ССЫЛКИ</a></td></tr>
+
 <tr valign=top><td align=center><img src="/images/bl_kv.gif" border=0 width=7 height=7 hspace=3 class="shadow"></td><td align=left><a href="/itembox.asp">ПОДБОРКИ</a></td></tr>
 
 
@@ -574,19 +603,25 @@ function end_session(){
 <tr><td width=100% align=left valign=top>
 &nbsp;<font color=#000000>Имя пользователя:</font></td></tr>
 <tr><td width=100% align=center valign=top>
-<font color=#00008f><a href="author_info.asp?isold=1" title="Персональная карточка пользователя">sitnikov69&nbsp;</a></font></td></tr>
+<font color=#00008f><a href="author_info.asp?isold=1" title="Персональная карточка пользователя">Gasilin&nbsp;</a></font></td></tr>
+
+<tr><td width=100% align=left valign=top>
+<div style="height: 2px;"></div>
+&nbsp;<font color=#000000>SPIN-код автора:</font></td></tr>
+<tr><td width=100% align=center valign=top>
+<font color=#00008f><a href="author_info.asp?isold=1" title="Персональная карточка автора">2001-2738</a></font></td></tr>
 
 <tr><td width=100% align=left valign=top>
 <div style="height: 2px;"></div>
 &nbsp;<font color=#000000>IP-адрес компьютера:</font></td></tr>
 <tr><td width=100% align=center valign=top>
-<font color=#00008f>89.175.21.183</font></td></tr>
+<font color=#00008f>95.24.63.120</font></td></tr>
 <tr><td width=100% align=left valign=top>
 <div style="height: 2px;"></div>
 &nbsp;<font color=#000000>Название организации:</font></td></tr>
 <tr><td width=100% align=center valign=top>
 
-<font color=#00008f>не определена</font></td></tr>
+<font color=#00008f><a href="/org_about.asp?orgsid=11">Институт научной информации по общественным наукам РАН</a></font></td></tr>
 
 
 <tr><td width=100% align=left valign=top>
@@ -594,12 +629,12 @@ function end_session(){
 &nbsp;<font color=#000000>Начало работы:</font></td></tr>
 
 <tr><td width=100% align=center valign=top>
-<font color=#00008f>11.12.2025 11:42</font></td></tr>
+<font color=#00008f>13.12.2025 20:49</font></td></tr>
 <tr><td width=100% align=left valign=top>
 <div style="height: 2px;"></div>
 &nbsp;<font color=#000000>Время работы:</font></td></tr>
 <tr><td width=100% align=center valign=top>
-<font color=#00008f>00:02</font></td></tr>
+<font color=#00008f>00:31</font></td></tr>
 </table>
 
 <div style="height: 10px;"></div>
@@ -775,8 +810,8 @@ function end_session(){
 
 <table width=200 cellspacing=0 cellpadding=3 border=0>
 <tr><td width=12% align=right valign=top>
-<a href="https://t.me/elibrary_ru_official/66" target=_blank><img src="/images/telegram.svg" width=24 height=24 border=0></a></td>
-<td width=88% align=left valign=middle><font color=#00008f><a href="https://t.me/elibrary_ru_official/66" target=_blank>Есть ли будущее у научных журналов?</a></font>
+<a href="https://t.me/elibrary_ru_official/68" target=_blank><img src="/images/telegram.svg" width=24 height=24 border=0></a></td>
+<td width=88% align=left valign=middle><font color=#00008f><a href="https://t.me/elibrary_ru_official/68" target=_blank>Новые фильтры в каталоге журналов</a></font>
 </td></tr>
 </table>
 </td></tr>
@@ -790,12 +825,12 @@ function end_session(){
 <table width=550 cellspacing=0 cellpadding=3 border=0>
 <tr valign=middle>
 <td width=2%></td>
-<td width=25% align=left>eLIBRARY ID:&nbsp;<font color=#00008f><a href="item.asp?id=82333839" rel="nofollow">82333839</a></font></td>
-<td width=15% align=center>EDN:&nbsp;<font color=#00008f><a href="/btivei" rel="nofollow">BTIVEI</a></font></td>
+<td width=25% align=left>eLIBRARY ID:&nbsp;<font color=#00008f><a href="item.asp?id=42578118" rel="nofollow">42578118</a></font></td>
+<td width=15% align=center>EDN:&nbsp;<font color=#00008f><a href="/qviiue" rel="nofollow">QVIIUE</a></font></td>
 
-<td align=left width=5%><a href='javascript:qr_code("btivei")' rel="nofollow"><img src="/images/qr_code2.png" width=16 height=16 class='help' title="Сгенерировать QR код для ссылки на этот документ"></a></td>
+<td align=left width=5%><a href='javascript:qr_code("qviiue")' rel="nofollow"><img src="/images/qr_code2.png" width=16 height=16 class='help' title="Сгенерировать QR код для ссылки на этот документ"></a></td>
 
-<td width=53% align=right>DOI:&nbsp;<font color=#00008f><a href=https://doi.org/10.46539/gmd.v7i2.649 target=_blank rel=nofollow>10.46539/gmd.v7i2.649</a></font></td>
+<td width=53% align=right>DOI:&nbsp;<font color=#00008f><a href=https://doi.org/10.25136/2409-8744.2020.1.32074 target=_blank rel=nofollow>10.25136/2409-8744.2020.1.32074</a></font></td>
 </tr>
 
 </table>
@@ -804,7 +839,7 @@ function end_session(){
 <table width=550 cellspacing=0 cellpadding=3 border=0 style="table-layout: fixed;">
 <tr align=center valign=middle>
 <td width=4></td>
-<td width=534><span style="font-size: 9pt; color: #000000; overflow-wrap: break-word;"><b><p class='bigtext' style='color: #F26C4F;'>POST-SYMBOLIC COLONIALITY: THE METASIMULACRUM OF OTHERNESS IN DIGITAL CULTURE</p></b></span></td></tr>
+<td width=534><span style="font-size: 9pt; color: #000000; overflow-wrap: break-word;"><b><p class='bigtext' style='color: #F26C4F;'>МУЗЕЙ КАК "ТРЕТЬЕ МЕСТО" В КУЛЬТУРНОМ ПРОСТРАНСТВЕ СЕЛА</p></b></span></td></tr>
 </table>
 
 <div style="width:580px; margin:0; border:0; padding:0; ">
@@ -815,9 +850,9 @@ function end_session(){
 <tr>
 <td width=24></td>
 <td width=514 valign=middle align=center>
-<div style='display: inline-block; white-space: nowrap'><span class='help pointer' title='<b><font color=#F26C4F>Алиев Растям Туктарович</font></b><br>Национальный исследовательский университет "Высшая школа экономики"<br><a href="author_profile.asp?authorid=777047" target=_blank>Профиль автора в SCIENCE INDEX</a><br><a href="author_items.asp?authorid=777047" target=_blank>Список публикаций в РИНЦ</a>'><b><font color=#00008f>ALIEV&nbsp;R.T.</font></b></span><img src='/images/about_author.gif' border=0 hspace=2 height=10 width=9 class='help pointer' title='ORCID:&nbsp;<a href="https://orcid.org/0000-0003-2812-7655" target=_blank>0000-0003-2812-7655</a>&nbsp;&nbsp; '><font color=#000000><sup>1,2</sup></font></div>
+<div style='display: inline-block; white-space: nowrap'><span class='help pointer' title='<b><font color=#F26C4F>Никифорова Саргылана Валентиновна</font></b><br>Северо-Восточный федеральный университет им. М.К. Аммосова<br><a href="author_profile.asp?authorid=395832" target=_blank>Профиль автора в SCIENCE INDEX</a><br><a href="author_items.asp?authorid=395832" target=_blank>Список публикаций в РИНЦ</a>'><b><font color=#00008f>НИКИФОРОВА&nbsp;С.В.</font></b></span><font color=#000000><sup>1</sup></font>,</div> <div style='display: inline-block; white-space: nowrap'><b><font color=#00008f>ИВАНОВА&nbsp;М.А.</font></b><font color=#000000><sup>2</sup></font></div>
 <div style="height:10px;"></div>
-<font color=#000000><sup>1</sup></font>&nbsp;<span class='help1 pointer' title='<b><font color=#F26C4F>Санкт-Петербургский государственный университет</font></b> (Санкт-Петербург)<br><a href="org_profile.asp?id=190" target=_blank>Профиль организации в SCIENCE INDEX</a><br><a href="org_items.asp?orgsid=190" target=_blank>Список публикаций в РИНЦ</a>'><font color=#00008f>Saint Petersburg State University</font></span>, Saint Petersburg, Russia<br><font color=#000000><sup>2</sup></font>&nbsp;<span class='help1 pointer' title='<b><font color=#F26C4F>Национальный исследовательский университет "Высшая школа экономики"</font></b> (Москва)<br><a href="org_profile.asp?id=421" target=_blank>Профиль организации в SCIENCE INDEX</a><br><a href="org_items.asp?orgsid=421" target=_blank>Список публикаций в РИНЦ</a>'><font color=#00008f>National Research University “Higher School of Economics”</font></span><br>
+<font color=#000000><sup>1</sup></font>&nbsp;<span class='help1 pointer' title='<b><font color=#F26C4F>Северо-Восточный федеральный университет им. М.К. Аммосова</font></b> (Якутск)<br><a href="org_profile.asp?id=252" target=_blank>Профиль организации в SCIENCE INDEX</a><br><a href="org_items.asp?orgsid=252" target=_blank>Список публикаций в РИНЦ</a>'><font color=#00008f>Северо-Восточный федеральный университет им. М.К. Аммосова</font></span>, 677000, г. Якутск, ул. Белинского, д.58<br><font color=#000000><sup>2</sup></font>&nbsp;<font color=#00008f>Эльгяйская детская школа искусств</font><br>
 </td></tr>
 </table>
 
@@ -831,17 +866,17 @@ function end_session(){
 
 <tr><td width=574 align=center valign=middle>
 Тип:&nbsp;<font color=#00008f>статья в журнале - научная статья</font>
-<span style="margin-left:20px;"></span>Язык:&nbsp;<font color=#00008f>английский</font>
+<span style="margin-left:20px;"></span>Язык:&nbsp;<font color=#00008f>русский</font>
 </td></tr>
 
 <tr><td></td></tr>
 
 <tr><td width=574 align=center valign=middle>
-Том:&nbsp;<font color=#00008f>7</font><span style="margin-left:20px;"></span>Номер:&nbsp;<a href="contents.asp?id=82333831&selid=82333839" title="Содержание выпуска">2</a>
-<span style="margin-left:20px;"></span>Год:&nbsp;<font color=#00008f>2025</font>
+<span style="margin-left:20px;"></span>Номер:&nbsp;<a href="contents.asp?id=42578113&selid=42578118" title="Содержание выпуска">1</a>
+<span style="margin-left:20px;"></span>Год:&nbsp;<font color=#00008f>2020</font>
 
-<span style="margin-left:20px;"></span><div style='display: inline-block; white-space: nowrap'>Страницы:&nbsp;<font color=#00008f>166-186</font></div>
-<div style="height:5px;"></div><span style="margin-left:20px;"></span>Поступила&nbsp;в&nbsp;редакцию:&nbsp;<font color=#00008f>23.02.2025</font><span style="margin-left:20px;"></span>Принята&nbsp;к&nbsp;печати:&nbsp;<font color=#00008f>21.04.2025</font>
+<span style="margin-left:20px;"></span><div style='display: inline-block; white-space: nowrap'>Страницы:&nbsp;<font color=#00008f>62-72</font></div>
+
 
 
 </td></tr>
@@ -859,10 +894,10 @@ function end_session(){
 <tr><td width=34>&nbsp;</td><td width=504 align=left valign=middle>
 <div style="height:3px;"></div>
 
-<a href="contents.asp?id=82333831" title="Содержание выпусков этого журнала">GALACTICA MEDIA: JOURNAL OF MEDIA STUDIES</a>
-<br>Учредители:&nbsp;ООО НПО "Генезис.Фронтир.Наука"
+<a href="contents.asp?id=42578113" title="Содержание выпусков этого журнала">ЧЕЛОВЕК И КУЛЬТУРА</a>
+<br>Учредители:&nbsp;Даниленко Василий Иванович
 <br>
-eISSN:&nbsp;<font color=#00008f>2658-7734</font><span style="margin-left:20px;"></span>
+eISSN:&nbsp;<font color=#00008f>2409-8744</font><span style="margin-left:20px;"></span>
 
 </td></tr></table>
 
@@ -874,12 +909,16 @@ eISSN:&nbsp;<font color=#00008f>2658-7734</font><span style="margin-left:20px;">
 <font color=#000000>КЛЮЧЕВЫЕ СЛОВА:</font></td></tr>
 <tr><td width=34>&nbsp;</td><td width=504 align=left valign=middle>
 <div style="height:3px;"></div>
-<a href="keyword_items.asp?id=27786055">POST-SYMBOLIC COLONIALITY</a>, 
-<a href="keyword_items.asp?id=27545165">METASIMULACRUM</a>, 
-<a href="keyword_items.asp?id=27786056">ALGORITHMIC VISIBILITY</a>, 
-<a href="keyword_items.asp?id=1947">INTERFACE</a>, 
-<a href="keyword_items.asp?id=27786057">DIGITAL COLONIALITY</a>, 
-<a href="keyword_items.asp?id=21148539">ETHICS OF OTHERNESS</a>
+<a href="keyword_items.asp?id=5451677">КРЕАТИВНЫЙ КЛАСТЕР</a>, 
+<a href="keyword_items.asp?id=2502986">КУЛЬТУРНОЕ ПРОСТРАНСТВО</a>, 
+<a href="keyword_items.asp?id=2543898">ОРГАНИЗАЦИЯ ДОСУГА</a>, 
+<a href="keyword_items.asp?id=2286794">КУЛЬТУРНАЯ ИДЕНТИЧНОСТЬ</a>, 
+<a href="keyword_items.asp?id=2947624">САМОВЫРАЖЕНИЕ</a>, 
+<a href="keyword_items.asp?id=1066569">САМОРЕАЛИЗАЦИЯ</a>, 
+<a href="keyword_items.asp?id=2356692">ЦЕННОСТИ</a>, 
+<a href="keyword_items.asp?id=2327901">РЕКОНСТРУКЦИЯ</a>, 
+<a href="keyword_items.asp?id=2324520">ДИВЕРСИФИКАЦИЯ</a>, 
+<a href="keyword_items.asp?id=18454754">МУЗЕЙНЫЕ СТРАТЕГИИ</a>
 </td></tr>
 </table>
 
@@ -889,9 +928,9 @@ eISSN:&nbsp;<font color=#00008f>2658-7734</font><span style="margin-left:20px;">
 <font color=#000000>АННОТАЦИЯ:</font></td></tr>
 <tr><td width=34>&nbsp;</td><td width=504 align=left valign=middle>
 
-<div id="abstract1" style="width:504px; border:0; margin:0; padding:0; text-align:left;"><p align=justify style='margin-top: 0.3em;'>This article develops the concept of the metasimulacrum of otherness to analyze the structural transformations of difference in digital culture. Unlike traditional representations of otherness, the metasimulacrum reorganizes the very conditions of perception, producing otherness as a managed, aestheticized, and commodified flow. Digital platforms no longer marginalize or suppress difference; they integrate it into the architecture of engagement, neutralizing its disruptive force through algorithmic formatting. Otherness becomes a preformatted stimulus-clickable, reproducible, and emotionally manageable-without preserving its political or subjective density. This dynamic is situated within a broader framework of post-symbolic coloniality, where visibility itself becomes a mechanism of control rather than liberation. The analysis traces how platforms engineer conditions in which alterity appears safe, consumable, and endlessly circulated, while any radical rupture is filtered out...</div>
+<div id="abstract1" style="width:504px; border:0; margin:0; padding:0; text-align:left;"><p align=justify style='margin-top: 0.3em;'>Рассматривается проблема реконструкции и диверсификации деятельности региональных музеев на периферии. В фокусе внимания находится проблема недооцененности (невостребованности) потенциала музея в культурном пространстве села. Реконструкцию культурного пространства рекомендуется проводить по кластерному принципу: он позволяет менее затратно и относительно безболезненно реконструировать функции действующих учреждений культуры, более оптимально использовать их потенциал, сместить акценты в их роли для социума. Актуализация ценностей региональной этнической культуры способствует становлению позитивной культурной идентичности жителя села. Использован комплексный междисциплинарный подход к изучению проблем конструирования культурного пространства, форм организации досуга. При разработке проекта музея как третьего места применен метод мозаичного моделирования. Доказывается, что кластерный принцип организации учреждений культуры, образования и сферы обслуживания; коллаборация их сотрудников, широкое применение партисипаторных практик актуализируют потенциал культурных институций села...</div>
 
-<div id="abstract2" style="width:504px; border:0; margin:0; padding:0; text-align:left; display:none;"><p align=justify style='margin-top: 0.3em;'>This article develops the concept of the metasimulacrum of otherness to analyze the structural transformations of difference in digital culture. Unlike traditional representations of otherness, the metasimulacrum reorganizes the very conditions of perception, producing otherness as a managed, aestheticized, and commodified flow. Digital platforms no longer marginalize or suppress difference; they integrate it into the architecture of engagement, neutralizing its disruptive force through algorithmic formatting. Otherness becomes a preformatted stimulus-clickable, reproducible, and emotionally manageable-without preserving its political or subjective density. This dynamic is situated within a broader framework of post-symbolic coloniality, where visibility itself becomes a mechanism of control rather than liberation. The analysis traces how platforms engineer conditions in which alterity appears safe, consumable, and endlessly circulated, while any radical rupture is filtered out. The article critiques liberal hopes of visibility as empowerment, arguing that digital spectacularization of otherness demands a radical rethinking of ethical relations. It proposes an ethics of refusal-respecting the Other’s right to opacity and withdrawal from the economies of attention. Ultimately, the metasimulacrum of otherness reveals how difference is preserved not to challenge, but to stabilize the algorithmic logic of contemporary platform capitalism.</div>
+<div id="abstract2" style="width:504px; border:0; margin:0; padding:0; text-align:left; display:none;"><p align=justify style='margin-top: 0.3em;'>Рассматривается проблема реконструкции и диверсификации деятельности региональных музеев на периферии. В фокусе внимания находится проблема недооцененности (невостребованности) потенциала музея в культурном пространстве села. Реконструкцию культурного пространства рекомендуется проводить по кластерному принципу: он позволяет менее затратно и относительно безболезненно реконструировать функции действующих учреждений культуры, более оптимально использовать их потенциал, сместить акценты в их роли для социума. Актуализация ценностей региональной этнической культуры способствует становлению позитивной культурной идентичности жителя села. Использован комплексный междисциплинарный подход к изучению проблем конструирования культурного пространства, форм организации досуга. При разработке проекта музея как третьего места применен метод мозаичного моделирования. Доказывается, что кластерный принцип организации учреждений культуры, образования и сферы обслуживания; коллаборация их сотрудников, широкое применение партисипаторных практик актуализируют потенциал культурных институций села. Современные социокультурные практики в качестве площадки третьего места активно продвигают библиотеки (А. Лисицкий и др.) и кафе (Р. Ольденбург и др.), нами предлагается музейный комплекс: объединение трех музеев села. Разработано теоретическое обоснование для расширения функций музея как образовательной площадки, места релаксации, самореализации и самоутверждения личности. Реорганизованный творческий кластер может способствовать становлению позитивной культурной идентичности жителей села, насыщению, усложнению и продуктивности культурного пространства.</div>
 <script type="text/javascript">
 function show_abstract() {
   $('#abstract1').hide();
@@ -918,19 +957,19 @@ function show_abstract() {
 <td width=52%><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Учитывается или нет данная публикация в РИНЦ. Некоторые категории публикаций (например, статьи в реферативных, научно-популярных, информационных журналах) могут быть размещены на платформе elibrary.ru, но не учитываются в РИНЦ. Также не учитываются статьи в журналах и сборниках, исключенных из РИНЦ за нарушение научной и издательской этики.</p>'>&nbsp;&nbsp;Входит в РИНЦ:&nbsp;<font color=#00008f>да</font></td>
 
 
-<td width=48%><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Число цитирований данной публикации из публикаций, входящих в РИНЦ. Сама публикация при этом может и не входить в РИНЦ. Для сборников статей и книг, индексируемых в РИНЦ на уровне отдельных глав, указывается суммарное число цитирований всех статей (глав) и сборника (книги) в целом.</p>'>&nbsp;&nbsp;Цитирований в РИНЦ:&nbsp;<a href="cit_items.asp?id=82333839" title="Список публикаций в РИНЦ, цитирующих данную">1</a></td></tr>
+<td width=48%><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Число цитирований данной публикации из публикаций, входящих в РИНЦ. Сама публикация при этом может и не входить в РИНЦ. Для сборников статей и книг, индексируемых в РИНЦ на уровне отдельных глав, указывается суммарное число цитирований всех статей (глав) и сборника (книги) в целом.</p>'>&nbsp;&nbsp;Цитирований в РИНЦ:&nbsp;<a href="cit_items.asp?id=42578118" title="Список публикаций в РИНЦ, цитирующих данную">11</a></td></tr>
 
 <tr align=left valign=bottom>
-<td><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Входит или нет данная публикация в ядро РИНЦ. Ядро РИНЦ включает все статьи, опубликованные в журналах, индексируемых в базах данных Web of Science Core Collection, Scopus или Russian Science Citation Index (RSCI).</p>'>&nbsp;&nbsp;Входит в ядро РИНЦ:&nbsp;<font color=#00008f><span id="InCoreRisc">да</span></font></td>
+<td><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Входит или нет данная публикация в ядро РИНЦ. Ядро РИНЦ включает все статьи, опубликованные в журналах, индексируемых в базах данных Web of Science Core Collection, Scopus или Russian Science Citation Index (RSCI).</p>'>&nbsp;&nbsp;Входит в ядро РИНЦ:&nbsp;<font color=#00008f><span id="InCoreRisc">нет</span></font></td>
 
-<td><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Число цитирований данной публикации из публикаций, входящих в ядро РИНЦ. Сама публикация при этом может не входить в ядро РИНЦ. Для сборников статей и книг, индексируемых в РИНЦ на уровне отдельных глав, указывается суммарное число цитирований всех статей (глав) и сборника (книги) в целом.</p>'>&nbsp;&nbsp;Цитирований из ядра РИНЦ:&nbsp;<font color=#00008f>0</font></td>
+<td><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Число цитирований данной публикации из публикаций, входящих в ядро РИНЦ. Сама публикация при этом может не входить в ядро РИНЦ. Для сборников статей и книг, индексируемых в РИНЦ на уровне отдельных глав, указывается суммарное число цитирований всех статей (глав) и сборника (книги) в целом.</p>'>&nbsp;&nbsp;Цитирований из ядра РИНЦ:&nbsp;<font color=#00008f>1</font></td>
 </tr>
 
 
 <tr align=left valign=bottom>
 <td><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Наличие в РИНЦ информации о рецензировании данной публикации.</p>'>&nbsp;&nbsp;Рецензии:&nbsp;<font color=#00008f>есть</font></td>
 
-<td><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Процентиль журнала в рейтинге Science Index за 2023 год.</p>'>&nbsp;&nbsp;Процентиль журнала в рейтинге SI:&nbsp;<font color=#00008f>32</font></td>
+<td><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Процентиль журнала в рейтинге Science Index за 2023 год.</p>'>&nbsp;&nbsp;Процентиль журнала в рейтинге SI:&nbsp;<font color=#00008f>53</font></td>
 
 </tr>
 
@@ -949,7 +988,7 @@ function show_abstract() {
 <table width=100% border=0 cellspacing=0 cellpadding=3>
 
 <tr align=left valign=top>
-<td width=27%><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Основная рубрика публикации в соответствии с рубрикатором OECD. Авторы, зарегистрированные в системе Science Index, имеют возможность уточнять тематические рубрики своих публикаций.</p>'>&nbsp;&nbsp;Рубрика&nbsp;OECD:&nbsp;</td><td width=73%><font color=#00008f><span id="rubric_oecd">нет</span></font></td>
+<td width=27%><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Основная рубрика публикации в соответствии с рубрикатором OECD. Авторы, зарегистрированные в системе Science Index, имеют возможность уточнять тематические рубрики своих публикаций.</p>'>&nbsp;&nbsp;Рубрика&nbsp;OECD:&nbsp;</td><td width=73%><font color=#00008f><span id="rubric_oecd">Other social sciences</span></font></td>
 </tr>
 </table>
 
@@ -963,7 +1002,7 @@ function show_abstract() {
 <table width=100% border=0 cellspacing=0 cellpadding=3>
 
 <tr align=left valign=top>
-<td width=27%><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Основная рубрика публикации в соответствии с рубрикатором ГРНТИ. Авторы, зарегистрированные в системе Science Index, имеют возможность уточнять тематические рубрики своих публикаций.</p>'>&nbsp;&nbsp;Рубрика&nbsp;ГРНТИ:&nbsp;</td><td width=73%><font color=#00008f><span id="rubric_grnti">нет</span></font></td>
+<td width=27%><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Основная рубрика публикации в соответствии с рубрикатором ГРНТИ. Авторы, зарегистрированные в системе Science Index, имеют возможность уточнять тематические рубрики своих публикаций.</p>'>&nbsp;&nbsp;Рубрика&nbsp;ГРНТИ:&nbsp;</td><td width=73%><font color=#00008f><span id="rubric_grnti">Культура. Культурология <span style='color:#F26C4F'>/</span> Музейное дело. Музееведение</span></font></td>
 </tr>
 </table>
 
@@ -994,16 +1033,16 @@ function show_abstract() {
 <table width=100% border=0 cellspacing=0 cellpadding=3>
 <tr align=left valign=bottom>
 
-<td width=30%><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Число просмотров страницы с описанием и аннотацией публикации посетителями elibrary.ru. Учитываются все просмотры, в том числе сделанные незарегистрированными пользователями. Повторные просмотры одним и тем же пользователем не учитываются. Зависит от года издания и появления публикации на сайте. В скобках указано число зарегистрированных пользователей, просматривавших данную страницу.</p>'>&nbsp;&nbsp;Просмотров:&nbsp;<font color=#00008f>12 (11)</font></td>
+<td width=30%><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Число просмотров страницы с описанием и аннотацией публикации посетителями elibrary.ru. Учитываются все просмотры, в том числе сделанные незарегистрированными пользователями. Повторные просмотры одним и тем же пользователем не учитываются. Зависит от года издания и появления публикации на сайте. В скобках указано число зарегистрированных пользователей, просматривавших данную страницу.</p>'>&nbsp;&nbsp;Просмотров:&nbsp;<font color=#00008f>79 (43)</font></td>
 
-<td width=35%><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Число загрузок полного текста публикации посетителями elibrary.ru. Если полный текст публикации отсутствует на elibrary.ru, показатель не рассчитывается. Повторные загрузки одним и тем же пользователем не учитываются. Зависит от года издания и появления публикации на сайте, а также от режима доступа к полному тексту (открытый или по подписке). В скобках указано число уникальных авторов, загрузивших данную публикацию.</p>'>&nbsp;&nbsp;Загрузок:&nbsp;<font color=#00008f>7 (6)</font></td>
+<td width=35%><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Число загрузок полного текста публикации посетителями elibrary.ru. Если полный текст публикации отсутствует на elibrary.ru, показатель не рассчитывается. Повторные загрузки одним и тем же пользователем не учитываются. Зависит от года издания и появления публикации на сайте, а также от режима доступа к полному тексту (открытый или по подписке). В скобках указано число уникальных авторов, загрузивших данную публикацию.</p>'>&nbsp;&nbsp;Загрузок:&nbsp;<font color=#00008f>23 (15)</font></td>
 
-<td width=35%><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Число персональных подборок пользователей elibrary.ru, которые включают данную публикацию.</p>'>&nbsp;&nbsp;Включено в подборки:&nbsp;<font color=#00008f>68</font></td>
+<td width=35%><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Число персональных подборок пользователей elibrary.ru, которые включают данную публикацию.</p>'>&nbsp;&nbsp;Включено в подборки:&nbsp;<font color=#00008f>164</font></td>
 </tr>
 
 <tr align=left valign=bottom>
 
-<td width=30%><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Число оценок публикации, сделанных учеными, зарегистрированными в системе Science Index. Для просмотра распределения оценок щелкните мышью на этом числе.</p>'>&nbsp;&nbsp;Всего оценок:&nbsp;<font color=#00008f><span id="score_count">6</span></font></td>
+<td width=30%><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Число оценок публикации, сделанных учеными, зарегистрированными в системе Science Index. Для просмотра распределения оценок щелкните мышью на этом числе.</p>'>&nbsp;&nbsp;Всего оценок:&nbsp;<font color=#00008f><span id="score_count">0</span></font></td>
 
 <td width=35%><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Средняя оценка публикации учеными, зарегистрированными в системе Science Index. Значение соответствует следующим уровням оценки публикации:</p><br><table width=100% cellspacing=0 cellpadding=3 border=0>
 <tr><td width=15% align=center valign=top>
@@ -1032,7 +1071,7 @@ function show_abstract() {
 </td>
 <td align=left valign=top><div>не научная, нарушающая научную этику или очень слабая публикация (должна быть исключена из РИНЦ)</div></td></tr>
 
-</table>'>&nbsp;&nbsp;Средняя оценка:&nbsp;<font color=#00008f><span id="avg_score">5</span></font>
+</table>'>&nbsp;&nbsp;Средняя оценка:&nbsp;<font color=#00008f><span id="avg_score"></span></font>
 </td>
 
 <td width=35%><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Число отзывов о публикации, сделанных учеными, зарегистрированными в системе Science Index. Для просмотра всех отзывов щелкните мышью на этом числе.</p>'>&nbsp;&nbsp;Всего отзывов:&nbsp;<font color=#00008f><span id="comment_count">0</span></font></td>
@@ -1040,56 +1079,184 @@ function show_abstract() {
 
 
 
-</td></tr></table>
+<SCRIPT LANGUAGE="JavaScript">
+function item_all_comments(){
+  $.fancybox({
+      href : '/item_all_comments.asp?itemid=42578118&rand=' + Math.random(),
+      title : '',
+	  padding : 20,     
+	  width : 520,
+	  height : 350,
+	  overlayOpacity : 0.3,	
+	  overlayColor : '#000',
+	  speedIn : 500,
+	  hideOnOverlayClick : false,
+	  enableEscapeButton : true,
+	  type : 'iframe'
+    });
+}
+function item_all_scores(){
+  $.fancybox({
+      href : '/item_all_scores.asp?itemid=42578118&rand=' + Math.random(),
+      title : '',
+	  padding : 20,     
+	  width : 400,
+	  height : 270,
+	  overlayOpacity : 0.3,	
+	  overlayColor : '#000',
+	  speedIn : 500,
+	  hideOnOverlayClick : false,
+	  enableEscapeButton : true,
+	  type : 'iframe'
+    });
+}
+</script>
 
 
-<div style="height:10px;"></div>
-<table width=550 border=0 cellspacing=0 cellpadding=3>
-<tr><td colspan=2 align=left>
-<font color=#000000>ИНФОРМАЦИЯ О ФИНАНСОВОЙ ПОДДЕРЖКЕ:</font></td></tr>
-<tr><td width=34>&nbsp;</td><td width=504 align=left valign=middle>
 
-<div style="height:3px;"></div>
-<p>The research was supported by the Russian Scientific Foundation (RSF), project 23-78-10046 “Interface as a Life Environment: Factors of Integration”, Saint Petersburg State University.
-<div style="height:5px;"></div>
+<SCRIPT LANGUAGE="JavaScript">
 
-</td></tr></table>
+function item_score_comments(){
+  $.fancybox({
+		href : '/item_score_comments.asp?itemid=42578118&rand=' + Math.random(),
+		title : '',
+		padding : 20,     
+		width : 520,
+		height : 280,
+		overlayOpacity : 0.3,	
+		overlayColor : '#000',
+		speedIn : 500,
+		hideOnOverlayClick : false,
+		enableEscapeButton : true,
+		type : 'iframe'
+	});
+}
+function change_score(score){
+  if ($('#score').val()==score){
+    $.post('update_item_score.asp', 'itemid=42578118&score=0&rand=' + Math.random(), function() {
+      $('#score').val(0); 
+	  $('.sc_0').css({color:"#c0c0c0"});
+      $.post('item_score_count.asp', 'itemid=42578118&rand=' + Math.random(), function(data){
+        var s = data.split('|');
+		if(s[0]>0){
+          $('#score_count').html('<a href="javascript:item_all_scores()" title="Посмотреть распределение оценок">'+s[0]+'</a>');}
+		else{
+          $('#score_count').html('0');}
+        $('#avg_score').html(s[1]);
+      });
+    });
+  }
+  else {
+    $.post('update_item_score.asp', 'itemid=42578118&score=' + score + '&rand=' + Math.random(), function() {
+      $('#score').val(score); 
+	  $('.sc_0').css({color:"#c0c0c0"});
+	  $('.sc_'+score).css({color:"#F26C4F"});
+      $.post('item_score_count.asp', 'itemid=42578118&rand=' + Math.random(), function(data){
+        var s = data.split('|');
+		if(s[0]>0){
+          $('#score_count').html('<a href="javascript:item_all_scores()" title="Посмотреть распределение оценок">'+s[0]+'</a>');}
+		else{
+          $('#score_count').html('0');}
+        $('#avg_score').html(s[1]);
+      });
+    });
+  } 
+}
+</script>
 
+<table width=100% border=0 cellspacing=0 cellpadding=3>
+<tr>
+<td align=left valign=top width=40%><div style="height:8px"></div><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Оцените данную публикацию - Ваша экспертная оценка будет полезна другим читателям библиотеки. Для оценки публикации необходимо щелкнуть мышью на звездочке, соответствующей выбранному уровню:</p><br><table width=100% cellspacing=0 cellpadding=3 border=0>
+<tr><td width=30% align=left valign=top>
+<span style="font-size: 18pt; color: #F26C4F; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+<span style="font-size: 18pt; color: #F26C4F; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+<span style="font-size: 18pt; color: #F26C4F; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+<span style="font-size: 18pt; color: #F26C4F; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+<span style="font-size: 18pt; color: #F26C4F; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+</td>
+<td width=70% align=left valign=top><div>публикация международного уровня (на уровне требований Web of Science Core Collection)</div>
+</td></tr>
 
-<table width=100% border=0 cellspacing=1 cellpadding=2 style="table-layout:fixed; word-wrap:break-word; overflow:hidden">
+<tr><td align=left valign=top>
+<span style="font-size: 18pt; color: #F26C4F; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+<span style="font-size: 18pt; color: #F26C4F; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+<span style="font-size: 18pt; color: #F26C4F; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+<span style="font-size: 18pt; color: #F26C4F; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+<span style="font-size: 18pt; color: #C0C0C0; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+</td>
+<td align=left valign=top><div>публикация высокого уровня (достаточного для учета при защите докторской диссертации, достойна включения в ядро РИНЦ)</div></td></tr>
 
-<tr bgcolor=#f5f5f5><td width=6% align=right valign=top nowrap><font color=#000000>1.&nbsp;</font></td>
-<td width=89% align=justify valign=top><font color=#000000>
-<span style="line-height:1.0;">ИНТЕРФЕЙС КАК СРЕДА ЖИЗНИ: ФАКТОРЫ ИНТЕГРАЦИИ</span><br><i>Очеретяный К.А.</i><br>НИР: грант&nbsp;№&nbsp;23-78-10046. Российский научный фонд. 2023. &nbsp;<font color=#F26C4F>EDN:</font>&nbsp;<a href="https://elibrary.ru/uaydxh" target=_blank rel="nofollow">UAYDXH</a>
-</font></td><td align=center valign=top width=5%><div style="height:5px;"></div><a href="item.asp?id=80593789" title="Перейти на описание гранта" class="help1" target=_blank><img src="/images/go_url.png" height=15 width=15 border=0></a></td>
-</tr>
+<tr><td align=left valign=top>
+<span style="font-size: 18pt; color: #F26C4F; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+<span style="font-size: 18pt; color: #F26C4F; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+<span style="font-size: 18pt; color: #F26C4F; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+<span style="font-size: 18pt; color: #C0C0C0; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+<span style="font-size: 18pt; color: #C0C0C0; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+</td>
+<td align=left valign=top><div>публикация среднего уровня (достаточного для учета при защите кандидатской диссертации)</div></td></tr>
+
+<tr><td align=left valign=top>
+<span style="font-size: 18pt; color: #F26C4F; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+<span style="font-size: 18pt; color: #F26C4F; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+<span style="font-size: 18pt; color: #C0C0C0; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+<span style="font-size: 18pt; color: #C0C0C0; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+<span style="font-size: 18pt; color: #C0C0C0; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+</td>
+<td align=left valign=top><div>публикация начального уровня (как правило, подготовленная студентами, аспирантами, молодыми учеными, при этом уровень достаточен для ее включения в РИНЦ)</div></td></tr>
+
+<tr><td align=left valign=top>
+<span style="font-size: 18pt; color: #F26C4F; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+<span style="font-size: 18pt; color: #C0C0C0; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+<span style="font-size: 18pt; color: #C0C0C0; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+<span style="font-size: 18pt; color: #C0C0C0; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+<span style="font-size: 18pt; color: #C0C0C0; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+</td>
+<td align=left valign=top><div>не научная, нарушающая научную этику или очень слабая публикация (должна быть исключена из РИНЦ)</div></td></tr>
 
 </table>
+<p>Нажатие на другую звездочку будет переключать оценку. Если Вы не хотите оценивать данную публикацию, нужно оставить все звездочки серыми (если перед этим оценка была уже проставлена, нужно еще раз кликнуть на звездочке, соответствующей оценке). Оценивать публикации могут ученые, зарегистрированные в системе Science Index, за исключением авторов оцениваемой публикации.</p><p>Вы можете также добавить свой отзыв о данной публикации с аргументацией проставленной оценки и рекомендациями для других читателей.</p>'>&nbsp;&nbsp;Ваша оценка данной публикации:&nbsp;<font color=#00008f></font></td>
 
-<div style="height:10px;"></div>
+<td nowrap align=left valign=top width=25%>
+<span id="score_1" class="asterbig sc_0 sc_1 sc_2 sc_3 sc_4 sc_5" onClick="change_score('1')">*</span>
+<span id="score_2" class="asterbig sc_0 sc_2 sc_3 sc_4 sc_5" onClick="change_score('2')">*</span>
+<span id="score_3" class="asterbig sc_0 sc_3 sc_4 sc_5" onClick="change_score('3')">*</span>
+<span id="score_4" class="asterbig sc_0 sc_4 sc_5" onClick="change_score('4')">*</span>
+<span id="score_5" class="asterbig sc_0 sc_5" onClick="change_score('5')">*</span>
+</td>
+<td width=18% align=left valign=top><div style="height:8px"></div><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Если Вы прочитали данную публикацию, Вы можете помочь другим посетителям библиотеки, оставив свой отзыв с комментариями и рекомендациями для других читателей. Ваш отзыв будет доступен для всех ученых, зарегистрированных в системе Science Index. Чтобы оставить отзыв о данной публикации, щелкните мышью на иконке. Вы можете в любой момент изменить или удалить свой отзыв.</p>'>&nbsp;&nbsp;Ваш отзыв:&nbsp;</td>
+<td width=17% align=left valign=top><img id="comment_score" src="/images/comments-g.png" width=14 height=14 border=0 style="margin:8px 0 0 0; cursor: pointer;" title="Добавить отзыв о данной публикации" onClick="item_score_comments()"></td>
+</tr>
+</table>
+
+<input type="hidden" name="score" id="score" value="0">
+
+
+
+</td></tr></table>
+
 
 <table width=550 border=0 cellspacing=0 cellpadding=3>
 <tr><td colspan=2 align=left>
-<font color=#000000>ОПИСАНИЕ НА РУССКОМ ЯЗЫКЕ:</font></td></tr>
+<font color=#000000>ОПИСАНИЕ НА АНГЛИЙСКОМ ЯЗЫКЕ:</font></td></tr>
 <tr><td width=34>&nbsp;</td><td width=504 align=center valign=middle>
 <div style="height:5px;"></div>
-<font color=#F26C4F>ПОСТСИМВОЛИЧЕСКАЯ КОЛОНИАЛЬНОСТЬ: МЕТАСИМУЛЯКР ИНАКОВОСТИ В ЦИФРОВОЙ КУЛЬТУРЕ</font>
+<font color=#F26C4F>MUSEUM AS THE “THIRD PLACE” IN CULTURAL SPACE OF A RURAL AREA</font>
 
 <div style="height:5px;"></div>
-<div style='display: inline-block; white-space: nowrap'><span class='help pointer' title='<b><font color=#F26C4F>Алиев Растям Туктарович</font></b><br>Национальный исследовательский университет "Высшая школа экономики"<br><a href="author_profile.asp?authorid=777047" target=_blank>Профиль автора в SCIENCE INDEX</a><br><a href="author_items.asp?authorid=777047" target=_blank>Список публикаций в РИНЦ</a>'><font color=#00008f>АЛИЕВ&nbsp;Р.Т.</font></span><img src='/images/about_author.gif' border=0 hspace=2 height=10 width=9 class='help pointer' title='ORCID:&nbsp;<a href="https://orcid.org/0000-0003-2812-7655" target=_blank>0000-0003-2812-7655</a>&nbsp;&nbsp; '><font color=#000000><sup>1,2</sup></font></div>
+<div style='display: inline-block; white-space: nowrap'><span class='help pointer' title='<b><font color=#F26C4F>Никифорова Саргылана Валентиновна</font></b><br>Северо-Восточный федеральный университет им. М.К. Аммосова<br><a href="author_profile.asp?authorid=395832" target=_blank>Профиль автора в SCIENCE INDEX</a><br><a href="author_items.asp?authorid=395832" target=_blank>Список публикаций в РИНЦ</a>'><font color=#00008f>NIKIFOROVA&nbsp;S.V.</font></span><font color=#000000><sup>1</sup></font>,</div> <div style='display: inline-block; white-space: nowrap'><font color=#00008f>IVANOVA&nbsp;M.A.</font><font color=#000000><sup>2</sup></font></div>
 <br>
 
 <div style="height:5px;"></div>
-<font color=#000000><sup>1</sup></font>&nbsp;<span class='help1 pointer' title='<b><font color=#F26C4F>Санкт-Петербургский государственный университет</font></b> (Санкт-Петербург)<br><a href="org_profile.asp?id=190" target=_blank>Профиль организации в SCIENCE INDEX</a><br><a href="org_items.asp?orgsid=190" target=_blank>Список публикаций в РИНЦ</a>'><font color=#00008f>Санкт-Петербургский государственный университет</font></span>, Санкт-Петербург, Россия<br><font color=#000000><sup>2</sup></font>&nbsp;<span class='help1 pointer' title='<b><font color=#F26C4F>Национальный исследовательский университет "Высшая школа экономики"</font></b> (Москва)<br><a href="org_profile.asp?id=421" target=_blank>Профиль организации в SCIENCE INDEX</a><br><a href="org_items.asp?orgsid=421" target=_blank>Список публикаций в РИНЦ</a>'><font color=#00008f>Национальный исследовательский университет «Высшая школа экономики» в Санкт-Петербурге</font></span><br>
+<font color=#000000><sup>1</sup></font>&nbsp;<span class='help1 pointer' title='<b><font color=#F26C4F>Северо-Восточный федеральный университет им. М.К. Аммосова</font></b> (Якутск)<br><a href="org_profile.asp?id=252" target=_blank>Профиль организации в SCIENCE INDEX</a><br><a href="org_items.asp?orgsid=252" target=_blank>Список публикаций в РИНЦ</a>'><font color=#00008f>North-Eastern Federal University named after M.K. Ammosov</font></span>, 58, Belinsky Street, Yakutsk, 677000<br><font color=#000000><sup>2</sup></font>&nbsp;<font color=#00008f>Elgyai children's art school</font><br>
 </td></tr>
 
 
 
 <tr><td width=34>&nbsp;</td><td width=504 align=left valign=middle>
 
-<div id="eabstract1" style="width:504px; border:0; margin:0; padding:0; text-align:left;"><p align=justify style='margin-top: 0.3em;'>В данной статье разрабатывается концепт метасимулякра инаковости для анализа структурных трансформаций различия в цифровой культуре. В отличие от традиционных репрезентаций инаковости, метасимулякр перестраивает сами условия восприятия, производя инаковость как управляемый, эстетизированный и коммерциализированный поток. Цифровые платформы больше не маргинализируют и не подавляют различие, они интегрируют его в архитектуру вовлечения, нейтрализуя его подрывной потенциал через алгоритмическое форматирование. Инаковость становится заранее отформатированным стимулом, то есть кликабельным, воспроизводимым и эмоционально управляемым, но лишённым политической и субъективной плотности. Эта динамика помещается в более широкий контекст постсимволической колониальности, где сама видимость превращается в механизм контроля, а не освобождения. Анализ прослеживает, как платформы конструируют условия, при которых инаковость предстаёт как безопасная, потребляемая и бесконечно циркулирующая, в то время как любое радикальное прерывание отфильтровывается...</div>
+<div id="eabstract1" style="width:504px; border:0; margin:0; padding:0; text-align:left;"><p align=justify style='margin-top: 0.3em;'>This article explores the problem of reconstruction and diversification of the activity of regional museums on the periphery. Attention is focused on underestimation (absence of demand) of potential of a museum in cultural space of a rural area. Reconstruction of the cultural space should be realized in accordance with the cluster principle: it allows reconstructing the functions of currently operating museums in an affordable way; optimally harness their potential; shift accents of their role for the society. Mainstreaming the values of regional ethnic culture contributes to the establishment of a positive cultural identity of the local dwellers. The author applies a complex interdisciplinary approach towards studying the problems of designing cultural space and forms of organizing leisure activities. Method of mosaic modeling is used in development of the project of museum as a third place. It is proven that cluster principle for organization of cultural and educational establishments, service sector; collaboration of their personnel; extensive implementation of participatory practices actualize the potential of cultural institutions of the rural area...</div>
 
-<div id="eabstract2" style="width:504px; border:0; margin:0; padding:0; text-align:left; display:none;"><p align=justify style='margin-top: 0.3em;'>В данной статье разрабатывается концепт метасимулякра инаковости для анализа структурных трансформаций различия в цифровой культуре. В отличие от традиционных репрезентаций инаковости, метасимулякр перестраивает сами условия восприятия, производя инаковость как управляемый, эстетизированный и коммерциализированный поток. Цифровые платформы больше не маргинализируют и не подавляют различие, они интегрируют его в архитектуру вовлечения, нейтрализуя его подрывной потенциал через алгоритмическое форматирование. Инаковость становится заранее отформатированным стимулом, то есть кликабельным, воспроизводимым и эмоционально управляемым, но лишённым политической и субъективной плотности. Эта динамика помещается в более широкий контекст постсимволической колониальности, где сама видимость превращается в механизм контроля, а не освобождения. Анализ прослеживает, как платформы конструируют условия, при которых инаковость предстаёт как безопасная, потребляемая и бесконечно циркулирующая, в то время как любое радикальное прерывание отфильтровывается. Статья критикует либеральные надежды на видимость как форму наделения властью, утверждая, что цифровая спектакуляризация инаковости требует радикального переосмысления этических отношений. В качестве альтернативы предлагается этика отказа - уважение права Другого на непрозрачность и выход из экономики внимания. В конечном счёте, метасимулякр инаковости показывает, как различие сохраняется не для вызова, а для стабилизации алгоритмической логики современного платформенного капитализма.</div>
+<div id="eabstract2" style="width:504px; border:0; margin:0; padding:0; text-align:left; display:none;"><p align=justify style='margin-top: 0.3em;'>This article explores the problem of reconstruction and diversification of the activity of regional museums on the periphery. Attention is focused on underestimation (absence of demand) of potential of a museum in cultural space of a rural area. Reconstruction of the cultural space should be realized in accordance with the cluster principle: it allows reconstructing the functions of currently operating museums in an affordable way; optimally harness their potential; shift accents of their role for the society. Mainstreaming the values of regional ethnic culture contributes to the establishment of a positive cultural identity of the local dwellers. The author applies a complex interdisciplinary approach towards studying the problems of designing cultural space and forms of organizing leisure activities. Method of mosaic modeling is used in development of the project of museum as a third place. It is proven that cluster principle for organization of cultural and educational establishments, service sector; collaboration of their personnel; extensive implementation of participatory practices actualize the potential of cultural institutions of the rural area. Modern sociocultural practices as a platform of third place actively promote libraries (El Lissitzky and others) and cafés (Ray Oldenburg and others); the authors propose a museum complex - association of thee museums of the rural area. The article formulates a theoretical substantiation for broadening museum functions as an educational platform, place for relocation, personal development, and self-fulfillment. A reorganized creative cluster may contribute to the establishment of a positive cultural identity of the local dwellers, as well as make the cultural space more productive and efficient.</div>
 <script type="text/javascript">
 function show_eabstract() {
   $('#eabstract1').hide();
@@ -1102,12 +1269,16 @@ function show_eabstract() {
 </td></tr>
 
 <tr><td width=34>&nbsp;</td><td width=504 align=left valign=middle><p>
-Ключевые слова: <a href="keyword_items.asp?id=27786051">ПОСТСИМВОЛИЧЕСКАЯ КОЛОНИАЛЬНОСТЬ</a>, 
-<a href="keyword_items.asp?id=27545163">МЕТАСИМУЛЯКР</a>, 
-<a href="keyword_items.asp?id=27786052">АЛГОРИТМИЧЕСКАЯ ВИДИМОСТЬ</a>, 
-<a href="keyword_items.asp?id=2485083">ИНТЕРФЕЙС</a>, 
-<a href="keyword_items.asp?id=27786053">ЦИФРОВАЯ КОЛОНИАЛЬНОСТЬ</a>, 
-<a href="keyword_items.asp?id=27786054">ЭТИКА ИНАКОВОСТИ</a>
+Keywords: <a href="keyword_items.asp?id=75588">DIVERSIFICATION</a>, 
+<a href="keyword_items.asp?id=7496">RECONSTRUCTION</a>, 
+<a href="keyword_items.asp?id=61813">VALUES</a>, 
+<a href="keyword_items.asp?id=1153850">SELF-REALIZATION</a>, 
+<a href="keyword_items.asp?id=331700">SELF-EXPRESSION</a>, 
+<a href="keyword_items.asp?id=345700">CULTURAL IDENTITY</a>, 
+<a href="keyword_items.asp?id=318120">LEISURE ACTIVITIES</a>, 
+<a href="keyword_items.asp?id=2800992">CULTURAL SPACE</a>, 
+<a href="keyword_items.asp?id=5451678">CREATIVE CLUSTER</a>, 
+<a href="keyword_items.asp?id=18454755">MUSEUM STRATEGIES</a>
 </td></tr>
 
 </table>
@@ -1147,30 +1318,31 @@ function show_context(refid) {
 
 <tr bgcolor=#f5f5f5><td width=6% align=right valign=top nowrap><font color=#000000>1.&nbsp;</font></td>
 <td width=89% align=justify valign=top><font color=#000000>
-Ahmed, S. (2004). The Cultural Politics of Emotion. Routledge.</font>
-<span title="Показать ссылку в тексте публикации" class="win_expandable" id="context_expand_1730601251" style="color:#00008f; margin:0 5px 0 0;" onClick="show_context('1730601251')"> &nbsp;<font color=#F26C4F>▼</font>&nbsp;Контекст</span>
-<div id="context_1730601251" style="border:0; margin:0; padding:0; text-align:left; display:none;">
+Ариарский М. А. Прикладная культурология как область научного знания и социальной практики.-СПб.: СПбГУКИ, 2000.-496 с.</font>&nbsp; <font color=#F26C4F>EDN:</font>&nbsp;<a href="https://elibrary.ru/qdgmjx" target=_blank rel="nofollow">QDGMJX</a>
+
+<span title="Показать ссылку в тексте публикации" class="win_expandable" id="context_expand_944007743" style="color:#00008f; margin:0 5px 0 0;" onClick="show_context('944007743')"> &nbsp;<font color=#F26C4F>▼</font>&nbsp;Контекст</span>
+<div id="context_944007743" style="border:0; margin:0; padding:0; text-align:left; display:none;">
 <div style="height:3px;"></div>
 <table width=100% border=0 cellspacing=1 cellpadding=3>
 <td width=8% align=right valign=top bgcolor=#f5f5f5><font color=#000000>Контекст:</font></td>
 <td width=92% align=left valign=top bgcolor=#f5f5f5>
-<font color=#555555><i>...As Sara Ahmed observes, emotions, rather than being internal states, are practices of public orientation capable not only of constituting collective bodies but also of neutralizing alterity, transforming it into an object of emotional consumption (Ahmed, 2004, p. 10)...<div style='height:3px'></div>...Ahmed aptly notes that emotions create the surfaces of collective bodies through acts of adhesion (Ahmed, 2004, p. 10), producing what appear to be natural boundaries between “us” and “them.” Yet whereas emotions once unsettled these boundaries, exposing their vulnerability, today, within algorithmic capitalism,...<div style='height:3px'></div>...Sara Ahmed aptly notes that emotions structure not only perception but the very fabric of collective bodies: bodies are formed at the surface of contacts, through “touches” that already code the Other as the source of a particular affect (Ahmed, 2004, p. 10)...</i></font>
+<font color=#555555><i>...Входе работы над проектом изучены прикладные аспекты культурологии и проблемы реконструкции музейного дела в трудах М. А. Ариарского [1], А. А. Воронина [3], М. С. Кагана [10], Б. А. Столярова [26], Т. П. Калугиной [11], а также М. Т. Майстровской [18] и О. С. Сапанжи [24]; уточняется понятие «третье место» Р. Ольденбурга [22], А. В. Лисицкого [16], применительно к предполагаемому Эльгяйскому музейному кластеру...</i></font>
 </td></tr></table>
 </div>
 
-</td><td align=center valign=top width=5%>&nbsp;</td>
+</td><td align=center valign=top width=5%><div style="height:5px;"></div><a href="item.asp?id=19158677" title="Перейти на описание цитируемой публикации" class="help1" target=_blank><img src="/images/go_url.png" height=15 width=15 border=0></a></td>
 </tr>
 
 <tr bgcolor=#f5f5f5><td width=6% align=right valign=top nowrap><font color=#000000>2.&nbsp;</font></td>
 <td width=89% align=justify valign=top><font color=#000000>
-Ahmed, S. (2013). Strange Encounters: Embodied Others in Post-Coloniality. Routledge.</font>&nbsp; <font color=#F26C4F>DOI:</font>&nbsp;<a href="https://doi.org/10.4324/9780203349700" target=_blank rel="nofollow">10.4324/9780203349700</a>
-<span title="Показать ссылку в тексте публикации" class="win_expandable" id="context_expand_1730601252" style="color:#00008f; margin:0 5px 0 0;" onClick="show_context('1730601252')"> &nbsp;<font color=#F26C4F>▼</font>&nbsp;Контекст</span>
-<div id="context_1730601252" style="border:0; margin:0; padding:0; text-align:left; display:none;">
+Ванслова Е. Г. Социальные функции музея: споры о будущем: материалы дискуссии в отделе музееведения НИИ культуры / Е. Г. Ванслова, М. Б. Гнедовский, Ю. В. Дукельский. М., 1989.-127 с.</font>
+<span title="Показать ссылку в тексте публикации" class="win_expandable" id="context_expand_944007744" style="color:#00008f; margin:0 5px 0 0;" onClick="show_context('944007744')"> &nbsp;<font color=#F26C4F>▼</font>&nbsp;Контекст</span>
+<div id="context_944007744" style="border:0; margin:0; padding:0; text-align:left; display:none;">
 <div style="height:3px;"></div>
 <table width=100% border=0 cellspacing=1 cellpadding=3>
 <td width=8% align=right valign=top bgcolor=#f5f5f5><font color=#000000>Контекст:</font></td>
 <td width=92% align=left valign=top bgcolor=#f5f5f5>
-<font color=#555555><i>...Sara Ahmed insisted that otherness is not merely a sign or image but an embodied experience saturated with bodily affects (Ahmed, 2013, p. 38-40)...</i></font>
+<font color=#555555><i>...Музей включает комплекс различных центров, таких как культурно-исторический, педагогический, досуговый и осуществляет функции «документирования», «образовательно-воспитательную» и «организации свободного времени» [2; 7; 10; 12; 19; 30]...</i></font>
 </td></tr></table>
 </div>
 
@@ -1179,14 +1351,14 @@ Ahmed, S. (2013). Strange Encounters: Embodied Others in Post-Coloniality. Routl
 
 <tr bgcolor=#f5f5f5><td width=6% align=right valign=top nowrap><font color=#000000>3.&nbsp;</font></td>
 <td width=89% align=justify valign=top><font color=#000000>
-Amaro, R. (2022). The Black technical object: On machine learning and the aspiration of Black being. Sternberg Press.</font>
-<span title="Показать ссылку в тексте публикации" class="win_expandable" id="context_expand_1730601253" style="color:#00008f; margin:0 5px 0 0;" onClick="show_context('1730601253')"> &nbsp;<font color=#F26C4F>▼</font>&nbsp;Контекст</span>
-<div id="context_1730601253" style="border:0; margin:0; padding:0; text-align:left; display:none;">
+Воронин A. A. Музей как креативное пространство культуры // Философские исследования. 1994.-№ 1.-С. 16-24.</font>
+<span title="Показать ссылку в тексте публикации" class="win_expandable" id="context_expand_944007745" style="color:#00008f; margin:0 5px 0 0;" onClick="show_context('944007745')"> &nbsp;<font color=#F26C4F>▼</font>&nbsp;Контекст</span>
+<div id="context_944007745" style="border:0; margin:0; padding:0; text-align:left; display:none;">
 <div style="height:3px;"></div>
 <table width=100% border=0 cellspacing=1 cellpadding=3>
 <td width=8% align=right valign=top bgcolor=#f5f5f5><font color=#000000>Контекст:</font></td>
 <td width=92% align=left valign=top bgcolor=#f5f5f5>
-<font color=#555555><i>...When Ramon Amaro analyzes how machine learning technologies reduce the Black body to an “object of technical processing” (Amaro, 2022), he exposes a deeper truth of the digital epoch: the Other is presented but deprived of subjectivity-not through violence or expulsion, but through the programmatic reduction of difference into aesthetic code...</i></font>
+<font color=#555555><i>...Входе работы над проектом изучены прикладные аспекты культурологии и проблемы реконструкции музейного дела в трудах М. А. Ариарского [1], А. А. Воронина [3], М. С. Кагана [10], Б. А. Столярова [26], Т. П. Калугиной [11], а также М. Т. Майстровской [18] и О. С. Сапанжи [24]; уточняется понятие «третье место» Р. Ольденбурга [22], А. В. Лисицкого [16], применительно к предполагаемому Эльгяйскому музейному кластеру...</i></font>
 </td></tr></table>
 </div>
 
@@ -1195,14 +1367,14 @@ Amaro, R. (2022). The Black technical object: On machine learning and the aspira
 
 <tr bgcolor=#f5f5f5><td width=6% align=right valign=top nowrap><font color=#000000>4.&nbsp;</font></td>
 <td width=89% align=justify valign=top><font color=#000000>
-Arendt, H. (1998). The human condition (2nd ed). University of Chicago Press.</font>&nbsp; <font color=#F26C4F>DOI:</font>&nbsp;<a href="https://doi.org/10.7208/chicago/9780226924571.001.0001" target=_blank rel="nofollow">10.7208/chicago/9780226924571.001.0001</a>
-<span title="Показать ссылку в тексте публикации" class="win_expandable" id="context_expand_1730601254" style="color:#00008f; margin:0 5px 0 0;" onClick="show_context('1730601254')"> &nbsp;<font color=#F26C4F>▼</font>&nbsp;Контекст</span>
-<div id="context_1730601254" style="border:0; margin:0; padding:0; text-align:left; display:none;">
+Гнедовский М. Б. Творческие индустрии: политический вызов для России // Отечественные записки, 2005. №4. [Электронный ресурс]. URL: http://www.strana-oz.ru/2005/4/tvorcheskie-industrii-politicheskiy-vyzov-dlya-rossii (дата обращения 20.12.2019).</font>
+<span title="Показать ссылку в тексте публикации" class="win_expandable" id="context_expand_944007746" style="color:#00008f; margin:0 5px 0 0;" onClick="show_context('944007746')"> &nbsp;<font color=#F26C4F>▼</font>&nbsp;Контекст</span>
+<div id="context_944007746" style="border:0; margin:0; padding:0; text-align:left; display:none;">
 <div style="height:3px;"></div>
 <table width=100% border=0 cellspacing=1 cellpadding=3>
 <td width=8% align=right valign=top bgcolor=#f5f5f5><font color=#000000>Контекст:</font></td>
 <td width=92% align=left valign=top bgcolor=#f5f5f5>
-<font color=#555555><i>...In this process, otherness loses the political unpredictability that Hannah Arendt celebrated as the source of new beginnings, indeterminacy, and freedom inherent in the act of appearing (Arendt, 1998)...<div style='height:3px'></div>...For Arendt, political action emerges only where people meet freely, in plurality, recognizing the Other as an equal participant in the shared world (Arendt, 1998)...</i></font>
+<font color=#555555><i>...концертные организации, обладающие значительными, хотя и не всегда востребованными ресурсами; независимые профессионалы, которые мигрируют между этими секторами и образуют подвижную творческую среду» [4]...</i></font>
 </td></tr></table>
 </div>
 
@@ -1211,18 +1383,19 @@ Arendt, H. (1998). The human condition (2nd ed). University of Chicago Press.</f
 
 <tr bgcolor=#f5f5f5><td width=6% align=right valign=top nowrap><font color=#000000>5.&nbsp;</font></td>
 <td width=89% align=justify valign=top><font color=#000000>
-Baudrillard, J. (1996). The perfect crime. Verso.</font>
-<span title="Показать ссылку в тексте публикации" class="win_expandable" id="context_expand_1730601255" style="color:#00008f; margin:0 5px 0 0;" onClick="show_context('1730601255')"> &nbsp;<font color=#F26C4F>▼</font>&nbsp;Контекст</span>
-<div id="context_1730601255" style="border:0; margin:0; padding:0; text-align:left; display:none;">
+Гордин В. Э., Хорева Л. В., Дедова М. А. Совершенствование музейного менеджмента на основе развития событийной деятельности // Известия Санкт-Петербургского государственного экономического университета. 2014. № 4 (88). С. 73-82.</font>&nbsp; <font color=#F26C4F>EDN:</font>&nbsp;<a href="https://elibrary.ru/smxglj" target=_blank rel="nofollow">SMXGLJ</a>
+
+<span title="Показать ссылку в тексте публикации" class="win_expandable" id="context_expand_944007747" style="color:#00008f; margin:0 5px 0 0;" onClick="show_context('944007747')"> &nbsp;<font color=#F26C4F>▼</font>&nbsp;Контекст</span>
+<div id="context_944007747" style="border:0; margin:0; padding:0; text-align:left; display:none;">
 <div style="height:3px;"></div>
 <table width=100% border=0 cellspacing=1 cellpadding=3>
 <td width=8% align=right valign=top bgcolor=#f5f5f5><font color=#000000>Контекст:</font></td>
 <td width=92% align=left valign=top bgcolor=#f5f5f5>
-<font color=#555555><i>...Baudrillard convincingly argued that in postmodernity, images cease to represent reality-they steal it, murder it without leaving traces (Baudrillard, 1996, p. 6)...<div style='height:3px'></div>...Baudrillard still discerned a residual trace of the crime: the very fact that the world presented itself through visibility was, for him, evidence against reality (Baudrillard, 1996, p. 1-2)...</i></font>
+<font color=#555555><i>...Посетители музеев «заинтересованы в получении необычного яркого опыта на основе символического капитала, где реальные артефакты дают лишь некий аттрактивный импульс, а значения приобретают создаваемые впечатления» [5, с. 75]...</i></font>
 </td></tr></table>
 </div>
 
-</td><td align=center valign=top width=5%>&nbsp;</td>
+</td><td align=center valign=top width=5%><div style="height:5px;"></div><a href="item.asp?id=21975708" title="Перейти на описание цитируемой публикации" class="help1" target=_blank><img src="/images/go_url.png" height=15 width=15 border=0></a></td>
 </tr>
 
 <tbody ID="list_refs"></tbody>
@@ -1230,7 +1403,7 @@ Baudrillard, J. (1996). The perfect crime. Verso.</font>
 <script type="text/javascript">
 function show_refs() {
   $('#show_reflist').html("<tr><td colspan=3 align=center>Загружается (всего ссылок: 30) ...</td></tr>");
-  $.get("get_item_refs.asp?id=82333839&rand=" + Math.random(), function(data) {
+  $.get("get_item_refs.asp?id=42578118&rand=" + Math.random(), function(data) {
     $('#list_refs').html(data);
     $('#show_reflist').html('');
 		MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
@@ -1273,10 +1446,10 @@ function show_refs() {
 <table width=190 cellspacing=0 cellpadding=3 border=0>
 
 <input type="hidden" name="itembox_name" value="">
-<input type="hidden" name="id" value="82333839">
-<input type="hidden" name="did" value="82333839">
-<input type="hidden" name="sid" value="682676094">
-<input type="hidden" name="noteid" value="82333839">
+<input type="hidden" name="id" value="42578118">
+<input type="hidden" name="did" value="42578118">
+<input type="hidden" name="sid" value="683164423">
+<input type="hidden" name="noteid" value="42578118">
 <input type="hidden" name="disspage" value="">
 <input type="hidden" name="counterid" value="">
 <input type="hidden" name="commentid" value="">
@@ -1284,10 +1457,10 @@ function show_refs() {
 <input type="hidden" name="linkid" value="">
 <input type="hidden" name="paysum" value="">
 <input type="hidden" name="payitemid" value="">
-<input type="hidden" name="authorid" value="">
-<input type="hidden" name="tid82333839" value="82333839">
+<input type="hidden" name="authorid" value="900763">
+<input type="hidden" name="tid42578118" value="42578118">
 <input type="hidden" name="filenum" value="1">
-<input type="hidden" name="fileid" value="82333839">
+<input type="hidden" name="fileid" value="42578118">
 <input type="hidden" name="urlnum" value="1">
 <input type="hidden" name="items_all" value="">
 
@@ -1296,12 +1469,12 @@ function show_refs() {
 
 
 <tr><td width=15% align=center valign=top>
-<a href="contents.asp?id=82333831&selid=82333839"><img src="images/but_orange.gif" width=15 height=15 hspace=3 border=0></a>
+<a href="contents.asp?id=42578113&selid=42578118"><img src="images/but_orange.gif" width=15 height=15 hspace=3 border=0></a>
 
 </td>
 
 <td width=85% align=left valign=middle>
-<a href="contents.asp?id=82333831&selid=82333839">Содержание выпуска</a>
+<a href="contents.asp?id=42578113&selid=42578118">Содержание выпуска</a>
 
 </td></tr>
 
@@ -1311,15 +1484,15 @@ function show_refs() {
 	<td width=85% align=left valign=middle>Загрузить:
 	</td></tr>
 	
-	<tr><td width=15% align=center valign=top><a href="javascript:file_article(82333839, 1)" rel="nofollow" title=""><img src="/images/download_green.png" width=16 hspace=2 border=0></a></td>
-	<td width=85% align=left valign=middle><a href="javascript:file_article(82333839, 1)" rel="nofollow" class="help" title="">Полный текст</a> (PDF, английский)
+	<tr><td width=15% align=center valign=top><a href="javascript:file_article(42578118, 1)" rel="nofollow" title=""><img src="/images/download_green.png" width=16 hspace=2 border=0></a></td>
+	<td width=85% align=left valign=middle><a href="javascript:file_article(42578118, 1)" rel="nofollow" class="help" title="">Полный текст</a> (PDF)
 	</td></tr>
 	
 <tr><td width=15% align=center valign=top>
 <a href="javascript:email_article()" rel="nofollow"><img src="images/mailto.png" width=16 hspace=2 border=0></a></td>
 <td width=85% align=left valign=middle><a href="javascript:email_article()" rel="nofollow">Отправить публикацию по электронной почте</a>
 </td></tr>
-<tr><td colspan=2 align=center><div class="formfr"><input type="text" id="email" name="email" value="pasha.sitnikov.69@mail.ru" style="width:172px; text-align: center;" class="inputt"></div></td></tr>
+<tr><td colspan=2 align=center><div class="formfr"><input type="text" id="email" name="email" value="gasilin@inion.ru" style="width:172px; text-align: center;" class="inputt"></div></td></tr>
 
 <tr><td colspan=2><div style="height:10px;"></div></td></tr>
 
@@ -1327,8 +1500,8 @@ function show_refs() {
 <td width=85% align=left valign=middle>Связанные документы:
 </td></tr>
 
-<tr><td width=15% align=center valign=top><a href="javascript:url_article(82333839, 1)" rel="nofollow" title=""><img src="images/go_url.png" width=16 hspace=2 border=0></a></td>
-<td width=85% align=left valign=middle>Полный текст, на сайте <br><span style="word-wrap:break-word; word-break: break-all; overflow:hidden"><a href="javascript:url_article(82333839, 1)" rel="nofollow" class="help">galacticamedia.com</a>
+<tr><td width=15% align=center valign=top><a href="javascript:url_article(42578118, 1)" rel="nofollow" title=""><img src="images/go_url.png" width=16 hspace=2 border=0></a></td>
+<td width=85% align=left valign=middle>Полный текст, на сайте <br><span style="word-wrap:break-word; word-break: break-all; overflow:hidden"><a href="javascript:url_article(42578118, 1)" rel="nofollow" class="help">nbpublish.com</a>
 </span></td></tr>
 
 
@@ -1336,13 +1509,13 @@ function show_refs() {
 
 
 <tr><td width=15% align=center valign=top>
-<a href="cit_items.asp?id=82333839"><img src="images/but_orange.gif" width=15 height=15 hspace=3 border=0></a></td>
-<td width=85% align=left valign=middle><a href="cit_items.asp?id=82333839">Список публикаций, цитирующих данную</a>
+<a href="cit_items.asp?id=42578118"><img src="images/but_orange.gif" width=15 height=15 hspace=3 border=0></a></td>
+<td width=85% align=left valign=middle><a href="cit_items.asp?id=42578118">Список публикаций, цитирующих данную</a>
 </td></tr>
 
 <tr><td width=15% align=center valign=top>
-<a href='https://scholar.google.com/scholar?q="Post-Symbolic Coloniality: The Metasimulacrum of Otherness in Digital Culture"&hl=ru&as_sdt=0%2C5&as_ylo=2025&as_yhi=2025' target=_blank rel="nofollow"><img src="images/but_orange.gif" width=15 height=15 hspace=3 border=0></a></td>
-<td width=85% align=left valign=middle><a href='https://scholar.google.com/scholar?q="Post-Symbolic Coloniality: The Metasimulacrum of Otherness in Digital Culture"&hl=ru&as_sdt=0%2C5&as_ylo=2025&as_yhi=2025' target=_blank rel="nofollow">Список статей в Google Академия, цитирующих данную</a>
+<a href='https://scholar.google.com/scholar?q="Музей как &quot;третье место&quot; в культурном пространстве села"&hl=ru&as_sdt=0%2C5&as_ylo=2020&as_yhi=2020' target=_blank rel="nofollow"><img src="images/but_orange.gif" width=15 height=15 hspace=3 border=0></a></td>
+<td width=85% align=left valign=middle><a href='https://scholar.google.com/scholar?q="Музей как &quot;третье место&quot; в культурном пространстве села"&hl=ru&as_sdt=0%2C5&as_ylo=2020&as_yhi=2020' target=_blank rel="nofollow">Список статей в Google Академия, цитирующих данную</a>
 </td></tr>
 
 <tr><td width=15% align=center valign=top>
@@ -1360,7 +1533,21 @@ function show_refs() {
 <tr><td colspan=2 align=center><div class="formfr"><select name="itemboxid" id="itemboxid" style="width:180px" class="input">
 
 <option value="0" >Новая подборка
-<option value="1598740" selected>Международный журнал исследований культуры
+<option value="1445083" selected>Политики доступа
+<option value="1541849" >Оборотничество
+<option value="1557500" >Социальная эпистемология
+<option value="1561037" >Психиатрия
+<option value="1572774" >Сартр
+<option value="1582948" >Искусственный интеллект в научных сетях
+<option value="1586142" >Подорога
+<option value="1594422" >Социологическое обозрение
+<option value="1596160" >Художественная культура
+<option value="1596212" >Международный журнал исследований культуры
+<option value="1600343" >Философия. Журнал Высшей школы экономики
+<option value="1612558" >Эксперимент с нейропоиском
+<option value="1612570" >Нейропоиск
+<option value="1612590" >Нейропоиск. Вторая фаза
+<option value="1640794" >Galactica media
 </select></div>&nbsp;</td></tr>
 
 
@@ -1383,8 +1570,8 @@ function show_refs() {
 </FORM>
 
 <tr><td width=15% align=center valign=top>
-<a href='/similar_items.asp?itemid=82333839'><img src="images/but_orange.gif" width=15 height=15 hspace=3 border=0></a></td>
-<td width=85% align=left valign=middle><a href='/similar_items.asp?itemid=82333839'>Найти близкие по тематике публикации</a>
+<a href='/similar_items.asp?itemid=42578118'><img src="images/but_orange.gif" width=15 height=15 hspace=3 border=0></a></td>
+<td width=85% align=left valign=middle><a href='/similar_items.asp?itemid=42578118'>Найти близкие по тематике публикации</a>
 </td></tr>
 
 
@@ -1392,7 +1579,7 @@ function show_refs() {
 <tr><td colspan=2><div style="height:10px;"></div></td></tr>
 <tr><td width=15% align=center valign=top>
 <img src="images/but_orange.gif" width=15 height=15 hspace=3 border=0></td>
-<td width=85% align=left valign=middle><font color=#00008f>Дата размещения:</font><br><font color=#000000>24.05.2025</font>
+<td width=85% align=left valign=middle><font color=#00008f>Дата размещения:</font><br><font color=#000000>25.03.2020</font>
 </td></tr>
 
 
