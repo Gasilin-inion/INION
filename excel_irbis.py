@@ -3,7 +3,7 @@
 Мультиплатформный конвертер библиографических данных из формата Excel в формат ИРБИС 64
 
 Автор: Gasilin Andrey
-Дата последнего обновления: 13.12.25
+Дата последнего обновления: 17.12.25
 """
 
 import os
@@ -120,20 +120,20 @@ def main(src: str = path_to_the_source_file, tgt: str = path_to_the_target_file)
         field_101 += argument_101 + '\n'
 
         # Авторы
-        authors_str = safe_get(df, idx, 'author')
-        if ';' in authors_str:
-            authors_list = authors_str.split(' ; ')
-            number_of_authors = len(authors_list)
-            if number_of_authors == 2:
-                author_1 = authors_list[0]
-                author_2 = authors_list[1]
-                author_1_xx = author_1.split(', ')
-                author_2_xx = author_2.split(', ')
-                author_1_abb = str(author_1_xx[1])
+        authors_str = safe_get(df, idx, 'author')                               # Импорт авторов из датафрейма
+        if ';' in authors_str:                                                  # Если авторов несколько
+            authors_list = authors_str.split(' ; ')                             # Список авторов
+            number_of_authors = len(authors_list)                               # Количество авторов
+            if number_of_authors == 2:                                          # Если два автора
+                author_1 = authors_list[0]                                      # Первый автор
+                author_2 = authors_list[1]                                      # Второй автор
+                author_1_xx = author_1.split(', ')                              #xx - Инициалы для поля 700
+                author_2_xx = author_2.split(', ')          
+                author_1_abb = str(author_1_xx[1])                              #abb - Инициалы для поля 200
                 author_1_abb = author_1_abb.replace('.', '. ')
                 author_2_abb = str(author_2_xx[1])
                 author_2_abb = author_2_abb.replace('.', '. ')
-            elif number_of_authors == 3:
+            elif number_of_authors == 3:                                        # Если три автора                                        
                 author_1 = authors_list[0]
                 author_2 = authors_list[1]
                 author_3 = authors_list[2]
@@ -146,7 +146,7 @@ def main(src: str = path_to_the_source_file, tgt: str = path_to_the_target_file)
                 author_2_abb = author_2_abb.replace('.', '. ')
                 author_3_abb = str(author_3_xx[1])
                 author_3_abb = author_3_abb.replace('.', '. ')
-            elif number_of_authors == 4:
+            elif number_of_authors == 4:                                        # Если четыре автора
                 author_1 = authors_list[0]
                 author_2 = authors_list[1]
                 author_3 = authors_list[2]
@@ -163,7 +163,7 @@ def main(src: str = path_to_the_source_file, tgt: str = path_to_the_target_file)
                 author_3_abb = author_3_abb.replace('.', '. ')
                 author_4_abb = str(author_4_xx[1])
                 author_4_abb = author_4_abb.replace('.', '. ')
-            elif number_of_authors == 5:
+            elif number_of_authors == 5:                                        # Если пять авторов
                 author_1 = authors_list[0]
                 author_2 = authors_list[1]
                 author_3 = authors_list[2]
@@ -184,11 +184,11 @@ def main(src: str = path_to_the_source_file, tgt: str = path_to_the_target_file)
                 author_4_abb = author_4_abb.replace('.', '. ')
                 author_5_abb = str(author_5_xx[1])
                 author_5_abb = author_5_abb.replace('.', '. ')
-        elif (',' in authors_str):
+        elif (',' in authors_str):                                              # Один автор с инициалами
             author_1_xx = authors_str.split(', ')
             author_1_abb = str(author_1_xx[1])
             author_1_abb = author_1_abb.replace('.', '. ')
-        else:
+        else:                                                                   # Один автор без инициалов
             author_1_xx = authors_str
             author_1_abb = ''
 
@@ -258,10 +258,12 @@ def main(src: str = path_to_the_source_file, tgt: str = path_to_the_target_file)
         # Основной автор (поле 700)
         if (number_of_authors >= 1) and (number_of_authors <= 3):
             if author_1_xx[1]:                                                                  # Есть аббревиатура
-                argument_700 = '^A' + author_1_xx[0] + '^B' + author_1_xx[1] + '\n'
+                argument_700 = '^A' + author_1_xx[0] + '^B' + author_1_xx[1] + '\n'                
             else:                                                                               # Нет аббревиатуры
                 argument_700 = '^A' + author_1 + '\n'
-        field_700 = field_700 + argument_700
+            field_700 = field_700 + argument_700
+        elif (number_of_authors >= 4):
+            field_700 = ''
 
         # Соавторы (поле 701)
         if ';' in authors_str:
@@ -276,7 +278,9 @@ def main(src: str = path_to_the_source_file, tgt: str = path_to_the_target_file)
                                 + author_3_xx[1] + '\n' )
                 field_701 = (field_701 + argument_701 + '\n')
             elif number_of_authors == 4:
-                argument_701 = ('^A' + author_2_xx[0] + '^B'
+                argument_701 = ('^A' + author_1_xx[0] + '^B'
+                                + author_1_xx[1] + '\n'
+                                + '#701: ^A' + author_2_xx[0] + '^B'
                                 + author_2_xx[1] + '\n'
                                 + '#701: ^A' + author_3_xx[0] + '^B'
                                 + author_3_xx[1] + '\n'
@@ -284,7 +288,9 @@ def main(src: str = path_to_the_source_file, tgt: str = path_to_the_target_file)
                                 + author_4_xx[1] + '\n')
                 field_701 = (field_701 + argument_701 + '\n')
             elif number_of_authors == 5:
-                argument_701 = ('^A' + author_2_xx[0] + '^B'
+                argument_701 = ('^A' + author_1_xx[0] + '^B'
+                                + author_1_xx[1] + '\n'
+                                + '#701: ^A' + author_2_xx[0] + '^B'
                                 + author_2_xx[1] + '\n'
                                 + '#701: ^A' + author_3_xx[0] + '^B'
                                 + author_3_xx[1] + '\n'

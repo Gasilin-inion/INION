@@ -6,24 +6,24 @@
 
 <meta name="robots" content="noarchive, nofollow">
 
-<meta name="description" content='Азарова В.В.
-Человек и культура, 2020'>
-<title>"Неумирающие элементы архаики" в драматической оратории А. Онеггера "Жанна д'Арк на костре"</title>
+<meta name="description" content='Малинов С.А.
+Galactica Media: Journal of Media Studies, 2025'>
+<title>Искусственный интеллект как симулякр смысла</title>
 
 <meta property="og:image" content="https://elibrary.ru/images/orgs_access.png" />
-<meta property="og:title" content='"Неумирающие элементы архаики" в драматической оратории А. Онеггера "Жанна д'Арк на костре"' />
+<meta property="og:title" content='Искусственный интеллект как симулякр смысла' />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://elibrary.ru/amwnzy" />
+<meta property="og:url" content="https://elibrary.ru/hppuzq" />
 <meta property="og:site_name" content="eLIBRARY.RU"/>
-<meta property="og:description" content='Азарова В.В.
-Человек и культура, 2020' />
+<meta property="og:description" content='Малинов С.А.
+Galactica Media: Journal of Media Studies, 2025' />
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
 
-<link rel="canonical" href="https://elibrary.ru/item.asp?id=42578117"/>
+<link rel="canonical" href="https://elibrary.ru/item.asp?id=83175256"/>
 
 
-<meta name="doi" content="10.25136/2409-8744.2020.1.31950">
+<meta name="doi" content="10.46539/gmd.v7i4.705">
 
 
 <script type="text/javascript" src="/jquery.min.js"></script>
@@ -97,7 +97,7 @@ function email_article(){
 		alerts("Не указан адрес электронной почты!");}
 	else{
 		$.fancybox({
-			href : '/email_article.asp?id=42578117&email='+document.forms["results"].email.value+'&rand=' + Math.random(),
+			href : '/email_article.asp?id=83175256&email='+document.forms["results"].email.value+'&rand=' + Math.random(),
 			title : '',
 			padding : 20,     
 			width : 400,
@@ -121,7 +121,7 @@ function show_itemrefs(){
 function edit_notes(){
 
   $.fancybox({
-    href : '/item_notes_add.asp?itemid=42578117&rand=' + Math.random(),
+    href : '/item_notes_add.asp?itemid=83175256&rand=' + Math.random(),
     title : '',
 	  padding : 20,     
 	  width : 520,
@@ -139,7 +139,7 @@ function edit_notes(){
 function add_link(link){
 
   $.fancybox({
-      href : '/itemlink_add.asp?itemid=42578117&linkid='+link+'&rand=' + Math.random(),
+      href : '/itemlink_add.asp?itemid=83175256&linkid='+link+'&rand=' + Math.random(),
       title : '',
 	  padding : 20,     
 	  width : 520,
@@ -155,59 +155,32 @@ function add_link(link){
 }
 function reply_comments(commentid){
 
-  $.fancybox({
-      href : '/itemcomments_add.asp?itemid=42578117&reply=1&commentid=' + commentid + '&rand=' + Math.random(),
-      title : '',
-	  padding : 20,     
-	  width : 520,
-	  height : 300,
-	  overlayOpacity : 0.3,	
-	  overlayColor : '#000',
-	  speedIn : 500,
-	  hideOnOverlayClick : false,
-	  enableEscapeButton : true,
-	  type : 'iframe'
-    });
+  alerts("Для того, чтобы участвовать в обсуждении публикаций, необходимо зарегистрироваться в системе Science Index в качестве автора научных публикаций!");
+  document.getElementById("win_login").className = "expanded";
+  document.getElementById("img_login").src = w_up.src;
+  document.forms["login"].login.focus();
 
 }
 function edit_comments(commentid){
 
-  $.fancybox({
-      href : '/itemcomments_add.asp?itemid=42578117&reply=0&commentid=' + commentid + '&rand=' + Math.random(),
-      title : '',
-	  padding : 20,     
-	  width : 520,
-	  height : 300,
-	  overlayOpacity : 0.3,	
-	  overlayColor : '#000',
-	  speedIn : 500,
-	  hideOnOverlayClick : false,
-	  enableEscapeButton : true,
-	  type : 'iframe'
-    });
+  alerts("Для того, чтобы участвовать в обсуждении публикаций, необходимо зарегистрироваться в системе Science Index в качестве автора научных публикаций!");
+  document.getElementById("win_login").className = "expanded";
+  document.getElementById("img_login").src = w_up.src;
+  document.forms["login"].login.focus();
 
 }
 function new_comments(){
 
-  $.fancybox({
-      href : '/itemcomments_add.asp?itemid=42578117&reply=0&commentid=&rand=' + Math.random(),
-      title : '',
-	  padding : 20,     
-	  width : 520,
-	  height : 300,
-	  overlayOpacity : 0.3,	
-	  overlayColor : '#000',
-	  speedIn : 500,
-	  hideOnOverlayClick : false,
-	  enableEscapeButton : true,
-	  type : 'iframe'
-    });
+  alerts("Для того, чтобы участвовать в обсуждении публикаций, необходимо зарегистрироваться в системе Science Index в качестве автора научных публикаций!");
+  document.getElementById("win_login").className = "expanded";
+  document.getElementById("img_login").src = w_up.src;
+  document.forms["login"].login.focus();
 
 }
 
 function translate_abstract(){
   $.fancybox({
-      href : '/translate_abstract.asp?id=42578117&rand=' + Math.random(),
+      href : '/translate_abstract.asp?id=83175256&rand=' + Math.random(),
       title : '',
 	  padding : 20,     
 	  width : 640,
@@ -340,7 +313,7 @@ function itembox_adds(){
 }
 function for_reference(){
     $.fancybox({
-      href : 'for_reference.asp?id=42578117&rand=' + Math.random(),
+      href : 'for_reference.asp?id=83175256&rand=' + Math.random(),
       title : '',
 			padding : 20,     
 			width : 480,
@@ -388,7 +361,7 @@ function qr_code(dd){
 <tr><td><div style="height:10px;"></div></td></tr>
 <tr><td width=150 align=center valign=top>
 
-<a href="title_about_new.asp?id=52971"><img src="/titles/52971/ca.png" border=0 width=120 title='О журнале "Человек и культура"' style="behavior: url(/pie/PIE.htc); box-shadow: 1px 2px 3px #888;" hspace=0></a>
+<a href="title_about_new.asp?id=70829"><img src="/itemfiles/0/8/3/1/7/5/2/4/9//Cover-Rus.png" border=0 width=120 title='О журнале "Galactica Media: Journal of Media Studies"' style="behavior: url(/pie/PIE.htc); box-shadow: 1px 2px 3px #888;" hspace=0></a>
 
 </td></tr>
 
@@ -552,8 +525,6 @@ function search_enter(event){
 <tr valign=top><td align=center><img src="/images/bl_kv.gif" border=0 width=7 height=7 hspace=3 class="shadow"></td><td align=left><a href="/rubrics.asp">РУБРИКАТОР</a></td></tr>
 <tr valign=top><td align=center><img src="/images/bl_kv.gif" border=0 width=7 height=7 hspace=3 class="shadow"></td><td align=left><a href="/region_compare.asp">РЕГИОНЫ</a></td></tr>
 
-<tr valign=top><td align=center><img src="/images/bl_kv.gif" border=0 width=7 height=7 hspace=3 class="shadow"></td><td align=left><a href="/refs.asp">ССЫЛКИ</a></td></tr>
-
 <tr valign=top><td align=center><img src="/images/bl_kv.gif" border=0 width=7 height=7 hspace=3 class="shadow"></td><td align=left><a href="/itembox.asp">ПОДБОРКИ</a></td></tr>
 
 
@@ -603,25 +574,19 @@ function end_session(){
 <tr><td width=100% align=left valign=top>
 &nbsp;<font color=#000000>Имя пользователя:</font></td></tr>
 <tr><td width=100% align=center valign=top>
-<font color=#00008f><a href="author_info.asp?isold=1" title="Персональная карточка пользователя">Gasilin&nbsp;</a></font></td></tr>
-
-<tr><td width=100% align=left valign=top>
-<div style="height: 2px;"></div>
-&nbsp;<font color=#000000>SPIN-код автора:</font></td></tr>
-<tr><td width=100% align=center valign=top>
-<font color=#00008f><a href="author_info.asp?isold=1" title="Персональная карточка автора">2001-2738</a></font></td></tr>
+<font color=#00008f><a href="author_info.asp?isold=1" title="Персональная карточка пользователя">sitnikov69&nbsp;</a></font></td></tr>
 
 <tr><td width=100% align=left valign=top>
 <div style="height: 2px;"></div>
 &nbsp;<font color=#000000>IP-адрес компьютера:</font></td></tr>
 <tr><td width=100% align=center valign=top>
-<font color=#00008f>95.24.63.120</font></td></tr>
+<font color=#00008f>89.175.21.183</font></td></tr>
 <tr><td width=100% align=left valign=top>
 <div style="height: 2px;"></div>
 &nbsp;<font color=#000000>Название организации:</font></td></tr>
 <tr><td width=100% align=center valign=top>
 
-<font color=#00008f><a href="/org_about.asp?orgsid=11">Институт научной информации по общественным наукам РАН</a></font></td></tr>
+<font color=#00008f>не определена</font></td></tr>
 
 
 <tr><td width=100% align=left valign=top>
@@ -629,12 +594,12 @@ function end_session(){
 &nbsp;<font color=#000000>Начало работы:</font></td></tr>
 
 <tr><td width=100% align=center valign=top>
-<font color=#00008f>13.12.2025 20:49</font></td></tr>
+<font color=#00008f>16.12.2025 16:53</font></td></tr>
 <tr><td width=100% align=left valign=top>
 <div style="height: 2px;"></div>
 &nbsp;<font color=#000000>Время работы:</font></td></tr>
 <tr><td width=100% align=center valign=top>
-<font color=#00008f>00:31</font></td></tr>
+<font color=#00008f>00:02</font></td></tr>
 </table>
 
 <div style="height: 10px;"></div>
@@ -810,8 +775,8 @@ function end_session(){
 
 <table width=200 cellspacing=0 cellpadding=3 border=0>
 <tr><td width=12% align=right valign=top>
-<a href="https://t.me/elibrary_ru_official/66" target=_blank><img src="/images/telegram.svg" width=24 height=24 border=0></a></td>
-<td width=88% align=left valign=middle><font color=#00008f><a href="https://t.me/elibrary_ru_official/66" target=_blank>Есть ли будущее у научных журналов?</a></font>
+<a href="https://t.me/elibrary_ru_official/68" target=_blank><img src="/images/telegram.svg" width=24 height=24 border=0></a></td>
+<td width=88% align=left valign=middle><font color=#00008f><a href="https://t.me/elibrary_ru_official/68" target=_blank>Новые фильтры в каталоге журналов</a></font>
 </td></tr>
 </table>
 </td></tr>
@@ -825,12 +790,12 @@ function end_session(){
 <table width=550 cellspacing=0 cellpadding=3 border=0>
 <tr valign=middle>
 <td width=2%></td>
-<td width=25% align=left>eLIBRARY ID:&nbsp;<font color=#00008f><a href="item.asp?id=42578117" rel="nofollow">42578117</a></font></td>
-<td width=15% align=center>EDN:&nbsp;<font color=#00008f><a href="/amwnzy" rel="nofollow">AMWNZY</a></font></td>
+<td width=25% align=left>eLIBRARY ID:&nbsp;<font color=#00008f><a href="item.asp?id=83175256" rel="nofollow">83175256</a></font></td>
+<td width=15% align=center>EDN:&nbsp;<font color=#00008f><a href="/hppuzq" rel="nofollow">HPPUZQ</a></font></td>
 
-<td align=left width=5%><a href='javascript:qr_code("amwnzy")' rel="nofollow"><img src="/images/qr_code2.png" width=16 height=16 class='help' title="Сгенерировать QR код для ссылки на этот документ"></a></td>
+<td align=left width=5%><a href='javascript:qr_code("hppuzq")' rel="nofollow"><img src="/images/qr_code2.png" width=16 height=16 class='help' title="Сгенерировать QR код для ссылки на этот документ"></a></td>
 
-<td width=53% align=right>DOI:&nbsp;<font color=#00008f><a href=https://doi.org/10.25136/2409-8744.2020.1.31950 target=_blank rel=nofollow>10.25136/2409-8744.2020.1.31950</a></font></td>
+<td width=53% align=right>DOI:&nbsp;<font color=#00008f><a href=https://doi.org/10.46539/gmd.v7i4.705 target=_blank rel=nofollow>10.46539/gmd.v7i4.705</a></font></td>
 </tr>
 
 </table>
@@ -839,21 +804,20 @@ function end_session(){
 <table width=550 cellspacing=0 cellpadding=3 border=0 style="table-layout: fixed;">
 <tr align=center valign=middle>
 <td width=4></td>
-<td width=534><span style="font-size: 9pt; color: #000000; overflow-wrap: break-word;"><b><p class='bigtext' style='color: #F26C4F;'>"НЕУМИРАЮЩИЕ ЭЛЕМЕНТЫ АРХАИКИ" В ДРАМАТИЧЕСКОЙ ОРАТОРИИ А. ОНЕГГЕРА "ЖАННА Д'АРК НА КОСТРЕ"</p></b></span></td></tr>
+<td width=534><span style="font-size: 9pt; color: #000000; overflow-wrap: break-word;"><b><p class='bigtext' style='color: #F26C4F;'>ИСКУССТВЕННЫЙ ИНТЕЛЛЕКТ КАК СИМУЛЯКР СМЫСЛА</p></b></span></td></tr>
 </table>
 
 <div style="width:580px; margin:0; border:0; padding:0; ">
 
 
 <div style="height:10px;"></div>
-
 <table width=550 border=0 cellspacing=0 cellpadding=3>
 <tr>
 <td width=24></td>
 <td width=514 valign=middle align=center>
-<div style='display: inline-block; white-space: nowrap'><span class='help pointer' title='<b><font color=#F26C4F>Азарова Валентина Владимировна</font></b><br>Санкт-Петербургский государственный университет<br><a href="author_profile.asp?authorid=255516" target=_blank>Профиль автора в SCIENCE INDEX</a><br><a href="author_items.asp?authorid=255516" target=_blank>Список публикаций в РИНЦ</a>'><b><font color=#00008f>АЗАРОВА&nbsp;В.В.</font></b></span><font color=#000000><sup>1</sup></font></div>
+<div style='display: inline-block; white-space: nowrap'><span class='help pointer' title='<b><font color=#F26C4F>Малинов Сергей Алексеевич</font></b><br>Национальный исследовательский университет "Высшая школа экономики"<br><a href="author_profile.asp?authorid=1267173" target=_blank>Профиль автора в SCIENCE INDEX</a><br><a href="author_items.asp?authorid=1267173" target=_blank>Список публикаций в РИНЦ</a>'><b><font color=#00008f>МАЛИНОВ&nbsp;С.А.</font></b></span><img src='/images/about_author.gif' border=0 hspace=2 height=10 width=9 class='help pointer' title='ORCID:&nbsp;<a href="https://orcid.org/0009-0006-9906-4304" target=_blank>0009-0006-9906-4304</a>&nbsp;&nbsp; '><font color=#000000><sup>1,2</sup></font></div>
 <div style="height:10px;"></div>
-<font color=#000000><sup>1</sup></font>&nbsp;<span class='help1 pointer' title='<b><font color=#F26C4F>Санкт-Петербургский государственный университет</font></b> (Санкт-Петербург)<br><a href="org_profile.asp?id=190" target=_blank>Профиль организации в SCIENCE INDEX</a><br><a href="org_items.asp?orgsid=190" target=_blank>Список публикаций в РИНЦ</a>'><font color=#00008f>Санкт-Петербургский государственный унивеситет</font></span><br>
+<font color=#000000><sup>1</sup></font>&nbsp;<span class='help1 pointer' title='<b><font color=#F26C4F>Национальный исследовательский университет "Высшая школа экономики"</font></b> (Москва)<br><a href="org_profile.asp?id=421" target=_blank>Профиль организации в SCIENCE INDEX</a><br><a href="org_items.asp?orgsid=421" target=_blank>Список публикаций в РИНЦ</a>'><font color=#00008f>Национальный исследовательский университет «Высшая школа экономики» (НИУ ВШЭ)</font></span>, Санкт-Петербург, Россия<br><font color=#000000><sup>2</sup></font>&nbsp;<span class='help1 pointer' title='<b><font color=#F26C4F>Санкт-Петербургский политехнический университет Петра Великого</font></b> (Санкт-Петербург)<br><a href="org_profile.asp?id=192" target=_blank>Профиль организации в SCIENCE INDEX</a><br><a href="org_items.asp?orgsid=192" target=_blank>Список публикаций в РИНЦ</a>'><font color=#00008f>Санкт-Петербургский политехнический университет Петра Великого</font></span><br>
 </td></tr>
 </table>
 
@@ -873,11 +837,11 @@ function end_session(){
 <tr><td></td></tr>
 
 <tr><td width=574 align=center valign=middle>
-<span style="margin-left:20px;"></span>Номер:&nbsp;<a href="contents.asp?id=42578113&selid=42578117" title="Содержание выпуска">1</a>
-<span style="margin-left:20px;"></span>Год:&nbsp;<font color=#00008f>2020</font>
+Том:&nbsp;<font color=#00008f>7</font><span style="margin-left:20px;"></span>Номер:&nbsp;<a href="contents.asp?id=83175249&selid=83175256" title="Содержание выпуска">4</a>
+<span style="margin-left:20px;"></span>Год:&nbsp;<font color=#00008f>2025</font>
 
-<span style="margin-left:20px;"></span><div style='display: inline-block; white-space: nowrap'>Страницы:&nbsp;<font color=#00008f>35-61</font></div>
-
+<span style="margin-left:20px;"></span><div style='display: inline-block; white-space: nowrap'>Страницы:&nbsp;<font color=#00008f>154-173</font></div>
+<div style="height:5px;"></div><span style="margin-left:20px;"></span>Поступила&nbsp;в&nbsp;редакцию:&nbsp;<font color=#00008f>03.08.2025</font><span style="margin-left:20px;"></span>Принята&nbsp;к&nbsp;печати:&nbsp;<font color=#00008f>14.09.2025</font>
 
 
 </td></tr>
@@ -895,10 +859,10 @@ function end_session(){
 <tr><td width=34>&nbsp;</td><td width=504 align=left valign=middle>
 <div style="height:3px;"></div>
 
-<a href="contents.asp?id=42578113" title="Содержание выпусков этого журнала">ЧЕЛОВЕК И КУЛЬТУРА</a>
-<br>Учредители:&nbsp;Даниленко Василий Иванович
+<a href="contents.asp?id=83175249" title="Содержание выпусков этого журнала">GALACTICA MEDIA: JOURNAL OF MEDIA STUDIES</a>
+<br>Учредители:&nbsp;ООО НПО "Генезис.Фронтир.Наука"
 <br>
-eISSN:&nbsp;<font color=#00008f>2409-8744</font><span style="margin-left:20px;"></span>
+eISSN:&nbsp;<font color=#00008f>2658-7734</font><span style="margin-left:20px;"></span>
 
 </td></tr></table>
 
@@ -910,16 +874,17 @@ eISSN:&nbsp;<font color=#00008f>2409-8744</font><span style="margin-left:20px;">
 <font color=#000000>КЛЮЧЕВЫЕ СЛОВА:</font></td></tr>
 <tr><td width=34>&nbsp;</td><td width=504 align=left valign=middle>
 <div style="height:3px;"></div>
-<a href="keyword_items.asp?id=14436926">ЖАННА ДАРК</a>, 
-<a href="keyword_items.asp?id=6474535">ДРАМАТИЧЕСКАЯ ОРАТОРИЯ</a>, 
-<a href="keyword_items.asp?id=10556682">ОНЕГГЕР</a>, 
-<a href="keyword_items.asp?id=14131331">ЭЛЕМЕНТЫ АРХАИКИ</a>, 
-<a href="keyword_items.asp?id=941321">ХРИСТИАНСТВО</a>, 
-<a href="keyword_items.asp?id=3019972">МУЗЫКАЛЬНАЯ КОМПОЗИЦИЯ</a>, 
-<a href="keyword_items.asp?id=8299552">ДУХОВНОЕ ИЗМЕРЕНИЕ</a>, 
-<a href="keyword_items.asp?id=3019876">МУЗЫКАЛЬНАЯ ДРАМАТУРГИЯ</a>, 
-<a href="keyword_items.asp?id=3686026">СИНТЕТИЧЕСКАЯ ФОРМА</a>, 
-<a href="keyword_items.asp?id=2973118">МИСТЕРИЯ</a>
+<a href="keyword_items.asp?id=903063">ИСКУССТВЕННЫЙ ИНТЕЛЛЕКТ</a>, 
+<a href="keyword_items.asp?id=23049432">БОЛЬШИЕ ЯЗЫКОВЫЕ МОДЕЛИ</a>, 
+<a href="keyword_items.asp?id=2522372">СИМУЛЯКР</a>, 
+<a href="keyword_items.asp?id=28363745">СИМУЛЯКР СМЫСЛА</a>, 
+<a href="keyword_items.asp?id=28363746">ИИ СЛОППЕР</a>, 
+<a href="keyword_items.asp?id=5387051">ТЬЮРИНГ</a>, 
+<a href="keyword_items.asp?id=2632515">ТЕСТ ТЬЮРИНГА</a>, 
+<a href="keyword_items.asp?id=976300">РЕЧЬ</a>, 
+<a href="keyword_items.asp?id=5056062">ОРГАНОПРОЕКЦИЯ</a>, 
+<a href="keyword_items.asp?id=19585893">ПРОБЛЕМЫ ИСКУССТВЕННОГО ИНТЕЛЛЕКТА</a>, 
+<a href="keyword_items.asp?id=6991530">ГЕНЕРАЦИЯ ТЕКСТА</a>
 </td></tr>
 </table>
 
@@ -929,9 +894,9 @@ eISSN:&nbsp;<font color=#00008f>2409-8744</font><span style="margin-left:20px;">
 <font color=#000000>АННОТАЦИЯ:</font></td></tr>
 <tr><td width=34>&nbsp;</td><td width=504 align=left valign=middle>
 
-<div id="abstract1" style="width:504px; border:0; margin:0; padding:0; text-align:left;"><p align=justify style='margin-top: 0.3em;'>Предметом исследования является интеграция элементов старых жанров в композицию драматической оратории А. Онеггера. Отдельное внимание уделено формированию системы взаимосвязанных интонационно-драматургических сфер и вокально-симфонической разработке сквозных трансформируемых тем, мотивов и звуковых символов. Исследовано взаимодействие вербальных и вокально-симфонических элементов звуковой ткани. Целью работы является обнаружение признаков старых жанров и других элементов архаики в синтетической форме музыкального / драматического театра, а также выявление в ней доминирующего аспекта музыкального смысла. Методологией исследования является музыкально-герменевтическая реконструкция процесса композиции, обнаружение основных принципов музыкальной драматургии и выявление функций цитируемых композитором латинских текстов в синтетической форме драматической оратории. Методом проведения работы был музыкально-теоретический анализ полифонической вокально-симфонической музыкальной ткани и анализ вербального текста вокальных партий на французском языке и на латыни, в партитуре, de visu...</div>
+<div id="abstract1" style="width:504px; border:0; margin:0; padding:0; text-align:left;"><p align=justify style='margin-top: 0.3em;'>В последние годы искусственный интеллект (ИИ) активно внедряется в повседневную жизнь человека. Его популярность неуклонно растёт, а компании всё чаще используют ИИ для оптимизации и ускорения рабочих процессов. Повседневные пользователи применяют большие языковые модели (Large Language Models, LLM) и мультимодальные ИИ-системы для решения широкого круга задач: генерации текстов, изображений и видео, планирования дня, поиска информации и др. Стремительное проникновение ИИ в различные сферы человеческой деятельности порождает ряд фундаментальных проблем, включая симуляцию смысла, подмену человеческой воли и другие вызовы, угрожающие самоидентичности личности и её автономии. Всё больше когнитивных и творческих функций - таких как создание текстов, принятие решений, рефлексия - человек делегирует ИИ. В связи с этим особенно актуальной становится необходимость экспликации проблем, возникающих в процессе взаимодействия человека и ИИ, а также разработки этически и когнитивно обоснованных механизмов такого взаимодействия...</div>
 
-<div id="abstract2" style="width:504px; border:0; margin:0; padding:0; text-align:left; display:none;"><p align=justify style='margin-top: 0.3em;'>Предметом исследования является интеграция элементов старых жанров в композицию драматической оратории А. Онеггера. Отдельное внимание уделено формированию системы взаимосвязанных интонационно-драматургических сфер и вокально-симфонической разработке сквозных трансформируемых тем, мотивов и звуковых символов. Исследовано взаимодействие вербальных и вокально-симфонических элементов звуковой ткани. Целью работы является обнаружение признаков старых жанров и других элементов архаики в синтетической форме музыкального / драматического театра, а также выявление в ней доминирующего аспекта музыкального смысла. Методологией исследования является музыкально-герменевтическая реконструкция процесса композиции, обнаружение основных принципов музыкальной драматургии и выявление функций цитируемых композитором латинских текстов в синтетической форме драматической оратории. Методом проведения работы был музыкально-теоретический анализ полифонической вокально-симфонической музыкальной ткани и анализ вербального текста вокальных партий на французском языке и на латыни, в партитуре, de visu. Впервые интеграция в композицию драматической оратории А. Онеггера жанровых кодов мистерии Средних веков и цитат из литургических текстов прошлых эпох, в том числе из Священного Писания, истолкована как средство создания временно́й многомерности синтетической формы французского музыкального / драматического театра ХХ века, находящейся в русле христианской традиции. Онеггер преодолел линейность сюжетного повествования методом интеграции в композицию жанровых признаков прошлых эпох. В результате привлечения композитором цитат из литургических текстов, в том числе из Священного Писания, произошло расширение смыслового пространства художественного текста драматической оратории. Это привело к утверждению в произведении идеи синтеза времени и вечности, свойственного христианству.</div>
+<div id="abstract2" style="width:504px; border:0; margin:0; padding:0; text-align:left; display:none;"><p align=justify style='margin-top: 0.3em;'>В последние годы искусственный интеллект (ИИ) активно внедряется в повседневную жизнь человека. Его популярность неуклонно растёт, а компании всё чаще используют ИИ для оптимизации и ускорения рабочих процессов. Повседневные пользователи применяют большие языковые модели (Large Language Models, LLM) и мультимодальные ИИ-системы для решения широкого круга задач: генерации текстов, изображений и видео, планирования дня, поиска информации и др. Стремительное проникновение ИИ в различные сферы человеческой деятельности порождает ряд фундаментальных проблем, включая симуляцию смысла, подмену человеческой воли и другие вызовы, угрожающие самоидентичности личности и её автономии. Всё больше когнитивных и творческих функций - таких как создание текстов, принятие решений, рефлексия - человек делегирует ИИ. В связи с этим особенно актуальной становится необходимость экспликации проблем, возникающих в процессе взаимодействия человека и ИИ, а также разработки этически и когнитивно обоснованных механизмов такого взаимодействия. В данной статье рассматриваются современные тенденции и ключевые вызовы, связанные с интеграцией ИИ в повседневную жизнь. Вводится понятие «симуляции смысла» - феномена, при котором ИИ-модели выступают в роли симулякров смысла, создавая иллюзию понимания, мышления и смысла. Предлагается концептуальный механизм продуктивного взаимодействия человека с ИИ, а также позитивный сценарий его реализации. Статья будет полезна исследователям и специалистам, работающим в области искусственного интеллекта, философии науки и техники, когнитивных наук, а также всем, кто интересуется современными технологическими трендами и их социальными, этическими и экзистенциальными последствиями.</div>
 <script type="text/javascript">
 function show_abstract() {
   $('#abstract1').hide();
@@ -958,19 +923,19 @@ function show_abstract() {
 <td width=52%><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Учитывается или нет данная публикация в РИНЦ. Некоторые категории публикаций (например, статьи в реферативных, научно-популярных, информационных журналах) могут быть размещены на платформе elibrary.ru, но не учитываются в РИНЦ. Также не учитываются статьи в журналах и сборниках, исключенных из РИНЦ за нарушение научной и издательской этики.</p>'>&nbsp;&nbsp;Входит в РИНЦ:&nbsp;<font color=#00008f>да</font></td>
 
 
-<td width=48%><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Число цитирований данной публикации из публикаций, входящих в РИНЦ. Сама публикация при этом может и не входить в РИНЦ. Для сборников статей и книг, индексируемых в РИНЦ на уровне отдельных глав, указывается суммарное число цитирований всех статей (глав) и сборника (книги) в целом.</p>'>&nbsp;&nbsp;Цитирований в РИНЦ:&nbsp;<a href="cit_items.asp?id=42578117" title="Список публикаций в РИНЦ, цитирующих данную">5</a></td></tr>
+<td width=48%><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Число цитирований данной публикации из публикаций, входящих в РИНЦ. Сама публикация при этом может и не входить в РИНЦ. Для сборников статей и книг, индексируемых в РИНЦ на уровне отдельных глав, указывается суммарное число цитирований всех статей (глав) и сборника (книги) в целом.</p>'>&nbsp;&nbsp;Цитирований в РИНЦ:&nbsp;<font color=#00008f>0</font></td></tr>
 
 <tr align=left valign=bottom>
-<td><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Входит или нет данная публикация в ядро РИНЦ. Ядро РИНЦ включает все статьи, опубликованные в журналах, индексируемых в базах данных Web of Science Core Collection, Scopus или Russian Science Citation Index (RSCI).</p>'>&nbsp;&nbsp;Входит в ядро РИНЦ:&nbsp;<font color=#00008f><span id="InCoreRisc">нет</span></font></td>
+<td><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Входит или нет данная публикация в ядро РИНЦ. Ядро РИНЦ включает все статьи, опубликованные в журналах, индексируемых в базах данных Web of Science Core Collection, Scopus или Russian Science Citation Index (RSCI).</p>'>&nbsp;&nbsp;Входит в ядро РИНЦ:&nbsp;<font color=#00008f><span id="InCoreRisc">да</span></font></td>
 
-<td><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Число цитирований данной публикации из публикаций, входящих в ядро РИНЦ. Сама публикация при этом может не входить в ядро РИНЦ. Для сборников статей и книг, индексируемых в РИНЦ на уровне отдельных глав, указывается суммарное число цитирований всех статей (глав) и сборника (книги) в целом.</p>'>&nbsp;&nbsp;Цитирований из ядра РИНЦ:&nbsp;<font color=#00008f>1</font></td>
+<td><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Число цитирований данной публикации из публикаций, входящих в ядро РИНЦ. Сама публикация при этом может не входить в ядро РИНЦ. Для сборников статей и книг, индексируемых в РИНЦ на уровне отдельных глав, указывается суммарное число цитирований всех статей (глав) и сборника (книги) в целом.</p>'>&nbsp;&nbsp;Цитирований из ядра РИНЦ:&nbsp;<font color=#00008f>0</font></td>
 </tr>
 
 
 <tr align=left valign=bottom>
 <td><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Наличие в РИНЦ информации о рецензировании данной публикации.</p>'>&nbsp;&nbsp;Рецензии:&nbsp;<font color=#00008f>есть</font></td>
 
-<td><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Процентиль журнала в рейтинге Science Index за 2023 год.</p>'>&nbsp;&nbsp;Процентиль журнала в рейтинге SI:&nbsp;<font color=#00008f>53</font></td>
+<td><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Процентиль журнала в рейтинге Science Index за 2023 год.</p>'>&nbsp;&nbsp;Процентиль журнала в рейтинге SI:&nbsp;<font color=#00008f>32</font></td>
 
 </tr>
 
@@ -989,7 +954,7 @@ function show_abstract() {
 <table width=100% border=0 cellspacing=0 cellpadding=3>
 
 <tr align=left valign=top>
-<td width=27%><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Основная рубрика публикации в соответствии с рубрикатором OECD. Авторы, зарегистрированные в системе Science Index, имеют возможность уточнять тематические рубрики своих публикаций.</p>'>&nbsp;&nbsp;Рубрика&nbsp;OECD:&nbsp;</td><td width=73%><font color=#00008f><span id="rubric_oecd">Art</span></font></td>
+<td width=27%><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Основная рубрика публикации в соответствии с рубрикатором OECD. Авторы, зарегистрированные в системе Science Index, имеют возможность уточнять тематические рубрики своих публикаций.</p>'>&nbsp;&nbsp;Рубрика&nbsp;OECD:&nbsp;</td><td width=73%><font color=#00008f><span id="rubric_oecd">нет</span></font></td>
 </tr>
 </table>
 
@@ -1003,7 +968,7 @@ function show_abstract() {
 <table width=100% border=0 cellspacing=0 cellpadding=3>
 
 <tr align=left valign=top>
-<td width=27%><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Основная рубрика публикации в соответствии с рубрикатором ГРНТИ. Авторы, зарегистрированные в системе Science Index, имеют возможность уточнять тематические рубрики своих публикаций.</p>'>&nbsp;&nbsp;Рубрика&nbsp;ГРНТИ:&nbsp;</td><td width=73%><font color=#00008f><span id="rubric_grnti">Искусство. Искусствоведение <span style='color:#F26C4F'>/</span> Музыка. Музыковедение</span></font></td>
+<td width=27%><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Основная рубрика публикации в соответствии с рубрикатором ГРНТИ. Авторы, зарегистрированные в системе Science Index, имеют возможность уточнять тематические рубрики своих публикаций.</p>'>&nbsp;&nbsp;Рубрика&nbsp;ГРНТИ:&nbsp;</td><td width=73%><font color=#00008f><span id="rubric_grnti">Философия <span style='color:#F26C4F'>/</span> Социальная философия</span></font></td>
 </tr>
 </table>
 
@@ -1034,16 +999,16 @@ function show_abstract() {
 <table width=100% border=0 cellspacing=0 cellpadding=3>
 <tr align=left valign=bottom>
 
-<td width=30%><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Число просмотров страницы с описанием и аннотацией публикации посетителями elibrary.ru. Учитываются все просмотры, в том числе сделанные незарегистрированными пользователями. Повторные просмотры одним и тем же пользователем не учитываются. Зависит от года издания и появления публикации на сайте. В скобках указано число зарегистрированных пользователей, просматривавших данную страницу.</p>'>&nbsp;&nbsp;Просмотров:&nbsp;<font color=#00008f>33 (13)</font></td>
+<td width=30%><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Число просмотров страницы с описанием и аннотацией публикации посетителями elibrary.ru. Учитываются все просмотры, в том числе сделанные незарегистрированными пользователями. Повторные просмотры одним и тем же пользователем не учитываются. Зависит от года издания и появления публикации на сайте. В скобках указано число зарегистрированных пользователей, просматривавших данную страницу.</p>'>&nbsp;&nbsp;Просмотров:&nbsp;<font color=#00008f>1 (1)</font></td>
 
-<td width=35%><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Число загрузок полного текста публикации посетителями elibrary.ru. Если полный текст публикации отсутствует на elibrary.ru, показатель не рассчитывается. Повторные загрузки одним и тем же пользователем не учитываются. Зависит от года издания и появления публикации на сайте, а также от режима доступа к полному тексту (открытый или по подписке). В скобках указано число уникальных авторов, загрузивших данную публикацию.</p>'>&nbsp;&nbsp;Загрузок:&nbsp;<font color=#00008f>6 (2)</font></td>
+<td width=35%><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Число загрузок полного текста публикации посетителями elibrary.ru. Если полный текст публикации отсутствует на elibrary.ru, показатель не рассчитывается. Повторные загрузки одним и тем же пользователем не учитываются. Зависит от года издания и появления публикации на сайте, а также от режима доступа к полному тексту (открытый или по подписке). В скобках указано число уникальных авторов, загрузивших данную публикацию.</p>'>&nbsp;&nbsp;Загрузок:&nbsp;<font color=#00008f>0 (0)</font></td>
 
-<td width=35%><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Число персональных подборок пользователей elibrary.ru, которые включают данную публикацию.</p>'>&nbsp;&nbsp;Включено в подборки:&nbsp;<font color=#00008f>54</font></td>
+<td width=35%><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Число персональных подборок пользователей elibrary.ru, которые включают данную публикацию.</p>'>&nbsp;&nbsp;Включено в подборки:&nbsp;<font color=#00008f>9</font></td>
 </tr>
 
 <tr align=left valign=bottom>
 
-<td width=30%><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Число оценок публикации, сделанных учеными, зарегистрированными в системе Science Index. Для просмотра распределения оценок щелкните мышью на этом числе.</p>'>&nbsp;&nbsp;Всего оценок:&nbsp;<font color=#00008f><span id="score_count">0</span></font></td>
+<td width=30%><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Число оценок публикации, сделанных учеными, зарегистрированными в системе Science Index. Для просмотра распределения оценок щелкните мышью на этом числе.</p>'>&nbsp;&nbsp;Всего оценок:&nbsp;<font color=#00008f><span id="score_count">1</span></font></td>
 
 <td width=35%><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Средняя оценка публикации учеными, зарегистрированными в системе Science Index. Значение соответствует следующим уровням оценки публикации:</p><br><table width=100% cellspacing=0 cellpadding=3 border=0>
 <tr><td width=15% align=center valign=top>
@@ -1072,164 +1037,11 @@ function show_abstract() {
 </td>
 <td align=left valign=top><div>не научная, нарушающая научную этику или очень слабая публикация (должна быть исключена из РИНЦ)</div></td></tr>
 
-</table>'>&nbsp;&nbsp;Средняя оценка:&nbsp;<font color=#00008f><span id="avg_score"></span></font>
+</table>'>&nbsp;&nbsp;Средняя оценка:&nbsp;<font color=#00008f><span id="avg_score">5</span></font>
 </td>
 
 <td width=35%><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Число отзывов о публикации, сделанных учеными, зарегистрированными в системе Science Index. Для просмотра всех отзывов щелкните мышью на этом числе.</p>'>&nbsp;&nbsp;Всего отзывов:&nbsp;<font color=#00008f><span id="comment_count">0</span></font></td>
 </tr></table>
-
-
-
-<SCRIPT LANGUAGE="JavaScript">
-function item_all_comments(){
-  $.fancybox({
-      href : '/item_all_comments.asp?itemid=42578117&rand=' + Math.random(),
-      title : '',
-	  padding : 20,     
-	  width : 520,
-	  height : 350,
-	  overlayOpacity : 0.3,	
-	  overlayColor : '#000',
-	  speedIn : 500,
-	  hideOnOverlayClick : false,
-	  enableEscapeButton : true,
-	  type : 'iframe'
-    });
-}
-function item_all_scores(){
-  $.fancybox({
-      href : '/item_all_scores.asp?itemid=42578117&rand=' + Math.random(),
-      title : '',
-	  padding : 20,     
-	  width : 400,
-	  height : 270,
-	  overlayOpacity : 0.3,	
-	  overlayColor : '#000',
-	  speedIn : 500,
-	  hideOnOverlayClick : false,
-	  enableEscapeButton : true,
-	  type : 'iframe'
-    });
-}
-</script>
-
-
-
-<SCRIPT LANGUAGE="JavaScript">
-
-function item_score_comments(){
-  $.fancybox({
-		href : '/item_score_comments.asp?itemid=42578117&rand=' + Math.random(),
-		title : '',
-		padding : 20,     
-		width : 520,
-		height : 280,
-		overlayOpacity : 0.3,	
-		overlayColor : '#000',
-		speedIn : 500,
-		hideOnOverlayClick : false,
-		enableEscapeButton : true,
-		type : 'iframe'
-	});
-}
-function change_score(score){
-  if ($('#score').val()==score){
-    $.post('update_item_score.asp', 'itemid=42578117&score=0&rand=' + Math.random(), function() {
-      $('#score').val(0); 
-	  $('.sc_0').css({color:"#c0c0c0"});
-      $.post('item_score_count.asp', 'itemid=42578117&rand=' + Math.random(), function(data){
-        var s = data.split('|');
-		if(s[0]>0){
-          $('#score_count').html('<a href="javascript:item_all_scores()" title="Посмотреть распределение оценок">'+s[0]+'</a>');}
-		else{
-          $('#score_count').html('0');}
-        $('#avg_score').html(s[1]);
-      });
-    });
-  }
-  else {
-    $.post('update_item_score.asp', 'itemid=42578117&score=' + score + '&rand=' + Math.random(), function() {
-      $('#score').val(score); 
-	  $('.sc_0').css({color:"#c0c0c0"});
-	  $('.sc_'+score).css({color:"#F26C4F"});
-      $.post('item_score_count.asp', 'itemid=42578117&rand=' + Math.random(), function(data){
-        var s = data.split('|');
-		if(s[0]>0){
-          $('#score_count').html('<a href="javascript:item_all_scores()" title="Посмотреть распределение оценок">'+s[0]+'</a>');}
-		else{
-          $('#score_count').html('0');}
-        $('#avg_score').html(s[1]);
-      });
-    });
-  } 
-}
-</script>
-
-<table width=100% border=0 cellspacing=0 cellpadding=3>
-<tr>
-<td align=left valign=top width=40%><div style="height:8px"></div><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Оцените данную публикацию - Ваша экспертная оценка будет полезна другим читателям библиотеки. Для оценки публикации необходимо щелкнуть мышью на звездочке, соответствующей выбранному уровню:</p><br><table width=100% cellspacing=0 cellpadding=3 border=0>
-<tr><td width=30% align=left valign=top>
-<span style="font-size: 18pt; color: #F26C4F; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
-<span style="font-size: 18pt; color: #F26C4F; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
-<span style="font-size: 18pt; color: #F26C4F; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
-<span style="font-size: 18pt; color: #F26C4F; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
-<span style="font-size: 18pt; color: #F26C4F; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
-</td>
-<td width=70% align=left valign=top><div>публикация международного уровня (на уровне требований Web of Science Core Collection)</div>
-</td></tr>
-
-<tr><td align=left valign=top>
-<span style="font-size: 18pt; color: #F26C4F; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
-<span style="font-size: 18pt; color: #F26C4F; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
-<span style="font-size: 18pt; color: #F26C4F; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
-<span style="font-size: 18pt; color: #F26C4F; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
-<span style="font-size: 18pt; color: #C0C0C0; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
-</td>
-<td align=left valign=top><div>публикация высокого уровня (достаточного для учета при защите докторской диссертации, достойна включения в ядро РИНЦ)</div></td></tr>
-
-<tr><td align=left valign=top>
-<span style="font-size: 18pt; color: #F26C4F; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
-<span style="font-size: 18pt; color: #F26C4F; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
-<span style="font-size: 18pt; color: #F26C4F; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
-<span style="font-size: 18pt; color: #C0C0C0; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
-<span style="font-size: 18pt; color: #C0C0C0; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
-</td>
-<td align=left valign=top><div>публикация среднего уровня (достаточного для учета при защите кандидатской диссертации)</div></td></tr>
-
-<tr><td align=left valign=top>
-<span style="font-size: 18pt; color: #F26C4F; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
-<span style="font-size: 18pt; color: #F26C4F; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
-<span style="font-size: 18pt; color: #C0C0C0; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
-<span style="font-size: 18pt; color: #C0C0C0; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
-<span style="font-size: 18pt; color: #C0C0C0; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
-</td>
-<td align=left valign=top><div>публикация начального уровня (как правило, подготовленная студентами, аспирантами, молодыми учеными, при этом уровень достаточен для ее включения в РИНЦ)</div></td></tr>
-
-<tr><td align=left valign=top>
-<span style="font-size: 18pt; color: #F26C4F; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
-<span style="font-size: 18pt; color: #C0C0C0; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
-<span style="font-size: 18pt; color: #C0C0C0; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
-<span style="font-size: 18pt; color: #C0C0C0; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
-<span style="font-size: 18pt; color: #C0C0C0; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
-</td>
-<td align=left valign=top><div>не научная, нарушающая научную этику или очень слабая публикация (должна быть исключена из РИНЦ)</div></td></tr>
-
-</table>
-<p>Нажатие на другую звездочку будет переключать оценку. Если Вы не хотите оценивать данную публикацию, нужно оставить все звездочки серыми (если перед этим оценка была уже проставлена, нужно еще раз кликнуть на звездочке, соответствующей оценке). Оценивать публикации могут ученые, зарегистрированные в системе Science Index, за исключением авторов оцениваемой публикации.</p><p>Вы можете также добавить свой отзыв о данной публикации с аргументацией проставленной оценки и рекомендациями для других читателей.</p>'>&nbsp;&nbsp;Ваша оценка данной публикации:&nbsp;<font color=#00008f></font></td>
-
-<td nowrap align=left valign=top width=25%>
-<span id="score_1" class="asterbig sc_0 sc_1 sc_2 sc_3 sc_4 sc_5" onClick="change_score('1')">*</span>
-<span id="score_2" class="asterbig sc_0 sc_2 sc_3 sc_4 sc_5" onClick="change_score('2')">*</span>
-<span id="score_3" class="asterbig sc_0 sc_3 sc_4 sc_5" onClick="change_score('3')">*</span>
-<span id="score_4" class="asterbig sc_0 sc_4 sc_5" onClick="change_score('4')">*</span>
-<span id="score_5" class="asterbig sc_0 sc_5" onClick="change_score('5')">*</span>
-</td>
-<td width=18% align=left valign=top><div style="height:8px"></div><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Если Вы прочитали данную публикацию, Вы можете помочь другим посетителям библиотеки, оставив свой отзыв с комментариями и рекомендациями для других читателей. Ваш отзыв будет доступен для всех ученых, зарегистрированных в системе Science Index. Чтобы оставить отзыв о данной публикации, щелкните мышью на иконке. Вы можете в любой момент изменить или удалить свой отзыв.</p>'>&nbsp;&nbsp;Ваш отзыв:&nbsp;</td>
-<td width=17% align=left valign=top><img id="comment_score" src="/images/comments-g.png" width=14 height=14 border=0 style="margin:8px 0 0 0; cursor: pointer;" title="Добавить отзыв о данной публикации" onClick="item_score_comments()"></td>
-</tr>
-</table>
-
-<input type="hidden" name="score" id="score" value="0">
 
 
 
@@ -1239,23 +1051,40 @@ function change_score(score){
 <div style="height:10px;"></div>
 <table width=550 border=0 cellspacing=0 cellpadding=3>
 <tr><td colspan=2 align=left>
+<font color=#000000>ИНФОРМАЦИЯ О ФИНАНСОВОЙ ПОДДЕРЖКЕ:</font></td></tr>
+<tr><td width=34>&nbsp;</td><td width=504 align=left valign=middle>
+
+<div style="height:3px;"></div>
+<p>В статье представлены результаты исследований по проекту РНФ 25-18-00208 «Экзистенциальный опыт в цифровой среде: «бытие к цифре», онтология виртуального и человеческое Я», выполненных в НИУ ВШЭ в 2025 году.
+<div style="height:5px;"></div>
+
+</td></tr></table>
+
+
+<div style="height:10px;"></div>
+
+<table width=550 border=0 cellspacing=0 cellpadding=3>
+<tr><td colspan=2 align=left>
 <font color=#000000>ОПИСАНИЕ НА АНГЛИЙСКОМ ЯЗЫКЕ:</font></td></tr>
 <tr><td width=34>&nbsp;</td><td width=504 align=center valign=middle>
 <div style="height:5px;"></div>
-<font color=#F26C4F>THE "UNDYING ARCHAIC ELEMENTS" IN DRAMATIC ORATORIO BY ARTHUR HONEGGER "JOAN OF ARC AT THE STAKE"</font>
+<font color=#F26C4F>ARTIFICIAL INTELLIGENCE AS A SIMULACRA OF MEANING</font>
 
 <div style="height:5px;"></div>
-<div style='display: inline-block; white-space: nowrap'><span class='help pointer' title='<b><font color=#F26C4F>Азарова Валентина Владимировна</font></b><br>Санкт-Петербургский государственный университет<br><a href="author_profile.asp?authorid=255516" target=_blank>Профиль автора в SCIENCE INDEX</a><br><a href="author_items.asp?authorid=255516" target=_blank>Список публикаций в РИНЦ</a>'><font color=#00008f>Azarova V.V.</font></span></div>
+<div style='display: inline-block; white-space: nowrap'><span class='help pointer' title='<b><font color=#F26C4F>Малинов Сергей Алексеевич</font></b><br>Национальный исследовательский университет "Высшая школа экономики"<br><a href="author_profile.asp?authorid=1267173" target=_blank>Профиль автора в SCIENCE INDEX</a><br><a href="author_items.asp?authorid=1267173" target=_blank>Список публикаций в РИНЦ</a>'><font color=#00008f>MALINOV&nbsp;S.A.</font></span><img src='/images/about_author.gif' border=0 hspace=2 height=10 width=9 class='help pointer' title='ORCID:&nbsp;<a href="https://orcid.org/0009-0006-9906-4304" target=_blank>0009-0006-9906-4304</a>&nbsp;&nbsp; '><font color=#000000><sup>1,2</sup></font></div>
 <br>
 
+<div style="height:5px;"></div>
+<font color=#000000><sup>1</sup></font>&nbsp;<span class='help1 pointer' title='<b><font color=#F26C4F>Национальный исследовательский университет "Высшая школа экономики"</font></b> (Москва)<br><a href="org_profile.asp?id=421" target=_blank>Профиль организации в SCIENCE INDEX</a><br><a href="org_items.asp?orgsid=421" target=_blank>Список публикаций в РИНЦ</a>'><font color=#00008f>National Research University Higher School of Economics (HSE University)</font></span>, Saint-Petersburg, Russia<br><font color=#000000><sup>2</sup></font>&nbsp;<span class='help1 pointer' title='<b><font color=#F26C4F>Санкт-Петербургский политехнический университет Петра Великого</font></b> (Санкт-Петербург)<br><a href="org_profile.asp?id=192" target=_blank>Профиль организации в SCIENCE INDEX</a><br><a href="org_items.asp?orgsid=192" target=_blank>Список публикаций в РИНЦ</a>'><font color=#00008f>Peter the Great St. Petersburg Polytechnic University</font></span><br>
 </td></tr>
+
 
 
 <tr><td width=34>&nbsp;</td><td width=504 align=left valign=middle>
 
-<div id="eabstract1" style="width:504px; border:0; margin:0; padding:0; text-align:left;"><p align=justify style='margin-top: 0.3em;'>The subject of this research is the integration of the elements of old genres in to a composition of Arthur Honegger's dramatic oratorio. Particular attention is paid to formation of the system of interrelated intonation-dramaturgical spheres and vocal-symphonic development of recurring themes, motifs and sound symbols. The author examines the interaction of verbal and vocal-symphonic elements of sound fabric. The goal consists in identification of the traits of old genres and other archaic elements within the synthetic form of musical/dramatic theatre, as well as determination of the dominant aspect of musical meaning therein. Research methodology is based on the musical-hermeneutic reconstruction of the process of composing, detection of the fundamental principles of musical dramaturgy along with functions of cited by the composer Latin texts in the synthetic form of dramatic oratorio. The main method for this work became the musical-theoretical analysis of polyphonic vocal-symphonic musical fabric, and analysis of the verbal texts of voice part in the French and Latin languages, in de visu score...</div>
+<div id="eabstract1" style="width:504px; border:0; margin:0; padding:0; text-align:left;"><p align=justify style='margin-top: 0.3em;'>In recent years, artificial intelligence (AI) has been actively integrated into everyday human life. Its popularity continues to grow steadily, and companies increasingly employ AI to optimize and accelerate workflows. Ordinary users leverage large language models (LLMs) and multimodal AI systems to perform a wide range of tasks, including generating texts, images, and videos; planning their daily schedules; and searching for information, among others. The rapid integration of AI into diverse spheres of human activity gives rise to a number of fundamental challenges such as the simulation of meaning, the substitution of human will, and other issues that threaten personal identity and autonomy. An increasing number of cognitive and creative functions - such as text generation, decision-making, and reflection - are being delegated by humans to AI systems. Consequently, it becomes critically important to explicitly identify and articulate the problems emerging from human-AI interaction and to develop ethically and cognitively sound frameworks for such interaction...</div>
 
-<div id="eabstract2" style="width:504px; border:0; margin:0; padding:0; text-align:left; display:none;"><p align=justify style='margin-top: 0.3em;'>The subject of this research is the integration of the elements of old genres in to a composition of Arthur Honegger's dramatic oratorio. Particular attention is paid to formation of the system of interrelated intonation-dramaturgical spheres and vocal-symphonic development of recurring themes, motifs and sound symbols. The author examines the interaction of verbal and vocal-symphonic elements of sound fabric. The goal consists in identification of the traits of old genres and other archaic elements within the synthetic form of musical/dramatic theatre, as well as determination of the dominant aspect of musical meaning therein. Research methodology is based on the musical-hermeneutic reconstruction of the process of composing, detection of the fundamental principles of musical dramaturgy along with functions of cited by the composer Latin texts in the synthetic form of dramatic oratorio. The main method for this work became the musical-theoretical analysis of polyphonic vocal-symphonic musical fabric, and analysis of the verbal texts of voice part in the French and Latin languages, in de visu score. This article is first to interpret integration of the genre codes of medieval mystery play and citations from liturgical texts of the previous eras, including the Holy Scripture, into the compositions of dramatic oratorio of Arthur Honegger as the means for creating temporal multidimensionality of the synthetic form of French musical/dramaturgical theatre of the XX century within the context of Christian tradition. Honegger has overcome the linearity of narration through integration into the composition of the traits of previous eras. The citation of liturgical texts, including Holy Scripture, lead to expansion of the semantic space of literary text of the dramatic oratorio. This established the idea of synthesis of time and eternity characteristic to Christianity.</div>
+<div id="eabstract2" style="width:504px; border:0; margin:0; padding:0; text-align:left; display:none;"><p align=justify style='margin-top: 0.3em;'>In recent years, artificial intelligence (AI) has been actively integrated into everyday human life. Its popularity continues to grow steadily, and companies increasingly employ AI to optimize and accelerate workflows. Ordinary users leverage large language models (LLMs) and multimodal AI systems to perform a wide range of tasks, including generating texts, images, and videos; planning their daily schedules; and searching for information, among others. The rapid integration of AI into diverse spheres of human activity gives rise to a number of fundamental challenges such as the simulation of meaning, the substitution of human will, and other issues that threaten personal identity and autonomy. An increasing number of cognitive and creative functions - such as text generation, decision-making, and reflection - are being delegated by humans to AI systems. Consequently, it becomes critically important to explicitly identify and articulate the problems emerging from human-AI interaction and to develop ethically and cognitively sound frameworks for such interaction. This article examines current trends and key challenges associated with the integration of AI into everyday life. It introduces the concept of “meaning simulation” - a phenomenon whereby AI models function as simulacra of meaning, creating an illusion of understanding, thought, and meaning. The paper proposes a conceptual framework for productive human-AI collaboration and outlines a positive scenario for its implementation. This article will be of interest to researchers and professionals working in artificial intelligence, philosophy of science and technology, cognitive science, as well as to anyone concerned with contemporary technological trends and their social, ethical, and existential implications.</div>
 <script type="text/javascript">
 function show_eabstract() {
   $('#eabstract1').hide();
@@ -1268,20 +1097,23 @@ function show_eabstract() {
 </td></tr>
 
 <tr><td width=34>&nbsp;</td><td width=504 align=left valign=middle><p>
-Keywords: <a href="keyword_items.asp?id=13226822">SPIRITUAL DIMENSION</a>, 
-<a href="keyword_items.asp?id=856620">MUSICAL COMPOSITION</a>, 
-<a href="keyword_items.asp?id=308285">CHRISTIANITY</a>, 
-<a href="keyword_items.asp?id=18454752">ELEMENTS OF ARCHAICS</a>, 
-<a href="keyword_items.asp?id=18454753">HONEGGER</a>, 
-<a href="keyword_items.asp?id=3785782">MUSICAL DRAMATURGY</a>, 
-<a href="keyword_items.asp?id=6474538">DRAMATIC ORATORIO</a>, 
-<a href="keyword_items.asp?id=5041446">JOAN OF ARC</a>, 
-<a href="keyword_items.asp?id=6883041">SYNTHETIC FORM</a>, 
-<a href="keyword_items.asp?id=5426775">MYSTERY PLAY</a>
+Keywords: <a href="keyword_items.asp?id=4400">ARTIFICIAL INTELLIGENCE</a>, 
+<a href="keyword_items.asp?id=23171689">LARGE LANGUAGE MODELS</a>, 
+<a href="keyword_items.asp?id=7998">SIMULATIONS</a>, 
+<a href="keyword_items.asp?id=28363747">SIMULACRA OF MEANING</a>, 
+<a href="keyword_items.asp?id=28363748">AI SLOPPER</a>, 
+<a href="keyword_items.asp?id=309336">TURING</a>, 
+<a href="keyword_items.asp?id=309337">TURING TEST</a>, 
+<a href="keyword_items.asp?id=56572">SPEECH</a>, 
+<a href="keyword_items.asp?id=8601171">ORGANOPROJECTION</a>, 
+<a href="keyword_items.asp?id=13014981">PROBLEMS OF ARTIFICIAL INTELLIGENCE</a>, 
+<a href="keyword_items.asp?id=116199">TEXT GENERATION</a>
 </td></tr>
 
 </table>
+
 <div style="height:10px;"></div>
+
 
 
 <div id="your_notes" class="collapsed">
@@ -1315,95 +1147,72 @@ function show_context(refid) {
 
 <tr bgcolor=#f5f5f5><td width=6% align=right valign=top nowrap><font color=#000000>1.&nbsp;</font></td>
 <td width=89% align=justify valign=top><font color=#000000>
-Азарова В. В. Христианская концепция поэмы П. Клоделя "Жанна д'Арк на костре" // Культура и искусство №9, 2018. - С. 1-26.</font>&nbsp; <font color=#F26C4F>DOI:</font>&nbsp;<a href="https://doi.org/10.7256/2454-0625.2018.9.27253" target=_blank rel="nofollow">10.7256/2454-0625.2018.9.27253</a>&nbsp; <font color=#F26C4F>EDN:</font>&nbsp;<a href="https://elibrary.ru/ylwsih" target=_blank rel="nofollow">YLWSIH</a>
-
-<span title="Показать ссылку в тексте публикации" class="win_expandable" id="context_expand_711835181" style="color:#00008f; margin:0 5px 0 0;" onClick="show_context('711835181')"> &nbsp;<font color=#F26C4F>▼</font>&nbsp;Контекст</span>
-<div id="context_711835181" style="border:0; margin:0; padding:0; text-align:left; display:none;">
-<div style="height:3px;"></div>
-<table width=100% border=0 cellspacing=1 cellpadding=3>
-<td width=8% align=right valign=top bgcolor=#f5f5f5><font color=#000000>Контекст:</font></td>
-<td width=92% align=left valign=top bgcolor=#f5f5f5>
-<font color=#555555><i>...Христианская концепция и композиция поэмы П. Клоделя, лежащей в основе произведения А. Онеггера, были рассмотрены нами отдельно. [1]...<div style='height:3px'></div>...медицины выскочку-самозванца и наделяет его полномочиями безнаказанно манипулировать больными, более подробно говорится в нашей статье, посвященной анализу текста поэмы П. Клоделя «Жанна д'Арк на костре». [1, с. 20]...</i></font>
-</td></tr></table>
-</div>
-
-</td><td align=center valign=top width=5%><div style="height:5px;"></div><a href="item.asp?id=36322352" title="Перейти на описание цитируемой публикации" class="help1" target=_blank><img src="/images/go_url.png" height=15 width=15 border=0></a></td>
+Jones, C. R., & Bergen, B. K. (2025). Large Language Models Pass the Turing Test (Version 1). arXiv.</font>&nbsp; <font color=#F26C4F>DOI:</font>&nbsp;<a href="https://doi.org/10.48550/ARXIV.2503.23674" target=_blank rel="nofollow">10.48550/ARXIV.2503.23674</a>
+</td><td align=center valign=top width=5%>&nbsp;</td>
 </tr>
 
 <tr bgcolor=#f5f5f5><td width=6% align=right valign=top nowrap><font color=#000000>2.&nbsp;</font></td>
 <td width=89% align=justify valign=top><font color=#000000>
-Азарова В. В. Об организации звукового пространства в Прологе драматической оратории А. Онеггера "Жанна д'Арк на костре" //Проблемы музыкальной науки. 2019. №3. С. 150-158.</font>&nbsp; <font color=#F26C4F>EDN:</font>&nbsp;<a href="https://elibrary.ru/dybfgc" target=_blank rel="nofollow">DYBFGC</a>
-
-<span title="Показать ссылку в тексте публикации" class="win_expandable" id="context_expand_711835182" style="color:#00008f; margin:0 5px 0 0;" onClick="show_context('711835182')"> &nbsp;<font color=#F26C4F>▼</font>&nbsp;Контекст</span>
-<div id="context_711835182" style="border:0; margin:0; padding:0; text-align:left; display:none;">
+Mejias, U. A., & Couldry, N. (2019). Datafication.Internet Policy Review, 8(4).</font>&nbsp; <font color=#F26C4F>DOI:</font>&nbsp;<a href="https://doi.org/10.14763/2019.4.1428" target=_blank rel="nofollow">10.14763/2019.4.1428</a>
+<span title="Показать ссылку в тексте публикации" class="win_expandable" id="context_expand_1748622744" style="color:#00008f; margin:0 5px 0 0;" onClick="show_context('1748622744')"> &nbsp;<font color=#F26C4F>▼</font>&nbsp;Контекст</span>
+<div id="context_1748622744" style="border:0; margin:0; padding:0; text-align:left; display:none;">
 <div style="height:3px;"></div>
 <table width=100% border=0 cellspacing=1 cellpadding=3>
 <td width=8% align=right valign=top bgcolor=#f5f5f5><font color=#000000>Контекст:</font></td>
 <td width=92% align=left valign=top bgcolor=#f5f5f5>
-<font color=#555555><i>...Организация звукового пространства и методы преодоления композитором линейности сюжетного повествования в Прологе рассмотрены нами в отдельной статье. [2]...</i></font>
+<font color=#555555><i>...Происходит «датификация» опыта человека (Mejias, Couldry, 2019)...</i></font>
 </td></tr></table>
 </div>
 
-</td><td align=center valign=top width=5%><div style="height:5px;"></div><a href="item.asp?id=41214270" title="Перейти на описание цитируемой публикации" class="help1" target=_blank><img src="/images/go_url.png" height=15 width=15 border=0></a></td>
+</td><td align=center valign=top width=5%>&nbsp;</td>
 </tr>
 
 <tr bgcolor=#f5f5f5><td width=6% align=right valign=top nowrap><font color=#000000>3.&nbsp;</font></td>
 <td width=89% align=justify valign=top><font color=#000000>
-Бахтин М. М. Избранное. Том I: Автор и герой в эстетическом событии. М.; СПб.: Центр гуманитарных инициатив, 2017. - 544 с.</font>&nbsp; <font color=#F26C4F>EDN:</font>&nbsp;<a href="https://elibrary.ru/nhpbrk" target=_blank rel="nofollow">NHPBRK</a>
+Shrivastava, Dr. A. (2024). Artificial Intelligence (AI): Evolution, Methodologies, and Applications.International Journal for Research in Applied Science and Engineering Technology, 12(4), 5501-5505.</font>&nbsp; <font color=#F26C4F>DOI:</font>&nbsp;<a href="https://doi.org/10.22214/ijraset.2024.61241" target=_blank rel="nofollow">10.22214/ijraset.2024.61241</a>&nbsp; <font color=#F26C4F>EDN:</font>&nbsp;<a href="https://elibrary.ru/qohkgp" target=_blank rel="nofollow">QOHKGP</a>
 
-<span title="Показать ссылку в тексте публикации" class="win_expandable" id="context_expand_711835183" style="color:#00008f; margin:0 5px 0 0;" onClick="show_context('711835183')"> &nbsp;<font color=#F26C4F>▼</font>&nbsp;Контекст</span>
-<div id="context_711835183" style="border:0; margin:0; padding:0; text-align:left; display:none;">
-<div style="height:3px;"></div>
-<table width=100% border=0 cellspacing=1 cellpadding=3>
-<td width=8% align=right valign=top bgcolor=#f5f5f5><font color=#000000>Контекст:</font></td>
-<td width=92% align=left valign=top bgcolor=#f5f5f5>
-<font color=#555555><i>...Согласно определению исследователя Н. К. Бонецкой, народное возношение хвалы является характерным проявлением карнавальности с ее «телесным человеческим и мировым началом». [3, с. 29]...</i></font>
-</td></tr></table>
-</div>
-
-</td><td align=center valign=top width=5%><div style="height:5px;"></div><a href="item.asp?id=42661034" title="Перейти на описание цитируемой публикации" class="help1" target=_blank><img src="/images/go_url.png" height=15 width=15 border=0></a></td>
+</td><td align=center valign=top width=5%><div style="height:5px;"></div><a href="item.asp?id=67391461" title="Перейти на описание цитируемой публикации" class="help1" target=_blank><img src="/images/go_url.png" height=15 width=15 border=0></a></td>
 </tr>
 
 <tr bgcolor=#f5f5f5><td width=6% align=right valign=top nowrap><font color=#000000>4.&nbsp;</font></td>
 <td width=89% align=justify valign=top><font color=#000000>
-Бахтин М. М. Творчество Франсуа Рабле и народная культура средневековья и Ренессанса. - М.: Эксмо, 2014. - 704 с.</font>&nbsp; <font color=#F26C4F>EDN:</font>&nbsp;<a href="https://elibrary.ru/iaglzd" target=_blank rel="nofollow">IAGLZD</a>
-
-<span title="Показать ссылку в тексте публикации" class="win_expandable" id="context_expand_711835184" style="color:#00008f; margin:0 5px 0 0;" onClick="show_context('711835184')"> &nbsp;<font color=#F26C4F>▼</font>&nbsp;Контекст</span>
-<div id="context_711835184" style="border:0; margin:0; padding:0; text-align:left; display:none;">
+Turing, A. M. (1950).Computing Machinery and Intelligence. Mind, 59, 433-460.</font>&nbsp; <font color=#F26C4F>DOI:</font>&nbsp;<a href="https://doi.org/10.1093/mind/LIX.236.433" target=_blank rel="nofollow">10.1093/mind/LIX.236.433</a>
+<span title="Показать ссылку в тексте публикации" class="win_expandable" id="context_expand_1748622746" style="color:#00008f; margin:0 5px 0 0;" onClick="show_context('1748622746')"> &nbsp;<font color=#F26C4F>▼</font>&nbsp;Контекст</span>
+<div id="context_1748622746" style="border:0; margin:0; padding:0; text-align:left; display:none;">
 <div style="height:3px;"></div>
 <table width=100% border=0 cellspacing=1 cellpadding=3>
 <td width=8% align=right valign=top bgcolor=#f5f5f5><font color=#000000>Контекст:</font></td>
 <td width=92% align=left valign=top bgcolor=#f5f5f5>
-<font color=#555555><i>...М. Бахтин считал образ осла символом материально-телесного начала, а появление осла на праздниках - древнейшим традиционным мотивом карнавалов и шаривари. [4, с. 117]...<div style='height:3px'></div>...М. Бахтин называл осла с его криком в разгаре средневекового Праздника дураков или его другого проявления - Праздника осла - олицетворением «праздничного смеха». [4, с. 116]...<div style='height:3px'></div>...М. Бахтин отмечал, что традиция наделять персонажей собственными именами, которые носят характер прозвищ, восходит к Ф. Рабле. [4, с. 665]...</i></font>
+<font color=#555555><i>...Тест был предложен ученым в 1950 году в статье “Computing Machinery and Intelligence” (Turing, 1950)...</i></font>
 </td></tr></table>
 </div>
 
-</td><td align=center valign=top width=5%><div style="height:5px;"></div><a href="item.asp?id=42661046" title="Перейти на описание цитируемой публикации" class="help1" target=_blank><img src="/images/go_url.png" height=15 width=15 border=0></a></td>
+</td><td align=center valign=top width=5%>&nbsp;</td>
 </tr>
 
 <tr bgcolor=#f5f5f5><td width=6% align=right valign=top nowrap><font color=#000000>5.&nbsp;</font></td>
 <td width=89% align=justify valign=top><font color=#000000>
-Бахтин М. М. Формы времени и хронотопа в романе. Очерки по исторической поэтике. //Литературно-критические статьи. М., Художественная литература, 1986. с. 241.</font>&nbsp; <font color=#F26C4F>EDN:</font>&nbsp;<a href="https://elibrary.ru/vlgogq" target=_blank rel="nofollow">VLGOGQ</a>
+Van Der Weel, F. R. (Ruud), & Van Der Meer, A. L. H. (2024). Handwriting but not typewriting leads to widespread brain connectivity: A high-density EEG study with implications for the classroom. Frontiers in Psychology, 14, 1219945.</font>&nbsp; <font color=#F26C4F>DOI:</font>&nbsp;<a href="https://doi.org/10.3389/fpsyg.2023.1219945" target=_blank rel="nofollow">10.3389/fpsyg.2023.1219945</a>&nbsp; <font color=#F26C4F>EDN:</font>&nbsp;<a href="https://elibrary.ru/sjfucw" target=_blank rel="nofollow">SJFUCW</a>
 
-<span title="Показать ссылку в тексте публикации" class="win_expandable" id="context_expand_711835185" style="color:#00008f; margin:0 5px 0 0;" onClick="show_context('711835185')"> &nbsp;<font color=#F26C4F>▼</font>&nbsp;Контекст</span>
-<div id="context_711835185" style="border:0; margin:0; padding:0; text-align:left; display:none;">
+<span title="Показать ссылку в тексте публикации" class="win_expandable" id="context_expand_1748622747" style="color:#00008f; margin:0 5px 0 0;" onClick="show_context('1748622747')"> &nbsp;<font color=#F26C4F>▼</font>&nbsp;Контекст</span>
+<div id="context_1748622747" style="border:0; margin:0; padding:0; text-align:left; display:none;">
 <div style="height:3px;"></div>
 <table width=100% border=0 cellspacing=1 cellpadding=3>
 <td width=8% align=right valign=top bgcolor=#f5f5f5><font color=#000000>Контекст:</font></td>
 <td width=92% align=left valign=top bgcolor=#f5f5f5>
-<font color=#555555><i>...Согласно перифразе М. Бахтина, «время как бы вливается в пространство и течет по нему»). [5, с. 241, 276]...</i></font>
+<font color=#555555><i>...Однако стоит отметить, что письмо от руки и печатание на клавиатуре - это принципиально разные когнитивные процессы, которые по-разному задействуют мозг (Van der Weel & Van der Meer, 2024)...</i></font>
 </td></tr></table>
 </div>
 
-</td><td align=center valign=top width=5%><div style="height:5px;"></div><a href="item.asp?id=36378675" title="Перейти на описание цитируемой публикации" class="help1" target=_blank><img src="/images/go_url.png" height=15 width=15 border=0></a></td>
+</td><td align=center valign=top width=5%><div style="height:5px;"></div><a href="item.asp?id=65832787" title="Перейти на описание цитируемой публикации" class="help1" target=_blank><img src="/images/go_url.png" height=15 width=15 border=0></a></td>
 </tr>
 
 <tbody ID="list_refs"></tbody>
 
 <script type="text/javascript">
 function show_refs() {
-  $('#show_reflist').html("<tr><td colspan=3 align=center>Загружается (всего ссылок: 14) ...</td></tr>");
-  $.get("get_item_refs.asp?id=42578117&rand=" + Math.random(), function(data) {
+  $('#show_reflist').html("<tr><td colspan=3 align=center>Загружается (всего ссылок: 23) ...</td></tr>");
+  $.get("get_item_refs.asp?id=83175256&rand=" + Math.random(), function(data) {
     $('#list_refs').html(data);
     $('#show_reflist').html('');
 		MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
@@ -1413,7 +1222,7 @@ function show_refs() {
 
 <tr><td colspan=3><div style="height:6px;"></div></td></tr>
 <tbody ID="show_reflist">
-<tr><td align=right valign=middle><span class="win_expandable" style="color:#F26C4F; margin:0 5px 0 0;" onClick="show_refs()">▼</span></td><td align=left valign=middle><a href="javascript:show_refs()">Показать весь список литературы (всего ссылок: 14)</a></td><td></td></tr>
+<tr><td align=right valign=middle><span class="win_expandable" style="color:#F26C4F; margin:0 5px 0 0;" onClick="show_refs()">▼</span></td><td align=left valign=middle><a href="javascript:show_refs()">Показать весь список литературы (всего ссылок: 23)</a></td><td></td></tr>
 </tbody>
 
 
@@ -1446,10 +1255,10 @@ function show_refs() {
 <table width=190 cellspacing=0 cellpadding=3 border=0>
 
 <input type="hidden" name="itembox_name" value="">
-<input type="hidden" name="id" value="42578117">
-<input type="hidden" name="did" value="42578117">
-<input type="hidden" name="sid" value="683164423">
-<input type="hidden" name="noteid" value="42578117">
+<input type="hidden" name="id" value="83175256">
+<input type="hidden" name="did" value="83175256">
+<input type="hidden" name="sid" value="683759617">
+<input type="hidden" name="noteid" value="83175256">
 <input type="hidden" name="disspage" value="">
 <input type="hidden" name="counterid" value="">
 <input type="hidden" name="commentid" value="">
@@ -1457,10 +1266,10 @@ function show_refs() {
 <input type="hidden" name="linkid" value="">
 <input type="hidden" name="paysum" value="">
 <input type="hidden" name="payitemid" value="">
-<input type="hidden" name="authorid" value="900763">
-<input type="hidden" name="tid42578117" value="42578117">
+<input type="hidden" name="authorid" value="">
+<input type="hidden" name="tid83175256" value="83175256">
 <input type="hidden" name="filenum" value="1">
-<input type="hidden" name="fileid" value="42578117">
+<input type="hidden" name="fileid" value="83175256">
 <input type="hidden" name="urlnum" value="1">
 <input type="hidden" name="items_all" value="">
 
@@ -1469,13 +1278,23 @@ function show_refs() {
 
 
 <tr><td width=15% align=center valign=top>
-<a href="contents.asp?id=42578113&selid=42578117"><img src="images/but_orange.gif" width=15 height=15 hspace=3 border=0></a>
+<a href="contents.asp?id=83175249&selid=83175256"><img src="images/but_orange.gif" width=15 height=15 hspace=3 border=0></a>
 
 </td>
 
 <td width=85% align=left valign=middle>
-<a href="contents.asp?id=42578113&selid=42578117">Содержание выпуска</a>
+<a href="contents.asp?id=83175249&selid=83175256">Содержание выпуска</a>
 
+</td></tr>
+
+<tr><td width=15% align=center valign=top>
+<a href="item.asp?id=83175257"><img src="images/but_orange.gif" width=15 height=15 hspace=3 border=0></a></td>
+<td width=85% align=left valign=middle><a href="item.asp?id=83175257">Следующая&nbsp;публикация</a>
+</td></tr>
+
+<tr><td width=15% align=center valign=top>
+<a href="item.asp?id=83175255"><img src="images/but_orange.gif" width=15 height=15 hspace=3 border=0></a></td>
+<td width=85% align=left valign=middle><a href="item.asp?id=83175255">Предыдущая&nbsp;публикация</a>
 </td></tr>
 
 	<tr><td colspan=2><div style="height:10px;"></div></td></tr>
@@ -1484,15 +1303,15 @@ function show_refs() {
 	<td width=85% align=left valign=middle>Загрузить:
 	</td></tr>
 	
-	<tr><td width=15% align=center valign=top><a href="javascript:file_article(42578117, 1)" rel="nofollow" title=""><img src="/images/download_green.png" width=16 hspace=2 border=0></a></td>
-	<td width=85% align=left valign=middle><a href="javascript:file_article(42578117, 1)" rel="nofollow" class="help" title="">Полный текст</a> (PDF)
+	<tr><td width=15% align=center valign=top><a href="javascript:file_article(83175256, 1)" rel="nofollow" title=""><img src="/images/download_green.png" width=16 hspace=2 border=0></a></td>
+	<td width=85% align=left valign=middle><a href="javascript:file_article(83175256, 1)" rel="nofollow" class="help" title="">Полный текст</a> (PDF, русский)
 	</td></tr>
 	
 <tr><td width=15% align=center valign=top>
 <a href="javascript:email_article()" rel="nofollow"><img src="images/mailto.png" width=16 hspace=2 border=0></a></td>
 <td width=85% align=left valign=middle><a href="javascript:email_article()" rel="nofollow">Отправить публикацию по электронной почте</a>
 </td></tr>
-<tr><td colspan=2 align=center><div class="formfr"><input type="text" id="email" name="email" value="gasilin@inion.ru" style="width:172px; text-align: center;" class="inputt"></div></td></tr>
+<tr><td colspan=2 align=center><div class="formfr"><input type="text" id="email" name="email" value="pasha.sitnikov.69@mail.ru" style="width:172px; text-align: center;" class="inputt"></div></td></tr>
 
 <tr><td colspan=2><div style="height:10px;"></div></td></tr>
 
@@ -1500,8 +1319,8 @@ function show_refs() {
 <td width=85% align=left valign=middle>Связанные документы:
 </td></tr>
 
-<tr><td width=15% align=center valign=top><a href="javascript:url_article(42578117, 1)" rel="nofollow" title=""><img src="images/go_url.png" width=16 hspace=2 border=0></a></td>
-<td width=85% align=left valign=middle>Полный текст, на сайте <br><span style="word-wrap:break-word; word-break: break-all; overflow:hidden"><a href="javascript:url_article(42578117, 1)" rel="nofollow" class="help">nbpublish.com</a>
+<tr><td width=15% align=center valign=top><a href="javascript:url_article(83175256, 1)" rel="nofollow" title=""><img src="images/go_url.png" width=16 hspace=2 border=0></a></td>
+<td width=85% align=left valign=middle>Полный текст, на сайте <br><span style="word-wrap:break-word; word-break: break-all; overflow:hidden"><a href="javascript:url_article(83175256, 1)" rel="nofollow" class="help">galacticamedia.com</a>
 </span></td></tr>
 
 
@@ -1509,13 +1328,8 @@ function show_refs() {
 
 
 <tr><td width=15% align=center valign=top>
-<a href="cit_items.asp?id=42578117"><img src="images/but_orange.gif" width=15 height=15 hspace=3 border=0></a></td>
-<td width=85% align=left valign=middle><a href="cit_items.asp?id=42578117">Список публикаций, цитирующих данную</a>
-</td></tr>
-
-<tr><td width=15% align=center valign=top>
-<a href='https://scholar.google.com/scholar?q="&quot;Неумирающие элементы архаики&quot; в драматической оратории А. Онеггера &quot;Жанна дАрк на костре&quot;"&hl=ru&as_sdt=0%2C5&as_ylo=2020&as_yhi=2020' target=_blank rel="nofollow"><img src="images/but_orange.gif" width=15 height=15 hspace=3 border=0></a></td>
-<td width=85% align=left valign=middle><a href='https://scholar.google.com/scholar?q="&quot;Неумирающие элементы архаики&quot; в драматической оратории А. Онеггера &quot;Жанна дАрк на костре&quot;"&hl=ru&as_sdt=0%2C5&as_ylo=2020&as_yhi=2020' target=_blank rel="nofollow">Список статей в Google Академия, цитирующих данную</a>
+<a href='https://scholar.google.com/scholar?q="Искусственный интеллект как симулякр смысла"&hl=ru&as_sdt=0%2C5&as_ylo=2025&as_yhi=2025' target=_blank rel="nofollow"><img src="images/but_orange.gif" width=15 height=15 hspace=3 border=0></a></td>
+<td width=85% align=left valign=middle><a href='https://scholar.google.com/scholar?q="Искусственный интеллект как симулякр смысла"&hl=ru&as_sdt=0%2C5&as_ylo=2025&as_yhi=2025' target=_blank rel="nofollow">Список статей в Google Академия, цитирующих данную</a>
 </td></tr>
 
 <tr><td width=15% align=center valign=top>
@@ -1533,21 +1347,7 @@ function show_refs() {
 <tr><td colspan=2 align=center><div class="formfr"><select name="itemboxid" id="itemboxid" style="width:180px" class="input">
 
 <option value="0" >Новая подборка
-<option value="1445083" selected>Политики доступа
-<option value="1541849" >Оборотничество
-<option value="1557500" >Социальная эпистемология
-<option value="1561037" >Психиатрия
-<option value="1572774" >Сартр
-<option value="1582948" >Искусственный интеллект в научных сетях
-<option value="1586142" >Подорога
-<option value="1594422" >Социологическое обозрение
-<option value="1596160" >Художественная культура
-<option value="1596212" >Международный журнал исследований культуры
-<option value="1600343" >Философия. Журнал Высшей школы экономики
-<option value="1612558" >Эксперимент с нейропоиском
-<option value="1612570" >Нейропоиск
-<option value="1612590" >Нейропоиск. Вторая фаза
-<option value="1640794" >Galactica media
+<option value="1598740" selected>Международный журнал исследований культуры
 </select></div>&nbsp;</td></tr>
 
 
@@ -1570,8 +1370,8 @@ function show_refs() {
 </FORM>
 
 <tr><td width=15% align=center valign=top>
-<a href='/similar_items.asp?itemid=42578117'><img src="images/but_orange.gif" width=15 height=15 hspace=3 border=0></a></td>
-<td width=85% align=left valign=middle><a href='/similar_items.asp?itemid=42578117'>Найти близкие по тематике публикации</a>
+<a href='/similar_items.asp?itemid=83175256'><img src="images/but_orange.gif" width=15 height=15 hspace=3 border=0></a></td>
+<td width=85% align=left valign=middle><a href='/similar_items.asp?itemid=83175256'>Найти близкие по тематике публикации</a>
 </td></tr>
 
 
@@ -1579,7 +1379,7 @@ function show_refs() {
 <tr><td colspan=2><div style="height:10px;"></div></td></tr>
 <tr><td width=15% align=center valign=top>
 <img src="images/but_orange.gif" width=15 height=15 hspace=3 border=0></td>
-<td width=85% align=left valign=middle><font color=#00008f>Дата размещения:</font><br><font color=#000000>25.03.2020</font>
+<td width=85% align=left valign=middle><font color=#00008f>Дата размещения:</font><br><font color=#000000>11.11.2025</font>
 </td></tr>
 
 
