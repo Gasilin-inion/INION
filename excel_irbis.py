@@ -11,6 +11,7 @@ import datetime
 import logging
 import pandas as pd
 from typing import List
+from multifile_import import get_files_in_folder
 
 # Настройка логирования
 logging.basicConfig(level=logging.INFO, format='%(levelname)s: %(message)s')
@@ -28,13 +29,13 @@ FIELD_920_J =  '#920: NJ\n'
 FIELD_999 = '#999: 0000000\n'
 SEPARATOR = '*****\n'
 wrong_categories = []
+input_files = []
+output_files = []
+indx = 0
 
-# Пути исходного и результирующего файлов (по умолчанию в рабочей директории)
+# Папка с исходными файлами
 current_dir = os.getcwd()
-path_to_the_source_file = os.path.join(current_dir, 'files_to_edit', 'table_of_articles.xlsx')
-path_to_the_target_file = os.path.join(current_dir, 'files_to_import_to_IRBIS', 'list_of_documents.txt')
-path_to_the_wrong_cat = os.path.join(current_dir, 'files_to_import_to_IRBIS', 'wrong_categories.txt')
-
+path_to_the_source_files = os.path.join(current_dir, 'files_to_edit')
 
 # Получение данных из DataFrame
 
@@ -54,10 +55,18 @@ rubricator = pd.read_json('velvet_cat.json')
 def cat_check(category):
     return rubricator['category'].str.contains(category, na=False).any()
 
+# Получение списка файлов из папки 'files_to_edit'
+
+input_files = get_files_in_folder(path_to_the_source_files)
+for source in input_files:
+    line = source.replace('files_to_edit', 'files_to_import_to_IRBIS')
+    line = line.replace('.xlsx', '.txt')
+    output_files.append(line)
+number_of_files = len(input_files)
 
 # Основная логика
 
-def main(src: str = path_to_the_source_file, tgt: str = path_to_the_target_file):
+def main(src: str = input_files[indx], tgt: str = output_files[indx]):
     # Проверки путей
     if not os.path.exists(src):
         logger.error('Исходный файл не найден: %s', src)
@@ -423,8 +432,9 @@ def main(src: str = path_to_the_source_file, tgt: str = path_to_the_target_file)
 
     # Файл ошибок в рубриках (при наличии)
     if (wrong_categories != []):
+        wct = tgt.replace('.txt', '_wrong_cat.txt')
         try:
-            with open(path_to_the_wrong_cat, 'w', encoding='utf-8') as wrong:
+            with open(wct, 'w', encoding='utf-8') as wrong:
                 wrong.writelines(f'Внимание! В статьях со следующеми заголовками допущены ошибки в рубриках:\n\n')
                 wrong.writelines(wrong_categories)
                 wrong.writelines(f'Исправьте ошибки в исходном файле и запустите конвертер заново\n')
@@ -432,4 +442,5 @@ def main(src: str = path_to_the_source_file, tgt: str = path_to_the_target_file)
         except Exception as e:
             logger.exception('Ошибка при записи файла: %s', e)
 if __name__ == '__main__':
-    main()
+    for indx in range(number_of_files):
+        main(src=input_files[indx], tgt=output_files[indx])
