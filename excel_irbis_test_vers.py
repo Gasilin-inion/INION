@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Конвертер библиографических данных из формата Excel в формат ИРБИС 64
+Мультиплатформный конвертер библиографических данных из формата Excel в формат ИРБИС 64
 
 Автор: Gasilin Andrey
 Дата последнего обновления: 17.12.25
@@ -39,7 +39,7 @@ indx = 0
 current_dir = os.getcwd()
 path_to_the_source_files = os.path.join(current_dir, 'files_to_edit')
 
-# Импорт данных из DataFrame
+# Получение данных из DataFrame
 
 def safe_get(df: pd.DataFrame, idx: int, col: str):
     try:
@@ -57,7 +57,7 @@ rubricator = pd.read_json('velvet_cat.json')
 def cat_check(category):
     return rubricator['category'].str.contains(category, na=False).any()
 
-# Импорт списка файлов из папки 'files_to_edit'
+# Получение списка файлов из папки 'files_to_edit'
 
 input_files = get_files_in_folder(path_to_the_source_files)
 for source in input_files:
@@ -129,7 +129,7 @@ def main(src: str = input_files[indx], tgt: str = output_files[indx]):
             argument_101 = 'rus'
         field_101 += argument_101 + '\n'
 
-        # Автор(ы)
+        # Авторы
         authors_str = safe_get(df, idx, 'author')
         authors_dic = authors_process(authors_str)
         
@@ -149,8 +149,8 @@ def main(src: str = input_files[indx], tgt: str = output_files[indx]):
         categories = []
         category = safe_get(df, idx, 'category') or ''
         if category and category.strip():
-            if ',' in category:
-                categories = category.split(', ')
+            if ';' in category:
+                categories = category.split(' ; ')
                 for cat in categories:
                     checker = cat_check(cat)
                     if checker == True:

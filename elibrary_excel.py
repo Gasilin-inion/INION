@@ -16,7 +16,7 @@ import xlsxwriter
 from ya_trans import abstracts_translator
 from ya_GPT import abstract_optimization_with_gpt
 from add_keywords import keys_from_text
-from multifile_import import get_files_in_folder
+from multifile_import import get_files_in_folder, process_directory_recursive
 from correction_functions import (
     persons_correction,
     upper_sent,
@@ -136,9 +136,10 @@ current_dir = os.getcwd()
 
 # Генерация пути к папке с материалом
 path_to_the_source_file = os.path.join(current_dir, 'files_to_process')
-path_to_the_target_file = os.path.join(current_dir, 'files_to_edit', 'table_of_articles.xlsx')
+path_to_the_target_file = os.path.join(current_dir, 'files_to_edit')
 
 files = get_files_in_folder(path_to_the_source_file)
+xlsx_files = process_directory_recursive(path_to_the_source_file, path_to_the_target_file)
 number_of_files = len(files)
 
 print(f"Подождите, идёт обработка!")
