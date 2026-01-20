@@ -370,7 +370,7 @@ for idx in range(number_of_files):
     serial_number_list.append(serial_number)
 
 # Формирование выходного файла
-workbook = xlsxwriter.Workbook(path_to_the_target_file)
+workbook = xlsxwriter.Workbook('C:/Users/yotto/YandexDisk-gasilin@inion.ru/Developments/e-Library_to_IRBIS/files_to_edit/list_of_articles.xlsx')
 
 # Формат переноса текста
 text_format = workbook.add_format({"text_wrap": True})
