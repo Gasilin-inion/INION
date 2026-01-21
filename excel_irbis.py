@@ -12,7 +12,7 @@ import logging
 import pandas as pd
 from typing import List
 from multifile_import import get_files_in_folder
-from authors_fonctions import authors_process, build_argument_200, build_author_fields
+from authors_functions import authors_process, build_argument_200, build_author_fields
 
 # Настройка логирования
 logging.basicConfig(level=logging.INFO, format='%(levelname)s: %(message)s')

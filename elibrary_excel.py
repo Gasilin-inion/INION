@@ -136,10 +136,9 @@ current_dir = os.getcwd()
 
 # Генерация пути к папке с материалом
 path_to_the_source_file = os.path.join(current_dir, 'files_to_process')
-path_to_the_target_file = os.path.join(current_dir, 'files_to_edit')
+path_to_the_target_file = os.path.join(current_dir, 'files_to_edit', 'list_of_articles.xlsx')
 
 files = get_files_in_folder(path_to_the_source_file)
-xlsx_files = process_directory_recursive(path_to_the_source_file, path_to_the_target_file)
 number_of_files = len(files)
 
 print(f"Подождите, идёт обработка!")
