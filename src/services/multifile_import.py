@@ -55,7 +55,7 @@ def create_xlsx_from_folder(folder_path, output_dir):
     return str(output_path)
 
 """ Рекурсивно обрабатывает директорию и все её подпапки """
-
+""""
 def process_directory_recursive(root_dir, output_dir, include_root=True):
     
     xlsx_files = []    
@@ -91,3 +91,4 @@ if __name__ == "__main__":
         include_root=True  # обрабатывать ли корневую папку
     )
     print(result_files)
+"""

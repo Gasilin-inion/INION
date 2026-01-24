@@ -1,124 +1,69 @@
-Проект: Двухступенчатый конвертер для конвертации страниц html в таблицу Excel, а зетем, после ручного редактирования таблицы, в библиотечный формат ИРБИС 64.
-
-Структура:
-e-Library_to_IRBIS/
-├── files_to_pricess/
-│   ├── file_1.html
-│   ├── file_2.html
-│   ├── file_3.html
-│   └── file_4.html
-├── files_to_edit/
-│   └── table_of_articles.xlsx
-├── files_to_imoprt_to_IRBIS/
-│   ├── list_of_documents.txt
-│   └── wrong_categories.txt
-├── elibrary_excel.py
-├── excel_irbis.py
-├── ya_trans.py
-├── ya_GPT.py
-├── correction_functions.py
-├── add_categories.py
-├── edd_keywords.py
-├── multifile_import.py
-├── journal_list.json
-├── purple.json
-├── velvet_cat.json
-├── persons.json
-└── descriptors.json
-
-Описание:
-- `elibrary_excel.py`: Конвертер страниц из html в excel.
-- `excel_irbis.py`: Конвертер таблиц из excel в формат ИРБИС 64.
-- `ya_trans.py`: Модуль для перевода иноязычных аннотаций на русский язык.
-- `ya_GPT.py`: Модуль для оптимизации аннотаций на основе YandexGPT.
-- `correction_functions.py`: Модуль для автоматической корректуры заголовков.
-- `add_categories.py`: Модуль для автоматического проставления тематических рубрик.
-- `edd_keywords.py`: Модуль для автоматического проставления ключевых слов.
-- `multifile_import.py`: Модуль для множественной загрузки файлов html.
-- `journal_list.json`: База данных журналов.
-- `purple.json`: IAM-токен для доступа к сервисам Yandex Cloud.
-- `velvet_cat.json`: Рубрикатор.
-- `persons.json`: Список нормализованных персоналий.
-- `descriptors.json`: Список нормализованных ключевых слов.
-- `journal_list.json`: База данных журналов.
-- `files_to_pricess/`: папка для исходных html страниц.
-- `files_to_edit/`: папка для таблиц excel.
-- `files_to_imoprt_to_IRBIS/`: папка для исходных конечных файлов, предназначенных для импорта в ИРБИС 64.
-
-Стек: Python 3,8.
-
-Вопросы:
-1. Правильно ли построена структура проекта?
-2. Как лучше её оптимизировать?
-3. Хочу использовать Flask для создания веб-интерфейса обоих конвертеров. Как лучше изменить структуру с учётом этой задачи?
-
-
-
-Рекомендованная структура с веб-интерфейсом:
+Общая структура проекта:
 
 e-Library_to_IRBIS/
 ├── src/
 │   ├── converters/
-│   │   ├── elibrary_excel.py        # HTML → Excel
-│   │   └── excel_irbis.py          # Excel → ИРБИС 64
+│   │   ├── elibrary_excel.py        		# Конвертер из HTML в Excel
+│   │   ├── excel_irbis.py          		# Конвертер из Excel в ИРБИС 64
+│   │   └── xlsx_json.py          		# Конвертер из Excel в json
 │   ├── services/
-│   │   ├── translation/
-│   │   │   ├── ya_trans.py          # Перевод через Yandex Cloud
-│   │   │   └── ya_GPT.py           # Оптимизация через Yandex GPT
-│   │   ├── correction/
-│   │   │   ├── correction_functions.py  # Корректура заголовков
-│   │   │   ├── add_categories.py     # Проставление рубрик
-│   │   │   └── edd_keywords.py      # Проставление ключевых слов
-│   │   └── multifile_import.py     # Пакетная загрузка HTML
+│   │   ├── AI_processing/
+│   │   │   ├── ya_trans.py          		# Перевод через Yandex Cloud
+│   │   │   └── ya_GPT.py           		# Оптимизация через Yandex GPT
+│   │   ├── algorithmic_indexing/
+│   │   │   ├── correction_functions.py  	# Корректура заголовков
+│   │   │   ├── add_categories.py     		# Подбор рубрик
+│   │   │   └── edd_keywords.py      		# Подбор ключевых слов
+│   │   ├── authors_functions.py		# Обработка авторов
+│   │   ├── list_to_dict.py			# Преобразование из списка в словарь 
+│   │   └── multifile_import.py     		# Пакетная загрузка HTML
 │   ├── web/
 │   │   ├── __init__.py
-│   │   ├── app.py                  # Основное Flask‑приложение
+│   │   ├── app.py                  		# Основное Flask‑приложение
 │   │   ├── routes/
-│   │   │   ├── converter_routes.py # Маршрутизация конвертеров
-│   │   │   ├── api_routes.py      # API‑эндпоинты
+│   │   │   ├── converter_routes.py 		# Маршрутизация конвертеров
+│   │   │   ├── api_routes.py      		# API‑эндпоинты
 │   │   │   └── __init__.py
 │   │   ├── templates/
-│   │   │   ├── base.html           # Базовый шаблон
-│   │   │   ├── index.html         # Главная страница
-│   │   │   ├── upload.html       # Загрузка файлов
-│   │   │   └── result.html      # Результат конвертации
+│   │   │   ├── base.html           		# Базовый шаблон
+│   │   │   ├── index.html         		# Главная страница
+│   │   │   ├── upload.html       		# Загрузка файлов
+│   │   │   └── result.html      		# Результат конвертации
 │   │   └── static/
 │   │       ├── css/
 │   │       │   └── style.css
 │   │       └── js/
 │   │           └── main.js
 │   └── utils/
-│       ├── file_manager.py         # Работа с файловой системой
-│       ├── config_loader.py       # Загрузка конфигураций
-│       └── logger.py             # Логирование
+│       ├── file_manager.py         		# Работа с файловой системой
+│       ├── config_loader.py       		# Загрузка конфигураций
+│       └── logger.py             		# Логирование
 ├── data/
 │   ├── config/
-│   │   ├── yandex_cloud_config.json  # Токены Yandex Cloud
-│   │   └── category_rubricator.json   # Рубрикатор
+│   │   ├── yandex_cloud_config.json  		# Токен Yandex Cloud
+│   │   └── path_config.json   			# Пути к файлам проекта
 │   ├── databases/
-│   │   ├── journal_list.json       # База журналов
-│   │   ├── persons.json            # Нормализованные персоналии
-│   │   └── descriptors.json        # Нормализованные ключевые слова
+│   │   ├── a_facet.xlsx            		# Имена собственные для корректуры
+│   │   ├── category_rubricator.json		# Рубрикаторы
+│   │   ├── descriptors.json        		# Нормализованные ключевые слова
+│   │   ├── descriptors_categories.xlsx		# Соответствие рубрик дескрипторам
+│   │   ├── journal_list.json       		# База журналов
+│   │   └── persons.json            		# Нормализованные персоналии
 │   └── templates/
-│       └── default_template.json  # Шаблон по умолчанию
+│       └── default_template.json  		# Шаблон по умолчанию
 ├── resources/
-│   ├── files_to_process/
-│   │   ├── file_1.html
-│   │   └── ...
-│   ├── files_to_edit/
-│   │   └── table_of_articles.xlsx
-│   └── files_to_import_to_IRBIS/
-│       ├── list_of_documents.txt
-│       └── wrong_categories.txt
+│   ├── files_to_process/			# Папка для исходных файлов в html
+│   ├── files_to_edit/				# Папка для промежуточных таблиц
+│   └── files_to_import_to_IRBIS/		# Папка для файлов в формате ИРБИС
 ├── tests/
 │   ├── test_converters/
-│   │   ├── test_elibrary_excel.py
-│   │   └── test_excel_irbis.py
+│   │   ├── test_elibrary_excel.py		# Тестовый вариант конвертера elibrary-excel
+│   │   └── test_excel_irbis.py			# Тестовый вариант конвертера excel-irbis
 │   ├── test_services/
-│   │   ├── test_translation.py
-│   │   └── test_correction.py
+│   │   ├── test_translation.py			# Тестовый переводчик
+│   │   └── test_correction.py			# Тестовые функции корректуры
 │   └── conftest.py
-├── .env                    # Переменные окружения
-├── requirements.txt      # Зависимости
-├── main.py               # Точка входа (CLI)
-└── run.py                # Запуск Flask‑приложения
+├── .env                    			# Переменные окружения
+├── requirements.txt      			# Зависимости
+├── main.py               			# Точка входа (CLI)
+└── run.py                			# Запуск Flask‑приложения

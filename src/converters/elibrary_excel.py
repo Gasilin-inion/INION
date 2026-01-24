@@ -9,24 +9,17 @@ Last updated: 12.12.2025
 """
 # Импорт внешних модулей
 
-import os
+import sys
 import time
+import json
 import pandas as pd
 import xlsxwriter
-from ya_trans import abstracts_translator
-from ya_GPT import abstract_optimization_with_gpt
-from add_keywords import keys_from_text
-from multifile_import import get_files_in_folder, process_directory_recursive
-from correction_functions import (
-    persons_correction,
-    upper_sent,
-    upper_review,
-    upper_comma,
-    upper_abb,
-    delete_tag,
-    change_hyphen,
-    change_quotation)
-from add_categories import add_main_category
+import importlib.util
+
+# Импорт файла конфигурации путей
+
+with open("./data/config/path_config.json", "r", encoding="utf-8") as pathfile:
+    config_paths = json.load(pathfile)
 
 # Счётчики
 
@@ -127,18 +120,19 @@ file_name = ''
 
 # Импортируем выходные данные журналов
 
-journal_list_df = pd.read_json('journal_list.json')
+journal_list_path = config_paths["journal_list"]
+journal_list_df = pd.read_json(journal_list_path)
 
-# Импортируем файлы из исходной папки
+# Анализируем содержимое папки "files_to_process"
 
-# Получение текущей директории
-current_dir = os.getcwd()
+get_files = config_paths["multifile"]
+spec = importlib.util.spec_from_file_location("get_files_in_folder", get_files)
+module = importlib.util.module_from_spec(spec)
+sys.modules["get_files_in_folder"] = module
+spec.loader.exec_module(module)
+path_to_income_files = config_paths["input_files"]
+files = module.get_files_in_folder(path_to_income_files)
 
-# Генерация пути к папке с материалом
-path_to_the_source_file = os.path.join(current_dir, 'files_to_process')
-path_to_the_target_file = os.path.join(current_dir, 'files_to_edit', 'list_of_articles.xlsx')
-
-files = get_files_in_folder(path_to_the_source_file)
 number_of_files = len(files)
 
 print(f"Подождите, идёт обработка!")
@@ -176,16 +170,32 @@ for idx in range(number_of_files):
             second_word = string.find(title_end_pattern)
             start = first_word + title_start_shift
             title = string[start:second_word]
-            keys_from_title = keys_from_text(title)
+            
+            # Выделение ключевых слов
+            add_keywords = config_paths["add_keywords"]
+            spec = importlib.util.spec_from_file_location("add_keywords", add_keywords)
+            module = importlib.util.module_from_spec(spec)
+            sys.modules["add_keywords"] = module
+            spec.loader.exec_module(module)
+            keys_from_title = module.keys_from_text(title)
             title = title.capitalize()
-            title = persons_correction(title)
-            title = upper_sent(title)
-            title = upper_review(title)
-            title = upper_abb(title)
-            title = upper_comma(title)
-            title = delete_tag(title)
-            title = change_hyphen(title)
-            title = change_quotation(title)
+
+            # Импорт модуля коррекции 
+            corrections = config_paths["correction"]
+            spec = importlib.util.spec_from_file_location("correction_functions", corrections)
+            module = importlib.util.module_from_spec(spec)
+            sys.modules["correction_functions"] = module
+            spec.loader.exec_module(module)
+
+            # Функции модуля коррекции
+            title = module.persons_correction(title)
+            title = module.upper_sent(title)
+            title = module.upper_review(title)
+            title = module.upper_abb(title)
+            title = module.upper_comma(title)
+            title = module.delete_tag(title)
+            title = module.change_hyphen(title)
+            title = module.change_quotation(title)
 
     # Название журнала
     for string in strings:
@@ -275,13 +285,37 @@ for idx in range(number_of_files):
                     start = first_word + abstract_start_shift
                     abstract = string[start:second_word]
                     full_abstract = abstract
+                    
+                    # Перевод аннотаций, если не русскоязычные
+
                     if lang in ['английский', 'французский', 'немецкий']:
-                        abstract = abstracts_translator(abstract)
-                    keys_from_abstract = keys_from_text(abstract)
+                        abstracts_translator = config_paths["translation"]
+                        spec = importlib.util.spec_from_file_location("ya_trans", abstracts_translator)
+                        module = importlib.util.module_from_spec(spec)
+                        sys.modules["ya_trans"] = module
+                        spec.loader.exec_module(module)
+                        files = module.abstracts_translator(abstract)
+                    
+                    # Инициируем модуль для подбора ключей на основе аннотации
+
+                    add_keywords = config_paths["add_keywords"]
+                    spec = importlib.util.spec_from_file_location("add_keywords", add_keywords)
+                    module = importlib.util.module_from_spec(spec)
+                    sys.modules["add_keywords"] = module
+                    spec.loader.exec_module(module)
+                    keys_from_abstract = module.keys_from_text(abstract)
+                    
                     if abstract:
-                        optimized_abstract = abstract_optimization_with_gpt(abstract) or ''
+                        # Импорт модуля оптимизации аннотации посредством YandexGPT 
+                        translation = config_paths["AI_processing"]
+                        spec = importlib.util.spec_from_file_location("ya_GPT", translation)
+                        module = importlib.util.module_from_spec(spec)
+                        sys.modules["ya_GPT"] = module
+                        spec.loader.exec_module(module)
+                        optimized_abstract = module.abstract_optimization_with_gpt(abstract) or ''
                         if 'Я не могу обсуждать эту тему' in optimized_abstract:
                             optimized_abstract = ''
+                    
     elif (journal_category == 'A04') or (journal_category == 'A13'):
         for string in strings:
             if abstract_pattern in string:
@@ -328,18 +362,29 @@ for idx in range(number_of_files):
         a_keywords_as_string = ", ".join(a_keywords)
         a_keywords = []
 
-        # Извлечение ключеевых слов из заглавия и аннотации
-        keys_from_a_keys = keys_from_text(a_keywords_as_string)
+        # Нормализация авторских ключевых слов
+        add_keywords = config_paths["add_keywords"]
+        spec = importlib.util.spec_from_file_location("add_keywords", add_keywords)
+        module = importlib.util.module_from_spec(spec)
+        sys.modules["add_keywords"] = module
+        spec.loader.exec_module(module)
+        keys_from_a_keys = module.keys_from_text(a_keywords_as_string)
 
         # Объединяем ключевые слова, сохраняем порядок и убираем дубликаты
+
         final_keywords = list(dict.fromkeys(keys_from_title + keys_from_a_keys + keys_from_abstract))
 
     else:
         final_keywords.append(journal_keyword)
 
-    # Рубрика
+    # Подбор рубрики по философии
     if journal_category == 'A02':
-        journal_category = add_main_category(final_keywords)
+        add_category = config_paths["add_categories"]
+        spec = importlib.util.spec_from_file_location("add_categories", add_category)
+        module = importlib.util.module_from_spec(spec)
+        sys.modules["add_categories"] = module
+        spec.loader.exec_module(module)
+        journal_category = module.add_main_category(final_keywords)
 
     # Преобразование ключей в строки
     final_keywords = final_keywords[:10]
@@ -369,7 +414,8 @@ for idx in range(number_of_files):
     serial_number_list.append(serial_number)
 
 # Формирование выходного файла
-workbook = xlsxwriter.Workbook('C:/Users/yotto/YandexDisk-gasilin@inion.ru/Developments/e-Library_to_IRBIS/files_to_edit/list_of_articles.xlsx')
+output_file_path = (config_paths["files_to_edit"] + "/" + file_name)
+workbook = xlsxwriter.Workbook(output_file_path)
 
 # Формат переноса текста
 text_format = workbook.add_format({"text_wrap": True})
@@ -452,4 +498,3 @@ seconds = int(period - minutes * 60)
 
 print(f"Спасибо за ожидание!")
 print(f"Количество обработанных документов: {number_of_files}, время исполнения: {minutes}:{seconds}")
-print(f"Результат обработки см. по адресу: {path_to_the_target_file}")

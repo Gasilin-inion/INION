@@ -7,6 +7,13 @@ Changed on Tue Oct 07 2025 (json vers)
 
 import json
 
+# Загрузка конфигурации, извлечение путей к авторитетным файлам
+
+with open("./data/config/path_config.json", "r", encoding="utf-8") as pathfile:
+    config_paths = json.load(pathfile)
+path_to_descriptors = config_paths["descriptors"]
+path_to_persons = config_paths["persons"]
+
 def keys_from_text(text):
     # Явное объявление словарей и списка
     descriptors = {}
@@ -16,11 +23,11 @@ def keys_from_text(text):
 
     try:
         # Импорт списка дескрипторов
-        with open('descriptors.json', 'r', encoding='utf-8') as file_1:
+        with open(path_to_descriptors, 'r', encoding='utf-8') as file_1:
             descriptors = json.load(file_1)
 
         # Импорт списка персоналий
-        with open('persons.json', 'r', encoding='utf-8') as file_2:
+        with open(path_to_persons, 'r', encoding='utf-8') as file_2:
             persons = json.load(file_2)
 
     except FileNotFoundError:
