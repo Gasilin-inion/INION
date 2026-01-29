@@ -7,16 +7,22 @@
 """
 
 import os
+import sys
 import datetime
+import json
 import logging
 import pandas as pd
 from typing import List
-from multifile_import import get_files_in_folder
-from authors_functions import authors_process, build_argument_200, build_author_fields
+import importlib.util
 
 # Настройка логирования
 logging.basicConfig(level=logging.INFO, format='%(levelname)s: %(message)s')
 logger = logging.getLogger(__name__)
+
+# Импорт файла конфигурации путей
+
+with open("./data/config/path_config.json", "r", encoding="utf-8") as pathfile:
+    config_paths = json.load(pathfile)
 
 # Параметры и шаблоны
 FIELD_102 = '#102: RU\n'
@@ -35,10 +41,6 @@ output_files = []
 authors_dic = {}
 indx = 0
 
-# Папка с исходными файлами
-current_dir = os.getcwd()
-path_to_the_source_files = os.path.join(current_dir, 'files_to_edit')
-
 # Импорт данных из DataFrame
 
 def safe_get(df: pd.DataFrame, idx: int, col: str):
@@ -50,16 +52,23 @@ def safe_get(df: pd.DataFrame, idx: int, col: str):
         return None
     return str(val)
 
-# Импорт рубрикатора, проверка корректности рубрик
+# Импорт рубрикатора
 
-rubricator = pd.read_json('velvet_cat.json')
+rubricator_path = config_paths["rubricator"]
+rubricator = pd.read_json(rubricator_path)
 
 def cat_check(category):
     return rubricator['category'].str.contains(category, na=False).any()
 
-# Импорт списка файлов из папки 'files_to_edit'
+# Анализируем содержимое папки 'files_to_edit'
 
-input_files = get_files_in_folder(path_to_the_source_files)
+get_files = config_paths["multifile"]
+spec = importlib.util.spec_from_file_location("get_files_in_folder", get_files)
+module = importlib.util.module_from_spec(spec)
+sys.modules["get_files_in_folder"] = module
+spec.loader.exec_module(module)
+path_to_income_files = config_paths["files_to_edit"]
+input_files = module.get_files_in_folder(path_to_income_files)
 for source in input_files:
     line = source.replace('files_to_edit', 'files_to_import_to_IRBIS')
     line = line.replace('.xlsx', '.txt')
@@ -131,11 +140,16 @@ def main(src: str = input_files[indx], tgt: str = output_files[indx]):
 
         # Автор(ы)
         authors_str = safe_get(df, idx, 'author')
-        authors_dic = authors_process(authors_str)
+        authors_funct = config_paths["authors"]
+        spec = importlib.util.spec_from_file_location("authors_functions", authors_funct)
+        module = importlib.util.module_from_spec(spec)
+        sys.modules["authors_functions"] = module
+        spec.loader.exec_module(module)
+        authors_dic = module.authors_process(authors_str)
         
         # Заголовок (поле 200)
         title = safe_get(df, idx, 'title')
-        argument_200 = build_argument_200(title, authors_dic)       
+        argument_200 = module.build_argument_200(title, authors_dic)       
         field_200 = field_200 + argument_200 + '\n'     
 
         # Аннотация (поле 331)
@@ -169,7 +183,7 @@ def main(src: str = input_files[indx], tgt: str = output_files[indx]):
             category = ''
 
         # Автор и соавторы (поля 700 и 701)
-        field_700, field_701 = build_author_fields(authors_dic, field_700, field_701)
+        field_700, field_701 = module.build_author_fields(authors_dic, field_700, field_701)
                 
         # URL (поле 951)
         url = safe_get(df, idx, 'URL')

@@ -4,17 +4,23 @@
 import requests
 import json
 
+# Импорт файла конфигурации путей
+
+with open("./data/config/path_config.json", "r", encoding="utf-8") as pathfile:
+    config_paths = json.load(pathfile)
+token_path = config_paths["yandex_cloud"]
+
 # Чтение IAM-токена
 try:
-    with open('purple.json', 'r', encoding='UTF-8') as file:
+    with open(token_path, 'r', encoding='UTF-8') as file:
         data = json.load(file)
         IAM_TOKEN = data.get("key")
         if not IAM_TOKEN:
-            raise ValueError("В файле purple.json отсутствует ключ 'key'.")
+            raise ValueError("В файле конфигурации отсутствует ключ 'key'.")
 except FileNotFoundError:
-    raise Exception("Файл purple.json не найден. Положите его в каталог с программой.")
+    raise Exception("Файл конфигурации не найден.")
 except json.JSONDecodeError:
-    raise Exception("Файл purple.json содержит некорректный JSON.")
+    raise Exception("Файл конфигурации содержит некорректный JSON.")
 
 FOLDER_ID = "b1g33b2g1d47guea42co"
 

@@ -135,7 +135,6 @@ files = module.get_files_in_folder(path_to_income_files)
 
 number_of_files = len(files)
 
-print(f"Подождите, идёт обработка!")
 start_time = time.time() # Включение таймера
 
 # Цикл перебора файлов

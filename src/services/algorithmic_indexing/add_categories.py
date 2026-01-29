@@ -5,6 +5,15 @@ Created on Sat Mar  1 18:11:50 2025
 @author: yotto
 """
 
+import json
+
+# Импорт файла конфигурации путей
+
+with open("./data/config/path_config.json", "r", encoding="utf-8") as pathfile:
+    config_paths = json.load(pathfile)
+
+dc_path = config_paths["descriptors_categiries"]
+
 def add_main_category(keywords):
     # Объявляем переменные
     descriptors = []
@@ -14,7 +23,7 @@ def add_main_category(keywords):
     final_category = 'A02'
     # Импортируем таблицу соответветствия рубрик дескрипторам
     import pandas as pd
-    df = pd.read_excel('descriptors_categories.xlsx')
+    df = pd.read_excel(dc_path)
     descriptors = df['descriptors'].tolist()
     categories = df['categories'].tolist()
     # Цикл перебора ключевых слов
