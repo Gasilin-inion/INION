@@ -1,0 +1,19 @@
+2026-01-31 01:16:36 | eLibrary_to_IRBIS.src.converters.elibrary_excel_test | INFO | elibrary_excel_test:133 | Обработка файла: view-source_https___elibrary.ru_item.asp_id88765411.html
+2026-01-31 01:16:37 | eLibrary_to_IRBIS.src.converters.elibrary_excel_test | INFO | elibrary_excel_test:133 | Обработка файла: view-source_https___elibrary.ru_item.asp_id88765412.html
+2026-01-31 01:16:37 | eLibrary_to_IRBIS.src.converters.elibrary_excel_test | INFO | elibrary_excel_test:133 | Обработка файла: view-source_https___elibrary.ru_item.asp_id88765413.html
+2026-01-31 01:16:37 | eLibrary_to_IRBIS.src.converters.elibrary_excel_test | INFO | elibrary_excel_test:133 | Обработка файла: view-source_https___elibrary.ru_item.asp_id88765414.html
+2026-01-31 01:16:38 | eLibrary_to_IRBIS.src.converters.elibrary_excel_test | INFO | elibrary_excel_test:133 | Обработка файла: view-source_https___elibrary.ru_item.asp_id88765415.html
+2026-01-31 01:16:38 | eLibrary_to_IRBIS.src.converters.elibrary_excel_test | INFO | elibrary_excel_test:133 | Обработка файла: view-source_https___elibrary.ru_item.asp_id88765416.html
+2026-01-31 01:16:39 | eLibrary_to_IRBIS.src.converters.elibrary_excel_test | INFO | elibrary_excel_test:133 | Обработка файла: view-source_https___elibrary.ru_item.asp_id88765417.html
+2026-01-31 01:16:39 | eLibrary_to_IRBIS.src.converters.elibrary_excel_test | INFO | elibrary_excel_test:133 | Обработка файла: view-source_https___elibrary.ru_item.asp_id88765418.html
+2026-01-31 01:16:39 | eLibrary_to_IRBIS.src.converters.elibrary_excel_test | INFO | elibrary_excel_test:133 | Обработка файла: view-source_https___elibrary.ru_item.asp_id88765419.html
+2026-01-31 01:16:40 | eLibrary_to_IRBIS.src.converters.elibrary_excel_test | INFO | elibrary_excel_test:133 | Обработка файла: view-source_https___elibrary.ru_item.asp_id88765420.html
+2026-01-31 01:16:40 | eLibrary_to_IRBIS.src.converters.elibrary_excel_test | INFO | elibrary_excel_test:133 | Обработка файла: view-source_https___elibrary.ru_item.asp_id88765421.html
+2026-01-31 01:16:40 | eLibrary_to_IRBIS.src.converters.elibrary_excel_test | INFO | elibrary_excel_test:133 | Обработка файла: view-source_https___elibrary.ru_item.asp_id88765422.html
+2026-01-31 01:16:41 | eLibrary_to_IRBIS.src.converters.elibrary_excel_test | INFO | elibrary_excel_test:458 | Создан Excel-файл: C:\Users\yotto\YandexDisk-gasilin@inion.ru\Developments\e-Library_to_IRBIS\resources\files_to_edit\output_9.xlsx (записей: 12, столбцов: 18)
+2026-01-31 01:16:41 | eLibrary_to_IRBIS.src.converters.elibrary_excel_test | INFO | elibrary_excel_test:162 | Готово: 12 записей, 5.4 сек, файл: output_9.xlsx
+2026-01-31 01:16:41 | eLibrary_to_IRBIS.src.converters.excel_irbis_test | INFO | excel_irbis_test:112 | Начата обработка 1 Excel‑файлов
+2026-01-31 01:16:41 | eLibrary_to_IRBIS.src.converters.excel_irbis_test | INFO | excel_irbis_test:132 | Обработка Excel: output_9.xlsx → files_to_edit_output_9.txt
+2026-01-31 01:16:41 | eLibrary_to_IRBIS.src.converters.excel_irbis_test | INFO | excel_irbis_test:156 | Строк в Excel: 12
+2026-01-31 01:16:41 | eLibrary_to_IRBIS.src.converters.excel_irbis_test | INFO | excel_irbis_test:177 | Создан файл ИРБИС: C:\Users\yotto\YandexDisk-gasilin@inion.ru\Developments\e-Library_to_IRBIS\resources\files_to_import_to_IRBIS\files_to_edit_output_9.txt
+2026-01-31 01:16:41 | eLibrary_to_IRBIS.src.converters.excel_irbis_test | INFO | excel_irbis_test:141 | Завершена обработка: 1 файлов обработано, 1 TXT создано

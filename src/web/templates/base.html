@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}e-Library → ИРБИС{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+<header>
+    <h1>e-Library → ИРБИС 64</h1>
+    <nav>
+        <a href="{{ url_for('converter.index') }}">Главная</a>
+        <a href="{{ url_for('converter.upload_files') }}">Загрузка</a>
+    </nav>
+</header>
+
+<main>
+    {% block content %}{% endblock %}
+</main>
+
+<footer>
+    <small>© Конвертер библиографических данных</small>
+</footer>
+</body>
+</html>

@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}Загрузка файлов{% endblock %}
+
+{% block content %}
+<h2>Пакетная загрузка HTML</h2>
+
+<form method="POST" enctype="multipart/form-data">
+    <input type="file" name="files" multiple required>
+    <br><br>
+    <button type="submit">Запустить конвертацию</button>
+</form>
+
+<p>
+    Допускается загрузка нескольких HTML-файлов одновременно.
+</p>
+{% endblock %}
