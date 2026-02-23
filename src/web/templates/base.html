@@ -2,15 +2,16 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>{% block title %}e-Library → ИРБИС{% endblock %}</title>
+    <title>{% block title %}Набор утилит для работы с библиографическими метаданными{% endblock %}</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
 <header>
-    <h1>e-Library → ИРБИС 64</h1>
     <nav>
-        <a href="{{ url_for('converter.index') }}">Главная</a>
-        <a href="{{ url_for('converter.upload_files') }}">Загрузка</a>
+        <a href="{{ url_for('converter.index') }}">main</a>
+        <a href="{{ url_for('converter.upload_files') }}">elibrary-excel</a>
+        <a href="{{ url_for('converter.upload_txt_key_file') }}">key-extractor</a>
+        <a href="{{ url_for('converter.upload_excel_key_file') }}">key-converter</a>
     </nav>
 </header>
 
@@ -19,7 +20,7 @@
 </main>
 
 <footer>
-    <small>© Конвертер библиографических данных</small>
+    <small>© Андрей Гасилин, 2026</small>
 </footer>
 </body>
 </html>

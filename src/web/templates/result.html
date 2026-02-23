@@ -8,15 +8,6 @@
 <h3>Excel (для редактирования)</h3>
 <ul>
     {% for file in excel_files %}
-        <li>{{ file.name }}</li>
-    {% else %}
-        <li>Файлы отсутствуют</li>
-    {% endfor %}
-</ul>
-
-<h3>Файлы ИРБИС</h3>
-<ul>
-    {% for file in irbis_files %}
         <li>
             <a href="{{ url_for('converter.download_file', filename=file.name) }}">
                 {{ file.name }}

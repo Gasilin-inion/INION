@@ -17,3 +17,39 @@
 2026-01-31 01:16:41 | eLibrary_to_IRBIS.src.converters.excel_irbis_test | INFO | excel_irbis_test:156 | Строк в Excel: 12
 2026-01-31 01:16:41 | eLibrary_to_IRBIS.src.converters.excel_irbis_test | INFO | excel_irbis_test:177 | Создан файл ИРБИС: C:\Users\yotto\YandexDisk-gasilin@inion.ru\Developments\e-Library_to_IRBIS\resources\files_to_import_to_IRBIS\files_to_edit_output_9.txt
 2026-01-31 01:16:41 | eLibrary_to_IRBIS.src.converters.excel_irbis_test | INFO | excel_irbis_test:141 | Завершена обработка: 1 файлов обработано, 1 TXT создано
+2026-02-21 12:10:32 | eLibrary_to_IRBIS.src.converters.elibrary_excel_test | INFO | elibrary_excel_test:133 | Обработка файла: view-source_https___elibrary.ru_item.asp_id83175252.html
+2026-02-21 12:10:35 | eLibrary_to_IRBIS.src.converters.elibrary_excel_test | INFO | elibrary_excel_test:133 | Обработка файла: view-source_https___elibrary.ru_item.asp_id83175253.html
+2026-02-21 12:10:36 | eLibrary_to_IRBIS.src.converters.elibrary_excel_test | INFO | elibrary_excel_test:458 | Создан Excel-файл: C:\Users\yotto\YandexDisk-gasilin@inion.ru\Developments\e-Library_to_IRBIS\resources\files_to_edit\Galactica media: Journal of media studies_7.xlsx (записей: 2, столбцов: 18)
+2026-02-21 12:10:36 | eLibrary_to_IRBIS.src.converters.elibrary_excel_test | INFO | elibrary_excel_test:162 | Готово: 2 записей, 3.6 сек, файл: Galactica media: Journal of media studies_7.xlsx
+2026-02-21 12:10:36 | eLibrary_to_IRBIS.src.converters.excel_irbis_test | INFO | excel_irbis_test:112 | Начата обработка 1 Excel‑файлов
+2026-02-21 12:10:36 | eLibrary_to_IRBIS.src.converters.excel_irbis_test | INFO | excel_irbis_test:132 | Обработка Excel: Galactica media: Journal of media studies_7.xlsx → files_to_edit_Galactica media: Journal of media studies_7.txt
+2026-02-21 12:10:36 | eLibrary_to_IRBIS.src.converters.excel_irbis_test | INFO | excel_irbis_test:156 | Строк в Excel: 2
+2026-02-21 12:10:36 | eLibrary_to_IRBIS.src.converters.excel_irbis_test | INFO | excel_irbis_test:177 | Создан файл ИРБИС: C:\Users\yotto\YandexDisk-gasilin@inion.ru\Developments\e-Library_to_IRBIS\resources\files_to_import_to_IRBIS\files_to_edit_Galactica media: Journal of media studies_7.txt
+2026-02-21 12:10:36 | eLibrary_to_IRBIS.src.converters.excel_irbis_test | INFO | excel_irbis_test:141 | Завершена обработка: 1 файлов обработано, 1 TXT создано
+2026-02-21 12:40:40 | eLibrary_to_IRBIS.src.converters.elibrary_excel_test | INFO | elibrary_excel_test:133 | Обработка файла: view-source_https___elibrary.ru_item.asp_id83175252.html
+2026-02-21 12:40:44 | eLibrary_to_IRBIS.src.converters.elibrary_excel_test | INFO | elibrary_excel_test:133 | Обработка файла: view-source_https___elibrary.ru_item.asp_id83175253.html
+2026-02-21 12:40:46 | eLibrary_to_IRBIS.src.converters.elibrary_excel_test | INFO | elibrary_excel_test:458 | Создан Excel-файл: C:\Users\yotto\YandexDisk-gasilin@inion.ru\Developments\e-Library_to_IRBIS\resources\files_to_edit\Galactica media: Journal of media studies_7.xlsx (записей: 2, столбцов: 18)
+2026-02-21 12:40:46 | eLibrary_to_IRBIS.src.converters.elibrary_excel_test | INFO | elibrary_excel_test:162 | Готово: 2 записей, 6.0 сек, файл: Galactica media: Journal of media studies_7.xlsx
+2026-02-21 12:45:56 | eLibrary_to_IRBIS.src.converters.elibrary_excel_test | INFO | elibrary_excel_test:133 | Обработка файла: view-source_https___elibrary.ru_item.asp_id83175252.html
+2026-02-21 12:45:58 | eLibrary_to_IRBIS.src.converters.elibrary_excel_test | INFO | elibrary_excel_test:133 | Обработка файла: view-source_https___elibrary.ru_item.asp_id83175253.html
+2026-02-21 12:46:00 | eLibrary_to_IRBIS.src.converters.elibrary_excel_test | INFO | elibrary_excel_test:458 | Создан Excel-файл: C:\Users\yotto\YandexDisk-gasilin@inion.ru\Developments\e-Library_to_IRBIS\resources\files_to_edit\Galactica media: Journal of media studies_7.xlsx (записей: 2, столбцов: 18)
+2026-02-21 12:46:00 | eLibrary_to_IRBIS.src.converters.elibrary_excel_test | INFO | elibrary_excel_test:162 | Готово: 2 записей, 3.7 сек, файл: Galactica media: Journal of media studies_7.xlsx
+2026-02-21 12:50:21 | eLibrary_to_IRBIS.src.converters.elibrary_excel_test | INFO | elibrary_excel_test:133 | Обработка файла: view-source_https___elibrary.ru_item.asp_id83175253.html
+2026-02-21 12:50:23 | eLibrary_to_IRBIS.src.converters.elibrary_excel_test | INFO | elibrary_excel_test:133 | Обработка файла: view-source_https___elibrary.ru_item.asp_id83175252.html
+2026-02-21 12:50:25 | eLibrary_to_IRBIS.src.converters.elibrary_excel_test | INFO | elibrary_excel_test:458 | Создан Excel-файл: C:\Users\yotto\YandexDisk-gasilin@inion.ru\Developments\e-Library_to_IRBIS\resources\files_to_edit\Galactica media: Journal of media studies_7.xlsx (записей: 2, столбцов: 18)
+2026-02-21 12:50:25 | eLibrary_to_IRBIS.src.converters.elibrary_excel_test | INFO | elibrary_excel_test:162 | Готово: 2 записей, 3.4 сек, файл: Galactica media: Journal of media studies_7.xlsx
+2026-02-21 13:06:34 | eLibrary_to_IRBIS.src.converters.elibrary_excel_test | INFO | elibrary_excel_test:133 | Обработка файла: view-source_https___elibrary.ru_item.asp_id83175257.html
+2026-02-21 13:06:38 | eLibrary_to_IRBIS.src.converters.elibrary_excel_test | INFO | elibrary_excel_test:133 | Обработка файла: view-source_https___elibrary.ru_item.asp_id83175256.html
+2026-02-21 13:06:39 | eLibrary_to_IRBIS.src.converters.elibrary_excel_test | INFO | elibrary_excel_test:458 | Создан Excel-файл: C:\Users\yotto\YandexDisk-gasilin@inion.ru\Developments\e-Library_to_IRBIS\resources\files_to_edit\Galactica media: Journal of media studies_7.xlsx (записей: 2, столбцов: 18)
+2026-02-21 13:06:39 | eLibrary_to_IRBIS.src.converters.elibrary_excel_test | INFO | elibrary_excel_test:162 | Готово: 2 записей, 4.9 сек, файл: Galactica media: Journal of media studies_7.xlsx
+2026-02-21 21:47:49 | eLibrary_to_IRBIS.src.converters.elibrary_excel_test | INFO | elibrary_excel_test:133 | Обработка файла: Galactica_media_2025_7_4.xlsx
+2026-02-21 21:47:49 | eLibrary_to_IRBIS.src.converters.elibrary_excel_test | ERROR | elibrary_excel_test:250 | Ошибка при обработке C:\Users\yotto\YandexDisk-gasilin@inion.ru\Developments\e-Library_to_IRBIS\resources\files_to_process\Galactica_media_2025_7_4.xlsx: 'utf-8' codec can't decode byte 0xf8 in position 14: invalid start byte
+Traceback (most recent call last):
+  File "c:\Users\yotto\YandexDisk-gasilin@inion.ru\Developments\e-Library_to_IRBIS\src\converters\elibrary_excel_test.py", line 189, in _process_html
+    strings = path.read_text(encoding="utf-8").splitlines()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\pathlib.py", line 1237, in read_text
+    return f.read()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\codecs.py", line 322, in decode
+    (result, consumed) = self._buffer_decode(data, self.errors, final)
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xf8 in position 14: invalid start byte
+2026-02-21 21:47:49 | eLibrary_to_IRBIS.src.converters.elibrary_excel_test | WARNING | elibrary_excel_test:142 | Нет данных для записи в Excel

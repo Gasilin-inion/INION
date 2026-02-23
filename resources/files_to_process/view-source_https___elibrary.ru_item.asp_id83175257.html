@@ -4,26 +4,26 @@
 <html>
 <head>
 
-<meta name="robots" content="noarchive, nofollow">
+<meta name="robots" content="noarchive">
 
-<meta name="description" content='Da Mata J.V.T.
-Философия. Журнал Высшей школы экономики, 2025'>
-<title>The Development of Vasiliev’s Ideas and Paraconsistent Logic in Russia and Outside: A Review of the Second Russian Edition of Vasiliev’s “Imaginary Logic”</title>
+<meta name="description" content='Фауль Б.В.
+Galactica Media: Journal of Media Studies, 2025'>
+<title>Ретрибутивные эмоции и ретрибутивные интуиции</title>
 
 <meta property="og:image" content="https://elibrary.ru/images/orgs_access.png" />
-<meta property="og:title" content='The Development of Vasiliev’s Ideas and Paraconsistent Logic in Russia and Outside: A Review of the Second Russian Edition of Vasiliev’s “Imaginary Logic”' />
+<meta property="og:title" content='Ретрибутивные эмоции и ретрибутивные интуиции' />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://elibrary.ru/tgswei" />
+<meta property="og:url" content="https://elibrary.ru/gefcav" />
 <meta property="og:site_name" content="eLIBRARY.RU"/>
-<meta property="og:description" content='Da Mata J.V.T.
-Философия. Журнал Высшей школы экономики, 2025' />
+<meta property="og:description" content='Фауль Б.В.
+Galactica Media: Journal of Media Studies, 2025' />
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
 
-<link rel="canonical" href="https://elibrary.ru/item.asp?id=88765422"/>
+<link rel="canonical" href="https://elibrary.ru/item.asp?id=83175257"/>
 
 
-<meta name="doi" content="10.17323/2587-8719-2025-4-267-274">
+<meta name="doi" content="10.46539/gmd.v7i4.706">
 
 
 <script type="text/javascript" src="/jquery.min.js"></script>
@@ -97,7 +97,7 @@ function email_article(){
 		alerts("Не указан адрес электронной почты!");}
 	else{
 		$.fancybox({
-			href : '/email_article.asp?id=88765422&email='+document.forms["results"].email.value+'&rand=' + Math.random(),
+			href : '/email_article.asp?id=83175257&email='+document.forms["results"].email.value+'&rand=' + Math.random(),
 			title : '',
 			padding : 20,     
 			width : 400,
@@ -121,7 +121,7 @@ function show_itemrefs(){
 function edit_notes(){
 
   $.fancybox({
-    href : '/item_notes_add.asp?itemid=88765422&rand=' + Math.random(),
+    href : '/item_notes_add.asp?itemid=83175257&rand=' + Math.random(),
     title : '',
 	  padding : 20,     
 	  width : 520,
@@ -139,7 +139,7 @@ function edit_notes(){
 function add_link(link){
 
   $.fancybox({
-      href : '/itemlink_add.asp?itemid=88765422&linkid='+link+'&rand=' + Math.random(),
+      href : '/itemlink_add.asp?itemid=83175257&linkid='+link+'&rand=' + Math.random(),
       title : '',
 	  padding : 20,     
 	  width : 520,
@@ -155,32 +155,59 @@ function add_link(link){
 }
 function reply_comments(commentid){
 
-  alerts("Для того, чтобы участвовать в обсуждении публикаций, необходимо зарегистрироваться в системе Science Index в качестве автора научных публикаций!");
-  document.getElementById("win_login").className = "expanded";
-  document.getElementById("img_login").src = w_up.src;
-  document.forms["login"].login.focus();
+  $.fancybox({
+      href : '/itemcomments_add.asp?itemid=83175257&reply=1&commentid=' + commentid + '&rand=' + Math.random(),
+      title : '',
+	  padding : 20,     
+	  width : 520,
+	  height : 300,
+	  overlayOpacity : 0.3,	
+	  overlayColor : '#000',
+	  speedIn : 500,
+	  hideOnOverlayClick : false,
+	  enableEscapeButton : true,
+	  type : 'iframe'
+    });
 
 }
 function edit_comments(commentid){
 
-  alerts("Для того, чтобы участвовать в обсуждении публикаций, необходимо зарегистрироваться в системе Science Index в качестве автора научных публикаций!");
-  document.getElementById("win_login").className = "expanded";
-  document.getElementById("img_login").src = w_up.src;
-  document.forms["login"].login.focus();
+  $.fancybox({
+      href : '/itemcomments_add.asp?itemid=83175257&reply=0&commentid=' + commentid + '&rand=' + Math.random(),
+      title : '',
+	  padding : 20,     
+	  width : 520,
+	  height : 300,
+	  overlayOpacity : 0.3,	
+	  overlayColor : '#000',
+	  speedIn : 500,
+	  hideOnOverlayClick : false,
+	  enableEscapeButton : true,
+	  type : 'iframe'
+    });
 
 }
 function new_comments(){
 
-  alerts("Для того, чтобы участвовать в обсуждении публикаций, необходимо зарегистрироваться в системе Science Index в качестве автора научных публикаций!");
-  document.getElementById("win_login").className = "expanded";
-  document.getElementById("img_login").src = w_up.src;
-  document.forms["login"].login.focus();
+  $.fancybox({
+      href : '/itemcomments_add.asp?itemid=83175257&reply=0&commentid=&rand=' + Math.random(),
+      title : '',
+	  padding : 20,     
+	  width : 520,
+	  height : 300,
+	  overlayOpacity : 0.3,	
+	  overlayColor : '#000',
+	  speedIn : 500,
+	  hideOnOverlayClick : false,
+	  enableEscapeButton : true,
+	  type : 'iframe'
+    });
 
 }
 
 function translate_abstract(){
   $.fancybox({
-      href : '/translate_abstract.asp?id=88765422&rand=' + Math.random(),
+      href : '/translate_abstract.asp?id=83175257&rand=' + Math.random(),
       title : '',
 	  padding : 20,     
 	  width : 640,
@@ -313,7 +340,7 @@ function itembox_adds(){
 }
 function for_reference(){
     $.fancybox({
-      href : 'for_reference.asp?id=88765422&rand=' + Math.random(),
+      href : 'for_reference.asp?id=83175257&rand=' + Math.random(),
       title : '',
 			padding : 20,     
 			width : 480,
@@ -361,7 +388,7 @@ function qr_code(dd){
 <tr><td><div style="height:10px;"></div></td></tr>
 <tr><td width=150 align=center valign=top>
 
-<a href="title_about_new.asp?id=64435"><img src="/itemfiles/0/8/8/7/6/5/4/1/0//front.png" border=0 width=120 title='О журнале "Философия. Журнал Высшей школы экономики"' style="behavior: url(/pie/PIE.htc); box-shadow: 1px 2px 3px #888;" hspace=0></a>
+<a href="title_about_new.asp?id=70829"><img src="/itemfiles/0/8/3/1/7/5/2/4/9//Cover-Rus.png" border=0 width=120 title='О журнале "Galactica Media: Journal of Media Studies"' style="behavior: url(/pie/PIE.htc); box-shadow: 1px 2px 3px #888;" hspace=0></a>
 
 </td></tr>
 
@@ -383,16 +410,16 @@ else {
 </td></tr>
 </table>
 
-<div ID="win_basket" class="collapsed">
+<div ID="win_basket" class="expanded">
 <div style="height: 10px;"></div>
 
 <table border=0 cellspacing=0 cellpadding=2 width=140>
 
 <tr><td width=100% align=center valign=top>
 <div style="height: 2px;"></div>
-&nbsp;<font color=#000000>Всего в корзине:&nbsp;</font><font color=#00008f><b><span id="basket_num">0</span></b>&nbsp;публ.</font></td></tr>
+&nbsp;<font color=#000000>Всего в корзине:&nbsp;</font><font color=#00008f><b><span id="basket_num">1</span></b>&nbsp;публ.</font></td></tr>
 <tr><td width=100% align=center valign=top>
-&nbsp;<font color=#000000>на сумму:&nbsp;</font><font color=#00008f><b><span id="basket_sum">0</span></b>&nbsp;руб.</font></td></tr>
+&nbsp;<font color=#000000>на сумму:&nbsp;</font><font color=#00008f><b><span id="basket_sum">250</span></b>&nbsp;руб.</font></td></tr>
 </td></tr>
 
 </table>
@@ -525,6 +552,8 @@ function search_enter(event){
 <tr valign=top><td align=center><img src="/images/bl_kv.gif" border=0 width=7 height=7 hspace=3 class="shadow"></td><td align=left><a href="/rubrics.asp">РУБРИКАТОР</a></td></tr>
 <tr valign=top><td align=center><img src="/images/bl_kv.gif" border=0 width=7 height=7 hspace=3 class="shadow"></td><td align=left><a href="/region_compare.asp">РЕГИОНЫ</a></td></tr>
 
+<tr valign=top><td align=center><img src="/images/bl_kv.gif" border=0 width=7 height=7 hspace=3 class="shadow"></td><td align=left><a href="/refs.asp">ССЫЛКИ</a></td></tr>
+
 <tr valign=top><td align=center><img src="/images/bl_kv.gif" border=0 width=7 height=7 hspace=3 class="shadow"></td><td align=left><a href="/itembox.asp">ПОДБОРКИ</a></td></tr>
 
 
@@ -574,19 +603,25 @@ function end_session(){
 <tr><td width=100% align=left valign=top>
 &nbsp;<font color=#000000>Имя пользователя:</font></td></tr>
 <tr><td width=100% align=center valign=top>
-<font color=#00008f><a href="author_info.asp?isold=1" title="Персональная карточка пользователя">sitnikov69&nbsp;</a></font></td></tr>
+<font color=#00008f><a href="author_info.asp?isold=1" title="Персональная карточка пользователя">Gasilin&nbsp;</a></font></td></tr>
+
+<tr><td width=100% align=left valign=top>
+<div style="height: 2px;"></div>
+&nbsp;<font color=#000000>SPIN-код автора:</font></td></tr>
+<tr><td width=100% align=center valign=top>
+<font color=#00008f><a href="author_info.asp?isold=1" title="Персональная карточка автора">2001-2738</a></font></td></tr>
 
 <tr><td width=100% align=left valign=top>
 <div style="height: 2px;"></div>
 &nbsp;<font color=#000000>IP-адрес компьютера:</font></td></tr>
 <tr><td width=100% align=center valign=top>
-<font color=#00008f>89.175.21.183</font></td></tr>
+<font color=#00008f>128.70.161.1</font></td></tr>
 <tr><td width=100% align=left valign=top>
 <div style="height: 2px;"></div>
 &nbsp;<font color=#000000>Название организации:</font></td></tr>
 <tr><td width=100% align=center valign=top>
 
-<font color=#00008f>не определена</font></td></tr>
+<font color=#00008f><a href="/org_about.asp?orgsid=11">Институт научной информации по общественным наукам РАН</a></font></td></tr>
 
 
 <tr><td width=100% align=left valign=top>
@@ -594,12 +629,12 @@ function end_session(){
 &nbsp;<font color=#000000>Начало работы:</font></td></tr>
 
 <tr><td width=100% align=center valign=top>
-<font color=#00008f>27.01.2026 12:25</font></td></tr>
+<font color=#00008f>21.02.2026 11:37</font></td></tr>
 <tr><td width=100% align=left valign=top>
 <div style="height: 2px;"></div>
 &nbsp;<font color=#000000>Время работы:</font></td></tr>
 <tr><td width=100% align=center valign=top>
-<font color=#00008f>00:15</font></td></tr>
+<font color=#00008f>01:20</font></td></tr>
 </table>
 
 <div style="height: 10px;"></div>
@@ -775,8 +810,8 @@ function end_session(){
 
 <table width=200 cellspacing=0 cellpadding=3 border=0>
 <tr><td width=12% align=right valign=top>
-<a href="https://t.me/elibrary_ru_official/9" target=_blank><img src="/images/telegram.svg" width=24 height=24 border=0></a></td>
-<td width=88% align=left valign=middle><font color=#00008f><a href="https://t.me/elibrary_ru_official/9" target=_blank>Официальный Telegram-канал Научной электронной библиотеки eLIBRARY.RU</a></font>
+<a href="https://t.me/elibrary_ru_official/84" target=_blank><img src="/images/telegram.svg" width=24 height=24 border=0></a></td>
+<td width=88% align=left valign=middle><font color=#00008f><a href="https://t.me/elibrary_ru_official/84" target=_blank>SCIENCE ONLINE возвращается!</a></font>
 </td></tr>
 </table>
 </td></tr>
@@ -790,12 +825,12 @@ function end_session(){
 <table width=550 cellspacing=0 cellpadding=3 border=0>
 <tr valign=middle>
 <td width=2%></td>
-<td width=25% align=left>eLIBRARY ID:&nbsp;<font color=#00008f><a href="item.asp?id=88765422" rel="nofollow">88765422</a></font></td>
-<td width=15% align=center>EDN:&nbsp;<font color=#00008f><a href="/tgswei" rel="nofollow">TGSWEI</a></font></td>
+<td width=25% align=left>eLIBRARY ID:&nbsp;<font color=#00008f><a href="item.asp?id=83175257" rel="nofollow">83175257</a></font></td>
+<td width=15% align=center>EDN:&nbsp;<font color=#00008f><a href="/gefcav" rel="nofollow">GEFCAV</a></font></td>
 
-<td align=left width=5%><a href='javascript:qr_code("tgswei")' rel="nofollow"><img src="/images/qr_code2.png" width=16 height=16 class='help' title="Сгенерировать QR код для ссылки на этот документ"></a></td>
+<td align=left width=5%><a href='javascript:qr_code("gefcav")' rel="nofollow"><img src="/images/qr_code2.png" width=16 height=16 class='help' title="Сгенерировать QR код для ссылки на этот документ"></a></td>
 
-<td width=53% align=right>DOI:&nbsp;<font color=#00008f><a href=https://doi.org/10.17323/2587-8719-2025-4-267-274 target=_blank rel=nofollow>10.17323/2587-8719-2025-4-267-274</a></font></td>
+<td width=53% align=right>DOI:&nbsp;<font color=#00008f><a href=https://doi.org/10.46539/gmd.v7i4.706 target=_blank rel=nofollow>10.46539/gmd.v7i4.706</a></font></td>
 </tr>
 
 </table>
@@ -804,7 +839,7 @@ function end_session(){
 <table width=550 cellspacing=0 cellpadding=3 border=0 style="table-layout: fixed;">
 <tr align=center valign=middle>
 <td width=4></td>
-<td width=534><span style="font-size: 9pt; color: #000000; overflow-wrap: break-word;"><b><p class='bigtext' style='color: #F26C4F;'>THE DEVELOPMENT OF VASILIEV’S IDEAS AND PARACONSISTENT LOGIC IN RUSSIA AND OUTSIDE: A REVIEW OF THE SECOND RUSSIAN EDITION OF VASILIEV’S “IMAGINARY LOGIC”</p></b></span></td></tr>
+<td width=534><span style="font-size: 9pt; color: #000000; overflow-wrap: break-word;"><b><p class='bigtext' style='color: #F26C4F;'>РЕТРИБУТИВНЫЕ ЭМОЦИИ И РЕТРИБУТИВНЫЕ ИНТУИЦИИ</p></b></span></td></tr>
 </table>
 
 <div style="width:580px; margin:0; border:0; padding:0; ">
@@ -815,9 +850,9 @@ function end_session(){
 <tr>
 <td width=24></td>
 <td width=514 valign=middle align=center>
-<div style='display: inline-block; white-space: nowrap'><b><font color=#00008f>DA&nbsp;MATA&nbsp;J.V.T.</font></b><font color=#000000><sup>1</sup></font></div>
+<div style='display: inline-block; white-space: nowrap'><span class='help pointer' title='<b><font color=#F26C4F>Фауль Богдан Владимирович</font></b><br>Русская христианская гуманитарная академия им. Ф.М. Достоевского<br><a href="author_profile.asp?authorid=1122075" target=_blank>Профиль автора в SCIENCE INDEX</a><br><a href="author_items.asp?authorid=1122075" target=_blank rel=nofollow>Список публикаций в РИНЦ</a>'><b><font color=#00008f>ФАУЛЬ&nbsp;Б.В.</font></b></span><a href='mailto:faulbogdan@gmail.com' rel=nofollow><img src='/images/mail1.gif' border=0 hspace=2 height=8 width=10 class='help pointer' title='Написать письмо автору'></a><img src='/images/about_author.gif' border=0 hspace=2 height=10 width=9 class='help pointer' title='ORCID:&nbsp;<a href="https://orcid.org/0000-0001-9680-9944" target=_blank rel=nofollow>0000-0001-9680-9944</a>&nbsp;&nbsp; '><font color=#000000><sup>1</sup></font></div>
 <div style="height:10px;"></div>
-<font color=#000000><sup>1</sup></font>&nbsp;<font color=#00008f>Brazilian Logic Society</font>, Brasilia, Brazil<br>
+<font color=#000000><sup>1</sup></font>&nbsp;<span class='help1 pointer' title='<b><font color=#F26C4F>Национальный исследовательский университет "Высшая школа экономики"</font></b> (Москва)<br><a href="org_profile.asp?id=421" target=_blank>Профиль организации в SCIENCE INDEX</a><br><a href="org_items.asp?orgsid=421" target=_blank rel=nofollow>Список публикаций в РИНЦ</a>'><font color=#00008f>Национальный исследовательский университет «Высшая школа экономики» (НИУ ВШЭ СПб)</font></span>, Санкт-Петербург, Россия<br>
 </td></tr>
 </table>
 
@@ -830,18 +865,18 @@ function end_session(){
 
 
 <tr><td width=574 align=center valign=middle>
-Тип:&nbsp;<font color=#00008f>статья в журнале - рецензия</font>
-<span style="margin-left:20px;"></span>Язык:&nbsp;<font color=#00008f>английский</font>
+Тип:&nbsp;<font color=#00008f>статья в журнале - научная статья</font>
+<span style="margin-left:20px;"></span>Язык:&nbsp;<font color=#00008f>русский</font>
 </td></tr>
 
 <tr><td></td></tr>
 
 <tr><td width=574 align=center valign=middle>
-Том:&nbsp;<font color=#00008f>9</font><span style="margin-left:20px;"></span>Номер:&nbsp;<a href="contents.asp?id=88765410&selid=88765422" title="Содержание выпуска">4</a>
+Том:&nbsp;<font color=#00008f>7</font><span style="margin-left:20px;"></span>Номер:&nbsp;<a href="contents.asp?id=83175249&selid=83175257" title="Содержание выпуска">4</a>
 <span style="margin-left:20px;"></span>Год:&nbsp;<font color=#00008f>2025</font>
 
-<span style="margin-left:20px;"></span><div style='display: inline-block; white-space: nowrap'>Страницы:&nbsp;<font color=#00008f>267-274</font></div>
-
+<span style="margin-left:20px;"></span><div style='display: inline-block; white-space: nowrap'>Страницы:&nbsp;<font color=#00008f>174-197</font></div>
+<div style="height:5px;"></div><span style="margin-left:20px;"></span>Поступила&nbsp;в&nbsp;редакцию:&nbsp;<font color=#00008f>04.08.2025</font><span style="margin-left:20px;"></span>Принята&nbsp;к&nbsp;печати:&nbsp;<font color=#00008f>17.09.2025</font>
 
 
 </td></tr>
@@ -859,14 +894,43 @@ function end_session(){
 <tr><td width=34>&nbsp;</td><td width=504 align=left valign=middle>
 <div style="height:3px;"></div>
 
-<a href="contents.asp?id=88765410" title="Содержание выпусков этого журнала">PHILOSOPHY. JOURNAL OF THE HIGHER SCHOOL OF ECONOMICS</a>
-<br>Учредители:&nbsp;Национальный исследовательский университет "Высшая школа экономики"
+<a href="contents.asp?id=83175249" title="Содержание выпусков этого журнала">GALACTICA MEDIA: JOURNAL OF MEDIA STUDIES</a>
+<br>Учредители:&nbsp;ООО НПО "Генезис.Фронтир.Наука"
 <br>
-eISSN:&nbsp;<font color=#00008f>2587-8719</font><span style="margin-left:20px;"></span>
+eISSN:&nbsp;<font color=#00008f>2658-7734</font><span style="margin-left:20px;"></span>
 
 </td></tr></table>
 
 
+
+<div style="height:10px;"></div>
+<table width=550 border=0 cellspacing=0 cellpadding=3>
+<tr><td colspan=2 align=left>
+<font color=#000000>КЛЮЧЕВЫЕ СЛОВА:</font></td></tr>
+<tr><td width=34>&nbsp;</td><td width=504 align=left valign=middle>
+<div style="height:3px;"></div>
+<a href="keyword_items.asp?id=5766884" rel=nofollow>РЕТРИБУТИВИЗМ</a>, 
+<a href="keyword_items.asp?id=2473372" rel=nofollow>ЭМОЦИИ</a>, 
+<a href="keyword_items.asp?id=1066513" rel=nofollow>МОРАЛЬНАЯ ЭПИСТЕМОЛОГИЯ</a>, 
+<a href="keyword_items.asp?id=26675475" rel=nofollow>ЭВОЛЮЦИОННОЕ РАЗОБЛАЧЕНИЕ</a>, 
+<a href="keyword_items.asp?id=942053" rel=nofollow>РАЦИОНАЛИЗМ</a>, 
+<a href="keyword_items.asp?id=943220" rel=nofollow>ГНЕВ</a>, 
+<a href="keyword_items.asp?id=28363749" rel=nofollow>МОРАЛЬНЫЙ СЕНТИМЕНТАЛИЗМ</a>, 
+<a href="keyword_items.asp?id=943917" rel=nofollow>НАКАЗАНИЕ</a>, 
+<a href="keyword_items.asp?id=11759077" rel=nofollow>НОРМАТИВНЫЕ ОСНОВАНИЯ</a>, 
+<a href="keyword_items.asp?id=7581821" rel=nofollow>МОРАЛЬНАЯ ПСИХОЛОГИЯ</a>
+</td></tr>
+</table>
+
+<div style="height:10px;"></div>
+<table width=550 border=0 cellspacing=0 cellpadding=3>
+<tr><td colspan=2 align=left>
+<font color=#000000>АННОТАЦИЯ:</font></td></tr>
+<tr><td width=34>&nbsp;</td><td width=504 align=left valign=middle>
+
+<div id="abstract1" style="width:504px; border:0; margin:0; padding:0; text-align:left;"><p align=justify style='margin-top: 0.3em;'>Статья посвящена одной из ключевых проблем морального обоснования в нормативной этике - соотношению эмоций и ретрибутивных моральных суждений. Ретрибутивизм утверждает, что существуют нормативные основания для поощрения или наказания индивидов на основании заслуженности, независимо от последствий. Распространённое возражение против этой позиции заключается в том, что такие убеждения основаны на ретрибутивных эмоциях, которые считаются ненадёжным фундаментом для морального мышления. Цель исследования - проанализировать и оценить силу «аргумента от ретрибутивных эмоций» в его двух основных формах: эволюционного разоблачения и морального рационализма. В статье показано, что стратегии эволюционного разоблачения, разработанные Джоша Грином и Исааком Вигманом, не подрывают ретрибутивные интуиции, так как гнев не является ни необходимым, ни уникальным основанием этих суждений. Аналогично, рационалистские возражения оказываются недостаточно убедительными, поскольку моральное мышление глубоко связано с аффективными процессами, о чём свидетельствуют эмпирические исследования, анализируемые Шауном Никольсом и другими авторами. Результаты исследования показывают, что ретрибутивные интуиции не могут быть отклонены лишь на основании их эмоциональной природы.</div>
+
+</td></tr></table>
 
 
 
@@ -893,9 +957,9 @@ eISSN:&nbsp;<font color=#00008f>2587-8719</font><span style="margin-left:20px;">
 
 
 <tr align=left valign=bottom>
-<td><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Наличие в РИНЦ информации о рецензировании данной публикации.</p>'>&nbsp;&nbsp;Рецензии:&nbsp;<font color=#00008f>нет данных</font></td>
+<td><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Наличие в РИНЦ информации о рецензировании данной публикации.</p>'>&nbsp;&nbsp;Рецензии:&nbsp;<font color=#00008f>есть</font></td>
 
-<td><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Процентиль журнала в рейтинге Science Index за 2023 год.</p>'>&nbsp;&nbsp;Процентиль журнала в рейтинге SI:&nbsp;<font color=#00008f>22</font></td>
+<td><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Процентиль журнала в рейтинге Science Index за 2023 год.</p>'>&nbsp;&nbsp;Процентиль журнала в рейтинге SI:&nbsp;<font color=#00008f>32</font></td>
 
 </tr>
 
@@ -914,7 +978,7 @@ eISSN:&nbsp;<font color=#00008f>2587-8719</font><span style="margin-left:20px;">
 <table width=100% border=0 cellspacing=0 cellpadding=3>
 
 <tr align=left valign=top>
-<td width=27%><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Основная рубрика публикации в соответствии с рубрикатором OECD. Авторы, зарегистрированные в системе Science Index, имеют возможность уточнять тематические рубрики своих публикаций.</p>'>&nbsp;&nbsp;Рубрика&nbsp;OECD:&nbsp;</td><td width=73%><font color=#00008f><span id="rubric_oecd">нет</span></font></td>
+<td width=27%><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Основная рубрика публикации в соответствии с рубрикатором OECD. Авторы, зарегистрированные в системе Science Index, имеют возможность уточнять тематические рубрики своих публикаций.</p>'>&nbsp;&nbsp;Рубрика&nbsp;OECD:&nbsp;</td><td width=73%><font color=#00008f><span id="rubric_oecd">Philosophy, ethics and religion</span></font></td>
 </tr>
 </table>
 
@@ -959,16 +1023,16 @@ eISSN:&nbsp;<font color=#00008f>2587-8719</font><span style="margin-left:20px;">
 <table width=100% border=0 cellspacing=0 cellpadding=3>
 <tr align=left valign=bottom>
 
-<td width=30%><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Число просмотров страницы с описанием и аннотацией публикации посетителями elibrary.ru. Учитываются все просмотры, в том числе сделанные незарегистрированными пользователями. Повторные просмотры одним и тем же пользователем не учитываются. Зависит от года издания и появления публикации на сайте. В скобках указано число зарегистрированных пользователей, просматривавших данную страницу.</p>'>&nbsp;&nbsp;Просмотров:&nbsp;<font color=#00008f>0 (0)</font></td>
+<td width=30%><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Число просмотров страницы с описанием и аннотацией публикации посетителями elibrary.ru. Учитываются все просмотры, в том числе сделанные незарегистрированными пользователями. Повторные просмотры одним и тем же пользователем не учитываются. Зависит от года издания и появления публикации на сайте. В скобках указано число зарегистрированных пользователей, просматривавших данную страницу.</p>'>&nbsp;&nbsp;Просмотров:&nbsp;<font color=#00008f>23 (13)</font></td>
 
-<td width=35%><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Число загрузок полного текста публикации посетителями elibrary.ru. Если полный текст публикации отсутствует на elibrary.ru, показатель не рассчитывается. Повторные загрузки одним и тем же пользователем не учитываются. Зависит от года издания и появления публикации на сайте, а также от режима доступа к полному тексту (открытый или по подписке). В скобках указано число уникальных авторов, загрузивших данную публикацию.</p>'>&nbsp;&nbsp;Загрузок:&nbsp;<font color=#00008f>0 (0)</font></td>
+<td width=35%><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Число загрузок полного текста публикации посетителями elibrary.ru. Если полный текст публикации отсутствует на elibrary.ru, показатель не рассчитывается. Повторные загрузки одним и тем же пользователем не учитываются. Зависит от года издания и появления публикации на сайте, а также от режима доступа к полному тексту (открытый или по подписке). В скобках указано число уникальных авторов, загрузивших данную публикацию.</p>'>&nbsp;&nbsp;Загрузок:&nbsp;<font color=#00008f>9 (6)</font></td>
 
-<td width=35%><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Число персональных подборок пользователей elibrary.ru, которые включают данную публикацию.</p>'>&nbsp;&nbsp;Включено в подборки:&nbsp;<font color=#00008f>0</font></td>
+<td width=35%><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Число персональных подборок пользователей elibrary.ru, которые включают данную публикацию.</p>'>&nbsp;&nbsp;Включено в подборки:&nbsp;<font color=#00008f>4</font></td>
 </tr>
 
 <tr align=left valign=bottom>
 
-<td width=30%><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Число оценок публикации, сделанных учеными, зарегистрированными в системе Science Index. Для просмотра распределения оценок щелкните мышью на этом числе.</p>'>&nbsp;&nbsp;Всего оценок:&nbsp;<font color=#00008f><span id="score_count">0</span></font></td>
+<td width=30%><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Число оценок публикации, сделанных учеными, зарегистрированными в системе Science Index. Для просмотра распределения оценок щелкните мышью на этом числе.</p>'>&nbsp;&nbsp;Всего оценок:&nbsp;<font color=#00008f><span id="score_count"><a href="javascript:item_all_scores()" title="Посмотреть распределение оценок" rel=nofollow>1</a></span></font></td>
 
 <td width=35%><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Средняя оценка публикации учеными, зарегистрированными в системе Science Index. Значение соответствует следующим уровням оценки публикации:</p><br><table width=100% cellspacing=0 cellpadding=3 border=0>
 <tr><td width=15% align=center valign=top>
@@ -997,7 +1061,7 @@ eISSN:&nbsp;<font color=#00008f>2587-8719</font><span style="margin-left:20px;">
 </td>
 <td align=left valign=top><div>не научная, нарушающая научную этику или очень слабая публикация (должна быть исключена из РИНЦ)</div></td></tr>
 
-</table>'>&nbsp;&nbsp;Средняя оценка:&nbsp;<font color=#00008f><span id="avg_score"></span></font>
+</table>'>&nbsp;&nbsp;Средняя оценка:&nbsp;<font color=#00008f><span id="avg_score">5</span></font>
 </td>
 
 <td width=35%><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Число отзывов о публикации, сделанных учеными, зарегистрированными в системе Science Index. Для просмотра всех отзывов щелкните мышью на этом числе.</p>'>&nbsp;&nbsp;Всего отзывов:&nbsp;<font color=#00008f><span id="comment_count">0</span></font></td>
@@ -1005,25 +1069,212 @@ eISSN:&nbsp;<font color=#00008f>2587-8719</font><span style="margin-left:20px;">
 
 
 
+<SCRIPT LANGUAGE="JavaScript">
+function item_all_comments(){
+  $.fancybox({
+      href : '/item_all_comments.asp?itemid=83175257&rand=' + Math.random(),
+      title : '',
+	  padding : 20,     
+	  width : 520,
+	  height : 350,
+	  overlayOpacity : 0.3,	
+	  overlayColor : '#000',
+	  speedIn : 500,
+	  hideOnOverlayClick : false,
+	  enableEscapeButton : true,
+	  type : 'iframe'
+    });
+}
+function item_all_scores(){
+  $.fancybox({
+      href : '/item_all_scores.asp?itemid=83175257&rand=' + Math.random(),
+      title : '',
+	  padding : 20,     
+	  width : 400,
+	  height : 270,
+	  overlayOpacity : 0.3,	
+	  overlayColor : '#000',
+	  speedIn : 500,
+	  hideOnOverlayClick : false,
+	  enableEscapeButton : true,
+	  type : 'iframe'
+    });
+}
+</script>
+
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function item_score_comments(){
+  $.fancybox({
+		href : '/item_score_comments.asp?itemid=83175257&rand=' + Math.random(),
+		title : '',
+		padding : 20,     
+		width : 520,
+		height : 280,
+		overlayOpacity : 0.3,	
+		overlayColor : '#000',
+		speedIn : 500,
+		hideOnOverlayClick : false,
+		enableEscapeButton : true,
+		type : 'iframe'
+	});
+}
+function change_score(score){
+  if ($('#score').val()==score){
+    $.post('update_item_score.asp', 'itemid=83175257&score=0&rand=' + Math.random(), function() {
+      $('#score').val(0); 
+	  $('.sc_0').css({color:"#c0c0c0"});
+      $.post('item_score_count.asp', 'itemid=83175257&rand=' + Math.random(), function(data){
+        var s = data.split('|');
+		if(s[0]>0){
+          $('#score_count').html('<a href="javascript:item_all_scores()" title="Посмотреть распределение оценок" rel=nofollow>'+s[0]+'</a>');}
+		else{
+          $('#score_count').html('0');}
+        $('#avg_score').html(s[1]);
+      });
+    });
+  }
+  else {
+    $.post('update_item_score.asp', 'itemid=83175257&score=' + score + '&rand=' + Math.random(), function() {
+      $('#score').val(score); 
+	  $('.sc_0').css({color:"#c0c0c0"});
+	  $('.sc_'+score).css({color:"#F26C4F"});
+      $.post('item_score_count.asp', 'itemid=83175257&rand=' + Math.random(), function(data){
+        var s = data.split('|');
+		if(s[0]>0){
+          $('#score_count').html('<a href="javascript:item_all_scores()" title="Посмотреть распределение оценок" rel=nofollow>'+s[0]+'</a>');}
+		else{
+          $('#score_count').html('0');}
+        $('#avg_score').html(s[1]);
+      });
+    });
+  } 
+}
+</script>
+
+<table width=100% border=0 cellspacing=0 cellpadding=3>
+<tr>
+<td align=left valign=top width=40%><div style="height:8px"></div><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Оцените данную публикацию - Ваша экспертная оценка будет полезна другим читателям библиотеки. Для оценки публикации необходимо щелкнуть мышью на звездочке, соответствующей выбранному уровню:</p><br><table width=100% cellspacing=0 cellpadding=3 border=0>
+<tr><td width=30% align=left valign=top>
+<span style="font-size: 18pt; color: #F26C4F; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+<span style="font-size: 18pt; color: #F26C4F; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+<span style="font-size: 18pt; color: #F26C4F; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+<span style="font-size: 18pt; color: #F26C4F; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+<span style="font-size: 18pt; color: #F26C4F; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+</td>
+<td width=70% align=left valign=top><div>публикация международного уровня (на уровне требований Web of Science Core Collection)</div>
+</td></tr>
+
+<tr><td align=left valign=top>
+<span style="font-size: 18pt; color: #F26C4F; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+<span style="font-size: 18pt; color: #F26C4F; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+<span style="font-size: 18pt; color: #F26C4F; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+<span style="font-size: 18pt; color: #F26C4F; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+<span style="font-size: 18pt; color: #C0C0C0; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+</td>
+<td align=left valign=top><div>публикация высокого уровня (достаточного для учета при защите докторской диссертации, достойна включения в ядро РИНЦ)</div></td></tr>
+
+<tr><td align=left valign=top>
+<span style="font-size: 18pt; color: #F26C4F; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+<span style="font-size: 18pt; color: #F26C4F; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+<span style="font-size: 18pt; color: #F26C4F; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+<span style="font-size: 18pt; color: #C0C0C0; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+<span style="font-size: 18pt; color: #C0C0C0; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+</td>
+<td align=left valign=top><div>публикация среднего уровня (достаточного для учета при защите кандидатской диссертации)</div></td></tr>
+
+<tr><td align=left valign=top>
+<span style="font-size: 18pt; color: #F26C4F; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+<span style="font-size: 18pt; color: #F26C4F; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+<span style="font-size: 18pt; color: #C0C0C0; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+<span style="font-size: 18pt; color: #C0C0C0; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+<span style="font-size: 18pt; color: #C0C0C0; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+</td>
+<td align=left valign=top><div>публикация начального уровня (как правило, подготовленная студентами, аспирантами, молодыми учеными, при этом уровень достаточен для ее включения в РИНЦ)</div></td></tr>
+
+<tr><td align=left valign=top>
+<span style="font-size: 18pt; color: #F26C4F; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+<span style="font-size: 18pt; color: #C0C0C0; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+<span style="font-size: 18pt; color: #C0C0C0; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+<span style="font-size: 18pt; color: #C0C0C0; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+<span style="font-size: 18pt; color: #C0C0C0; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+</td>
+<td align=left valign=top><div>не научная, нарушающая научную этику или очень слабая публикация (должна быть исключена из РИНЦ)</div></td></tr>
+
+</table>
+<p>Нажатие на другую звездочку будет переключать оценку. Если Вы не хотите оценивать данную публикацию, нужно оставить все звездочки серыми (если перед этим оценка была уже проставлена, нужно еще раз кликнуть на звездочке, соответствующей оценке). Оценивать публикации могут ученые, зарегистрированные в системе Science Index, за исключением авторов оцениваемой публикации.</p><p>Вы можете также добавить свой отзыв о данной публикации с аргументацией проставленной оценки и рекомендациями для других читателей.</p>'>&nbsp;&nbsp;Ваша оценка данной публикации:&nbsp;<font color=#00008f></font></td>
+
+<td nowrap align=left valign=top width=25%>
+<span id="score_1" class="asterbig sc_0 sc_1 sc_2 sc_3 sc_4 sc_5" onClick="change_score('1')">*</span>
+<span id="score_2" class="asterbig sc_0 sc_2 sc_3 sc_4 sc_5" onClick="change_score('2')">*</span>
+<span id="score_3" class="asterbig sc_0 sc_3 sc_4 sc_5" onClick="change_score('3')">*</span>
+<span id="score_4" class="asterbig sc_0 sc_4 sc_5" onClick="change_score('4')">*</span>
+<span id="score_5" class="asterbig sc_0 sc_5" onClick="change_score('5')">*</span>
+</td>
+<td width=18% align=left valign=top><div style="height:8px"></div><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Если Вы прочитали данную публикацию, Вы можете помочь другим посетителям библиотеки, оставив свой отзыв с комментариями и рекомендациями для других читателей. Ваш отзыв будет доступен для всех ученых, зарегистрированных в системе Science Index. Чтобы оставить отзыв о данной публикации, щелкните мышью на иконке. Вы можете в любой момент изменить или удалить свой отзыв.</p>'>&nbsp;&nbsp;Ваш отзыв:&nbsp;</td>
+<td width=17% align=left valign=top><img id="comment_score" src="/images/comments-g.png" width=14 height=14 border=0 style="margin:8px 0 0 0; cursor: pointer;" title="Добавить отзыв о данной публикации" onClick="item_score_comments()"></td>
+</tr>
+</table>
+
+<input type="hidden" name="score" id="score" value="0">
+
+
+
 </td></tr></table>
 
 
+<div style="height:10px;"></div>
 <table width=550 border=0 cellspacing=0 cellpadding=3>
 <tr><td colspan=2 align=left>
-<font color=#000000>ОПИСАНИЕ НА РУССКОМ ЯЗЫКЕ:</font></td></tr>
+<font color=#000000>ИНФОРМАЦИЯ О ФИНАНСОВОЙ ПОДДЕРЖКЕ:</font></td></tr>
+<tr><td width=34>&nbsp;</td><td width=504 align=left valign=middle>
+
+<div style="height:3px;"></div>
+<p>Исследование выполнено при поддержке Российского научного фонда в рамках проекта «Экзистенциальный опыт в цифровой среде: “бытие к цифре”, онтология виртуального и человеческое Я», №25-18-00208, в НИУ ВШЭ в Санкт-Петербурге.
+<div style="height:5px;"></div>
+
+</td></tr></table>
+
+
+<div style="height:10px;"></div>
+
+<table width=550 border=0 cellspacing=0 cellpadding=3>
+<tr><td colspan=2 align=left>
+<font color=#000000>ОПИСАНИЕ НА АНГЛИЙСКОМ ЯЗЫКЕ:</font></td></tr>
 <tr><td width=34>&nbsp;</td><td width=504 align=center valign=middle>
 <div style="height:5px;"></div>
-<font color=#F26C4F>РАЗВИТИЕ ИДЕЙ ВАСИЛЬЕВА И ПАРАНЕПРОТИВОРЕЧИВОЙ ЛОГИКИ В РОССИИ И ЗА ЕЕ ПРЕДЕЛАМИ : РЕЦЕНЗИЯ НА ВТОРОЕ РУССКОЕ ИЗДАНИЕ «ВООБРАЖАЕМОЙ ЛОГИКИ» ВАСИЛЬЕВА</font>
+<font color=#F26C4F>RETRIBUTIVE EMOTIONS AND RETRIBUTIVE INTUITIONS</font>
 
 <div style="height:5px;"></div>
-<div style='display: inline-block; white-space: nowrap'><font color=#00008f>ДА&nbsp;МАТА&nbsp;Ж.В.Т.</font><font color=#000000><sup>1</sup></font></div>
+<div style='display: inline-block; white-space: nowrap'><span class='help pointer' title='<b><font color=#F26C4F>Фауль Богдан Владимирович</font></b><br>Русская христианская гуманитарная академия им. Ф.М. Достоевского<br><a href="author_profile.asp?authorid=1122075" target=_blank>Профиль автора в SCIENCE INDEX</a><br><a href="author_items.asp?authorid=1122075" target=_blank rel=nofollow>Список публикаций в РИНЦ</a>'><font color=#00008f>FAUL&nbsp;B.V.</font></span><a href='mailto:faulbogdan@gmail.com' rel=nofollow><img src='/images/mail1.gif' border=0 hspace=2 height=8 width=10 class='help pointer' title='Написать письмо автору'></a><img src='/images/about_author.gif' border=0 hspace=2 height=10 width=9 class='help pointer' title='ORCID:&nbsp;<a href="https://orcid.org/0000-0001-9680-9944" target=_blank rel=nofollow>0000-0001-9680-9944</a>&nbsp;&nbsp; '><font color=#000000><sup>1</sup></font></div>
 <br>
 
 <div style="height:5px;"></div>
-<font color=#000000><sup>1</sup></font>&nbsp;<font color=#00008f>БРАЗИЛЬСКОЕ ЛОГИЧЕСКОЕ СООБЩЕСТВО</font>, БРАЗИЛИА<br>
+<font color=#000000><sup>1</sup></font>&nbsp;<span class='help1 pointer' title='<b><font color=#F26C4F>Национальный исследовательский университет "Высшая школа экономики"</font></b> (Москва)<br><a href="org_profile.asp?id=421" target=_blank>Профиль организации в SCIENCE INDEX</a><br><a href="org_items.asp?orgsid=421" target=_blank rel=nofollow>Список публикаций в РИНЦ</a>'><font color=#00008f>National Research University Higher School of Economics (HSE University Saint Petersburg)</font></span>, Saint Petersburg, Russia<br>
 </td></tr>
 
 
+
+<tr><td width=34>&nbsp;</td><td width=504 align=left valign=middle>
+
+<div id="eabstract1" style="width:504px; border:0; margin:0; padding:0; text-align:left;"><p align=justify style='margin-top: 0.3em;'>The article addresses a key challenge to moral justification in normative ethics - the relationship between emotions and retributive moral judgments. Retributivism holds that there are normative reasons to reward or punish individuals on the basis of merit, independent of consequences. A common objection argues that such beliefs are grounded in retributive emotions, which are allegedly unreliable foundations for moral reasoning. The study aims to analyze and evaluate the strength of this “argument from retributive emotions” in two of its main forms: evolutionary debunking arguments and moral rationalist objections. The research demonstrates that evolutionary debunking strategies, such as those developed by Joshua Greene and Isaac Wiegman, fail to undermine retributive intuitions, since anger is neither a necessary nor a unique basis for these judgments. Similarly, rationalist objections prove unconvincing, as moral reasoning is deeply intertwined with affective processes, as shown by the broader body of empirical work discussed by Shaun Nichols and others. The findings suggest that retributive intuitions cannot be dismissed solely because of their emotional foundation.</div>
+
+</td></tr>
+
+<tr><td width=34>&nbsp;</td><td width=504 align=left valign=middle><p>
+Keywords: <a href="keyword_items.asp?id=458556" rel=nofollow>RETRIBUTIVISM</a>, 
+<a href="keyword_items.asp?id=106428" rel=nofollow>EMOTIONS</a>, 
+<a href="keyword_items.asp?id=336839" rel=nofollow>MORAL EPISTEMOLOGY</a>, 
+<a href="keyword_items.asp?id=23496256" rel=nofollow>EVOLUTIONARY DEBUNKING</a>, 
+<a href="keyword_items.asp?id=437608" rel=nofollow>RATIONALISM</a>, 
+<a href="keyword_items.asp?id=303682" rel=nofollow>ANGER</a>, 
+<a href="keyword_items.asp?id=2302360" rel=nofollow>MORAL SENTIMENTALISM</a>, 
+<a href="keyword_items.asp?id=194105" rel=nofollow>PUNISHMENT</a>, 
+<a href="keyword_items.asp?id=309451" rel=nofollow>NORMATIVE REASONS</a>, 
+<a href="keyword_items.asp?id=303929" rel=nofollow>MORAL PSYCHOLOGY</a>
+</td></tr>
 
 </table>
 
@@ -1058,35 +1309,34 @@ function show_context(refid) {
 <div style="height:5px;"></div>
 </td></tr></table>
 
-<table width=100% border=0 cellspacing=1 cellpadding=2 style="table-layout:fixed; word-wrap:break-word; overflow:hidden">
+<table width=100% border=0 cellspacing=1 cellpadding=2 style="table-layout:fixed; word-wrap:break-word; overflow:hidden; hyphens: auto">
 
 <tr bgcolor=#f5f5f5><td width=6% align=right valign=top nowrap><font color=#000000>1.&nbsp;</font></td>
-<td width=89% align=justify valign=top><font color=#000000>
-Anosova, V. V. 1984. "Logicheskiye idei N. A. Vasil'yeva i paraneprotivorechivyye sistemy logiki [Logical Ideas of N. A. Vasiliev and Paraconsistent Systems of Logic]" [in Russian]. PhD diss., MGU im. Lomonosova [Lomonosov Moscow State University].</font>&nbsp; <font color=#F26C4F>EDN:</font>&nbsp;<a href="https://elibrary.ru/npcdav" target=_blank rel="nofollow">NPCDAV</a>
-
-<span title="Показать ссылку в тексте публикации" class="win_expandable" id="context_expand_1892185115" style="color:#00008f; margin:0 5px 0 0;" onClick="show_context('1892185115')"> &nbsp;<font color=#F26C4F>▼</font>&nbsp;Контекст</span>
-<div id="context_1892185115" style="border:0; margin:0; padding:0; text-align:left; display:none;">
+<td width=89% align=justify valign=top style="hyphens: auto"><font color=#000000>
+Benn, S. I. (1958). An Approach to the Problems of Punishment. Philosophy, 33(127), 325-341.</font>&nbsp; <font color=#F26C4F>DOI:</font>&nbsp;<a href="https://doi.org/10.1017/S0031819100055017" target=_blank rel="nofollow">10.1017/S0031819100055017</a>
+<span title="Показать ссылку в тексте публикации" class="win_expandable" id="context_expand_1750047779" style="color:#00008f; margin:0 5px 0 0;" onClick="show_context('1750047779')"> &nbsp;<font color=#F26C4F>▼</font>&nbsp;Контекст</span>
+<div id="context_1750047779" style="border:0; margin:0; padding:0; text-align:left; display:none;">
 <div style="height:3px;"></div>
 <table width=100% border=0 cellspacing=1 cellpadding=3>
 <td width=8% align=right valign=top bgcolor=#f5f5f5><font color=#000000>Контекст:</font></td>
 <td width=92% align=left valign=top bgcolor=#f5f5f5>
-<font color=#555555><i>...Vasil'ev (Arruda, 1979), which has been translated into Russian by V. V. Anosova, a researcher whose thesis, published in 1984, deals with the relationship between imaginary logic and paraconsistent logical systems (Anosova, 1984)...</i></font>
+<font color=#555555><i>...Самое распространенное определение называется определением Бенна-Флю-Харта - по причине того, что эти исследователи независимо сформулировали его (Benn, 1958; Flew, 1954; Hart, 1959)...</i></font>
 </td></tr></table>
 </div>
 
-</td><td align=center valign=top width=5%><div style="height:5px;"></div><a href="item.asp?id=16134973" title="Перейти на описание цитируемой публикации" class="help1" target=_blank><img src="/images/go_url.png" height=15 width=15 border=0></a></td>
+</td><td align=center valign=top width=5%>&nbsp;</td>
 </tr>
 
 <tr bgcolor=#f5f5f5><td width=6% align=right valign=top nowrap><font color=#000000>2.&nbsp;</font></td>
-<td width=89% align=justify valign=top><font color=#000000>
-Arruda, A. I. 1979. "On the Imaginary Logic of Vasil'ev". In Proceedings of Fourth Latin American Symposium on Mathematical Logic, 1-41. Amsterdam: North Holland.</font>
-<span title="Показать ссылку в тексте публикации" class="win_expandable" id="context_expand_1892185116" style="color:#00008f; margin:0 5px 0 0;" onClick="show_context('1892185116')"> &nbsp;<font color=#F26C4F>▼</font>&nbsp;Контекст</span>
-<div id="context_1892185116" style="border:0; margin:0; padding:0; text-align:left; display:none;">
+<td width=89% align=justify valign=top style="hyphens: auto"><font color=#000000>
+Berker, S. (2009). The Normative Insignificance of Neuroscience. Philosophy & Public Affairs, 37(4), 293-329.</font>&nbsp; <font color=#F26C4F>DOI:</font>&nbsp;<a href="https://doi.org/10.1111/j.1088-4963.2009.01164.x" target=_blank rel="nofollow">10.1111/j.1088-4963.2009.01164.x</a>
+<span title="Показать ссылку в тексте публикации" class="win_expandable" id="context_expand_1750047780" style="color:#00008f; margin:0 5px 0 0;" onClick="show_context('1750047780')"> &nbsp;<font color=#F26C4F>▼</font>&nbsp;Контекст</span>
+<div id="context_1750047780" style="border:0; margin:0; padding:0; text-align:left; display:none;">
 <div style="height:3px;"></div>
 <table width=100% border=0 cellspacing=1 cellpadding=3>
 <td width=8% align=right valign=top bgcolor=#f5f5f5><font color=#000000>Контекст:</font></td>
 <td width=92% align=left valign=top bgcolor=#f5f5f5>
-<font color=#555555><i>...In the appendix of the edition, there appears the article by Ayda Arruda, originally published in English and entitled On the Imaginary Logic of Vasil'ev (Arruda, 1979), which has been translated into Russian by V. V. Anosova, a researcher whose thesis, published in 1984, deals with the relationship between imaginary logic and paraconsistent logical systems (Anosova, 1984)...</i></font>
+<font color=#555555><i>...В частности, модель двойного процесса крайне проблематична как в целом (Keren & Schul, 2009; Melnikoff & Bargh, 2018), так и в той версии, которую предлагает Джошуа Грин (Berker, 2009; Kahane, 2012)...</i></font>
 </td></tr></table>
 </div>
 
@@ -1094,15 +1344,15 @@ Arruda, A. I. 1979. "On the Imaginary Logic of Vasil'ev". In Proceedings of Four
 </tr>
 
 <tr bgcolor=#f5f5f5><td width=6% align=right valign=top nowrap><font color=#000000>3.&nbsp;</font></td>
-<td width=89% align=justify valign=top><font color=#000000>
-Arruda, A. I. 1990. N. A. Vasíliev e a Lógica Paraconsistente [in Portuguese]. Coleção CLE 7. Campinas (SP): Centro de Lógica, Epistemologia e História da Ciência, Universidade Estadual de Campinas.</font>
-<span title="Показать ссылку в тексте публикации" class="win_expandable" id="context_expand_1892185117" style="color:#00008f; margin:0 5px 0 0;" onClick="show_context('1892185117')"> &nbsp;<font color=#F26C4F>▼</font>&nbsp;Контекст</span>
-<div id="context_1892185117" style="border:0; margin:0; padding:0; text-align:left; display:none;">
+<td width=89% align=justify valign=top style="hyphens: auto"><font color=#000000>
+Blair, R. (1995). A cognitive developmental approach to morality: Investigating the psychopath. Cognition, 57(1), 1-29.</font>&nbsp; <font color=#F26C4F>DOI:</font>&nbsp;<a href="https://doi.org/10.1016/0010-0277(95)00676-P" target=_blank rel="nofollow">10.1016/0010-0277(95)00676-P</a>
+<span title="Показать ссылку в тексте публикации" class="win_expandable" id="context_expand_1750047781" style="color:#00008f; margin:0 5px 0 0;" onClick="show_context('1750047781')"> &nbsp;<font color=#F26C4F>▼</font>&nbsp;Контекст</span>
+<div id="context_1750047781" style="border:0; margin:0; padding:0; text-align:left; display:none;">
 <div style="height:3px;"></div>
 <table width=100% border=0 cellspacing=1 cellpadding=3>
 <td width=8% align=right valign=top bgcolor=#f5f5f5><font color=#000000>Контекст:</font></td>
 <td width=92% align=left valign=top bgcolor=#f5f5f5>
-<font color=#555555><i>...Professor D'Ottaviano, in her preface to the posthumous book by Professor Ayda Arruda (Arruda, 1990), notes that Priest and Routley, in a chapter published Т. 9, № 4] THE DEVELOPMENT OF VASILIEV'S IDEAS AND PARACONSISTENT LOGIC… 269 itionistic, or paraconsistent logics would not be entirely accurate, despite the fact that he was one of the first to proclaim and construct a non-...<div style='height:3px'></div>...In this regard, he highlights important names in Soviet mathematics, such as N. N. Lusin and A. I. Maltsev, and also refers to the relevance of the pioneering works of Newton Carneiro Affonso da Costa (Costa, 1993) and Ayda Arruda (Arruda, 1990), which he cites in Portuguese...<div style='height:3px'></div>...Whether this will also be a polyvalent logic is a matter of detail or interpretation (Arruda, 1990: 13)...</i></font>
+<font color=#555555><i>...Дело в том, что реальные психопаты часто с трудом различают моральное и конвенциональное, однако у них, кажется, все в порядке с разумными способностями (Blair, 1995)...</i></font>
 </td></tr></table>
 </div>
 
@@ -1110,31 +1360,21 @@ Arruda, A. I. 1990. N. A. Vasíliev e a Lógica Paraconsistente [in Portuguese].
 </tr>
 
 <tr bgcolor=#f5f5f5><td width=6% align=right valign=top nowrap><font color=#000000>4.&nbsp;</font></td>
-<td width=89% align=justify valign=top><font color=#000000>
-Bazhanov, V. A. 2007. Istoriya logiki v Rossii i SSSR [History of Logic in Russia and the USSR] [in Russian]. Moskva [Moscow]: Kanon+.</font>
-<span title="Показать ссылку в тексте публикации" class="win_expandable" id="context_expand_1892185118" style="color:#00008f; margin:0 5px 0 0;" onClick="show_context('1892185118')"> &nbsp;<font color=#F26C4F>▼</font>&nbsp;Контекст</span>
-<div id="context_1892185118" style="border:0; margin:0; padding:0; text-align:left; display:none;">
-<div style="height:3px;"></div>
-<table width=100% border=0 cellspacing=1 cellpadding=3>
-<td width=8% align=right valign=top bgcolor=#f5f5f5><font color=#000000>Контекст:</font></td>
-<td width=92% align=left valign=top bgcolor=#f5f5f5>
-<font color=#555555><i>...For some, Vasiliev, along with Orlov, should be considered one of the inspirers of relevance logics (Bazhanov, 2007: 244-277)...</i></font>
-</td></tr></table>
-</div>
-
+<td width=89% align=justify valign=top style="hyphens: auto"><font color=#000000>
+Caruso, G. D. (2021). Rejecting Retributivism: Free Will, Punishment, and Criminal Justice. Cambridge University Press.</font>&nbsp; <font color=#F26C4F>DOI:</font>&nbsp;<a href="https://doi.org/10.1017/9781108689304" target=_blank rel="nofollow">10.1017/9781108689304</a>
 </td><td align=center valign=top width=5%>&nbsp;</td>
 </tr>
 
 <tr bgcolor=#f5f5f5><td width=6% align=right valign=top nowrap><font color=#000000>5.&nbsp;</font></td>
-<td width=89% align=justify valign=top><font color=#000000>
-Bazhanov, V. A. 2025. "Predisloviye ko vtoromu, rasshirennomu izdaniyu [Preface to the Second Expanded Edition]" [in Russian]. In Voobrazhayemaya logika. Izbrannyye trudy [Imaginary Logic. Selected Works], by N. A. Vasiliev, ed. by V. A. Bazhanov, 5-11. Moskva [Moscow]: Kanon+.</font>
-<span title="Показать ссылку в тексте публикации" class="win_expandable" id="context_expand_1892185119" style="color:#00008f; margin:0 5px 0 0;" onClick="show_context('1892185119')"> &nbsp;<font color=#F26C4F>▼</font>&nbsp;Контекст</span>
-<div id="context_1892185119" style="border:0; margin:0; padding:0; text-align:left; display:none;">
+<td width=89% align=justify valign=top style="hyphens: auto"><font color=#000000>
+Darwall, S. L. (1983). Impartial Reason. Cornell University Press.</font>
+<span title="Показать ссылку в тексте публикации" class="win_expandable" id="context_expand_1750047783" style="color:#00008f; margin:0 5px 0 0;" onClick="show_context('1750047783')"> &nbsp;<font color=#F26C4F>▼</font>&nbsp;Контекст</span>
+<div id="context_1750047783" style="border:0; margin:0; padding:0; text-align:left; display:none;">
 <div style="height:3px;"></div>
 <table width=100% border=0 cellspacing=1 cellpadding=3>
 <td width=8% align=right valign=top bgcolor=#f5f5f5><font color=#000000>Контекст:</font></td>
 <td width=92% align=left valign=top bgcolor=#f5f5f5>
-<font color=#555555><i>...Lewis, as one of the founders of intensional logics” (D'Ottaviano, 1990: XV). 270 [BOOK REVIEWS] JOSÉ VERISSIMO TEIXEIRA DA MATA [2025 considered it appropriate to call Vasiliev a precursor of paraconsistent logic (Bazhanov, 2025: 7)...</i></font>
+<font color=#555555><i>...Моральный рационализм является частью этической традиции, современные сторонники которой включают в себя Алана Гевирца (Gewirth, 1981), Стивена Дорволла (Darwall, 1983), Томаса Нагеля (Nagel, 1978, 1986), Кристин Корсгаард (Korsgaard, 1986), Майкла Смита (Smith, 1996, 1997, 2009) и других...</i></font>
 </td></tr></table>
 </div>
 
@@ -1145,8 +1385,8 @@ Bazhanov, V. A. 2025. "Predisloviye ko vtoromu, rasshirennomu izdaniyu [Preface 
 
 <script type="text/javascript">
 function show_refs() {
-  $('#show_reflist').html("<tr><td colspan=3 align=center>Загружается (всего ссылок: 22) ...</td></tr>");
-  $.get("get_item_refs.asp?id=88765422&rand=" + Math.random(), function(data) {
+  $('#show_reflist').html("<tr><td colspan=3 align=center>Загружается (всего ссылок: 42) ...</td></tr>");
+  $.get("get_item_refs.asp?id=83175257&rand=" + Math.random(), function(data) {
     $('#list_refs').html(data);
     $('#show_reflist').html('');
 		MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
@@ -1156,7 +1396,7 @@ function show_refs() {
 
 <tr><td colspan=3><div style="height:6px;"></div></td></tr>
 <tbody ID="show_reflist">
-<tr><td align=right valign=middle><span class="win_expandable" style="color:#F26C4F; margin:0 5px 0 0;" onClick="show_refs()">▼</span></td><td align=left valign=middle><a href="javascript:show_refs()">Показать весь список литературы (всего ссылок: 22)</a></td><td></td></tr>
+<tr><td align=right valign=middle><span class="win_expandable" style="color:#F26C4F; margin:0 5px 0 0;" onClick="show_refs()">▼</span></td><td align=left valign=middle><a href="javascript:show_refs()" rel=nofollow>Показать весь список литературы (всего ссылок: 42)</a></td><td></td></tr>
 </tbody>
 
 
@@ -1173,7 +1413,7 @@ function show_refs() {
 </td></tr></table>
 
 <table width=100% cellspacing=3 cellpadding=0 border=0>
-<tr><td width=10% align=right valign=top><a href="javascript:new_comments()"><img src="images/but_orange.gif" width=15 height=15 hspace=3 border=0 vspace=3></a></td><td width=90% align=left valign=middle><a href="javascript:new_comments()">Добавить новый комментарий к этой публикации</a>
+<tr><td width=10% align=right valign=top><a href="javascript:new_comments()" rel=nofollow><img src="images/but_orange.gif" width=15 height=15 hspace=3 border=0 vspace=3></a></td><td width=90% align=left valign=middle><a href="javascript:new_comments()" rel=nofollow>Добавить новый комментарий к этой публикации</a>
 </td></tr></table>
 
 
@@ -1189,10 +1429,10 @@ function show_refs() {
 <table width=190 cellspacing=0 cellpadding=3 border=0>
 
 <input type="hidden" name="itembox_name" value="">
-<input type="hidden" name="id" value="88765422">
-<input type="hidden" name="did" value="88765422">
-<input type="hidden" name="sid" value="690387368">
-<input type="hidden" name="noteid" value="88765422">
+<input type="hidden" name="id" value="83175257">
+<input type="hidden" name="did" value="83175257">
+<input type="hidden" name="sid" value="695628636">
+<input type="hidden" name="noteid" value="83175257">
 <input type="hidden" name="disspage" value="">
 <input type="hidden" name="counterid" value="">
 <input type="hidden" name="commentid" value="">
@@ -1200,10 +1440,10 @@ function show_refs() {
 <input type="hidden" name="linkid" value="">
 <input type="hidden" name="paysum" value="">
 <input type="hidden" name="payitemid" value="">
-<input type="hidden" name="authorid" value="">
-<input type="hidden" name="tid88765422" value="88765422">
+<input type="hidden" name="authorid" value="900763">
+<input type="hidden" name="tid83175257" value="83175257">
 <input type="hidden" name="filenum" value="1">
-<input type="hidden" name="fileid" value="88765422">
+<input type="hidden" name="fileid" value="83175257">
 <input type="hidden" name="urlnum" value="1">
 <input type="hidden" name="items_all" value="">
 
@@ -1212,18 +1452,23 @@ function show_refs() {
 
 
 <tr><td width=15% align=center valign=top>
-<a href="contents.asp?id=88765410&selid=88765422"><img src="images/but_orange.gif" width=15 height=15 hspace=3 border=0></a>
+<a href="contents.asp?id=83175249&selid=83175257"><img src="images/but_orange.gif" width=15 height=15 hspace=3 border=0></a>
 
 </td>
 
 <td width=85% align=left valign=middle>
-<a href="contents.asp?id=88765410&selid=88765422">Содержание выпуска</a>
+<a href="contents.asp?id=83175249&selid=83175257">Содержание выпуска</a>
 
 </td></tr>
 
 <tr><td width=15% align=center valign=top>
-<a href="item.asp?id=88765421"><img src="images/but_orange.gif" width=15 height=15 hspace=3 border=0></a></td>
-<td width=85% align=left valign=middle><a href="item.asp?id=88765421">Предыдущая&nbsp;публикация</a>
+<a href="item.asp?id=83175258"><img src="images/but_orange.gif" width=15 height=15 hspace=3 border=0></a></td>
+<td width=85% align=left valign=middle><a href="item.asp?id=83175258">Следующая&nbsp;публикация</a>
+</td></tr>
+
+<tr><td width=15% align=center valign=top>
+<a href="item.asp?id=83175256"><img src="images/but_orange.gif" width=15 height=15 hspace=3 border=0></a></td>
+<td width=85% align=left valign=middle><a href="item.asp?id=83175256">Предыдущая&nbsp;публикация</a>
 </td></tr>
 
 	<tr><td colspan=2><div style="height:10px;"></div></td></tr>
@@ -1232,15 +1477,15 @@ function show_refs() {
 	<td width=85% align=left valign=middle>Загрузить:
 	</td></tr>
 	
-	<tr><td width=15% align=center valign=top><a href="javascript:file_article(88765422, 1)" rel="nofollow" title=""><img src="/images/download_green.png" width=16 hspace=2 border=0></a></td>
-	<td width=85% align=left valign=middle><a href="javascript:file_article(88765422, 1)" rel="nofollow" class="help" title="">Полный текст</a> (PDF, английский)
+	<tr><td width=15% align=center valign=top><a href="javascript:file_article(83175257, 1)" rel="nofollow" title=""><img src="/images/download_green.png" width=16 hspace=2 border=0></a></td>
+	<td width=85% align=left valign=middle><a href="javascript:file_article(83175257, 1)" rel="nofollow" class="help" title="">Полный текст</a> (PDF, русский)
 	</td></tr>
 	
 <tr><td width=15% align=center valign=top>
 <a href="javascript:email_article()" rel="nofollow"><img src="images/mailto.png" width=16 hspace=2 border=0></a></td>
 <td width=85% align=left valign=middle><a href="javascript:email_article()" rel="nofollow">Отправить публикацию по электронной почте</a>
 </td></tr>
-<tr><td colspan=2 align=center><div class="formfr"><input type="text" id="email" name="email" value="pasha.sitnikov.69@mail.ru" style="width:172px; text-align: center;" class="inputt"></div></td></tr>
+<tr><td colspan=2 align=center><div class="formfr"><input type="text" id="email" name="email" value="gasilin@inion.ru" style="width:172px; text-align: center;" class="inputt"></div></td></tr>
 
 <tr><td colspan=2><div style="height:10px;"></div></td></tr>
 
@@ -1248,8 +1493,8 @@ function show_refs() {
 <td width=85% align=left valign=middle>Связанные документы:
 </td></tr>
 
-<tr><td width=15% align=center valign=top><a href="javascript:url_article(88765422, 1)" rel="nofollow" title=""><img src="images/go_url.png" width=16 hspace=2 border=0></a></td>
-<td width=85% align=left valign=middle>Полный текст, на сайте <br><span style="word-wrap:break-word; word-break: break-all; overflow:hidden"><a href="javascript:url_article(88765422, 1)" rel="nofollow" class="help">philosophy.hse.ru</a>
+<tr><td width=15% align=center valign=top><a href="javascript:url_article(83175257, 1)" rel="nofollow" title=""><img src="images/go_url.png" width=16 hspace=2 border=0></a></td>
+<td width=85% align=left valign=middle>Полный текст, на сайте <br><span style="word-wrap:break-word; word-break: break-all; overflow:hidden"><a href="javascript:url_article(83175257, 1)" rel="nofollow" class="help">galacticamedia.com</a>
 </span></td></tr>
 
 
@@ -1257,26 +1502,38 @@ function show_refs() {
 
 
 <tr><td width=15% align=center valign=top>
-<a href='https://scholar.google.com/scholar?q="The Development of Vasiliev’s Ideas and Paraconsistent Logic in Russia and Outside: A Review of the Second Russian Edition of Vasiliev’s “Imaginary Logic”"&hl=ru&as_sdt=0%2C5&as_ylo=2025&as_yhi=2025' target=_blank rel="nofollow"><img src="images/but_orange.gif" width=15 height=15 hspace=3 border=0></a></td>
-<td width=85% align=left valign=middle><a href='https://scholar.google.com/scholar?q="The Development of Vasiliev’s Ideas and Paraconsistent Logic in Russia and Outside: A Review of the Second Russian Edition of Vasiliev’s “Imaginary Logic”"&hl=ru&as_sdt=0%2C5&as_ylo=2025&as_yhi=2025' target=_blank rel="nofollow">Список статей в Google Академия, цитирующих данную</a>
+<a href='https://scholar.google.com/scholar?q="Ретрибутивные эмоции и ретрибутивные интуиции"&hl=ru&as_sdt=0%2C5&as_ylo=2025&as_yhi=2025' target=_blank rel="nofollow"><img src="images/but_orange.gif" width=15 height=15 hspace=3 border=0></a></td>
+<td width=85% align=left valign=middle><a href='https://scholar.google.com/scholar?q="Ретрибутивные эмоции и ретрибутивные интуиции"&hl=ru&as_sdt=0%2C5&as_ylo=2025&as_yhi=2025' target=_blank rel="nofollow">Список статей в Google Академия, цитирующих данную</a>
 </td></tr>
 
 <tr><td width=15% align=center valign=top>
-<a href="javascript:for_reference()"><img src="images/but_orange.gif" width=15 height=15 hspace=3 border=0></a></td>
-<td width=85% align=left valign=middle><a href="javascript:for_reference()">Ссылка для цитирования</a>
+<a href="javascript:for_reference()" rel=nofollow><img src="images/but_orange.gif" width=15 height=15 hspace=3 border=0></a></td>
+<td width=85% align=left valign=middle><a href="javascript:for_reference()" rel=nofollow>Ссылка для цитирования</a>
 </td></tr>
 <tr><td colspan=2><div style="height:10px;"></div></td></tr>
 
 <tr><td width=15% align=center valign=top>
-<a href="javascript:itembox_add()"><img src="images/but_orange.gif" width=15 height=15 hspace=3 border=0></a></td>
-<td width=85% align=left valign=middle><a href="javascript:itembox_add()">Добавить публикацию в подборку</a></td></tr>
+<a href="javascript:itembox_add()" rel=nofollow><img src="images/but_orange.gif" width=15 height=15 hspace=3 border=0></a></td>
+<td width=85% align=left valign=middle><a href="javascript:itembox_add()" rel=nofollow>Добавить публикацию в подборку</a></td></tr>
 
 
 
 <tr><td colspan=2 align=center><div class="formfr"><select name="itemboxid" id="itemboxid" style="width:180px" class="input">
 
 <option value="0" >Новая подборка
-<option value="1598740" selected>Международный журнал исследований культуры
+<option value="1445083" selected>Политики доступа
+<option value="1541849" >Оборотничество
+<option value="1557500" >Социальная эпистемология
+<option value="1561037" >Психиатрия
+<option value="1572774" >Сартр
+<option value="1582948" >Искусственный интеллект в научных сетях
+<option value="1586142" >Подорога
+<option value="1594422" >Социологическое обозрение
+<option value="1596160" >Художественная культура
+<option value="1596212" >Международный журнал исследований культуры
+<option value="1600343" >Философия. Журнал Высшей школы экономики
+<option value="1640794" >Galactica media
+<option value="1741546" >Библиотековедение/Цифровая гуманитаристика
 </select></div>&nbsp;</td></tr>
 
 
@@ -1284,13 +1541,13 @@ function show_refs() {
 
 <tr><td colspan=2><div style="height:10px;"></div></td></tr>
 <tr><td width=15% align=center valign=top>
-<a href="javascript:edit_notes()"><img src="images/but_orange.gif" width=15 height=15 hspace=3 border=0 class="help" title='<p>Вы можете добавить свою персональную заметку к данной публикации, которая поможет Вам в работе с публикациями и подборками публикаций на elibrary.ru. Ваша заметка будет показываться только Вам.</p>'></a></td>
-<td width=85% align=left valign=middle><a href="javascript:edit_notes()">Редактировать Вашу заметку к публикации</a>
+<a href="javascript:edit_notes()" rel=nofollow><img src="images/but_orange.gif" width=15 height=15 hspace=3 border=0 class="help" title='<p>Вы можете добавить свою персональную заметку к данной публикации, которая поможет Вам в работе с публикациями и подборками публикаций на elibrary.ru. Ваша заметка будет показываться только Вам.</p>'></a></td>
+<td width=85% align=left valign=middle><a href="javascript:edit_notes()" rel=nofollow>Редактировать Вашу заметку к публикации</a>
 </td></tr>
 
 <tr><td width=15% align=center valign=top>
-<a href="javascript:new_comments()"><img src="images/but_orange.gif" width=15 height=15 hspace=3 border=0></a></td>
-<td width=85% align=left valign=middle><a href="javascript:new_comments()">Обсудить эту публикацию с другими читателями</a>
+<a href="javascript:new_comments()" rel=nofollow><img src="images/but_orange.gif" width=15 height=15 hspace=3 border=0></a></td>
+<td width=85% align=left valign=middle><a href="javascript:new_comments()" rel=nofollow>Обсудить эту публикацию с другими читателями</a>
 </td></tr>
 
 
@@ -1299,8 +1556,8 @@ function show_refs() {
 </FORM>
 
 <tr><td width=15% align=center valign=top>
-<a href='/similar_items.asp?itemid=88765422'><img src="images/but_orange.gif" width=15 height=15 hspace=3 border=0></a></td>
-<td width=85% align=left valign=middle><a href='/similar_items.asp?itemid=88765422'>Найти близкие по тематике публикации</a>
+<a href='/similar_items.asp?itemid=83175257' rel=nofollow><img src="images/but_orange.gif" width=15 height=15 hspace=3 border=0></a></td>
+<td width=85% align=left valign=middle><a href='/similar_items.asp?itemid=83175257' rel=nofollow>Найти близкие по тематике публикации</a>
 </td></tr>
 
 
@@ -1308,7 +1565,7 @@ function show_refs() {
 <tr><td colspan=2><div style="height:10px;"></div></td></tr>
 <tr><td width=15% align=center valign=top>
 <img src="images/but_orange.gif" width=15 height=15 hspace=3 border=0></td>
-<td width=85% align=left valign=middle><font color=#00008f>Дата размещения:</font><br><font color=#000000>14.01.2026</font>
+<td width=85% align=left valign=middle><font color=#00008f>Дата размещения:</font><br><font color=#000000>11.11.2025</font>
 </td></tr>
 
 

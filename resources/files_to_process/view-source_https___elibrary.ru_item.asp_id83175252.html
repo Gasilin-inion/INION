@@ -4,26 +4,26 @@
 <html>
 <head>
 
-<meta name="robots" content="noarchive, nofollow">
+<meta name="robots" content="noarchive">
 
-<meta name="description" content='Cheng P., Zhang Zh.
-Философия. Журнал Высшей школы экономики, 2025'>
-<title>The Mechanism of Responsibility Generation and the Logic of Ethical Governance in Embodied Artificial Intelligence</title>
+<meta name="description" content='Николаева Ж.В., Глушкова А.И.
+Galactica Media: Journal of Media Studies, 2025'>
+<title>От архитектоники чистого разума к архитектуре цифровых систем</title>
 
 <meta property="og:image" content="https://elibrary.ru/images/orgs_access.png" />
-<meta property="og:title" content='The Mechanism of Responsibility Generation and the Logic of Ethical Governance in Embodied Artificial Intelligence' />
+<meta property="og:title" content='От архитектоники чистого разума к архитектуре цифровых систем' />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://elibrary.ru/bpfhvo" />
+<meta property="og:url" content="https://elibrary.ru/xpvqia" />
 <meta property="og:site_name" content="eLIBRARY.RU"/>
-<meta property="og:description" content='Cheng P., Zhang Zh.
-Философия. Журнал Высшей школы экономики, 2025' />
+<meta property="og:description" content='Николаева Ж.В., Глушкова А.И.
+Galactica Media: Journal of Media Studies, 2025' />
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
 
-<link rel="canonical" href="https://elibrary.ru/item.asp?id=88765416"/>
+<link rel="canonical" href="https://elibrary.ru/item.asp?id=83175252"/>
 
 
-<meta name="doi" content="10.17323/2587-8719-2025-4-123-151">
+<meta name="doi" content="10.46539/gmd.v7i4.598">
 
 
 <script type="text/javascript" src="/jquery.min.js"></script>
@@ -97,7 +97,7 @@ function email_article(){
 		alerts("Не указан адрес электронной почты!");}
 	else{
 		$.fancybox({
-			href : '/email_article.asp?id=88765416&email='+document.forms["results"].email.value+'&rand=' + Math.random(),
+			href : '/email_article.asp?id=83175252&email='+document.forms["results"].email.value+'&rand=' + Math.random(),
 			title : '',
 			padding : 20,     
 			width : 400,
@@ -121,7 +121,7 @@ function show_itemrefs(){
 function edit_notes(){
 
   $.fancybox({
-    href : '/item_notes_add.asp?itemid=88765416&rand=' + Math.random(),
+    href : '/item_notes_add.asp?itemid=83175252&rand=' + Math.random(),
     title : '',
 	  padding : 20,     
 	  width : 520,
@@ -139,7 +139,7 @@ function edit_notes(){
 function add_link(link){
 
   $.fancybox({
-      href : '/itemlink_add.asp?itemid=88765416&linkid='+link+'&rand=' + Math.random(),
+      href : '/itemlink_add.asp?itemid=83175252&linkid='+link+'&rand=' + Math.random(),
       title : '',
 	  padding : 20,     
 	  width : 520,
@@ -155,32 +155,59 @@ function add_link(link){
 }
 function reply_comments(commentid){
 
-  alerts("Для того, чтобы участвовать в обсуждении публикаций, необходимо зарегистрироваться в системе Science Index в качестве автора научных публикаций!");
-  document.getElementById("win_login").className = "expanded";
-  document.getElementById("img_login").src = w_up.src;
-  document.forms["login"].login.focus();
+  $.fancybox({
+      href : '/itemcomments_add.asp?itemid=83175252&reply=1&commentid=' + commentid + '&rand=' + Math.random(),
+      title : '',
+	  padding : 20,     
+	  width : 520,
+	  height : 300,
+	  overlayOpacity : 0.3,	
+	  overlayColor : '#000',
+	  speedIn : 500,
+	  hideOnOverlayClick : false,
+	  enableEscapeButton : true,
+	  type : 'iframe'
+    });
 
 }
 function edit_comments(commentid){
 
-  alerts("Для того, чтобы участвовать в обсуждении публикаций, необходимо зарегистрироваться в системе Science Index в качестве автора научных публикаций!");
-  document.getElementById("win_login").className = "expanded";
-  document.getElementById("img_login").src = w_up.src;
-  document.forms["login"].login.focus();
+  $.fancybox({
+      href : '/itemcomments_add.asp?itemid=83175252&reply=0&commentid=' + commentid + '&rand=' + Math.random(),
+      title : '',
+	  padding : 20,     
+	  width : 520,
+	  height : 300,
+	  overlayOpacity : 0.3,	
+	  overlayColor : '#000',
+	  speedIn : 500,
+	  hideOnOverlayClick : false,
+	  enableEscapeButton : true,
+	  type : 'iframe'
+    });
 
 }
 function new_comments(){
 
-  alerts("Для того, чтобы участвовать в обсуждении публикаций, необходимо зарегистрироваться в системе Science Index в качестве автора научных публикаций!");
-  document.getElementById("win_login").className = "expanded";
-  document.getElementById("img_login").src = w_up.src;
-  document.forms["login"].login.focus();
+  $.fancybox({
+      href : '/itemcomments_add.asp?itemid=83175252&reply=0&commentid=&rand=' + Math.random(),
+      title : '',
+	  padding : 20,     
+	  width : 520,
+	  height : 300,
+	  overlayOpacity : 0.3,	
+	  overlayColor : '#000',
+	  speedIn : 500,
+	  hideOnOverlayClick : false,
+	  enableEscapeButton : true,
+	  type : 'iframe'
+    });
 
 }
 
 function translate_abstract(){
   $.fancybox({
-      href : '/translate_abstract.asp?id=88765416&rand=' + Math.random(),
+      href : '/translate_abstract.asp?id=83175252&rand=' + Math.random(),
       title : '',
 	  padding : 20,     
 	  width : 640,
@@ -313,7 +340,7 @@ function itembox_adds(){
 }
 function for_reference(){
     $.fancybox({
-      href : 'for_reference.asp?id=88765416&rand=' + Math.random(),
+      href : 'for_reference.asp?id=83175252&rand=' + Math.random(),
       title : '',
 			padding : 20,     
 			width : 480,
@@ -361,7 +388,7 @@ function qr_code(dd){
 <tr><td><div style="height:10px;"></div></td></tr>
 <tr><td width=150 align=center valign=top>
 
-<a href="title_about_new.asp?id=64435"><img src="/itemfiles/0/8/8/7/6/5/4/1/0//front.png" border=0 width=120 title='О журнале "Философия. Журнал Высшей школы экономики"' style="behavior: url(/pie/PIE.htc); box-shadow: 1px 2px 3px #888;" hspace=0></a>
+<a href="title_about_new.asp?id=70829"><img src="/itemfiles/0/8/3/1/7/5/2/4/9//Cover-Rus.png" border=0 width=120 title='О журнале "Galactica Media: Journal of Media Studies"' style="behavior: url(/pie/PIE.htc); box-shadow: 1px 2px 3px #888;" hspace=0></a>
 
 </td></tr>
 
@@ -383,16 +410,16 @@ else {
 </td></tr>
 </table>
 
-<div ID="win_basket" class="collapsed">
+<div ID="win_basket" class="expanded">
 <div style="height: 10px;"></div>
 
 <table border=0 cellspacing=0 cellpadding=2 width=140>
 
 <tr><td width=100% align=center valign=top>
 <div style="height: 2px;"></div>
-&nbsp;<font color=#000000>Всего в корзине:&nbsp;</font><font color=#00008f><b><span id="basket_num">0</span></b>&nbsp;публ.</font></td></tr>
+&nbsp;<font color=#000000>Всего в корзине:&nbsp;</font><font color=#00008f><b><span id="basket_num">1</span></b>&nbsp;публ.</font></td></tr>
 <tr><td width=100% align=center valign=top>
-&nbsp;<font color=#000000>на сумму:&nbsp;</font><font color=#00008f><b><span id="basket_sum">0</span></b>&nbsp;руб.</font></td></tr>
+&nbsp;<font color=#000000>на сумму:&nbsp;</font><font color=#00008f><b><span id="basket_sum">250</span></b>&nbsp;руб.</font></td></tr>
 </td></tr>
 
 </table>
@@ -525,6 +552,8 @@ function search_enter(event){
 <tr valign=top><td align=center><img src="/images/bl_kv.gif" border=0 width=7 height=7 hspace=3 class="shadow"></td><td align=left><a href="/rubrics.asp">РУБРИКАТОР</a></td></tr>
 <tr valign=top><td align=center><img src="/images/bl_kv.gif" border=0 width=7 height=7 hspace=3 class="shadow"></td><td align=left><a href="/region_compare.asp">РЕГИОНЫ</a></td></tr>
 
+<tr valign=top><td align=center><img src="/images/bl_kv.gif" border=0 width=7 height=7 hspace=3 class="shadow"></td><td align=left><a href="/refs.asp">ССЫЛКИ</a></td></tr>
+
 <tr valign=top><td align=center><img src="/images/bl_kv.gif" border=0 width=7 height=7 hspace=3 class="shadow"></td><td align=left><a href="/itembox.asp">ПОДБОРКИ</a></td></tr>
 
 
@@ -574,19 +603,25 @@ function end_session(){
 <tr><td width=100% align=left valign=top>
 &nbsp;<font color=#000000>Имя пользователя:</font></td></tr>
 <tr><td width=100% align=center valign=top>
-<font color=#00008f><a href="author_info.asp?isold=1" title="Персональная карточка пользователя">sitnikov69&nbsp;</a></font></td></tr>
+<font color=#00008f><a href="author_info.asp?isold=1" title="Персональная карточка пользователя">Gasilin&nbsp;</a></font></td></tr>
+
+<tr><td width=100% align=left valign=top>
+<div style="height: 2px;"></div>
+&nbsp;<font color=#000000>SPIN-код автора:</font></td></tr>
+<tr><td width=100% align=center valign=top>
+<font color=#00008f><a href="author_info.asp?isold=1" title="Персональная карточка автора">2001-2738</a></font></td></tr>
 
 <tr><td width=100% align=left valign=top>
 <div style="height: 2px;"></div>
 &nbsp;<font color=#000000>IP-адрес компьютера:</font></td></tr>
 <tr><td width=100% align=center valign=top>
-<font color=#00008f>89.175.21.183</font></td></tr>
+<font color=#00008f>128.70.161.1</font></td></tr>
 <tr><td width=100% align=left valign=top>
 <div style="height: 2px;"></div>
 &nbsp;<font color=#000000>Название организации:</font></td></tr>
 <tr><td width=100% align=center valign=top>
 
-<font color=#00008f>не определена</font></td></tr>
+<font color=#00008f><a href="/org_about.asp?orgsid=11">Институт научной информации по общественным наукам РАН</a></font></td></tr>
 
 
 <tr><td width=100% align=left valign=top>
@@ -594,12 +629,12 @@ function end_session(){
 &nbsp;<font color=#000000>Начало работы:</font></td></tr>
 
 <tr><td width=100% align=center valign=top>
-<font color=#00008f>27.01.2026 12:25</font></td></tr>
+<font color=#00008f>21.02.2026 11:37</font></td></tr>
 <tr><td width=100% align=left valign=top>
 <div style="height: 2px;"></div>
 &nbsp;<font color=#000000>Время работы:</font></td></tr>
 <tr><td width=100% align=center valign=top>
-<font color=#00008f>00:15</font></td></tr>
+<font color=#00008f>00:01</font></td></tr>
 </table>
 
 <div style="height: 10px;"></div>
@@ -775,8 +810,8 @@ function end_session(){
 
 <table width=200 cellspacing=0 cellpadding=3 border=0>
 <tr><td width=12% align=right valign=top>
-<a href="https://t.me/elibrary_ru_official/9" target=_blank><img src="/images/telegram.svg" width=24 height=24 border=0></a></td>
-<td width=88% align=left valign=middle><font color=#00008f><a href="https://t.me/elibrary_ru_official/9" target=_blank>Официальный Telegram-канал Научной электронной библиотеки eLIBRARY.RU</a></font>
+<a href="https://t.me/elibrary_ru_official/76" target=_blank><img src="/images/telegram.svg" width=24 height=24 border=0></a></td>
+<td width=88% align=left valign=middle><font color=#00008f><a href="https://t.me/elibrary_ru_official/76" target=_blank>Открыт раздел аналитики по регионам</a></font>
 </td></tr>
 </table>
 </td></tr>
@@ -790,12 +825,12 @@ function end_session(){
 <table width=550 cellspacing=0 cellpadding=3 border=0>
 <tr valign=middle>
 <td width=2%></td>
-<td width=25% align=left>eLIBRARY ID:&nbsp;<font color=#00008f><a href="item.asp?id=88765416" rel="nofollow">88765416</a></font></td>
-<td width=15% align=center>EDN:&nbsp;<font color=#00008f><a href="/bpfhvo" rel="nofollow">BPFHVO</a></font></td>
+<td width=25% align=left>eLIBRARY ID:&nbsp;<font color=#00008f><a href="item.asp?id=83175252" rel="nofollow">83175252</a></font></td>
+<td width=15% align=center>EDN:&nbsp;<font color=#00008f><a href="/xpvqia" rel="nofollow">XPVQIA</a></font></td>
 
-<td align=left width=5%><a href='javascript:qr_code("bpfhvo")' rel="nofollow"><img src="/images/qr_code2.png" width=16 height=16 class='help' title="Сгенерировать QR код для ссылки на этот документ"></a></td>
+<td align=left width=5%><a href='javascript:qr_code("xpvqia")' rel="nofollow"><img src="/images/qr_code2.png" width=16 height=16 class='help' title="Сгенерировать QR код для ссылки на этот документ"></a></td>
 
-<td width=53% align=right>DOI:&nbsp;<font color=#00008f><a href=https://doi.org/10.17323/2587-8719-2025-4-123-151 target=_blank rel=nofollow>10.17323/2587-8719-2025-4-123-151</a></font></td>
+<td width=53% align=right>DOI:&nbsp;<font color=#00008f><a href=https://doi.org/10.46539/gmd.v7i4.598 target=_blank rel=nofollow>10.46539/gmd.v7i4.598</a></font></td>
 </tr>
 
 </table>
@@ -804,7 +839,7 @@ function end_session(){
 <table width=550 cellspacing=0 cellpadding=3 border=0 style="table-layout: fixed;">
 <tr align=center valign=middle>
 <td width=4></td>
-<td width=534><span style="font-size: 9pt; color: #000000; overflow-wrap: break-word;"><b><p class='bigtext' style='color: #F26C4F;'>THE MECHANISM OF RESPONSIBILITY GENERATION AND THE LOGIC OF ETHICAL GOVERNANCE IN EMBODIED ARTIFICIAL INTELLIGENCE</p></b></span></td></tr>
+<td width=534><span style="font-size: 9pt; color: #000000; overflow-wrap: break-word;"><b><p class='bigtext' style='color: #F26C4F;'>ОТ АРХИТЕКТОНИКИ ЧИСТОГО РАЗУМА К АРХИТЕКТУРЕ ЦИФРОВЫХ СИСТЕМ</p></b></span></td></tr>
 </table>
 
 <div style="width:580px; margin:0; border:0; padding:0; ">
@@ -815,9 +850,9 @@ function end_session(){
 <tr>
 <td width=24></td>
 <td width=514 valign=middle align=center>
-<div style='display: inline-block; white-space: nowrap'><b><font color=#00008f>CHENG&nbsp;P.</font></b><img src='/images/about_author.gif' border=0 hspace=2 height=10 width=9 class='help pointer' title='ORCID:&nbsp;<a href="https://orcid.org/0009-0002-8474-4711" target=_blank>0009-0002-8474-4711</a>&nbsp;&nbsp; '><font color=#000000><sup>1</sup></font>,</div> <div style='display: inline-block; white-space: nowrap'><b><font color=#00008f>ZHANG&nbsp;ZH.</font></b><span class='astmd help' title='Автор, отвечающий за переписку'>*</span><img src='/images/about_author.gif' border=0 hspace=2 height=10 width=9 class='help pointer' title='ORCID:&nbsp;<a href="https://orcid.org/0000-0003-1876-9312" target=_blank>0000-0003-1876-9312</a>&nbsp;&nbsp; '><font color=#000000><sup>2</sup></font></div>
+<div style='display: inline-block; white-space: nowrap'><span class='help pointer' title='<b><font color=#F26C4F>Николаева Жанна Викторовна</font></b><br>Санкт-Петербургский государственный университет<br><a href="author_profile.asp?authorid=743757" target=_blank>Профиль автора в SCIENCE INDEX</a><br><a href="author_items.asp?authorid=743757" target=_blank rel=nofollow>Список публикаций в РИНЦ</a>'><b><font color=#00008f>НИКОЛАЕВА&nbsp;Ж.В.</font></b></span><a href='mailto:zh.v.nikolaeva@gmail.com' rel=nofollow><img src='/images/mail1.gif' border=0 hspace=2 height=8 width=10 class='help pointer' title='Написать письмо автору'></a><img src='/images/about_author.gif' border=0 hspace=2 height=10 width=9 class='help pointer' title='ORCID:&nbsp;<a href="https://orcid.org/0000-0001-5298-2980" target=_blank rel=nofollow>0000-0001-5298-2980</a>&nbsp;&nbsp; '><font color=#000000><sup>1</sup></font>,</div> <div style='display: inline-block; white-space: nowrap'><b><font color=#00008f>ГЛУШКОВА&nbsp;А.И.</font></b><a href='mailto:nastia.glu@mail.ru' rel=nofollow><img src='/images/mail1.gif' border=0 hspace=2 height=8 width=10 class='help pointer' title='Написать письмо автору'></a><img src='/images/about_author.gif' border=0 hspace=2 height=10 width=9 class='help pointer' title='ORCID:&nbsp;<a href="https://orcid.org/0009-0000-1808-4722" target=_blank rel=nofollow>0009-0000-1808-4722</a>&nbsp;&nbsp; '><font color=#000000><sup>1</sup></font></div>
 <div style="height:10px;"></div>
-<font color=#000000><sup>1</sup></font>&nbsp;<font color=#00008f>the China Research Institute for Science Popularization</font>, Beijing, China<br><font color=#000000><sup>2</sup></font>&nbsp;<font color=#00008f>the Institute for History of Natural Sciences, Chinese Academy of Sciences</font>, Beijing, China<br>
+<font color=#000000><sup>1</sup></font>&nbsp;<span class='help1 pointer' title='<b><font color=#F26C4F>Санкт-Петербургский государственный университет</font></b> (Санкт-Петербург)<br><a href="org_profile.asp?id=190" target=_blank>Профиль организации в SCIENCE INDEX</a><br><a href="org_items.asp?orgsid=190" target=_blank rel=nofollow>Список публикаций в РИНЦ</a>'><font color=#00008f>Санкт-Петербургский государственный университет</font></span>, Санкт-Петербург, Россия<br>
 </td></tr>
 </table>
 
@@ -831,17 +866,17 @@ function end_session(){
 
 <tr><td width=574 align=center valign=middle>
 Тип:&nbsp;<font color=#00008f>статья в журнале - научная статья</font>
-<span style="margin-left:20px;"></span>Язык:&nbsp;<font color=#00008f>английский</font>
+<span style="margin-left:20px;"></span>Язык:&nbsp;<font color=#00008f>русский</font>
 </td></tr>
 
 <tr><td></td></tr>
 
 <tr><td width=574 align=center valign=middle>
-Том:&nbsp;<font color=#00008f>9</font><span style="margin-left:20px;"></span>Номер:&nbsp;<a href="contents.asp?id=88765410&selid=88765416" title="Содержание выпуска">4</a>
+Том:&nbsp;<font color=#00008f>7</font><span style="margin-left:20px;"></span>Номер:&nbsp;<a href="contents.asp?id=83175249&selid=83175252" title="Содержание выпуска">4</a>
 <span style="margin-left:20px;"></span>Год:&nbsp;<font color=#00008f>2025</font>
 
-<span style="margin-left:20px;"></span><div style='display: inline-block; white-space: nowrap'>Страницы:&nbsp;<font color=#00008f>123-151</font></div>
-<div style="height:5px;"></div><span style="margin-left:20px;"></span>Поступила&nbsp;в&nbsp;редакцию:&nbsp;<font color=#00008f>13.09.2025</font><span style="margin-left:20px;"></span>Принята&nbsp;к&nbsp;печати:&nbsp;<font color=#00008f>18.10.2025</font>
+<span style="margin-left:20px;"></span><div style='display: inline-block; white-space: nowrap'>Страницы:&nbsp;<font color=#00008f>61-79</font></div>
+<div style="height:5px;"></div><span style="margin-left:20px;"></span>Поступила&nbsp;в&nbsp;редакцию:&nbsp;<font color=#00008f>04.12.2024</font><span style="margin-left:20px;"></span>Принята&nbsp;к&nbsp;печати:&nbsp;<font color=#00008f>17.03.2025</font>
 
 
 </td></tr>
@@ -859,10 +894,10 @@ function end_session(){
 <tr><td width=34>&nbsp;</td><td width=504 align=left valign=middle>
 <div style="height:3px;"></div>
 
-<a href="contents.asp?id=88765410" title="Содержание выпусков этого журнала">PHILOSOPHY. JOURNAL OF THE HIGHER SCHOOL OF ECONOMICS</a>
-<br>Учредители:&nbsp;Национальный исследовательский университет "Высшая школа экономики"
+<a href="contents.asp?id=83175249" title="Содержание выпусков этого журнала">GALACTICA MEDIA: JOURNAL OF MEDIA STUDIES</a>
+<br>Учредители:&nbsp;ООО НПО "Генезис.Фронтир.Наука"
 <br>
-eISSN:&nbsp;<font color=#00008f>2587-8719</font><span style="margin-left:20px;"></span>
+eISSN:&nbsp;<font color=#00008f>2658-7734</font><span style="margin-left:20px;"></span>
 
 </td></tr></table>
 
@@ -874,11 +909,15 @@ eISSN:&nbsp;<font color=#00008f>2587-8719</font><span style="margin-left:20px;">
 <font color=#000000>КЛЮЧЕВЫЕ СЛОВА:</font></td></tr>
 <tr><td width=34>&nbsp;</td><td width=504 align=left valign=middle>
 <div style="height:3px;"></div>
-<a href="keyword_items.asp?id=5942143">EMBODIED ARTIFICIAL INTELLIGENCE</a>, 
-<a href="keyword_items.asp?id=2147960">RESPONSIBILITY ATTRIBUTION</a>, 
-<a href="keyword_items.asp?id=18128420">ETHICAL GOVERNANCE</a>, 
-<a href="keyword_items.asp?id=28581299">PHENOMENOLOGY OF RESPONSIBILITY</a>, 
-<a href="keyword_items.asp?id=9309212">RESPONSIBLE RESEARCH AND INNOVATION</a>
+<a href="keyword_items.asp?id=2450910" rel=nofollow>АРХИТЕКТУРА</a>, 
+<a href="keyword_items.asp?id=2335861" rel=nofollow>АРХИТЕКТОНИКА</a>, 
+<a href="keyword_items.asp?id=2922947" rel=nofollow>ЦИФРОВЫЕ СИСТЕМЫ</a>, 
+<a href="keyword_items.asp?id=26636823" rel=nofollow>ФИЛОСОФИЯ АРХИТЕКТУРЫ В ИТАЛИИ</a>, 
+<a href="keyword_items.asp?id=4472292" rel=nofollow>ФИЛОСОФИЯ ИНФОРМАЦИИ</a>, 
+<a href="keyword_items.asp?id=2991362" rel=nofollow>И. КАНТ</a>, 
+<a href="keyword_items.asp?id=10258548" rel=nofollow>Л. ФЛОРИДИ</a>, 
+<a href="keyword_items.asp?id=19963412" rel=nofollow>М. ФЕРРАРИС</a>, 
+<a href="keyword_items.asp?id=27528780" rel=nofollow>К. РАТТИ</a>
 </td></tr>
 </table>
 
@@ -888,7 +927,7 @@ eISSN:&nbsp;<font color=#00008f>2587-8719</font><span style="margin-left:20px;">
 <font color=#000000>АННОТАЦИЯ:</font></td></tr>
 <tr><td width=34>&nbsp;</td><td width=504 align=left valign=middle>
 
-<div id="abstract1" style="width:504px; border:0; margin:0; padding:0; text-align:left;"><p align=justify style='margin-top: 0.3em;'>This article addresses the “responsibility gap” arising from the integration of embodied artificial intelligence into social interactions. Rejecting functionalist models that equate AI agency with moral personhood, we adopt a phenomenological perspective, reframing responsibility as a relationally “manifested” phenomenon. We propose a Three-Stage Modelof Embodied Responsibility Emergence (Perceptual Presentation - Situational Embeddedness - Ethical Appeal) and philosophically reconstruct the four dimensions of RRI (Anticipation, Reflexivity, Inclusion, Responsiveness) as a “Structure of Responsibility Manifestation.” The paper warns against the ethical risks of anthropomorphism, clarifies AI’s inherent lack of empathy and moral agency, and argues that responsibility must ultimately reside with humans and be institutionalized through governance mechanisms. Operable pathways and normative boundaries for such governance are outlined.</div>
+<div id="abstract1" style="width:504px; border:0; margin:0; padding:0; text-align:left;"><p align=justify style='margin-top: 0.3em;'>В статье анализируется использование термина «архитектоника» и его применимость в современном языке философии. Кажущееся на первый взгляд «тавтологическим» использование слов «архитектура» и «архитектоника» в названии статьи использовано авторами намеренно, в качестве вызова к той части современного интернационального гуманитарного знания, особенно касающегося инфосферы и цифровой среды, которая часто употребляет два эти термина как взаимозаменяемые. Кантовское смысловое содержание понятия «архитектоника» рассматривается как источник для создания актуальных концептов в философии архитектуры цифровой эпохи: как вида искусства, так и архитектуры ИИ и других цифровых систем, для которых характерна метафизика высшего порядка. Для обоснования подобных рассуждений используется содержание итальянских исследований по «метафизике архитектуры» (Дж. Ваттимо), «философии информации» (Л. Флориди), «теории проекта» (М. Феррарис, А. Армандо, Дж. Дурбиано), «единой философии физических и математических объектов» (М. Баризон), «философии сенсорного города» (К. Ратти) и др. «Архитектоника науки» связана с современным пониманием интеллекта («идей разума») и, в частности, может быть применена к «архитектуре» и «архитектурам» ИИ и других сложных систем для логического выхода во внелогическое обоснование мышления. Статья предназначена для медиафилософов, антропологов, архитекторов и теоретиков цифровой культуры.</div>
 
 </td></tr></table>
 
@@ -917,9 +956,9 @@ eISSN:&nbsp;<font color=#00008f>2587-8719</font><span style="margin-left:20px;">
 
 
 <tr align=left valign=bottom>
-<td><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Наличие в РИНЦ информации о рецензировании данной публикации.</p>'>&nbsp;&nbsp;Рецензии:&nbsp;<font color=#00008f>нет данных</font></td>
+<td><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Наличие в РИНЦ информации о рецензировании данной публикации.</p>'>&nbsp;&nbsp;Рецензии:&nbsp;<font color=#00008f>есть</font></td>
 
-<td><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Процентиль журнала в рейтинге Science Index за 2023 год.</p>'>&nbsp;&nbsp;Процентиль журнала в рейтинге SI:&nbsp;<font color=#00008f>22</font></td>
+<td><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Процентиль журнала в рейтинге Science Index за 2023 год.</p>'>&nbsp;&nbsp;Процентиль журнала в рейтинге SI:&nbsp;<font color=#00008f>32</font></td>
 
 </tr>
 
@@ -938,7 +977,7 @@ eISSN:&nbsp;<font color=#00008f>2587-8719</font><span style="margin-left:20px;">
 <table width=100% border=0 cellspacing=0 cellpadding=3>
 
 <tr align=left valign=top>
-<td width=27%><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Основная рубрика публикации в соответствии с рубрикатором OECD. Авторы, зарегистрированные в системе Science Index, имеют возможность уточнять тематические рубрики своих публикаций.</p>'>&nbsp;&nbsp;Рубрика&nbsp;OECD:&nbsp;</td><td width=73%><font color=#00008f><span id="rubric_oecd">нет</span></font></td>
+<td width=27%><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Основная рубрика публикации в соответствии с рубрикатором OECD. Авторы, зарегистрированные в системе Science Index, имеют возможность уточнять тематические рубрики своих публикаций.</p>'>&nbsp;&nbsp;Рубрика&nbsp;OECD:&nbsp;</td><td width=73%><font color=#00008f><span id="rubric_oecd">Philosophy, ethics and religion</span></font></td>
 </tr>
 </table>
 
@@ -952,7 +991,7 @@ eISSN:&nbsp;<font color=#00008f>2587-8719</font><span style="margin-left:20px;">
 <table width=100% border=0 cellspacing=0 cellpadding=3>
 
 <tr align=left valign=top>
-<td width=27%><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Основная рубрика публикации в соответствии с рубрикатором ГРНТИ. Авторы, зарегистрированные в системе Science Index, имеют возможность уточнять тематические рубрики своих публикаций.</p>'>&nbsp;&nbsp;Рубрика&nbsp;ГРНТИ:&nbsp;</td><td width=73%><font color=#00008f><span id="rubric_grnti">нет</span></font></td>
+<td width=27%><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Основная рубрика публикации в соответствии с рубрикатором ГРНТИ. Авторы, зарегистрированные в системе Science Index, имеют возможность уточнять тематические рубрики своих публикаций.</p>'>&nbsp;&nbsp;Рубрика&nbsp;ГРНТИ:&nbsp;</td><td width=73%><font color=#00008f><span id="rubric_grnti">Философия <span style='color:#F26C4F'>/</span> Общие вопросы философии</span></font></td>
 </tr>
 </table>
 
@@ -983,16 +1022,16 @@ eISSN:&nbsp;<font color=#00008f>2587-8719</font><span style="margin-left:20px;">
 <table width=100% border=0 cellspacing=0 cellpadding=3>
 <tr align=left valign=bottom>
 
-<td width=30%><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Число просмотров страницы с описанием и аннотацией публикации посетителями elibrary.ru. Учитываются все просмотры, в том числе сделанные незарегистрированными пользователями. Повторные просмотры одним и тем же пользователем не учитываются. Зависит от года издания и появления публикации на сайте. В скобках указано число зарегистрированных пользователей, просматривавших данную страницу.</p>'>&nbsp;&nbsp;Просмотров:&nbsp;<font color=#00008f>0 (0)</font></td>
+<td width=30%><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Число просмотров страницы с описанием и аннотацией публикации посетителями elibrary.ru. Учитываются все просмотры, в том числе сделанные незарегистрированными пользователями. Повторные просмотры одним и тем же пользователем не учитываются. Зависит от года издания и появления публикации на сайте. В скобках указано число зарегистрированных пользователей, просматривавших данную страницу.</p>'>&nbsp;&nbsp;Просмотров:&nbsp;<font color=#00008f>7 (7)</font></td>
 
-<td width=35%><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Число загрузок полного текста публикации посетителями elibrary.ru. Если полный текст публикации отсутствует на elibrary.ru, показатель не рассчитывается. Повторные загрузки одним и тем же пользователем не учитываются. Зависит от года издания и появления публикации на сайте, а также от режима доступа к полному тексту (открытый или по подписке). В скобках указано число уникальных авторов, загрузивших данную публикацию.</p>'>&nbsp;&nbsp;Загрузок:&nbsp;<font color=#00008f>0 (0)</font></td>
+<td width=35%><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Число загрузок полного текста публикации посетителями elibrary.ru. Если полный текст публикации отсутствует на elibrary.ru, показатель не рассчитывается. Повторные загрузки одним и тем же пользователем не учитываются. Зависит от года издания и появления публикации на сайте, а также от режима доступа к полному тексту (открытый или по подписке). В скобках указано число уникальных авторов, загрузивших данную публикацию.</p>'>&nbsp;&nbsp;Загрузок:&nbsp;<font color=#00008f>5 (4)</font></td>
 
-<td width=35%><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Число персональных подборок пользователей elibrary.ru, которые включают данную публикацию.</p>'>&nbsp;&nbsp;Включено в подборки:&nbsp;<font color=#00008f>0</font></td>
+<td width=35%><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Число персональных подборок пользователей elibrary.ru, которые включают данную публикацию.</p>'>&nbsp;&nbsp;Включено в подборки:&nbsp;<font color=#00008f>46</font></td>
 </tr>
 
 <tr align=left valign=bottom>
 
-<td width=30%><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Число оценок публикации, сделанных учеными, зарегистрированными в системе Science Index. Для просмотра распределения оценок щелкните мышью на этом числе.</p>'>&nbsp;&nbsp;Всего оценок:&nbsp;<font color=#00008f><span id="score_count">0</span></font></td>
+<td width=30%><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Число оценок публикации, сделанных учеными, зарегистрированными в системе Science Index. Для просмотра распределения оценок щелкните мышью на этом числе.</p>'>&nbsp;&nbsp;Всего оценок:&nbsp;<font color=#00008f><span id="score_count"><a href="javascript:item_all_scores()" title="Посмотреть распределение оценок" rel=nofollow>1</a></span></font></td>
 
 <td width=35%><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Средняя оценка публикации учеными, зарегистрированными в системе Science Index. Значение соответствует следующим уровням оценки публикации:</p><br><table width=100% cellspacing=0 cellpadding=3 border=0>
 <tr><td width=15% align=center valign=top>
@@ -1021,7 +1060,7 @@ eISSN:&nbsp;<font color=#00008f>2587-8719</font><span style="margin-left:20px;">
 </td>
 <td align=left valign=top><div>не научная, нарушающая научную этику или очень слабая публикация (должна быть исключена из РИНЦ)</div></td></tr>
 
-</table>'>&nbsp;&nbsp;Средняя оценка:&nbsp;<font color=#00008f><span id="avg_score"></span></font>
+</table>'>&nbsp;&nbsp;Средняя оценка:&nbsp;<font color=#00008f><span id="avg_score">5</span></font>
 </td>
 
 <td width=35%><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Число отзывов о публикации, сделанных учеными, зарегистрированными в системе Science Index. Для просмотра всех отзывов щелкните мышью на этом числе.</p>'>&nbsp;&nbsp;Всего отзывов:&nbsp;<font color=#00008f><span id="comment_count">0</span></font></td>
@@ -1029,38 +1068,230 @@ eISSN:&nbsp;<font color=#00008f>2587-8719</font><span style="margin-left:20px;">
 
 
 
+<SCRIPT LANGUAGE="JavaScript">
+function item_all_comments(){
+  $.fancybox({
+      href : '/item_all_comments.asp?itemid=83175252&rand=' + Math.random(),
+      title : '',
+	  padding : 20,     
+	  width : 520,
+	  height : 350,
+	  overlayOpacity : 0.3,	
+	  overlayColor : '#000',
+	  speedIn : 500,
+	  hideOnOverlayClick : false,
+	  enableEscapeButton : true,
+	  type : 'iframe'
+    });
+}
+function item_all_scores(){
+  $.fancybox({
+      href : '/item_all_scores.asp?itemid=83175252&rand=' + Math.random(),
+      title : '',
+	  padding : 20,     
+	  width : 400,
+	  height : 270,
+	  overlayOpacity : 0.3,	
+	  overlayColor : '#000',
+	  speedIn : 500,
+	  hideOnOverlayClick : false,
+	  enableEscapeButton : true,
+	  type : 'iframe'
+    });
+}
+</script>
+
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function item_score_comments(){
+  $.fancybox({
+		href : '/item_score_comments.asp?itemid=83175252&rand=' + Math.random(),
+		title : '',
+		padding : 20,     
+		width : 520,
+		height : 280,
+		overlayOpacity : 0.3,	
+		overlayColor : '#000',
+		speedIn : 500,
+		hideOnOverlayClick : false,
+		enableEscapeButton : true,
+		type : 'iframe'
+	});
+}
+function change_score(score){
+  if ($('#score').val()==score){
+    $.post('update_item_score.asp', 'itemid=83175252&score=0&rand=' + Math.random(), function() {
+      $('#score').val(0); 
+	  $('.sc_0').css({color:"#c0c0c0"});
+      $.post('item_score_count.asp', 'itemid=83175252&rand=' + Math.random(), function(data){
+        var s = data.split('|');
+		if(s[0]>0){
+          $('#score_count').html('<a href="javascript:item_all_scores()" title="Посмотреть распределение оценок" rel=nofollow>'+s[0]+'</a>');}
+		else{
+          $('#score_count').html('0');}
+        $('#avg_score').html(s[1]);
+      });
+    });
+  }
+  else {
+    $.post('update_item_score.asp', 'itemid=83175252&score=' + score + '&rand=' + Math.random(), function() {
+      $('#score').val(score); 
+	  $('.sc_0').css({color:"#c0c0c0"});
+	  $('.sc_'+score).css({color:"#F26C4F"});
+      $.post('item_score_count.asp', 'itemid=83175252&rand=' + Math.random(), function(data){
+        var s = data.split('|');
+		if(s[0]>0){
+          $('#score_count').html('<a href="javascript:item_all_scores()" title="Посмотреть распределение оценок" rel=nofollow>'+s[0]+'</a>');}
+		else{
+          $('#score_count').html('0');}
+        $('#avg_score').html(s[1]);
+      });
+    });
+  } 
+}
+</script>
+
+<table width=100% border=0 cellspacing=0 cellpadding=3>
+<tr>
+<td align=left valign=top width=40%><div style="height:8px"></div><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Оцените данную публикацию - Ваша экспертная оценка будет полезна другим читателям библиотеки. Для оценки публикации необходимо щелкнуть мышью на звездочке, соответствующей выбранному уровню:</p><br><table width=100% cellspacing=0 cellpadding=3 border=0>
+<tr><td width=30% align=left valign=top>
+<span style="font-size: 18pt; color: #F26C4F; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+<span style="font-size: 18pt; color: #F26C4F; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+<span style="font-size: 18pt; color: #F26C4F; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+<span style="font-size: 18pt; color: #F26C4F; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+<span style="font-size: 18pt; color: #F26C4F; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+</td>
+<td width=70% align=left valign=top><div>публикация международного уровня (на уровне требований Web of Science Core Collection)</div>
+</td></tr>
+
+<tr><td align=left valign=top>
+<span style="font-size: 18pt; color: #F26C4F; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+<span style="font-size: 18pt; color: #F26C4F; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+<span style="font-size: 18pt; color: #F26C4F; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+<span style="font-size: 18pt; color: #F26C4F; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+<span style="font-size: 18pt; color: #C0C0C0; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+</td>
+<td align=left valign=top><div>публикация высокого уровня (достаточного для учета при защите докторской диссертации, достойна включения в ядро РИНЦ)</div></td></tr>
+
+<tr><td align=left valign=top>
+<span style="font-size: 18pt; color: #F26C4F; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+<span style="font-size: 18pt; color: #F26C4F; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+<span style="font-size: 18pt; color: #F26C4F; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+<span style="font-size: 18pt; color: #C0C0C0; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+<span style="font-size: 18pt; color: #C0C0C0; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+</td>
+<td align=left valign=top><div>публикация среднего уровня (достаточного для учета при защите кандидатской диссертации)</div></td></tr>
+
+<tr><td align=left valign=top>
+<span style="font-size: 18pt; color: #F26C4F; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+<span style="font-size: 18pt; color: #F26C4F; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+<span style="font-size: 18pt; color: #C0C0C0; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+<span style="font-size: 18pt; color: #C0C0C0; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+<span style="font-size: 18pt; color: #C0C0C0; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+</td>
+<td align=left valign=top><div>публикация начального уровня (как правило, подготовленная студентами, аспирантами, молодыми учеными, при этом уровень достаточен для ее включения в РИНЦ)</div></td></tr>
+
+<tr><td align=left valign=top>
+<span style="font-size: 18pt; color: #F26C4F; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+<span style="font-size: 18pt; color: #C0C0C0; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+<span style="font-size: 18pt; color: #C0C0C0; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+<span style="font-size: 18pt; color: #C0C0C0; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+<span style="font-size: 18pt; color: #C0C0C0; font-family: Times New Roman, Times, serif; padding: 0;">*</span>
+</td>
+<td align=left valign=top><div>не научная, нарушающая научную этику или очень слабая публикация (должна быть исключена из РИНЦ)</div></td></tr>
+
+</table>
+<p>Нажатие на другую звездочку будет переключать оценку. Если Вы не хотите оценивать данную публикацию, нужно оставить все звездочки серыми (если перед этим оценка была уже проставлена, нужно еще раз кликнуть на звездочке, соответствующей оценке). Оценивать публикации могут ученые, зарегистрированные в системе Science Index, за исключением авторов оцениваемой публикации.</p><p>Вы можете также добавить свой отзыв о данной публикации с аргументацией проставленной оценки и рекомендациями для других читателей.</p>'>&nbsp;&nbsp;Ваша оценка данной публикации:&nbsp;<font color=#00008f></font></td>
+
+<td nowrap align=left valign=top width=25%>
+<span id="score_1" class="asterbig sc_0 sc_1 sc_2 sc_3 sc_4 sc_5" onClick="change_score('1')">*</span>
+<span id="score_2" class="asterbig sc_0 sc_2 sc_3 sc_4 sc_5" onClick="change_score('2')">*</span>
+<span id="score_3" class="asterbig sc_0 sc_3 sc_4 sc_5" onClick="change_score('3')">*</span>
+<span id="score_4" class="asterbig sc_0 sc_4 sc_5" onClick="change_score('4')">*</span>
+<span id="score_5" class="asterbig sc_0 sc_5" onClick="change_score('5')">*</span>
+</td>
+<td width=18% align=left valign=top><div style="height:8px"></div><img src="/images/but_orange_question.gif" class="imghelp help" title='<p>Если Вы прочитали данную публикацию, Вы можете помочь другим посетителям библиотеки, оставив свой отзыв с комментариями и рекомендациями для других читателей. Ваш отзыв будет доступен для всех ученых, зарегистрированных в системе Science Index. Чтобы оставить отзыв о данной публикации, щелкните мышью на иконке. Вы можете в любой момент изменить или удалить свой отзыв.</p>'>&nbsp;&nbsp;Ваш отзыв:&nbsp;</td>
+<td width=17% align=left valign=top><img id="comment_score" src="/images/comments-g.png" width=14 height=14 border=0 style="margin:8px 0 0 0; cursor: pointer;" title="Добавить отзыв о данной публикации" onClick="item_score_comments()"></td>
+</tr>
+</table>
+
+<input type="hidden" name="score" id="score" value="0">
+
+
+
 </td></tr></table>
 
 
+<div style="height:10px;"></div>
 <table width=550 border=0 cellspacing=0 cellpadding=3>
 <tr><td colspan=2 align=left>
-<font color=#000000>ОПИСАНИЕ НА РУССКОМ ЯЗЫКЕ:</font></td></tr>
+<font color=#000000>ИНФОРМАЦИЯ О ФИНАНСОВОЙ ПОДДЕРЖКЕ:</font></td></tr>
+<tr><td width=34>&nbsp;</td><td width=504 align=left valign=middle>
+
+<div style="height:3px;"></div>
+<p>Статья подготовлена при поддержке Гранта РНФ 24-28-01707 «Современная философия архитектуры в Италии» в СПбГУ.
+<div style="height:5px;"></div>
+
+</td></tr></table>
+
+
+<table width=100% border=0 cellspacing=1 cellpadding=2 style="table-layout:fixed; word-wrap:break-word; overflow:hidden">
+
+<tr bgcolor=#f5f5f5><td width=6% align=right valign=top nowrap><font color=#000000>1.&nbsp;</font></td>
+<td width=89% align=justify valign=top><font color=#000000>
+<span style="line-height:1.0;">СОВРЕМЕННАЯ ФИЛОСОФИЯ АРХИТЕКТУРЫ В ИТАЛИИ</span><br><i>Николаева Ж.В.</i><br>НИР: грант&nbsp;№&nbsp;24-28-01707. Российский научный фонд. 2024. &nbsp;<font color=#F26C4F>EDN:</font>&nbsp;<a href="https://elibrary.ru/edxuio" target=_blank>EDXUIO</a>
+</font></td><td align=center valign=top width=5%><div style="height:5px;"></div><a href="item.asp?id=80593237" title="Перейти на описание гранта" class="help1" target=_blank><img src="/images/go_url.png" height=15 width=15 border=0></a></td>
+</tr>
+
+</table>
+
+<div style="height:10px;"></div>
+
+<table width=550 border=0 cellspacing=0 cellpadding=3>
+<tr><td colspan=2 align=left>
+<font color=#000000>ОПИСАНИЕ НА АНГЛИЙСКОМ ЯЗЫКЕ:</font></td></tr>
 <tr><td width=34>&nbsp;</td><td width=504 align=center valign=middle>
 <div style="height:5px;"></div>
-<font color=#F26C4F>МЕХАНИЗМ ФОРМИРОВАНИЯ ОТВЕТСТВЕННОСТИ И ЛОГИКА ЭТИЧЕСКОГО УПРАВЛЕНИЯ ВО ВОПЛОЩЕННОМ ИСКУССТВЕННОМ ИНТЕЛЛЕКТЕ</font>
+<font color=#F26C4F>FROM THE ARCHITECTONICS OF PURE REASON TO THE ARCHITECTURE OF DIGITAL SYSTEMS</font>
 
 <div style="height:5px;"></div>
-<div style='display: inline-block; white-space: nowrap'><font color=#00008f>ЧЭН&nbsp;П.</font><img src='/images/about_author.gif' border=0 hspace=2 height=10 width=9 class='help pointer' title='ORCID:&nbsp;<a href="https://orcid.org/0009-0002-8474-4711" target=_blank>0009-0002-8474-4711</a>&nbsp;&nbsp; '><font color=#000000><sup>1</sup></font>,</div> <div style='display: inline-block; white-space: nowrap'><font color=#00008f>ЧЖАН&nbsp;Ч.</font><span class='astmd help' title='Автор, отвечающий за переписку'>*</span><img src='/images/about_author.gif' border=0 hspace=2 height=10 width=9 class='help pointer' title='ORCID:&nbsp;<a href="https://orcid.org/0000-0003-1876-9312" target=_blank>0000-0003-1876-9312</a>&nbsp;&nbsp; '><font color=#000000><sup>2</sup></font></div>
+<div style='display: inline-block; white-space: nowrap'><span class='help pointer' title='<b><font color=#F26C4F>Николаева Жанна Викторовна</font></b><br>Санкт-Петербургский государственный университет<br><a href="author_profile.asp?authorid=743757" target=_blank>Профиль автора в SCIENCE INDEX</a><br><a href="author_items.asp?authorid=743757" target=_blank rel=nofollow>Список публикаций в РИНЦ</a>'><font color=#00008f>NIKOLAEVA&nbsp;ZH.V.</font></span><a href='mailto:zh.v.nikolaeva@gmail.com' rel=nofollow><img src='/images/mail1.gif' border=0 hspace=2 height=8 width=10 class='help pointer' title='Написать письмо автору'></a><img src='/images/about_author.gif' border=0 hspace=2 height=10 width=9 class='help pointer' title='ORCID:&nbsp;<a href="https://orcid.org/0000-0001-5298-2980" target=_blank rel=nofollow>0000-0001-5298-2980</a>&nbsp;&nbsp; '><font color=#000000><sup>1</sup></font>,</div> <div style='display: inline-block; white-space: nowrap'><font color=#00008f>GLUSHKOVA&nbsp;A.I.</font><a href='mailto:nastia.glu@mail.ru' rel=nofollow><img src='/images/mail1.gif' border=0 hspace=2 height=8 width=10 class='help pointer' title='Написать письмо автору'></a><img src='/images/about_author.gif' border=0 hspace=2 height=10 width=9 class='help pointer' title='ORCID:&nbsp;<a href="https://orcid.org/0009-0000-1808-4722" target=_blank rel=nofollow>0009-0000-1808-4722</a>&nbsp;&nbsp; '><font color=#000000><sup>1</sup></font></div>
 <br>
 
 <div style="height:5px;"></div>
-<font color=#000000><sup>1</sup></font>&nbsp;<font color=#00008f>КИТАЙСКИЙ НАУЧНО-ИССЛЕДОВАТЕЛЬСКИЙ ИНСТИТУТ ПОПУЛЯРИЗАЦИИ НАУКИ</font>, ПЕКИН<br><font color=#000000><sup>2</sup></font>&nbsp;<font color=#00008f>ИНСТИТУТ ИСТОРИИ ЕСТЕСТВЕННЫХ НАУК КИТАЙСКОЙ АКАДЕМИИ НАУК</font>, ПЕКИН<br>
+<font color=#000000><sup>1</sup></font>&nbsp;<span class='help1 pointer' title='<b><font color=#F26C4F>Санкт-Петербургский государственный университет</font></b> (Санкт-Петербург)<br><a href="org_profile.asp?id=190" target=_blank>Профиль организации в SCIENCE INDEX</a><br><a href="org_items.asp?orgsid=190" target=_blank rel=nofollow>Список публикаций в РИНЦ</a>'><font color=#00008f>Saint Petersburg State University</font></span>, Saint Petersburg, Russia<br>
 </td></tr>
 
 
 
 <tr><td width=34>&nbsp;</td><td width=504 align=left valign=middle>
 
-<div id="eabstract1" style="width:504px; border:0; margin:0; padding:0; text-align:left;"><p align=justify style='margin-top: 0.3em;'>Статья посвящена проблеме «разрыва ответственности», возникающего в связи с интеграцией воплощенного искусственного интеллекта в сферу социальных взаимодействий. Отказываясь от функционалистских моделей, которые приравнивают агентность ИИ к моральному статусу личности, авторы принимают феноменологическую перспективу и переосмысливают ответственность как феномен, «проявляющийся»в отношениях. Предлагается трехстадийная модель возникновения воплощенной ответственности: перцептивная презентация, ситуативная включенность, этический призыв. На этой основе проводится философская реконструкция четырех измерений ответственных исследований и инноваций (ООИ) - антиципации, рефлексивности, инклюзивности, реагирования, которые трактуются как «структура проявления ответственности». Статья предостерегает от этических рисков антропоморфизации, уточняет принципиальную неспособность ИИ к эмпатии и моральной агентности и утверждает, что ответственность в конечном счете должна оставаться на стороне человека и быть институционализирована через соответствующие механизмы управления.</div>
+<div id="eabstract1" style="width:504px; border:0; margin:0; padding:0; text-align:left;"><p align=justify style='margin-top: 0.3em;'>The paper analyzes the use of the term “architectonics” and its applicability in the actual philosophical language. The use of the words “architecture” and “architectonics” in the title of the article, which at the first glance seems to be “tautological”, is used by the authors intentionally serving as a challenge to that part of contemporary international humanitarian knowledge, especially concerning the infosphere and the digital environments, where these two terms are often used interchangeably. The Kantian semantic content of the concept “architectonics” is considered as a source for the creation of relevant concepts in the philosophy of architecture of the digital era: both as an art form and as the architecture of AI and other digital systems, which are characterized by higher-order metaphysics. To substantiate such reasoning, the content of Italian studies on the “metaphysics of architecture” (G. Vattimo), “philosophy of information” (L...</div>
+
+<div id="eabstract2" style="width:504px; border:0; margin:0; padding:0; text-align:left; display:none;"><p align=justify style='margin-top: 0.3em;'>The paper analyzes the use of the term “architectonics” and its applicability in the actual philosophical language. The use of the words “architecture” and “architectonics” in the title of the article, which at the first glance seems to be “tautological”, is used by the authors intentionally serving as a challenge to that part of contemporary international humanitarian knowledge, especially concerning the infosphere and the digital environments, where these two terms are often used interchangeably. The Kantian semantic content of the concept “architectonics” is considered as a source for the creation of relevant concepts in the philosophy of architecture of the digital era: both as an art form and as the architecture of AI and other digital systems, which are characterized by higher-order metaphysics. To substantiate such reasoning, the content of Italian studies on the “metaphysics of architecture” (G. Vattimo), “philosophy of information” (L. Floridi), “theory of the project” (M. Ferraris, A. Armando, G. Durbiano), “unified philosophy of physical and mathematical objects” (M. Barison), “philosophy of the sensory city” (C. Ratti), among others, are used. The “architectonics of the science” is related to the modern understanding of meaning (“ideas of reason”) and, in particular, it can be applied to the “architecture” and “architectures” of AI and other complex systems for a logical exit to the non-logical justification of thinking. The article will be of interest to media philosophers, anthropologists, architects and digital culture theorists.</div>
+<script type="text/javascript">
+function show_eabstract() {
+  $('#eabstract1').hide();
+  $('#eabstract2').show();
+  $('#eabstract_expand').hide();
+}
+</script>
+<div id="eabstract_expand" style="margin:10px 0 0 5px; text-align:left;"><span class="win_expandable" style="color:#F26C4F; margin:0 5px 0 0;" onClick="show_eabstract()">▼</span><a href="javascript:show_eabstract()" rel=nofollow>Показать полностью</a></div>
 
 </td></tr>
 
 <tr><td width=34>&nbsp;</td><td width=504 align=left valign=middle><p>
-Ключевые слова: <a href="keyword_items.asp?id=25989281">ВОПЛОЩЕННЫЙ ИСКУССТВЕННЫЙ ИНТЕЛЛЕКТ</a>, 
-<a href="keyword_items.asp?id=4578149">АТРИБУЦИЯ ОТВЕТСТВЕННОСТИ</a>, 
-<a href="keyword_items.asp?id=21843899">ЭТИЧЕСКОЕ УПРАВЛЕНИЕ</a>, 
-<a href="keyword_items.asp?id=28581298">ФЕНОМЕНОЛОГИЯ ОТВЕТСТВЕННОСТИ</a>, 
-<a href="keyword_items.asp?id=9024436">ОТВЕТСТВЕННЫЕ ИССЛЕДОВАНИЯ И ИННОВАЦИИ</a>
+Keywords: <a href="keyword_items.asp?id=52888" rel=nofollow>ARCHITECTURE</a>, 
+<a href="keyword_items.asp?id=2174380" rel=nofollow>ARCHITECTONICS</a>, 
+<a href="keyword_items.asp?id=551598" rel=nofollow>DIGITAL SYSTEMS</a>, 
+<a href="keyword_items.asp?id=26636824" rel=nofollow>PHILOSOPHY OF ARCHITECTURE IN ITALY</a>, 
+<a href="keyword_items.asp?id=2284294" rel=nofollow>PHILOSOPHY OF INFORMATION</a>, 
+<a href="keyword_items.asp?id=3203579" rel=nofollow>I. KANT</a>, 
+<a href="keyword_items.asp?id=10258549" rel=nofollow>L. FLORIDI</a>, 
+<a href="keyword_items.asp?id=19963414" rel=nofollow>M. FERRARIS</a>, 
+<a href="keyword_items.asp?id=27528782" rel=nofollow>C. RATTI</a>
 </td></tr>
 
 </table>
@@ -1096,56 +1327,45 @@ function show_context(refid) {
 <div style="height:5px;"></div>
 </td></tr></table>
 
-<table width=100% border=0 cellspacing=1 cellpadding=2 style="table-layout:fixed; word-wrap:break-word; overflow:hidden">
+<table width=100% border=0 cellspacing=1 cellpadding=2 style="table-layout:fixed; word-wrap:break-word; overflow:hidden; hyphens: auto">
 
 <tr bgcolor=#f5f5f5><td width=6% align=right valign=top nowrap><font color=#000000>1.&nbsp;</font></td>
-<td width=89% align=justify valign=top><font color=#000000>
-Asada, M. 2018. "Artificial Empathy". In Diversity in Harmony: Insights from Psychology, ed. by K. Shigemasu, S. Kuwano, T. Sato, and T. Matsuzawa, 19-41. Hoboken (NJ): John Wiley & Sons.</font>
-<span title="Показать ссылку в тексте публикации" class="win_expandable" id="context_expand_1892184915" style="color:#00008f; margin:0 5px 0 0;" onClick="show_context('1892184915')"> &nbsp;<font color=#F26C4F>▼</font>&nbsp;Контекст</span>
-<div id="context_1892184915" style="border:0; margin:0; padding:0; text-align:left; display:none;">
-<div style="height:3px;"></div>
-<table width=100% border=0 cellspacing=1 cellpadding=3>
-<td width=8% align=right valign=top bgcolor=#f5f5f5><font color=#000000>Контекст:</font></td>
-<td width=92% align=left valign=top bgcolor=#f5f5f5>
-<font color=#555555><i>...Research in healthcare AI confirms that while AI may achieve cognitive empathy (i.e., recognizing a patient's emotional state), it cannot achieve affective empathy due to its lack of emotional experience (Asada, 2018)...</i></font>
-</td></tr></table>
-</div>
-
+<td width=89% align=justify valign=top style="hyphens: auto"><font color=#000000>
+Armando, A., & Durbiano, G. (2017). Teoria del progetto architettonico [Theory of Architectural Design]. Carocci. (In Italian).</font>
 </td><td align=center valign=top width=5%>&nbsp;</td>
 </tr>
 
 <tr bgcolor=#f5f5f5><td width=6% align=right valign=top nowrap><font color=#000000>2.&nbsp;</font></td>
-<td width=89% align=justify valign=top><font color=#000000>
-Baum, K., S. Mantel, E. Schmidt, and T. Speith. 2022. "From Responsibility to Reason-Giving Explainable Artificial Intelligence". Philosophy & Technology 35.</font>
+<td width=89% align=justify valign=top style="hyphens: auto"><font color=#000000>
+Barison, M. (2020). L'Antropocene architettonico. Sulla formazione di mondo [The Architectural Anthropocene. On the Formation of the World]. Aesthetica Preprint, 114, 79-97. (In Italian).</font>&nbsp; <font color=#F26C4F>DOI:</font>&nbsp;<a href="https://doi.org/10.7413/0393-8522042" target=_blank rel="nofollow">10.7413/0393-8522042</a>
 </td><td align=center valign=top width=5%>&nbsp;</td>
 </tr>
 
 <tr bgcolor=#f5f5f5><td width=6% align=right valign=top nowrap><font color=#000000>3.&nbsp;</font></td>
-<td width=89% align=justify valign=top><font color=#000000>
-Burget, M., E. Bardone, and M. Pedaste. 2016. "Dimensions of Responsible Research and Innovation". In INTED2016 Proceedings: 10th International Technology, Education and Development Conference, ed. by L. Gómez Chova, A. López Martínez, and I. Candel Torres, 1008-1013. Valencia: IATED Academy.</font>
+<td width=89% align=justify valign=top style="hyphens: auto"><font color=#000000>
+Boetticher, C. (1852). Die Tektonik der Hellenen [The Tectonics of the Hellenes]. Textbände und Tafelband. (In German).</font>
 </td><td align=center valign=top width=5%>&nbsp;</td>
 </tr>
 
 <tr bgcolor=#f5f5f5><td width=6% align=right valign=top nowrap><font color=#000000>4.&nbsp;</font></td>
-<td width=89% align=justify valign=top><font color=#000000>
-Coeckelbergh, M. 2020. "Artificial Intelligence, Responsibility Attribution, and a Relational Justification of Explainability". Science and Engineering Ethics 26:2051-2068.</font>&nbsp; <font color=#F26C4F>EDN:</font>&nbsp;<a href="https://elibrary.ru/vcrkiu" target=_blank rel="nofollow">VCRKIU</a>
-
-<span title="Показать ссылку в тексте публикации" class="win_expandable" id="context_expand_1892184918" style="color:#00008f; margin:0 5px 0 0;" onClick="show_context('1892184918')"> &nbsp;<font color=#F26C4F>▼</font>&nbsp;Контекст</span>
-<div id="context_1892184918" style="border:0; margin:0; padding:0; text-align:left; display:none;">
+<td width=89% align=justify valign=top style="hyphens: auto"><font color=#000000>
+Carnicella, A. (2020). Luciano Floridi. La quarta rivoluzione.Come l'infosfera sta trasformando il mondo [Luciano Floridi. The Fourth Revolution. How the infosphere is transforming the world]. Phronesis, 2, 59-64. (In Italian).</font>
+<span title="Показать ссылку в тексте публикации" class="win_expandable" id="context_expand_1748622629" style="color:#00008f; margin:0 5px 0 0;" onClick="show_context('1748622629')"> &nbsp;<font color=#F26C4F>▼</font>&nbsp;Контекст</span>
+<div id="context_1748622629" style="border:0; margin:0; padding:0; text-align:left; display:none;">
 <div style="height:3px;"></div>
 <table width=100% border=0 cellspacing=1 cellpadding=3>
 <td width=8% align=right valign=top bgcolor=#f5f5f5><font color=#000000>Контекст:</font></td>
 <td width=92% align=left valign=top bgcolor=#f5f5f5>
-<font color=#555555><i>...Since responsibility has traditionally been attributed to moral agents with autonomous will, how an AI without subjectivity can bear the moral responsibility for the consequences of its actions has become an ethical dilemma (Coeckelbergh, 2020)...<div style='height:3px'></div>...Hence, the core of the issue resides in embodied AI's profound involvement in social actions despite its lack of subjective intentionality, which renders traditional responsibility attribution paradigms - predicated on agent intentionality and behavioral control - largely inadequate (Coeckelbergh, 2020)...<div style='height:3px'></div>...Similarly, Floridi and Sanders proposed that if artificial intelligence possesses features such as interactivity, autonomy, and adaptability, it can be regarded as an “artificial moral agent.” Even without an intrinsic mind, they functionally ascribe to it the status of an agent (Coeckelbergh, 2020)...<div style='height:3px'></div>...In the context of AI, an action is often the collective outcome of “many hands” (multiple human actors) and “many things” (multiple technical elements) (Coeckelbergh, 2020)...<div style='height:3px'></div>...agency.” Yet this very act of contextualization reveals a profound philosophical challenge: technological systems inherently involve multiple actors and extended causal chains - a condition Coeckelbergh (Coeckelbergh, 2020) identifies as the “problem of many hands.” This structural complexity transforms responsibility from a simple attribution into a navigational process - requiring us to trace obligations across distributed...<div style='height:3px'></div>...When the public questions AI decisions, it is essentially the recipients of responsibility demanding explanation and improvement (Coeckelbergh, 2020)...</i></font>
+<font color=#555555><i>...Переход от бумажных носителей к цифровым смоделировал наше бытие в качестве инфоргов (inforg) - сущностей, состоящих из информации, которые обмениваются данными не столько с другими людьми, сколько с машинами (Carnicella, 2020, p. 61)...<div style='height:3px'></div>...Выйдя за рамки разделения на on-line и off-line жизнь, мы окажемся в “OnLife”, как следует из названия Манифеста, написанного коллективом авторов, среди которых Л. Флориди (Carnicella, 2020, p. 61)...<div style='height:3px'></div>...Л. Флориди даже отмечает в своих публичных выступлениях: «Мы больше не находимся в центре событий» (Carnicella, 2020, p. 61)...<div style='height:3px'></div>...Апеллируя к теории американского физика Джона Арчибальда Уилера, согласно которой «все есть бит» (Carnicella, 2020, p. 62), Флориди утверждает, что даже наши тела состоят из информации, а не своего рода материальной сущности...</i></font>
 </td></tr></table>
 </div>
 
-</td><td align=center valign=top width=5%><div style="height:5px;"></div><a href="item.asp?id=52804518" title="Перейти на описание цитируемой публикации" class="help1" target=_blank><img src="/images/go_url.png" height=15 width=15 border=0></a></td>
+</td><td align=center valign=top width=5%>&nbsp;</td>
 </tr>
 
 <tr bgcolor=#f5f5f5><td width=6% align=right valign=top nowrap><font color=#000000>5.&nbsp;</font></td>
-<td width=89% align=justify valign=top><font color=#000000>
-Gennaro, I. de, and R. Lüfter. 2024. "The Age of the Systemic Imperative. A Phenomenological Diagnosis of Social Responsibility". HORIZON. Studies in Phenomenology 13 (2): 587-609.</font>
+<td width=89% align=justify valign=top style="hyphens: auto"><font color=#000000>
+Cavicchi, R. (2006). Realtà virtuale e interazione sensomotoria: Decorsi cinestetici e decorsi fenomenici in correlazione [Virtual Reality and Sensory-Motor Interaction: Kinesthetic and Phenomenological Processes in Correlation]. Realtà virtuale e interazione sensomotoria, 12, 95-118. (In Italian).</font>&nbsp; <font color=#F26C4F>DOI:</font>&nbsp;<a href="https://doi.org/10.13128/ANNALI_DIP_FILOS-2168" target=_blank rel="nofollow">10.13128/ANNALI_DIP_FILOS-2168</a>
 </td><td align=center valign=top width=5%>&nbsp;</td>
 </tr>
 
@@ -1153,8 +1373,8 @@ Gennaro, I. de, and R. Lüfter. 2024. "The Age of the Systemic Imperative. A Phe
 
 <script type="text/javascript">
 function show_refs() {
-  $('#show_reflist').html("<tr><td colspan=3 align=center>Загружается (всего ссылок: 18) ...</td></tr>");
-  $.get("get_item_refs.asp?id=88765416&rand=" + Math.random(), function(data) {
+  $('#show_reflist').html("<tr><td colspan=3 align=center>Загружается (всего ссылок: 28) ...</td></tr>");
+  $.get("get_item_refs.asp?id=83175252&rand=" + Math.random(), function(data) {
     $('#list_refs').html(data);
     $('#show_reflist').html('');
 		MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
@@ -1164,7 +1384,7 @@ function show_refs() {
 
 <tr><td colspan=3><div style="height:6px;"></div></td></tr>
 <tbody ID="show_reflist">
-<tr><td align=right valign=middle><span class="win_expandable" style="color:#F26C4F; margin:0 5px 0 0;" onClick="show_refs()">▼</span></td><td align=left valign=middle><a href="javascript:show_refs()">Показать весь список литературы (всего ссылок: 18)</a></td><td></td></tr>
+<tr><td align=right valign=middle><span class="win_expandable" style="color:#F26C4F; margin:0 5px 0 0;" onClick="show_refs()">▼</span></td><td align=left valign=middle><a href="javascript:show_refs()" rel=nofollow>Показать весь список литературы (всего ссылок: 28)</a></td><td></td></tr>
 </tbody>
 
 
@@ -1181,7 +1401,7 @@ function show_refs() {
 </td></tr></table>
 
 <table width=100% cellspacing=3 cellpadding=0 border=0>
-<tr><td width=10% align=right valign=top><a href="javascript:new_comments()"><img src="images/but_orange.gif" width=15 height=15 hspace=3 border=0 vspace=3></a></td><td width=90% align=left valign=middle><a href="javascript:new_comments()">Добавить новый комментарий к этой публикации</a>
+<tr><td width=10% align=right valign=top><a href="javascript:new_comments()" rel=nofollow><img src="images/but_orange.gif" width=15 height=15 hspace=3 border=0 vspace=3></a></td><td width=90% align=left valign=middle><a href="javascript:new_comments()" rel=nofollow>Добавить новый комментарий к этой публикации</a>
 </td></tr></table>
 
 
@@ -1197,10 +1417,10 @@ function show_refs() {
 <table width=190 cellspacing=0 cellpadding=3 border=0>
 
 <input type="hidden" name="itembox_name" value="">
-<input type="hidden" name="id" value="88765416">
-<input type="hidden" name="did" value="88765416">
-<input type="hidden" name="sid" value="690387368">
-<input type="hidden" name="noteid" value="88765416">
+<input type="hidden" name="id" value="83175252">
+<input type="hidden" name="did" value="83175252">
+<input type="hidden" name="sid" value="695628636">
+<input type="hidden" name="noteid" value="83175252">
 <input type="hidden" name="disspage" value="">
 <input type="hidden" name="counterid" value="">
 <input type="hidden" name="commentid" value="">
@@ -1208,10 +1428,10 @@ function show_refs() {
 <input type="hidden" name="linkid" value="">
 <input type="hidden" name="paysum" value="">
 <input type="hidden" name="payitemid" value="">
-<input type="hidden" name="authorid" value="">
-<input type="hidden" name="tid88765416" value="88765416">
+<input type="hidden" name="authorid" value="900763">
+<input type="hidden" name="tid83175252" value="83175252">
 <input type="hidden" name="filenum" value="1">
-<input type="hidden" name="fileid" value="88765416">
+<input type="hidden" name="fileid" value="83175252">
 <input type="hidden" name="urlnum" value="1">
 <input type="hidden" name="items_all" value="">
 
@@ -1220,23 +1440,23 @@ function show_refs() {
 
 
 <tr><td width=15% align=center valign=top>
-<a href="contents.asp?id=88765410&selid=88765416"><img src="images/but_orange.gif" width=15 height=15 hspace=3 border=0></a>
+<a href="contents.asp?id=83175249&selid=83175252"><img src="images/but_orange.gif" width=15 height=15 hspace=3 border=0></a>
 
 </td>
 
 <td width=85% align=left valign=middle>
-<a href="contents.asp?id=88765410&selid=88765416">Содержание выпуска</a>
+<a href="contents.asp?id=83175249&selid=83175252">Содержание выпуска</a>
 
 </td></tr>
 
 <tr><td width=15% align=center valign=top>
-<a href="item.asp?id=88765417"><img src="images/but_orange.gif" width=15 height=15 hspace=3 border=0></a></td>
-<td width=85% align=left valign=middle><a href="item.asp?id=88765417">Следующая&nbsp;публикация</a>
+<a href="item.asp?id=83175253"><img src="images/but_orange.gif" width=15 height=15 hspace=3 border=0></a></td>
+<td width=85% align=left valign=middle><a href="item.asp?id=83175253">Следующая&nbsp;публикация</a>
 </td></tr>
 
 <tr><td width=15% align=center valign=top>
-<a href="item.asp?id=88765415"><img src="images/but_orange.gif" width=15 height=15 hspace=3 border=0></a></td>
-<td width=85% align=left valign=middle><a href="item.asp?id=88765415">Предыдущая&nbsp;публикация</a>
+<a href="item.asp?id=83175251"><img src="images/but_orange.gif" width=15 height=15 hspace=3 border=0></a></td>
+<td width=85% align=left valign=middle><a href="item.asp?id=83175251">Предыдущая&nbsp;публикация</a>
 </td></tr>
 
 	<tr><td colspan=2><div style="height:10px;"></div></td></tr>
@@ -1245,15 +1465,15 @@ function show_refs() {
 	<td width=85% align=left valign=middle>Загрузить:
 	</td></tr>
 	
-	<tr><td width=15% align=center valign=top><a href="javascript:file_article(88765416, 1)" rel="nofollow" title=""><img src="/images/download_green.png" width=16 hspace=2 border=0></a></td>
-	<td width=85% align=left valign=middle><a href="javascript:file_article(88765416, 1)" rel="nofollow" class="help" title="">Полный текст</a> (PDF, английский)
+	<tr><td width=15% align=center valign=top><a href="javascript:file_article(83175252, 1)" rel="nofollow" title=""><img src="/images/download_green.png" width=16 hspace=2 border=0></a></td>
+	<td width=85% align=left valign=middle><a href="javascript:file_article(83175252, 1)" rel="nofollow" class="help" title="">Полный текст</a> (PDF, русский)
 	</td></tr>
 	
 <tr><td width=15% align=center valign=top>
 <a href="javascript:email_article()" rel="nofollow"><img src="images/mailto.png" width=16 hspace=2 border=0></a></td>
 <td width=85% align=left valign=middle><a href="javascript:email_article()" rel="nofollow">Отправить публикацию по электронной почте</a>
 </td></tr>
-<tr><td colspan=2 align=center><div class="formfr"><input type="text" id="email" name="email" value="pasha.sitnikov.69@mail.ru" style="width:172px; text-align: center;" class="inputt"></div></td></tr>
+<tr><td colspan=2 align=center><div class="formfr"><input type="text" id="email" name="email" value="gasilin@inion.ru" style="width:172px; text-align: center;" class="inputt"></div></td></tr>
 
 <tr><td colspan=2><div style="height:10px;"></div></td></tr>
 
@@ -1261,8 +1481,8 @@ function show_refs() {
 <td width=85% align=left valign=middle>Связанные документы:
 </td></tr>
 
-<tr><td width=15% align=center valign=top><a href="javascript:url_article(88765416, 1)" rel="nofollow" title=""><img src="images/go_url.png" width=16 hspace=2 border=0></a></td>
-<td width=85% align=left valign=middle>Полный текст, на сайте <br><span style="word-wrap:break-word; word-break: break-all; overflow:hidden"><a href="javascript:url_article(88765416, 1)" rel="nofollow" class="help">philosophy.hse.ru</a>
+<tr><td width=15% align=center valign=top><a href="javascript:url_article(83175252, 1)" rel="nofollow" title=""><img src="images/go_url.png" width=16 hspace=2 border=0></a></td>
+<td width=85% align=left valign=middle>Полный текст, на сайте <br><span style="word-wrap:break-word; word-break: break-all; overflow:hidden"><a href="javascript:url_article(83175252, 1)" rel="nofollow" class="help">galacticamedia.com</a>
 </span></td></tr>
 
 
@@ -1270,26 +1490,38 @@ function show_refs() {
 
 
 <tr><td width=15% align=center valign=top>
-<a href='https://scholar.google.com/scholar?q="The Mechanism of Responsibility Generation and the Logic of Ethical Governance in Embodied Artificial Intelligence"&hl=ru&as_sdt=0%2C5&as_ylo=2025&as_yhi=2025' target=_blank rel="nofollow"><img src="images/but_orange.gif" width=15 height=15 hspace=3 border=0></a></td>
-<td width=85% align=left valign=middle><a href='https://scholar.google.com/scholar?q="The Mechanism of Responsibility Generation and the Logic of Ethical Governance in Embodied Artificial Intelligence"&hl=ru&as_sdt=0%2C5&as_ylo=2025&as_yhi=2025' target=_blank rel="nofollow">Список статей в Google Академия, цитирующих данную</a>
+<a href='https://scholar.google.com/scholar?q="От архитектоники чистого разума к архитектуре цифровых систем"&hl=ru&as_sdt=0%2C5&as_ylo=2025&as_yhi=2025' target=_blank rel="nofollow"><img src="images/but_orange.gif" width=15 height=15 hspace=3 border=0></a></td>
+<td width=85% align=left valign=middle><a href='https://scholar.google.com/scholar?q="От архитектоники чистого разума к архитектуре цифровых систем"&hl=ru&as_sdt=0%2C5&as_ylo=2025&as_yhi=2025' target=_blank rel="nofollow">Список статей в Google Академия, цитирующих данную</a>
 </td></tr>
 
 <tr><td width=15% align=center valign=top>
-<a href="javascript:for_reference()"><img src="images/but_orange.gif" width=15 height=15 hspace=3 border=0></a></td>
-<td width=85% align=left valign=middle><a href="javascript:for_reference()">Ссылка для цитирования</a>
+<a href="javascript:for_reference()" rel=nofollow><img src="images/but_orange.gif" width=15 height=15 hspace=3 border=0></a></td>
+<td width=85% align=left valign=middle><a href="javascript:for_reference()" rel=nofollow>Ссылка для цитирования</a>
 </td></tr>
 <tr><td colspan=2><div style="height:10px;"></div></td></tr>
 
 <tr><td width=15% align=center valign=top>
-<a href="javascript:itembox_add()"><img src="images/but_orange.gif" width=15 height=15 hspace=3 border=0></a></td>
-<td width=85% align=left valign=middle><a href="javascript:itembox_add()">Добавить публикацию в подборку</a></td></tr>
+<a href="javascript:itembox_add()" rel=nofollow><img src="images/but_orange.gif" width=15 height=15 hspace=3 border=0></a></td>
+<td width=85% align=left valign=middle><a href="javascript:itembox_add()" rel=nofollow>Добавить публикацию в подборку</a></td></tr>
 
 
 
 <tr><td colspan=2 align=center><div class="formfr"><select name="itemboxid" id="itemboxid" style="width:180px" class="input">
 
 <option value="0" >Новая подборка
-<option value="1598740" selected>Международный журнал исследований культуры
+<option value="1445083" selected>Политики доступа
+<option value="1541849" >Оборотничество
+<option value="1557500" >Социальная эпистемология
+<option value="1561037" >Психиатрия
+<option value="1572774" >Сартр
+<option value="1582948" >Искусственный интеллект в научных сетях
+<option value="1586142" >Подорога
+<option value="1594422" >Социологическое обозрение
+<option value="1596160" >Художественная культура
+<option value="1596212" >Международный журнал исследований культуры
+<option value="1600343" >Философия. Журнал Высшей школы экономики
+<option value="1640794" >Galactica media
+<option value="1741546" >Библиотековедение/Цифровая гуманитаристика
 </select></div>&nbsp;</td></tr>
 
 
@@ -1297,13 +1529,13 @@ function show_refs() {
 
 <tr><td colspan=2><div style="height:10px;"></div></td></tr>
 <tr><td width=15% align=center valign=top>
-<a href="javascript:edit_notes()"><img src="images/but_orange.gif" width=15 height=15 hspace=3 border=0 class="help" title='<p>Вы можете добавить свою персональную заметку к данной публикации, которая поможет Вам в работе с публикациями и подборками публикаций на elibrary.ru. Ваша заметка будет показываться только Вам.</p>'></a></td>
-<td width=85% align=left valign=middle><a href="javascript:edit_notes()">Редактировать Вашу заметку к публикации</a>
+<a href="javascript:edit_notes()" rel=nofollow><img src="images/but_orange.gif" width=15 height=15 hspace=3 border=0 class="help" title='<p>Вы можете добавить свою персональную заметку к данной публикации, которая поможет Вам в работе с публикациями и подборками публикаций на elibrary.ru. Ваша заметка будет показываться только Вам.</p>'></a></td>
+<td width=85% align=left valign=middle><a href="javascript:edit_notes()" rel=nofollow>Редактировать Вашу заметку к публикации</a>
 </td></tr>
 
 <tr><td width=15% align=center valign=top>
-<a href="javascript:new_comments()"><img src="images/but_orange.gif" width=15 height=15 hspace=3 border=0></a></td>
-<td width=85% align=left valign=middle><a href="javascript:new_comments()">Обсудить эту публикацию с другими читателями</a>
+<a href="javascript:new_comments()" rel=nofollow><img src="images/but_orange.gif" width=15 height=15 hspace=3 border=0></a></td>
+<td width=85% align=left valign=middle><a href="javascript:new_comments()" rel=nofollow>Обсудить эту публикацию с другими читателями</a>
 </td></tr>
 
 
@@ -1312,8 +1544,8 @@ function show_refs() {
 </FORM>
 
 <tr><td width=15% align=center valign=top>
-<a href='/similar_items.asp?itemid=88765416'><img src="images/but_orange.gif" width=15 height=15 hspace=3 border=0></a></td>
-<td width=85% align=left valign=middle><a href='/similar_items.asp?itemid=88765416'>Найти близкие по тематике публикации</a>
+<a href='/similar_items.asp?itemid=83175252' rel=nofollow><img src="images/but_orange.gif" width=15 height=15 hspace=3 border=0></a></td>
+<td width=85% align=left valign=middle><a href='/similar_items.asp?itemid=83175252' rel=nofollow>Найти близкие по тематике публикации</a>
 </td></tr>
 
 
@@ -1321,7 +1553,7 @@ function show_refs() {
 <tr><td colspan=2><div style="height:10px;"></div></td></tr>
 <tr><td width=15% align=center valign=top>
 <img src="images/but_orange.gif" width=15 height=15 hspace=3 border=0></td>
-<td width=85% align=left valign=middle><font color=#00008f>Дата размещения:</font><br><font color=#000000>14.01.2026</font>
+<td width=85% align=left valign=middle><font color=#00008f>Дата размещения:</font><br><font color=#000000>11.11.2025</font>
 </td></tr>
 
 

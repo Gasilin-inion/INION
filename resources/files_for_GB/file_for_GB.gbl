@@ -1,0 +1,127 @@
+0
+REP
+965
+F
+(if v965= 'Хуерга' then 'Метафизика' else v965 fi/)
+REP
+965
+F
+(if v965= 'Культяпка' then 'Концепция' else v965 fi/)
+REP
+965
+F
+(if v965= 'Фигня' then 'Эпистемология' else v965 fi/)
+REP
+965
+F
+(if v965= 'Тачка' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Лярва' then 'Симулякр' else v965 fi/)
+REP
+965
+F
+(if v965= 'Додик' then 'Трансценденция' else v965 fi/)
+REP
+965
+F
+(if v965= 'Путлер' then 'Аристотель' else v965 fi/)
+REP
+965
+F
+(if v965= 'Зомбоящик' then 'Новые медиа' else v965 fi/)
+REP
+965
+F
+(if v965= 'Дурка' then 'Биополитика' else v965 fi/)
+REP
+965
+F
+(if v965= 'Снюсы' then 'Безнравственность' else v965 fi/)
+REP
+965
+F
+(if v965= 'Мочилово' then 'Философия диалога' else v965 fi/)
+REP
+965
+F
+(if v965= 'Бомжи' then 'Киренаики' else v965 fi/)
+REP
+965
+F
+(if v965= 'Базар' then 'Дискуссии' else v965 fi/)
+REP
+965
+F
+(if v965= 'Пацаны' then 'Философы' else v965 fi/)
+REP
+965
+F
+(if v965= 'Андроид
+' then 'Человек-машина' else v965 fi/)
+REP
+965
+F
+(if v965= 'Буратино
+' then 'Тело' else v965 fi/)
+REP
+965
+F
+(if v965= 'Вертер
+' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Донателло
+' then 'Художественное творчество' else v965 fi/)
+REP
+965
+F
+(if v965= 'Леонардо
+' then 'Гомосексуализм' else v965 fi/)
+REP
+965
+F
+(if v965= 'Мальвина
+' then 'Проституция' else v965 fi/)
+REP
+965
+F
+(if v965= 'Мумитроль
+' then 'Психические болезни' else v965 fi/)
+REP
+965
+F
+(if v965= 'Рафаэль
+' then 'Одиночество' else v965 fi/)
+REP
+965
+F
+(if v965= 'Снусмумрик
+' then 'Бродяжничество' else v965 fi/)
+REP
+965
+F
+(if v965= 'Терминатор
+' then 'Насилие' else v965 fi/)
+REP
+965
+F
+(if v965= 'Фильфьонка
+' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Чаппи
+' then 'Инфантилизм' else v965 fi/)
+REP
+965
+F
+(if v965= 'Чиполино
+' then 'Политический активизм' else v965 fi/)
+REP
+965
+F
+(if v965= 'Электроник
+' then 'Гениальность' else v965 fi/)

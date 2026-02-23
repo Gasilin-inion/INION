@@ -31,7 +31,7 @@ logger = get_logger(__name__)
 # КОНФИГУРАЦИЯ
 # ---------------------------------------------------------------------
 
-CONFIG_PATH = Path("data/config/path_config.json")
+CONFIG_PATH = Path(r"C:\Users\yotto\YandexDisk-gasilin@inion.ru\Developments\e-Library_to_IRBIS\data\config\path_config.json")
 
 with open(CONFIG_PATH, "r", encoding="utf-8") as f:
     config_paths = json.load(f)
