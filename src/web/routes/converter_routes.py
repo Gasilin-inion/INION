@@ -5,15 +5,20 @@ from flask import (
 from werkzeug.utils import secure_filename
 from pathlib import Path
 import json
+import pandas as pd
 
 # Импортируем основные функции из конвертеров
-from src.converters.elibrary_excel_test import convert_html_to_excel # type: ignore
-from src.converters.excel_irbis_test import convert_excel_to_irbis # type: ignore
+from src.converters.elibrary_excel import convert_html_to_excel, data_frame_to_workbook # type: ignore
+from src.converters.excel_irbis import convert_to_irbis # type: ignore
 from src.converters.key_correction_Excel_IRBIS import key_decoder # type: ignore
 from src.converters.key_correction_IRBIS_Excel import key_extraction # type: ignore
 from src.services.add_keys_to_excel import append_with_pandas # type: ignore
 
 converter_bp = Blueprint("converter", __name__)
+
+# -------------------------------------------------------
+# Блок конфигурации
+# -------------------------------------------------------
 
 # Читаем пути к папкам файлов в path_config
 CONFIG_PATH = Path("data/config/path_config.json")
@@ -29,18 +34,23 @@ OUTPUT_TXT_DIR = config_paths["output_txt_dir"]
 OUTPUT_GBL_FILE = config_paths["file_for_GB"]
 OUTPUT_GBL_DIR = config_paths["dir_for_GB"]
 EDITABLE_XLSX_DIR = config_paths["files_to_edit"]
+EDITABLE_XLSX = config_paths["excel_to_edit"]
 IRBIS_OUTPUT_DIR = config_paths["output_files"]
 
-# Назначаем путь к главной странице
+# -------------------------------------------------------
+# Блок основных функций
+# -------------------------------------------------------
+
+# Главная страница
 @converter_bp.route("/")
 def index():
     return render_template("index.html")
 
-# Назначаем путь к папке "upload"
-@converter_bp.route("/upload", methods=["GET", "POST"])
-def upload_files():
+# Конвертор HTML-Excel
+@converter_bp.route("/html_upload", methods=["GET", "POST"])
+def html_upload():
     if request.method == "POST":
-        files = request.files.getlist("files")
+        files = request.files.getlist("html_files")
 
         uploaded_files = []
 
@@ -50,25 +60,38 @@ def upload_files():
             file.save(save_path)
             uploaded_files.append(save_path)
 
-        # HTML → Excel
-        excel_files = convert_html_to_excel(uploaded_files)
+        # Конвертация файлов HTML в дата-фрейм
+        articles_pd = convert_html_to_excel(uploaded_files)
+        # Формирование таблицы Excel на основе таблицы
+        data_frame_to_workbook(articles_pd)
 
-        return redirect(url_for(
-            "converter.result",
-            excel_count=len(excel_files)
-        ))
+        return redirect(url_for("converter.html_result"))
 
-    return render_template("upload.html")
+    return render_template("html_upload.html")
 
-# Скачивание результата обработки таблицы
-@converter_bp.route("/result")
-def result():
-    excel_files = list(Path(EDITABLE_XLSX_DIR).glob("*.xlsx"))
+# Конвертор Excel-IRBIS
+@converter_bp.route("/excel_upload", methods=["GET", "POST"])
+def excel_upload():
+    if request.method == "POST":
+        # Получаем файл
+        excel_file = request.files.get("excel_file")
 
-    return render_template(
-        "result.html",
-        excel_files=excel_files
-    )
+        # Безопасное имя файла
+        filename = secure_filename(excel_file.filename)
+        save_path = Path(EDITABLE_XLSX_DIR) / filename
+
+        # Сохранение файла на диск
+        excel_file.save(save_path)
+
+        # Преобразуем данные из excel файла в дата-фрейм
+        articles_list = pd.read_excel(excel_file)
+
+        # Конвертация файла в формат ИРБИС-64
+        convert_to_irbis(articles_list)
+
+        return redirect(url_for("converter.excel_result"))
+
+    return render_template("excel_upload.html")
 
 # Выделение ненормированных ключей из файла .txt
 @converter_bp.route("/txt_key_upload", methods=["GET", "POST"])
@@ -86,6 +109,7 @@ def upload_txt_key_file():
 
         # Выделение ключей и номера специальности
         key_list, topic_num = key_extraction(save_path)
+
         if topic_num == '02':
             append_with_pandas(SD_02_DIC_FILE, "Sheet", "synonym", key_list)
         elif topic_num == '04':
@@ -118,6 +142,24 @@ def upload_excel_key_file():
 
     return render_template("keywords_2.html")
 
+# -------------------------------------------------------
+# Блок выводов
+# -------------------------------------------------------
+
+# Вывод результата конвертациии html файлов в таблицу
+@converter_bp.route("/html_result")
+def html_result():
+    excel_files = list(Path(EDITABLE_XLSX_DIR).glob("*.xlsx"))
+
+    return render_template("html_result.html", excel_files=excel_files)
+
+# Вывод результата конвертациии excel в .txt файл, предназначенный для импорта в ИРБИС
+@converter_bp.route("/excel_result")
+def excel_result():
+    txt_files = list(Path(IRBIS_OUTPUT_DIR).glob("*.txt"))
+
+    return render_template("excel_result.html", txt_files=txt_files)
+
 # Вывод дополненной таблицы автозамены
 @converter_bp.route("/key_excel_result")
 def key_excel_result():
@@ -131,6 +173,20 @@ def key_gbl_result():
     gbl_file = Path(OUTPUT_GBL_DIR).glob("*.gbl")
 
     return render_template("key_gbl_result.html", gbl_file=gbl_file)
+
+# -------------------------------------------------------
+# Блок скачиваний
+# -------------------------------------------------------
+
+# Скачивание списка статей
+@converter_bp.route("/download_articles/<path:filename>")
+def download_article_list(filename):
+    return send_from_directory(EDITABLE_XLSX_DIR, filename, as_attachment=True)
+
+# Скачивание файлов для импорта в ИРБИС
+@converter_bp.route("/download_txt_list/<path:filename>")
+def download_txt_list(filename):
+    return send_from_directory(IRBIS_OUTPUT_DIR, filename, as_attachment=True)
 
 # Скачивание файла в формате Excel
 @converter_bp.route("/download_excel/<path:filename>")

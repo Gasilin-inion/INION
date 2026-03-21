@@ -24,6 +24,10 @@ logger = logging.getLogger(__name__)
 with open("./data/config/path_config.json", "r", encoding="utf-8") as pathfile:
     config_paths = json.load(pathfile)
 
+tgt = config_paths["output_files"]
+wct = config_paths["wrong_categories"]
+
+
 # Параметры и шаблоны
 FIELD_102 = '#102: RU\n'
 FIELD_181 = '#181: ^Ai\n'
@@ -60,36 +64,10 @@ rubricator = pd.read_json(rubricator_path)
 def cat_check(category):
     return rubricator['category'].str.contains(category, na=False).any()
 
-# Анализируем содержимое папки 'files_to_edit'
-
-get_files = config_paths["multifile"]
-spec = importlib.util.spec_from_file_location("get_files_in_folder", get_files)
-module = importlib.util.module_from_spec(spec)
-sys.modules["get_files_in_folder"] = module
-spec.loader.exec_module(module)
-path_to_income_files = config_paths["files_to_edit"]
-input_files = module.get_files_in_folder(path_to_income_files)
-for source in input_files:
-    line = source.replace('files_to_edit', 'files_to_import_to_IRBIS')
-    line = line.replace('.xlsx', '.txt')
-    output_files.append(line)
-number_of_files = len(input_files)
-
 # Основная логика
 
-def main(src: str = input_files[indx], tgt: str = output_files[indx]):
-    # Проверки путей
-    if not os.path.exists(src):
-        logger.error('Исходный файл не найден: %s', src)
-        return
-    os.makedirs(os.path.dirname(tgt), exist_ok=True)
-
-    try:
-        df = pd.read_excel(src)
-    except Exception as e:
-        logger.exception('Ошибка при чтении Excel: %s', e)
-        return
-
+def convert_to_irbis(df):
+    # Количество документов в списке    
     n = len(df)
     logger.info('Обработано %d строк(и).', n)
 
@@ -121,6 +99,7 @@ def main(src: str = input_files[indx], tgt: str = output_files[indx]):
         # Текущая дата для формирования шифров
         today = datetime.date.today()
         actual_data = str(today)
+        file_data = actual_data.replace('-', '_')
         actual_data = actual_data.replace('-', '')
 
         # DOI (поле 19)
@@ -295,9 +274,14 @@ def main(src: str = input_files[indx], tgt: str = output_files[indx]):
                     + field_910 + FIELD_920_J + field_933 + field_934
                     + field_936 + FIELD_999 + SEPARATOR)
 
+    # Формирование имени файла
+
+    file_name = (f"{journal_eng}_{year}_{issue}_{file_data}.txt")
+    file_path = (f"{tgt}/{file_name}")
+    
     # Запись в файл
     try:
-        with open(tgt, 'w', encoding='utf-8') as fout:
+        with open(file_path, 'w', encoding='utf-8') as fout:
             fout.writelines(journal_issue)
             fout.writelines(documents)
         logger.info('Файл успешно создан: %s', tgt)
@@ -315,6 +299,3 @@ def main(src: str = input_files[indx], tgt: str = output_files[indx]):
             logger.info('Файл успешно создан: %s')
         except Exception as e:
             logger.exception('Ошибка при записи файла: %s', e)
-if __name__ == '__main__':
-    for indx in range(number_of_files):
-        main(src=input_files[indx], tgt=output_files[indx])

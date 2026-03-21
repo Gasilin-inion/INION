@@ -8,8 +8,9 @@
 <body>
 <header>
     <nav>
-        <a href="{{ url_for('converter.index') }}">main</a>
-        <a href="{{ url_for('converter.upload_files') }}">elibrary-excel</a>
+        <a href="{{ url_for('converter.index') }}">главная</a>
+        <a href="{{ url_for('converter.html_upload') }}">html-excel</a>
+        <a href="{{ url_for('converter.excel_upload') }}">excel-irbis</a>
         <a href="{{ url_for('converter.upload_txt_key_file') }}">key-extractor</a>
         <a href="{{ url_for('converter.upload_excel_key_file') }}">key-converter</a>
     </nav>

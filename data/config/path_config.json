@@ -20,8 +20,10 @@
   "descriptors_categiries": "C:/Users/yotto/YandexDisk-gasilin@inion.ru/Developments/e-Library_to_IRBIS/data/databases/descriptors_categories.xlsx",
   "journal_list": "C:/Users/yotto/YandexDisk-gasilin@inion.ru/Developments/e-Library_to_IRBIS/data/databases/journal_list.json",
   "persons": "C:/Users/yotto/YandexDisk-gasilin@inion.ru/Developments/e-Library_to_IRBIS/data/databases/persons.json",
+  "snl_02": "C:/Users/yotto/YandexDisk-gasilin@inion.ru/Developments/e-Library_to_IRBIS/data/databases/normalized_vocabulary_02.txt",
   "snl_04": "C:/Users/yotto/YandexDisk-gasilin@inion.ru/Developments/e-Library_to_IRBIS/data/databases/normalized_vocabulary_04.txt",
-  "countries": "C:/Users/yotto/YandexDisk-gasilin@inion.ru/Developments/e-Library_to_IRBIS/data/databases/normalized_countries_04.txt",
+  "countries_04": "C:/Users/yotto/YandexDisk-gasilin@inion.ru/Developments/e-Library_to_IRBIS/data/databases/normalized_countries_04.txt",
+  "persons_02": "C:/Users/yotto/YandexDisk-gasilin@inion.ru/Developments/e-Library_to_IRBIS/data/databases/normalized_personalities_02.txt",
   "S-D_Dictionary_dir": "C:/Users/yotto/YandexDisk-gasilin@inion.ru/Developments/e-Library_to_IRBIS/resources/SD_files/",
   "S-D_02_Dictionary_file": "C:/Users/yotto/YandexDisk-gasilin@inion.ru/Developments/e-Library_to_IRBIS/resources/SD_files/S-D_02_Dictionary.xlsx",
   "S-D_04_Dictionary_file": "C:/Users/yotto/YandexDisk-gasilin@inion.ru/Developments/e-Library_to_IRBIS/resources/SD_files/S-D_04_Dictionary.xlsx",
@@ -30,7 +32,10 @@
   "output_txt_file": "C:/Users/yotto/YandexDisk-gasilin@inion.ru/Developments/e-Library_to_IRBIS/resources/output_txt_dir/abnormal_keys.txt",
   "input_files": "C:/Users/yotto/YandexDisk-gasilin@inion.ru/Developments/e-Library_to_IRBIS/resources/files_to_process",
   "files_to_edit": "C:/Users/yotto/YandexDisk-gasilin@inion.ru/Developments/e-Library_to_IRBIS/resources/files_to_edit",
+  "excel_to_edit": "C:/Users/yotto/YandexDisk-gasilin@inion.ru/Developments/e-Library_to_IRBIS/resources/files_to_edit/list_of_articles.xlsx",
   "dir_for_GB": "C:/Users/yotto/YandexDisk-gasilin@inion.ru/Developments/e-Library_to_IRBIS/resources/files_for_GB/",
   "file_for_GB": "C:/Users/yotto/YandexDisk-gasilin@inion.ru/Developments/e-Library_to_IRBIS/resources/files_for_GB/file_for_GB.gbl",
-  "output_files": "C:/Users/yotto/YandexDisk-gasilin@inion.ru/Developments/e-Library_to_IRBIS/resources/files_to_import_to_IRBIS"
+  "output_files": "C:/Users/yotto/YandexDisk-gasilin@inion.ru/Developments/e-Library_to_IRBIS/resources/files_to_import_to_IRBIS",
+  "irbis_file": "C:/Users/yotto/YandexDisk-gasilin@inion.ru/Developments/e-Library_to_IRBIS/resources/files_to_import_to_IRBIS/file_for_IRBIS.txt",
+  "wrong_categories": "C:/Users/yotto/YandexDisk-gasilin@inion.ru/Developments/e-Library_to_IRBIS/resources/files_to_import_to_IRBIS/wrong_categories.txt"
 }

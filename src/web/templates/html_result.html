@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}Результаты{% endblock %}
+
+{% block content %}
+<h2>Результаты конвертации</h2>
+
+<h3>Excel (для редактирования)</h3>
+<ul>
+    {% for file in excel_files %}
+        <li>
+            <a href="{{ url_for('converter.download_article_list', filename=file.name) }}">
+                {{ file.name }}
+            </a>
+        </li>
+    {% else %}
+        <li>Файлы отсутствуют</li>
+    {% endfor %}
+</ul>
+{% endblock %}
