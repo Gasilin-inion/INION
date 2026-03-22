@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}Экстрактор ключевых слов{% endblock %}
+
+{% block content %}
+<h2>Выделение ненормированных ключевых слов и добавление их в таблицу автокорректировки</h2>
+
+<b>Для формирования списка ненормированных ключей загрузите результат экспорта списка избранных документов из редакционной базы ИРБИС-64 (в формате *.txt)</b>
+<br>
+<form method="POST" enctype="multipart/form-data">
+    <input type="file" name="file_1" required>
+    <br><br>
+    <button type="submit">Выделить ключи</button>
+</form>
+{% endblock %}

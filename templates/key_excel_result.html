@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block title %}Результат конвертации файла автокоррекции ключей{% endblock %}
+
+{% block content %}
+<h2>Результаты обработки ключей</h2>
+
+<h3>Сводные таблицы автозамены для редактирования</h3>
+
+{% if excel_file %}
+    <ul>
+        {% for file in excel_file %}
+            <li>
+                <a href="{{ url_for('converter.download_excel_file', filename=file.name) }}">
+                    {{ file.name }}
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p>Файлы отсутствуют</p>
+{% endif %}
+
+{% endblock %}

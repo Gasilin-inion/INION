@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}Результаты{% endblock %}
+
+{% block content %}
+<h2>Результаты конвертации</h2>
+
+<b>Файлы для импорта в ИРБИС-64</b>
+<ul>
+    {% for file in txt_files %}
+        <li>
+            <a href="{{ url_for('converter.download_txt_list', filename=file.name) }}">
+                {{ file.name }}
+            </a>
+        </li>
+    {% else %}
+        <li>Файлы отсутствуют</li>
+    {% endfor %}
+</ul>
+{% endblock %}

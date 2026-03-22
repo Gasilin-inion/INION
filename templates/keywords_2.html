@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block title %}Конвертор списка автокоррекции{% endblock %}
+
+{% block content %}
+<h2>Формирование задания для глобальной корректировки в формате .gbl на основе таблицы автозамены</h2>
+
+<form method="POST" enctype="multipart/form-data">
+    <input type="file" name="file_2" required>
+    <br><br>
+    <button type="submit">Конвертировать</button>
+{% endblock %}

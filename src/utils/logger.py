@@ -9,7 +9,6 @@ from logging.handlers import RotatingFileHandler
 from pathlib import Path
 
 
-
 def setup_logger(
     name: str = "eLibrary_to_IRBIS",
     log_file: str = "app.log",
@@ -72,9 +71,11 @@ def setup_logger(
     # Добавляем handlers к логгеру
     logger.addHandler(file_handler)
     logger.addHandler(console_handler)
+    
+    # Предотвращаем распространение логов на корневой логгер
+    logger.propagate = False
 
     return logger
-
 
 
 # Глобальный логгер проекта (можно переопределить в main.py/run.py)
@@ -86,18 +87,103 @@ PROJECT_LOGGER = setup_logger(
 )
 
 
-
 def get_logger(module_name: str = None) -> logging.Logger:
     """
     Возвращает логгер для конкретного модуля.
     Если module_name не указан, возвращает глобальный логгер проекта.
 
     Args:
-        module_name: имя модуля (например, 'converters.elibrary_excel')
+        module_name: имя модуля (например, 'converters.elibrary_excel', 'web.app')
 
     Returns:
         Логгер с иерархическим именем (eLibrary_to_IRBIS.module_name)
     """
     if module_name:
-        return logging.getLogger(f"eLibrary_to_IRBIS.{module_name}")
+        # Создаем дочерний логгер
+        logger = logging.getLogger(f"eLibrary_to_IRBIS.{module_name}")
+        # Устанавливаем тот же уровень, что и у родительского
+        logger.setLevel(PROJECT_LOGGER.level)
+        # Не добавляем свои обработчики, используем родительские
+        logger.propagate = True
+        return logger
     return PROJECT_LOGGER
+
+
+# Упрощенная версия для быстрого доступа
+def get_logger_simple(name: str = "app") -> logging.Logger:
+    """
+    Простая версия для быстрого доступа к логгеру.
+    Используется в небольших скриптах.
+    
+    Args:
+        name: имя логгера
+        
+    Returns:
+        Настроенный логгер
+    """
+    return get_logger(name)
+
+
+# Функция для изменения уровня логирования во время выполнения
+def set_log_level(level: int):
+    """
+    Изменяет уровень логирования для всех логгеров проекта.
+    
+    Args:
+        level: уровень логирования (logging.DEBUG, logging.INFO и т.д.)
+    """
+    PROJECT_LOGGER.setLevel(level)
+    for handler in PROJECT_LOGGER.handlers:
+        handler.setLevel(level)
+    
+    # Изменяем уровень для всех дочерних логгеров
+    for name in logging.root.manager.loggerDict:
+        if name.startswith("eLibrary_to_IRBIS"):
+            logger = logging.getLogger(name)
+            logger.setLevel(level)
+
+
+# Функция для временного отключения файлового логирования
+def disable_file_logging():
+    """Отключает запись логов в файл (оставляет только консоль)"""
+    for handler in PROJECT_LOGGER.handlers[:]:
+        if isinstance(handler, RotatingFileHandler):
+            PROJECT_LOGGER.removeHandler(handler)
+
+
+# Функция для временного отключения консольного логирования
+def disable_console_logging():
+    """Отключает вывод логов в консоль (оставляет только файл)"""
+    for handler in PROJECT_LOGGER.handlers[:]:
+        if isinstance(handler, logging.StreamHandler):
+            PROJECT_LOGGER.removeHandler(handler)
+
+
+# Проверка доступности директории для логов
+def check_log_directory():
+    """Проверяет, доступна ли директория для записи логов"""
+    log_path = Path("logs") / "app.log"
+    log_dir = log_path.parent
+    
+    if not log_dir.exists():
+        try:
+            log_dir.mkdir(parents=True, exist_ok=True)
+            return True
+        except PermissionError:
+            print(f"Нет прав на создание директории: {log_dir}")
+            return False
+        except Exception as e:
+            print(f"Ошибка при создании директории логов: {e}")
+            return False
+    
+    # Проверяем права на запись
+    if not os.access(log_dir, os.W_OK):
+        print(f"Нет прав на запись в директорию: {log_dir}")
+        return False
+    
+    return True
+
+
+# Инициализация проверки при импорте модуля
+if not check_log_directory():
+    print("ВНИМАНИЕ: Проблема с директорией логов. Логи будут только в консоли.")
