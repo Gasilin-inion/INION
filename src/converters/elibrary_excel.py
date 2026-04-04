@@ -1,10 +1,10 @@
 """
-Конвертер библиографических записей из html страниц e-Library в таблицу Excel
+Конвертер библиографических записей из формата e-Library в таблицу Excel
 
 @author: Andrey Gasilin
 
 Created: 03.01.2025
-Last updated: 12.12.2025
+Last updated: 04.04.2026
 
 """
 # Импорт внешних модулей
@@ -267,7 +267,6 @@ def convert_html_to_excel(files):
                     if first_word != -1 and second_word != -1:
                         start = first_word + abstract_start_shift
                         abstract = string[start:second_word]
-                        full_abstract = abstract
                         
                         # Перевод аннотаций, если не русскоязычные
 
@@ -299,7 +298,7 @@ def convert_html_to_excel(files):
                             if 'Я не могу обсуждать эту тему' in optimized_abstract:
                                 optimized_abstract = ''
                         
-        elif (journal_category == 'A04') or (journal_category == 'A13'):
+        elif (journal_category == 'A04') or (journal_category == 'A10') or (journal_category == 'A13'):
             for string in strings:
                 if abstract_pattern in string:
                     first_word = string.find(abstract_pattern)
@@ -308,6 +307,8 @@ def convert_html_to_excel(files):
                         start = first_word + abstract_start_shift
                         abstract = string[start:second_word]
                         optimized_abstract = abstract[:500]
+                        last_point = optimized_abstract.rfind('.')
+                        optimized_abstract = optimized_abstract[:(last_point + 1)]
         else:
             optimized_abstract = ''
 

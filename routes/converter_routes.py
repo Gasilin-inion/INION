@@ -136,7 +136,7 @@ def upload_excel_key_file():
 
         # Конвертер Excel to IRBIS-64
         gbl_list = key_decoder(save_path)
-        with open(OUTPUT_GBL_FILE, 'w', encoding='utf-8') as file_2:
+        with open(OUTPUT_GBL_FILE, 'w', encoding='windows-1251') as file_2:
             file_2.write(''.join(gbl_list))
 
         return redirect(url_for("converter.key_gbl_result"))

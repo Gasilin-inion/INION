@@ -215,10 +215,10 @@ def convert_to_irbis(df):
         document_type = safe_get(df, idx, 'type') or ''
         if document_type == 'online' and not review_marker:
             argument_203 = '^AТекст^Cэлектронный\n'
-            argument_900 = '^Tl2\n'
+            argument_900 = '^B08^Tl2\n'
         elif document_type == 'online' and review_marker:
             argument_203 = '^AТекст^Cэлектронный\n'
-            argument_900 = '^Cd2^Tl2\n'
+            argument_900 = '^B08^Cd2^Tl2\n'
         else:
             argument_203 = '^AТекст^Cнепосредственный\n'
             argument_900 = '^B08\n'

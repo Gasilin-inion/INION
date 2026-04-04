@@ -1,1402 +1,5742 @@
 [
-    {
-        "specialization": "02",
-        "category": "A02"
-    },
-    {
-        "specialization": "02",
-        "category": "A02.01"
-    },
-    {
-        "specialization": "02",
-        "category": "A02.01.07"
-    },
-    {
-        "specialization": "02",
-        "category": "A02.01.13"
-    },
-    {
-        "specialization": "02",
-        "category": "A02.01.17"
-    },
-    {
-        "specialization": "02",
-        "category": "A02.01.21"
-    },
-    {
-        "specialization": "02",
-        "category": "A02.01.29"
-    },
-    {
-        "specialization": "02",
-        "category": "A02.01.39"
-    },
-    {
-        "specialization": "02",
-        "category": "A02.01.45"
-    },
-    {
-        "specialization": "02",
-        "category": "A02.01.79"
-    },
-    {
-        "specialization": "02",
-        "category": "A02.11"
-    },
-    {
-        "specialization": "02",
-        "category": "A02.11.21"
-    },
-    {
-        "specialization": "02",
-        "category": "A02.11.91"
-    },
-    {
-        "specialization": "02",
-        "category": "A02.15"
-    },
-    {
-        "specialization": "02",
-        "category": "A02.15.21"
-    },
-    {
-        "specialization": "02",
-        "category": "A02.15.31"
-    },
-    {
-        "specialization": "02",
-        "category": "A02.15.41"
-    },
-    {
-        "specialization": "02",
-        "category": "A02.15.51"
-    },
-    {
-        "specialization": "02",
-        "category": "A02.15.61"
-    },
-    {
-        "specialization": "02",
-        "category": "A02.15.99"
-    },
-    {
-        "specialization": "02",
-        "category": "A02.21"
-    },
-    {
-        "specialization": "02",
-        "category": "A02.31"
-    },
-    {
-        "specialization": "02",
-        "category": "A02.31.01"
-    },
-    {
-        "specialization": "02",
-        "category": "A02.31.21"
-    },
-    {
-        "specialization": "02",
-        "category": "A02.31.31"
-    },
- {
-        "specialization": "02",
-        "category": "A02.31.31.27"
-    },
-    {
-        "specialization": "02",
-        "category": "A02.31.31.28"
-    },
-    {
-        "specialization": "02",
-        "category": "A02.31.31.29"
-    },
-    {
-        "specialization": "02",
-        "category": "A02.31.31.31"
-    },
-    {
-        "specialization": "02",
-        "category": "A02.31.31.34"
-    },
-    {
-        "specialization": "02",
-        "category": "A02.31.31.37"
-    },
- {
-        "specialization": "02",
-        "category": "A02.31.31.41"
-    },
-    {
-        "specialization": "02",
-        "category": "A02.31.31.47"
-    },
-    {
-        "specialization": "02",
-        "category": "A02.31.31.68"
-    },
-    {
-        "specialization": "02",
-        "category": "A02.31.31.91"
-    },
-    {
-        "specialization": "02",
-        "category": "A02.31.55"
-    },
-    {
-        "specialization": "02",
-        "category": "A02.31.55.03"
-    }, 
-    {
-        "specialization": "02",
-        "category": "A02.31.55.05"
-    },
-    {
-        "specialization": "02",
-        "category": "A02.31.55.06"
-    },
-    {
-        "specialization": "02",
-        "category": "A02.31.55.10"
-    },
-    {
-        "specialization": "02",
-        "category": "A02.31.55.13"
-    },
-    {
-        "specialization": "02",
-        "category": "A02.31.55.14"
-    },
-    {
-        "specialization": "02",
-        "category": "A02.31.55.15"
-    },
- {
-        "specialization": "02",
-        "category": "A02.31.55.16"
-    },
-    {
-        "specialization": "02",
-        "category": "A02.31.55.17"
-    },
-    {
-        "specialization": "02",
-        "category": "A02.41"
-    },
-    {
-        "specialization": "02",
-        "category": "A02.41.01"
-    },
-    {
-        "specialization": "02",
-        "category": "A02.41.11"
-    },
-    {
-        "specialization": "02",
-        "category": "A02.41.11.21"
-    },
- {
-        "specialization": "02",
-        "category": "A02.41.11.91"
-    },
-    {
-        "specialization": "02",
-        "category": "A02.41.21"
-    },
-    {
-        "specialization": "02",
-        "category": "A02.41.21.07"
-    },
-    {
-        "specialization": "02",
-        "category": "A02.41.21.21"
-    },
-    {
-        "specialization": "02",
-        "category": "A02.41.21.31"
-    },
-    {
-        "specialization": "02",
-        "category": "A02.41.21.3121"
-    },
-    {
-        "specialization": "02",
-        "category": "A02.41.21.3131"
-    },
-    {
-        "specialization": "02",
-        "category": "A02.41.21.3155"
-    },
-    {
-        "specialization": "02",
-        "category": "A02.41.21.3199"
-    },
-    {
-        "specialization": "02",
-        "category": "A02.41.21.41"
-    },
-    {
-        "specialization": "02",
-        "category": "A02.41.21.4107"
-    },
-    {
-        "specialization": "02",
-        "category": "A02.41.21.4121"
-    },
-    {
-        "specialization": "02",
-        "category": "A02.41.21.4125"
-    },
-    {
-        "specialization": "02",
-        "category": "A02.41.21.4131"
-    },
-    {
-        "specialization": "02",
-        "category": "A02.41.21.4199"
-    },
-    {
-        "specialization": "02",
-        "category": "A02.41.31"
-    },
-    {
-        "specialization": "02",
-        "category": "A02.41.31.21"
-    },
-    {
-        "specialization": "02",
-        "category": "A02.41.31.31"
-    },
-    {
-        "specialization": "02",
-        "category": "A02.41.31.99"
-    },
-    {
-        "specialization": "02",
-        "category": "A02.41.41"
-    },
-    {
-        "specialization": "02",
-        "category": "A02.41.41.21"
-    },
-    {
-        "specialization": "02",
-        "category": "A02.41.41.31"
-    },
-    {
-        "specialization": "02",
-        "category": "A02.41.41.41"
-    },
-    {
-        "specialization": "02",
-        "category": "A02.41.41.51"
-    },
-    {
-        "specialization": "02",
-        "category": "A02.41.41.61"
-    },
-    {
-        "specialization": "02",
-        "category": "A02.41.41.71"
-    },
-    {
-        "specialization": "02",
-        "category": "A02.41.41.75"
-    },
-    {
-        "specialization": "02",
-        "category": "A02.41.41.99"
-    },
-    {
-        "specialization": "02",
-        "category": "A02.41.51"
-    },
-    {
-        "specialization": "02",
-        "category": "A02.51"
-    },
-    {
-        "specialization": "02",
-        "category": "A02.61"
-    },
-    {
-        "specialization": "02",
-        "category": "A02.71"
-    },
-    {
-        "specialization": "02",
-        "category": "A02.91"
-    },
-    {
-        "specialization": "02",
-        "category": "A02.91.01"
-    },
-    {
-        "specialization": "02",
-        "category": "A02.91.09"
-    },
-    {
-        "specialization": "02",
-        "category": "A02.91.09.15"
-    },
-    {
-        "specialization": "02",
-        "category": "A02.91.09.1583"
-    },
-    {
-        "specialization": "02",
-        "category": "A02.91.09.25"
-    },
-    {
-        "specialization": "02",
-        "category": "A02.91.09.2583"
-    },
-    {
-        "specialization": "02",
-        "category": "A02.91.09.55"
-    },
-    {
-        "specialization": "02",
-        "category": "A02.91.09.5583"
-    },
-    {
-        "specialization": "02",
-        "category": "A02.91.91"
-    },
-    {
-        "specialization": "02",
-        "category": "A02.91.91.25"
-    },
-    {
-        "specialization": "02",
-        "category": "A02.91.91.2583"
-    },
-    {
-        "specialization": "02",
-        "category": "A02.91.91.35"
-    },
-    {
-        "specialization": "02",
-        "category": "A02.91.91.3583"
-    },
-    {
-        "specialization": "02",
-        "category": "A02.91.91.45"
-    },
-    {
-        "specialization": "02",
-        "category": "A02.91.91.4525"
-    },
-    {
-        "specialization": "02",
-        "category": "A02.91.91.452583"
-    },
-    {
-        "specialization": "02",
-        "category": "A02.91.91.4535"
-    },
-    {
-        "specialization": "02",
-        "category": "A02.91.91.453583"
-    },
-    {
-        "specialization": "02",
-        "category": "A02.91.91.4545"
-    },
-    {
-        "specialization": "02",
-        "category": "A02.91.91.454583"
-    },
-    {
-        "specialization": "02",
-        "category": "A02.91.91.4581"
-    },
-    {
-        "specialization": "02",
-        "category": "A02.91.91.458183"
-    },
-    {
-        "specialization": "02",
-        "category": "A02.91.91.65"
-    },
-    {
-        "specialization": "02",
-        "category": "A02.91.91.6583"
-    },
-    {
-        "specialization": "02",
-        "category": "A02.91.91.75"
-    },
-    {
-        "specialization": "02",
-        "category": "A02.91.91.7583"
-    },
-    {
-        "specialization": "02",
-        "category": "A02.94"
-    },
-    {
-        "specialization": "02",
-        "category": "A02.98"
-    },
-    {
-        "specialization": "04",
-        "category": "A04"
-    },
-    {
-        "specialization": "04",
-        "category": "A04.01"
-    },
-    {
-        "specialization": "04",
-        "category": "A04.01.07"
-    },
-    {
-        "specialization": "04",
-        "category": "A04.01.13"
-    },
-    {
-        "specialization": "04",
-        "category": "A04.01.17"
-    },
-    {
-        "specialization": "04",
-        "category": "A04.01.21"
-    },
-    {
-        "specialization": "04",
-        "category": "A04.01.29"
-    },
-    {
-        "specialization": "04",
-        "category": "A04.01.39"
-    },
-    {
-        "specialization": "04",
-        "category": "A04.01.45"
-    },
-    {
-        "specialization": "04",
-        "category": "A04.01.79"
-    },
-    {
-        "specialization": "04",
-        "category": "A04.11"
-    },
-    {
-        "specialization": "04",
-        "category": "A04.11.21"
-    },
-    {
-        "specialization": "04",
-        "category": "A04.11.91"
-    },
-    {
-        "specialization": "04",
-        "category": "A04.15"
-    },
-    {
-        "specialization": "04",
-        "category": "A04.21"
-    },
-    {
-        "specialization": "04",
-        "category": "A04.21.21"
-    },
-    {
-        "specialization": "04",
-        "category": "A04.21.31"
-    },
-    {
-        "specialization": "04",
-        "category": "A04.21.41"
-    },
-    {
-        "specialization": "04",
-        "category": "A04.21.51"
-    },
-    {
-        "specialization": "04",
-        "category": "A04.21.51.31"
-    },
-    {
-        "specialization": "04",
-        "category": "A04.21.61"
-    },
-    {
-        "specialization": "04",
-        "category": "A04.21.71"
-    },
-    {
-        "specialization": "04",
-        "category": "A04.21.81"
-    },
-    {
-        "specialization": "04",
-        "category": "A04.21.99"
-    },
-    {
-        "specialization": "04",
-        "category": "A04.41"
-    },
-    {
-        "specialization": "04",
-        "category": "A04.41.21"
-    },
-    {
-        "specialization": "04",
-        "category": "A04.41.31"
-    },
-    {
-        "specialization": "04",
-        "category": "A04.41.41"
-    },
-    {
-        "specialization": "04",
-        "category": "A04.41.51"
-    },
-    {
-        "specialization": "04",
-        "category": "A04.41.51.21"
-    },
-    {
-        "specialization": "04",
-        "category": "A04.41.61"
-    },
-    {
-        "specialization": "04",
-        "category": "A04.41.61.21"
-    },
-    {
-        "specialization": "04",
-        "category": "A04.41.61.25"
-    },
-    {
-        "specialization": "04",
-        "category": "A04.41.61.31"
-    },
-    {
-        "specialization": "04",
-        "category": "A04.41.63"
-    },
-    {
-        "specialization": "04",
-        "category": "A04.41.99"
-    },
-    {
-        "specialization": "04",
-        "category": "A04.51"
-    },
-    {
-        "specialization": "04",
-        "category": "A04.51.21"
-    },
-    {
-        "specialization": "04",
-        "category": "A04.51.23"
-    },
-    {
-        "specialization": "04",
-        "category": "A04.51.25"
-    },
-    {
-        "specialization": "04",
-        "category": "A04.51.27"
-    },
-    {
-        "specialization": "04",
-        "category": "A04.51.29"
-    },
-    {
-        "specialization": "04",
-        "category": "A04.51.31"
-    },
-    {
-        "specialization": "04",
-        "category": "A04.51.35"
-    },
-    {
-        "specialization": "04",
-        "category": "A04.51.41"
-    },
-    {
-        "specialization": "04",
-        "category": "A04.51.43"
-    },
-    {
-        "specialization": "04",
-        "category": "A04.51.47"
-    },
-    {
-        "specialization": "04",
-        "category": "A04.51.51"
-    },
-    {
-        "specialization": "04",
-        "category": "A04.51.53"
-    },
-    {
-        "specialization": "04",
-        "category": "A04.51.54"
-    },
-    {
-        "specialization": "04",
-        "category": "A04.51.55"
-    },
-    {
-        "specialization": "04",
-        "category": "A04.51.57"
-    },
-    {
-        "specialization": "04",
-        "category": "A04.51.59"
-    },
-    {
-        "specialization": "04",
-        "category": "A04.51.61"
-    },
-    {
-        "specialization": "04",
-        "category": "A04.51.63"
-    },
-    {
-        "specialization": "04",
-        "category": "A04.51.65"
-    },
-    {
-        "specialization": "04",
-        "category": "A04.51.67"
-    },
-    {
-        "specialization": "04",
-        "category": "A04.51.69"
-    },
-    {
-        "specialization": "04",
-        "category": "A04.51.71"
-    },
-    {
-        "specialization": "04",
-        "category": "A04.51.99"
-    },
-    {
-        "specialization": "04",
-        "category": "A04.61"
-    },
-    {
-        "specialization": "04",
-        "category": "A04.71"
-    },
-    {
-        "specialization": "04",
-        "category": "A04.71.21"
-    },
-    {
-        "specialization": "04",
-        "category": "A04.71.31"
-    },
-    {
-        "specialization": "04",
-        "category": "A04.81"
-    },
-    {
-        "specialization": "04",
-        "category": "A04.91"
-    },
-    {
-        "specialization": "04",
-        "category": "A04.94"
-    },
-    {
-        "specialization": "03",
-        "category": "A03"
-    },
-    {
-        "specialization": "03.61",
-        "category": "A02.61"
-    },
-    {
-        "specialization": "05",
-        "category": "A05"
-    },
-    {
-        "specialization": "06",
-        "category": "A06"
-    },
- {
-        "specialization": "10",
-        "category": "A10"
-    },
-    {
-        "specialization": "11",
-        "category": "A11"
-    },
-    {
-        "specialization": "12",
-        "category": "A12"
-    },
-    {
-        "specialization": "13",
-        "category": "A13"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.01"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.01.11"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.01.13"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.01.21"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.01.29"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.01.33"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.01.73"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.07"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.07.21"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.07.25"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.07.26"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.07.27"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.07.77"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.09"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.09.01"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.09.03"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.11"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.11.21"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.11.22"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.11.25"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.11.27"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.11.28"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.11.44"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.11.44.01"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.11.45"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.11.46"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.11.47"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.11.47.01"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.11.58"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.11.59"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.11.59.01"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.15"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.15"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.15.51"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.15.53"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.15.55"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.15.59"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.15.61"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.15.63"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.15.65"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.15.67"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.15.75"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.17"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.17.13"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.17.21"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.17.57"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.17.59"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.17.65"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.20"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.20.21"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.20.25"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.20.31"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.20.41"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.20.43"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.20.65"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.21"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.21.01"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.21.07"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.21.08"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.21.09"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.21.11"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.21.15"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.21.17"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.21.91"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.31"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.31.01"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.31.07"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.31.09"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.31.11"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.31.15"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.31.17"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.31.21"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.31.23"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.31.91"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.35"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.41"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.41.01"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.41.07"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.41.08"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.41.09"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.41.11"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.41.15"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.41.17"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.41.21"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.41.23"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.41.52"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.41.91"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.51"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.51.01"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.51.07"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.51.08"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.51.09"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.51.11"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.51.15"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.51.17"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.51.91"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.51.01"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.61"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.61.01"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.61.07"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.61.08"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.61.09"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.61.11"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.61.15"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.61.17"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.61.25"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.61.91"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.71"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.71.01"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.71.07"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.71.09"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.71.15"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.71.91"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.71.96"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.91"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.91.B0030"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.91.B0060"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.91.B0070"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.91.B0075"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.91.B0080"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.91.B0090"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.91.B0120"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.91.B0150"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.91.B0180"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.91.B0210"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.91.B0240"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.91.B0250"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.91.B0270"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.91.B0300"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.91.B0330"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.91.B0360"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.91.B0390"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.91.B0420"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.91.B0480"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.91.B0510"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.91.B0520"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.91.B0540"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.91.B0550"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.91.B0570"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.91.B0600"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.91.B0620"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.91.B0630"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.91.B0660"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.91.B0690"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.91.B0720"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.91.B0750"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.91.B0770"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.91.B0780"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.91.B0810"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.91.B0840"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.91.B0870"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.91.B0900"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.91.B0930"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.91.B0960"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.91.B0990"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.91.B1020"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.91.B1050"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.91.B1080"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.91.B1090"
-    },
-    {
-        "specialization": "13",
-        "category": "A13.91.B1100"
-    },
-    {
-        "specialization": "14",
-        "category": "A14"
-    },
-    {
-        "specialization": "15",
-        "category": "A15"
-    },
- {
-        "specialization": "16",
-        "category": "A16"
-    },
-    {
-        "specialization": "17",
-        "category": "A17"
-    },
-    {
-        "specialization": "18",
-        "category": "A18"
-    }
+  {
+    "specialization": "02",
+    "category": "A02"
+  },
+  {
+    "specialization": "02",
+    "category": "A02.01"
+  },
+  {
+    "specialization": "02",
+    "category": "A02.01.07"
+  },
+  {
+    "specialization": "02",
+    "category": "A02.01.13"
+  },
+  {
+    "specialization": "02",
+    "category": "A02.01.17"
+  },
+  {
+    "specialization": "02",
+    "category": "A02.01.21"
+  },
+  {
+    "specialization": "02",
+    "category": "A02.01.29"
+  },
+  {
+    "specialization": "02",
+    "category": "A02.01.39"
+  },
+  {
+    "specialization": "02",
+    "category": "A02.01.45"
+  },
+  {
+    "specialization": "02",
+    "category": "A02.01.79"
+  },
+  {
+    "specialization": "02",
+    "category": "A02.11"
+  },
+  {
+    "specialization": "02",
+    "category": "A02.11.21"
+  },
+  {
+    "specialization": "02",
+    "category": "A02.11.91"
+  },
+  {
+    "specialization": "02",
+    "category": "A02.15"
+  },
+  {
+    "specialization": "02",
+    "category": "A02.15.21"
+  },
+  {
+    "specialization": "02",
+    "category": "A02.15.31"
+  },
+  {
+    "specialization": "02",
+    "category": "A02.15.41"
+  },
+  {
+    "specialization": "02",
+    "category": "A02.15.51"
+  },
+  {
+    "specialization": "02",
+    "category": "A02.15.61"
+  },
+  {
+    "specialization": "02",
+    "category": "A02.15.99"
+  },
+  {
+    "specialization": "02",
+    "category": "A02.21"
+  },
+  {
+    "specialization": "02",
+    "category": "A02.31"
+  },
+  {
+    "specialization": "02",
+    "category": "A02.31.01"
+  },
+  {
+    "specialization": "02",
+    "category": "A02.31.21"
+  },
+  {
+    "specialization": "02",
+    "category": "A02.31.31"
+  },
+  {
+    "specialization": "02",
+    "category": "A02.31.31.27"
+  },
+  {
+    "specialization": "02",
+    "category": "A02.31.31.28"
+  },
+  {
+    "specialization": "02",
+    "category": "A02.31.31.29"
+  },
+  {
+    "specialization": "02",
+    "category": "A02.31.31.31"
+  },
+  {
+    "specialization": "02",
+    "category": "A02.31.31.34"
+  },
+  {
+    "specialization": "02",
+    "category": "A02.31.31.37"
+  },
+  {
+    "specialization": "02",
+    "category": "A02.31.31.41"
+  },
+  {
+    "specialization": "02",
+    "category": "A02.31.31.47"
+  },
+  {
+    "specialization": "02",
+    "category": "A02.31.31.68"
+  },
+  {
+    "specialization": "02",
+    "category": "A02.31.31.91"
+  },
+  {
+    "specialization": "02",
+    "category": "A02.31.55"
+  },
+  {
+    "specialization": "02",
+    "category": "A02.31.55.03"
+  },
+  {
+    "specialization": "02",
+    "category": "A02.31.55.05"
+  },
+  {
+    "specialization": "02",
+    "category": "A02.31.55.06"
+  },
+  {
+    "specialization": "02",
+    "category": "A02.31.55.10"
+  },
+  {
+    "specialization": "02",
+    "category": "A02.31.55.13"
+  },
+  {
+    "specialization": "02",
+    "category": "A02.31.55.14"
+  },
+  {
+    "specialization": "02",
+    "category": "A02.31.55.15"
+  },
+  {
+    "specialization": "02",
+    "category": "A02.31.55.16"
+  },
+  {
+    "specialization": "02",
+    "category": "A02.31.55.17"
+  },
+  {
+    "specialization": "02",
+    "category": "A02.41"
+  },
+  {
+    "specialization": "02",
+    "category": "A02.41.01"
+  },
+  {
+    "specialization": "02",
+    "category": "A02.41.11"
+  },
+  {
+    "specialization": "02",
+    "category": "A02.41.11.21"
+  },
+  {
+    "specialization": "02",
+    "category": "A02.41.11.91"
+  },
+  {
+    "specialization": "02",
+    "category": "A02.41.21"
+  },
+  {
+    "specialization": "02",
+    "category": "A02.41.21.07"
+  },
+  {
+    "specialization": "02",
+    "category": "A02.41.21.21"
+  },
+  {
+    "specialization": "02",
+    "category": "A02.41.21.31"
+  },
+  {
+    "specialization": "02",
+    "category": "A02.41.21.3121"
+  },
+  {
+    "specialization": "02",
+    "category": "A02.41.21.3131"
+  },
+  {
+    "specialization": "02",
+    "category": "A02.41.21.3155"
+  },
+  {
+    "specialization": "02",
+    "category": "A02.41.21.3199"
+  },
+  {
+    "specialization": "02",
+    "category": "A02.41.21.41"
+  },
+  {
+    "specialization": "02",
+    "category": "A02.41.21.4107"
+  },
+  {
+    "specialization": "02",
+    "category": "A02.41.21.4121"
+  },
+  {
+    "specialization": "02",
+    "category": "A02.41.21.4125"
+  },
+  {
+    "specialization": "02",
+    "category": "A02.41.21.4131"
+  },
+  {
+    "specialization": "02",
+    "category": "A02.41.21.4199"
+  },
+  {
+    "specialization": "02",
+    "category": "A02.41.31"
+  },
+  {
+    "specialization": "02",
+    "category": "A02.41.31.21"
+  },
+  {
+    "specialization": "02",
+    "category": "A02.41.31.31"
+  },
+  {
+    "specialization": "02",
+    "category": "A02.41.31.99"
+  },
+  {
+    "specialization": "02",
+    "category": "A02.41.41"
+  },
+  {
+    "specialization": "02",
+    "category": "A02.41.41.21"
+  },
+  {
+    "specialization": "02",
+    "category": "A02.41.41.31"
+  },
+  {
+    "specialization": "02",
+    "category": "A02.41.41.41"
+  },
+  {
+    "specialization": "02",
+    "category": "A02.41.41.51"
+  },
+  {
+    "specialization": "02",
+    "category": "A02.41.41.61"
+  },
+  {
+    "specialization": "02",
+    "category": "A02.41.41.71"
+  },
+  {
+    "specialization": "02",
+    "category": "A02.41.41.75"
+  },
+  {
+    "specialization": "02",
+    "category": "A02.41.41.99"
+  },
+  {
+    "specialization": "02",
+    "category": "A02.41.51"
+  },
+  {
+    "specialization": "02",
+    "category": "A02.51"
+  },
+  {
+    "specialization": "02",
+    "category": "A02.61"
+  },
+  {
+    "specialization": "02",
+    "category": "A02.71"
+  },
+  {
+    "specialization": "02",
+    "category": "A02.91"
+  },
+  {
+    "specialization": "02",
+    "category": "A02.91.01"
+  },
+  {
+    "specialization": "02",
+    "category": "A02.91.09"
+  },
+  {
+    "specialization": "02",
+    "category": "A02.91.09.15"
+  },
+  {
+    "specialization": "02",
+    "category": "A02.91.09.1583"
+  },
+  {
+    "specialization": "02",
+    "category": "A02.91.09.25"
+  },
+  {
+    "specialization": "02",
+    "category": "A02.91.09.2583"
+  },
+  {
+    "specialization": "02",
+    "category": "A02.91.09.55"
+  },
+  {
+    "specialization": "02",
+    "category": "A02.91.09.5583"
+  },
+  {
+    "specialization": "02",
+    "category": "A02.91.91"
+  },
+  {
+    "specialization": "02",
+    "category": "A02.91.91.25"
+  },
+  {
+    "specialization": "02",
+    "category": "A02.91.91.2583"
+  },
+  {
+    "specialization": "02",
+    "category": "A02.91.91.35"
+  },
+  {
+    "specialization": "02",
+    "category": "A02.91.91.3583"
+  },
+  {
+    "specialization": "02",
+    "category": "A02.91.91.45"
+  },
+  {
+    "specialization": "02",
+    "category": "A02.91.91.4525"
+  },
+  {
+    "specialization": "02",
+    "category": "A02.91.91.452583"
+  },
+  {
+    "specialization": "02",
+    "category": "A02.91.91.4535"
+  },
+  {
+    "specialization": "02",
+    "category": "A02.91.91.453583"
+  },
+  {
+    "specialization": "02",
+    "category": "A02.91.91.4545"
+  },
+  {
+    "specialization": "02",
+    "category": "A02.91.91.454583"
+  },
+  {
+    "specialization": "02",
+    "category": "A02.91.91.4581"
+  },
+  {
+    "specialization": "02",
+    "category": "A02.91.91.458183"
+  },
+  {
+    "specialization": "02",
+    "category": "A02.91.91.65"
+  },
+  {
+    "specialization": "02",
+    "category": "A02.91.91.6583"
+  },
+  {
+    "specialization": "02",
+    "category": "A02.91.91.75"
+  },
+  {
+    "specialization": "02",
+    "category": "A02.91.91.7583"
+  },
+  {
+    "specialization": "02",
+    "category": "A02.94"
+  },
+  {
+    "specialization": "02",
+    "category": "A02.98"
+  },
+  {
+    "specialization": "03",
+    "category": "A03"
+  },
+  {
+    "specialization": "03.61",
+    "category": "A02.61"
+  },
+  {
+    "specialization": "04",
+    "category": "A04"
+  },
+  {
+    "specialization": "04",
+    "category": "A04.01"
+  },
+  {
+    "specialization": "04",
+    "category": "A04.01.07"
+  },
+  {
+    "specialization": "04",
+    "category": "A04.01.13"
+  },
+  {
+    "specialization": "04",
+    "category": "A04.01.17"
+  },
+  {
+    "specialization": "04",
+    "category": "A04.01.21"
+  },
+  {
+    "specialization": "04",
+    "category": "A04.01.29"
+  },
+  {
+    "specialization": "04",
+    "category": "A04.01.39"
+  },
+  {
+    "specialization": "04",
+    "category": "A04.01.45"
+  },
+  {
+    "specialization": "04",
+    "category": "A04.01.79"
+  },
+  {
+    "specialization": "04",
+    "category": "A04.11"
+  },
+  {
+    "specialization": "04",
+    "category": "A04.11.21"
+  },
+  {
+    "specialization": "04",
+    "category": "A04.11.91"
+  },
+  {
+    "specialization": "04",
+    "category": "A04.15"
+  },
+  {
+    "specialization": "04",
+    "category": "A04.21"
+  },
+  {
+    "specialization": "04",
+    "category": "A04.21.21"
+  },
+  {
+    "specialization": "04",
+    "category": "A04.21.31"
+  },
+  {
+    "specialization": "04",
+    "category": "A04.21.41"
+  },
+  {
+    "specialization": "04",
+    "category": "A04.21.51"
+  },
+  {
+    "specialization": "04",
+    "category": "A04.21.51.31"
+  },
+  {
+    "specialization": "04",
+    "category": "A04.21.61"
+  },
+  {
+    "specialization": "04",
+    "category": "A04.21.71"
+  },
+  {
+    "specialization": "04",
+    "category": "A04.21.81"
+  },
+  {
+    "specialization": "04",
+    "category": "A04.21.99"
+  },
+  {
+    "specialization": "04",
+    "category": "A04.41"
+  },
+  {
+    "specialization": "04",
+    "category": "A04.41.21"
+  },
+  {
+    "specialization": "04",
+    "category": "A04.41.31"
+  },
+  {
+    "specialization": "04",
+    "category": "A04.41.41"
+  },
+  {
+    "specialization": "04",
+    "category": "A04.41.51"
+  },
+  {
+    "specialization": "04",
+    "category": "A04.41.51.21"
+  },
+  {
+    "specialization": "04",
+    "category": "A04.41.61"
+  },
+  {
+    "specialization": "04",
+    "category": "A04.41.61.21"
+  },
+  {
+    "specialization": "04",
+    "category": "A04.41.61.25"
+  },
+  {
+    "specialization": "04",
+    "category": "A04.41.61.31"
+  },
+  {
+    "specialization": "04",
+    "category": "A04.41.63"
+  },
+  {
+    "specialization": "04",
+    "category": "A04.41.99"
+  },
+  {
+    "specialization": "04",
+    "category": "A04.51"
+  },
+  {
+    "specialization": "04",
+    "category": "A04.51.21"
+  },
+  {
+    "specialization": "04",
+    "category": "A04.51.23"
+  },
+  {
+    "specialization": "04",
+    "category": "A04.51.25"
+  },
+  {
+    "specialization": "04",
+    "category": "A04.51.27"
+  },
+  {
+    "specialization": "04",
+    "category": "A04.51.29"
+  },
+  {
+    "specialization": "04",
+    "category": "A04.51.31"
+  },
+  {
+    "specialization": "04",
+    "category": "A04.51.35"
+  },
+  {
+    "specialization": "04",
+    "category": "A04.51.41"
+  },
+  {
+    "specialization": "04",
+    "category": "A04.51.43"
+  },
+  {
+    "specialization": "04",
+    "category": "A04.51.47"
+  },
+  {
+    "specialization": "04",
+    "category": "A04.51.51"
+  },
+  {
+    "specialization": "04",
+    "category": "A04.51.53"
+  },
+  {
+    "specialization": "04",
+    "category": "A04.51.54"
+  },
+  {
+    "specialization": "04",
+    "category": "A04.51.55"
+  },
+  {
+    "specialization": "04",
+    "category": "A04.51.57"
+  },
+  {
+    "specialization": "04",
+    "category": "A04.51.59"
+  },
+  {
+    "specialization": "04",
+    "category": "A04.51.61"
+  },
+  {
+    "specialization": "04",
+    "category": "A04.51.63"
+  },
+  {
+    "specialization": "04",
+    "category": "A04.51.65"
+  },
+  {
+    "specialization": "04",
+    "category": "A04.51.67"
+  },
+  {
+    "specialization": "04",
+    "category": "A04.51.69"
+  },
+  {
+    "specialization": "04",
+    "category": "A04.51.71"
+  },
+  {
+    "specialization": "04",
+    "category": "A04.51.99"
+  },
+  {
+    "specialization": "04",
+    "category": "A04.61"
+  },
+  {
+    "specialization": "04",
+    "category": "A04.71"
+  },
+  {
+    "specialization": "04",
+    "category": "A04.71.21"
+  },
+  {
+    "specialization": "04",
+    "category": "A04.71.31"
+  },
+  {
+    "specialization": "04",
+    "category": "A04.81"
+  },
+  {
+    "specialization": "04",
+    "category": "A04.91"
+  },
+  {
+    "specialization": "04",
+    "category": "A04.94"
+  },
+  {
+    "specialization": "05",
+    "category": "A05"
+  },
+  {
+    "specialization": "06",
+    "category": "A06"
+  },
+  {
+    "specialization": "10",
+    "category": "A10"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.01"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.01.07"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.01.07.12"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.01.08"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.01.09"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.01.11"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.01.13"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.01.17"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.01.21"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.01.29"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.01.33"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.01.39"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.01.45"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.01.45.25"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.01.45.31"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.01.45.33"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.01.79"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.01.79.41"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.03"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.03.01"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.03.21"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.03.21.12"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.03.25"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.03.28"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.03.33"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.03.37"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.03.41"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.03.47"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.03.51"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.03.59"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.07"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.07.01"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.07.21"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.07.23"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.07.27"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.07.31"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.07.33"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.07.35"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.07.37"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.07.41"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.07.45"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.07.49"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.07.53"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.07.53.37"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.07.53.41"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.07.53.43"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.07.53.51"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.07.57"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.07.61"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.07.61.24"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.07.61.33"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.07.61.37"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.07.61.43"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.07.61.47"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.07.61.4757"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.07.61.48"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.07.61.49"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.07.61.53"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.07.61.65"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.07.61.67"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.09"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.09.01"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.09.09"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.09.09.21"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.09.09.23"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.09.09.25"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.09.09.31"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.09.09.35"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.09.09.37"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.09.09.57"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.09.89"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.09.91"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.11"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.11.01"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.11.09"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.11.10"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.11.16"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.11.18"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.11.20"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.11.22"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.11.24"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.11.79"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.11.91"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.15"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.15.01"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.15.04"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.15.21"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.15.23"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.15.24"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.15.25"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.15.31"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.15.33"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.15.33.21"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.15.33.25"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.15.33.31"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.15.33.32"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.15.33.33"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.15.33.35"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.15.33.41"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.15.33.45"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.15.33.47"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.15.35"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.15.37"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.15.41"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.15.43"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.15.51"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.15.55"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.15.59"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.15.61"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.15.65"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.15.91"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.16"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.16.01"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.16.04"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.16.05"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.16.07"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.16.12"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.16.17"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.16.27"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.16.27.12"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.16.27.14"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.16.29"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.16.37"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.16.47"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.16.49"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.16.91"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.17"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.17.01"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.17.04"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.17.13"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.17.14"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.17.21"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.17.25"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.17.31"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.17.35"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.17.39"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.17.41"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.17.43"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.17.44"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.17.45"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.17.45.37"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.17.45.41"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.17.45.45"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.17.45.46"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.17.45.47"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.17.45.48"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.17.45.51"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.17.45.53"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.17.47"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.17.51"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.17.51.31"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.17.51.35"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.17.51.41"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.17.51.61"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.17.64"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.17.65"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.17.67"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.17.69"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.17.91"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.18"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.18.01"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.18.04"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.18.21"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.18.21.12"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.18.21.14"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.18.21.16"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.18.25"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.18.35"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.18.37"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.18.41"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.18.41.31"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.18.41.35"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.18.45"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.18.47"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.18.47.14"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.18.47.16"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.18.47.41"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.18.47.43"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.18.47.45"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.18.47.51"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.18.47.54"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.18.51"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.18.52"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.18.91"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.19"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.19.01"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.19.04"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.19.21"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.19.31"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.19.35"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.19.35.12"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.19.35.14"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.19.35.16"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.19.35.18"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.19.35.24"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.19.39"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.19.41"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.19.43"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.19.44"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.19.45"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.19.51"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.19.52"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.19.54"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.19.64"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.19.65"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.19.65.12"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.19.65.22"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.19.65.32"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.19.65.42"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.19.67"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.19.91"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.21"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.21.01"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.21.04"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.21.21"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.21.31"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.21.31.12"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.21.31.14"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.21.32"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.21.33"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.21.34"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.21.41"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.21.43"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.21.44"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.21.45"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.21.53"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.21.61"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.21.61.25"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.21.61.35"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.21.61.45"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.21.61.47"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.21.62"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.21.63"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.21.64"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.21.65"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.21.91"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.22"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.22.01"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.22.04"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.22.21"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.22.31"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.22.32"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.22.43"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.22.54"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.22.61"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.22.63"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.22.75"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.22.91"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.23"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.23.01"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.23.04"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.23.21"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.23.21.10"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.23.21.20"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.23.24"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.23.31"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.23.31.25"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.23.31.43"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.23.31.47"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.23.31.51"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.23.31.61"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.23.31.63"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.23.35"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.23.35.21"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.23.35.51"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.23.41"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.23.45"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.23.46"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.23.51"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.23.51.03"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.23.51.05"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.23.51.07"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.23.51.09"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.23.51.11"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.23.51.15"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.23.51.16"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.23.51.17"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.23.51.18"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.23.51.51"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.23.51.53"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.23.61"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.23.62"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.23.62.12"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.23.63"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.23.63.44"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.23.64"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.23.65"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.23.91"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.25"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.25.01"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.25.04"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.25.21"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.25.31"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.25.32"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.25.43"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.25.54"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.25.61"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.25.63"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.25.75"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.25.91"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.26"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.26.01"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.26.04"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.26.21"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.26.31"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.26.32"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.26.43"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.26.54"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.26.61"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.26.63"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.26.75"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.26.85"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.26.91"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.27"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.27.01"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.27.04"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.27.21"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.27.21.31"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.27.21.41"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.27.21.51"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.27.23"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.27.25"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.27.31"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.27.35"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.27.41"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.27.45"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.27.51"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.27.55"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.27.55.21"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.27.55.23"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.27.55.25"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.27.55.31"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.27.55.35"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.27.55.45"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.27.55.47"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.27.55.51"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.27.55.53"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.27.57"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.27.61"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.27.61.15"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.27.61.17"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.27.61.18"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.27.61.19"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.27.61.23"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.27.61.24"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.27.62"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.27.62.25"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.27.62.26"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.27.62.30"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.27.62.31"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.27.62.32"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.27.62.34"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.27.62.37"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.27.62.39"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.27.62.43"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.27.62.45"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.27.62.47"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.27.62.48"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.27.62.51"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.27.62.53"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.27.62.56"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.27.62.58"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.27.62.62"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.27.62.64"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.27.62.67"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.27.62.68"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.27.62.71"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.27.62.73"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.27.62.75"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.27.62.78"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.27.62.81"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.27.62.83"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.27.62.85"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.27.62.87"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.27.62.89"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.27.63"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.27.63.12"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.27.63.14"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.27.63.16"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.27.63.18"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.27.63.20"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.27.63.22"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.27.63.24"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.27.65"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.27.91"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.31"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.31.01"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.31.04"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.31.21"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.31.21.12"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.31.21.14"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.31.21.16"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.31.25"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.31.31"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.31.35"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.31.35.21"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.31.35.51"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.31.35.61"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.31.37"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.31.41"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.31.41.31"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.31.41.35"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.31.45"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.31.47"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.31.47.31"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.31.47.35"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.31.47.37"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.31.47.41"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.31.47.45"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.31.47.47"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.31.47.49"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.31.47.51"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.31.47.61"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.31.51"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.31.51.12"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.31.51.24"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.31.51.36"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.31.51.38"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.31.52"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.31.91"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.33"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.33.01"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.33.04"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.33.21"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.33.21.12"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.33.21.14"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.33.21.16"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.33.25"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.33.31"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.33.35"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.33.35.21"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.33.35.51"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.33.35.61"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.33.37"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.33.41"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.33.41.31"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.33.41.35"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.33.45"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.33.47"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.33.47.16"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.33.47.18"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.33.47.22"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.33.47.28"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.33.47.41"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.33.47.42"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.33.47.43"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.33.47.45"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.33.47.51"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.33.47.61"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.33.51"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.33.51.12"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.33.51.24"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.33.51.36"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.33.51.38"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.33.51.42"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.33.51.44"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.33.51.46"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.33.51.48"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.33.52"
+  },
+  {
+    "specialization": "10",
+    "category": "10.31.91"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.35"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.35.01"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.35.04"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.35.14"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.35.16"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.35.35"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.35.53"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.35.61"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.35.65"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.35.91"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.41"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.41.01"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.41.04"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.41.21"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.41.23"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.41.25"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.41.31"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.41.51"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.41.54"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.41.56"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.41.65"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.41.91"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.45"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.45.01"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.45.04"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.45.31"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.45.41"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.45.45"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.45.47"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.45.51"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.45.55"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.45.61"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.45.65"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.45.67"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.45.91"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.47"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.47.01"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.47.04"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.47.31"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.47.31.31"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.47.31.41"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.47.31.51"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.47.31.52"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.47.34"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.47.35"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.47.36"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.47.37"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.47.39"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.47.51"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.47.61"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.47.65"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.47.72"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.47.91"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.48"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.48.01"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.48.04"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.48.14"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.48.16"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.48.35"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.48.37"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.48.41"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.48.45"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.48.45.12"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.48.45.14"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.48.45.16"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.48.45.18"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.48.51"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.48.52"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.48.53"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.48.53.12"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.48.53.14"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.48.53.16"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.48.53.18"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.48.53.21"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.48.53.23"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.48.65"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.48.91"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.51"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.51.01"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.51.04"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.51.12"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.51.18"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.51.35"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.51.38"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.51.42"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.51.45"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.51.51"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.51.51.55"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.51.51.61"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.51.55"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.51.56"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.51.62"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.51.63"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.51.64"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.51.65"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.51.91"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.53"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.53.01"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.51.04"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.51.12"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.53.21"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.53.31"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.53.35"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.53.45"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.53.48"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.53.52"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.53.62"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.53.65"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.53.91"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.55"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.55.01"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.55.04"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.55.21"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.55.21.25"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.55.21.31"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.55.21.51"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.55.21.61"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.55.30"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.55.31"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.55.41"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.55.42"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.55.43"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.55.44"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.55.45"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.55.49"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.55.51"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.55.52"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.55.53"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.55.55"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.55.57"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.55.61"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.55.65"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.55.91"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.57"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.57.01"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.57.04"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.57.12"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.57.14"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.57.15"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.57.16"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.57.17"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.57.18"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.57.19"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.57.21"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.57.41"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.57.51"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.57.52"
+  },
+  {
+    "specialization": "10",
+    "category": "А10.57.53"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.57.54"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.57.57"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.57.58"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.57.59"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.57.65"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.57.67"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.57.91"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.59"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.59.01"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.59.04"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.59.12"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.59.14"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.59.15"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.59.16"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.59.17"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.59.18"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.59.19"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.59.21"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.59.41"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.59.51"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.59.52"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.59.53"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.59.54"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.59.58"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.59.61"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.59.65"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.59.67"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.59.91"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.61"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.61.01"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.61.04"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.61.08"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.61.12"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.61.21"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.61.41"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.61.41.12"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.61.41.14"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.61.51"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.61.51.12"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.61.51.14"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.61.53"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.61.54"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.61.56"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.61.57"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.61.58"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.61.59"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.61.61"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.61.62"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.61.63"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.61.65"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.61.91"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.63"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.63.01"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.63.04"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.61.07"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.63.25"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.63.26"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.63.27"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.63.31"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.63.33"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.63.33.41"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.63.37"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.63.39"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.63.41"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.63.43"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.63.45"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.63.47"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.63.49"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.63.51"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.63.52"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.63.53"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.63.53.57"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.63.54"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.63.55"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.63.56"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.63.57"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.63.59"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.63.61"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.63.65"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.63.91"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.65"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.65.01"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.65.04"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.65.09"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.65.09.12"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.65.09.14"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.65.09.16"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.65.09.18"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.65.09.21"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.65.09.24"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.65.09.27"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.65.12"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.65.34"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.65.48"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.65.52"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.65.54"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.65.58"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.65.61"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.65.65"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.65.91"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.67"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.67.01"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.67.04"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.67.21"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.67.31"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.67.33"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.67.35"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.67.35.12"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.67.35.16"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.67.35.21"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.67.35.24"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.67.41"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.67.41.15"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.67.41.25"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.67.41.35"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.67.41.45"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.67.41.47"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.67.61"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.67.61.21"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.67.61.31"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.67.61.41"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.67.61.45"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.67.61.47"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.67.61.57"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.67.65"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.67.91"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.70"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.70.01"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.70.04"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.70.12"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.70.14"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.70.15"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.70.16"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.70.17"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.70.18"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.70.19"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.70.21"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.70.41"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.70.51"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.70.52"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.70.53"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.70.54"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.70.57"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.70.58"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.70.59"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.70.65"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.70.67"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.70.91"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.71"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.71.01"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.71.31"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.71.31.21"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.71.31.31"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.71.31.41"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.71.31.46"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.71.35"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.71.35.25"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.71.35.35"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.71.41"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.71.41.71"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.71.41.81"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.71.41.91"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.71.42"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.71.43"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.71.44"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.71.45"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.71.51"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.71.55"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.71.55.15"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.71.61"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.71.63"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.71.91"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.77"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.77.01"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.77.04"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.77.20"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.77.20.01"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.77.20.02"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.77.21"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.77.21.01"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.77.21.17"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.77.21.20"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.77.21.21"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.77.21.22"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.77.21.23"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.77.21.25"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.77.21.27"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.77.21.29"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.77.21.31"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.77.31"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.77.31.21"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.77.31.51"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.77.31.65"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.77.41"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.77.41.21"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.77.41.41"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.77.41.61"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.77.43"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.77.44"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.77.44.21"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.77.44.31"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.77.44.51"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.77.51"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.77.51.21"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.77.51.25"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.77.51.31"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.77.51.35"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.77.51.37"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.77.52"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.77.52.25"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.77.52.35"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.77.52.45"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.77.53"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.77.53.25"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.77.53.35"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.77.53.45"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.77.53.55"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.77.53.65"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.77.54"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.77.54.25"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.77.54.35"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.77.54.45"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.77.54.55"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.77.55"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.77.57"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.77.91"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.79"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.79.01"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.79.04"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.79.21"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.79.21.31"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.79.21.35"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.79.21.41"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.79.21.43"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.79.21.45"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.79.21.47"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.79.21.51"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.79.21.53"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.79.21.55"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.79.21.57"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.79.21.61"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.79.21.63"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.79.25"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.79.35"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.79.35.21"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.79.35.25"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.79.35.31"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.79.35.35"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.79.35.41"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.79.35.45"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.79.35.51"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.79.35.69"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.79.37"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.79.41"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.79.41.31"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.79.41.35"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.79.45"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.79.47"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.79.47.25"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.79.47.31"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.79.47.35"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.79.47.41"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.79.47.43"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.79.47.45"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.79.47.51"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.79.47.61"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.79.51"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.79.51.31"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.79.51.41"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.79.51.46"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.79.51.48"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.79.52"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.79.91"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.81"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.81.01"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.81.15"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.81.31"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.81.35"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.81.41"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.81.41.31"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.81.41.41"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.81.45"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.81.45.31"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.81.45.41"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.81.45.42"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.81.45.43"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.81.45.44"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.81.45.45"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.81.45.46"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.81.45.47"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.81.45.48"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.81.45.49"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.81.45.51"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.81.51"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.81.55"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.81.61"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.81.71"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.81.91"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.83"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.83.01"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.83.04"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.83.21"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.83.26"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.83.35"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.83.41"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.83.45"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.83.47"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.83.47.12"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.83.47.14"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.83.47.16"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.83.47.18"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.83.53"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.83.53.12"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.83.53.13"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.83.53.14"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.83.53.15"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.83.53.18"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.83.55"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.83.56"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.83.59"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.83.63"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.83.64"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.83.64.12"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.83.64.14"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.83.65"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.83.66"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.83.67"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.83.77"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.83.87"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.83.89"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.83.91"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.85"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.85.01"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.85.31"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.85.41"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.85.41.21"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.85.41.25"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.85.41.31"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.85.41.35"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.85.41.41"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.85.41.45"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.85.45"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.85.45.21"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.85.45.25"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.85.45.31"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.85.45.35"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.85.45.41"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.85.45.45"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.85.49"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.85.49.21"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.85.49.31"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.85.49.41"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.85.51"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.85.54"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.85.91"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.86"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.86.01"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.86.12"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.86.14"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.86.17"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.86.31"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.86.41"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.86.51"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.86.61"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.86.71"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.86.74"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.86.75"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.86.76"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.86.91"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.87"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.87.04"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.87.07"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.87.08"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.87.09"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.87.16"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.87.21"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.87.21.21"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.87.21.22"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.87.21.41"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.87.21.47"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.87.27"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.87.27.21"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.87.27.31"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.87.29"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.87.29.31"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.87.29.33"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.87.29.41"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.87.29.51"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.87.31"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.87.31.91"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.87.33"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.87.35"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.87.41"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.87.45"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.87.47"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.87.47.31"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.87.47.32"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.87.47.33"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.87.47.34"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.87.47.35"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.87.47.36"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.87.47.65"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.87.51"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.87.51.11"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.87.51.21"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.87.51.25"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.87.51.31"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.87.51.33"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.87.51.37"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.87.51.39"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.87.51.41"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.87.51.43"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.87.51.45"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.87.51.47"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.87.51.49"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.87.51.51"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.87.51.53"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.87.51.57"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.87.51.61"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.87.51.69"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.87.51.70"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.87.51.71"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.87.61"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.87.61.31"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.87.61.41"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.87.61.51"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.87.61.61"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.87.61.62"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.87.67"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.87.67.21"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.87.67.22"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.87.67.23"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.87.67.25"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.87.67.27"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.87.67.31"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.87.67.47"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.87.67.51"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.87.67.61"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.87.69"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.87.69.21"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.87.69.41"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.87.69.51"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.87.69.65"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.87.69.69"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.87.72"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.87.74"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.87.91"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.89"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.89.01"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.89.09"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.89.12"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.89.21"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.89.22"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.89.23"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.89.24"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.89.25"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.89.27"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.89.29"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.89.30"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.89.32"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.89.34"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.89.35"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.89.45"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.89.47"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.89.53"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.89.59"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.89.61"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.89.91"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.91"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.91.01"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.91.21"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.91.31"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.91.32"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.91.43"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.91.54"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.91.61"
+  },
+  {
+    "specialization": "10",
+    "category": "A10.94"
+  },
+  {
+    "specialization": "11",
+    "category": "A11"
+  },
+  {
+    "specialization": "12",
+    "category": "A12"
+  },
+  {
+    "specialization": "13",
+    "category": "A13"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.01"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.01.11"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.01.13"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.01.21"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.01.29"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.01.33"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.01.73"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.07"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.07.21"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.07.25"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.07.26"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.07.27"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.07.77"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.09"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.09.01"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.09.03"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.11"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.11.21"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.11.22"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.11.25"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.11.27"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.11.28"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.11.44"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.11.44.01"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.11.45"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.11.46"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.11.47"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.11.47.01"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.11.58"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.11.59"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.11.59.01"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.15"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.15"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.15.51"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.15.53"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.15.55"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.15.59"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.15.61"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.15.63"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.15.65"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.15.67"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.15.75"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.17"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.17.13"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.17.21"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.17.57"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.17.59"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.17.65"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.20"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.20.21"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.20.25"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.20.31"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.20.41"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.20.43"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.20.65"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.21"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.21.01"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.21.07"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.21.08"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.21.09"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.21.11"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.21.15"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.21.17"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.21.91"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.31"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.31.01"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.31.07"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.31.09"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.31.11"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.31.15"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.31.17"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.31.21"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.31.23"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.31.91"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.35"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.41"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.41.01"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.41.07"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.41.08"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.41.09"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.41.11"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.41.15"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.41.17"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.41.21"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.41.23"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.41.52"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.41.91"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.51"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.51.01"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.51.07"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.51.08"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.51.09"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.51.11"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.51.15"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.51.17"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.51.91"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.51.01"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.61"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.61.01"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.61.07"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.61.08"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.61.09"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.61.11"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.61.15"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.61.17"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.61.25"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.61.91"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.71"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.71.01"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.71.07"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.71.09"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.71.15"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.71.91"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.71.96"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.91"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.91.B0030"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.91.B0060"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.91.B0070"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.91.B0075"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.91.B0080"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.91.B0090"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.91.B0120"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.91.B0150"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.91.B0180"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.91.B0210"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.91.B0240"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.91.B0250"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.91.B0270"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.91.B0300"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.91.B0330"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.91.B0360"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.91.B0390"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.91.B0420"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.91.B0480"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.91.B0510"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.91.B0520"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.91.B0540"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.91.B0550"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.91.B0570"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.91.B0600"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.91.B0620"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.91.B0630"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.91.B0660"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.91.B0690"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.91.B0720"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.91.B0750"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.91.B0770"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.91.B0780"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.91.B0810"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.91.B0840"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.91.B0870"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.91.B0900"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.91.B0930"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.91.B0960"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.91.B0990"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.91.B1020"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.91.B1050"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.91.B1080"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.91.B1090"
+  },
+  {
+    "specialization": "13",
+    "category": "A13.91.B1100"
+  },
+  {
+    "specialization": "14",
+    "category": "A14"
+  },
+  {
+    "specialization": "15",
+    "category": "A15"
+  },
+  {
+    "specialization": "16",
+    "category": "A16"
+  },
+  {
+    "specialization": "17",
+    "category": "A17"
+  },
+  {
+    "specialization": "18",
+    "category": "A18"
+  }
 ]
