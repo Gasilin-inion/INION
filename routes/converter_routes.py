@@ -27,6 +27,9 @@ with open(CONFIG_PATH, "r", encoding="utf-8") as f:
     config_paths = json.load(f)
 INPUT_HTML_DIR = config_paths["input_files"]
 INPUT_TXT_DIR = config_paths["input_txt_dir"]
+TEMP_SD_DIR = config_paths["temp_SD_dir"]
+TEMP_SD_02_FILE = config_paths["temp_SD_02_file"]
+TEMP_SD_04_FILE = config_paths["temp_SD_04_file"]
 SD_DIC_DIR = config_paths["S-D_Dictionary_dir"]
 SD_02_DIC_FILE = config_paths["S-D_02_Dictionary_file"]
 SD_04_DIC_FILE = config_paths["S-D_04_Dictionary_file"]
@@ -35,6 +38,7 @@ OUTPUT_TXT_DIR = config_paths["output_txt_dir"]
 OUTPUT_GBL_FILE = config_paths["file_for_GB"]
 OUTPUT_GBL_DIR = config_paths["dir_for_GB"]
 EDITABLE_XLSX_DIR = config_paths["files_to_edit"]
+EDITED_XLSX = config_paths["dir_for_edited_excel"]
 EDITABLE_XLSX = config_paths["excel_to_edit"]
 IRBIS_OUTPUT_DIR = config_paths["output_files"]
 
@@ -79,7 +83,7 @@ def excel_upload():
 
         # Безопасное имя файла
         filename = secure_filename(excel_file.filename)
-        save_path = Path(EDITABLE_XLSX_DIR) / filename
+        save_path = Path(EDITED_XLSX) / filename
 
         # Сохранение файла на диск
         excel_file.save(save_path)
@@ -112,16 +116,16 @@ def upload_txt_key_file():
         key_list, topic_num = key_extraction(save_path)
 
         if topic_num == '02':
-            append_with_pandas(SD_02_DIC_FILE, "Sheet", "synonym", key_list)
+            append_with_pandas(SD_02_DIC_FILE, TEMP_SD_02_FILE, "Sheet", "synonym", key_list)
         elif topic_num == '04':
-            append_with_pandas(SD_04_DIC_FILE, "Sheet", "synonym", key_list)
+            append_with_pandas(SD_04_DIC_FILE, TEMP_SD_04_FILE, "Sheet", "synonym", key_list)
 
         return redirect(url_for("converter.key_excel_result"))
 
-    return render_template("keywords_1.html")
+    return render_template("key_excel_upload.html")
 
 # Конвертация таблицы автозамены в формат .gbl
-@converter_bp.route("/exel_key_upload", methods=["GET", "POST"])
+@converter_bp.route("/excel_key_upload", methods=["GET", "POST"])
 def upload_excel_key_file():
     if request.method == "POST":
         # Получаем файл
@@ -129,7 +133,7 @@ def upload_excel_key_file():
 
         # Безопасное имя файла
         filename = secure_filename(file_2.filename)
-        save_path = Path(SD_DIC_DIR) / filename
+        save_path = Path(TEMP_SD_DIR) / filename
 
         # Сохранение файла на диск
         file_2.save(save_path)
@@ -141,7 +145,7 @@ def upload_excel_key_file():
 
         return redirect(url_for("converter.key_gbl_result"))
 
-    return render_template("keywords_2.html")
+    return render_template("key_gbl_upload.html")
 
 # -------------------------------------------------------
 # Блок выводов
@@ -164,7 +168,7 @@ def excel_result():
 # Вывод дополненной таблицы автозамены
 @converter_bp.route("/key_excel_result")
 def key_excel_result():
-    excel_file = Path(SD_DIC_DIR).glob("*.xlsx")
+    excel_file = Path(TEMP_SD_DIR).glob("*.xlsx")
 
     return render_template("key_excel_result.html", excel_file=excel_file)
 
@@ -192,7 +196,7 @@ def download_txt_list(filename):
 # Скачивание файла в формате Excel
 @converter_bp.route("/download_excel/<path:filename>")
 def download_excel_file(filename):
-    return send_from_directory(SD_DIC_DIR, filename, as_attachment=True)
+    return send_from_directory(TEMP_SD_DIR, filename, as_attachment=True)
 
 # Скачивание файла в формате .gbl
 @converter_bp.route("/download_gbl/<path:filename>")

@@ -8,10 +8,10 @@
     <b>Включает в себя следующие инструменты:</b>
 </p>
 <ul>
-    <li>Конвертор HTML-страниц в сводную таблицу Excel (html-excel)</li>
-    <li>Конвертор Excel таблиц в файлы формата ИРБИС-64 (excel-irbis)</li>
-    <li>Экстрактор ненормализованных ключевых слов в таблицу автозамены Excel (key-extractor)</li>
-    <li>Конвертор таблицы автозамены Excel в задания для модуля Глобальной корректировки (key-converter)</li>
+    <li><a href="{{ url_for('converter.html_upload') }}">Конвертер HTML-страниц в сводную таблицу (html-excel)</a></li>
+    <li><a href="{{ url_for('converter.excel_upload') }}">Конвертер таблиц в файлы формата ИРБИС-64 (excel-irbis)</a></li>
+    <li><a href="{{ url_for('converter.upload_txt_key_file') }}">Экстрактор ненормализованных ключевых слов в таблицу автозамены (key-extractor)</a></li>
+    <li><a href="{{ url_for('converter.upload_excel_key_file') }}">Конвертер таблицы автозамены Excel в задания для модуля глобальной корректировки (key-converter)</a></li>
 </ul>
 
 <p>

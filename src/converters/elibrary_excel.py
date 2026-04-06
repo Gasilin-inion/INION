@@ -422,9 +422,23 @@ def convert_html_to_excel(files):
 
 def data_frame_to_workbook(data_frame):
     
+    # Формирование названия файла
+
+    journal_name = data_frame.at[1, 'journal']
+    year = data_frame.at[1, 'year']
+    volume = data_frame.at[1, 'volume']
+    issue = data_frame.at[1, 'issue']
+    if pd.notna(volume):
+        file_name = f'{journal_name}_{year}_{volume}_{issue}'
+    else:
+        file_name = f'{journal_name}_{year}_{issue}'
+    
+    file_path = EDITABLE_XLSX
+    final_file_path = file_path.replace('list_of_articles', file_name)
+
     # Формирование выходного файла
 
-    writer = pd.ExcelWriter(EDITABLE_XLSX, engine='xlsxwriter')
+    writer = pd.ExcelWriter(final_file_path, engine='xlsxwriter')
     data_frame.to_excel(writer, sheet_name='e-Library', index=False)
 
     # Формат переноса текста
