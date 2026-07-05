@@ -18,6 +18,170 @@ F
 REP
 965
 F
+(if v965= 'Andersen H.Ch.' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Aristoteles' then 'Аристотель' else v965 fi/)
+REP
+965
+F
+(if v965= 'Aurelius Augustinus' then 'Августин Блаженный' else v965 fi/)
+REP
+965
+F
+(if v965= 'Barthes R.' then 'Барт Р.' else v965 fi/)
+REP
+965
+F
+(if v965= 'Bernhard T.' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Blanchot M.' then 'Бланшо М.' else v965 fi/)
+REP
+965
+F
+(if v965= 'Camus A.' then 'Камю А.' else v965 fi/)
+REP
+965
+F
+(if v965= 'Coleridge S.T.' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Collodi C.' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Conrad J.' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Dante Alighieri' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Ebner F.' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Eco U.' then 'Эко У.' else v965 fi/)
+REP
+965
+F
+(if v965= 'Empedocles' then 'Эмпедокл' else v965 fi/)
+REP
+965
+F
+(if v965= 'Epictetos' then 'Эпиктет' else v965 fi/)
+REP
+965
+F
+(if v965= 'Girard R.' then 'Жирар Р.' else v965 fi/)
+REP
+965
+F
+(if v965= 'Goethe J.W.' then 'Гете И.В. фон' else v965 fi/)
+REP
+965
+F
+(if v965= 'Holderlin F.' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Homerus' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Houellebecq M.' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Juan de la Cruz' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Jung C.G.' then 'Юнг К.Г.' else v965 fi/)
+REP
+965
+F
+(if v965= 'Kafka F.' then 'Кафка Ф.' else v965 fi/)
+REP
+965
+F
+(if v965= 'Kleist H.von' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'London J.' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Marquis de Sade' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Meillassoux Q.' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Montaigne M.de' then 'Монтень М.Э. де' else v965 fi/)
+REP
+965
+F
+(if v965= 'Montesquieu Сh.L.de' then 'Монтескье Ш.Л де' else v965 fi/)
+REP
+965
+F
+(if v965= 'NBIC-конвергенция' then 'NBIC-конвергенции' else v965 fi/)
+REP
+965
+F
+(if v965= 'Nbic-конвергенция' then 'NBIC-конвергенции' else v965 fi/)
+REP
+965
+F
+(if v965= 'Newman J.H.' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Nietzche F.' then 'Ницше Ф.' else v965 fi/)
+REP
+965
+F
+(if v965= 'Nietzsche F.' then 'Ницше Ф.' else v965 fi/)
+REP
+965
+F
+(if v965= 'Platon' then 'Платон' else v965 fi/)
+REP
+965
+F
+(if v965= 'Political_science' then 'Политическая философия' else v965 fi/)
+REP
+965
+F
+(if v965= 'Rilke R.M.' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Ruiz Zafon C.' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Social_science' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Stephenson N.' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Voltaire' then 'Вольтер А.Ф.М.' else v965 fi/)
+REP
+965
+F
 (if v965= 'Абдуллаев М.А.' then # else v965 fi/)
 REP
 965
@@ -34,6 +198,10 @@ F
 REP
 965
 F
+(if v965= 'Абстрагирование' then 'Абстрактное' else v965 fi/)
+REP
+965
+F
 (if v965= 'Абстрактное' then 'Абстракция' else v965 fi/)
 REP
 965
@@ -47,6 +215,10 @@ REP
 965
 F
 (if v965= 'Авангард' then 'Авангардизм' else v965 fi/)
+REP
+965
+F
+(if v965= 'Авария' then # else v965 fi/)
 REP
 965
 F
@@ -78,6 +250,10 @@ F
 REP
 965
 F
+(if v965= 'Австрийская школа' then 'Школы и направления' else v965 fi/)
+REP
+965
+F
 (if v965= 'Автобиографизм' then 'Автобиографии' else v965 fi/)
 REP
 965
@@ -98,6 +274,10 @@ F
 REP
 965
 F
+(if v965= 'Автоматизированные системы' then 'Автоматизация' else v965 fi/)
+REP
+965
+F
 (if v965= 'Автоматический перевод' then # else v965 fi/)
 REP
 965
@@ -111,6 +291,10 @@ REP
 965
 F
 (if v965= 'Авторское право' then 'Авторство' else v965 fi/)
+REP
+965
+F
+(if v965= 'Автохтонные культы' then # else v965 fi/)
 REP
 965
 F
@@ -138,6 +322,10 @@ F
 REP
 965
 F
+(if v965= 'Адамович Г.В.' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Адаптация' then # else v965 fi/)
 REP
 965
@@ -150,11 +338,31 @@ F
 REP
 965
 F
+(if v965= 'Администрирование' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Адорно А.' then 'Адорно Т.' else v965 fi/)
+REP
+965
+F
+(if v965= 'Азиатские ценности' then 'Ценностный подход' else v965 fi/)
+REP
+965
+F
+(if v965= 'Азиатский способ производства' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Азимов А.' then # else v965 fi/)
 REP
 965
 F
 (if v965= 'Айер А.Д.' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Айн Рэнд' then # else v965 fi/)
 REP
 965
 F
@@ -282,6 +490,10 @@ F
 REP
 965
 F
+(if v965= 'Американская социология' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Амьель А.-Ф.' then # else v965 fi/)
 REP
 965
@@ -310,6 +522,14 @@ F
 REP
 965
 F
+(if v965= 'Анатомия' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Ангажированность' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Ангелология' then # else v965 fi/)
 REP
 965
@@ -322,11 +542,19 @@ F
 REP
 965
 F
+(if v965= 'Англокатолицизм' then 'Христианство' else v965 fi/)
+REP
+965
+F
 (if v965= 'Андерсен Х.К.' then # else v965 fi/)
 REP
 965
 F
 (if v965= 'Анекдот' then 'Юмор' else v965 fi/)
+REP
+965
+F
+(if v965= 'Анкерсмит Ф.' then 'Анкерсмит Ф.Р.' else v965 fi/)
 REP
 965
 F
@@ -342,6 +570,10 @@ F
 REP
 965
 F
+(if v965= 'Антиинтеллектуализм' then 'Интеллектуальная деятельность' else v965 fi/)
+REP
+965
+F
 (if v965= 'Антиреализм' then 'Реализм' else v965 fi/)
 REP
 965
@@ -354,11 +586,11 @@ F
 REP
 965
 F
-(if v965= 'Антихрист' then # else v965 fi/)
+(if v965= 'Антихрист' then 'Христианство' else v965 fi/)
 REP
 965
 F
-(if v965= 'Античная культура' then 'Античность' else v965 fi/)
+(if v965= 'Античная культура' then 'Античная философия' else v965 fi/)
 REP
 965
 F
@@ -370,11 +602,11 @@ F
 REP
 965
 F
-(if v965= 'Античное искусство' then # else v965 fi/)
+(if v965= 'Античная традиция' then # else v965 fi/)
 REP
 965
 F
-(if v965= 'Античность' then # else v965 fi/)
+(if v965= 'Античное искусство' then # else v965 fi/)
 REP
 965
 F
@@ -382,7 +614,11 @@ F
 REP
 965
 F
-(if v965= 'Античные мотивы' then 'Античность' else v965 fi/)
+(if v965= 'Античность' then 'Античная философия' else v965 fi/)
+REP
+965
+F
+(if v965= 'Античные мотивы' then 'Античная философия' else v965 fi/)
 REP
 965
 F
@@ -394,7 +630,7 @@ F
 REP
 965
 F
-(if v965= 'Антропологизм' then # else v965 fi/)
+(if v965= 'Антропологизм' then 'Философская антропология' else v965 fi/)
 REP
 965
 F
@@ -410,7 +646,7 @@ F
 REP
 965
 F
-(if v965= 'Антропологический анализ' then # else v965 fi/)
+(if v965= 'Антропологический анализ' then 'Философская антропология' else v965 fi/)
 REP
 965
 F
@@ -422,7 +658,7 @@ F
 REP
 965
 F
-(if v965= 'Антропологическое знание' then # else v965 fi/)
+(if v965= 'Антропологическое знание' then 'Философская антропология' else v965 fi/)
 REP
 965
 F
@@ -446,6 +682,10 @@ F
 REP
 965
 F
+(if v965= 'Апокалипсис' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Апокалиптика' then # else v965 fi/)
 REP
 965
@@ -459,6 +699,10 @@ REP
 965
 F
 (if v965= 'Апологетика' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Апория' then # else v965 fi/)
 REP
 965
 F
@@ -478,11 +722,19 @@ F
 REP
 965
 F
+(if v965= 'Арангурен Х.' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Аргументы' then 'Аргументация' else v965 fi/)
 REP
 965
 F
 (if v965= 'Ареопагит' then 'Дионисий Ареопагит' else v965 fi/)
+REP
+965
+F
+(if v965= 'Ареопагитики' then 'Псевдо-Дионисий Ареопагит' else v965 fi/)
 REP
 965
 F
@@ -499,6 +751,10 @@ REP
 965
 F
 (if v965= 'Армстронг Д.' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Арнендт Х.' then 'Арендт Х.' else v965 fi/)
 REP
 965
 F
@@ -562,11 +818,11 @@ F
 REP
 965
 F
-(if v965= 'Аскетика (теол.)' then 'Аскетизм' else v965 fi/)
+(if v965= 'Аскетика (теол)' then 'Аскетизм' else v965 fi/)
 REP
 965
 F
-(if v965= 'Аскетика (теол)' then 'Аскетизм' else v965 fi/)
+(if v965= 'Аскетика (теол.)' then 'Аскетизм' else v965 fi/)
 REP
 965
 F
@@ -587,6 +843,10 @@ REP
 965
 F
 (if v965= 'Атмосфера' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Атрибут' then # else v965 fi/)
 REP
 965
 F
@@ -626,10 +886,6 @@ F
 REP
 965
 F
-(if v965= 'Бадью А.' then 'Бадью А.' else v965 fi/)
-REP
-965
-F
 (if v965= 'Базовые ценности' then 'Ценностный подход' else v965 fi/)
 REP
 965
@@ -642,7 +898,15 @@ F
 REP
 965
 F
+(if v965= 'Байес Т.' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Байзер Ф.Ч.' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Балет' then # else v965 fi/)
 REP
 965
 F
@@ -686,11 +950,11 @@ F
 REP
 965
 F
-(if v965= 'Безумие (филос.)' then 'Безумие' else v965 fi/)
+(if v965= 'Безумие (филос)' then 'Разум' else v965 fi/)
 REP
 965
 F
-(if v965= 'Безумие (филос)' then 'Разум' else v965 fi/)
+(if v965= 'Безумие (филос.)' then 'Безумие' else v965 fi/)
 REP
 965
 F
@@ -706,7 +970,15 @@ F
 REP
 965
 F
+(if v965= 'Берк Э.' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Беркли Дж.' then 'Беркли Д.' else v965 fi/)
+REP
+965
+F
+(if v965= 'Беркман А.' then # else v965 fi/)
 REP
 965
 F
@@ -718,7 +990,15 @@ F
 REP
 965
 F
+(if v965= 'Берталанфи Л.фон' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Бесконечное' then 'Бесконечность' else v965 fi/)
+REP
+965
+F
+(if v965= 'Беспятов Е.М.' then # else v965 fi/)
 REP
 965
 F
@@ -750,6 +1030,10 @@ F
 REP
 965
 F
+(if v965= 'Библиометрия' then 'Библия' else v965 fi/)
+REP
+965
+F
 (if v965= 'Библиометрия,' then # else v965 fi/)
 REP
 965
@@ -759,6 +1043,10 @@ REP
 965
 F
 (if v965= 'Библиотековедение' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Библиотечные фонды' then # else v965 fi/)
 REP
 965
 F
@@ -778,6 +1066,10 @@ F
 REP
 965
 F
+(if v965= 'Биовласть' then 'Биополитика' else v965 fi/)
+REP
+965
+F
 (if v965= 'Биогеохимия' then # else v965 fi/)
 REP
 965
@@ -791,6 +1083,10 @@ REP
 965
 F
 (if v965= 'Биография' then 'Биографии' else v965 fi/)
+REP
+965
+F
+(if v965= 'Биологическая антропология' then # else v965 fi/)
 REP
 965
 F
@@ -854,11 +1150,11 @@ F
 REP
 965
 F
-(if v965= 'Благочестие' then 'Благочестие' else v965 fi/)
+(if v965= 'Блаженный Августин' then 'Августин Блаженный' else v965 fi/)
 REP
 965
 F
-(if v965= 'Блаженный Августин' then 'Августин Блаженный' else v965 fi/)
+(if v965= 'Блог' then # else v965 fi/)
 REP
 965
 F
@@ -875,6 +1171,10 @@ REP
 965
 F
 (if v965= 'Бовуар С. Де' then 'Бовуар С. де' else v965 fi/)
+REP
+965
+F
+(if v965= 'Бовуар Симона де' then 'Бовуар С. де' else v965 fi/)
 REP
 965
 F
@@ -926,6 +1226,10 @@ F
 REP
 965
 F
+(if v965= 'Большевики' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Бон религия' then # else v965 fi/)
 REP
 965
@@ -939,6 +1243,10 @@ REP
 965
 F
 (if v965= 'Бочвар Д.А.' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Брак' then # else v965 fi/)
 REP
 965
 F
@@ -986,6 +1294,10 @@ F
 REP
 965
 F
+(if v965= 'Будущее время' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Будущее науки' then 'Развитие науки' else v965 fi/)
 REP
 965
@@ -1022,6 +1334,10 @@ F
 REP
 965
 F
+(if v965= 'Бёме Я.' then 'Беме Я.' else v965 fi/)
+REP
+965
+F
 (if v965= 'В.Соловьев' then 'Соловьев В.С.' else v965 fi/)
 REP
 965
@@ -1046,7 +1362,23 @@ F
 REP
 965
 F
+(if v965= 'Ван Гог В.' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Ван Гэнь' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Ван Чун' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Ван Эйген' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Ван Ян-мин' then # else v965 fi/)
 REP
 965
 F
@@ -1074,15 +1406,15 @@ F
 REP
 965
 F
+(if v965= 'Великая Отечественная война' then 'Войны' else v965 fi/)
+REP
+965
+F
 (if v965= 'Великая октябрьская социалистическая революция' then 'Социалистическая революция' else v965 fi/)
 REP
 965
 F
 (if v965= 'Великая отечественная война' then 'Войны' else v965 fi/)
-REP
-965
-F
-(if v965= 'Великая Отечественная война' then 'Войны' else v965 fi/)
 REP
 965
 F
@@ -1154,6 +1486,14 @@ F
 REP
 965
 F
+(if v965= 'Взаимозависимость' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Вивекананда Свами' then 'Вивекананда' else v965 fi/)
+REP
+965
+F
 (if v965= 'Вид (биол.)' then # else v965 fi/)
 REP
 965
@@ -1214,6 +1554,10 @@ F
 REP
 965
 F
+(if v965= 'Виссарион' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Вкус' then 'Эстетический вкус' else v965 fi/)
 REP
 965
@@ -1271,6 +1615,10 @@ REP
 965
 F
 (if v965= 'Внутренняя языковая форма' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Вода' then # else v965 fi/)
 REP
 965
 F
@@ -1358,6 +1706,10 @@ F
 REP
 965
 F
+(if v965= 'Вольтер Ф.-М.А.' then 'Вольтер А.Ф.М.' else v965 fi/)
+REP
+965
+F
 (if v965= 'Воля' then 'Свобода воли' else v965 fi/)
 REP
 965
@@ -1410,6 +1762,10 @@ F
 REP
 965
 F
+(if v965= 'Востоковедение' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Востоковеды' then # else v965 fi/)
 REP
 965
@@ -1458,11 +1814,23 @@ F
 REP
 965
 F
+(if v965= 'Всеобщая история' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Всеобщее' then # else v965 fi/)
 REP
 965
 F
+(if v965= 'Всеобщий труд' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Вторая мировая война' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Выбор' then # else v965 fi/)
 REP
 965
 F
@@ -1498,7 +1866,19 @@ F
 REP
 965
 F
+(if v965= 'Вычислительная математика' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Вычислительная техника' then 'Компьютеризация' else v965 fi/)
+REP
+965
+F
+(if v965= 'Вяземский П.А.' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Габитус' then # else v965 fi/)
 REP
 965
 F
@@ -1507,6 +1887,10 @@ REP
 965
 F
 (if v965= 'Габриэль М.' then 'Марсель Г.О.' else v965 fi/)
+REP
+965
+F
+(if v965= 'Гадаев Л.Т.' then # else v965 fi/)
 REP
 965
 F
@@ -1526,7 +1910,19 @@ F
 REP
 965
 F
+(if v965= 'Гао-цзы' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Гармонизация' then 'Гармония' else v965 fi/)
+REP
+965
+F
+(if v965= 'Гаспаров М.Л.' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Гачева А.Г.' then # else v965 fi/)
 REP
 965
 F
@@ -1543,6 +1939,10 @@ REP
 965
 F
 (if v965= 'Гельдерлин Ф.' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Ген' then # else v965 fi/)
 REP
 965
 F
@@ -1638,6 +2038,10 @@ F
 REP
 965
 F
+(if v965= 'Георгий Трапезундский' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Гераклит Эфесский' then 'Гераклит' else v965 fi/)
 REP
 965
@@ -1646,7 +2050,15 @@ F
 REP
 965
 F
+(if v965= 'Германизация' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Германия' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Германофильство' then # else v965 fi/)
 REP
 965
 F
@@ -1666,15 +2078,19 @@ F
 REP
 965
 F
+(if v965= 'Герсонид' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Гесиод' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Гете И.' then # else v965 fi/)
 REP
 965
 F
 (if v965= 'Гете И.В.' then 'Гете И.В. фон' else v965 fi/)
-REP
-965
-F
-(if v965= 'Гёте И.В.' then # else v965 fi/)
 REP
 965
 F
@@ -1703,6 +2119,10 @@ REP
 965
 F
 (if v965= 'Глобализм' then 'Глобальное' else v965 fi/)
+REP
+965
+F
+(if v965= 'Глобальная безопасность' then # else v965 fi/)
 REP
 965
 F
@@ -1754,11 +2174,19 @@ F
 REP
 965
 F
+(if v965= 'Голосовкер Я.Э.' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Голубинский Ф.' then # else v965 fi/)
 REP
 965
 F
 (if v965= 'Голубинский Ф.А.' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Гонка вооружений' then # else v965 fi/)
 REP
 965
 F
@@ -1842,6 +2270,10 @@ F
 REP
 965
 F
+(if v965= 'Государство всеобщего благоденствия' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Государство и личность' then 'Государство' else v965 fi/)
 REP
 965
@@ -1878,6 +2310,10 @@ F
 REP
 965
 F
+(if v965= 'Гражданское неповиновение' then 'Социальный протест' else v965 fi/)
+REP
+965
+F
 (if v965= 'Гражданское право' then # else v965 fi/)
 REP
 965
@@ -1891,6 +2327,10 @@ REP
 965
 F
 (if v965= 'Грамматика' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Грамматическое значение' then # else v965 fi/)
 REP
 965
 F
@@ -1970,6 +2410,10 @@ F
 REP
 965
 F
+(if v965= 'Гуманитаризация образования' then 'Гуманитаризация' else v965 fi/)
+REP
+965
+F
 (if v965= 'Гуманитарная интервенция' then 'Гуманитарные науки' else v965 fi/)
 REP
 965
@@ -2006,11 +2450,23 @@ F
 REP
 965
 F
+(if v965= 'Гун Юйчжи' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Гуро Е.Г.' then # else v965 fi/)
 REP
 965
 F
 (if v965= 'Гусев А.Ф.' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Гёльдерлин Ф.' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Гёте И.В.' then # else v965 fi/)
 REP
 965
 F
@@ -2118,6 +2574,10 @@ F
 REP
 965
 F
+(if v965= 'Дезурбанизация' then 'Урбанизация' else v965 fi/)
+REP
+965
+F
 (if v965= 'Действие' then # else v965 fi/)
 REP
 965
@@ -2130,11 +2590,15 @@ F
 REP
 965
 F
+(if v965= 'Делокаров К.Х.' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Делёз Ж.' then 'Делез Ж.' else v965 fi/)
 REP
 965
 F
-(if v965= 'Делокаров К.Х.' then # else v965 fi/)
+(if v965= 'Демография' then # else v965 fi/)
 REP
 965
 F
@@ -2190,11 +2654,19 @@ F
 REP
 965
 F
+(if v965= 'Детская речь' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Дефиниция' then # else v965 fi/)
 REP
 965
 F
 (if v965= 'Дефицит' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Дехристианизация' then 'Христианство' else v965 fi/)
 REP
 965
 F
@@ -2218,6 +2690,10 @@ F
 REP
 965
 F
+(if v965= 'Джордж Г.' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Диалектика' then # else v965 fi/)
 REP
 965
@@ -2234,7 +2710,7 @@ F
 REP
 965
 F
-(if v965= 'диалог' then # else v965 fi/)
+(if v965= 'Диахронические исследования' then # else v965 fi/)
 REP
 965
 F
@@ -2247,6 +2723,10 @@ REP
 965
 F
 (if v965= 'Диктаторский режим' then 'Диктатура' else v965 fi/)
+REP
+965
+F
+(if v965= 'Динамика' then # else v965 fi/)
 REP
 965
 F
@@ -2282,6 +2762,14 @@ F
 REP
 965
 F
+(if v965= 'Диспозиция (логич)' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Диссертации' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Дистанционное обучение' then # else v965 fi/)
 REP
 965
@@ -2291,6 +2779,10 @@ REP
 965
 F
 (if v965= 'Дисциплина' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Дифференциальная рента' then # else v965 fi/)
 REP
 965
 F
@@ -2306,6 +2798,10 @@ F
 REP
 965
 F
+(if v965= 'Длительность' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Дневники' then # else v965 fi/)
 REP
 965
@@ -2314,11 +2810,11 @@ F
 REP
 965
 F
-(if v965= 'добро' then 'Добродетель' else v965 fi/)
+(if v965= 'Добродетели' then 'Добродетель' else v965 fi/)
 REP
 965
 F
-(if v965= 'Добродетели' then 'Добродетель' else v965 fi/)
+(if v965= 'Добросовестность' then 'Совесть' else v965 fi/)
 REP
 965
 F
@@ -2346,6 +2842,10 @@ F
 REP
 965
 F
+(if v965= 'Докапиталистические общества' then 'Традиционное общество' else v965 fi/)
+REP
+965
+F
 (if v965= 'Доклады' then # else v965 fi/)
 REP
 965
@@ -2370,11 +2870,23 @@ F
 REP
 965
 F
+(if v965= 'Доминиканцы' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Донорство' then # else v965 fi/)
 REP
 965
 F
 (if v965= 'Дополнительности принцип' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Достаточного основания принцип' then 'Принцип достаточного основания' else v965 fi/)
+REP
+965
+F
+(if v965= 'Достоверность' then # else v965 fi/)
 REP
 965
 F
@@ -2391,6 +2903,10 @@ REP
 965
 F
 (if v965= 'Драма' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Драматический жанр' then # else v965 fi/)
 REP
 965
 F
@@ -2435,6 +2951,14 @@ REP
 965
 F
 (if v965= 'Древняя история' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Древс А.' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Дриш Г.' then # else v965 fi/)
 REP
 965
 F
@@ -2498,6 +3022,10 @@ F
 REP
 965
 F
+(if v965= 'Душевная болезнь' then 'Психические заболевания' else v965 fi/)
+REP
+965
+F
 (if v965= 'Дьюи Дж.' then # else v965 fi/)
 REP
 965
@@ -2515,6 +3043,18 @@ REP
 965
 F
 (if v965= 'Дюпюи Ж.-П.' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'ЕС' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Ебантяйство' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Ебантяйство' then # else v965 fi/)
 REP
 965
 F
@@ -2539,6 +3079,10 @@ REP
 965
 F
 (if v965= 'Европеизм' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Европейская идентичность' then 'Национальная идентичность' else v965 fi/)
 REP
 965
 F
@@ -2574,11 +3118,15 @@ F
 REP
 965
 F
-(if v965= 'Ес' then # else v965 fi/)
+(if v965= 'Ежегодники' then # else v965 fi/)
 REP
 965
 F
-(if v965= 'ЕС' then # else v965 fi/)
+(if v965= 'Екатерина II (имп.)' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Ес' then # else v965 fi/)
 REP
 965
 F
@@ -2610,6 +3158,10 @@ F
 REP
 965
 F
+(if v965= 'Естественные науки' then 'Естествознание' else v965 fi/)
+REP
+965
+F
 (if v965= 'Естественные права' then 'Право и мораль' else v965 fi/)
 REP
 965
@@ -2619,6 +3171,10 @@ REP
 965
 F
 (if v965= 'Естественный язык' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Ж.М.Абдильдин' then # else v965 fi/)
 REP
 965
 F
@@ -2694,6 +3250,10 @@ F
 REP
 965
 F
+(if v965= 'Жизнь (биол)' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Жизнь (биол.)' then 'Биологизм' else v965 fi/)
 REP
 965
@@ -2726,6 +3286,10 @@ F
 REP
 965
 F
+(if v965= 'Забывание' then 'Историческая память' else v965 fi/)
+REP
+965
+F
 (if v965= 'Завадский К.М.' then # else v965 fi/)
 REP
 965
@@ -2738,7 +3302,15 @@ F
 REP
 965
 F
+(if v965= 'Заимствование' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Заключение эксперта' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Закон' then # else v965 fi/)
 REP
 965
 F
@@ -2755,6 +3327,10 @@ REP
 965
 F
 (if v965= 'Законы (юрид)' then 'Философия права' else v965 fi/)
+REP
+965
+F
+(if v965= 'Законы (юрид.)' then # else v965 fi/)
 REP
 965
 F
@@ -2854,6 +3430,10 @@ F
 REP
 965
 F
+(if v965= 'Зинченко В.П.' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Зло' then # else v965 fi/)
 REP
 965
@@ -2886,10 +3466,6 @@ F
 REP
 965
 F
-(if v965= 'ибн Араби' then # else v965 fi/)
-REP
-965
-F
 (if v965= 'Ибн-Баджжа' then # else v965 fi/)
 REP
 965
@@ -2902,7 +3478,15 @@ F
 REP
 965
 F
+(if v965= 'Ибрахим ал-Кабаси' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Иван IV Грозный' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Иванов Вяч.' then 'Иванов В.И.' else v965 fi/)
 REP
 965
 F
@@ -2911,6 +3495,10 @@ REP
 965
 F
 (if v965= 'Ивин А.А.' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Ивлев Ю.В.' then # else v965 fi/)
 REP
 965
 F
@@ -2958,10 +3546,6 @@ F
 REP
 965
 F
-(if v965= 'Идентичность' then 'Идентичность' else v965 fi/)
-REP
-965
-F
 (if v965= 'Идеологемы' then 'Идеология' else v965 fi/)
 REP
 965
@@ -2994,6 +3578,14 @@ F
 REP
 965
 F
+(if v965= 'Идеология и политика' then 'Политическая идеология' else v965 fi/)
+REP
+965
+F
+(if v965= 'Идеология и этика' then 'Идеологическое воспитание' else v965 fi/)
+REP
+965
+F
 (if v965= 'Идея' then 'Идеи' else v965 fi/)
 REP
 965
@@ -3002,11 +3594,23 @@ F
 REP
 965
 F
+(if v965= 'Идея произведения' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Иджтихад' then # else v965 fi/)
 REP
 965
 F
 (if v965= 'Идиостиль' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Идолы' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Иеговисты' then # else v965 fi/)
 REP
 965
 F
@@ -3019,6 +3623,10 @@ REP
 965
 F
 (if v965= 'Избыточность' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Издатели' then # else v965 fi/)
 REP
 965
 F
@@ -3038,6 +3646,10 @@ F
 REP
 965
 F
+(if v965= 'Изобретательство' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Изобретения' then # else v965 fi/)
 REP
 965
@@ -3047,6 +3659,10 @@ REP
 965
 F
 (if v965= 'Иисус Христос' then 'Христианство' else v965 fi/)
+REP
+965
+F
+(if v965= 'Иисус христос' then # else v965 fi/)
 REP
 965
 F
@@ -3075,6 +3691,14 @@ REP
 965
 F
 (if v965= 'Ильин Н.П.' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Имагинация' then 'Воображение' else v965 fi/)
+REP
+965
+F
+(if v965= 'Имагология' then # else v965 fi/)
 REP
 965
 F
@@ -3118,6 +3742,10 @@ F
 REP
 965
 F
+(if v965= 'Инверсия' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Индивид' then 'Индивидуальность' else v965 fi/)
 REP
 965
@@ -3139,6 +3767,10 @@ REP
 965
 F
 (if v965= 'Индивидуация (онтол)' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Индивидуация (онтол.)' then 'Индивидуация' else v965 fi/)
 REP
 965
 F
@@ -3186,7 +3818,15 @@ F
 REP
 965
 F
+(if v965= 'Инжиниринг' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Инициатива' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Инновационная деятельность' then 'Инновации' else v965 fi/)
 REP
 965
 F
@@ -3210,7 +3850,15 @@ F
 REP
 965
 F
+(if v965= 'Институт Философии РАН' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Институт философии' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Институт философии АН СССР' then # else v965 fi/)
 REP
 965
 F
@@ -3258,6 +3906,10 @@ F
 REP
 965
 F
+(if v965= 'Интеллектуальная среда' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Интеллектуальные системы' then # else v965 fi/)
 REP
 965
@@ -3290,7 +3942,15 @@ F
 REP
 965
 F
+(if v965= 'Интерес' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Интересы личности' then 'Личность' else v965 fi/)
+REP
+965
+F
+(if v965= 'Интернализация' then 'Интернализм' else v965 fi/)
 REP
 965
 F
@@ -3322,6 +3982,10 @@ F
 REP
 965
 F
+(if v965= 'Интуиция' then 'Интуитивизм' else v965 fi/)
+REP
+965
+F
 (if v965= 'Информатизация общества' then 'Информатизация' else v965 fi/)
 REP
 965
@@ -3342,7 +4006,15 @@ F
 REP
 965
 F
+(if v965= 'Информационно-поисковый тезаурус' then 'Информационные технологии' else v965 fi/)
+REP
+965
+F
 (if v965= 'Информационное пространство' then 'Информационное общество' else v965 fi/)
+REP
+965
+F
+(if v965= 'Информационное управление' then # else v965 fi/)
 REP
 965
 F
@@ -3370,7 +4042,19 @@ F
 REP
 965
 F
+(if v965= 'Иоанн Дунс Скот' then 'Дунс Скот' else v965 fi/)
+REP
+965
+F
 (if v965= 'Иоанн Златоуст' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Иоанн Итал' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Иоанн Креста' then # else v965 fi/)
 REP
 965
 F
@@ -3379,10 +4063,6 @@ REP
 965
 F
 (if v965= 'Ипостась' then # else v965 fi/)
-REP
-965
-F
-(if v965= 'Ипполит Ж.' then 'Ипполит Ж.' else v965 fi/)
 REP
 965
 F
@@ -3438,6 +4118,10 @@ F
 REP
 965
 F
+(if v965= 'Исповедальность' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Исполнительское искусство' then # else v965 fi/)
 REP
 965
@@ -3455,6 +4139,10 @@ REP
 965
 F
 (if v965= 'Исследовательские программы' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Исследовательские университеты' then 'Университеты' else v965 fi/)
 REP
 965
 F
@@ -3526,6 +4214,10 @@ F
 REP
 965
 F
+(if v965= 'Историческая реконструкция' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Историческая школа' then # else v965 fi/)
 REP
 965
@@ -3538,11 +4230,15 @@ F
 REP
 965
 F
-(if v965= 'Исторический аспект' then 'Исторический метод исследования' else v965 fi/)
+(if v965= 'Исторический Иисус' then # else v965 fi/)
 REP
 965
 F
-(if v965= 'Исторический Иисус' then # else v965 fi/)
+(if v965= 'Исторический Материализм' then 'Исторический материализм' else v965 fi/)
+REP
+965
+F
+(if v965= 'Исторический аспект' then 'Исторический метод исследования' else v965 fi/)
 REP
 965
 F
@@ -3582,6 +4278,10 @@ F
 REP
 965
 F
+(if v965= 'Историческое наследие' then 'Культурное наследие' else v965 fi/)
+REP
+965
+F
 (if v965= 'Историческое образование' then # else v965 fi/)
 REP
 965
@@ -3602,7 +4302,15 @@ F
 REP
 965
 F
+(if v965= 'История естествознания' then 'История науки' else v965 fi/)
+REP
+965
+F
 (if v965= 'История искусства' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'История культуры' then # else v965 fi/)
 REP
 965
 F
@@ -3615,6 +4323,10 @@ REP
 965
 F
 (if v965= 'История марксизма' then 'Марксизм' else v965 fi/)
+REP
+965
+F
+(if v965= 'История математики' then # else v965 fi/)
 REP
 965
 F
@@ -3710,6 +4422,10 @@ F
 REP
 965
 F
+(if v965= 'Казанова Х.' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Казахстан' then # else v965 fi/)
 REP
 965
@@ -3718,7 +4434,15 @@ F
 REP
 965
 F
+(if v965= 'Казин А.Л.' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Казначеев В.П.' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Калам' then # else v965 fi/)
 REP
 965
 F
@@ -3730,11 +4454,23 @@ F
 REP
 965
 F
+(if v965= 'Камень' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Камчатнов А.М.' then # else v965 fi/)
 REP
 965
 F
 (if v965= 'Кан Ю-Вэй' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Кан Ю-вэй' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Кананов П.Х.' then # else v965 fi/)
 REP
 965
 F
@@ -3759,6 +4495,14 @@ REP
 965
 F
 (if v965= 'Кант И' then 'Кант И.' else v965 fi/)
+REP
+965
+F
+(if v965= 'Кантор В.' then 'Кантор В.К.' else v965 fi/)
+REP
+965
+F
+(if v965= 'Кантор К.М.' then # else v965 fi/)
 REP
 965
 F
@@ -3862,6 +4606,10 @@ F
 REP
 965
 F
+(if v965= 'Католическая церковь' then 'Католицизм' else v965 fi/)
+REP
+965
+F
 (if v965= 'Кафедры' then 'Университеты' else v965 fi/)
 REP
 965
@@ -3890,6 +4638,10 @@ F
 REP
 965
 F
+(if v965= 'Квиетизм' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Кейдж Дж.' then # else v965 fi/)
 REP
 965
@@ -3898,7 +4650,15 @@ F
 REP
 965
 F
+(if v965= 'Келле В.Ж.' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Кельзен Г.' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Кенозис' then # else v965 fi/)
 REP
 965
 F
@@ -3962,6 +4722,10 @@ F
 REP
 965
 F
+(if v965= 'Китайско-конфуцианская цивилизация' then 'Цивилизационный подход' else v965 fi/)
+REP
+965
+F
 (if v965= 'Китайское письмо' then 'Письмо' else v965 fi/)
 REP
 965
@@ -3971,6 +4735,10 @@ REP
 965
 F
 (if v965= 'Классификация' then 'Классификация наук' else v965 fi/)
+REP
+965
+F
+(if v965= 'Классицизм' then # else v965 fi/)
 REP
 965
 F
@@ -3994,11 +4762,19 @@ F
 REP
 965
 F
+(if v965= 'Классовая дифференциация' then 'Классовый подход' else v965 fi/)
+REP
+965
+F
 (if v965= 'Классовая теория' then 'Классовый подход' else v965 fi/)
 REP
 965
 F
 (if v965= 'Кластерный анализ' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Клейст Г.фон' then # else v965 fi/)
 REP
 965
 F
@@ -4030,6 +4806,18 @@ F
 REP
 965
 F
+(if v965= 'Книжная продукция' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Кобзев А.И.' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Ковалевский М.М.' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Когнитивная деятельность' then 'Когнитивный подход' else v965 fi/)
 REP
 965
@@ -4042,11 +4830,15 @@ F
 REP
 965
 F
+(if v965= 'Когнитивная философия' then 'Когнитивный подход' else v965 fi/)
+REP
+965
+F
 (if v965= 'Когнитивная функция языка' then 'Когнитивный подход' else v965 fi/)
 REP
 965
 F
-(if v965= 'Когнитивное литературоведение' then # else v965 fi/)
+(if v965= 'Когнитивное литературоведение' then 'Когнитивный подход' else v965 fi/)
 REP
 965
 F
@@ -4098,10 +4890,6 @@ F
 REP
 965
 F
-(if v965= 'коллективная идентичность' then # else v965 fi/)
-REP
-965
-F
 (if v965= 'Коллективная память' then 'Коллективное сознание' else v965 fi/)
 REP
 965
@@ -4126,11 +4914,27 @@ F
 REP
 965
 F
+(if v965= 'Кольридж С.' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Кольридж С.Т.' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Комбинаторные методы' then # else v965 fi/)
 REP
 965
 F
 (if v965= 'Комедия' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Коменский Я.А.' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Комиксы' then 'Литература и философия' else v965 fi/)
 REP
 965
 F
@@ -4194,6 +4998,10 @@ F
 REP
 965
 F
+(if v965= 'Коммунистический режим' then 'Коммунизм' else v965 fi/)
+REP
+965
+F
 (if v965= 'Коммунисты' then 'Коммунизм' else v965 fi/)
 REP
 965
@@ -4211,6 +5019,14 @@ REP
 965
 F
 (if v965= 'Композиторы' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Компромисс' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Компьютерная этика' then 'Прикладная этика' else v965 fi/)
 REP
 965
 F
@@ -4278,6 +5094,10 @@ F
 REP
 965
 F
+(if v965= 'Констан Б.' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Констан де Р.Б.-А.' then # else v965 fi/)
 REP
 965
@@ -4287,6 +5107,14 @@ REP
 965
 F
 (if v965= 'Конституирование' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Конституции' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Конституционно-правовое регулирование' then # else v965 fi/)
 REP
 965
 F
@@ -4326,6 +5154,10 @@ F
 REP
 965
 F
+(if v965= 'Контроль над личностью' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Конференции' then # else v965 fi/)
 REP
 965
@@ -4346,11 +5178,19 @@ F
 REP
 965
 F
+(if v965= 'Конфессиональный фактор' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Конфликт' then # else v965 fi/)
 REP
 965
 F
 (if v965= 'Конфликтные ситуации' then 'Социальные конфликты' else v965 fi/)
+REP
+965
+F
+(if v965= 'Конфликтогенный фактор' then # else v965 fi/)
 REP
 965
 F
@@ -4414,6 +5254,10 @@ F
 REP
 965
 F
+(if v965= 'Корет Э.' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Корнилов С.В.' then # else v965 fi/)
 REP
 965
@@ -4470,11 +5314,23 @@ F
 REP
 965
 F
+(if v965= 'Краудсорсинг' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Креативность' then # else v965 fi/)
 REP
 965
 F
 (if v965= 'Крестьянский вопрос' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Крестьянство' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Кржижановский С.Д.' then # else v965 fi/)
 REP
 965
 F
@@ -4506,6 +5362,10 @@ F
 REP
 965
 F
+(if v965= 'Критерии отбора' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Критика' then # else v965 fi/)
 REP
 965
@@ -4534,15 +5394,23 @@ F
 REP
 965
 F
-(if v965= 'Критическое мышление' then 'Критическое мышление' else v965 fi/)
-REP
-965
-F
 (if v965= 'Крузий Х.А.' then # else v965 fi/)
 REP
 965
 F
 (if v965= 'Крупская Н.К.' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Крутящиеся' then 'Суфизм' else v965 fi/)
+REP
+965
+F
+(if v965= 'Крутящиеся' then 'Суфизм' else v965 fi/)
+REP
+965
+F
+(if v965= 'Кудрин Б.И.' then # else v965 fi/)
 REP
 965
 F
@@ -4567,10 +5435,6 @@ REP
 965
 F
 (if v965= 'Культура корпорации' then # else v965 fi/)
-REP
-965
-F
-(if v965= 'Культура отмены' then 'Культура отмены' else v965 fi/)
 REP
 965
 F
@@ -4642,6 +5506,10 @@ F
 REP
 965
 F
+(if v965= 'Культурное развитие' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Культурные особенности' then 'Философия культуры' else v965 fi/)
 REP
 965
@@ -4655,6 +5523,10 @@ REP
 965
 F
 (if v965= 'Культурные различия' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Культурные связи' then # else v965 fi/)
 REP
 965
 F
@@ -4690,7 +5562,19 @@ F
 REP
 965
 F
+(if v965= 'Кэлер Л.' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Кэмерон Дж.' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Кёниг Г.' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Лаборатории' then # else v965 fi/)
 REP
 965
 F
@@ -4730,11 +5614,11 @@ F
 REP
 965
 F
-(if v965= 'Лао-цзы' then 'Лао-Цзы' else v965 fi/)
+(if v965= 'Лао-Цзы' then 'Лао Цзы' else v965 fi/)
 REP
 965
 F
-(if v965= 'Лао-Цзы' then 'Лао Цзы' else v965 fi/)
+(if v965= 'Лао-цзы' then 'Лао-Цзы' else v965 fi/)
 REP
 965
 F
@@ -4754,7 +5638,15 @@ F
 REP
 965
 F
+(if v965= 'Лебон Г.' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Левинсон Дж.' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Левит С.Я.' then # else v965 fi/)
 REP
 965
 F
@@ -4823,6 +5715,10 @@ REP
 965
 F
 (if v965= 'Лексическая семантика' then 'Семантика' else v965 fi/)
+REP
+965
+F
+(if v965= 'Лекторский В.А.' then # else v965 fi/)
 REP
 965
 F
@@ -4926,6 +5822,10 @@ F
 REP
 965
 F
+(if v965= 'Литература и музыка' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Литература и наука' then # else v965 fi/)
 REP
 965
@@ -4962,11 +5862,19 @@ F
 REP
 965
 F
+(if v965= 'Литературное краеведение' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Литературное творчество' then 'Художественное творчество' else v965 fi/)
 REP
 965
 F
 (if v965= 'Литературные дискуссии' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Литературные жанры' then # else v965 fi/)
 REP
 965
 F
@@ -5018,7 +5926,15 @@ F
 REP
 965
 F
+(if v965= 'Личные библиотеки' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Лишение свободы' then 'Свобода' else v965 fi/)
+REP
+965
+F
+(if v965= 'Ло Жу-фан' then # else v965 fi/)
 REP
 965
 F
@@ -5070,7 +5986,19 @@ F
 REP
 965
 F
+(if v965= 'Лотце Г.' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Лукацкий М.А.' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Лукман Т.' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Лурия А.Р.' then # else v965 fi/)
 REP
 965
 F
@@ -5078,7 +6006,15 @@ F
 REP
 965
 F
+(if v965= 'Луций Апулей' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Лысенко В.Г.' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Льньков Е.С.' then # else v965 fi/)
 REP
 965
 F
@@ -5103,6 +6039,10 @@ REP
 965
 F
 (if v965= 'Любовная тема' then 'Любовь' else v965 fi/)
+REP
+965
+F
+(if v965= 'Любомудры' then # else v965 fi/)
 REP
 965
 F
@@ -5170,10 +6110,6 @@ F
 REP
 965
 F
-(if v965= 'Макромир' then 'Макромир' else v965 fi/)
-REP
-965
-F
 (if v965= 'Максвелл Дж.К.' then # else v965 fi/)
 REP
 965
@@ -5202,6 +6138,10 @@ F
 REP
 965
 F
+(if v965= 'Манга' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Манипулирование' then # else v965 fi/)
 REP
 965
@@ -5226,7 +6166,15 @@ F
 REP
 965
 F
+(if v965= 'Маржинализм' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Марион Ж.-Л.' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Марк А.' then # else v965 fi/)
 REP
 965
 F
@@ -5238,7 +6186,7 @@ F
 REP
 965
 F
-(if v965= 'маркиз де Сад' then 'Ибн Араби' else v965 fi/)
+(if v965= 'Маркизм' then 'Марксизм' else v965 fi/)
 REP
 965
 F
@@ -5274,6 +6222,10 @@ F
 REP
 965
 F
+(if v965= 'Марсель Г.' then 'Марсель Г.О.' else v965 fi/)
+REP
+965
+F
 (if v965= 'Мартин Дж.' then # else v965 fi/)
 REP
 965
@@ -5298,6 +6250,10 @@ F
 REP
 965
 F
+(if v965= 'Массовое общество' then 'Массовое сознание' else v965 fi/)
+REP
+965
+F
 (if v965= 'Массовые беспорядки' then # else v965 fi/)
 REP
 965
@@ -5315,6 +6271,14 @@ REP
 965
 F
 (if v965= 'Математические объекты' then 'Философия математики' else v965 fi/)
+REP
+965
+F
+(if v965= 'Математический язык' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Математическое моделирование' then # else v965 fi/)
 REP
 965
 F
@@ -5350,11 +6314,23 @@ F
 REP
 965
 F
+(if v965= 'Мегалитические сооружения' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Мегаполисы' then 'Города' else v965 fi/)
 REP
 965
 F
 (if v965= 'Медиакультура' then 'Медиа' else v965 fi/)
+REP
+965
+F
+(if v965= 'Медиаобразование' then 'Медиа' else v965 fi/)
+REP
+965
+F
+(if v965= 'Медиация' then # else v965 fi/)
 REP
 965
 F
@@ -5410,7 +6386,19 @@ F
 REP
 965
 F
+(if v965= 'Международное право' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Международное сотрудничество' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Международные конференции' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Межконфессиональные отношения' then # else v965 fi/)
 REP
 965
 F
@@ -5442,7 +6430,15 @@ F
 REP
 965
 F
+(if v965= 'Межэтнические отношения' then 'Межкультурные отношения' else v965 fi/)
+REP
+965
+F
 (if v965= 'Мейерхольд В.Э.' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Мелан О.' then # else v965 fi/)
 REP
 965
 F
@@ -5451,6 +6447,14 @@ REP
 965
 F
 (if v965= 'Мелас Ф.' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Мем' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Менгер К.' then # else v965 fi/)
 REP
 965
 F
@@ -5486,11 +6490,11 @@ F
 REP
 965
 F
-(if v965= 'Местр Ж.де' then 'Местр Ж. де' else v965 fi/)
+(if v965= 'Местр Ж.Де' then 'Местр Ж. де' else v965 fi/)
 REP
 965
 F
-(if v965= 'Местр Ж.Де' then 'Местр Ж. де' else v965 fi/)
+(if v965= 'Местр Ж.де' then 'Местр Ж. де' else v965 fi/)
 REP
 965
 F
@@ -5515,6 +6519,10 @@ REP
 965
 F
 (if v965= 'Метафора' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Метнер Н.К.' then # else v965 fi/)
 REP
 965
 F
@@ -5551,6 +6559,10 @@ REP
 965
 F
 (if v965= 'Методология истории' then 'Методология науки' else v965 fi/)
+REP
+965
+F
+(if v965= 'Метонимия' then # else v965 fi/)
 REP
 965
 F
@@ -5610,11 +6622,11 @@ F
 REP
 965
 F
-(if v965= 'Мир (онтол.)' then 'Внешний мир' else v965 fi/)
+(if v965= 'Мир (онтол)' then # else v965 fi/)
 REP
 965
 F
-(if v965= 'Мир (онтол)' then # else v965 fi/)
+(if v965= 'Мир (онтол.)' then 'Внешний мир' else v965 fi/)
 REP
 965
 F
@@ -5642,6 +6654,10 @@ F
 REP
 965
 F
+(if v965= 'Мировое сообщество' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Мировоззрение' then # else v965 fi/)
 REP
 965
@@ -5659,6 +6675,10 @@ REP
 965
 F
 (if v965= 'Мирское' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Мистерии' then # else v965 fi/)
 REP
 965
 F
@@ -5734,6 +6754,18 @@ F
 REP
 965
 F
+(if v965= 'Множественность лиц' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Множественность лиц' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Множественность лиц' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Множество' then # else v965 fi/)
 REP
 965
@@ -5767,6 +6799,10 @@ REP
 965
 F
 (if v965= 'Модерн (эпоха)' then 'Модерн' else v965 fi/)
+REP
+965
+F
+(if v965= 'Модернизм (религ.)' then 'Модернизм' else v965 fi/)
 REP
 965
 F
@@ -5898,6 +6934,10 @@ F
 REP
 965
 F
+(if v965= 'Московский Государственный университет' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Московский государственный университет' then # else v965 fi/)
 REP
 965
@@ -5931,6 +6971,10 @@ REP
 965
 F
 (if v965= 'Мужество' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Мужчины' then # else v965 fi/)
 REP
 965
 F
@@ -6014,6 +7058,10 @@ F
 REP
 965
 F
+(if v965= 'Мюнхенское соглашение 1938' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Мягкой силы политика' then # else v965 fi/)
 REP
 965
@@ -6039,6 +7087,10 @@ REP
 965
 F
 (if v965= 'Наказания' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Налоговая политика' then # else v965 fi/)
 REP
 965
 F
@@ -6098,6 +7150,10 @@ F
 REP
 965
 F
+(if v965= 'Население' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Насилия теория' then 'Насилие' else v965 fi/)
 REP
 965
@@ -6130,11 +7186,11 @@ F
 REP
 965
 F
-(if v965= 'Натурализм (филос.)' then 'Натурализм' else v965 fi/)
+(if v965= 'Натурализм (филос)' then 'Натурализм' else v965 fi/)
 REP
 965
 F
-(if v965= 'Натурализм (филос)' then 'Натурализм' else v965 fi/)
+(if v965= 'Натурализм (филос.)' then 'Натурализм' else v965 fi/)
 REP
 965
 F
@@ -6202,6 +7258,10 @@ F
 REP
 965
 F
+(if v965= 'Научная литература' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Научная организация труда' then 'Труд' else v965 fi/)
 REP
 965
@@ -6211,6 +7271,10 @@ REP
 965
 F
 (if v965= 'Научная практика' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Научная речь' then # else v965 fi/)
 REP
 965
 F
@@ -6275,6 +7339,10 @@ REP
 965
 F
 (if v965= 'Научные достижения' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Научные законы' then # else v965 fi/)
 REP
 965
 F
@@ -6362,10 +7430,6 @@ F
 REP
 965
 F
-(if v965= 'Нацизм' then 'Нацизм' else v965 fi/)
-REP
-965
-F
 (if v965= 'Национальная безопасность' then 'Безопасность' else v965 fi/)
 REP
 965
@@ -6375,6 +7439,10 @@ REP
 965
 F
 (if v965= 'Национальная идея' then 'Идеи' else v965 fi/)
+REP
+965
+F
+(if v965= 'Национальная нетерпимость' then # else v965 fi/)
 REP
 965
 F
@@ -6406,6 +7474,10 @@ F
 REP
 965
 F
+(if v965= 'Национальные общности' then 'Национальная идентичность' else v965 fi/)
+REP
+965
+F
 (if v965= 'Национальные проекты' then # else v965 fi/)
 REP
 965
@@ -6415,6 +7487,10 @@ REP
 965
 F
 (if v965= 'Национальные ценности' then 'Ценностный подход' else v965 fi/)
+REP
+965
+F
+(if v965= 'Национальный вопрос' then 'Национальное сознание' else v965 fi/)
 REP
 965
 F
@@ -6458,6 +7534,10 @@ F
 REP
 965
 F
+(if v965= 'Недеяние' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Недоверие' then # else v965 fi/)
 REP
 965
@@ -6467,6 +7547,10 @@ REP
 965
 F
 (if v965= 'Неживая природа' then 'Живая природа' else v965 fi/)
+REP
+965
+F
+(if v965= 'Независимость' then # else v965 fi/)
 REP
 965
 F
@@ -6486,6 +7570,10 @@ F
 REP
 965
 F
+(if v965= 'Нелинейность' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Немецкая классическая философия' then 'Классическая немецкая философия' else v965 fi/)
 REP
 965
@@ -6495,10 +7583,6 @@ REP
 965
 F
 (if v965= 'Немецкая социология' then # else v965 fi/)
-REP
-965
-F
-(if v965= 'немецкая философия' then 'Немецкая философия' else v965 fi/)
 REP
 965
 F
@@ -6526,6 +7610,10 @@ F
 REP
 965
 F
+(if v965= 'Непосредственное' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Непрерывное образование' then # else v965 fi/)
 REP
 965
@@ -6550,11 +7638,19 @@ F
 REP
 965
 F
+(if v965= 'Неретина С.' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Несовершеннолетние' then 'Дети' else v965 fi/)
 REP
 965
 F
 (if v965= 'Несоизмеримость' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Несправедливость' then 'Справедливость' else v965 fi/)
 REP
 965
 F
@@ -6650,15 +7746,19 @@ F
 REP
 965
 F
-(if v965= 'Норма' then # else v965 fi/)
+(if v965= 'Норма' then 'Нормативный подход' else v965 fi/)
 REP
 965
 F
-(if v965= 'Нормальная наука' then # else v965 fi/)
+(if v965= 'Нормальная наука' then 'Нормативный подход' else v965 fi/)
 REP
 965
 F
 (if v965= 'Нормальность' then 'Нормативный подход' else v965 fi/)
+REP
+965
+F
+(if v965= 'Норманнская теория' then # else v965 fi/)
 REP
 965
 F
@@ -6670,7 +7770,7 @@ F
 REP
 965
 F
-(if v965= 'Нормативное поведение' then # else v965 fi/)
+(if v965= 'Нормативное поведение' then 'Нормативный подход' else v965 fi/)
 REP
 965
 F
@@ -6682,11 +7782,11 @@ F
 REP
 965
 F
-(if v965= 'Нормы' then # else v965 fi/)
+(if v965= 'Нормы' then 'Нормативный подход' else v965 fi/)
 REP
 965
 F
-(if v965= 'Нормы науки' then # else v965 fi/)
+(if v965= 'Нормы науки' then 'Нормативный подход' else v965 fi/)
 REP
 965
 F
@@ -6707,10 +7807,6 @@ REP
 965
 F
 (if v965= 'Нравственное' then 'Нравственность' else v965 fi/)
-REP
-965
-F
-(if v965= 'Нравственность' then 'Нравственность' else v965 fi/)
 REP
 965
 F
@@ -6742,6 +7838,14 @@ F
 REP
 965
 F
+(if v965= 'Ньюмен Дж.Г.' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Обзорно-аналитическая информация' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Обзоры' then # else v965 fi/)
 REP
 965
@@ -6770,6 +7874,14 @@ F
 REP
 965
 F
+(if v965= 'Образ России' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Образ автора' then 'Авторство' else v965 fi/)
+REP
+965
+F
 (if v965= 'Образ врага' then # else v965 fi/)
 REP
 965
@@ -6787,10 +7899,6 @@ REP
 965
 F
 (if v965= 'Образ науки' then # else v965 fi/)
-REP
-965
-F
-(if v965= 'Образ России' then # else v965 fi/)
 REP
 965
 F
@@ -6830,11 +7938,19 @@ F
 REP
 965
 F
+(if v965= 'Образовательные технологии' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Образы' then 'Образное мышление' else v965 fi/)
 REP
 965
 F
 (if v965= 'Обратимость' then 'Необратимость' else v965 fi/)
+REP
+965
+F
+(if v965= 'Обряд' then # else v965 fi/)
 REP
 965
 F
@@ -6851,6 +7967,10 @@ REP
 965
 F
 (if v965= 'Общее образование' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Общенаучное' then # else v965 fi/)
 REP
 965
 F
@@ -6970,6 +8090,10 @@ F
 REP
 965
 F
+(if v965= 'Объект исследования' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Объект науки' then # else v965 fi/)
 REP
 965
@@ -6994,7 +8118,15 @@ F
 REP
 965
 F
+(if v965= 'Обыденный язык' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Обязанность' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Обязательства' then # else v965 fi/)
 REP
 965
 F
@@ -7007,6 +8139,10 @@ REP
 965
 F
 (if v965= 'Ограниченность научного знания' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Ода' then # else v965 fi/)
 REP
 965
 F
@@ -7023,6 +8159,14 @@ REP
 965
 F
 (if v965= 'Озарение' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Озеров И.Х.' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Означающее' then 'Семиотика' else v965 fi/)
 REP
 965
 F
@@ -7062,7 +8206,15 @@ F
 REP
 965
 F
+(if v965= 'Оппо А.' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Оправдание' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Определенность' then 'Неопределенность' else v965 fi/)
 REP
 965
 F
@@ -7102,11 +8254,23 @@ F
 REP
 965
 F
+(if v965= 'Организация' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Организация науки' then # else v965 fi/)
 REP
 965
 F
+(if v965= 'Органическая философия' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Органы внутренних дел' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Органы чувств' then 'Эмпиризм' else v965 fi/)
 REP
 965
 F
@@ -7162,11 +8326,15 @@ F
 REP
 965
 F
-(if v965= 'Откровение (религ.)' then # else v965 fi/)
+(if v965= 'Откровение  (религ.)' then # else v965 fi/)
 REP
 965
 F
 (if v965= 'Откровение (религ)' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Откровение (религ.)' then # else v965 fi/)
 REP
 965
 F
@@ -7206,6 +8374,10 @@ F
 REP
 965
 F
+(if v965= 'Отражения теория' then 'Теория отражения' else v965 fi/)
+REP
+965
+F
 (if v965= 'Отрицание' then # else v965 fi/)
 REP
 965
@@ -7218,11 +8390,11 @@ F
 REP
 965
 F
-(if v965= 'Отцы церкви' then 'Патристика' else v965 fi/)
+(if v965= 'Отцы Церкви' then 'Патристика' else v965 fi/)
 REP
 965
 F
-(if v965= 'Отцы Церкви' then 'Патристика' else v965 fi/)
+(if v965= 'Отцы церкви' then 'Патристика' else v965 fi/)
 REP
 965
 F
@@ -7266,6 +8438,10 @@ F
 REP
 965
 F
+(if v965= 'Паламизм' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Пальмов И.С.' then # else v965 fi/)
 REP
 965
@@ -7274,7 +8450,15 @@ F
 REP
 965
 F
+(if v965= 'Память' then 'Социальная память' else v965 fi/)
+REP
+965
+F
 (if v965= 'Память' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Панарин А.С.' then # else v965 fi/)
 REP
 965
 F
@@ -7294,7 +8478,15 @@ F
 REP
 965
 F
+(if v965= 'Панентеизм' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Панини' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Панофский Э.' then # else v965 fi/)
 REP
 965
 F
@@ -7307,6 +8499,10 @@ REP
 965
 F
 (if v965= 'Парадигматика' then 'Парадигма' else v965 fi/)
+REP
+965
+F
+(if v965= 'Парадоксальность' then 'Парадокс' else v965 fi/)
 REP
 965
 F
@@ -7323,6 +8519,10 @@ REP
 965
 F
 (if v965= 'Партийность' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Парыгин Б.Д.' then # else v965 fi/)
 REP
 965
 F
@@ -7355,6 +8555,14 @@ REP
 965
 F
 (if v965= 'Пациенты' then 'Философия медицины' else v965 fi/)
+REP
+965
+F
+(if v965= 'Пациенты дурки' then 'Психические заболевания' else v965 fi/)
+REP
+965
+F
+(if v965= 'Пациенты дурки' then # else v965 fi/)
 REP
 965
 F
@@ -7462,6 +8670,14 @@ F
 REP
 965
 F
+(if v965= 'Периодические издания' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Перипатетика' then 'Перипатетики' else v965 fi/)
+REP
+965
+F
 (if v965= 'Перл Д.' then # else v965 fi/)
 REP
 965
@@ -7498,6 +8714,18 @@ F
 REP
 965
 F
+(if v965= 'Петрухин А.И.' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Пивоваров Д.В.' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Пиетизм' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Пикассо П.' then # else v965 fi/)
 REP
 965
@@ -7523,6 +8751,10 @@ REP
 965
 F
 (if v965= 'Писатели' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Писатель и общество' then # else v965 fi/)
 REP
 965
 F
@@ -7566,7 +8798,19 @@ F
 REP
 965
 F
+(if v965= 'Плиний Младший' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Плиний Старший' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Плифон Георгий Гемист' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Поведение' then # else v965 fi/)
 REP
 965
 F
@@ -7602,6 +8846,10 @@ F
 REP
 965
 F
+(if v965= 'Погодин М.П.' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Пограничные науки' then # else v965 fi/)
 REP
 965
@@ -7623,6 +8871,10 @@ REP
 965
 F
 (if v965= 'Подорога В.' then 'Подорога В.А.' else v965 fi/)
+REP
+965
+F
+(if v965= 'Подоходный налог' then # else v965 fi/)
 REP
 965
 F
@@ -7699,6 +8951,14 @@ REP
 965
 F
 (if v965= 'Поликультурное образование' then 'Философия образования' else v965 fi/)
+REP
+965
+F
+(if v965= 'Полис' then 'Города' else v965 fi/)
+REP
+965
+F
+(if v965= 'Полисемия' then # else v965 fi/)
 REP
 965
 F
@@ -7814,6 +9074,14 @@ F
 REP
 965
 F
+(if v965= 'Политические институты' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Политические интересы' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Политические коммуникации' then # else v965 fi/)
 REP
 965
@@ -7870,6 +9138,18 @@ F
 REP
 965
 F
+(if v965= 'Политический романтизм' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Политический строй' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Политический фактор' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Политическое' then # else v965 fi/)
 REP
 965
@@ -7882,11 +9162,19 @@ F
 REP
 965
 F
+(if v965= 'Политическое мировоззрение' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Политическое насилие' then 'Насилие' else v965 fi/)
 REP
 965
 F
 (if v965= 'Политическое образование' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Политическое отчуждение' then 'Отчуждение' else v965 fi/)
 REP
 965
 F
@@ -7930,11 +9218,23 @@ F
 REP
 965
 F
+(if v965= 'Полифония' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Полиция' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Полнота (логич)' then # else v965 fi/)
 REP
 965
 F
 (if v965= 'Половые извращения' then 'Болезни' else v965 fi/)
+REP
+965
+F
+(if v965= 'Полонский Я.П.' then # else v965 fi/)
 REP
 965
 F
@@ -7987,6 +9287,10 @@ REP
 965
 F
 (if v965= 'Португалия' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Порфирий Тирский' then # else v965 fi/)
 REP
 965
 F
@@ -8102,6 +9406,10 @@ F
 REP
 965
 F
+(if v965= 'Правда' then 'Истинность' else v965 fi/)
+REP
+965
+F
 (if v965= 'Правило' then # else v965 fi/)
 REP
 965
@@ -8138,11 +9446,23 @@ F
 REP
 965
 F
+(if v965= 'Правовая идеология' then 'Идеология' else v965 fi/)
+REP
+965
+F
+(if v965= 'Правовая культура' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Правовая культура' then # else v965 fi/)
 REP
 965
 F
 (if v965= 'Правовая охрана' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Правовая система' then # else v965 fi/)
 REP
 965
 F
@@ -8155,6 +9475,10 @@ REP
 965
 F
 (if v965= 'Правовые взгляды' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Правовые нормы' then # else v965 fi/)
 REP
 965
 F
@@ -8179,6 +9503,18 @@ REP
 965
 F
 (if v965= 'Православная цивилизация' then 'Цивилизационный подход' else v965 fi/)
+REP
+965
+F
+(if v965= 'Православный мир' then 'Православие' else v965 fi/)
+REP
+965
+F
+(if v965= 'Правосудие' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Правотворчество' then # else v965 fi/)
 REP
 965
 F
@@ -8250,6 +9586,10 @@ F
 REP
 965
 F
+(if v965= 'Предикторы' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Предисловие' then # else v965 fi/)
 REP
 965
@@ -8286,6 +9626,10 @@ F
 REP
 965
 F
+(if v965= 'Предрассудки' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Предсказания' then # else v965 fi/)
 REP
 965
@@ -8294,11 +9638,11 @@ F
 REP
 965
 F
-(if v965= 'Представление (психол.)' then # else v965 fi/)
+(if v965= 'Представление (психол)' then # else v965 fi/)
 REP
 965
 F
-(if v965= 'Представление (психол)' then # else v965 fi/)
+(if v965= 'Представление (психол.)' then # else v965 fi/)
 REP
 965
 F
@@ -8375,6 +9719,10 @@ REP
 965
 F
 (if v965= 'Прибавочная стоимость' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Прибыль' then # else v965 fi/)
 REP
 965
 F
@@ -8458,6 +9806,10 @@ F
 REP
 965
 F
+(if v965= 'Причина' then 'Причинность' else v965 fi/)
+REP
+965
+F
 (if v965= 'Причинно-следственные отношения' then 'Причинное объяснение' else v965 fi/)
 REP
 965
@@ -8482,7 +9834,15 @@ F
 REP
 965
 F
+(if v965= 'Программы (киберн.)' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Программы обучения' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Прогресс' then 'Прогрессизм' else v965 fi/)
 REP
 965
 F
@@ -8526,7 +9886,19 @@ F
 REP
 965
 F
+(if v965= 'Происхождение языка' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Пролетарская культура' then 'Пролетариат' else v965 fi/)
+REP
+965
+F
+(if v965= 'Пролеткульт' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Прометеизм' then # else v965 fi/)
 REP
 965
 F
@@ -8547,6 +9919,10 @@ REP
 965
 F
 (if v965= 'Проповедь' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Пропп В.Я.' then # else v965 fi/)
 REP
 965
 F
@@ -8590,6 +9966,10 @@ F
 REP
 965
 F
+(if v965= 'Протестанты' then 'Протестантизм' else v965 fi/)
+REP
+965
+F
 (if v965= 'Противоречие' then # else v965 fi/)
 REP
 965
@@ -8610,6 +9990,10 @@ F
 REP
 965
 F
+(if v965= 'Профессиональная деятельность' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Профессиональная компетенция' then # else v965 fi/)
 REP
 965
@@ -8619,6 +10003,14 @@ REP
 965
 F
 (if v965= 'Профессиональная направленность' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Профессиональная ориентация' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Профессиональное выгорание' then 'Профессиональная этика' else v965 fi/)
 REP
 965
 F
@@ -8647,6 +10039,10 @@ REP
 965
 F
 (if v965= 'Процесс мышления' then 'Мышление' else v965 fi/)
+REP
+965
+F
+(if v965= 'Процесс обучения' then # else v965 fi/)
 REP
 965
 F
@@ -8714,6 +10110,10 @@ F
 REP
 965
 F
+(if v965= 'Психологический метод' then 'Психологизм' else v965 fi/)
+REP
+965
+F
 (if v965= 'Психологический портрет' then # else v965 fi/)
 REP
 965
@@ -8735,6 +10135,10 @@ REP
 965
 F
 (if v965= 'Психология мышления' then 'Психология познания' else v965 fi/)
+REP
+965
+F
+(if v965= 'Психология политики' then # else v965 fi/)
 REP
 965
 F
@@ -8806,6 +10210,10 @@ F
 REP
 965
 F
+(if v965= 'Путешествия' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Пушкин А.С.' then # else v965 fi/)
 REP
 965
@@ -8846,6 +10254,14 @@ F
 REP
 965
 F
+(if v965= 'Развитие знания' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Развитие речи' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Развитие языковых способностей' then # else v965 fi/)
 REP
 965
@@ -8878,7 +10294,15 @@ F
 REP
 965
 F
+(if v965= 'Разнообразие' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Рай' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Райнах А.' then # else v965 fi/)
 REP
 965
 F
@@ -8962,15 +10386,15 @@ F
 REP
 965
 F
-(if v965= 'Рё:Гэн' then # else v965 fi/)
-REP
-965
-F
-(if v965= 'Реализм (филос.)' then 'Реализм' else v965 fi/)
+(if v965= 'Рациональный выбор' then # else v965 fi/)
 REP
 965
 F
 (if v965= 'Реализм (филос)' then 'Реализм' else v965 fi/)
+REP
+965
+F
+(if v965= 'Реализм (филос.)' then 'Реализм' else v965 fi/)
 REP
 965
 F
@@ -9002,6 +10426,10 @@ F
 REP
 965
 F
+(if v965= 'Регионалистика' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Региональная идентичность' then # else v965 fi/)
 REP
 965
@@ -9022,6 +10450,10 @@ F
 REP
 965
 F
+(if v965= 'Регулирование' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Редукция' then # else v965 fi/)
 REP
 965
@@ -9031,6 +10463,10 @@ REP
 965
 F
 (if v965= 'Реидеологизация' then 'Идеологическое воспитание' else v965 fi/)
+REP
+965
+F
+(if v965= 'Рейтинговая система' then # else v965 fi/)
 REP
 965
 F
@@ -9046,6 +10482,10 @@ F
 REP
 965
 F
+(if v965= 'Религии' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Религии древнего мира' then 'Философия религии' else v965 fi/)
 REP
 965
@@ -9054,7 +10494,15 @@ F
 REP
 965
 F
+(if v965= 'Религиозная идентификация' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Религиозная идеология' then 'Идеология' else v965 fi/)
+REP
+965
+F
+(if v965= 'Религиозная картина мира' then # else v965 fi/)
 REP
 965
 F
@@ -9110,10 +10558,6 @@ F
 REP
 965
 F
-(if v965= 'религиозное сознание' then 'Религиозное сознание' else v965 fi/)
-REP
-965
-F
 (if v965= 'Религиозность' then # else v965 fi/)
 REP
 965
@@ -9155,6 +10599,10 @@ REP
 965
 F
 (if v965= 'Религиозные сюжеты' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Религиозные традиции' then # else v965 fi/)
 REP
 965
 F
@@ -9230,7 +10678,15 @@ F
 REP
 965
 F
+(if v965= 'Ремесла' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Ренан Э.' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Ренессанс' then # else v965 fi/)
 REP
 965
 F
@@ -9239,10 +10695,6 @@ REP
 965
 F
 (if v965= 'Репрезентация' then # else v965 fi/)
-REP
-965
-F
-(if v965= 'репрезентация' then # else v965 fi/)
 REP
 965
 F
@@ -9322,6 +10774,10 @@ F
 REP
 965
 F
+(if v965= 'Рид Г.' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Рильке Р.М.' then # else v965 fi/)
 REP
 965
@@ -9366,6 +10822,10 @@ F
 REP
 965
 F
+(if v965= 'Роботизация' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Робототехника' then 'Машина' else v965 fi/)
 REP
 965
@@ -9374,11 +10834,19 @@ F
 REP
 965
 F
+(if v965= 'Роджерс К.' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Родители' then # else v965 fi/)
 REP
 965
 F
 (if v965= 'Родительские права и обязанности' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Родной язык' then # else v965 fi/)
 REP
 965
 F
@@ -9426,11 +10894,11 @@ F
 REP
 965
 F
-(if v965= 'Россия и запад' then # else v965 fi/)
+(if v965= 'Россия и Запад' then # else v965 fi/)
 REP
 965
 F
-(if v965= 'Россия и Запад' then # else v965 fi/)
+(if v965= 'Россия и запад' then # else v965 fi/)
 REP
 965
 F
@@ -9530,11 +10998,31 @@ F
 REP
 965
 F
+(if v965= 'Рэнд А.' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Рё:Гэн' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'СССР' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'США' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Савельева О.М.' then # else v965 fi/)
 REP
 965
 F
 (if v965= 'Савицкий П.Н.' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Сакрализация' then 'Сакральное' else v965 fi/)
 REP
 965
 F
@@ -9590,7 +11078,15 @@ F
 REP
 965
 F
+(if v965= 'Самореференция  (лингв)' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Самореференция (психол)' then 'Самореференция' else v965 fi/)
+REP
+965
+F
+(if v965= 'Саморефлексия' then 'Рефлексия' else v965 fi/)
 REP
 965
 F
@@ -9599,6 +11095,10 @@ REP
 965
 F
 (if v965= 'Сатира' then 'Смех' else v965 fi/)
+REP
+965
+F
+(if v965= 'Сборники статей' then # else v965 fi/)
 REP
 965
 F
@@ -9694,6 +11194,10 @@ F
 REP
 965
 F
+(if v965= 'Села' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Селларс У.' then # else v965 fi/)
 REP
 965
@@ -9734,6 +11238,10 @@ F
 REP
 965
 F
+(if v965= 'Семёнов Ю.И.' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Сенека Л.А.' then 'Сенека' else v965 fi/)
 REP
 965
@@ -9743,6 +11251,10 @@ REP
 965
 F
 (if v965= 'Сербия' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Сервет М.' then # else v965 fi/)
 REP
 965
 F
@@ -9758,15 +11270,19 @@ F
 REP
 965
 F
+(if v965= 'Сетевая литература' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Сетевой фольклор' then 'Цифровая культура' else v965 fi/)
+REP
+965
+F
 (if v965= 'Сетевые методы' then 'Сетевой подход' else v965 fi/)
 REP
 965
 F
 (if v965= 'Сетницкий Н.А.' then # else v965 fi/)
-REP
-965
-F
-(if v965= 'Сётоку-тайси' then # else v965 fi/)
 REP
 965
 F
@@ -9783,6 +11299,10 @@ REP
 965
 F
 (if v965= 'Символ в литературе' then 'Символизм' else v965 fi/)
+REP
+965
+F
+(if v965= 'Символ веры' then 'Религиозная вера' else v965 fi/)
 REP
 965
 F
@@ -9806,6 +11326,10 @@ F
 REP
 965
 F
+(if v965= 'Синергетический подход' then 'Синергетика' else v965 fi/)
+REP
+965
+F
 (if v965= 'Синергия' then 'Синергетика' else v965 fi/)
 REP
 965
@@ -9819,6 +11343,10 @@ REP
 965
 F
 (if v965= 'Систем теория' then 'Системный подход' else v965 fi/)
+REP
+965
+F
+(if v965= 'Система' then 'Системный подход' else v965 fi/)
 REP
 965
 F
@@ -9838,11 +11366,19 @@ F
 REP
 965
 F
+(if v965= 'Системные исследовния' then 'Системные исследования' else v965 fi/)
+REP
+965
+F
 (if v965= 'Системный кризис' then 'Системный подход' else v965 fi/)
 REP
 965
 F
 (if v965= 'Системы' then 'Системный подход' else v965 fi/)
+REP
+965
+F
+(if v965= 'Ситуация' then # else v965 fi/)
 REP
 965
 F
@@ -9934,6 +11470,10 @@ F
 REP
 965
 F
+(if v965= 'Слух' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Случайность' then 'Случайные процессы' else v965 fi/)
 REP
 965
@@ -9962,6 +11502,10 @@ F
 REP
 965
 F
+(if v965= 'Смысл' then 'Осмысленность' else v965 fi/)
+REP
+965
+F
 (if v965= 'Снелль' then # else v965 fi/)
 REP
 965
@@ -9982,7 +11526,15 @@ F
 REP
 965
 F
+(if v965= 'Советская социология' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Советский период' then 'Советская культура' else v965 fi/)
+REP
+965
+F
+(if v965= 'Советское государство' then # else v965 fi/)
 REP
 965
 F
@@ -10042,6 +11594,10 @@ F
 REP
 965
 F
+(if v965= 'Содержательный метод' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Сокровенное' then # else v965 fi/)
 REP
 965
@@ -10058,11 +11614,19 @@ F
 REP
 965
 F
+(if v965= 'Соловьев С.М.' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Солоневич И.Л.' then # else v965 fi/)
 REP
 965
 F
 (if v965= 'Сомнение' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Сонет' then # else v965 fi/)
 REP
 965
 F
@@ -10079,6 +11643,10 @@ REP
 965
 F
 (if v965= 'Сословия' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Соссюр Ф.Де' then 'Соссюр Ф. де' else v965 fi/)
 REP
 965
 F
@@ -10110,6 +11678,10 @@ F
 REP
 965
 F
+(if v965= 'Социальнавя психология' then 'Социальная психология' else v965 fi/)
+REP
+965
+F
 (if v965= 'Социальная адаптация' then # else v965 fi/)
 REP
 965
@@ -10127,6 +11699,10 @@ REP
 965
 F
 (if v965= 'Социальная дезинтеграция' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Социальная демократия' then 'Демократия' else v965 fi/)
 REP
 965
 F
@@ -10159,6 +11735,10 @@ REP
 965
 F
 (if v965= 'Социальная педагогика' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Социальная помощь' then # else v965 fi/)
 REP
 965
 F
@@ -10206,6 +11786,10 @@ F
 REP
 965
 F
+(if v965= 'Социальная технология' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Социальная типология' then 'Типология' else v965 fi/)
 REP
 965
@@ -10239,6 +11823,10 @@ REP
 965
 F
 (if v965= 'Социально-политический фактор' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Социально-психологический аспект' then # else v965 fi/)
 REP
 965
 F
@@ -10290,6 +11878,14 @@ F
 REP
 965
 F
+(if v965= 'Социальное партнерство' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Социальное предпринимательство' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Социальное прогнозирование' then # else v965 fi/)
 REP
 965
@@ -10330,6 +11926,10 @@ F
 REP
 965
 F
+(if v965= 'Социальные инновации' then 'Инновации' else v965 fi/)
+REP
+965
+F
 (if v965= 'Социальные классы' then 'Классовое общество' else v965 fi/)
 REP
 965
@@ -10347,6 +11947,10 @@ REP
 965
 F
 (if v965= 'Социальные общности' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Социальные оценки' then # else v965 fi/)
 REP
 965
 F
@@ -10470,6 +12074,10 @@ F
 REP
 965
 F
+(if v965= 'Социокультурный контекст' then 'Социокультурное' else v965 fi/)
+REP
+965
+F
 (if v965= 'Социокультурный подход' then 'Социокультурное' else v965 fi/)
 REP
 965
@@ -10538,6 +12146,10 @@ F
 REP
 965
 F
+(if v965= 'Социология техники' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Социотехника' then # else v965 fi/)
 REP
 965
@@ -10582,6 +12194,14 @@ F
 REP
 965
 F
+(if v965= 'Справочники' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Среда' then 'Энвайронментализм' else v965 fi/)
+REP
+965
+F
 (if v965= 'Среда обитания' then # else v965 fi/)
 REP
 965
@@ -10603,10 +12223,6 @@ REP
 965
 F
 (if v965= 'Средства массовой информации' then # else v965 fi/)
-REP
-965
-F
-(if v965= 'СССР' then # else v965 fi/)
 REP
 965
 F
@@ -10643,6 +12259,10 @@ REP
 965
 F
 (if v965= 'Становление' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Стартап' then # else v965 fi/)
 REP
 965
 F
@@ -10770,6 +12390,10 @@ F
 REP
 965
 F
+(if v965= 'Субъект речи' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Субъективизм' then 'Субъективность' else v965 fi/)
 REP
 965
@@ -10799,6 +12423,10 @@ REP
 965
 F
 (if v965= 'Суворин А.С.' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Суворов А.В.' then # else v965 fi/)
 REP
 965
 F
@@ -10838,6 +12466,10 @@ F
 REP
 965
 F
+(if v965= 'Сунь-Цзы' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Сунь-цзы' then # else v965 fi/)
 REP
 965
@@ -10870,6 +12502,10 @@ F
 REP
 965
 F
+(if v965= 'Схема' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Схемы' then 'Схематизм' else v965 fi/)
 REP
 965
@@ -10878,11 +12514,11 @@ F
 REP
 965
 F
-(if v965= 'США' then # else v965 fi/)
+(if v965= 'Сюжет' then # else v965 fi/)
 REP
 965
 F
-(if v965= 'Сюжет' then # else v965 fi/)
+(if v965= 'Сётоку-тайси' then # else v965 fi/)
 REP
 965
 F
@@ -10950,6 +12586,10 @@ F
 REP
 965
 F
+(if v965= 'Творческая среда' then 'Творчество' else v965 fi/)
+REP
+965
+F
 (if v965= 'Творческий потенциал' then 'Творчество' else v965 fi/)
 REP
 965
@@ -10959,6 +12599,10 @@ REP
 965
 F
 (if v965= 'Творческое наследие' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Творческое развитие' then 'Творчество' else v965 fi/)
 REP
 965
 F
@@ -10986,6 +12630,10 @@ F
 REP
 965
 F
+(if v965= 'Тейхмюллер Г.' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Текст' then 'Письмо' else v965 fi/)
 REP
 965
@@ -11010,6 +12658,10 @@ F
 REP
 965
 F
+(if v965= 'Телемедицина' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Телесность' then 'Тело' else v965 fi/)
 REP
 965
@@ -11019,6 +12671,10 @@ REP
 965
 F
 (if v965= 'Тема апакалипсиса' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Тема апокалипсиса' then # else v965 fi/)
 REP
 965
 F
@@ -11058,6 +12714,10 @@ F
 REP
 965
 F
+(if v965= 'Тема путешествий' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Тема секса' then 'Секс' else v965 fi/)
 REP
 965
@@ -11075,6 +12735,10 @@ REP
 965
 F
 (if v965= 'Тема человека' then 'Философская антропология' else v965 fi/)
+REP
+965
+F
+(if v965= 'Темперамент' then # else v965 fi/)
 REP
 965
 F
@@ -11190,6 +12854,10 @@ F
 REP
 965
 F
+(if v965= 'Тернер В.' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Терпимость' then 'Толерантность' else v965 fi/)
 REP
 965
@@ -11215,6 +12883,10 @@ REP
 965
 F
 (if v965= 'Технические вузы' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Технические изобретения' then 'Техника и общество' else v965 fi/)
 REP
 965
 F
@@ -11310,6 +12982,10 @@ F
 REP
 965
 F
+(if v965= 'Тойнби А.Дж.' then 'Тойнби А.Д.' else v965 fi/)
+REP
+965
+F
 (if v965= 'Токвиль А.Де' then 'Токвиль А.К. де' else v965 fi/)
 REP
 965
@@ -11390,15 +13066,15 @@ F
 REP
 965
 F
+(if v965= 'Традиционное искусство' then 'Философия искусства' else v965 fi/)
+REP
+965
+F
 (if v965= 'Традиционный фактор' then # else v965 fi/)
 REP
 965
 F
 (if v965= 'Традиция' then 'Традиционная культура' else v965 fi/)
-REP
-965
-F
-(if v965= 'традиция' then # else v965 fi/)
 REP
 965
 F
@@ -11446,6 +13122,14 @@ F
 REP
 965
 F
+(if v965= 'Траэрн Т.' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Тревожность' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Тренд' then # else v965 fi/)
 REP
 965
@@ -11470,7 +13154,19 @@ F
 REP
 965
 F
+(if v965= 'Тропы' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Троцкий Л.Д.' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Трудовая активность' then 'Труд' else v965 fi/)
+REP
+965
+F
+(if v965= 'Трудовое право' then # else v965 fi/)
 REP
 965
 F
@@ -11490,6 +13186,10 @@ F
 REP
 965
 F
+(if v965= 'Тургенев И.С.' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Туриел Э.' then # else v965 fi/)
 REP
 965
@@ -11503,6 +13203,14 @@ REP
 965
 F
 (if v965= 'Тэн И.А.' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Тюремная тема' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Тюрьмы' then # else v965 fi/)
 REP
 965
 F
@@ -11582,6 +13290,10 @@ F
 REP
 965
 F
+(if v965= 'Умозрение' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Умственное развитие' then # else v965 fi/)
 REP
 965
@@ -11594,6 +13306,10 @@ F
 REP
 965
 F
+(if v965= 'Универсальная грамматика' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Универсальный язык' then # else v965 fi/)
 REP
 965
@@ -11603,6 +13319,14 @@ REP
 965
 F
 (if v965= 'Университетское образование' then 'Университеты' else v965 fi/)
+REP
+965
+F
+(if v965= 'Унификация' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Управление' then # else v965 fi/)
 REP
 965
 F
@@ -11678,7 +13402,15 @@ F
 REP
 965
 F
+(if v965= 'Устрашения доктрина' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Утопии' then 'Утопия' else v965 fi/)
+REP
+965
+F
+(if v965= 'Утопические мотивы' then 'Утопия' else v965 fi/)
 REP
 965
 F
@@ -11742,7 +13474,23 @@ F
 REP
 965
 F
+(if v965= 'Уэвелл У.' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Уэльбек М.' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Ф.Джеймисон' then 'Джеймисон Ф.' else v965 fi/)
+REP
+965
+F
+(if v965= 'Фазовость' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Файе Э.' then # else v965 fi/)
 REP
 965
 F
@@ -11759,6 +13507,14 @@ REP
 965
 F
 (if v965= 'Фанатизм' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Фантастика' then 'Научная фантастика' else v965 fi/)
+REP
+965
+F
+(if v965= 'Фантастическое' then # else v965 fi/)
 REP
 965
 F
@@ -11782,7 +13538,19 @@ F
 REP
 965
 F
+(if v965= 'Фейербах Л.' then 'Фейербах Л.А.' else v965 fi/)
+REP
+965
+F
 (if v965= 'Фейки' then 'Постправда' else v965 fi/)
+REP
+965
+F
+(if v965= 'Феллини Ф.' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Феминистская теология' then 'Феминизм' else v965 fi/)
 REP
 965
 F
@@ -11818,6 +13586,10 @@ F
 REP
 965
 F
+(if v965= 'Фигуры речи' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Физика' then # else v965 fi/)
 REP
 965
@@ -11846,6 +13618,10 @@ F
 REP
 965
 F
+(if v965= 'Филологи' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Филологические науки' then # else v965 fi/)
 REP
 965
@@ -11866,6 +13642,14 @@ F
 REP
 965
 F
+(if v965= 'Философия Новейшего времени' then 'Философия Нового времени' else v965 fi/)
+REP
+965
+F
+(if v965= 'Философия Средних веков' then 'Философия Средневековья' else v965 fi/)
+REP
+965
+F
 (if v965= 'Философия воспитания' then 'Философия образования' else v965 fi/)
 REP
 965
@@ -11882,10 +13666,6 @@ F
 REP
 965
 F
-(if v965= 'философия культуры' then 'Философия культуры' else v965 fi/)
-REP
-965
-F
 (if v965= 'Философия культуы' then 'Философия культуры' else v965 fi/)
 REP
 965
@@ -11898,10 +13678,6 @@ F
 REP
 965
 F
-(if v965= 'Философия Новейшего времени' then 'Философия Нового времени' else v965 fi/)
-REP
-965
-F
 (if v965= 'Философия нового времени' then 'Философия Нового времени' else v965 fi/)
 REP
 965
@@ -11911,10 +13687,6 @@ REP
 965
 F
 (if v965= 'Философия средневековья' then 'Философия Средневековья' else v965 fi/)
-REP
-965
-F
-(if v965= 'Философия Средних веков' then 'Философия Средневековья' else v965 fi/)
 REP
 965
 F
@@ -11939,10 +13711,6 @@ REP
 965
 F
 (if v965= 'Философская мысль' then # else v965 fi/)
-REP
-965
-F
-(if v965= 'философская мысль' then # else v965 fi/)
 REP
 965
 F
@@ -11986,6 +13754,10 @@ F
 REP
 965
 F
+(if v965= 'Философское общество' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Философствование' then # else v965 fi/)
 REP
 965
@@ -11995,6 +13767,10 @@ REP
 965
 F
 (if v965= 'Фильмы' then 'Киноискусство' else v965 fi/)
+REP
+965
+F
+(if v965= 'Финализм' then # else v965 fi/)
 REP
 965
 F
@@ -12010,6 +13786,10 @@ F
 REP
 965
 F
+(if v965= 'Флоровский Г.' then 'Флоровский Г.В.' else v965 fi/)
+REP
+965
+F
 (if v965= 'Фольклор' then # else v965 fi/)
 REP
 965
@@ -12019,6 +13799,10 @@ REP
 965
 F
 (if v965= 'Форма' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Форма правления' then # else v965 fi/)
 REP
 965
 F
@@ -12047,6 +13831,10 @@ REP
 965
 F
 (if v965= 'Формы движения материи' then 'Материализм' else v965 fi/)
+REP
+965
+F
+(if v965= 'Формы речи' then # else v965 fi/)
 REP
 965
 F
@@ -12094,7 +13882,19 @@ F
 REP
 965
 F
+(if v965= 'Фролов Э.Д.' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Фрустрация' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Фрэзер Дж.' then 'Фрезер Д.Д.' else v965 fi/)
+REP
+965
+F
+(if v965= 'Фундаментализм (гносеол)' then 'Фундаментализм' else v965 fi/)
 REP
 965
 F
@@ -12142,6 +13942,10 @@ F
 REP
 965
 F
+(if v965= 'Хантингтон С.' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Хаоса теория' then 'Хаос' else v965 fi/)
 REP
 965
@@ -12158,19 +13962,19 @@ F
 REP
 965
 F
+(if v965= 'Харт Г.' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Харт Рэй Л.' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Хейфец Л.' then # else v965 fi/)
 REP
 965
 F
-(if v965= 'Хёрль Й.' then # else v965 fi/)
-REP
-965
-F
-(if v965= 'Хёрц Г.' then # else v965 fi/)
-REP
-965
-F
-(if v965= 'Хёффе О.' then # else v965 fi/)
+(if v965= 'Хилиазм' then # else v965 fi/)
 REP
 965
 F
@@ -12194,6 +13998,18 @@ F
 REP
 965
 F
+(if v965= 'Хомский  Н.' then 'Хомский Н.' else v965 fi/)
+REP
+965
+F
+(if v965= 'Хомяков Д.А.' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Хоннет А.' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Хорни К.' then # else v965 fi/)
 REP
 965
@@ -12214,6 +14030,10 @@ F
 REP
 965
 F
+(if v965= 'Хрисипп из Сол' then 'Хрисипп' else v965 fi/)
+REP
+965
+F
 (if v965= 'Христанство' then 'Христианство' else v965 fi/)
 REP
 965
@@ -12223,6 +14043,10 @@ REP
 965
 F
 (if v965= 'Христианская антропология' then 'Религиозная антропология' else v965 fi/)
+REP
+965
+F
+(if v965= 'Христианская культура' then 'Религиозная культура' else v965 fi/)
 REP
 965
 F
@@ -12286,7 +14110,15 @@ F
 REP
 965
 F
+(if v965= 'Художественное восприятие' then 'Восприятие' else v965 fi/)
+REP
+965
+F
 (if v965= 'Художественное образование' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Художественное познание' then # else v965 fi/)
 REP
 965
 F
@@ -12322,7 +14154,23 @@ F
 REP
 965
 F
+(if v965= 'Хёрль Й.' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Хёрц Г.' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Хёффе О.' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Царство Божие' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Царство божие' then # else v965 fi/)
 REP
 965
 F
@@ -12435,6 +14283,10 @@ REP
 965
 F
 (if v965= 'Цивилизацоинный подход' then 'Цивилизационный подход' else v965 fi/)
+REP
+965
+F
+(if v965= 'Цикл (лит)' then # else v965 fi/)
 REP
 965
 F
@@ -12554,7 +14406,15 @@ F
 REP
 965
 F
+(if v965= 'Честность' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Честь' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Четыре благородные истины' then # else v965 fi/)
 REP
 965
 F
@@ -12606,6 +14466,10 @@ F
 REP
 965
 F
+(if v965= 'Чувствительность' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Чудновский В.Э.' then # else v965 fi/)
 REP
 965
@@ -12618,11 +14482,19 @@ F
 REP
 965
 F
+(if v965= 'Чэнь Хуань-чжан' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Шаманство' then 'Шаманизм' else v965 fi/)
 REP
 965
 F
 (if v965= 'Шафф А.' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Шахматы' then # else v965 fi/)
 REP
 965
 F
@@ -12662,6 +14534,10 @@ F
 REP
 965
 F
+(if v965= 'Шизуха' then 'Психические заболевания' else v965 fi/)
+REP
+965
+F
 (if v965= 'Школы' then 'Школы и направления' else v965 fi/)
 REP
 965
@@ -12686,6 +14562,10 @@ F
 REP
 965
 F
+(if v965= 'Шмеман А.Д.' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Шмид К.Хр.Э.' then # else v965 fi/)
 REP
 965
@@ -12703,6 +14583,10 @@ REP
 965
 F
 (if v965= 'Штейнфельд Н.П.' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Шюрманн Р.' then # else v965 fi/)
 REP
 965
 F
@@ -12762,6 +14646,10 @@ F
 REP
 965
 F
+(if v965= 'Эйкен Р.' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Экземпляризм' then # else v965 fi/)
 REP
 965
@@ -12790,7 +14678,7 @@ F
 REP
 965
 F
-(if v965= 'Экологические ценности' then # else v965 fi/)
+(if v965= 'Экологические ценности' then 'Экологический подход' else v965 fi/)
 REP
 965
 F
@@ -12806,7 +14694,7 @@ F
 REP
 965
 F
-(if v965= 'Экологическое воспитание' then # else v965 fi/)
+(if v965= 'Экологическое воспитание' then 'Экологический подход' else v965 fi/)
 REP
 965
 F
@@ -12818,7 +14706,15 @@ F
 REP
 965
 F
-(if v965= 'Экология и религия' then # else v965 fi/)
+(if v965= 'Экология города' then 'Социальная экология' else v965 fi/)
+REP
+965
+F
+(if v965= 'Экология и религия' then 'Экологический подход' else v965 fi/)
+REP
+965
+F
+(if v965= 'Экономизм' then # else v965 fi/)
 REP
 965
 F
@@ -12835,6 +14731,14 @@ REP
 965
 F
 (if v965= 'Экономическая конъюнктура' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Экономическая модель' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Экономическая эффективность' then # else v965 fi/)
 REP
 965
 F
@@ -12866,7 +14770,7 @@ F
 REP
 965
 F
-(if v965= 'Экранизации' then # else v965 fi/)
+(if v965= 'Экранизации' then 'Киноискусство' else v965 fi/)
 REP
 965
 F
@@ -12879,6 +14783,10 @@ REP
 965
 F
 (if v965= 'Эксклюзия' then 'Инклюзия' else v965 fi/)
+REP
+965
+F
+(if v965= 'Экспансионизм' then # else v965 fi/)
 REP
 965
 F
@@ -12903,6 +14811,10 @@ REP
 965
 F
 (if v965= 'Экспертиза' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Экспертные методы' then # else v965 fi/)
 REP
 965
 F
@@ -12942,6 +14854,10 @@ F
 REP
 965
 F
+(if v965= 'Экуменическая теология' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Экхарт М.' then 'Мейстер Экхарт' else v965 fi/)
 REP
 965
@@ -12955,6 +14871,10 @@ REP
 965
 F
 (if v965= 'Электронизация' then 'Цифровизация' else v965 fi/)
+REP
+965
+F
+(if v965= 'Элемент' then # else v965 fi/)
 REP
 965
 F
@@ -13006,7 +14926,11 @@ F
 REP
 965
 F
-(if v965= 'Эмпирические исследования' then # else v965 fi/)
+(if v965= 'Эмпирические данные' then 'Эмпирическое знание' else v965 fi/)
+REP
+965
+F
+(if v965= 'Эмпирические исследования' then 'Эмпирический метод' else v965 fi/)
 REP
 965
 F
@@ -13031,6 +14955,10 @@ REP
 965
 F
 (if v965= 'Энергия' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Энциклики' then # else v965 fi/)
 REP
 965
 F
@@ -13114,6 +15042,10 @@ F
 REP
 965
 F
+(if v965= 'Эстетическое отражение' then 'Эстетика' else v965 fi/)
+REP
+965
+F
 (if v965= 'Эсхатологические мотвы' then 'Эсхатология' else v965 fi/)
 REP
 965
@@ -13154,7 +15086,11 @@ F
 REP
 965
 F
-(if v965= 'Этнография' then # else v965 fi/)
+(if v965= 'Этничность' then 'Этнические общности' else v965 fi/)
+REP
+965
+F
+(if v965= 'Этнография' then 'Этнические общности' else v965 fi/)
 REP
 965
 F
@@ -13202,6 +15138,10 @@ F
 REP
 965
 F
+(if v965= 'Юнг' then 'Юнг К.Г.' else v965 fi/)
+REP
+965
+F
 (if v965= 'Юнг К.' then 'Юнг К.Г.' else v965 fi/)
 REP
 965
@@ -13243,6 +15183,10 @@ REP
 965
 F
 (if v965= 'Ягодинский И.И.' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Ядерная война' then 'Войны' else v965 fi/)
 REP
 965
 F
@@ -13302,6 +15246,10 @@ F
 REP
 965
 F
+(if v965= 'Языковое сознание' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Языкознание' then # else v965 fi/)
 REP
 965
@@ -13334,140 +15282,60 @@ F
 REP
 965
 F
+(if v965= 'Ярлыка теория' then # else v965 fi/)
+REP
+965
+F
+(if v965= 'Ярхо Б.И.' then # else v965 fi/)
+REP
+965
+F
 (if v965= 'Яхья ас-Сухраварди' then # else v965 fi/)
 REP
 965
 F
-(if v965= 'Andersen H.Ch.' then # else v965 fi/)
+(if v965= 'диалог' then # else v965 fi/)
 REP
 965
 F
-(if v965= 'Aristoteles' then 'Аристотель' else v965 fi/)
+(if v965= 'добро' then 'Добродетель' else v965 fi/)
 REP
 965
 F
-(if v965= 'Aurelius Augustinus' then 'Августин Блаженный' else v965 fi/)
+(if v965= 'ибн Араби' then # else v965 fi/)
 REP
 965
 F
-(if v965= 'Barthes R.' then 'Барт Р.' else v965 fi/)
+(if v965= 'коллективная идентичность' then # else v965 fi/)
 REP
 965
 F
-(if v965= 'Bernhard T.' then # else v965 fi/)
+(if v965= 'маркиз де Сад' then 'Ибн Араби' else v965 fi/)
 REP
 965
 F
-(if v965= 'Blanchot M.' then 'Бланшо М.' else v965 fi/)
+(if v965= 'немецкая философия' then 'Немецкая философия' else v965 fi/)
 REP
 965
 F
-(if v965= 'Camus A.' then 'Камю А.' else v965 fi/)
+(if v965= 'религиозное сознание' then 'Религиозное сознание' else v965 fi/)
 REP
 965
 F
-(if v965= 'Collodi C.' then # else v965 fi/)
+(if v965= 'репрезентация' then # else v965 fi/)
 REP
 965
 F
-(if v965= 'Conrad J.' then # else v965 fi/)
+(if v965= 'традиция' then # else v965 fi/)
 REP
 965
 F
-(if v965= 'Ebner F.' then # else v965 fi/)
+(if v965= 'философия культуры' then 'Философия культуры' else v965 fi/)
 REP
 965
 F
-(if v965= 'Eco U.' then 'Эко У.' else v965 fi/)
+(if v965= 'философская мысль' then # else v965 fi/)
 REP
 965
 F
-(if v965= 'Epictetos' then 'Эпиктет' else v965 fi/)
-REP
-965
-F
-(if v965= 'Girard R.' then 'Жирар Р.' else v965 fi/)
-REP
-965
-F
-(if v965= 'Goethe J.W.' then 'Гете И.В. фон' else v965 fi/)
-REP
-965
-F
-(if v965= 'Homerus' then # else v965 fi/)
-REP
-965
-F
-(if v965= 'Houellebecq M.' then # else v965 fi/)
-REP
-965
-F
-(if v965= 'Jung C.G.' then 'Юнг К.Г.' else v965 fi/)
-REP
-965
-F
-(if v965= 'Kafka F.' then 'Кафка Ф.' else v965 fi/)
-REP
-965
-F
-(if v965= 'London J.' then # else v965 fi/)
-REP
-965
-F
-(if v965= 'Marquis de Sade' then # else v965 fi/)
-REP
-965
-F
-(if v965= 'Meillassoux Q.' then # else v965 fi/)
-REP
-965
-F
-(if v965= 'Montaigne M.de' then 'Монтень М.Э. де' else v965 fi/)
-REP
-965
-F
-(if v965= 'Montesquieu Сh.L.de' then 'Монтескье Ш.Л де' else v965 fi/)
-REP
-965
-F
-(if v965= 'Nbic-конвергенция' then # else v965 fi/)
-REP
-965
-F
-(if v965= 'NBIC-конвергенция' then # else v965 fi/)
-REP
-965
-F
-(if v965= 'Nietzche F.' then 'Ницше Ф.' else v965 fi/)
-REP
-965
-F
-(if v965= 'Nietzsche F.' then 'Ницше Ф.' else v965 fi/)
-REP
-965
-F
-(if v965= 'Platon' then 'Платон' else v965 fi/)
-REP
-965
-F
-(if v965= 'Political_science' then 'Политическая философия' else v965 fi/)
-REP
-965
-F
-(if v965= 'Rilke R.M.' then # else v965 fi/)
-REP
-965
-F
-(if v965= 'Ruiz Zafon C.' then # else v965 fi/)
-REP
-965
-F
-(if v965= 'Social_science' then # else v965 fi/)
-REP
-965
-F
-(if v965= 'Stephenson N.' then # else v965 fi/)
-REP
-965
-F
-(if v965= 'Voltaire' then 'Вольтер А.Ф.М.' else v965 fi/)
+(if v965= 'фон Мизес Л.' then 'Мизес Л. фон' else v965 fi/)

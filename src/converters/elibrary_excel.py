@@ -332,6 +332,8 @@ def convert_html_to_excel(files):
 
         # Авторские ключевые слова
         final_keywords = []
+        a_keywords = []  # Инициализация списка ключевых слов
+
         if journal_category == 'A02':
             for string in strings:
                 if keyword_pattern in string:
@@ -343,23 +345,35 @@ def convert_html_to_excel(files):
                         a_keyword = a_keyword.replace('"', '')
                         a_keyword = a_keyword.lower()
                         a_keywords.append(a_keyword)
-            a_keywords_as_string = ", ".join(a_keywords)
-            a_keywords = []
+
+            # Формируем строку из ключевых слов только если они есть
+            if a_keywords:
+                a_keywords_as_string = ", ".join(a_keywords)
+            else:
+                a_keywords_as_string = ""  # Значение по умолчанию при отсутствии ключевых слов
 
             # Нормализация авторских ключевых слов
-            add_keywords = config_paths["add_keywords"]
-            spec = importlib.util.spec_from_file_location("add_keywords", add_keywords)
-            module = importlib.util.module_from_spec(spec)
-            sys.modules["add_keywords"] = module
-            spec.loader.exec_module(module)
-            keys_from_a_keys = module.keys_from_text(a_keywords_as_string)
+            try:
+                add_keywords = config_paths["add_keywords"]
+                spec = importlib.util.spec_from_file_location("add_keywords", add_keywords)
+                module = importlib.util.module_from_spec(spec)
+                sys.modules["add_keywords"] = module
+                spec.loader.exec_module(module)
+
+                # Проверяем наличие функции keys_from_text
+                if hasattr(module, 'keys_from_text'):
+                    keys_from_a_keys = module.keys_from_text(a_keywords_as_string)
+                else:
+                    keys_from_a_keys = []  # Значение по умолчанию, если функция отсутствует
+            except (FileNotFoundError, ImportError) as e:
+                print(f"Ошибка при импорте модуля add_keywords: {e}")
+                keys_from_a_keys = []  # Значение по умолчанию при ошибке импорта
 
             # Объединяем ключевые слова, сохраняем порядок и убираем дубликаты
-
             final_keywords = list(dict.fromkeys(keys_from_title + keys_from_a_keys + keys_from_abstract))
-
         else:
             final_keywords.append(journal_keyword)
+
 
         # Подбор рубрики по философии
         if journal_category == 'A02':
@@ -428,7 +442,7 @@ def data_frame_to_workbook(data_frame):
     year = data_frame.at[1, 'year']
     volume = data_frame.at[1, 'volume']
     issue = data_frame.at[1, 'issue']
-    if pd.notna(volume):
+    if (volume != '') and (volume != 'NaN') and (volume != 'none'):
         file_name = f'{journal_name}_{year}_{volume}_{issue}'
     else:
         file_name = f'{journal_name}_{year}_{issue}'

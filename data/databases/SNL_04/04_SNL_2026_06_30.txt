@@ -1846,3 +1846,404 @@
 Языковая коммуникация
 Языковая политика
 Языкознание
+Абхазия
+Австралия
+Австрия
+Азербайджан
+Албания
+Алжир
+Ангола
+Андорра
+Антигуа и Барбуда
+Аргентина
+Армения
+Афганистан
+Багамские Острова
+Бангладеш
+Барбадос
+Бахрейн
+Белиз
+Белоруссия
+Белоруссия
+Бельгия
+Бенин
+Болгария
+Боливия
+Босния и Герцеговина
+Ботсвана
+Бразилия
+Бруней
+Буркина-Фасо
+Бурунди
+Бутан
+Вануату
+Ватикан
+Великобритания
+Венгрия
+Венесуэла
+Восточный Тимор
+Вьетнам
+Габон
+Гаити
+Гайана
+Гамбия
+Гана
+Гватемала
+Гвинея
+Гвинея-Бисау
+Германия
+Гондурас
+Гренада
+Греция
+Грузия
+Дания
+Джибути
+Доминика
+Доминиканская Республика
+Европейский союз
+Египет
+Замбия
+Зимбабве
+Израиль
+Индия
+Индонезия
+Иордания
+Ирак
+Иран
+Ирландия
+Исландия
+Испания
+Италия
+Йемен
+Кабо-Верде
+Казахстан
+Камбоджа
+Камерун
+Канада
+Катар
+Кения
+Кипр
+Киргизстан
+Киргизстан
+Кирибати
+Китай
+Колумбия
+Коморы
+ДРК (Конго)
+Республика Конго
+КНДР
+Республика Корея
+Коста-Рика
+Кот-д’Ивуар
+Куба
+Кувейт
+Лаос
+Латвия
+Лесото
+Либерия
+Ливан
+Ливия
+Литва
+Лихтенштейн
+Люксембург
+Маврикий
+Мавритания
+Мадагаскар
+Северная Македония
+Малави
+Малайзия
+Мали
+Мальдивы
+Мальта
+Мальтийский орден
+Марокко
+Маршалловы Острова
+Мексика
+Мозамбик
+Молдова
+Монако
+Монголия
+Мьянма
+Намибия
+Науру
+Непал
+Нигер
+Нигерия
+Нидерланды
+Никарагуа
+Новая Зеландия
+Норвегия
+ОАЭ
+Оман
+Пакистан
+Палау
+Палестина
+Панама
+Папуа—Новая Гвинея
+Парагвай
+Перу
+Польша
+Португалия
+Руанда
+Румыния
+Сальвадор
+Самоа
+Сан-Марино
+Сан-Томеи Принсипи
+Саудовская Аравия
+Сейшельские Острова
+Сенегал
+Сент-Винсенти Гренадины
+Сент-Китси Невис
+Сент-Люсия
+Сербия
+Сингапур
+Сирия
+Словакия
+Словения
+Соломоновы острова
+Сомали
+Судан
+Суринам
+США
+Сьерра-Леоне
+Таджикистан
+Таиланд
+Танзания
+Того
+Тонга
+Тринидад и Тобаго
+Тувалу
+Тунис
+Туркменистан
+Турция
+Уганда
+Узбекистан
+Украина
+Уругвай
+Федеративные Штаты Микронезии
+Фиджи
+Филиппины
+Финляндия
+Франция
+Хорватия
+ЦАР
+Чад
+Черногория
+Чехия
+Чехословакия
+Чили
+Швейцария
+Швеция
+Шри-Ланка
+Эквадор
+Экваториальная Гвинея
+Эритрея
+Эсватини
+Эстония
+Эфиопия
+ЮАР
+Югославия
+Южная Осетия
+Южный Судан
+Ямайка
+Япония
+Abkhazia
+Australia
+Austria
+Azerbaijan
+Albania
+Algeria
+Angola
+Andorra
+Antigua and Barbuda
+Argentina
+Armenia
+Afghanistan
+Bahamas
+Bangladesh
+Barbados
+Bahrain
+Belize
+Belarus
+Belgium
+Benin
+Bulgaria
+Bolivia
+Bosnia and Herzegovina
+Botswana
+Brazil
+Brunei
+Burkina Faso
+Burundi
+Bhutan
+Vanuatu
+Vatican City
+United Kingdom
+Hungary
+Venezuela
+East Timor
+Vietnam
+Gabon
+Haiti
+Guyana
+Gambia
+Ghana
+Guatemala
+Guinea
+Guinea-Bissau
+Germany
+Honduras
+Grenada
+Greece
+Georgia
+Denmark
+Djibouti
+Dominica
+Dominican Republic
+European Union
+Egypt
+Zambia
+Zimbabwe
+Israel
+India
+Indonesia
+Jordan
+Iraq
+Iran
+Ireland
+Iceland
+Spain
+Italy
+Yemen
+Cape Verde
+Kazakhstan
+Cambodia
+Cameroon
+Canada
+Qatar
+Kenya
+Cyprus
+Kyrgyzstan
+Kiribati
+China
+Colombia
+Comoros
+DRC (Congo)
+Republic of the Congo
+DPRK
+Republic of Korea
+Costa Rica
+Côte d'Ivoire
+Cuba 
+Kuwait
+Laos 
+Latvia
+Lesotho
+Liberia
+Lebanon
+Libya
+Lithuania
+Liechtenstein
+Luxembourg
+Mauritius
+Mauritania
+Madagascar
+North Macedonia
+Malawi
+Malaysia
+Mali
+Maldives
+Malta
+Order of Malta
+Morocco
+Marshall Islands
+Mexico
+Mozambique
+Moldova
+Principality of Monaco
+Mongolia
+Myanmar
+Namibia
+Nauru
+Nepal
+Niger
+Nigeria
+Netherlands
+Nicaragua
+New Zealand
+Norway
+UAE 
+Oman
+Pakistan
+Palau
+Palestine
+Panama
+Papua New Guinea
+Paraguay
+Peru 
+Poland
+Portugal
+Rwanda
+Romania
+El Salvador
+Samoa
+San Marino
+São Tomé Príncipe
+Saudi Arabia
+Seychelles
+Senegal
+Saint Vincent of the Grenadines
+Saint Kittsey Nevis
+Saint Lucia
+Serbia
+Singapore
+Syria
+Slovakia
+Slovenia
+Solomon Islands
+Somalia
+Sudan
+Suriname
+USA 
+Sierra Leone
+Таджикистан
+Thailand
+Tanzania
+Togo
+Tonga
+Trinidad and Tobago
+Tuvalu
+Tunisia
+Turkmenistan
+Turkey
+Uganda
+Uzbekistan
+Ukraine
+Uruguay
+Federated States of Micronesia
+Fiji 
+Philippines
+Finland
+France
+Croatia
+CAR 
+Chad
+Montenegro
+Czech Republic
+Chile
+Switzerland
+Sweden
+Sri Lanka
+Ecuador
+Equatorial Guinea
+Eritrea
+Eswatini
+Estonia
+Ethiopia
+South Africa
+South Ossetia
+South Sudan
+Jamaica
+Japan
+

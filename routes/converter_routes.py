@@ -6,13 +6,15 @@ from werkzeug.utils import secure_filename
 from pathlib import Path
 import json
 import pandas as pd
+import datetime
 
 # Импортируем основные функции из конвертеров
 from src.converters.elibrary_excel import convert_html_to_excel, data_frame_to_workbook # type: ignore
 from src.converters.excel_irbis import convert_to_irbis # type: ignore
-from src.converters.key_correction_Excel_IRBIS import key_decoder # type: ignore
+from src.converters.key_correction_Excel_IRBIS import key_decoder, add_terms # type: ignore
 from src.converters.key_correction_IRBIS_Excel import key_extraction # type: ignore
-from src.services.add_keys_to_excel import append_with_pandas # type: ignore
+from src.services.add_keys_to_json import add_keys # type: ignore
+from src.services.read_actual_file import read_actual #type: ignore
 
 converter_bp = Blueprint("converter", __name__)
 
@@ -31,6 +33,8 @@ TEMP_SD_DIR = config_paths["temp_SD_dir"]
 TEMP_SD_02_FILE = config_paths["temp_SD_02_file"]
 TEMP_SD_04_FILE = config_paths["temp_SD_04_file"]
 SD_DIC_DIR = config_paths["S-D_Dictionary_dir"]
+SD_02 = config_paths["SD_02_dir"]
+SD_04 = config_paths["SD_04_dir"]
 SD_02_DIC_FILE = config_paths["S-D_02_Dictionary_file"]
 SD_04_DIC_FILE = config_paths["S-D_04_Dictionary_file"]
 OUTPUT_TXT_FILE = config_paths["output_txt_file"]
@@ -41,6 +45,10 @@ EDITABLE_XLSX_DIR = config_paths["files_to_edit"]
 EDITED_XLSX = config_paths["dir_for_edited_excel"]
 EDITABLE_XLSX = config_paths["excel_to_edit"]
 IRBIS_OUTPUT_DIR = config_paths["output_files"]
+
+# Модуль даты
+
+today = datetime.date.today().strftime("%Y_%m_%d")
 
 # -------------------------------------------------------
 # Блок основных функций
@@ -115,10 +123,15 @@ def upload_txt_key_file():
         # Выделение ключей и номера специальности
         key_list, topic_num = key_extraction(save_path)
 
+        # Генерируем новое имя выходного файла
+        SD_for_editing = f"{TEMP_SD_DIR}/{topic_num}_SD_for_editing_{today}.xlsx"
+
         if topic_num == '02':
-            append_with_pandas(SD_02_DIC_FILE, TEMP_SD_02_FILE, "Sheet", "synonym", key_list)
+            actual_SD = read_actual(SD_02)
+            add_keys(actual_SD, SD_for_editing, key_list)
         elif topic_num == '04':
-            append_with_pandas(SD_04_DIC_FILE, TEMP_SD_04_FILE, "Sheet", "synonym", key_list)
+            actual_SD = read_actual(SD_04)
+            add_keys(actual_SD, SD_for_editing, key_list)
 
         return redirect(url_for("converter.key_excel_result"))
 
@@ -138,10 +151,19 @@ def upload_excel_key_file():
         # Сохранение файла на диск
         file_2.save(save_path)
 
-        # Конвертер Excel to IRBIS-64
-        gbl_list = key_decoder(save_path)
-        with open(OUTPUT_GBL_FILE, 'w', encoding='windows-1251') as file_2:
-            file_2.write(''.join(gbl_list))
+        # Конвертертируем отредактированную ТА в задания для глобальной корректировки
+        df_result, new_terms, spec = key_decoder(file_path=save_path, tgt_dir=OUTPUT_GBL_DIR)
+        
+        # Обновляем основной файл для ТА
+        if spec == '02':
+            SD_JSON_PATH = f"{SD_DIC_DIR}/02_SD/{spec}_SD_{today}.json"
+            df_result.to_json(SD_JSON_PATH, orient='records', force_ascii=False, indent=2)
+        elif spec == '04':
+            SD_JSON_PATH = f"{SD_DIC_DIR}/04_SD/{spec}_SD_{today}.json"
+            df_result.to_json(SD_JSON_PATH, orient='records', force_ascii=False, indent=2)
+
+        # Добавляем новые термины
+        add_terms(new_terms, spec)
 
         return redirect(url_for("converter.key_gbl_result"))
 
