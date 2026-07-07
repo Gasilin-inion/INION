@@ -1,10 +1,6 @@
 [
   {
     "specialization": "02",
-    "category": "A02"
-  },
-  {
-    "specialization": "02",
     "category": "A02.01"
   },
   {
@@ -449,10 +445,6 @@
   },
   {
     "specialization": "04",
-    "category": "A04"
-  },
-  {
-    "specialization": "04",
     "category": "A04.01"
   },
   {
@@ -722,10 +714,6 @@
   {
     "specialization": "06",
     "category": "A06"
-  },
-  {
-    "specialization": "10",
-    "category": "A10"
   },
   {
     "specialization": "10",
@@ -5074,10 +5062,6 @@
   {
     "specialization": "12",
     "category": "A12"
-  },
-  {
-    "specialization": "13",
-    "category": "A13"
   },
   {
     "specialization": "13",

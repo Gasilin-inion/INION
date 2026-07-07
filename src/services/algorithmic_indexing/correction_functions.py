@@ -21,7 +21,7 @@ path_to_facet = config_paths["facet"]
 def persons_correction(sentence):
 
 
-    a_facet = pd.read_excel(path_to_facet)
+    a_facet = pd.read_json(path_to_facet)
     
     # Извлекаем столбцы как списки, приводим к строке и фильтруем NaN/None
     list_of_terms = [

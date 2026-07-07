@@ -1,6 +1,6 @@
 from flask import (
     Blueprint, render_template, request,
-    redirect, url_for, send_from_directory
+    redirect, url_for, send_from_directory, flash, abort
 )
 from werkzeug.utils import secure_filename
 from pathlib import Path
@@ -15,6 +15,7 @@ from src.converters.key_correction_Excel_IRBIS import key_decoder, add_terms # t
 from src.converters.key_correction_IRBIS_Excel import key_extraction # type: ignore
 from src.services.add_keys_to_json import add_keys # type: ignore
 from src.services.read_actual_file import read_actual #type: ignore
+from src.services.сheck_categories import check_cat #type: ignore
 
 converter_bp = Blueprint("converter", __name__)
 
@@ -34,7 +35,16 @@ TEMP_SD_02_FILE = config_paths["temp_SD_02_file"]
 TEMP_SD_04_FILE = config_paths["temp_SD_04_file"]
 SD_DIC_DIR = config_paths["S-D_Dictionary_dir"]
 SD_02 = config_paths["SD_02_dir"]
+SD_03 = config_paths["SD_03_dir"]
 SD_04 = config_paths["SD_04_dir"]
+SD_06 = config_paths["SD_06_dir"]
+SD_10 = config_paths["SD_10_dir"]
+SD_11 = config_paths["SD_11_dir"]
+SD_12 = config_paths["SD_12_dir"]
+SD_13 = config_paths["SD_13_dir"]
+SD_16 = config_paths["SD_16_dir"]
+SD_17 = config_paths["SD_17_dir"]
+SD_21 = config_paths["SD_21_dir"]
 SD_02_DIC_FILE = config_paths["S-D_02_Dictionary_file"]
 SD_04_DIC_FILE = config_paths["S-D_04_Dictionary_file"]
 OUTPUT_TXT_FILE = config_paths["output_txt_file"]
@@ -110,32 +120,65 @@ def excel_upload():
 @converter_bp.route("/txt_key_upload", methods=["GET", "POST"])
 def upload_txt_key_file():
     if request.method == "POST":
-        # Получаем файл
         file_1 = request.files.get("file_1")
 
-        # Безопасное имя файла
+        if not file_1 or file_1.filename == "":
+            flash("Пожалуйста, загрузите файл .txt.", "error")
+            return redirect(request.url)
+
         filename = secure_filename(file_1.filename)
         save_path = Path(INPUT_TXT_DIR) / filename
-
-        # Сохранение файла на диск
         file_1.save(save_path)
 
-        # Выделение ключей и номера специальности
         key_list, topic_num = key_extraction(save_path)
 
-        # Генерируем новое имя выходного файла
-        SD_for_editing = f"{TEMP_SD_DIR}/{topic_num}_SD_for_editing_{today}.xlsx"
+        # Формируем дата-фрейм на основе исходного файла
+        result_df = check_cat(save_path, topic_num)
 
-        if topic_num == '02':
-            actual_SD = read_actual(SD_02)
-            add_keys(actual_SD, SD_for_editing, key_list)
-        elif topic_num == '04':
-            actual_SD = read_actual(SD_04)
-            add_keys(actual_SD, SD_for_editing, key_list)
+        errors_df_exists = True
+        errors_df_empty = result_df.empty
+        errors_df_rows = result_df.to_dict(orient="records") if not errors_df_empty else []
 
-        return redirect(url_for("converter.key_excel_result"))
+        # Формируем название выходного файла
+        today_str = datetime.date.today().strftime("%Y_%m_%d")  # локальная дата
+        output_filename = f"{topic_num}_SD_for_editing_{today_str}.xlsx"
+        SD_for_editing = str(Path(TEMP_SD_DIR) / output_filename)
+
+        generated_file = None
+
+        sd_map = {
+            "02": SD_02,
+            "03": SD_03,
+            "04": SD_04,
+            "06": SD_06,
+            "10": SD_10,
+            "11": SD_11,
+            "12": SD_12,
+            "13": SD_13,
+            "16": SD_16,
+            "17": SD_17,
+            "21": SD_21,
+        }
+
+        if topic_num in sd_map:
+            actual_SD = read_actual(sd_map[topic_num])
+            add_keys(actual_SD, SD_for_editing, key_list)
+            generated_file = output_filename
+        else:
+            flash(f"Специальность {topic_num} не поддерживается для генерации SD-файла.", "warning")
+
+        excel_file_list = [generated_file] if generated_file else []
+
+        return render_template(
+            "key_excel_result.html",
+            excel_file=excel_file_list,
+            errors_df_exists=errors_df_exists,
+            errors_df_empty=errors_df_empty,
+            errors_df_rows=errors_df_rows,
+        )
 
     return render_template("key_excel_upload.html")
+
 
 # Конвертация таблицы автозамены в формат .gbl
 @converter_bp.route("/excel_key_upload", methods=["GET", "POST"])
@@ -190,9 +233,9 @@ def excel_result():
 # Вывод дополненной таблицы автозамены
 @converter_bp.route("/key_excel_result")
 def key_excel_result():
-    excel_file = Path(TEMP_SD_DIR).glob("*.xlsx")
-
-    return render_template("key_excel_result.html", excel_file=excel_file)
+    # Преобразуем в список строк (имена файлов), чтобы шаблону было удобно
+    excel_files = [f.name for f in Path(TEMP_SD_DIR).glob("*.xlsx")]
+    return render_template("key_excel_result.html", excel_file=excel_files)
 
 # Вывод финального файла конвертации файла в формате .gbl
 @converter_bp.route("/key_result")
@@ -218,6 +261,9 @@ def download_txt_list(filename):
 # Скачивание файла в формате Excel
 @converter_bp.route("/download_excel/<path:filename>")
 def download_excel_file(filename):
+    file_path = Path(TEMP_SD_DIR) / filename
+    if not file_path.is_file():
+        abort(404)
     return send_from_directory(TEMP_SD_DIR, filename, as_attachment=True)
 
 # Скачивание файла в формате .gbl

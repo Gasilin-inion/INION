@@ -3,22 +3,53 @@
 {% block title %}Результат конвертации файла автокоррекции ключей{% endblock %}
 
 {% block content %}
-<h2>Результаты обработки ключей</h2>
+<h2>Результат обработки ключей</h2>
 
-<h3>Сводные таблицы автозамены для редактирования</h3>
+<h3>Сводная таблица автозамены для редактирования</h3>
 
-{% if excel_file %}
+{% if excel_file and excel_file|length > 0 %}
     <ul>
-        {% for file in excel_file %}
+        {% for filename in excel_file %}
             <li>
-                <a href="{{ url_for('converter.download_excel_file', filename=file.name) }}">
-                    {{ file.name }}
+                <a href="{{ url_for('converter.download_excel_file', filename=filename) }}">
+                    {{ filename }}
                 </a>
             </li>
         {% endfor %}
     </ul>
 {% else %}
-    <p>Файлы отсутствуют</p>
+    <p>Файлы отсутствуют или не были сгенерированы.</p>
+{% endif %}
+
+<hr>
+
+<!-- Блок для отображения ошибок в рубриках -->
+<h3>Проверка рубрик АИСОН (поле 690)</h3>
+
+{% if errors_df_exists is defined and errors_df_exists %}
+    {% if not errors_df_empty %}
+        <p style="color: #3b024d; font-weight: bold;">Найдены некорректные рубрики:</p>
+        <table border="1" cellpadding="4" cellspacing="0" style="border-collapse: collapse; margin-top: 10px;">
+            <thead>
+                <tr>
+                    <th>Идентификатор (поле #903)</th>
+                    <th>Рубрика (поле #690)</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for row in errors_df_rows %}
+                    <tr>
+                        <td>{{ row.identifier }}</td>
+                        <td>{{ row.category }}</td>                        
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        <p style="color: green; font-weight: bold;">Ошибок в рубриках не обнаружено</p>
+    {% endif %}
+{% else %}
+    <p>Проверка рубрик не выполнялась.</p>
 {% endif %}
 
 {% endblock %}
