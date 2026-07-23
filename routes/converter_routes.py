@@ -94,25 +94,27 @@ def html_upload():
 
     return render_template("html_upload.html")
 
-# Конвертор Excel-IRBIS
+# Конвертор Excel-IRBIS (новая версия с опцией мультизагрузки)
 @converter_bp.route("/excel_upload", methods=["GET", "POST"])
 def excel_upload():
     if request.method == "POST":
-        # Получаем файл
-        excel_file = request.files.get("excel_file")
+        files = request.files.getlist("xlsx_files")
 
-        # Присваеваем файлу безопасное имя
-        filename = secure_filename(excel_file.filename)
-        save_path = Path(EDITED_XLSX) / filename
+        # Получаем список файлов
+        for excel_file in files:
 
-        # Сохраняем файл на диск
-        excel_file.save(save_path)
+            # Присваеваем файлу безопасное имя
+            filename = secure_filename(excel_file.filename)
+            save_path = Path(EDITED_XLSX) / filename
 
-        # Преобразуем данные из таблицы Excel в дата-фрейм
-        articles_list = pd.read_excel(excel_file)
+            # Сохраняем входной файл на диск
+            excel_file.save(save_path)
 
-        # Конвертируем файл в формат ИРБИС-64
-        convert_to_irbis(articles_list)
+            # Преобразуем данные из таблицы Excel в дата-фрейм
+            articles_list = pd.read_excel(excel_file)
+
+            # Конвертируем файл в формат ИРБИС-64 (функция включает в себя сохранение выходного файла на диск)
+            convert_to_irbis(articles_list)
 
         return redirect(url_for("converter.excel_result"))
 

@@ -5840,3 +5840,157 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xf8 in position 14: invalid
 2026-07-22 09:19:40 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /converter/html_result - Статус: 200 - Длительность: 0.003с - IP: 127.0.0.1
 2026-07-22 09:19:40 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /static/css/style.css - IP: 127.0.0.1
 2026-07-22 09:19:40 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /static/css/style.css - Статус: 304 - Длительность: 0.007с - IP: 127.0.0.1
+2026-07-23 07:07:08 | eLibrary_to_IRBIS.web.app | INFO | app:15 | Blueprint converter_bp успешно зарегистрирован
+2026-07-23 07:07:08 | eLibrary_to_IRBIS.web.app | INFO | app:87 | Все необходимые шаблоны найдены
+2026-07-23 07:07:08 | eLibrary_to_IRBIS.web.app | INFO | app:95 | ==================================================
+2026-07-23 07:07:08 | eLibrary_to_IRBIS.web.app | INFO | app:96 | Запуск Flask-приложения
+2026-07-23 07:07:08 | eLibrary_to_IRBIS.web.app | INFO | app:97 | Режим отладки: False
+2026-07-23 07:07:08 | eLibrary_to_IRBIS.web.app | INFO | app:98 | Хост: 0.0.0.0, Порт: 5000
+2026-07-23 07:07:08 | eLibrary_to_IRBIS.web.app | INFO | app:99 | Директория шаблонов: templates
+2026-07-23 07:07:08 | eLibrary_to_IRBIS.web.app | INFO | app:100 | ==================================================
+2026-07-23 07:07:10 | eLibrary_to_IRBIS.web.app | INFO | app:15 | Blueprint converter_bp успешно зарегистрирован
+2026-07-23 07:07:10 | eLibrary_to_IRBIS.web.app | INFO | app:87 | Все необходимые шаблоны найдены
+2026-07-23 07:07:10 | eLibrary_to_IRBIS.web.app | INFO | app:95 | ==================================================
+2026-07-23 07:07:10 | eLibrary_to_IRBIS.web.app | INFO | app:96 | Запуск Flask-приложения
+2026-07-23 07:07:10 | eLibrary_to_IRBIS.web.app | INFO | app:97 | Режим отладки: False
+2026-07-23 07:07:10 | eLibrary_to_IRBIS.web.app | INFO | app:98 | Хост: 0.0.0.0, Порт: 5000
+2026-07-23 07:07:10 | eLibrary_to_IRBIS.web.app | INFO | app:99 | Директория шаблонов: templates
+2026-07-23 07:07:10 | eLibrary_to_IRBIS.web.app | INFO | app:100 | ==================================================
+2026-07-23 07:07:18 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET / - IP: 127.0.0.1
+2026-07-23 07:07:18 | eLibrary_to_IRBIS.web.app | INFO | app:60 | Рендеринг главной страницы - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 YaBrowser/26.6.0.0 Safari/537.36
+2026-07-23 07:07:18 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET / - Статус: 200 - Длительность: 0.083с - IP: 127.0.0.1
+2026-07-23 07:07:18 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /static/css/style.css - IP: 127.0.0.1
+2026-07-23 07:07:18 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /static/css/style.css - Статус: 304 - Длительность: 0.039с - IP: 127.0.0.1
+2026-07-23 07:16:26 | eLibrary_to_IRBIS.web.app | INFO | app:15 | Blueprint converter_bp успешно зарегистрирован
+2026-07-23 07:16:26 | eLibrary_to_IRBIS.web.app | INFO | app:87 | Все необходимые шаблоны найдены
+2026-07-23 07:16:26 | eLibrary_to_IRBIS.web.app | INFO | app:95 | ==================================================
+2026-07-23 07:16:26 | eLibrary_to_IRBIS.web.app | INFO | app:96 | Запуск Flask-приложения
+2026-07-23 07:16:26 | eLibrary_to_IRBIS.web.app | INFO | app:97 | Режим отладки: False
+2026-07-23 07:16:26 | eLibrary_to_IRBIS.web.app | INFO | app:98 | Хост: 0.0.0.0, Порт: 5000
+2026-07-23 07:16:26 | eLibrary_to_IRBIS.web.app | INFO | app:99 | Директория шаблонов: templates
+2026-07-23 07:16:26 | eLibrary_to_IRBIS.web.app | INFO | app:100 | ==================================================
+2026-07-23 07:16:27 | eLibrary_to_IRBIS.web.app | INFO | app:15 | Blueprint converter_bp успешно зарегистрирован
+2026-07-23 07:16:27 | eLibrary_to_IRBIS.web.app | INFO | app:87 | Все необходимые шаблоны найдены
+2026-07-23 07:16:27 | eLibrary_to_IRBIS.web.app | INFO | app:95 | ==================================================
+2026-07-23 07:16:27 | eLibrary_to_IRBIS.web.app | INFO | app:96 | Запуск Flask-приложения
+2026-07-23 07:16:27 | eLibrary_to_IRBIS.web.app | INFO | app:97 | Режим отладки: False
+2026-07-23 07:16:27 | eLibrary_to_IRBIS.web.app | INFO | app:98 | Хост: 0.0.0.0, Порт: 5000
+2026-07-23 07:16:27 | eLibrary_to_IRBIS.web.app | INFO | app:99 | Директория шаблонов: templates
+2026-07-23 07:16:27 | eLibrary_to_IRBIS.web.app | INFO | app:100 | ==================================================
+2026-07-23 07:16:36 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET / - IP: 127.0.0.1
+2026-07-23 07:16:36 | eLibrary_to_IRBIS.web.app | INFO | app:60 | Рендеринг главной страницы - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 YaBrowser/26.6.0.0 Safari/537.36
+2026-07-23 07:16:36 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET / - Статус: 200 - Длительность: 0.027с - IP: 127.0.0.1
+2026-07-23 07:16:36 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /static/css/style.css - IP: 127.0.0.1
+2026-07-23 07:16:36 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /static/css/style.css - Статус: 304 - Длительность: 0.011с - IP: 127.0.0.1
+2026-07-23 07:16:39 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /converter/html_upload - IP: 127.0.0.1
+2026-07-23 07:16:39 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /converter/html_upload - Статус: 200 - Длительность: 0.025с - IP: 127.0.0.1
+2026-07-23 07:16:39 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /static/css/style.css - IP: 127.0.0.1
+2026-07-23 07:16:39 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /static/css/style.css - Статус: 304 - Длительность: 0.009с - IP: 127.0.0.1
+2026-07-23 07:16:57 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: POST /converter/html_upload - IP: 127.0.0.1
+2026-07-23 07:17:08 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: POST /converter/html_upload - Статус: 302 - Длительность: 10.680с - IP: 127.0.0.1
+2026-07-23 07:17:08 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /converter/html_result - IP: 127.0.0.1
+2026-07-23 07:17:08 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /converter/html_result - Статус: 200 - Длительность: 0.019с - IP: 127.0.0.1
+2026-07-23 07:17:08 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /static/css/style.css - IP: 127.0.0.1
+2026-07-23 07:17:08 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /static/css/style.css - Статус: 304 - Длительность: 0.003с - IP: 127.0.0.1
+2026-07-23 07:18:09 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /converter/html_upload - IP: 127.0.0.1
+2026-07-23 07:18:09 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /converter/html_upload - Статус: 200 - Длительность: 0.002с - IP: 127.0.0.1
+2026-07-23 07:18:09 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /static/css/style.css - IP: 127.0.0.1
+2026-07-23 07:18:09 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /static/css/style.css - Статус: 304 - Длительность: 0.010с - IP: 127.0.0.1
+2026-07-23 07:18:26 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: POST /converter/html_upload - IP: 127.0.0.1
+2026-07-23 07:18:35 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: POST /converter/html_upload - Статус: 302 - Длительность: 8.893с - IP: 127.0.0.1
+2026-07-23 07:18:35 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /converter/html_result - IP: 127.0.0.1
+2026-07-23 07:18:35 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /converter/html_result - Статус: 200 - Длительность: 0.002с - IP: 127.0.0.1
+2026-07-23 07:18:35 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /static/css/style.css - IP: 127.0.0.1
+2026-07-23 07:18:35 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /static/css/style.css - Статус: 304 - Длительность: 0.002с - IP: 127.0.0.1
+2026-07-23 07:18:42 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /converter/html_upload - IP: 127.0.0.1
+2026-07-23 07:18:42 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /converter/html_upload - Статус: 200 - Длительность: 0.002с - IP: 127.0.0.1
+2026-07-23 07:18:42 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /static/css/style.css - IP: 127.0.0.1
+2026-07-23 07:18:42 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /static/css/style.css - Статус: 304 - Длительность: 0.002с - IP: 127.0.0.1
+2026-07-23 07:19:01 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: POST /converter/html_upload - IP: 127.0.0.1
+2026-07-23 07:19:07 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: POST /converter/html_upload - Статус: 302 - Длительность: 5.822с - IP: 127.0.0.1
+2026-07-23 07:19:07 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /converter/html_result - IP: 127.0.0.1
+2026-07-23 07:19:07 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /converter/html_result - Статус: 200 - Длительность: 0.001с - IP: 127.0.0.1
+2026-07-23 07:19:07 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /static/css/style.css - IP: 127.0.0.1
+2026-07-23 07:19:07 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /static/css/style.css - Статус: 304 - Длительность: 0.002с - IP: 127.0.0.1
+2026-07-23 07:28:11 | eLibrary_to_IRBIS.web.app | INFO | app:15 | Blueprint converter_bp успешно зарегистрирован
+2026-07-23 07:28:11 | eLibrary_to_IRBIS.web.app | INFO | app:87 | Все необходимые шаблоны найдены
+2026-07-23 07:28:11 | eLibrary_to_IRBIS.web.app | INFO | app:95 | ==================================================
+2026-07-23 07:28:11 | eLibrary_to_IRBIS.web.app | INFO | app:96 | Запуск Flask-приложения
+2026-07-23 07:28:11 | eLibrary_to_IRBIS.web.app | INFO | app:97 | Режим отладки: False
+2026-07-23 07:28:11 | eLibrary_to_IRBIS.web.app | INFO | app:98 | Хост: 0.0.0.0, Порт: 5000
+2026-07-23 07:28:11 | eLibrary_to_IRBIS.web.app | INFO | app:99 | Директория шаблонов: templates
+2026-07-23 07:28:11 | eLibrary_to_IRBIS.web.app | INFO | app:100 | ==================================================
+2026-07-23 07:28:52 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /converter/html_upload - IP: 127.0.0.1
+2026-07-23 07:28:52 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /converter/html_upload - Статус: 200 - Длительность: 0.016с - IP: 127.0.0.1
+2026-07-23 07:28:52 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /static/css/style.css - IP: 127.0.0.1
+2026-07-23 07:28:52 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /static/css/style.css - Статус: 304 - Длительность: 0.002с - IP: 127.0.0.1
+2026-07-23 07:29:06 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: POST /converter/html_upload - IP: 127.0.0.1
+2026-07-23 07:29:21 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: POST /converter/html_upload - Статус: 302 - Длительность: 15.224с - IP: 127.0.0.1
+2026-07-23 07:29:21 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /converter/html_result - IP: 127.0.0.1
+2026-07-23 07:29:21 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /converter/html_result - Статус: 200 - Длительность: 0.012с - IP: 127.0.0.1
+2026-07-23 07:29:21 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /static/css/style.css - IP: 127.0.0.1
+2026-07-23 07:29:21 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /static/css/style.css - Статус: 304 - Длительность: 0.004с - IP: 127.0.0.1
+2026-07-23 07:30:30 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /converter/html_upload - IP: 127.0.0.1
+2026-07-23 07:30:30 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /converter/html_upload - Статус: 200 - Длительность: 0.002с - IP: 127.0.0.1
+2026-07-23 07:30:30 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /static/css/style.css - IP: 127.0.0.1
+2026-07-23 07:30:30 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /static/css/style.css - Статус: 304 - Длительность: 0.002с - IP: 127.0.0.1
+2026-07-23 07:30:42 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: POST /converter/html_upload - IP: 127.0.0.1
+2026-07-23 07:30:49 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: POST /converter/html_upload - Статус: 302 - Длительность: 7.427с - IP: 127.0.0.1
+2026-07-23 07:30:49 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /converter/html_result - IP: 127.0.0.1
+2026-07-23 07:30:49 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /converter/html_result - Статус: 200 - Длительность: 0.001с - IP: 127.0.0.1
+2026-07-23 07:30:49 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /static/css/style.css - IP: 127.0.0.1
+2026-07-23 07:30:49 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /static/css/style.css - Статус: 304 - Длительность: 0.022с - IP: 127.0.0.1
+2026-07-23 07:32:24 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /converter/html_upload - IP: 127.0.0.1
+2026-07-23 07:32:24 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /converter/html_upload - Статус: 200 - Длительность: 0.002с - IP: 127.0.0.1
+2026-07-23 07:32:24 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /static/css/style.css - IP: 127.0.0.1
+2026-07-23 07:32:24 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /static/css/style.css - Статус: 304 - Длительность: 0.002с - IP: 127.0.0.1
+2026-07-23 07:32:34 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: POST /converter/html_upload - IP: 127.0.0.1
+2026-07-23 07:32:42 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: POST /converter/html_upload - Статус: 302 - Длительность: 7.595с - IP: 127.0.0.1
+2026-07-23 07:32:42 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /converter/html_result - IP: 127.0.0.1
+2026-07-23 07:32:42 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /converter/html_result - Статус: 200 - Длительность: 0.001с - IP: 127.0.0.1
+2026-07-23 07:32:42 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /static/css/style.css - IP: 127.0.0.1
+2026-07-23 07:32:42 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /static/css/style.css - Статус: 304 - Длительность: 0.004с - IP: 127.0.0.1
+2026-07-23 07:35:22 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /converter/excel_upload - IP: 127.0.0.1
+2026-07-23 07:35:22 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /converter/excel_upload - Статус: 200 - Длительность: 0.038с - IP: 127.0.0.1
+2026-07-23 07:35:22 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /static/css/style.css - IP: 127.0.0.1
+2026-07-23 07:35:22 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /static/css/style.css - Статус: 304 - Длительность: 0.002с - IP: 127.0.0.1
+2026-07-23 07:37:47 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /converter/excel_upload - IP: 127.0.0.1
+2026-07-23 07:37:47 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /converter/excel_upload - Статус: 200 - Длительность: 0.007с - IP: 127.0.0.1
+2026-07-23 07:37:47 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /static/css/style.css - IP: 127.0.0.1
+2026-07-23 07:37:47 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /static/css/style.css - Статус: 304 - Длительность: 0.002с - IP: 127.0.0.1
+2026-07-23 07:40:50 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /converter/excel_upload - IP: 127.0.0.1
+2026-07-23 07:40:50 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /converter/excel_upload - Статус: 200 - Длительность: 0.007с - IP: 127.0.0.1
+2026-07-23 07:40:50 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /static/css/style.css - IP: 127.0.0.1
+2026-07-23 07:40:50 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /static/css/style.css - Статус: 304 - Длительность: 0.010с - IP: 127.0.0.1
+2026-07-23 07:40:52 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /converter/excel_upload - IP: 127.0.0.1
+2026-07-23 07:40:52 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /converter/excel_upload - Статус: 200 - Длительность: 0.003с - IP: 127.0.0.1
+2026-07-23 07:40:52 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /static/css/style.css - IP: 127.0.0.1
+2026-07-23 07:40:52 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /static/css/style.css - Статус: 304 - Длительность: 0.008с - IP: 127.0.0.1
+2026-07-23 07:42:14 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /converter/excel_upload - IP: 127.0.0.1
+2026-07-23 07:42:14 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /converter/excel_upload - Статус: 200 - Длительность: 0.007с - IP: 127.0.0.1
+2026-07-23 07:42:14 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /static/css/style.css - IP: 127.0.0.1
+2026-07-23 07:42:14 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /static/css/style.css - Статус: 304 - Длительность: 0.015с - IP: 127.0.0.1
+2026-07-23 07:43:03 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: POST /converter/excel_upload - IP: 127.0.0.1
+2026-07-23 07:43:03 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: POST /converter/excel_upload - Статус: 302 - Длительность: 0.139с - IP: 127.0.0.1
+2026-07-23 07:43:03 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /converter/excel_result - IP: 127.0.0.1
+2026-07-23 07:43:03 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /converter/excel_result - Статус: 200 - Длительность: 0.028с - IP: 127.0.0.1
+2026-07-23 07:43:03 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /static/css/style.css - IP: 127.0.0.1
+2026-07-23 07:43:03 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /static/css/style.css - Статус: 304 - Длительность: 0.007с - IP: 127.0.0.1
+2026-07-23 07:48:32 | eLibrary_to_IRBIS.web.app | INFO | app:15 | Blueprint converter_bp успешно зарегистрирован
+2026-07-23 07:48:32 | eLibrary_to_IRBIS.web.app | INFO | app:87 | Все необходимые шаблоны найдены
+2026-07-23 07:48:32 | eLibrary_to_IRBIS.web.app | INFO | app:95 | ==================================================
+2026-07-23 07:48:32 | eLibrary_to_IRBIS.web.app | INFO | app:96 | Запуск Flask-приложения
+2026-07-23 07:48:32 | eLibrary_to_IRBIS.web.app | INFO | app:97 | Режим отладки: False
+2026-07-23 07:48:32 | eLibrary_to_IRBIS.web.app | INFO | app:98 | Хост: 0.0.0.0, Порт: 5000
+2026-07-23 07:48:32 | eLibrary_to_IRBIS.web.app | INFO | app:99 | Директория шаблонов: templates
+2026-07-23 07:48:32 | eLibrary_to_IRBIS.web.app | INFO | app:100 | ==================================================
+2026-07-23 07:48:47 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /converter/excel_upload - IP: 127.0.0.1
+2026-07-23 07:48:47 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /converter/excel_upload - Статус: 200 - Длительность: 0.020с - IP: 127.0.0.1
+2026-07-23 07:48:47 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /static/css/style.css - IP: 127.0.0.1
+2026-07-23 07:48:47 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /static/css/style.css - Статус: 304 - Длительность: 0.002с - IP: 127.0.0.1
+2026-07-23 07:48:59 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: POST /converter/excel_upload - IP: 127.0.0.1
+2026-07-23 07:49:00 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: POST /converter/excel_upload - Статус: 302 - Длительность: 0.300с - IP: 127.0.0.1
+2026-07-23 07:49:00 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /converter/excel_result - IP: 127.0.0.1
+2026-07-23 07:49:00 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /converter/excel_result - Статус: 200 - Длительность: 0.005с - IP: 127.0.0.1
+2026-07-23 07:49:00 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /static/css/style.css - IP: 127.0.0.1
+2026-07-23 07:49:00 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /static/css/style.css - Статус: 304 - Длительность: 0.002с - IP: 127.0.0.1

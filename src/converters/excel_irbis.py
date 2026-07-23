@@ -183,6 +183,7 @@ def convert_to_irbis(df):
         # Название журнала
         journal = safe_get(df, idx, 'journal') or ''
         journal_eng = safe_get(df, idx, 'journal_eng') or ''
+        short_name =  safe_get(df, idx, 'short_name') or ''
 
         # Год, том, номер, диапазон страниц, шифр
         year = safe_get(df, idx, 'year') or ''
@@ -276,7 +277,7 @@ def convert_to_irbis(df):
 
     # Формирование имени файла
 
-    file_name = (f"{journal_eng}_{year}_{issue}_{file_data}.txt")
+    file_name = (f"{short_name}_{year}_{issue}_{file_data}.txt")
     file_path = (f"{tgt}/{file_name}")
     
     # Запись в файл
