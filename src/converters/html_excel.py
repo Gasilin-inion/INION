@@ -1,10 +1,10 @@
 """
-Конвертер библиографических записей из формата e-Library в таблицу Excel
+Конвертер библиографических записей из формата *.html в таблицу Excel
 
 @author: Andrey Gasilin
 
 Created: 03.01.2025
-Last updated: 04.04.2026
+Last updated: 17.07.2026
 
 """
 # Импорт внешних модулей
@@ -12,50 +12,25 @@ Last updated: 04.04.2026
 import sys
 import json
 import pandas as pd
-import xlsxwriter
 import importlib.util
+import xlsxwriter
+from pathlib import Path
+from datetime import datetime
 
-# Импорт файла конфигурации путей
+# Импортируем файл конфигурации путей
+from src.utils.config_path import set_config #type: ignore
+config = set_config()
 
-with open("./data/config/path_config.json", "r", encoding="utf-8") as pathfile:
-    config_paths = json.load(pathfile)
+# Берём значение из словаря
+EDITABLE_XLSX_DIR = config["files_to_edit"]
 
-EDITABLE_XLSX = config_paths["excel_to_edit"]
-
-# Счётчики
+# Назначаем счётчики
 
 counter = 1
 index = 0
 index_of_list = 0
 
-# Списки
-
-author_list = []
-category_list = []
-title_list = []
-journal_list = []
-journal_eng_list = []
-year_list = []
-volume_list = []
-issue_list = []
-pages_list = []
-abstract_list = []
-keys_from_title = []
-keys_from_a_keys = []
-keys_from_abstract = []
-a_keywords = []
-keywords_list = []
-additional_keywords = []
-URL_list = []
-DOI_list = []
-ISSN_list = []
-lang_list = []
-founder_list = []
-short_name_list = []
-journal_type_list = []
-serial_number_list = []
-
-# Переменные паттернов
+# Назначаем переменные паттернов
 
 author_pattern = '<b><font color=#00008f>'
 author_start_shift = 23
@@ -95,7 +70,7 @@ DOI_start_shift = 20
 DOI_end_pattern = '">'
 
 
-# Тех. переменные
+# Назначаем технические переменные
 
 title = ''
 journal = ''
@@ -121,20 +96,48 @@ file_name = ''
 
 # Импортируем выходные данные журналов
 
-journal_list_path = config_paths["journal_list"]
+journal_list_path = config["journal_list"]
 journal_list_df = pd.read_json(journal_list_path)
 
 def convert_html_to_excel(files):
 
+    # Формируем списки
+
+    author_list = []
+    category_list = []
+    title_list = []
+    journal_list = []
+    journal_eng_list = []
+    year_list = []
+    volume_list = []
+    issue_list = []
+    pages_list = []
+    abstract_list = []
+    keys_from_title = []
+    keys_from_a_keys = []
+    keys_from_abstract = []
+    a_keywords = []
+    keywords_list = []
+    additional_keywords = []
+    URL_list = []
+    DOI_list = []
+    ISSN_list = []
+    lang_list = []
+    founder_list = []
+    short_name_list = []
+    journal_type_list = []
+    serial_number_list = []
+
+    # Определяем количество загруженных файлов
     number_of_files = len(files)
 
-    # Цикл перебора файлов
+    # Перебираем файлы из списка
 
     for idx in range(number_of_files):
         with open(files[idx], 'r', encoding='UTF-8') as fl:
             strings = fl.readlines()
 
-        # Авторы статьи
+        # Блок автора
         authors = []
         counter = 1
         for string in strings:
@@ -153,7 +156,7 @@ def convert_html_to_excel(files):
                     counter += 1
         authors_str = ' ; '.join(authors)
 
-        # Заголовок статьи
+        # Блок заголовка
         for string in strings:
             if title_pattern in string:
                 first_word = string.find(title_pattern)
@@ -161,8 +164,8 @@ def convert_html_to_excel(files):
                 start = first_word + title_start_shift
                 title = string[start:second_word]
                 
-                # Выделение ключевых слов
-                add_keywords = config_paths["add_keywords"]
+                # Выделяем ключевые слова
+                add_keywords = config["add_keywords"]
                 spec = importlib.util.spec_from_file_location("add_keywords", add_keywords)
                 module = importlib.util.module_from_spec(spec)
                 sys.modules["add_keywords"] = module
@@ -170,14 +173,14 @@ def convert_html_to_excel(files):
                 keys_from_title = module.keys_from_text(title)
                 title = title.capitalize()
 
-                # Импорт модуля коррекции 
-                corrections = config_paths["correction"]
+                # Импортируем модуль автокоррекции
+                corrections = config["correction"]
                 spec = importlib.util.spec_from_file_location("correction_functions", corrections)
                 module = importlib.util.module_from_spec(spec)
                 sys.modules["correction_functions"] = module
                 spec.loader.exec_module(module)
 
-                # Функции модуля коррекции
+                # Запускаем функции модуля автокоррекции
                 title = module.persons_correction(title)
                 title = module.upper_sent(title)
                 title = module.upper_review(title)
@@ -187,7 +190,7 @@ def convert_html_to_excel(files):
                 title = module.change_hyphen(title)
                 title = module.change_quotation(title)
 
-        # Название журнала
+        # Блок названия журнала
         for string in strings:
             if journal_pattern in string:
                 first_word = string.find(journal_pattern)
@@ -195,7 +198,7 @@ def convert_html_to_excel(files):
                 start = first_word + journal_start_shift
                 journal = string[start:second_word]
 
-        # Данные журнала
+        # Загрузка данных журнала из journal_list
         rows_count = len(journal_list_df)
         for row in range(rows_count):
             if ((journal == journal_list_df.at[row, 'e-library_name']) or
@@ -215,7 +218,7 @@ def convert_html_to_excel(files):
                 if journal_ru == journal_eng:
                     journal_eng = ''
                 break              
-        # Год
+        # Блок года
         year = ''
         for string in strings:
             if year_pattern in string:
@@ -223,7 +226,7 @@ def convert_html_to_excel(files):
                 second_word = string.find(year_end_pattern)
                 year = string[first_word + year_start_shift:second_word]
 
-        # Том
+        # Блок тома
         volume = ''
         for string in strings:
             if volume_pattern in string:
@@ -231,7 +234,7 @@ def convert_html_to_excel(files):
                 second_word = string.find(volume_end_pattern)
                 volume = string[first_word + volume_start_shift:second_word]
 
-        # Номер
+        # Блок номера
         issue = ''
         for string in strings:
             if issue_pattern in string:
@@ -240,7 +243,7 @@ def convert_html_to_excel(files):
                 issue = string[first_word + issue_start_shift:second_word]
                 issue = issue.replace('&nbsp;', ' ')
 
-        # Страницы
+        # Блок диапазона страниц
         pages = ''
         for string in strings:
             if pages_pattern in string:
@@ -248,7 +251,7 @@ def convert_html_to_excel(files):
                 second_word = string.find(pages_end_pattern)
                 pages = string[first_word + pages_start_shift:second_word]
 
-        # Язык
+        # Блок языка
         lang = ''
         for string in strings:
             if lang_pattern in string:
@@ -256,7 +259,7 @@ def convert_html_to_excel(files):
                 second_word = string.find(lang_end_pattern)
                 lang = string[first_word + lang_start_shift:second_word]
 
-        # Аннотация
+        # Блок аннотации
         abstract = ''
         optimized_abstract = ''
         if journal_category == 'A02':
@@ -268,19 +271,19 @@ def convert_html_to_excel(files):
                         start = first_word + abstract_start_shift
                         abstract = string[start:second_word]
                         
-                        # Перевод аннотаций, если не русскоязычные
+                        # Переводим аннотацию, если она не на русском
 
                         if lang in ['английский', 'французский', 'немецкий']:
-                            abstracts_translator = config_paths["translation"]
+                            abstracts_translator = config["translation"]
                             spec = importlib.util.spec_from_file_location("ya_trans", abstracts_translator)
                             module = importlib.util.module_from_spec(spec)
                             sys.modules["ya_trans"] = module
                             spec.loader.exec_module(module)
-                            files = module.abstracts_translator(abstract)
+                            abstract = module.abstracts_translator(abstract)
                         
-                        # Инициируем модуль для подбора ключей на основе аннотации
+                        # Подбираем ключи на основе аннотации
 
-                        add_keywords = config_paths["add_keywords"]
+                        add_keywords = config["add_keywords"]
                         spec = importlib.util.spec_from_file_location("add_keywords", add_keywords)
                         module = importlib.util.module_from_spec(spec)
                         sys.modules["add_keywords"] = module
@@ -288,8 +291,8 @@ def convert_html_to_excel(files):
                         keys_from_abstract = module.keys_from_text(abstract)
                         
                         if abstract:
-                            # Импорт модуля оптимизации аннотации посредством YandexGPT 
-                            translation = config_paths["AI_processing"]
+                            # Импортируем модуль оптимизации аннотации посредством YandexGPT 
+                            translation = config["AI_processing"]
                             spec = importlib.util.spec_from_file_location("ya_GPT", translation)
                             module = importlib.util.module_from_spec(spec)
                             sys.modules["ya_GPT"] = module
@@ -298,6 +301,7 @@ def convert_html_to_excel(files):
                             if 'Я не могу обсуждать эту тему' in optimized_abstract:
                                 optimized_abstract = ''
                         
+        # Усеченный вариант обработки для специальностей 04, 10 и 13
         elif (journal_category == 'A04') or (journal_category == 'A10') or (journal_category == 'A13'):
             for string in strings:
                 if abstract_pattern in string:
@@ -312,7 +316,7 @@ def convert_html_to_excel(files):
         else:
             optimized_abstract = ''
 
-        # URL
+        # Блок URL
         URL = ''
         for string in strings:
             if URL_pattern in string:
@@ -321,7 +325,7 @@ def convert_html_to_excel(files):
                 if first_word != -1 and second_word != -1:
                     URL = string[first_word + URL_start_shift:second_word]
 
-        # DOI
+        # Блок DOI
         DOI = ''
         for string in strings:
             if DOI_pattern in string:
@@ -330,7 +334,7 @@ def convert_html_to_excel(files):
                 if first_word != -1 and second_word != -1:
                     DOI = string[first_word + DOI_start_shift:second_word]
 
-        # Авторские ключевые слова
+        # Блок анализа авторских ключевых слов
         final_keywords = []
         a_keywords = []  # Инициализация списка ключевых слов
 
@@ -352,9 +356,9 @@ def convert_html_to_excel(files):
             else:
                 a_keywords_as_string = ""  # Значение по умолчанию при отсутствии ключевых слов
 
-            # Нормализация авторских ключевых слов
+            # Отсеиваем ненормированные ключевые слова
             try:
-                add_keywords = config_paths["add_keywords"]
+                add_keywords = config["add_keywords"]
                 spec = importlib.util.spec_from_file_location("add_keywords", add_keywords)
                 module = importlib.util.module_from_spec(spec)
                 sys.modules["add_keywords"] = module
@@ -375,9 +379,9 @@ def convert_html_to_excel(files):
             final_keywords.append(journal_keyword)
 
 
-        # Подбор рубрики по философии
+        # Подбор рубрики по философии (эксперементальная функция)
         if journal_category == 'A02':
-            add_category = config_paths["add_categories"]
+            add_category = config["add_categories"]
             spec = importlib.util.spec_from_file_location("add_categories", add_category)
             module = importlib.util.module_from_spec(spec)
             sys.modules["add_categories"] = module
@@ -390,7 +394,7 @@ def convert_html_to_excel(files):
         if journal_keyword in final_keywords:
             keyword_string = journal_keyword
 
-        # Добавление в списки
+        # Добавление всех параметров в списки
         author_list.append(authors_str)
         category_list.append(journal_category)
         title_list.append(title)
@@ -411,6 +415,7 @@ def convert_html_to_excel(files):
         journal_type_list.append(journal_type)
         serial_number_list.append(serial_number)
 
+    # Формирование дата-фрейма
     articles_pd = pd.DataFrame({
     'author': author_list,
     'category': category_list,
@@ -419,6 +424,7 @@ def convert_html_to_excel(files):
     'abstract': abstract_list,
     'journal': journal_list,
     'journal_eng': journal_eng_list,
+    'short_name': short_name_list,
     'year': year_list,
     'volume': volume_list,
     'issue': issue_list,
@@ -434,30 +440,28 @@ def convert_html_to_excel(files):
 
     return articles_pd
 
+# Функция преобразует дата-фрейм в таблицу в формате *.xlsx
 def data_frame_to_workbook(data_frame):
     
-    # Формирование названия файла
-
-    journal_name = data_frame.at[1, 'journal']
+    # Формируем название файла
+    journal_name = data_frame.at[1, 'short_name']
     year = data_frame.at[1, 'year']
     volume = data_frame.at[1, 'volume']
     issue = data_frame.at[1, 'issue']
+    datestamp = datetime.now().strftime("gen_%Y.%m.%d") # Маркер времени формирования
     if (volume != '') and (volume != 'NaN') and (volume != 'none'):
-        file_name = f'{journal_name}_{year}_{volume}_{issue}'
+        file_name = f'{EDITABLE_XLSX_DIR}{journal_name}_{year}_{volume}_{issue}_{datestamp}.xlsx'
     else:
-        file_name = f'{journal_name}_{year}_{issue}'
-    
-    file_path = EDITABLE_XLSX
-    final_file_path = file_path.replace('list_of_articles', file_name)
+        file_name = f'{EDITABLE_XLSX_DIR}{journal_name}_{year}_{issue}_{datestamp}.xlsx'
 
-    # Формирование выходного файла
+    # Формируем выходной файл в формате *.xlsx
 
-    writer = pd.ExcelWriter(final_file_path, engine='xlsxwriter')
-    data_frame.to_excel(writer, sheet_name='e-Library', index=False)
+    writer = pd.ExcelWriter(file_name, engine='xlsxwriter')
+    data_frame.to_excel(writer, sheet_name='List of articles', index=False)
 
-    # Формат переноса текста
+    # Форматируем таблицу
     workbook = writer.book
-    worksheet = writer.sheets['e-Library']
+    worksheet = writer.sheets['List of articles']
     text_format = workbook.add_format({"text_wrap": True})
 
     worksheet.set_column('A:A', None, text_format)
@@ -466,7 +470,7 @@ def data_frame_to_workbook(data_frame):
     worksheet.set_column('E:E', None, text_format)
     worksheet.set_column('P:P', None, text_format)
 
-    # Названия колонок таблицы
+    # Назначаем названия колонкам таблицы
     worksheet.write(0, 0, 'author')
     worksheet.write(0, 1, 'category')
     worksheet.write(0, 2, 'title')
@@ -489,7 +493,7 @@ def data_frame_to_workbook(data_frame):
     worksheet.write(0, 19, 'review_title')
     worksheet.write(0, 20, 'review_output_data')
 
-    # Регулировка ширины колонок
+    # Регулируем ширину колонок
     worksheet.set_column(0, 0, 20)
     worksheet.set_column(1, 1, 20)
     worksheet.set_column(2, 2, 70)

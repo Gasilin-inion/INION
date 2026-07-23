@@ -1,6 +1,6 @@
 {
   "project_root": "C:/Users/yotto/CONVERTERS/INION",
-  "elibrary_excel_converter": "C:/Users/yotto/CONVERTERS/INION/src/converters/elibrary_excel.py",
+  "html_excel_converter": "C:/Users/yotto/CONVERTERS/INION/src/converters/html_excel.py",
   "excel_irbis_converter": "C:/Users/yotto/CONVERTERS/INION/src/converters/excel_irbis.py",
   "key_correction_excel_irbis": "C:/Users/yotto/CONVERTERS/INION/src/converters/key_correction_Excel-IRBIS.py",
   "xlsx_json": "C:/Users/yotto/CONVERTERS/INION/src/converters/xlsx_json.py",
@@ -56,8 +56,8 @@
   "output_txt_dir": "C:/Users/yotto/CONVERTERS/INION/resources/output_txt_dir/",
   "output_txt_file": "C:/Users/yotto/CONVERTERS/INION/resources/output_txt_dir/abnormal_keys.txt",
   "input_files": "C:/Users/yotto/CONVERTERS/INION/resources/files_to_process",
-  "files_to_edit": "C:/Users/yotto/CONVERTERS/INION/resources/files_to_edit",
-  "dir_for_edited_excel": "C:/Users/yotto/CONVERTERS/INION/resources/input_xlsx_dir",
+  "files_to_edit": "C:/Users/yotto/CONVERTERS/INION/resources/files_to_edit/",
+  "dir_for_edited_excel": "C:/Users/yotto/CONVERTERS/INION/resources/input_xlsx_dir/",
   "excel_to_edit": "C:/Users/yotto/CONVERTERS/INION/resources/files_to_edit/list_of_articles.xlsx",
   "dir_for_GB": "C:/Users/yotto/CONVERTERS/INION/resources/files_for_GB/",
   "file_for_GB": "C:/Users/yotto/CONVERTERS/INION/resources/files_for_GB/keys_correction.gbl",

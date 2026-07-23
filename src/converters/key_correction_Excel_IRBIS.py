@@ -21,45 +21,14 @@ logger = logging.getLogger(__name__)
 # Блок конфигурации
 # -------------------------------------------------------
 
-# Импорт файла конфигурации
-config_path = Path("./data/config/path_config.json")
-try:
-    with config_path.open("r", encoding="utf-8") as pathfile:
-        config_paths = json.load(pathfile)
-except FileNotFoundError:
-    logger.error("Не найден файл конфигурации путей: %s", config_path)
-    raise
-except json.JSONDecodeError:
-    logger.error("Ошибка формата JSON в файле конфигурации: %s", config_path)
-    raise
+# Импортируем файл конфигурации путей
+from src.utils.config_path import set_config #type: ignore
+config = set_config()
 
-# Импорт директории для хранения заданий для оглобальной корректировки
-tgt = config_paths.get("dir_for_GB")
-if not tgt:
-    logger.error('В config.json отсутствует ключ "dir_for_GB"')
-    raise KeyError('В config.json отсутствует ключ "dir_for_GB"')
-
-tgt_dir = Path(tgt)
-tgt_dir.mkdir(parents=True, exist_ok=True)  # Гарантируем существование директории
-
-# Импорт директории для СНЛ по Философии
-SNL_02 = config_paths.get("SNL_02")
-if not SNL_02:
-    logger.error('В config.json отсутствует ключ "SNL_02"')
-    raise KeyError('В config.json отсутствует ключ "SNL_02"')
-
-SNL_02 = Path(SNL_02)
-SNL_02.mkdir(parents=True, exist_ok=True)  # Гарантируем существование директории
-
-# Импорт директории для СНЛ по Социологии
-
-SNL_04 = config_paths.get("SNL_04")
-if not SNL_04:
-    logger.error('В config.json отсутствует ключ "SNL_04"')
-    raise KeyError('В config.json отсутствует ключ "SNL_04"')
-
-SNL_04 = Path(SNL_04)
-SNL_04.mkdir(parents=True, exist_ok=True)  # Гарантируем существование директории
+# Определяем рабочие директории
+tgt = config["dir_for_GB"]  # Директория заданий для глобальной корректировки
+SNL_02 = config["SNL_02"]   # Директория СНЛ по философии
+SNL_04 = config["SNL_04"]   # Директория СНЛ по философии
 
 # Определение текущей даты для использования в имени файла 
 today = datetime.date.today().strftime("%Y_%m_%d")

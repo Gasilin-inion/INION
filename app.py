@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request, g
-from src.utils.logger import get_logger
-from routes.converter_routes import converter_bp
+from src.utils.logger import get_logger # type: ignore
+from routes.converter_routes import converter_bp # type: ignore
 import time
 import traceback
 import os

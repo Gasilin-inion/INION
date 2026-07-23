@@ -1,0 +1,8 @@
+2026-07-18 08:26:57 | eLibrary_to_IRBIS.web.app | INFO | app:15 | Blueprint converter_bp успешно зарегистрирован
+2026-07-18 08:26:57 | eLibrary_to_IRBIS.web.app | ERROR | app:73 | Директория шаблонов не найдена: templates
+2026-07-18 08:26:57 | eLibrary_to_IRBIS.web.app | INFO | app:95 | ==================================================
+2026-07-18 08:26:57 | eLibrary_to_IRBIS.web.app | INFO | app:96 | Запуск Flask-приложения
+2026-07-18 08:26:57 | eLibrary_to_IRBIS.web.app | INFO | app:97 | Режим отладки: False
+2026-07-18 08:26:57 | eLibrary_to_IRBIS.web.app | INFO | app:98 | Хост: 0.0.0.0, Порт: 5000
+2026-07-18 08:26:57 | eLibrary_to_IRBIS.web.app | INFO | app:99 | Директория шаблонов: templates
+2026-07-18 08:26:57 | eLibrary_to_IRBIS.web.app | INFO | app:100 | ==================================================

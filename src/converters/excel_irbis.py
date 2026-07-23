@@ -14,19 +14,18 @@ import logging
 import pandas as pd
 from typing import List
 import importlib.util
+from pathlib import Path
 
 # Настройка логирования
 logging.basicConfig(level=logging.INFO, format='%(levelname)s: %(message)s')
 logger = logging.getLogger(__name__)
 
-# Импорт файла конфигурации путей
+# Импортируем файл конфигурации путей
+from src.utils.config_path import set_config #type: ignore
+config = set_config()
 
-with open("./data/config/path_config.json", "r", encoding="utf-8") as pathfile:
-    config_paths = json.load(pathfile)
-
-tgt = config_paths["output_files"]
-wct = config_paths["wrong_categories"]
-
+# Определяем рабочую директорию
+tgt = config["output_files"]                    # Папка для целевых файлов
 
 # Параметры и шаблоны
 FIELD_102 = '#102: RU\n'
@@ -58,7 +57,7 @@ def safe_get(df: pd.DataFrame, idx: int, col: str):
 
 # Импорт рубрикатора
 
-rubricator_path = config_paths["rubricator"]
+rubricator_path = config["rubricator"]
 rubricator = pd.read_json(rubricator_path)
 
 def cat_check(category):
@@ -67,6 +66,7 @@ def cat_check(category):
 # Основная логика
 
 def convert_to_irbis(df):
+
     # Количество документов в списке    
     n = len(df)
     logger.info('Обработано %d строк(и).', n)
@@ -119,7 +119,7 @@ def convert_to_irbis(df):
 
         # Автор(ы)
         authors_str = safe_get(df, idx, 'author')
-        authors_funct = config_paths["authors"]
+        authors_funct = config["authors"]
         spec = importlib.util.spec_from_file_location("authors_functions", authors_funct)
         module = importlib.util.module_from_spec(spec)
         sys.modules["authors_functions"] = module

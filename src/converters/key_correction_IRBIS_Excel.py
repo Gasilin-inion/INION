@@ -7,12 +7,12 @@ from pathlib import Path
 
 from src.services.read_actual_file import read_actual  # type: ignore
 
-# Читаем пути к папкам файлов в path_config
-config_path = Path("data/config/path_config.json") # Путь к файлу конфигурации путей
-with open(config_path, "r", encoding="utf-8") as f:
-    config_paths = json.load(f) # Открываем файл в формате json, формируем массив данных
-SNL_02 = config_paths["SNL_02"] # Задаем путь к папке с версиями словника по философии
-SNL_04 = config_paths["SNL_04"] # Задаем путь к папке с версиями словника по социологии
+# Импортируем файл конфигурации путей
+from src.utils.config_path import set_config #type: ignore
+config = set_config()
+
+SNL_02 = config["SNL_02"] # Задаем путь к папке с версиями словника по философии
+SNL_04 = config["SNL_04"] # Задаем путь к папке с версиями словника по социологии
 
 def key_extraction(file_path): # Функция извлечения ненормированных ключевых слов, на входе адрес целевого файла
     keywords = [] # Создаём список всех ключевых слов
