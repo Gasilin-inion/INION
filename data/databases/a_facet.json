@@ -2308,6 +2308,14 @@
     "up_name":"XXI век"
   },
   {
+    "low_name":"xix-xx",
+    "up_name":"XIX-XX"
+  },
+  {
+    "low_name":"xx-xxi",
+    "up_name":"XX-XXI"
+  },
+  {
     "low_name":"россия",
     "up_name":"Россия"
   },
@@ -3938,5 +3946,21 @@
   {
     "low_name":"japan",
     "up_name":"Japan"
+  },
+  {
+    "low_name":" ии ",
+    "up_name":" ИИ "
+  },
+  {
+    "low_name":" ии-",
+    "up_name":" ИИ-"
+  },
+  {
+    "low_name":" ai ",
+    "up_name":" AI "
+  },
+  {
+    "low_name":" ai-",
+    "up_name":" AI-"
   }
 ]
