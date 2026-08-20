@@ -6201,3 +6201,521 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xf8 in position 14: invalid
 2026-08-08 13:33:34 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /converter/download_txt_list/Galactica_media_2026_2_2026_08_08.txt - Статус: 200 - Длительность: 0.023с - IP: 127.0.0.1
 2026-08-08 13:33:36 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /converter/download_txt_list/Galactica_media_2026_3_2026_08_08.txt - IP: 127.0.0.1
 2026-08-08 13:33:36 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /converter/download_txt_list/Galactica_media_2026_3_2026_08_08.txt - Статус: 200 - Длительность: 0.027с - IP: 127.0.0.1
+2026-08-12 10:21:31 | eLibrary_to_IRBIS.web.app | INFO | app:15 | Blueprint converter_bp успешно зарегистрирован
+2026-08-12 10:21:31 | eLibrary_to_IRBIS.web.app | INFO | app:87 | Все необходимые шаблоны найдены
+2026-08-12 10:21:31 | eLibrary_to_IRBIS.web.app | INFO | app:15 | Blueprint converter_bp успешно зарегистрирован
+2026-08-12 10:21:31 | eLibrary_to_IRBIS.web.app | INFO | app:87 | Все необходимые шаблоны найдены
+2026-08-12 10:21:31 | eLibrary_to_IRBIS.web.app | INFO | app:15 | Blueprint converter_bp успешно зарегистрирован
+2026-08-12 10:21:31 | eLibrary_to_IRBIS.web.app | INFO | app:87 | Все необходимые шаблоны найдены
+2026-08-12 10:30:50 | eLibrary_to_IRBIS.web.app | INFO | app:15 | Blueprint converter_bp успешно зарегистрирован
+2026-08-12 10:30:50 | eLibrary_to_IRBIS.web.app | INFO | app:87 | Все необходимые шаблоны найдены
+2026-08-12 10:30:50 | eLibrary_to_IRBIS.web.app | INFO | app:15 | Blueprint converter_bp успешно зарегистрирован
+2026-08-12 10:30:50 | eLibrary_to_IRBIS.web.app | INFO | app:87 | Все необходимые шаблоны найдены
+2026-08-12 10:30:50 | eLibrary_to_IRBIS.web.app | INFO | app:15 | Blueprint converter_bp успешно зарегистрирован
+2026-08-12 10:30:50 | eLibrary_to_IRBIS.web.app | INFO | app:87 | Все необходимые шаблоны найдены
+2026-08-12 10:36:36 | eLibrary_to_IRBIS.web.app | INFO | app:15 | Blueprint converter_bp успешно зарегистрирован
+2026-08-12 10:36:36 | eLibrary_to_IRBIS.web.app | INFO | app:87 | Все необходимые шаблоны найдены
+2026-08-12 10:36:36 | eLibrary_to_IRBIS.web.app | INFO | app:15 | Blueprint converter_bp успешно зарегистрирован
+2026-08-12 10:36:36 | eLibrary_to_IRBIS.web.app | INFO | app:87 | Все необходимые шаблоны найдены
+2026-08-12 10:36:36 | eLibrary_to_IRBIS.web.app | INFO | app:15 | Blueprint converter_bp успешно зарегистрирован
+2026-08-12 10:36:36 | eLibrary_to_IRBIS.web.app | INFO | app:87 | Все необходимые шаблоны найдены
+2026-08-12 11:10:12 | eLibrary_to_IRBIS.web.app | INFO | app:15 | Blueprint converter_bp успешно зарегистрирован
+2026-08-12 11:10:12 | eLibrary_to_IRBIS.web.app | INFO | app:87 | Все необходимые шаблоны найдены
+2026-08-12 11:10:12 | eLibrary_to_IRBIS.web.app | INFO | app:15 | Blueprint converter_bp успешно зарегистрирован
+2026-08-12 11:10:12 | eLibrary_to_IRBIS.web.app | INFO | app:87 | Все необходимые шаблоны найдены
+2026-08-12 11:10:12 | eLibrary_to_IRBIS.web.app | INFO | app:15 | Blueprint converter_bp успешно зарегистрирован
+2026-08-12 11:10:12 | eLibrary_to_IRBIS.web.app | INFO | app:87 | Все необходимые шаблоны найдены
+2026-08-12 11:11:28 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET / - IP: 
+2026-08-12 11:11:28 | eLibrary_to_IRBIS.web.app | INFO | app:60 | Рендеринг главной страницы - User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1
+2026-08-12 11:11:28 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET / - Статус: 200 - Длительность: 0.007с - IP: 
+2026-08-12 11:12:10 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: HEAD / - IP: 
+2026-08-12 11:12:10 | eLibrary_to_IRBIS.web.app | INFO | app:60 | Рендеринг главной страницы - User-Agent: curl/8.5.0
+2026-08-12 11:12:10 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: HEAD / - Статус: 200 - Длительность: 0.007с - IP: 
+2026-08-12 11:12:17 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET / - IP: 
+2026-08-12 11:12:17 | eLibrary_to_IRBIS.web.app | INFO | app:60 | Рендеринг главной страницы - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 YaBrowser/26.6.0.0 Safari/537.36
+2026-08-12 11:12:17 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET / - Статус: 200 - Длительность: 0.001с - IP: 
+2026-08-12 11:12:17 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /static/css/style.css - IP: 
+2026-08-12 11:12:17 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /static/css/style.css - Статус: 200 - Длительность: 0.004с - IP: 
+2026-08-12 11:12:19 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET / - IP: 
+2026-08-12 11:12:19 | eLibrary_to_IRBIS.web.app | INFO | app:60 | Рендеринг главной страницы - User-Agent: Mozilla/5.0 (compatible; FlowIQLabsBot/1.0; +https://flowiq-labs.com/scanning-info)
+2026-08-12 11:12:19 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET / - Статус: 200 - Длительность: 0.001с - IP: 
+2026-08-12 11:12:22 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /favicon.ico - IP: 
+2026-08-12 11:12:22 | eLibrary_to_IRBIS.web.app | WARNING | app:44 | Страница не найдена: /favicon.ico - IP: 
+2026-08-12 11:12:22 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /favicon.ico - Статус: 404 - Длительность: 0.002с - IP: 
+2026-08-12 11:13:35 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET / - IP: 
+2026-08-12 11:13:35 | eLibrary_to_IRBIS.web.app | INFO | app:60 | Рендеринг главной страницы - User-Agent: Mozilla/5.0 (compatible; YandexBot/3.0; +http://yandex.com/bots)
+2026-08-12 11:13:35 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET / - Статус: 200 - Длительность: 0.007с - IP: 
+2026-08-12 11:26:05 | eLibrary_to_IRBIS.web.app | INFO | app:15 | Blueprint converter_bp успешно зарегистрирован
+2026-08-12 11:26:05 | eLibrary_to_IRBIS.web.app | INFO | app:87 | Все необходимые шаблоны найдены
+2026-08-12 11:26:05 | eLibrary_to_IRBIS.web.app | INFO | app:15 | Blueprint converter_bp успешно зарегистрирован
+2026-08-12 11:26:05 | eLibrary_to_IRBIS.web.app | INFO | app:87 | Все необходимые шаблоны найдены
+2026-08-12 11:26:05 | eLibrary_to_IRBIS.web.app | INFO | app:15 | Blueprint converter_bp успешно зарегистрирован
+2026-08-12 11:26:05 | eLibrary_to_IRBIS.web.app | INFO | app:87 | Все необходимые шаблоны найдены
+2026-08-12 11:33:52 | eLibrary_to_IRBIS.web.app | INFO | app:15 | Blueprint converter_bp успешно зарегистрирован
+2026-08-12 11:33:52 | eLibrary_to_IRBIS.web.app | INFO | app:87 | Все необходимые шаблоны найдены
+2026-08-12 11:33:52 | eLibrary_to_IRBIS.web.app | INFO | app:15 | Blueprint converter_bp успешно зарегистрирован
+2026-08-12 11:33:52 | eLibrary_to_IRBIS.web.app | INFO | app:87 | Все необходимые шаблоны найдены
+2026-08-12 11:33:52 | eLibrary_to_IRBIS.web.app | INFO | app:15 | Blueprint converter_bp успешно зарегистрирован
+2026-08-12 11:33:52 | eLibrary_to_IRBIS.web.app | INFO | app:87 | Все необходимые шаблоны найдены
+2026-08-12 11:34:00 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /converter/html_upload - IP: 
+2026-08-12 11:34:00 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /converter/html_upload - Статус: 200 - Длительность: 0.006с - IP: 
+2026-08-12 11:34:00 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /static/css/style.css - IP: 
+2026-08-12 11:34:00 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /static/css/style.css - Статус: 304 - Длительность: 0.005с - IP: 
+2026-08-12 11:34:04 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /converter/ - IP: 
+2026-08-12 11:34:04 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /converter/ - Статус: 200 - Длительность: 0.007с - IP: 
+2026-08-12 11:34:04 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /static/css/style.css - IP: 
+2026-08-12 11:34:04 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /static/css/style.css - Статус: 304 - Длительность: 0.005с - IP: 
+2026-08-12 11:34:12 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /converter/html_upload - IP: 
+2026-08-12 11:34:12 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /converter/html_upload - Статус: 200 - Длительность: 0.002с - IP: 
+2026-08-12 11:34:12 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /static/css/style.css - IP: 
+2026-08-12 11:34:12 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /static/css/style.css - Статус: 304 - Длительность: 0.001с - IP: 
+2026-08-12 11:34:35 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: POST /converter/html_upload - IP: 
+2026-08-12 11:34:35 | eLibrary_to_IRBIS.web.app | ERROR | app:50 | Внутренняя ошибка сервера: /converter/html_upload - Ошибка: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+Traceback (most recent call last):
+  File "/home/gasilin/INION/venv/lib/python3.12/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gasilin/INION/venv/lib/python3.12/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gasilin/INION/venv/lib/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gasilin/INION/venv/lib/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gasilin/INION/routes/converter_routes.py", line 75, in html_upload
+    file.save(save_path)
+  File "/home/gasilin/INION/venv/lib/python3.12/site-packages/werkzeug/datastructures/file_storage.py", line 129, in save
+    dst = open(dst, "wb")
+          ^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/home/gasilin/INION/resources/files_to_process/view-source_https___elibrary.ru_item.asp_id89315601.html'
+
+2026-08-12 11:34:35 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: POST /converter/html_upload - Статус: 500 - Длительность: 0.010с - IP: 
+2026-08-12 11:34:36 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /static/css/style.css - IP: 
+2026-08-12 11:34:36 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /static/css/style.css - Статус: 304 - Длительность: 0.001с - IP: 
+2026-08-12 11:37:40 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET / - IP: 
+2026-08-12 11:37:40 | eLibrary_to_IRBIS.web.app | INFO | app:60 | Рендеринг главной страницы - User-Agent: Mozilla/5.0 (compatible; YandexBot/3.0; +http://yandex.com/bots)
+2026-08-12 11:37:40 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET / - Статус: 200 - Длительность: 0.003с - IP: 
+2026-08-12 11:39:24 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /converter/ - IP: 
+2026-08-12 11:39:24 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /converter/ - Статус: 200 - Длительность: 0.001с - IP: 
+2026-08-12 11:39:24 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /static/css/style.css - IP: 
+2026-08-12 11:39:24 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /static/css/style.css - Статус: 304 - Длительность: 0.001с - IP: 
+2026-08-12 11:39:26 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /converter/html_upload - IP: 
+2026-08-12 11:39:26 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /converter/html_upload - Статус: 200 - Длительность: 0.001с - IP: 
+2026-08-12 11:39:26 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /static/css/style.css - IP: 
+2026-08-12 11:39:26 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /static/css/style.css - Статус: 304 - Длительность: 0.001с - IP: 
+2026-08-12 11:39:37 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: POST /converter/html_upload - IP: 
+2026-08-12 11:39:49 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: POST /converter/html_upload - Статус: 302 - Длительность: 11.292с - IP: 
+2026-08-12 11:39:49 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /converter/html_result - IP: 
+2026-08-12 11:39:49 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /converter/html_result - Статус: 200 - Длительность: 0.008с - IP: 
+2026-08-12 11:39:49 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /static/css/style.css - IP: 
+2026-08-12 11:39:49 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /static/css/style.css - Статус: 304 - Длительность: 0.001с - IP: 
+2026-08-12 11:40:26 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /converter/download_articles/VOX_2026_22_52_gen_2026.08.12.xlsx - IP: 
+2026-08-12 11:40:26 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /converter/download_articles/VOX_2026_22_52_gen_2026.08.12.xlsx - Статус: 200 - Длительность: 0.001с - IP: 
+2026-08-12 11:42:31 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /favicon.ico - IP: 
+2026-08-12 11:42:31 | eLibrary_to_IRBIS.web.app | WARNING | app:44 | Страница не найдена: /favicon.ico - IP: 
+2026-08-12 11:42:31 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /favicon.ico - Статус: 404 - Длительность: 0.002с - IP: 
+2026-08-12 11:43:04 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET / - IP: 
+2026-08-12 11:43:04 | eLibrary_to_IRBIS.web.app | INFO | app:60 | Рендеринг главной страницы - User-Agent: Mozilla/5.0 (compatible; YandexBot/3.0; +http://yandex.com/bots)
+2026-08-12 11:43:04 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET / - Статус: 200 - Длительность: 0.001с - IP: 
+2026-08-12 11:44:08 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /converter/txt_key_upload - IP: 
+2026-08-12 11:44:08 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /converter/txt_key_upload - Статус: 200 - Длительность: 0.002с - IP: 
+2026-08-12 13:51:46 | eLibrary_to_IRBIS.web.app | INFO | app:15 | Blueprint converter_bp успешно зарегистрирован
+2026-08-12 13:51:46 | eLibrary_to_IRBIS.web.app | INFO | app:87 | Все необходимые шаблоны найдены
+2026-08-12 13:51:46 | eLibrary_to_IRBIS.web.app | INFO | app:15 | Blueprint converter_bp успешно зарегистрирован
+2026-08-12 13:51:46 | eLibrary_to_IRBIS.web.app | INFO | app:87 | Все необходимые шаблоны найдены
+2026-08-12 13:51:46 | eLibrary_to_IRBIS.web.app | INFO | app:15 | Blueprint converter_bp успешно зарегистрирован
+2026-08-12 13:51:46 | eLibrary_to_IRBIS.web.app | INFO | app:87 | Все необходимые шаблоны найдены
+2026-08-12 14:15:12 | eLibrary_to_IRBIS.web.app | INFO | app:15 | Blueprint converter_bp успешно зарегистрирован
+2026-08-12 14:15:12 | eLibrary_to_IRBIS.web.app | INFO | app:15 | Blueprint converter_bp успешно зарегистрирован
+2026-08-12 14:15:12 | eLibrary_to_IRBIS.web.app | INFO | app:87 | Все необходимые шаблоны найдены
+2026-08-12 14:15:12 | eLibrary_to_IRBIS.web.app | INFO | app:87 | Все необходимые шаблоны найдены
+2026-08-12 14:15:12 | eLibrary_to_IRBIS.web.app | INFO | app:15 | Blueprint converter_bp успешно зарегистрирован
+2026-08-12 14:15:12 | eLibrary_to_IRBIS.web.app | INFO | app:87 | Все необходимые шаблоны найдены
+2026-08-12 14:28:45 | eLibrary_to_IRBIS.web.app | INFO | app:15 | Blueprint converter_bp успешно зарегистрирован
+2026-08-12 14:28:45 | eLibrary_to_IRBIS.web.app | INFO | app:15 | Blueprint converter_bp успешно зарегистрирован
+2026-08-12 14:28:45 | eLibrary_to_IRBIS.web.app | INFO | app:15 | Blueprint converter_bp успешно зарегистрирован
+2026-08-12 14:28:45 | eLibrary_to_IRBIS.web.app | INFO | app:87 | Все необходимые шаблоны найдены
+2026-08-12 14:28:45 | eLibrary_to_IRBIS.web.app | INFO | app:87 | Все необходимые шаблоны найдены
+2026-08-12 14:28:45 | eLibrary_to_IRBIS.web.app | INFO | app:87 | Все необходимые шаблоны найдены
+2026-08-12 14:28:51 | eLibrary_to_IRBIS.web.app | INFO | app:15 | Blueprint converter_bp успешно зарегистрирован
+2026-08-12 14:28:51 | eLibrary_to_IRBIS.web.app | INFO | app:87 | Все необходимые шаблоны найдены
+2026-08-12 14:28:51 | eLibrary_to_IRBIS.web.app | INFO | app:15 | Blueprint converter_bp успешно зарегистрирован
+2026-08-12 14:28:51 | eLibrary_to_IRBIS.web.app | INFO | app:87 | Все необходимые шаблоны найдены
+2026-08-12 14:28:51 | eLibrary_to_IRBIS.web.app | INFO | app:15 | Blueprint converter_bp успешно зарегистрирован
+2026-08-12 14:28:51 | eLibrary_to_IRBIS.web.app | INFO | app:87 | Все необходимые шаблоны найдены
+2026-08-12 14:30:30 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: HEAD / - IP: 
+2026-08-12 14:30:30 | eLibrary_to_IRBIS.web.app | INFO | app:60 | Рендеринг главной страницы - User-Agent: curl/8.5.0
+2026-08-12 14:30:30 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: HEAD / - Статус: 200 - Длительность: 0.011с - IP: 
+2026-08-12 14:32:03 | eLibrary_to_IRBIS.web.app | INFO | app:15 | Blueprint converter_bp успешно зарегистрирован
+2026-08-12 14:32:03 | eLibrary_to_IRBIS.web.app | INFO | app:15 | Blueprint converter_bp успешно зарегистрирован
+2026-08-12 14:32:03 | eLibrary_to_IRBIS.web.app | INFO | app:15 | Blueprint converter_bp успешно зарегистрирован
+2026-08-12 14:32:03 | eLibrary_to_IRBIS.web.app | INFO | app:87 | Все необходимые шаблоны найдены
+2026-08-12 14:32:03 | eLibrary_to_IRBIS.web.app | INFO | app:87 | Все необходимые шаблоны найдены
+2026-08-12 14:32:03 | eLibrary_to_IRBIS.web.app | INFO | app:87 | Все необходимые шаблоны найдены
+2026-08-12 14:32:25 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET / - IP: 
+2026-08-12 14:32:25 | eLibrary_to_IRBIS.web.app | INFO | app:60 | Рендеринг главной страницы - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 YaBrowser/26.6.0.0 Safari/537.36
+2026-08-12 14:32:25 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET / - Статус: 200 - Длительность: 0.011с - IP: 
+2026-08-12 14:32:25 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /static/css/style.css - IP: 
+2026-08-12 14:32:25 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /static/css/style.css - Статус: 200 - Длительность: 0.014с - IP: 
+2026-08-12 14:32:41 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /converter/html_upload - IP: 
+2026-08-12 14:32:41 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /converter/html_upload - Статус: 200 - Длительность: 0.003с - IP: 
+2026-08-12 14:32:41 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /static/css/style.css - IP: 
+2026-08-12 14:32:41 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /static/css/style.css - Статус: 304 - Длительность: 0.005с - IP: 
+2026-08-12 14:32:55 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET / - IP: 
+2026-08-12 14:32:55 | eLibrary_to_IRBIS.web.app | INFO | app:60 | Рендеринг главной страницы - User-Agent: Mozilla/5.0 (compatible; YandexBot/3.0; +http://yandex.com/bots)
+2026-08-12 14:32:55 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET / - Статус: 200 - Длительность: 0.001с - IP: 
+2026-08-12 14:37:58 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET / - IP: 
+2026-08-12 14:37:58 | eLibrary_to_IRBIS.web.app | INFO | app:60 | Рендеринг главной страницы - User-Agent: Mozilla/5.0 (compatible; YandexBot/3.0; +http://yandex.com/bots)
+2026-08-12 14:37:58 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET / - Статус: 200 - Длительность: 0.007с - IP: 
+2026-08-12 14:39:19 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: POST /converter/html_upload - IP: 
+2026-08-12 14:39:24 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET / - IP: 
+2026-08-12 14:39:24 | eLibrary_to_IRBIS.web.app | INFO | app:60 | Рендеринг главной страницы - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 YaBrowser/26.6.0.0 Safari/537.36
+2026-08-12 14:39:24 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET / - Статус: 200 - Длительность: 0.007с - IP: 
+2026-08-12 14:39:24 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /static/css/style.css - IP: 
+2026-08-12 14:39:24 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /static/css/style.css - Статус: 304 - Длительность: 0.005с - IP: 
+2026-08-12 14:39:26 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /converter/html_upload - IP: 
+2026-08-12 14:39:26 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /converter/html_upload - Статус: 200 - Длительность: 0.002с - IP: 
+2026-08-12 14:39:26 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /static/css/style.css - IP: 
+2026-08-12 14:39:26 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /static/css/style.css - Статус: 304 - Длительность: 0.001с - IP: 
+2026-08-12 14:39:37 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: POST /converter/html_upload - Статус: 302 - Длительность: 17.423с - IP: 
+2026-08-12 14:39:37 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: POST /converter/html_upload - IP: 
+2026-08-12 14:39:54 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: POST /converter/html_upload - Статус: 302 - Длительность: 16.467с - IP: 
+2026-08-12 14:39:54 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /converter/html_result - IP: 
+2026-08-12 14:39:54 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /converter/html_result - Статус: 200 - Длительность: 0.005с - IP: 
+2026-08-12 14:39:54 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /static/css/style.css - IP: 
+2026-08-12 14:39:54 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /static/css/style.css - Статус: 304 - Длительность: 0.001с - IP: 
+2026-08-12 14:40:31 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /converter/html_upload - IP: 
+2026-08-12 14:40:31 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /converter/html_upload - Статус: 200 - Длительность: 0.002с - IP: 
+2026-08-12 14:40:32 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /static/css/style.css - IP: 
+2026-08-12 14:40:32 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /static/css/style.css - Статус: 304 - Длительность: 0.001с - IP: 
+2026-08-12 14:40:50 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: POST /converter/html_upload - IP: 
+2026-08-12 14:41:03 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: POST /converter/html_upload - Статус: 302 - Длительность: 13.494с - IP: 
+2026-08-12 14:41:03 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /converter/html_result - IP: 
+2026-08-12 14:41:03 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /converter/html_result - Статус: 200 - Длительность: 0.003с - IP: 
+2026-08-12 14:41:03 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /static/css/style.css - IP: 
+2026-08-12 14:41:03 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /static/css/style.css - Статус: 304 - Длительность: 0.001с - IP: 
+2026-08-12 14:41:38 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /converter/download_articles/phillet_hse_2026_9_1_gen_2026.08.12.xlsx - IP: 
+2026-08-12 14:41:38 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /converter/download_articles/phillet_hse_2026_9_1_gen_2026.08.12.xlsx - Статус: 200 - Длительность: 0.001с - IP: 
+2026-08-12 14:41:41 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /converter/download_articles/phillet_hse_2026_9_2_gen_2026.08.12.xlsx - IP: 
+2026-08-12 14:41:41 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /converter/download_articles/phillet_hse_2026_9_2_gen_2026.08.12.xlsx - Статус: 200 - Длительность: 0.001с - IP: 
+2026-08-12 14:41:53 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /converter/html_upload - IP: 
+2026-08-12 14:41:53 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /converter/html_upload - Статус: 200 - Длительность: 0.001с - IP: 
+2026-08-12 14:41:53 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /static/css/style.css - IP: 
+2026-08-12 14:41:53 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /static/css/style.css - Статус: 304 - Длительность: 0.001с - IP: 
+2026-08-12 14:42:14 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: POST /converter/html_upload - IP: 
+2026-08-12 14:42:28 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: POST /converter/html_upload - Статус: 302 - Длительность: 14.229с - IP: 
+2026-08-12 14:42:28 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /converter/html_result - IP: 
+2026-08-12 14:42:28 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /converter/html_result - Статус: 200 - Длительность: 0.001с - IP: 
+2026-08-12 14:42:28 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /static/css/style.css - IP: 
+2026-08-12 14:42:28 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /static/css/style.css - Статус: 304 - Длительность: 0.001с - IP: 
+2026-08-12 14:42:45 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /converter/html_upload - IP: 
+2026-08-12 14:42:45 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /converter/html_upload - Статус: 200 - Длительность: 0.001с - IP: 
+2026-08-12 14:42:45 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /static/css/style.css - IP: 
+2026-08-12 14:42:45 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /static/css/style.css - Статус: 304 - Длительность: 0.001с - IP: 
+2026-08-12 14:43:00 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: POST /converter/html_upload - IP: 
+2026-08-12 14:43:21 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: POST /converter/html_upload - Статус: 302 - Длительность: 21.191с - IP: 
+2026-08-12 14:43:21 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /converter/html_result - IP: 
+2026-08-12 14:43:21 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /converter/html_result - Статус: 200 - Длительность: 0.001с - IP: 
+2026-08-12 14:43:21 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /static/css/style.css - IP: 
+2026-08-12 14:43:21 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /static/css/style.css - Статус: 304 - Длительность: 0.001с - IP: 
+2026-08-12 14:43:32 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /converter/html_upload - IP: 
+2026-08-12 14:43:32 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /converter/html_upload - Статус: 200 - Длительность: 0.001с - IP: 
+2026-08-12 14:43:32 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /static/css/style.css - IP: 
+2026-08-12 14:43:32 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /static/css/style.css - Статус: 304 - Длительность: 0.001с - IP: 
+2026-08-12 14:43:48 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: POST /converter/html_upload - IP: 
+2026-08-12 14:44:08 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: POST /converter/html_upload - Статус: 302 - Длительность: 20.510с - IP: 
+2026-08-12 14:44:08 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /converter/html_result - IP: 
+2026-08-12 14:44:08 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /converter/html_result - Статус: 200 - Длительность: 0.001с - IP: 
+2026-08-12 14:44:08 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /static/css/style.css - IP: 
+2026-08-12 14:44:08 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /static/css/style.css - Статус: 304 - Длительность: 0.001с - IP: 
+2026-08-12 14:44:18 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /converter/html_upload - IP: 
+2026-08-12 14:44:18 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /converter/html_upload - Статус: 200 - Длительность: 0.001с - IP: 
+2026-08-12 14:44:19 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /static/css/style.css - IP: 
+2026-08-12 14:44:19 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /static/css/style.css - Статус: 304 - Длительность: 0.001с - IP: 
+2026-08-12 14:44:32 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: POST /converter/html_upload - IP: 
+2026-08-12 14:44:43 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: POST /converter/html_upload - Статус: 302 - Длительность: 10.976с - IP: 
+2026-08-12 14:44:43 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /converter/html_result - IP: 
+2026-08-12 14:44:43 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /converter/html_result - Статус: 200 - Длительность: 0.001с - IP: 
+2026-08-12 14:44:44 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /static/css/style.css - IP: 
+2026-08-12 14:44:44 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /static/css/style.css - Статус: 304 - Длительность: 0.001с - IP: 
+2026-08-12 14:44:49 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /converter/download_articles/Соцобоз_2023_22_1_gen_2026.08.12.xlsx - IP: 
+2026-08-12 14:44:49 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /converter/download_articles/Соцобоз_2023_22_1_gen_2026.08.12.xlsx - Статус: 200 - Длительность: 0.001с - IP: 
+2026-08-12 14:44:56 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /converter/download_articles/Соцобоз_2023_22_2_gen_2026.08.12.xlsx - IP: 
+2026-08-12 14:44:56 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /converter/download_articles/Соцобоз_2023_22_2_gen_2026.08.12.xlsx - Статус: 200 - Длительность: 0.001с - IP: 
+2026-08-12 14:45:02 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /converter/download_articles/Соцобоз_2023_22_3_gen_2026.08.12.xlsx - IP: 
+2026-08-12 14:45:02 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /converter/download_articles/Соцобоз_2023_22_3_gen_2026.08.12.xlsx - Статус: 200 - Длительность: 0.001с - IP: 
+2026-08-12 14:45:04 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /converter/download_articles/Соцобоз_2023_22_4_gen_2026.08.12.xlsx - IP: 
+2026-08-12 14:45:04 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /converter/download_articles/Соцобоз_2023_22_4_gen_2026.08.12.xlsx - Статус: 200 - Длительность: 0.001с - IP: 
+2026-08-12 14:45:59 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET / - IP: 
+2026-08-12 14:45:59 | eLibrary_to_IRBIS.web.app | INFO | app:60 | Рендеринг главной страницы - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.85 Safari/537.36 Edg/90.0.818.46
+2026-08-12 14:45:59 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET / - Статус: 200 - Длительность: 0.001с - IP: 
+2026-08-12 14:49:11 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET / - IP: 
+2026-08-12 14:49:11 | eLibrary_to_IRBIS.web.app | INFO | app:60 | Рендеринг главной страницы - User-Agent: Mozilla/5.0 (compatible; YandexBot/3.0; +http://yandex.com/bots)
+2026-08-12 14:49:11 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET / - Статус: 200 - Длительность: 0.001с - IP: 
+2026-08-12 14:51:52 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET / - IP: 
+2026-08-12 14:51:52 | eLibrary_to_IRBIS.web.app | INFO | app:60 | Рендеринг главной страницы - User-Agent: Mozilla/5.0 (compatible; CensysInspect/1.1; +https://about.censys.io/)
+2026-08-12 14:51:52 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET / - Статус: 200 - Длительность: 0.001с - IP: 
+2026-08-12 14:51:57 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /favicon.ico - IP: 
+2026-08-12 14:51:57 | eLibrary_to_IRBIS.web.app | WARNING | app:44 | Страница не найдена: /favicon.ico - IP: 
+2026-08-12 14:51:57 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /favicon.ico - Статус: 404 - Длительность: 0.003с - IP: 
+2026-08-12 14:53:39 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /.well-known/security.txt - IP: 
+2026-08-12 14:53:39 | eLibrary_to_IRBIS.web.app | WARNING | app:44 | Страница не найдена: /.well-known/security.txt - IP: 
+2026-08-12 14:53:39 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /.well-known/security.txt - Статус: 404 - Длительность: 0.002с - IP: 
+2026-08-12 15:14:32 | eLibrary_to_IRBIS.web.app | INFO | app:15 | Blueprint converter_bp успешно зарегистрирован
+2026-08-12 15:14:32 | eLibrary_to_IRBIS.web.app | INFO | app:15 | Blueprint converter_bp успешно зарегистрирован
+2026-08-12 15:14:32 | eLibrary_to_IRBIS.web.app | INFO | app:15 | Blueprint converter_bp успешно зарегистрирован
+2026-08-12 15:14:32 | eLibrary_to_IRBIS.web.app | INFO | app:87 | Все необходимые шаблоны найдены
+2026-08-12 15:14:32 | eLibrary_to_IRBIS.web.app | INFO | app:87 | Все необходимые шаблоны найдены
+2026-08-12 15:14:32 | eLibrary_to_IRBIS.web.app | INFO | app:87 | Все необходимые шаблоны найдены
+2026-08-12 15:14:35 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /events - IP: 
+2026-08-12 15:14:35 | eLibrary_to_IRBIS.web.app | WARNING | app:44 | Страница не найдена: /events - IP: 
+2026-08-12 15:14:35 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /events - Статус: 404 - Длительность: 0.032с - IP: 
+2026-08-12 15:17:03 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET / - IP: 
+2026-08-12 15:17:03 | eLibrary_to_IRBIS.web.app | INFO | app:60 | Рендеринг главной страницы - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 YaBrowser/26.6.0.0 Safari/537.36
+2026-08-12 15:17:03 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET / - Статус: 200 - Длительность: 0.004с - IP: 
+2026-08-12 15:17:03 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /static/css/style.css - IP: 
+2026-08-12 15:17:03 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /static/css/style.css - Статус: 200 - Длительность: 0.015с - IP: 
+2026-08-12 15:17:03 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /favicon.ico - IP: 
+2026-08-12 15:17:03 | eLibrary_to_IRBIS.web.app | WARNING | app:44 | Страница не найдена: /favicon.ico - IP: 
+2026-08-12 15:17:03 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /favicon.ico - Статус: 404 - Длительность: 0.006с - IP: 
+2026-08-12 15:17:30 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /robots.txt - IP: 
+2026-08-12 15:17:30 | eLibrary_to_IRBIS.web.app | WARNING | app:44 | Страница не найдена: /robots.txt - IP: 
+2026-08-12 15:17:30 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /robots.txt - Статус: 404 - Длительность: 0.001с - IP: 
+2026-08-12 15:17:31 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET / - IP: 
+2026-08-12 15:17:31 | eLibrary_to_IRBIS.web.app | INFO | app:60 | Рендеринг главной страницы - User-Agent: Mozilla/5.0 (compatible; YandexBot/3.0; +http://yandex.com/bots)
+2026-08-12 15:17:31 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET / - Статус: 200 - Длительность: 0.001с - IP: 
+2026-08-12 15:18:16 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /favicon.ico - IP: 
+2026-08-12 15:18:16 | eLibrary_to_IRBIS.web.app | WARNING | app:44 | Страница не найдена: /favicon.ico - IP: 
+2026-08-12 15:18:16 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /favicon.ico - Статус: 404 - Длительность: 0.001с - IP: 
+2026-08-12 15:18:34 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET / - IP: 
+2026-08-12 15:18:34 | eLibrary_to_IRBIS.web.app | INFO | app:60 | Рендеринг главной страницы - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 YaBrowser/26.6.0.0 Safari/537.36
+2026-08-12 15:18:34 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET / - Статус: 200 - Длительность: 0.003с - IP: 
+2026-08-12 15:18:34 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /static/css/style.css - IP: 
+2026-08-12 15:18:34 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /static/css/style.css - Статус: 304 - Длительность: 0.001с - IP: 
+2026-08-12 15:20:04 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET / - IP: 
+2026-08-12 15:20:04 | eLibrary_to_IRBIS.web.app | INFO | app:60 | Рендеринг главной страницы - User-Agent: Mozilla/5.0 (compatible; CensysInspect/1.1; +https://about.censys.io/)
+2026-08-12 15:20:04 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET / - Статус: 200 - Длительность: 0.001с - IP: 
+2026-08-12 15:20:07 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /favicon.ico - IP: 
+2026-08-12 15:20:07 | eLibrary_to_IRBIS.web.app | WARNING | app:44 | Страница не найдена: /favicon.ico - IP: 
+2026-08-12 15:20:07 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /favicon.ico - Статус: 404 - Длительность: 0.001с - IP: 
+2026-08-12 15:20:18 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /sitemap.xml - IP: 
+2026-08-12 15:20:18 | eLibrary_to_IRBIS.web.app | WARNING | app:44 | Страница не найдена: /sitemap.xml - IP: 
+2026-08-12 15:20:18 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /sitemap.xml - Статус: 404 - Длительность: 0.001с - IP: 
+2026-08-12 15:25:18 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET / - IP: 
+2026-08-12 15:25:18 | eLibrary_to_IRBIS.web.app | INFO | app:60 | Рендеринг главной страницы - User-Agent: Mozilla/5.0 (compatible; YandexBot/3.0; +http://yandex.com/bots)
+2026-08-12 15:25:18 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET / - Статус: 200 - Длительность: 0.001с - IP: 
+2026-08-12 17:04:23 | eLibrary_to_IRBIS.web.app | INFO | app:15 | Blueprint converter_bp успешно зарегистрирован
+2026-08-12 17:04:23 | eLibrary_to_IRBIS.web.app | INFO | app:15 | Blueprint converter_bp успешно зарегистрирован
+2026-08-12 17:04:23 | eLibrary_to_IRBIS.web.app | INFO | app:15 | Blueprint converter_bp успешно зарегистрирован
+2026-08-12 17:04:23 | eLibrary_to_IRBIS.web.app | INFO | app:87 | Все необходимые шаблоны найдены
+2026-08-12 17:04:23 | eLibrary_to_IRBIS.web.app | INFO | app:87 | Все необходимые шаблоны найдены
+2026-08-12 17:04:23 | eLibrary_to_IRBIS.web.app | INFO | app:87 | Все необходимые шаблоны найдены
+2026-08-12 17:04:45 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET / - IP: 
+2026-08-12 17:04:45 | eLibrary_to_IRBIS.web.app | INFO | app:60 | Рендеринг главной страницы - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 YaBrowser/26.6.0.0 Safari/537.36
+2026-08-12 17:04:45 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET / - Статус: 200 - Длительность: 0.012с - IP: 
+2026-08-12 17:04:45 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /static/css/style.css - IP: 
+2026-08-12 17:04:45 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /static/css/style.css - Статус: 200 - Длительность: 0.013с - IP: 
+2026-08-12 17:04:45 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /favicon.ico - IP: 
+2026-08-12 17:04:45 | eLibrary_to_IRBIS.web.app | WARNING | app:44 | Страница не найдена: /favicon.ico - IP: 
+2026-08-12 17:04:45 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /favicon.ico - Статус: 404 - Длительность: 0.009с - IP: 
+2026-08-12 17:04:52 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /converter/html_upload - IP: 
+2026-08-12 17:04:52 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /converter/html_upload - Статус: 200 - Длительность: 0.003с - IP: 
+2026-08-12 17:04:52 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /static/css/style.css - IP: 
+2026-08-12 17:04:52 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /static/css/style.css - Статус: 304 - Длительность: 0.005с - IP: 
+2026-08-12 17:04:54 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /converter/excel_upload - IP: 
+2026-08-12 17:04:54 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /converter/excel_upload - Статус: 200 - Длительность: 0.005с - IP: 
+2026-08-12 17:04:54 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /static/css/style.css - IP: 
+2026-08-12 17:04:54 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /static/css/style.css - Статус: 304 - Длительность: 0.001с - IP: 
+2026-08-12 17:04:56 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /converter/txt_key_upload - IP: 
+2026-08-12 17:04:56 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /converter/txt_key_upload - Статус: 200 - Длительность: 0.003с - IP: 
+2026-08-12 17:04:56 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /static/css/style.css - IP: 
+2026-08-12 17:04:56 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /static/css/style.css - Статус: 304 - Длительность: 0.001с - IP: 
+2026-08-12 17:04:57 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /converter/excel_key_upload - IP: 
+2026-08-12 17:04:57 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /converter/excel_key_upload - Статус: 200 - Длительность: 0.003с - IP: 
+2026-08-12 17:04:57 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /static/css/style.css - IP: 
+2026-08-12 17:04:57 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /static/css/style.css - Статус: 304 - Длительность: 0.001с - IP: 
+2026-08-12 17:05:22 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /robots.txt - IP: 
+2026-08-12 17:05:22 | eLibrary_to_IRBIS.web.app | WARNING | app:44 | Страница не найдена: /robots.txt - IP: 
+2026-08-12 17:05:22 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /robots.txt - Статус: 404 - Длительность: 0.001с - IP: 
+2026-08-12 17:05:23 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET / - IP: 
+2026-08-12 17:05:23 | eLibrary_to_IRBIS.web.app | INFO | app:60 | Рендеринг главной страницы - User-Agent: Mozilla/5.0 (compatible; YandexBot/3.0; +http://yandex.com/bots)
+2026-08-12 17:05:23 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET / - Статус: 200 - Длительность: 0.001с - IP: 
+2026-08-12 17:06:35 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET / - IP: 
+2026-08-12 17:06:35 | eLibrary_to_IRBIS.web.app | INFO | app:60 | Рендеринг главной страницы - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36
+2026-08-12 17:06:35 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET / - Статус: 200 - Длительность: 0.001с - IP: 
+2026-08-12 17:11:02 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET / - IP: 
+2026-08-12 17:11:02 | eLibrary_to_IRBIS.web.app | INFO | app:60 | Рендеринг главной страницы - User-Agent: Mozilla/5.0 (compatible; YandexBot/3.0; +http://yandex.com/bots)
+2026-08-12 17:11:02 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET / - Статус: 200 - Длительность: 0.001с - IP: 
+2026-08-12 17:17:22 | eLibrary_to_IRBIS.web.app | INFO | app:15 | Blueprint converter_bp успешно зарегистрирован
+2026-08-12 17:17:22 | eLibrary_to_IRBIS.web.app | INFO | app:15 | Blueprint converter_bp успешно зарегистрирован
+2026-08-12 17:17:22 | eLibrary_to_IRBIS.web.app | INFO | app:15 | Blueprint converter_bp успешно зарегистрирован
+2026-08-12 17:17:22 | eLibrary_to_IRBIS.web.app | INFO | app:87 | Все необходимые шаблоны найдены
+2026-08-12 17:17:22 | eLibrary_to_IRBIS.web.app | INFO | app:87 | Все необходимые шаблоны найдены
+2026-08-12 17:17:22 | eLibrary_to_IRBIS.web.app | INFO | app:87 | Все необходимые шаблоны найдены
+2026-08-12 17:18:00 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET / - IP: 
+2026-08-12 17:18:00 | eLibrary_to_IRBIS.web.app | INFO | app:60 | Рендеринг главной страницы - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 YaBrowser/26.6.0.0 Safari/537.36
+2026-08-12 17:18:00 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET / - Статус: 200 - Длительность: 0.011с - IP: 
+2026-08-12 17:18:00 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /static/css/style.css - IP: 
+2026-08-12 17:18:00 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /static/css/style.css - Статус: 200 - Длительность: 0.012с - IP: 
+2026-08-12 17:18:00 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /favicon.ico - IP: 
+2026-08-12 17:18:00 | eLibrary_to_IRBIS.web.app | WARNING | app:44 | Страница не найдена: /favicon.ico - IP: 
+2026-08-12 17:18:00 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /favicon.ico - Статус: 404 - Длительность: 0.007с - IP: 
+2026-08-12 17:18:09 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /favicon.ico - IP: 
+2026-08-12 17:18:09 | eLibrary_to_IRBIS.web.app | WARNING | app:44 | Страница не найдена: /favicon.ico - IP: 
+2026-08-12 17:18:09 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /favicon.ico - Статус: 404 - Длительность: 0.002с - IP: 
+2026-08-12 17:18:25 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET / - IP: 
+2026-08-12 17:18:25 | eLibrary_to_IRBIS.web.app | INFO | app:60 | Рендеринг главной страницы - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 YaBrowser/26.6.0.0 Safari/537.36
+2026-08-12 17:18:25 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET / - Статус: 200 - Длительность: 0.001с - IP: 
+2026-08-12 17:18:25 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /static/css/style.css - IP: 
+2026-08-12 17:18:25 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /static/css/style.css - Статус: 304 - Длительность: 0.001с - IP: 
+2026-08-12 17:18:26 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /robots.txt - IP: 
+2026-08-12 17:18:26 | eLibrary_to_IRBIS.web.app | WARNING | app:44 | Страница не найдена: /robots.txt - IP: 
+2026-08-12 17:18:26 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /robots.txt - Статус: 404 - Длительность: 0.006с - IP: 
+2026-08-12 17:18:27 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET / - IP: 
+2026-08-12 17:18:27 | eLibrary_to_IRBIS.web.app | INFO | app:60 | Рендеринг главной страницы - User-Agent: Mozilla/5.0 (compatible; YandexBot/3.0; +http://yandex.com/bots)
+2026-08-12 17:18:27 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET / - Статус: 200 - Длительность: 0.001с - IP: 
+2026-08-12 17:20:31 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /converter/excel_key_upload - IP: 
+2026-08-12 17:20:31 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /converter/excel_key_upload - Статус: 200 - Длительность: 0.015с - IP: 
+2026-08-12 17:20:31 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /static/css/style.css - IP: 
+2026-08-12 17:20:31 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /static/css/style.css - Статус: 304 - Длительность: 0.001с - IP: 
+2026-08-12 17:21:18 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET / - IP: 
+2026-08-12 17:21:18 | eLibrary_to_IRBIS.web.app | INFO | app:60 | Рендеринг главной страницы - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.85 Safari/537.36 Edg/90.0.818.46
+2026-08-12 17:21:18 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET / - Статус: 200 - Длительность: 0.001с - IP: 
+2026-08-12 17:21:31 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /converter/ - IP: 
+2026-08-12 17:21:31 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /converter/ - Статус: 200 - Длительность: 0.003с - IP: 
+2026-08-12 17:21:31 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /static/css/style.css - IP: 
+2026-08-12 17:21:31 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /static/css/style.css - Статус: 304 - Длительность: 0.005с - IP: 
+2026-08-13 08:49:46 | eLibrary_to_IRBIS.web.app | INFO | app:15 | Blueprint converter_bp успешно зарегистрирован
+2026-08-13 08:49:46 | eLibrary_to_IRBIS.web.app | INFO | app:15 | Blueprint converter_bp успешно зарегистрирован
+2026-08-13 08:49:46 | eLibrary_to_IRBIS.web.app | INFO | app:15 | Blueprint converter_bp успешно зарегистрирован
+2026-08-13 08:49:46 | eLibrary_to_IRBIS.web.app | INFO | app:87 | Все необходимые шаблоны найдены
+2026-08-13 08:49:46 | eLibrary_to_IRBIS.web.app | INFO | app:87 | Все необходимые шаблоны найдены
+2026-08-13 08:49:46 | eLibrary_to_IRBIS.web.app | INFO | app:87 | Все необходимые шаблоны найдены
+2026-08-13 08:50:31 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /favicon.ico - IP: 
+2026-08-13 08:50:31 | eLibrary_to_IRBIS.web.app | WARNING | app:44 | Страница не найдена: /favicon.ico - IP: 
+2026-08-13 08:50:31 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /favicon.ico - Статус: 404 - Длительность: 0.012с - IP: 
+2026-08-13 08:50:32 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET / - IP: 
+2026-08-13 08:50:32 | eLibrary_to_IRBIS.web.app | INFO | app:60 | Рендеринг главной страницы - User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 YaBrowser/25.6.0.0 Safari/537.36
+2026-08-13 08:50:32 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET / - Статус: 200 - Длительность: 0.009с - IP: 
+2026-08-13 08:50:32 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /static/css/style.css - IP: 
+2026-08-13 08:50:32 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /static/css/style.css - Статус: 200 - Длительность: 0.012с - IP: 
+2026-08-13 08:50:32 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /favicon.ico - IP: 
+2026-08-13 08:50:32 | eLibrary_to_IRBIS.web.app | WARNING | app:44 | Страница не найдена: /favicon.ico - IP: 
+2026-08-13 08:50:32 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /favicon.ico - Статус: 404 - Длительность: 0.002с - IP: 
+2026-08-13 08:50:45 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /converter/html_upload - IP: 
+2026-08-13 08:50:45 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /converter/html_upload - Статус: 200 - Длительность: 0.004с - IP: 
+2026-08-13 08:50:45 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /static/css/style.css - IP: 
+2026-08-13 08:50:45 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /static/css/style.css - Статус: 304 - Длительность: 0.005с - IP: 
+2026-08-13 08:56:14 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /converter/excel_upload - IP: 
+2026-08-13 08:56:14 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /converter/excel_upload - Статус: 200 - Длительность: 0.004с - IP: 
+2026-08-13 08:56:14 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /static/css/style.css - IP: 
+2026-08-13 08:56:14 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /static/css/style.css - Статус: 304 - Длительность: 0.005с - IP: 
+2026-08-13 08:56:26 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /converter/txt_key_upload - IP: 
+2026-08-13 08:56:26 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /converter/txt_key_upload - Статус: 200 - Длительность: 0.003с - IP: 
+2026-08-13 08:56:26 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /static/css/style.css - IP: 
+2026-08-13 08:56:26 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /static/css/style.css - Статус: 304 - Длительность: 0.001с - IP: 
+2026-08-13 08:57:10 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /converter/excel_key_upload - IP: 
+2026-08-13 08:57:10 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /converter/excel_key_upload - Статус: 200 - Длительность: 0.003с - IP: 
+2026-08-13 08:57:10 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /static/css/style.css - IP: 
+2026-08-13 08:57:10 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /static/css/style.css - Статус: 304 - Длительность: 0.001с - IP: 
+2026-08-13 09:05:02 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /converter/excel_upload - IP: 
+2026-08-13 09:05:02 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /converter/excel_upload - Статус: 200 - Длительность: 0.001с - IP: 
+2026-08-13 09:05:02 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /static/css/style.css - IP: 
+2026-08-13 09:05:02 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /static/css/style.css - Статус: 304 - Длительность: 0.001с - IP: 
+2026-08-13 09:05:22 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: POST /converter/excel_upload - IP: 
+2026-08-13 09:05:22 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: POST /converter/excel_upload - Статус: 302 - Длительность: 0.347с - IP: 
+2026-08-13 09:05:22 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /converter/excel_result - IP: 
+2026-08-13 09:05:22 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /converter/excel_result - Статус: 200 - Длительность: 0.005с - IP: 
+2026-08-13 09:05:22 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /static/css/style.css - IP: 
+2026-08-13 09:05:22 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /static/css/style.css - Статус: 304 - Длительность: 0.001с - IP: 
+2026-08-13 09:05:38 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /converter/download_txt_list/VOX_2026_52_2026_08_13.txt - IP: 
+2026-08-13 09:05:38 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /converter/download_txt_list/VOX_2026_52_2026_08_13.txt - Статус: 200 - Длительность: 0.001с - IP: 
+2026-08-13 09:09:30 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /converter/ - IP: 
+2026-08-13 09:09:30 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /converter/ - Статус: 200 - Длительность: 0.007с - IP: 
+2026-08-13 09:09:30 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /static/css/style.css - IP: 
+2026-08-13 09:09:30 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /static/css/style.css - Статус: 304 - Длительность: 0.001с - IP: 
+2026-08-13 09:15:31 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /wp-admin/install.php - IP: 
+2026-08-13 09:15:31 | eLibrary_to_IRBIS.web.app | WARNING | app:44 | Страница не найдена: /wp-admin/install.php - IP: 
+2026-08-13 09:15:31 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /wp-admin/install.php - Статус: 404 - Длительность: 0.002с - IP: 
+2026-08-13 09:19:19 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET / - IP: 
+2026-08-13 09:19:19 | eLibrary_to_IRBIS.web.app | INFO | app:60 | Рендеринг главной страницы - User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1
+2026-08-13 09:19:19 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET / - Статус: 200 - Длительность: 0.003с - IP: 
+2026-08-13 09:22:00 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /converter/excel_key_upload - IP: 
+2026-08-13 09:22:00 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /converter/excel_key_upload - Статус: 200 - Длительность: 0.001с - IP: 
+2026-08-13 09:25:46 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /converter/html_upload - IP: 
+2026-08-13 09:25:46 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /converter/html_upload - Статус: 200 - Длительность: 0.002с - IP: 
+2026-08-13 09:25:46 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /static/css/style.css - IP: 
+2026-08-13 09:25:46 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /static/css/style.css - Статус: 304 - Длительность: 0.001с - IP: 
+2026-08-13 09:32:16 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET / - IP: 
+2026-08-13 09:32:16 | eLibrary_to_IRBIS.web.app | INFO | app:60 | Рендеринг главной страницы - User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1
+2026-08-13 09:32:16 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET / - Статус: 200 - Длительность: 0.001с - IP: 
+2026-08-13 09:38:50 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET / - IP: 
+2026-08-13 09:38:50 | eLibrary_to_IRBIS.web.app | INFO | app:60 | Рендеринг главной страницы - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36
+2026-08-13 09:38:50 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET / - Статус: 200 - Длительность: 0.001с - IP: 
+2026-08-13 09:38:52 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET / - IP: 
+2026-08-13 09:38:52 | eLibrary_to_IRBIS.web.app | INFO | app:60 | Рендеринг главной страницы - User-Agent: Mozilla/5.0 (compatible)
+2026-08-13 09:38:52 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET / - Статус: 200 - Длительность: 0.001с - IP: 
+2026-08-13 09:38:52 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: OPTIONS / - IP: 
+2026-08-13 09:38:52 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: OPTIONS / - Статус: 200 - Длительность: 0.000с - IP: 
+2026-08-13 09:38:52 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /favicon.ico - IP: 
+2026-08-13 09:38:52 | eLibrary_to_IRBIS.web.app | WARNING | app:44 | Страница не найдена: /favicon.ico - IP: 
+2026-08-13 09:38:52 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /favicon.ico - Статус: 404 - Длительность: 0.001с - IP: 
+2026-08-13 09:38:52 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: ULTH / - IP: 
+2026-08-13 09:38:52 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: ULTH / - Статус: 405 - Длительность: 0.000с - IP: 
+2026-08-13 09:38:52 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: POST / - IP: 
+2026-08-13 09:38:52 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: POST / - Статус: 405 - Длительность: 0.001с - IP: 
+2026-08-13 09:41:44 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /converter/html_upload - IP: 
+2026-08-13 09:41:44 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /converter/html_upload - Статус: 200 - Длительность: 0.001с - IP: 
+2026-08-13 09:52:59 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /converter/excel_upload - IP: 
+2026-08-13 09:52:59 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /converter/excel_upload - Статус: 200 - Длительность: 0.001с - IP: 
+2026-08-13 10:00:22 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /dispatch.asp - IP: 
+2026-08-13 10:00:22 | eLibrary_to_IRBIS.web.app | WARNING | app:44 | Страница не найдена: /dispatch.asp - IP: 
+2026-08-13 10:00:22 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /dispatch.asp - Статус: 404 - Длительность: 0.001с - IP: 
+2026-08-13 10:02:58 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /converter/txt_key_upload - IP: 
+2026-08-13 10:02:58 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /converter/txt_key_upload - Статус: 200 - Длительность: 0.002с - IP: 
+2026-08-13 10:14:14 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /converter/ - IP: 
+2026-08-13 10:14:14 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /converter/ - Статус: 200 - Длительность: 0.001с - IP: 
+2026-08-13 10:16:09 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET / - IP: 
+2026-08-13 10:16:09 | eLibrary_to_IRBIS.web.app | INFO | app:60 | Рендеринг главной страницы - User-Agent: Mozilla/5.0 (compatible; FlowIQLabsBot/1.0; +https://flowiq-labs.com/scanning-info)
+2026-08-13 10:16:09 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET / - Статус: 200 - Длительность: 0.001с - IP: 
+2026-08-13 10:16:12 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /favicon.ico - IP: 
+2026-08-13 10:16:12 | eLibrary_to_IRBIS.web.app | WARNING | app:44 | Страница не найдена: /favicon.ico - IP: 
+2026-08-13 10:16:12 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /favicon.ico - Статус: 404 - Длительность: 0.001с - IP: 
+2026-08-20 06:51:46 | eLibrary_to_IRBIS.web.app | INFO | app:15 | Blueprint converter_bp успешно зарегистрирован
+2026-08-20 06:51:46 | eLibrary_to_IRBIS.web.app | INFO | app:15 | Blueprint converter_bp успешно зарегистрирован
+2026-08-20 06:51:46 | eLibrary_to_IRBIS.web.app | INFO | app:15 | Blueprint converter_bp успешно зарегистрирован
+2026-08-20 06:51:46 | eLibrary_to_IRBIS.web.app | INFO | app:87 | Все необходимые шаблоны найдены
+2026-08-20 06:51:46 | eLibrary_to_IRBIS.web.app | INFO | app:87 | Все необходимые шаблоны найдены
+2026-08-20 06:51:46 | eLibrary_to_IRBIS.web.app | INFO | app:87 | Все необходимые шаблоны найдены
+2026-08-20 06:52:46 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET / - IP: 
+2026-08-20 06:52:46 | eLibrary_to_IRBIS.web.app | INFO | app:60 | Рендеринг главной страницы - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 YaBrowser/26.6.0.0 Safari/537.36
+2026-08-20 06:52:46 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET / - Статус: 200 - Длительность: 0.015с - IP: 
+2026-08-20 06:52:46 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /static/css/style.css - IP: 
+2026-08-20 06:52:46 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /static/css/style.css - Статус: 304 - Длительность: 0.016с - IP: 
+2026-08-20 06:52:46 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /favicon.ico - IP: 
+2026-08-20 06:52:46 | eLibrary_to_IRBIS.web.app | WARNING | app:44 | Страница не найдена: /favicon.ico - IP: 
+2026-08-20 06:52:46 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /favicon.ico - Статус: 404 - Длительность: 0.003с - IP: 
+2026-08-20 06:52:51 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /converter/excel_upload - IP: 
+2026-08-20 06:52:51 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /converter/excel_upload - Статус: 200 - Длительность: 0.003с - IP: 
+2026-08-20 06:52:51 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /static/css/style.css - IP: 
+2026-08-20 06:52:51 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /static/css/style.css - Статус: 304 - Длительность: 0.005с - IP: 
+2026-08-20 06:54:49 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: POST /converter/excel_upload - IP: 
+2026-08-20 06:54:50 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: POST /converter/excel_upload - Статус: 302 - Длительность: 0.483с - IP: 
+2026-08-20 06:54:50 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /converter/excel_result - IP: 
+2026-08-20 06:54:50 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /converter/excel_result - Статус: 200 - Длительность: 0.009с - IP: 
+2026-08-20 06:54:50 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /static/css/style.css - IP: 
+2026-08-20 06:54:50 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /static/css/style.css - Статус: 304 - Длительность: 0.001с - IP: 
+2026-08-20 06:55:08 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /converter/download_txt_list/Соцобоз_2023_4_2026_08_20.txt - IP: 
+2026-08-20 06:55:08 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /converter/download_txt_list/Соцобоз_2023_4_2026_08_20.txt - Статус: 200 - Длительность: 0.001с - IP: 
+2026-08-20 06:55:11 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /converter/download_txt_list/Соцобоз_2023_1_2026_08_20.txt - IP: 
+2026-08-20 06:55:11 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /converter/download_txt_list/Соцобоз_2023_1_2026_08_20.txt - Статус: 200 - Длительность: 0.005с - IP: 
+2026-08-20 06:55:15 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /converter/download_txt_list/Соцобоз_2023_3_2026_08_20.txt - IP: 
+2026-08-20 06:55:15 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /converter/download_txt_list/Соцобоз_2023_3_2026_08_20.txt - Статус: 200 - Длительность: 0.001с - IP: 
+2026-08-20 06:55:18 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /converter/download_txt_list/Соцобоз_2023_2_2026_08_20.txt - IP: 
+2026-08-20 06:55:18 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /converter/download_txt_list/Соцобоз_2023_2_2026_08_20.txt - Статус: 200 - Длительность: 0.001с - IP: 
+2026-08-20 06:55:25 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /converter/download_txt_list/phillet_hse_2026_1_2026_08_20.txt - IP: 
+2026-08-20 06:55:25 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /converter/download_txt_list/phillet_hse_2026_1_2026_08_20.txt - Статус: 200 - Длительность: 0.001с - IP: 
+2026-08-20 06:55:28 | eLibrary_to_IRBIS.web.app | INFO | app:25 | Запрос начат: GET /converter/download_txt_list/phillet_hse_2026_2_2026_08_20.txt - IP: 
+2026-08-20 06:55:28 | eLibrary_to_IRBIS.web.app | INFO | app:32 | Запрос завершен: GET /converter/download_txt_list/phillet_hse_2026_2_2026_08_20.txt - Статус: 200 - Длительность: 0.001с - IP: 

@@ -1,44 +1,37 @@
-# Проверка документов, представленных в формате ИРБИС-64, 
+# Проверка документов, представленных в формате ИРБИС-64,
 # по полю 690 (рубрики АИСОН) на соответствие рубрикатору
-# NB!: Эта версия функции адаптировано только под использование с одной рубрикой.
+# NB!: Эта версия функции адаптирована только под использование с одной рубрикой.
 # NB!: Если в одном документе указано несколько рубрик, все, кроме первой будут проигнорированы
-# NB!: Функция нуждается в доработке (06.07.2026) 
+# NB!: Функция нуждается в доработке (06.07.2026)
 
 import json
 import pandas as pd
 from pathlib import Path
 
-# Читаем пути к папкам файлов в path_config
-#config_path = Path("data/config/path_config.json")
-config_path = Path("C:/Users/yotto/CONVERTERS/INION/data/config/path_config.json")
+# Импортируем функцию, которая возвращает готовый словарь конфигурации
+from src.utils.config_path import set_config  # type: ignore
 
-try:
-    with open(config_path, "r", encoding="utf-8") as f:
-        config_paths = json.load(f)
-except FileNotFoundError:
-    raise FileNotFoundError("Файл конфигурации path_config.json не найден.")
-except ValueError as e:
-    raise ValueError("Ошибка в файле конфигурации path_config.json: {}".format(e))
+# Получаем готовый конфиг
+config_paths = set_config()
 
 rubricator_fl = config_paths.get("rubricator")
 if not rubricator_fl:
-    raise ValueError("В конфигурации path_config.json отсутствует ключ 'rubricator'.")
+    raise ValueError("В конфигурации отсутствует ключ 'rubricator'.")
 
 
 def check_cat(file_path, spec):
     """
     Проверяет категории из списка строк на соответствие рубрикатору для заданной специальности.
-    
+
     Особенности:
         - #903: (номер) и #690: (категория) всегда находятся в разных строках.
         - Связь между номером и категорией устанавливается по порядку появления:
           первый номер -> первая категория, второй номер -> вторая категория и т.д.
-    
+
     Параметры:
-        strings — список строк (каждая строка может содержать либо #903:, либо #690:, либо другие значения).
+        file_path — путь к файлу с данными (строки с #903 и #690).
         spec — код специальности (например, '02').
-        rubricator_path — путь к JSON-файлу рубрикатора.
-    
+
     Возвращает:
         pd.DataFrame с колонками ['category', 'identifier'] — только строки с некорректными категориями.
         Если ошибок нет — пустой DataFrame с этими колонками.
@@ -56,11 +49,11 @@ def check_cat(file_path, spec):
         "literature": "17",
         "religion": "21"
     }
-    
+
     # 0. Читаем файл, загруженный пользователем
     with open(file_path, 'r', encoding='UTF-8') as file:
         strings = file.readlines()
-    
+
     # 1. Читаем рубрикатор и делаем DataFrame
     try:
         with open(rubricator_fl, "r", encoding="utf-8") as f:
@@ -107,23 +100,7 @@ def check_cat(file_path, spec):
         if category not in allowed_categories:
             rows.append({
                 "identifier": identifier,
-                "category": category                
+                "category": category
             })
 
-    # Если категорий больше, чем номеров (или наоборот), «лишние» элементы просто игнорируются.
-    # При необходимости можно добавить предупреждение, если len(identifiers) != len(categories).
-
     return pd.DataFrame(rows, columns=["identifier", "category"])
-
-
-# Тестовое задание
-
-file_path = 'C:/Users/yotto/Downloads/02_files_to_process_test_vers.txt'
-spec = '02'
-
-result_df = check_cat(file_path, spec)
-if result_df.empty:
-    print("Ошибок не найдено: все рубрики соответствуют рубрикатору.")
-else:
-    print("Найдены некорректные рубрики:")
-    print(result_df)
